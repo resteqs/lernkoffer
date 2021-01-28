@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { JsxEmit } from 'typescript';
+// eslint-disable-next-line import/no-named-as-default
+import Nav from './Navbar/Nav';
+// eslint-disable-next-line import/no-named-as-default
+import home from './SDG/home';
+// eslint-disable-next-line import/no-named-as-default
+import dictionary from './SDG/SDG13/dictionary';
+// eslint-disable-next-line import/no-named-as-default
+import play from './SDG/SDG13/play';
+// eslint-disable-next-line import/no-named-as-default
+import sdg13  from './SDG/SDG13/sdg13';
+
 import './styles/App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+// eslint-disable-next-line react/prefer-stateless-function
+export class App extends React.Component{ 
+  render():JSX.Element{
+    return(
+      <Router>
+        <div className = "App">
+          <Nav/>
+          <Switch>
+            <Route path = "/home" component = {home}/>        
+            <Route path = "/sdg13" component = {sdg13}/>
+            <Route path = "/play" component = {play}/>
+            <Route path = "/dictionary" component = {dictionary}/>
+          </Switch>   
+       </div>
+      </Router>
+    );
+  }
+}
