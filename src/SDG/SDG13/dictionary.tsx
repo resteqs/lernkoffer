@@ -6,10 +6,9 @@ export class dictionary extends React.Component{
         return(
            <div>
                <h1 className = "header">SDG 13</h1>
-               <h2>I like my big dictionary</h2>
+               <h2 className= "h2">The quick brown fox jumps over the lazy dog</h2>
            </div>
         );
     }
 }
-
 export default  dictionary

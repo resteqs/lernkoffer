@@ -5,6 +5,7 @@ import { JsxEmit } from 'typescript';
 import Nav from './Navbar/Nav';
 // eslint-disable-next-line import/no-named-as-default
 import home from './SDG/home';
+import sdg12 from './SDG/SDG12/sdg12';
 // eslint-disable-next-line import/no-named-as-default
 import dictionary from './SDG/SDG13/dictionary';
 // eslint-disable-next-line import/no-named-as-default
@@ -23,8 +24,9 @@ export class App extends React.Component{
         <div className = "App">
           <Nav/>
           <Switch>
-            <Route path = "/home" component = {home}/>        
-            <Route path = "/sdg13" component = {sdg13}/>
+            <Route path = "/home" exact component = {home}/> 
+            <Route path = "/sdg12" exact component = {sdg12}/>       
+            <Route path = "/sdg13" exact component = {sdg13}/>
             <Route path = "/play" component = {play}/>
             <Route path = "/dictionary" component = {dictionary}/>
           </Switch>   

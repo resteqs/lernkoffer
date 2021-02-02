@@ -9,7 +9,7 @@ export class sdg13 extends React.Component{
            <div>
                <h1 className = "header">SDG 13</h1>
                
-                <Link to = "/play">
+                <Link to ="/play">
                     <li className = "play-dictionary">Play</li> 
                 </Link>
 
@@ -17,11 +17,9 @@ export class sdg13 extends React.Component{
                    <li className = "play-dictionary"> Dictionary</li>
                 </Link>
            </div>
-
         );
     }
 }
 
 export default sdg13
 
-    

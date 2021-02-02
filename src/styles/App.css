@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 li{
@@ -45,7 +46,7 @@ nav .nav-links{
 
 .header{
     text-align: center;
-    color:deeppink;
+    color: aqua;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 50px;
@@ -60,9 +61,52 @@ nav .nav-links{
     line-height: 40px;
 }
 
- .logo13 {
-    max-width: 100%;
-    height: auto;
+.logo13 {
+    width: 63%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.h2{
+    text-align: center;
+    color: rgb(24, 0, 238);
+}
+
+.b12{
+    background-color:teal;
+    border: none !important;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0;
+    height: 55px;
+    position:fixed;
+    left: 20%;
+    top: 50%;
+    cursor: pointer;
   }
 
+.b13wt{
+    background-color:transparent;
+    border-width: 5px;
+    border-color: palevioletred;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 0;
+    position:fixed;
+    cursor: pointer;
+    left: 49%;
+    top: 20%;
+    height: 350px;
+    width:250pt;
+}
 
+.b22{
+    cursor: pointer;
+    border-color: aqua;
+    border-width: 6px;
+}

@@ -26,10 +26,15 @@ export class Nav extends React.Component{
             <li>SDG 9</li> 
             <li>SDG 10</li> 
             <li>SDG 11</li> 
-            <li>SDG 12</li> 
+         
+            <Link to = "/sdg12">
+              <li>SDG 12</li> 
+            </Link>
+
             <Link to = "/sdg13">
               <li>SDG 13</li> 
             </Link>
+            
             <li>SDG 14</li> 
             <li>SDG 15</li> 
             <li>SDG 16</li> 
