@@ -16,26 +16,46 @@ nav{
     justify-content: space-around;
     min-height: 10vh ;
     align-items: center;
-    background-color:lightsalmon;
+    background-color: #242526;;
     background-size: cover;
 }
 
-nav .logo{
+.nav-logo:visited{
+    color: #FFB85F;
+}
+
+
+.nav-logo:active{
+    color: FF7A5A;
+}
+
+.nav-logo{
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
+    color:  #FFB85F;
     
 }
 
-nav .nav-links{
+.links:visited{
+    color:#FFB85F;
+}
+
+.links:active{
+    color: #FF7A5A;
+
+}
+
+.links{
     display:flex;
     justify-content: space-around;
     width: 80%;
     cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;  
-
+    margin-left: 5px;
+    margin-right: 5px;  
+    color:  #FFB85F;
+    font-size: 15px;
 }
 
 .divider{
@@ -46,11 +66,11 @@ nav .nav-links{
 
 .header{
     text-align: center;
-    color: aqua;
+    color: #FFB85F;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 50px;
-    line-height:70px;
+    line-height:80px;
 }
 
 .play-dictionary{
@@ -105,8 +125,37 @@ nav .nav-links{
     width:250pt;
 }
 
+.standard-background{
+    background-color:  #FCF4D9;
+}
+
 .b22{
     cursor: pointer;
     border-color: aqua;
     border-width: 6px;
+}
+
+.sdg13-dictionary-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    font-size: 400%;
+    cursor: pointer;
+    background-size: 100%,100%;
+    color: aquamarine;    
+    margin: auto;
+    float: left;
+     
+     padding: 20px;
+     background: #eee;
+     box-sizing: border-box;
+}
+
+.akw{
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 
+
 }
