@@ -27,10 +27,7 @@ import co2 from './SDG/SDG13/dictionary/co2';
 import photosynthese from './SDG/SDG13/dictionary/photsynthese'; 
 import dextrose from './SDG/SDG13/dictionary/dextrose';
 
-
 import './styles/App.css';
-
-
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class App extends React.Component{ 
