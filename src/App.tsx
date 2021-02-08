@@ -36,7 +36,7 @@ import './styles/App.css';
 export class App extends React.Component{ 
   render():JSX.Element{
     return(
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <div className = "App">
           <Nav/>
           <Switch>
