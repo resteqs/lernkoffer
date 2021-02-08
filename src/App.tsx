@@ -36,7 +36,7 @@ import './styles/App.css';
 export class App extends React.Component{ 
   render():JSX.Element{
     return(
-      <Router>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className = "App">
           <Nav/>
           <Switch>
@@ -52,7 +52,7 @@ export class App extends React.Component{
             <Route path = "/sdg11" exact component = {sdg12}/>
           </Switch>   
        </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
