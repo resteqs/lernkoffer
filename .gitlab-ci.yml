@@ -16,6 +16,7 @@ pages:
     - rm -rf public
     - cp build/index.html build/404.html
     - mv build public
+    - cp public/index.html public/404.html
   artifacts:
     paths:
       - public
