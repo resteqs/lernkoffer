@@ -10,9 +10,9 @@ export class play extends React.Component {
             <div className="standard-background">
                 <h2>
                     <img className="logo13" src={logo} alt="" />
-                </h2>
+                
 
-                <svg className ="akw" id="svg8" version="1.1" viewBox="0 0 210 297" height="659px" width="307px">
+                <svg className ="akw" id="svg8" version="1.1" viewBox="0 0 210 297" height="2048px" width="1536px">
                     <a href="/sdg11">
                         <g id="layer1">
                             <path
@@ -22,7 +22,7 @@ export class play extends React.Component {
                         </g>
                     </a>
                 </svg>
-
+                </h2>
             </div>
         );
     }

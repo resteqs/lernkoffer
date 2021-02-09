@@ -154,6 +154,9 @@ nav{
 }
 
 .akw{
-    margin: auto;
-    padding-left: 10px; 
+    width: 63%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Router, Switch, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { JsxEmit } from 'typescript';
 // eslint-disable-next-line import/no-named-as-default
 import Nav from './Navbar/Nav';
@@ -33,7 +33,7 @@ import './styles/App.css';
 export class App extends React.Component{ 
   render():JSX.Element{
     return(
-      <BrowserRouter>
+      <Router basename = "/lernkoffer">
         <div className = "App">
           <Nav/>
           <Switch>
@@ -49,7 +49,7 @@ export class App extends React.Component{
             <Route path = "/sdg11" exact component = {sdg12}/>
           </Switch>   
        </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
