@@ -38,6 +38,7 @@ export class App extends React.Component{
           <Nav/>
           <Switch>
             <Route path = "/home" exact component = {home}/> 
+            <Route path = "/sdg11" exact component = {sdg12}/>
             <Route path = "/sdg12" exact component = {sdg12}/>       
             <Route path = "/sdg13" exact component = {sdg13}/>
             <Route path = "/play" exact component = {play}/>
@@ -46,7 +47,7 @@ export class App extends React.Component{
             <Route path = "/dextrose" exact component = {dextrose}/>
             <Route path = "/methane" exact component = {methane}/>
             <Route path = "/photosynthese" exact component = {photosynthese}/>
-            <Route path = "/sdg11" exact component = {sdg12}/>
+            
           </Switch>   
        </div>
       </Router>
