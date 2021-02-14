@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,74 +6,27 @@
     scroll-behavior: smooth;
 }
 
-li{
+li {
     list-style-type: none;
     text-decoration: none;
 }
 
-nav{
+.centre {
     display: flex;
-    justify-content: space-around;
-    min-height: 10vh ;
-    align-items: center;
-    background-color: #242526;;
-    background-size: cover;
-}
-
-.nav-logo:visited{
-    color: #FFB85F;
-}
-
-
-.nav-logo:active{
-    color: FF7A5A;
-}
-
-.nav-logo{
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    color:  #FFB85F;
-    
-}
-
-.links:visited{
-    color:#FFB85F;
-}
-
-.links:active{
-    color: #FF7A5A;
-
-}
-
-.links{
-    display:flex;
-    justify-content: space-around;
-    width: 80%;
-    cursor: pointer;
-    margin-left: 5px;
-    margin-right: 5px;  
-    color:  #FFB85F;
-    font-size: 15px;
-}
-
-.divider{
-    width:5px;
-    height:auto;
-    display:inline-block;
-}
-
-.header{
     text-align: center;
-    color: #FFB85F;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    color: #ffb85f;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 50px;
-    line-height:80px;
+    line-height: 80px;
 }
 
-.play-dictionary{
+.play-dictionary {
     text-align: center;
     text-decoration: none;
     color: black;
@@ -82,19 +35,20 @@ nav{
 }
 
 .logo13 {
-    width: 63%;
+    display: flex;
+    justify-content: center;
+    width: 100%; /*63*/
     height: 50%;
-    display: block;
     margin: 0 auto;
 }
 
-.h2{
+.h2 {
     text-align: center;
     color: rgb(24, 0, 238);
 }
 
-.b12{
-    background-color:teal;
+.b12 {
+    background-color: teal;
     border: none !important;
     color: white;
     padding: 15px 32px;
@@ -103,39 +57,23 @@ nav{
     display: inline-block;
     font-size: 0;
     height: 55px;
-    position:fixed;
+    position: fixed;
     left: 20%;
     top: 50%;
     cursor: pointer;
-  }
-
-.b13wt{
-    background-color:transparent;
-    border-width: 5px;
-    border-color: palevioletred;
-    color: white;
-    padding: 15px 32px;
-    display: inline-block;
-    font-size: 0;
-    position:fixed;
-    cursor: pointer;
-    left: 49%;
-    top: 20%;
-    height: 350px;
-    width:250pt;
 }
 
-.standard-background{
-    background-color:  #FCF4D9;
+.standard-background {
+    background-color: #fcf4d9;
 }
 
-.b22{
+.b22 {
     cursor: pointer;
     border-color: aqua;
     border-width: 6px;
 }
 
-.sdg13-dictionary-b{
+.sdg13-dictionary-b {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,20 +81,85 @@ nav{
     height: 500px;
     font-size: 400%;
     cursor: pointer;
-    background-size: 100%,100%;
-    color: aquamarine;    
+    background-size: 100%, 100%;
+    color: aquamarine;
     margin: auto;
     float: left;
-     
-     padding: 20px;
-     background: #eee;
-     box-sizing: border-box;
+    padding: 20px;
+    background: #eee;
+    box-sizing: border-box;
 }
 
-.akw{
+.akw {
+    transform: translate(-55%, -168%) scale(1.8, 2.1);
+    /*fill: transparent;*/
+    margin: 0 auto;
     width: 63%;
     height: 50%;
     display: block;
+}
+
+.bicycle {
+    transform: translate(2%, -127%) scale(0.95, 0.95);
+    /*fill: transparent;*/
     margin: 0 auto;
-    position: relative;
+    width: 63%;
+    height: 50%;
+    display: block;
+}
+
+.cow {
+    transform: translate(-51%, -220%) scale(0.9, 1);
+    /*fill: transparent;*/
+    margin: 0 auto;
+    width: 63%;
+    height: 50%;
+    display: block;
+}
+
+.wind_turbine {
+    transform: translate(31%, -665%) scale(1.9, 2);
+    /*fill: transparent;*/
+    margin: 0 auto;
+    padding: auto;
+    width: 63%;
+    height: 50%;
+    display: block;
+}
+
+.hedgehog{
+    transform: translate(9%, -661%) scale(2, 2);
+    /*fill: transparent;*/
+    margin: 0 auto;
+    width: 63%;
+    height: 50%;
+    display: block;
+}
+
+.tractor{
+    transform: translate(67%, -806%) scale(1.9, 1.9);
+    /*fill: transparent;*/
+    margin: 0 auto;
+    width: 63%;
+    height: 50%;
+    display: block;
+}
+
+.tree{
+    transform: translate(81%, -886%) scale(2, 2);
+    /*fill: transparent;*/
+    margin: 0 auto;
+    width: 63%;
+    height: 50%;
+    display: block;
+}
+
+.fox{
+    transform: translate(88%, -989%) scale(1.9, 1.9);
+    /*fill: transparent;*/
+    margin: 0;
+    padding: 0 , 0;
+    width: 63%;
+    height: 50%;
+    display: block;
 }

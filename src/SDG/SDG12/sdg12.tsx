@@ -10,7 +10,7 @@ class sdg12 extends React.Component{
                 <h1 className = "header">SDG 12</h1>
                 <div>
                     <Link to = "/sdg13">
-                        <button className = "b12" type ="button"> </button>
+                        <button className = "bwt" type ="button"> </button>
                     </Link>   
                 </div>
            </div>

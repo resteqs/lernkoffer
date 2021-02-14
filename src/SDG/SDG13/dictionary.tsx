@@ -45,7 +45,7 @@ export class dictionary extends React.Component{
 
                 <Link to = "/co2">
                         <button className = "sdg13-dictionary-b" style = {styleco2} type ="button"> 
-                            Carbon Dioxid
+                            Carbon Dioxide
                         </button>
                 </Link> 
 
@@ -63,7 +63,7 @@ export class dictionary extends React.Component{
 
                 <Link to = "/photosynthese">
                         <button className = "sdg13-dictionary-b" style = {styledphotosynthese} type ="button"> 
-                            Photosynthese
+                            Photosynthesis
                         </button>
                 </Link> 
            </div>

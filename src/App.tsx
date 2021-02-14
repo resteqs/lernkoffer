@@ -1,10 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { JsxEmit } from 'typescript';
+
 // eslint-disable-next-line import/no-named-as-default
-import Nav from './Navbar/Nav';
-// eslint-disable-next-line import/no-named-as-default
-import home from './SDG/home';
+import home from './home';
 
 
 import sdg12 from './SDG/SDG12/sdg12';
@@ -17,7 +15,6 @@ import sdg13  from './SDG/SDG13/sdg13';
 import play from './SDG/SDG13/play';
 
 
-
 // eslint-disable-next-line import/no-duplicates
 // eslint-disable-next-line import/no-named-as-default
 import dictionary from './SDG/SDG13/dictionary';
@@ -28,6 +25,7 @@ import photosynthese from './SDG/SDG13/dictionary/photsynthese';
 import dextrose from './SDG/SDG13/dictionary/dextrose';
 
 import './styles/App.css';
+import help from './help';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class App extends React.Component{ 
@@ -35,9 +33,9 @@ export class App extends React.Component{
     return(
       <Router basename = "/lernkoffer">
         <div className = "App">
-          <Nav/>
           <Switch>
-            <Route path = "/home" exact component = {home}/> 
+            <Route path = "/" exact component = {home}/> 
+            <Route path = "/help" exact component = {help}/> 
             <Route path = "/sdg11" exact component = {sdg12}/>
             <Route path = "/sdg12" exact component = {sdg12}/>       
             <Route path = "/sdg13" exact component = {sdg13}/>
@@ -47,7 +45,6 @@ export class App extends React.Component{
             <Route path = "/dextrose" exact component = {dextrose}/>
             <Route path = "/methane" exact component = {methane}/>
             <Route path = "/photosynthese" exact component = {photosynthese}/>
-            
           </Switch>   
        </div>
       </Router>
