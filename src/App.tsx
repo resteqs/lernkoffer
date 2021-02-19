@@ -41,10 +41,10 @@ export class App extends React.Component{
             <Route path = "/sdg13" exact component = {sdg13}/>
             <Route path = "/play" exact component = {play}/>
             <Route path = "/dictionary" exact component = {dictionary}/>
-            <Route path = "/co2" exact component = {co2}/>
-            <Route path = "/dextrose" exact component = {dextrose}/>
-            <Route path = "/methane" exact component = {methane}/>
-            <Route path = "/photosynthese" exact component = {photosynthese}/>
+            <Route exact path = "/co2" component = {co2}/>
+            <Route exact path = "/dextrose"  component = {dextrose}/>
+            <Route exact path = "/methane"  component = {methane}/>
+            <Route exact path = "/photosynthese"  component = {photosynthese}/>
           </Switch>   
        </div>
       </Router>

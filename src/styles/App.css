@@ -90,76 +90,70 @@ li {
     box-sizing: border-box;
 }
 
-.akw {
-    transform: translate(-55%, -168%) scale(1.8, 2.1);
-    /*fill: transparent;*/
-    margin: 0 auto;
+
+
+.svg13 {
+    transform: translate(0%, -210%) scale(3.1)  ;
+    fill: transparent;
     width: 63%;
     height: 50%;
-    display: block;
+    display: flex;
+    align-items: center;
+ 
 }
 
 .bicycle {
-    transform: translate(2%, -127%) scale(0.95, 0.95);
+    transform: translate(32%, 5%) scale(1.2);
     /*fill: transparent;*/
-    margin: 0 auto;
     width: 63%;
-    height: 50%;
-    display: block;
+    height: 50%;   
+}
+
+.akw{
+    transform: translate(-52%, -36%) scale(1.35, 1.2);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%; 
 }
 
 .cow {
-    transform: translate(-51%, -220%) scale(0.9, 1);
+    transform: translate(-43%, 14%) scale(1.3, 1.2);
     /*fill: transparent;*/
-    margin: 0 auto;
     width: 63%;
-    height: 50%;
-    display: block;
+    height: 50%; 
 }
 
 .wind_turbine {
-    transform: translate(31%, -665%) scale(1.9, 2);
+    transform: translate(69%, -41%) scale(1.25, 1.3);
     /*fill: transparent;*/
-    margin: 0 auto;
-    padding: auto;
     width: 63%;
-    height: 50%;
-    display: block;
+    height: 50%; 
 }
 
 .hedgehog{
-    transform: translate(9%, -661%) scale(2, 2);
+    transform: translate(39%, 29%) scale(1.25, 1.3);
     /*fill: transparent;*/
-    margin: 0 auto;
     width: 63%;
-    height: 50%;
-    display: block;
+    height: 50%; 
 }
 
 .tractor{
-    transform: translate(67%, -806%) scale(1.9, 1.9);
+    transform: translate(119%, -1%) scale(1.25, 1.3);
     /*fill: transparent;*/
-    margin: 0 auto;
     width: 63%;
     height: 50%;
-    display: block;
 }
 
 .tree{
-    transform: translate(81%, -886%) scale(2, 2);
+    transform: translate(136%, 15%) scale(1.25, 1.25);
     /*fill: transparent;*/
-    margin: 0 auto;
     width: 63%;
-    height: 50%;
-    display: block;
+    height: 50%
 }
 
 .fox{
-    transform: translate(88%, -989%) scale(1.9, 1.9);
+    transform: translate(148%, 16%) scale(1.2, 1.2);
     /*fill: transparent;*/
-    margin: 0;
-    padding: 0 , 0;
     width: 63%;
-    height: 50%;
-    display: block;
+    height: 50%
 }

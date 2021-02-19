@@ -12,6 +12,9 @@ class sdg12 extends React.Component{
                     <Link to = "/sdg13">
                         <button className = "bwt" type ="button"> </button>
                     </Link>   
+
+                    
+
                 </div>
            </div>
         );
