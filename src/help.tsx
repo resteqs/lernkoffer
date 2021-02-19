@@ -9,9 +9,9 @@ class help extends React.Component{
            <div>
                 <h1 className = "header">Helpful links</h1>
                 <div>
-                    <Link to ="/sdg13">
+                    <Link to ="/sdg12">
                         <div className = "centre">
-                            SDG13
+                            SDG12
                         </div>
                     </Link>
                     <Link to ="/tutorial/page1">
