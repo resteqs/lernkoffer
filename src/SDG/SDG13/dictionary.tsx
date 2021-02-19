@@ -1,6 +1,6 @@
 import { url } from 'inspector';
 import * as React from 'react'
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import { JsxEmit } from 'typescript';
 import co2 from "./dictionary_png/background/co2.jpg";
 // https://pixabay.com/de/photos/verschmutzung-fabrik-industrie-2575166/
@@ -39,34 +39,37 @@ export class dictionary extends React.Component{
             // eslint-disable-next-line no-template-curly-in-string
             backgroundImage: `url(${photosynthese})`
         }
+        
         return(
-           <div className ="standard-background"> 
+            <BrowserRouter>
+            <div className ="standard-background"> 
                 <h1 className = "header">Dictionary</h1>
 
-                <Link to = "/co2">
+                <Link to = "/dictionary/co2">
                         <button className = "sdg13-dictionary-b" style = {styleco2} type ="button"> 
                             Carbon Dioxide
                         </button>
                 </Link> 
 
-                <Link to = "/methane">
+                <Link to = "/dictionary/methane">
                         <button className = "sdg13-dictionary-b" style = {stylemethan} type ="button"> 
                             Methane
                         </button>
                 </Link> 
 
-                <Link to = "/dextrose">
+                <Link to = "/dictionary/dextrose">
                         <button className = "sdg13-dictionary-b" style = {styledextrose} type ="button"> 
                             Dextrose
                         </button>
                 </Link> 
 
-                <Link to = "/photosynthese">
+                <Link to = "/dictionary/photosynthese">
                         <button className = "sdg13-dictionary-b" style = {styledphotosynthese} type ="button"> 
                             Photosynthesis
                         </button>
                 </Link> 
            </div>
+           </BrowserRouter>
         );
     }
 }

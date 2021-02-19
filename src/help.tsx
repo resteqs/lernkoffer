@@ -14,7 +14,7 @@ class help extends React.Component{
                             SDG13
                         </div>
                     </Link>
-                    <Link to ="/sdg13">
+                    <Link to ="/tutorial/page1">
                         <div className = "centre">
                             SDG13
                         </div>

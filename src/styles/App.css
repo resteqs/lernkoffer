@@ -167,3 +167,13 @@ li {
 .red{
     color:red
 }
+
+.buttonNext{
+    background-color: #ffb85f ;
+    align-items: center;
+    height: -40%;
+    width: 20%;
+    line-height: 420%;
+    float: right;
+
+}
