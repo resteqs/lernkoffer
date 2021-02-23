@@ -50,24 +50,27 @@ export class App extends React.Component {
                         <Route path="/sdg11" exact component={sdg12} />
                         <Route path="/sdg12" exact component={sdg12} />
                         <Route path="/sdg13" exact component={sdg13} />
-                        <Route path="/play" exact component={play} />
-                        <Route path="/dictionary" exact component={dictionary} />
+                        
+                        <Route exact path="/dictionary"  component={dictionary} />
                         <Route exact path="/dictionary/co2" component={co2} />
                         <Route exact path="/dictionary/dextrose" component={dextrose} />
                         <Route exact path="/dictionary/methane" component={methane} />
                         <Route exact path="/dictionary/photosynthese" component={photosynthese} />
 
-                        <Route exact path="/tutorial/page1" component={page1} />
-                        <Route exact path="/tutorial/page2" component={page2} />
-                        <Route exact path="/tutorial/page3" component={page3} />
 
-                        <Route exact path="/play/akw" component={akw} />
-                        <Route exact path="/play/cow" component={cow} />
-                        <Route exact path="/play/bicycle" component={bicycle} />
-                        <Route exact path="/play/wind_turbine" component={windTurbine} />
-                        <Route exact path="/play/tractor" component={tractor} />
-                        <Route exact path="/play/tree" component={tree} />
-                        <Route exact path="/play/fox_and_hedgehog" component={foxHedgehog} />
+                        <Route exact path="/tutorial13/page1" component={page1} />
+                        <Route exact path="/tutorial13/page2" component={page2} />
+                        <Route exact path="/tutorial13/page3" component={page3} />
+                        
+                        <Route path="/sdg13/play" exact component={play} />
+
+                        <Route exact path="/sdg13/play/akw" component={akw} />
+                        <Route exact path="/sdg13/play/cow" component={cow} />
+                        <Route exact path="/sdg13/play/bicycle" component={bicycle} />
+                        <Route exact path="/sdg13/play/wind_turbine" component={windTurbine} />
+                        <Route exact path="/sdg13/play/tractor" component={tractor} />
+                        <Route exact path="/sdg13/play/tree" component={tree} />
+                        <Route exact path="/sdg13/play/fox_and_hedgehog" component={foxHedgehog} />
                     </Switch>
                 </div>
             </Router>
