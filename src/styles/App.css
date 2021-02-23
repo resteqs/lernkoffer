@@ -90,8 +90,6 @@ li {
     box-sizing: border-box;
 }
 
-
-
 .svg13 {
     transform: translate(0%, -210%) scale(3.1)  ;
     fill: transparent;
@@ -159,11 +157,10 @@ li {
 }
 
 .sdg13playinformation{
-    padding: 20%;
-    
+    padding: 20%;   
     font-size: x-large;
-
 }
+
 .red{
     color:red
 }
@@ -175,5 +172,15 @@ li {
     width: 20%;
     line-height: 420%;
     float: right;
+    cursor: pointer;
+}
 
+.buttonBack{
+    background-color: #ffb85f ;
+    align-items: center;
+    height: -40%;
+    width: 20%;
+    line-height: 420%;
+    float: left;
+    cursor: pointer;
 }
