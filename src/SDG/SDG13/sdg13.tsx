@@ -9,7 +9,7 @@ export class sdg13 extends React.Component{
            <div>
                <h1 className = "header">SDG 13</h1>
                
-                <Link to ="/sdg13/play">
+                <Link to ="/sdg13/tutorial/page1">
                     <li className = "play-dictionary">Play</li> 
                 </Link>
 
