@@ -19,7 +19,7 @@ class page143 extends React.Component {
                         </button>
                     </Link>
 
-                    <Link to="/sdg14">
+                    <Link to="/sdg13/tutorial/page2">
                         <button className="buttonBack" type="button">
                             BACK
                         </button>
