@@ -14,7 +14,7 @@ class page1 extends React.Component {
                         <button className = "buttonNext" type = "button">NEXT</button>
                     </Link> 
                     <Link to = "/sdg13">
-                        <button className = "buttonBack" type = "button">NEXT</button>
+                        <button className = "buttonBack" type = "button">BACK</button>
                     </Link>   
                        
                     
