@@ -8,7 +8,7 @@ class page3 extends React.Component {
             <div className="standard-background">
                 <h1 className="header">Tutorial</h1>
                 <div> 
-                    <p className = "sdg13playinformation">Can you guess which element produces what amount of gases? Click on them and find out.</p>
+                    <p className = "playinformation">Can you guess which element produces what amount of gases? Click on them and find out.</p>
                     <Link to = "/sdg13/play">
                         <button className = "buttonNext" type = "button">NEXT</button>
                     </Link>

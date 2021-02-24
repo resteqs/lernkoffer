@@ -8,7 +8,7 @@ class cow extends React.Component {
             <div className="standard-background">
                 <h1 className="header">COW</h1>
                 <div>
-                    <p className="sdg13playinformation">
+                    <p className="playinformation">
                         Did you know that cows<span className="red">&nbsp;burp and fart methane</span>? This gas is for
                         our climate&nbsp;
                         <span className="red">

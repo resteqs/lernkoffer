@@ -37,6 +37,18 @@ import tree from "./SDG/SDG13/information/tree";
 import foxHedgehog from "./SDG/SDG13/information/foxHedgehog";
 
 
+import page141 from "./SDG/SDG14/tutorial/page141";
+import page142 from "./SDG/SDG14/tutorial/page142";
+import page143 from "./SDG/SDG14/tutorial/page143";
+import play14 from "./SDG/SDG14/play14";
+import clownfish from "./SDG/SDG14/search_info/clownfish";
+import ray from "./SDG/SDG14/search_info/ray";
+import seaHorse from "./SDG/SDG14/search_info/seaHorse";
+import shark from "./SDG/SDG14/search_info/shark";
+import siamesefightingFish from "./SDG/SDG14/search_info/siameseFightingFish";
+import surgeonfish from "./SDG/SDG14/search_info/surgeonfish";
+import turtle from "./SDG/SDG14/search_info/turtle";
+import boat from "./SDG/SDG14/search_info/boat";
 
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -72,6 +84,22 @@ export class App extends React.Component {
                         <Route exact path="/sdg13/play/tractor" component={tractor} />
                         <Route exact path="/sdg13/play/tree" component={tree}/>
                         <Route exact path="/sdg13/play/fox_and_hedgehog" component={foxHedgehog}/>
+
+                        <Route exact path="/sdg14/tutorial/page1" component={page141} />
+                        <Route exact path="/sdg14/tutorial/page2" component={page142} />
+                        <Route exact path="/sdg14/tutorial/page3" component={page143} />
+                        
+                        <Route exact path="/sdg14/play" component={play14} />
+
+                        <Route exact path="/sdg14/play/clownfish" component={clownfish} />
+                        <Route exact path="/sdg14/play/ray" component={ray} />
+                        <Route exact path="/sdg14/play/seaHorse" component={seaHorse} />
+                        <Route exact path="/sdg14/play/shark" component={shark} />
+                        <Route exact path="/sdg14/play/siameseFightingFish" component={siamesefightingFish} />
+                        <Route exact path="/sdg14/play/surgeonfish" component={surgeonfish} />
+                        <Route exact path="/sdg14/play/turtle" component={turtle} />
+                        <Route exact path="/sdg14/play/boat" component={boat} />
+
                     </Switch>
                 </div>
             </Router>

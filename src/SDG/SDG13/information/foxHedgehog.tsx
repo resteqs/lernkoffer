@@ -8,7 +8,7 @@ class foxHedgehog extends React.Component {
             <div className="standard-background">
                 <h1 className="header">FOX AND HEDGEHOG</h1>
                 <div>
-                    <p className="sdg13playinformation">
+                    <p className="playinformation">
                         Lovely little animals, you could think, how should they be connected to the greenhouse effect
                         and climate change? Well, animals are somehow&nbsp;
                         <span className="red">natural producers of certain gases</span>&nbsp;like methane or carbon

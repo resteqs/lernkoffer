@@ -9,7 +9,7 @@ class bicycle extends React.Component {
                 <h1 className="header">BICYCLE</h1>
                 <div>
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <p className="sdg13playinformation">
+                    <p className="playinformation">
                         He emissions about&nbsp;
                         <span className="red">
                             21g of CO<sub>2</sub>&nbsp;per kilometer&nbsp;

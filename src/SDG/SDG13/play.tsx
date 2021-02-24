@@ -8,7 +8,7 @@ export class play extends React.Component {
     render(): JSX.Element {
         return (
             <div className="sdg13-play-scale" >
-                <img className="logo13" src={logo} alt="" />
+                <img className="logoGeneral" src={logo} alt="" />
 
                 <svg className = "svg13" viewBox="0 0 210 297" height="100mm" width="297mm" >
                    

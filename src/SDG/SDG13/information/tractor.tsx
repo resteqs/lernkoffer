@@ -8,7 +8,7 @@ class tractor extends React.Component {
             <div>
                 <h1 className="header">TRACTOR</h1>
                 <div>
-                    <p className="sdg13playinformation">
+                    <p className="playinformation">
                         <p>
                             Agriculture &ndash; an important part of every country&apos;s economy. Nevertheless, here
                             are emissions produced in a quite high amount, which could be&nbsp;

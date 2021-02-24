@@ -8,7 +8,7 @@ class windTurbine extends React.Component {
             <div className="standard-background">
                 <h1 className="header">WIND TURBINE</h1>
                 <div>
-                    <p className="sdg13playinformation">
+                    <p className="playinformation">
                         <p>
                             A new&nbsp;<span className="red">way of energy extraction</span>. It is a rather often
                             discussed theme of whether building wind wheels is ecologically worthwhile or not. Most

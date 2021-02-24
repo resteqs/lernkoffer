@@ -8,7 +8,7 @@ class tree extends React.Component {
             <div className="standard-background">
                 <h1 className="header">TREE</h1>
                 <div>
-                    <p className="sdg13playinformation">
+                    <p className="playinformation">
                         <p>
                             As we all know trees are responsible for&nbsp;<span className="red">photosynthesis</span>.
                             Especially nowadays, when nearly everything we do is related to an action producing Carbon

@@ -8,7 +8,7 @@ class akw extends React.Component {
             <div className="standard-background">
                 <h1 className="header">NUCLEAR POWER PLANT</h1>
                 <div>
-                    <p className="sdg13playinformation">
+                    <p className="playinformation">
                         <p>
                             &ldquo;Nuclear&rdquo; is often used negatively but there truly are some positive things to
                             say about this kind of energy. A&nbsp;<span className="red">big part</span>&nbsp;of the
