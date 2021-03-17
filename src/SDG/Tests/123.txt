@@ -1,0 +1,42 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react/jsx-no-comment-textnodes */
+import React from "react";
+import frog from "./frog.png";
+import giraffe from "./pic/giraff.png";
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+
+// eslint-disable-next-line react/prefer-stateless-function
+class onetwotree extends React.Component {
+    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+    onDragEnd = () => {
+        // the only one that is required
+    };
+
+    render(): JSX.Element {
+        return (
+            <div>
+                <DragDropContext onDragEnd={this.onDragEnd}>
+                    <Droppable droppableId="droppable-1">
+                        {(provided, snapshot) => (
+                            // eslint-disable-next-line react/jsx-props-no-spreading
+                            <div ref={provided.innerRef} {...provided.droppableProps}>
+                                                     <Draggable key="1" draggableId="1">
+                                                            <div>
+                                        
+                                        {(_provided: any, _snapshot: any) => <img src={frog} alt="" />}
+
+                                    </div>
+                                </Draggable>
+                                <img src={giraffe} alt="" />
+                            </div>
+                        )}
+                    </Droppable>
+                </DragDropContext>
+            </div>
+        );
+    }
+}
+
+// Put the thing into the DOM!
+export default onetwotree;

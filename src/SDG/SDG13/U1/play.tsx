@@ -1,10 +1,9 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import logo from "./13_Bild_Suchspiel.png";
-import akw from "./svg_search_objects/akw.svg";
 
 // eslint-disable-next-line react/prefer-stateless-function
-export class play extends React.Component {
+export class play13 extends React.Component {
     render(): JSX.Element {
         return (
             <div className="sdg13-play-scale" >
@@ -67,4 +66,3 @@ export class play extends React.Component {
         );
     }
 }
-export default play;

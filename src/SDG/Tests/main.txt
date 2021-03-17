@@ -1,0 +1,91 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react/jsx-no-comment-textnodes */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable react/state-in-constructor */
+import React, { Component } from 'react';
+import logo from "./frog.png";
+// eslint-disable-next-line import/extensions
+import Trash from "./trash.txt" ;
+
+
+class App extends Component {
+  state = {
+    status: 'NA',
+    targetTrashId: null,
+    
+    trash: [
+    { name: "banana peel", id: 0},
+    { name: "beer can", id: 1}, 
+    { name: "apple core", id: 2},
+    { name: "chip packet", id: 3}
+    ]
+}
+
+
+onDragStart = (id: any) => {
+  this.setState ({ status: 'onStart', targetTrashId: id})
+}
+
+onDragOver = (e: { preventDefault: () => void; }) => {
+  e.preventDefault();
+  this.setState ({ status: 'onDragOver'})
+}
+
+onDrop = () => {
+  const trash = [...this.state.trash]   // copys current trash items
+  const id = this.state.targetTrashId   // pulls the targeted trash item
+
+  const newTrashArray: { name: string; id: number; }[] = []   // declares new array
+  trash.forEach( item => {   // sorts & pushes items excluding targettrash into new array 
+    if (item.id !== id) {
+    newTrashArray.push(item) }
+  })
+ this.setState ({ status: 'onDrop', trash: newTrashArray })
+}
+
+
+render() {
+
+  const trash = (
+    <div>
+    {this.state.trash.map((item) => {
+      return <Trash 
+      onDragStart={() => this.onDragStart(item.id)}
+      name={item.name}
+      id={item.id}
+    
+    })}
+    </div>
+  )
+
+    return (
+    <div className="App">
+  
+
+      <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1>30 days of React</h1>
+          <h2>Day Twenty / Drag & Drop Trash Can</h2>
+      </header>
+
+
+    <h3>Drag Status: {this.state.status}</h3>
+     
+     // eslint-disable-next-line react/jsx-no-comment-textnodes
+     {trash}
+
+     // eslint-disable-next-line jsx-a11y/alt-text
+     <img src={logo} 
+     className="trash-can"
+     onDragOver={(e) => this.onDragOver(e)}
+     onDrop={() => this.onDrop()}/>
+
+    </div>
+
+    );
+  }
+}
+
+export default App;

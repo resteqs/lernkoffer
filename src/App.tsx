@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+
 // eslint-disable-next-line import/no-named-as-default
 import home from "./home";
 
@@ -8,8 +9,6 @@ import sdg12 from "./SDG/SDG12/sdg12";
 
 // eslint-disable-next-line import/no-named-as-default
 import sdg13 from "./SDG/SDG13/sdg13";
-// eslint-disable-next-line import/no-named-as-default
-import play from "./SDG/SDG13/play";
 
 // eslint-disable-next-line import/no-duplicates
 // eslint-disable-next-line import/no-named-as-default
@@ -24,23 +23,27 @@ import photosynthese from "./SDG/dictionary/photsynthese";
 import "./styles/App.css";
 import help from "./help";
 
-import page1 from "./SDG/SDG13/tutorial/page1";
-import page2 from "./SDG/SDG13/tutorial/page2";
-import page3 from "./SDG/SDG13/tutorial/page3";
+import { play13 }  from "./SDG/SDG13/U1/play";
 
-import akw from "./SDG/SDG13/information/akw";
-import cow from "./SDG/SDG13/information/cow";
-import bicycle from "./SDG/SDG13/information/bicycle";
-import windTurbine from "./SDG/SDG13/information/windTurbine";
-import tractor from "./SDG/SDG13/information/tractor";
-import tree from "./SDG/SDG13/information/tree";
-import foxHedgehog from "./SDG/SDG13/information/foxHedgehog";
+import page1 from "./SDG/SDG13/U1/tutorial/page1";
+import page2 from "./SDG/SDG13/U1/tutorial/page2";
+import page3 from "./SDG/SDG13/U1/tutorial/page3";
+
+import akw from "./SDG/SDG13/U1/information/akw";
+import cow from "./SDG/SDG13/U1/information/cow";
+import bicycle from "./SDG/SDG13/U1/information/bicycle";
+import windTurbine from "./SDG/SDG13/U1/information/windTurbine";
+import tractor from "./SDG/SDG13/U1/information/tractor";
+import tree from "./SDG/SDG13/U1/information/tree";
+import foxHedgehog from "./SDG/SDG13/U1/information/foxHedgehog";
 
 
 import page141 from "./SDG/SDG14/tutorial/page141";
 import page142 from "./SDG/SDG14/tutorial/page142";
 import page143 from "./SDG/SDG14/tutorial/page143";
+
 import play14 from "./SDG/SDG14/play14";
+
 import clownfish from "./SDG/SDG14/search_info/clownfish";
 import ray from "./SDG/SDG14/search_info/ray";
 import seaHorse from "./SDG/SDG14/search_info/seaHorse";
@@ -49,6 +52,12 @@ import siamesefightingFish from "./SDG/SDG14/search_info/siameseFightingFish";
 import surgeonfish from "./SDG/SDG14/search_info/surgeonfish";
 import turtle from "./SDG/SDG14/search_info/turtle";
 import boat from "./SDG/SDG14/search_info/boat";
+
+import {drag} from "./SDG/Tests/drag";
+import { five } from "./SDG/Tests/five";
+
+import { Main } from "./SDG/SDG13/U2/DND/Main";
+
 
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -75,7 +84,7 @@ export class App extends React.Component {
                         <Route exact path="/sdg13/tutorial/page2" component={page2} />
                         <Route exact path="/sdg13/tutorial/page3" component={page3} />
                         
-                        <Route exact path="/sdg13/play"  component={play} />
+                        <Route exact path="/sdg13/play"  component={play13} />
 
                         <Route exact path="/sdg13/play/akw" component={akw} />
                         <Route exact path="/sdg13/play/cow" component={cow} />
@@ -84,6 +93,9 @@ export class App extends React.Component {
                         <Route exact path="/sdg13/play/tractor" component={tractor} />
                         <Route exact path="/sdg13/play/tree" component={tree}/>
                         <Route exact path="/sdg13/play/fox_and_hedgehog" component={foxHedgehog}/>
+
+                        <Route exact path="/sdg13/u1/dnd" component={Main} />
+
 
                         <Route exact path="/sdg14/tutorial/page1" component={page141} />
                         <Route exact path="/sdg14/tutorial/page2" component={page142} />
@@ -99,7 +111,10 @@ export class App extends React.Component {
                         <Route exact path="/sdg14/play/surgeonfish" component={surgeonfish} />
                         <Route exact path="/sdg14/play/turtle" component={turtle} />
                         <Route exact path="/sdg14/play/boat" component={boat} />
-
+                    
+                        <Route exact path="/playground1" component={drag} />
+                        <Route exact path="/playground2" component={five} />
+                        
                     </Switch>
                 </div>
             </Router>
