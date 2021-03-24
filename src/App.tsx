@@ -57,6 +57,7 @@ import {drag} from "./SDG/Tests/drag";
 import { five } from "./SDG/Tests/five";
 
 import { Main } from "./SDG/SDG13/U2/DND/Main";
+import { infopage } from "./SDG/SDG13/U0/13_00_infotext_1";
 
 
 
@@ -79,6 +80,8 @@ export class App extends React.Component {
                         <Route exact path="/dictionary/methane" component={methane} />
                         <Route exact path="/dictionary/photosynthese" component={photosynthese} />
 
+
+                        <Route exact path="/sdg13/u0/infotext" component={infopage} />
 
                         <Route exact path="/sdg13/tutorial/page1" component={page1} />
                         <Route exact path="/sdg13/tutorial/page2" component={page2} />

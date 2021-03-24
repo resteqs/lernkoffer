@@ -6,6 +6,36 @@
     scroll-behavior: smooth;
 }
 
+.infoNav{
+    display: flex;
+    justify-content: space-around;
+    min-height: 10vh;
+    align-items: center;
+    background-color: #fcf4d9;
+}
+
+.infoLogo{
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.infoNavLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding-right: 20px;
+}
+
+.infoText{
+    padding: 3%;
+    padding-top: 1%;   
+    font-size: x-large;
+}
+
+.infodistancebttexts{
+    margin-bottom: 5%;
+}
 li {
     list-style-type: none;
     text-decoration: none;
@@ -260,7 +290,6 @@ li {
     width: 63%;
     height: 50%
 }
-
 .siamesefightingfish{
     transform: translate(17.4%, -0.7%) scale(0.7, 0.7);
     /*fill: transparent;*/
@@ -313,4 +342,9 @@ li {
 .test1{
     fill:transparent;
     size: 200%;
+}
+
+.lineHight{
+    line-height: 300%
+
 }
