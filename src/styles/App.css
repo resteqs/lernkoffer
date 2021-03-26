@@ -6,7 +6,10 @@
     scroll-behavior: smooth;
 }
 
-.infoNav{
+.infoNav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     min-height: 10vh;
@@ -14,26 +17,26 @@
     background-color: #fcf4d9;
 }
 
-.infoLogo{
+.infoLogo {
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.infoNavLinks{
+.infoNavLinks {
     display: flex;
     justify-content: space-around;
     width: 80%;
     padding-right: 20px;
 }
 
-.infoText{
+.infoText {
     padding: 3%;
-    padding-top: 1%;   
+    padding-top: 1%;
     font-size: x-large;
 }
 
-.infodistancebttexts{
+.infodistancebttexts {
     margin-bottom: 5%;
 }
 li {
@@ -121,82 +124,81 @@ li {
 }
 
 .svg13 {
-    transform: translate(0%, -210%) scale(3.1)  ;
+    transform: translate(0%, -210%) scale(3.1);
     fill: transparent;
     width: 63%;
     height: 50%;
     display: flex;
     align-items: center;
- 
 }
 
-.bicycle{
+.bicycle {
     transform: translate(32%, 5%) scale(1.2);
     /*fill: transparent;*/
     width: 63%;
-    height: 50%;   
+    height: 50%;
 }
 
-.akw{
+.akw {
     transform: translate(-52%, -36%) scale(1.35, 1.2);
     /*fill: transparent;*/
     width: 63%;
-    height: 50%; 
+    height: 50%;
 }
 
-.cow{
+.cow {
     transform: translate(-43%, 14%) scale(1.3, 1.2);
     /*fill: transparent;*/
     width: 63%;
-    height: 50%; 
+    height: 50%;
 }
 
-.wind_turbine{
+.wind_turbine {
     transform: translate(69%, -41%) scale(1.25, 1.3);
     /*fill: transparent;*/
     width: 63%;
-    height: 50%; 
+    height: 50%;
 }
 
-.hedgehog{
+.hedgehog {
     transform: translate(39%, 29%) scale(1.25, 1.3);
     /*fill: transparent;*/
     width: 63%;
-    height: 50%; 
+    height: 50%;
 }
 
-.tractor{
+.tractor {
     transform: translate(119%, -1%) scale(1.25, 1.3);
     /*fill: transparent;*/
     width: 63%;
     height: 50%;
 }
 
-.tree{
+.tree {
     transform: translate(136%, 15%) scale(1.25, 1.25);
     /*fill: transparent;*/
     width: 63%;
-    height: 50%
+    height: 50%;
 }
 
-.fox{
+.fox {
     transform: translate(148%, 16%) scale(1.2, 1.2);
     /*fill: transparent;*/
     width: 63%;
-    height: 50%
+    height: 50%;
 }
 
-.playinformation{
+.playinformation {
     padding: 3%;
-    padding-top: 1%;   
+    padding-top: 1%;
     font-size: x-large;
 }
 
-.red{
-    color:red
+.red {
+    color: red;
 }
 
-.buttonNext{
+.buttonNext {
     background-color: #ffb85f;
     align-items: center;
     height: -40%;
@@ -207,8 +209,8 @@ li {
     text-transform: uppercase;
 }
 
-.buttonBack{
-    background-color: #ffb85f ;
+.buttonBack {
+    background-color: #ffb85f;
     align-items: center;
     height: -40%;
     width: 20%;
@@ -218,7 +220,7 @@ li {
     text-transform: uppercase;
 }
 
-.svg14{
+.svg14 {
     transform: translate(21%, -120%) scale(1.75);
     fill: transparent;
     width: 63%;
@@ -228,123 +230,122 @@ li {
     margin: 0;
 }
 
-.ship{
+.ship {
     transform: translate(-8%, -19%) scale(0.75, 0.75);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.turtle{
-    transform: translate(44.8%, 12.2%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.turtle1{
-    transform: translate(-18.5%, -4.1%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.shark{
-    transform: translate(49.5%, 22.3%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.clownfish{
-    transform: translate(50.9%, 52.1%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.clownfish1{
-    transform: translate(1%, 3.5%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.clownfish2{
-    transform: translate(31%, 43.5%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.ray{
-    transform: translate(30.1%, 25.0%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.ray1{
-    transform: translate(5.1%, -12.0%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-.siamesefightingfish{
-    transform: translate(17.4%, -0.7%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.surgeonfish{
-    transform: translate(38.5%, 14.5%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.surgeonfish1{
-    transform: translate(55%, 8.5%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.surgeonfish2{
-    transform: translate(37.2%, 33.2%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.surgeonfish3{
-    transform: translate(7.1%,12.8%) scale(0.7, 0.7);
-    /*fill: transparent;*/
-    width: 63%;
-    height: 50%
-}
-
-.surgeonfish4{
-    transform: translate(25%,-25.6%) scale(0.7, 0.7);
     /*fill: transparent;*/
     width: 63%;
     height: 50%;
 }
 
-.seahorse{
+.turtle {
+    transform: translate(44.8%, 12.2%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.turtle1 {
+    transform: translate(-18.5%, -4.1%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.shark {
+    transform: translate(49.5%, 22.3%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.clownfish {
+    transform: translate(50.9%, 52.1%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.clownfish1 {
+    transform: translate(1%, 3.5%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.clownfish2 {
+    transform: translate(31%, 43.5%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.ray {
+    transform: translate(30.1%, 25%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.ray1 {
+    transform: translate(5.1%, -12%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+.siamesefightingfish {
+    transform: translate(17.4%, -0.7%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.surgeonfish {
+    transform: translate(38.5%, 14.5%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.surgeonfish1 {
+    transform: translate(55%, 8.5%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.surgeonfish2 {
+    transform: translate(37.2%, 33.2%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.surgeonfish3 {
+    transform: translate(7.1%, 12.8%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.surgeonfish4 {
+    transform: translate(25%, -25.6%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.seahorse {
     transform: translate(44%, 25.1%) scale(0.7, 0.7);
     /*fill: transparent;*/
     width: 63%;
     height: 50%;
 }
 
-.test1{
-    fill:transparent;
+.test1 {
+    fill: transparent;
     size: 200%;
 }
 
-.lineHight{
-    line-height: 300%
-
+.lineHeight {
+    line-height: 600%;
 }

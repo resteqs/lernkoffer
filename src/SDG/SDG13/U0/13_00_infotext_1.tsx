@@ -63,6 +63,7 @@ export class infopage extends React.Component {
 
                 <div>
                     <div className="infodistancebttexts" id="section1">
+                        <p className ="lineHeight">_</p>
                         <p className="header">Why</p>
                         <div className="infoText">
                             <p>
