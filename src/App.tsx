@@ -38,27 +38,29 @@ import tree from "./SDG/SDG13/U1/information/tree";
 import foxHedgehog from "./SDG/SDG13/U1/information/foxHedgehog";
 
 
-import page141 from "./SDG/SDG14/tutorial/page141";
-import page142 from "./SDG/SDG14/tutorial/page142";
-import page143 from "./SDG/SDG14/tutorial/page143";
+import page141 from "./SDG/SDG14/U1/tutorial/14tut1";
+import page142 from "./SDG/SDG14/U1/tutorial/14tut2";
+import page143 from "./SDG/SDG14/U1/tutorial/14tut3";
 
-import play14 from "./SDG/SDG14/play14";
+import play14 from "./SDG/SDG14/U2/play14";
 
-import clownfish from "./SDG/SDG14/search_info/clownfish";
-import ray from "./SDG/SDG14/search_info/ray";
-import seaHorse from "./SDG/SDG14/search_info/seaHorse";
-import shark from "./SDG/SDG14/search_info/shark";
-import siamesefightingFish from "./SDG/SDG14/search_info/siameseFightingFish";
-import surgeonfish from "./SDG/SDG14/search_info/surgeonfish";
-import turtle from "./SDG/SDG14/search_info/turtle";
-import boat from "./SDG/SDG14/search_info/boat";
+import clownfish from "./SDG/SDG14/U2/search_info/clownfish";
+import ray from "./SDG/SDG14/U2/search_info/ray";
+import seaHorse from "./SDG/SDG14/U2/search_info/seaHorse";
+import shark from "./SDG/SDG14/U2/search_info/shark";
+import siamesefightingFish from "./SDG/SDG14/U2/search_info/siameseFightingFish";
+import surgeonfish from "./SDG/SDG14/U2/search_info/surgeonfish";
+import turtle from "./SDG/SDG14/U2/search_info/turtle";
+import boat from "./SDG/SDG14/U2/search_info/boat";
 
 import {drag} from "./SDG/Tests/drag";
 import { five } from "./SDG/Tests/five";
 
 import { Main } from "./SDG/SDG13/U2/DND/Main";
-import { infopage } from "./SDG/SDG13/U0/13_00_infotext_1";
-
+import { infotext06 } from "./SDG/SDG6/U0/06infotext";
+import { infotext11 } from "./SDG/SDG11/U0/11infotext";
+import { infotext13 } from "./SDG/SDG13/U0/13infotext";
+import { infotext14 } from "./SDG/SDG14/U0/14infotext";
 
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -81,11 +83,17 @@ export class App extends React.Component {
                         <Route exact path="/dictionary/photosynthese" component={photosynthese} />
 
 
-                        <Route exact path="/sdg13/u0/infotext" component={infopage} />
+                        <Route exact path="/sdg06/u0/infotext06" component={infotext06} />
 
-                        <Route exact path="/sdg13/tutorial/page1" component={page1} />
-                        <Route exact path="/sdg13/tutorial/page2" component={page2} />
-                        <Route exact path="/sdg13/tutorial/page3" component={page3} />
+
+                        <Route exact path="/sdg06/u0/infotext11" component={infotext11} />
+
+
+                        <Route exact path="/sdg13/u0/infotext13" component={infotext13} />
+
+                        <Route exact path="/sdg13/tutorial/page1" component={page141} />
+                        <Route exact path="/sdg13/tutorial/page2" component={page142} />
+                        <Route exact path="/sdg13/tutorial/page3" component={page143} />
                         
                         <Route exact path="/sdg13/play"  component={play13} />
 
@@ -99,6 +107,8 @@ export class App extends React.Component {
 
                         <Route exact path="/sdg13/u1/dnd" component={Main} />
 
+
+                        <Route exact path="/sdg14/u0/infotext14" component={infotext14} />
 
                         <Route exact path="/sdg14/tutorial/page1" component={page141} />
                         <Route exact path="/sdg14/tutorial/page2" component={page142} />

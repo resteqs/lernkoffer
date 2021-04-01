@@ -25,4 +25,4 @@ class page141 extends React.Component {
     }
 }
 
-export default page141;
+export default page141
