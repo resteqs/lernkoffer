@@ -66,7 +66,7 @@ export class infotext06 extends React.Component {
                 <div>
                     <div className="infodistancebttexts" id="section1">
                         <p className="lineHeight">_</p>
-                        <p className="header">SDG 6</p>
+                        <p className="header">Goal 6: Clean water and sanitation</p>
                         <p className="subheading1">Why</p>
                         <div className="infoText">
                             <p>It is a human right to have access to water, sanitation and hygiene.</p>
