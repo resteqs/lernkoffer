@@ -305,6 +305,7 @@ li {
     width: 63%;
     height: 50%;
 }
+
 .siamesefightingfish {
     transform: translate(17.4%, -0.7%) scale(0.7, 0.7);
     /*fill: transparent;*/
@@ -361,4 +362,5 @@ li {
 
 .lineHeight {
     line-height: 600%;
+    min-height: 12vh;
 }
