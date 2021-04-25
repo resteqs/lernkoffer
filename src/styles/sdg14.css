@@ -1,0 +1,121 @@
+.svg14 {
+    transform: translate(21%, -120%) scale(1.75);
+    fill: transparent;
+    width: 63%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.ship {
+    transform: translate(-8%, -19%) scale(0.75, 0.75);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.turtle {
+    transform: translate(44.8%, 12.2%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.turtle1 {
+    transform: translate(-18.5%, -4.1%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.shark {
+    transform: translate(49.5%, 22.3%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.clownfish {
+    transform: translate(50.9%, 52.1%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.clownfish1 {
+    transform: translate(1%, 3.5%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.clownfish2 {
+    transform: translate(31%, 43.5%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.ray {
+    transform: translate(30.1%, 25%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.ray1 {
+    transform: translate(5.1%, -12%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.siamesefightingfish {
+    transform: translate(17.4%, -0.7%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.surgeonfish {
+    transform: translate(38.5%, 14.5%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.surgeonfish1 {
+    transform: translate(55%, 8.5%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.surgeonfish2 {
+    transform: translate(37.2%, 33.2%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.surgeonfish3 {
+    transform: translate(7.1%, 12.8%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.surgeonfish4 {
+    transform: translate(25%, -25.6%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}
+
+.seahorse {
+    transform: translate(44%, 25.1%) scale(0.7, 0.7);
+    /*fill: transparent;*/
+    width: 63%;
+    height: 50%;
+}

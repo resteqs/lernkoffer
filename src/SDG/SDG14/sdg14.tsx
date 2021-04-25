@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {Link} from 'react-router-dom';
-import { JsxEmit } from 'typescript';
+import "./sdg14.css";
 
 // eslint-disable-next-line react/prefer-stateless-function
 class sdg14 extends React.Component{

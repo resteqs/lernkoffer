@@ -12,18 +12,27 @@ class help extends React.Component {
                         SDG12
                     </a>
 
-                    <Link to = "sdg06/u0/infotext06">
+                    <Link to = "sdg06/u1/infotext06">
                         <div className="centre">SDG 06 infotext</div>
                     </Link>
 
-                    <Link to = "sdg06/u0/infotext11">
+                    <Link to = "sdg06/u1/infotext11">
                         <div className="centre">SDG 11 infotext</div>
                     </Link>
-
-                    <Link to = "/sdg13/u0/infotext13">
+                    
+                    <Link to = "/sdg13/u2/infotext13">
                         <div className="centre">SDG 13 infotext</div>
                     </Link>
 
+                    <Link to = "/sdg13/u3/tutorial1">
+                        <div className="centre">SDG 13 CO2 Quiz</div>
+                    </Link>
+
+                    <Link to =  "/sdg13/u3/question1">
+                        <div className="centre">SDG 13 CO2 Quiz Question 1</div>
+                    </Link>
+
+                   
                     <Link to="/sdg13">
                         <div className="centre">SDG 13 search game</div>
                     </Link>

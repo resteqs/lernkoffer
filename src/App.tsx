@@ -21,13 +21,11 @@ import photosynthese from "./SDG/dictionary/photsynthese";
 
 
 import "./styles/App.css";
+import "./styles/sdg13.css";
+import "./styles/sdg14.css";
 import help from "./help";
 
 import { play13 }  from "./SDG/SDG13/U1/play";
-
-import page1 from "./SDG/SDG13/U1/tutorial/page1";
-import page2 from "./SDG/SDG13/U1/tutorial/page2";
-import page3 from "./SDG/SDG13/U1/tutorial/page3";
 
 import akw from "./SDG/SDG13/U1/information/akw";
 import cow from "./SDG/SDG13/U1/information/cow";
@@ -53,14 +51,24 @@ import surgeonfish from "./SDG/SDG14/U2/search_info/surgeonfish";
 import turtle from "./SDG/SDG14/U2/search_info/turtle";
 import boat from "./SDG/SDG14/U2/search_info/boat";
 
-import {drag} from "./SDG/Tests/drag";
+import { drag } from "./SDG/Tests/drag";
 import { five } from "./SDG/Tests/five";
 
-import { Main } from "./SDG/SDG13/U2/DND/Main";
+import { Main } from "./SDG/SDG13/U5/DND/Main";
 import { infotext06 } from "./SDG/SDG6/U0/06infotext";
 import { infotext11 } from "./SDG/SDG11/U0/11infotext";
 import { infotext13 } from "./SDG/SDG13/U0/13infotext";
 import { infotext14 } from "./SDG/SDG14/U0/14infotext";
+import { tutorial_13_u3 } from "./SDG/SDG13/U3/tutorial_13_U3";
+import { question1_13_u3 } from "./SDG/SDG13/U3/question1_13_U3";
+import { answer1_13_u3 } from "./SDG/SDG13/U3/answer1_13_U3";
+import { answer3_13_u3 } from "./SDG/SDG13/U3/answer3_13_U3";
+import { question3_13_u3 } from "./SDG/SDG13/U3/question3_13_U3";
+import { answer2_13_u3 } from "./SDG/SDG13/U3/answer2_13_U3";
+import { question2_13_u3 } from "./SDG/SDG13/U3/question2_13_U3";
+import { tips_13_u3 } from "./SDG/SDG13/U3/tips_13_U3";
+
+
 
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -83,13 +91,22 @@ export class App extends React.Component {
                         <Route exact path="/dictionary/photosynthese" component={photosynthese} />
 
 
-                        <Route exact path="/sdg06/u0/infotext06" component={infotext06} />
+                        <Route exact path="/sdg06/u1/infotext06" component={infotext06} />
 
 
-                        <Route exact path="/sdg06/u0/infotext11" component={infotext11} />
+                        <Route exact path="/sdg06/u1/infotext11" component={infotext11} />
 
 
-                        <Route exact path="/sdg13/u0/infotext13" component={infotext13} />
+                        <Route exact path="/sdg13/u1/infotext13" component={infotext13} />
+                        
+                        <Route exact path="/sdg13/u3/tutorial1" component={tutorial_13_u3} />
+                        <Route exact path="/sdg13/u3/tips" component={tips_13_u3} />
+                        <Route exact path="/sdg13/u3/question1" component={question1_13_u3} />
+                        <Route exact path="/sdg13/u3/answer1" component={answer1_13_u3} />
+                        <Route exact path="/sdg13/u3/question2" component={question2_13_u3} />
+                        <Route exact path="/sdg13/u3/answer2" component={answer2_13_u3} />
+                        <Route exact path="/sdg13/u3/question3" component={question3_13_u3} />
+                        <Route exact path="/sdg13/u3/answer3" component={answer3_13_u3} />
 
                         <Route exact path="/sdg13/tutorial/page1" component={page141} />
                         <Route exact path="/sdg13/tutorial/page2" component={page142} />
