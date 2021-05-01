@@ -1,6 +1,7 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable unicorn/filename-case */
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class answer3_13_u3 extends React.Component {
@@ -23,7 +24,11 @@ export class answer3_13_u3 extends React.Component {
                 <p className = "solution">
                 The passenger car does, it is estimated that those vehicles free about 1.00 g/Pkm whereas the buses only free about 0.06 g/Pkm
                 </p>
-                <a className = "greenButton" href="/sdg13/u3/tips" >Tips</a>
+                <Link to  = "/sdg13/u3/tips">
+                    <div className = "greenButton">
+                        Tips
+                    </div>
+                </Link>
             </div>
         );
     }

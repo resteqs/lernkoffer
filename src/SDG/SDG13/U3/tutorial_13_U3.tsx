@@ -1,5 +1,6 @@
 // eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class tutorial_13_u3 extends React.Component {
@@ -31,7 +32,12 @@ export class tutorial_13_u3 extends React.Component {
                     After everybody chose an answer take a look at the solution and maybe those of you who chose
                     correctly can explain their thoughts to those who stood in the other corners/spots
                 </p>
-                <a className = "greenButton" href="/sdg13/u3/question1">Got it</a>
+                <Link to = "/sdg13/u3/question1">
+                    <div className = "greenButton"  > 
+                        Got it
+                    </div>
+                   
+                </Link>
             </div>
         );
     }

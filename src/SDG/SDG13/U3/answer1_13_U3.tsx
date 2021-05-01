@@ -1,6 +1,7 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable unicorn/filename-case */
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class answer1_13_u3 extends React.Component {
@@ -23,7 +24,11 @@ export class answer1_13_u3 extends React.Component {
                 <p className = "solution">
                     The plane does. Studies show that a plane produces about 230 grams per Person per kilometer (g/Pkm) while a passenger car only frees about 147 g/Pkm.
                 </p>
-                <a className = "greenButton" href="/sdg13/u3/question2" >Next Question</a>
+                <Link to  = "/sdg13/u3/question2">
+                    <div className = "greenButton">
+                        Next Question
+                    </div>
+                </Link>
             </div>
         );
     }

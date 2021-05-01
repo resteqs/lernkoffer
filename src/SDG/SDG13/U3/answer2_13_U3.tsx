@@ -1,6 +1,7 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable unicorn/filename-case */
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class answer2_13_u3 extends React.Component {
@@ -23,7 +24,11 @@ export class answer2_13_u3 extends React.Component {
                 <p className = "solution">
                     None of them does produce any of those gases.
                 </p>
-                <a className = "greenButton" href="/sdg13/u3/question3" >Next Question</a>
+                <Link to  = "/sdg13/u3/question3">
+                    <div className = "greenButton">
+                        Next Question
+                    </div>
+                </Link>
             </div>
         );
     }
