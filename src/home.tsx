@@ -9,7 +9,7 @@ export class home extends React.Component{
                <div className = "header">
                This is our home page
                Need help
-               Go to     
+               Go to:     
                </div> 
                <div className = "header">
                <Link  to = "/help" >HELP</Link>
