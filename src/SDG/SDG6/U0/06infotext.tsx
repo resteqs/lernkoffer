@@ -81,7 +81,7 @@ export class infotext06 extends React.Component {
                             </p>
                             <p>
                                 Many countries face growing challenges that are for example linked to water scarcity or
-                                water pollution.
+                                water pollution..
                             </p>
                         </div>
                     </div>
