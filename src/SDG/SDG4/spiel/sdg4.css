@@ -1,0 +1,11 @@
+.board {
+    max-width: 70%;
+    position: absolute;
+    left: 0;
+}
+.cards{
+    position: absolute;
+    right: 15%;   
+    max-width: 10%;
+    margin-top: 5%;
+}
