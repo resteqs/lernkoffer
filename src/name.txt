@@ -1,0 +1,8 @@
+Name der Klasse:
+    - _name_Nummer des SDGs
+
+URL der Website
+    - /SDG/Umsetzungsnummer/name/...
+
+Name der Files
+    - Nummer des SDGs_name(spiel,quiz,info)_Umsetzung
