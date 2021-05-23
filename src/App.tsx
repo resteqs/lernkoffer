@@ -56,6 +56,7 @@ import { five } from "./SDG/Tests/five";
 
 import { Main } from "./SDG/SDG13/U5/DND/Main";
 import { infotext06 } from "./SDG/SDG6/U0/06infotext";
+import { spiel04 } from "./SDG/SDG4/spiel/04spiel";
 import { infotext11 } from "./SDG/SDG11/U0/11infotext";
 import { infotext13 } from "./SDG/SDG13/U0/13infotext";
 import { infotext14 } from "./SDG/SDG14/U0/14infotext";
@@ -90,7 +91,7 @@ export class App extends React.Component {
                         <Route exact path="/dictionary/methane" component={methane} />
                         <Route exact path="/dictionary/photosynthese" component={photosynthese} />
 
-
+                        <Route exact path="/sdg04/spiel1/spiel04" component={spiel04} />
                         <Route exact path="/sdg06/u1/infotext06" component={infotext06} />
 
 
