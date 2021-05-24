@@ -8,38 +8,42 @@ import './sdg4.css';
 
 const colors = ["red","blue","green","yellow"];
 let randColor = colors[Math.floor(Math.random() * colors.length)];
-
-interface IAppState {
-    shouldShowModal: boolean;
+enum modals {
+  NONE = 'NONE',
+  modalOne = 'modalOne',
+  modalTwo = 'modalTwo'
 }
-
-
+interface IAppState {
+    shouldShowModal: modals;
+}
 // eslint-disable-next-line react/prefer-stateless-function
 export class spiel04 extends React.Component<unknown, IAppState>{
     
     constructor(props: unknown) {
         super(props);
         this.state = {
-          shouldShowModal: false,
+          shouldShowModal: modals.NONE,
         }
         this.closeModal = this.closeModal.bind(this);
         this.openModal = this.openModal.bind(this);
-
       }
 
       private closeModal(): void {
-        this.setState({ shouldShowModal: false });
+        this.setState({ shouldShowModal: modals.NONE });
       }
   
-      public openModal(): void {
-        this.setState({ shouldShowModal: true });
+      public openModal(e: React.MouseEvent<HTMLButtonElement>): void {
+        let modalToOpen = e.currentTarget.dataset.modalId as modals;
+        if (!modals[modalToOpen]) {
+          console.log(`Modal ${modalToOpen} not found`);
+          modalToOpen = modals.NONE;
+        }
+        this.setState({ shouldShowModal: modalToOpen });
         randColor = colors[Math.floor(Math.random() * colors.length)];
       }
       
-
-     
+      
       public render(): JSX.Element{
-    
         const modalStyle: ICustomModalStyle = {
             animationTime: 400,
             closeButtonText: {
@@ -55,7 +59,6 @@ export class spiel04 extends React.Component<unknown, IAppState>{
               color: 'white'
             }
           };
-
         return(
            <div><div className = "standard-background" >
            <div className = "header">
@@ -68,12 +71,21 @@ export class spiel04 extends React.Component<unknown, IAppState>{
           <Modal
             closeModal={this.closeModal}
             customStyle={modalStyle}
-            shouldShowModal={this.state.shouldShowModal}
+            shouldShowModal={this.state.shouldShowModal === modals.modalOne}
             title="Your word is:"
           >
            Test: { randColor }
           </Modal>
-          <button type="button" onClick={this.openModal}> <img className = "cards" alt ="test" src={Cards}/></button>
+          <Modal
+            closeModal={this.closeModal}
+            customStyle={modalStyle}
+            shouldShowModal={this.state.shouldShowModal === modals.modalTwo}
+            title="Your word is:"
+          >
+           Modal Two Test: { randColor }
+          </Modal>
+          <button data-modal-id={modals.modalOne} type="button" onClick={this.openModal}> <img className = "cards" alt ="test" src={Cards}/></button>
+          <button data-modal-id={modals.modalTwo} type="button" onClick={this.openModal}>support</button>
         </div>
         </div>
            
@@ -84,4 +96,3 @@ export class spiel04 extends React.Component<unknown, IAppState>{
  
 }
 export default spiel04
-
