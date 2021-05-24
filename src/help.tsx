@@ -12,6 +12,14 @@ class help extends React.Component {
                         SDG12
                     </a>
 
+                    <Link to = "sdg03/u1/infotext">
+                        <div className="centre">SDG 03 infotext</div>
+                    </Link>
+
+                    <Link to="/sdg04/spiel1/spiel04">
+                        <div className="centre">SDG 4 game</div>
+                    </Link>
+                    
                     <Link to = "sdg06/u1/infotext06">
                         <div className="centre">SDG 06 infotext</div>
                     </Link>
@@ -31,8 +39,7 @@ class help extends React.Component {
                     <Link to =  "/sdg13/u3/question1">
                         <div className="centre">SDG 13 CO2 Quiz Question 1</div>
                     </Link>
-
-                   
+      
                     <Link to="/sdg13">
                         <div className="centre">SDG 13 search game</div>
                     </Link>
@@ -52,9 +59,7 @@ class help extends React.Component {
                     <Link to="/sdg14/play">
                         <div className="centre">SDG 14 game</div>
                     </Link>
-                    <Link to="/sdg04/spiel1/spiel04">
-                        <div className="centre">SDG 4 game</div>
-                    </Link>
+                    
                 </div>
             </div>
         );
