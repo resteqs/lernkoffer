@@ -51,9 +51,6 @@ import surgeonfish from "./SDG/SDG14/U2/search_info/surgeonfish";
 import turtle from "./SDG/SDG14/U2/search_info/turtle";
 import boat from "./SDG/SDG14/U2/search_info/boat";
 
-import { drag } from "./SDG/Tests/drag";
-import { five } from "./SDG/Tests/five";
-
 import { Main } from "./SDG/SDG13/U5/DND/Main";
 import { infotext06 } from "./SDG/SDG6/U0/06infotext";
 import { spiel04 } from "./SDG/SDG4/spiel/04spiel";
@@ -68,6 +65,7 @@ import { question3_13_u3 } from "./SDG/SDG13/U3/question3_13_U3";
 import { answer2_13_u3 } from "./SDG/SDG13/U3/answer2_13_U3";
 import { question2_13_u3 } from "./SDG/SDG13/U3/question2_13_U3";
 import { tips_13_u3 } from "./SDG/SDG13/U3/tips_13_U3";
+import { infotext03 } from "./SDG/SDG03/U01/03infotext01";
 
 
 
@@ -79,11 +77,8 @@ export class App extends React.Component {
             <Router basename="/lernkoffer">
                 <div className="App">
                     <Switch>
-                        <Route path="/" exact component={home} />
-                        <Route path="/help" exact component={help} />
-                        <Route path="/sdg11" exact component={sdg12} />
-                        <Route path="/sdg12" exact component={sdg12} />
-                        <Route path="/sdg13" exact component={sdg13} />
+                        <Route exact path="/" component={home} />
+                        <Route exact path="/help" component={help} />
                         
                         <Route exact path="/dictionary"  component={dictionary} />
                         <Route exact path="/dictionary/co2" component={co2} />
@@ -91,15 +86,19 @@ export class App extends React.Component {
                         <Route exact path="/dictionary/methane" component={methane} />
                         <Route exact path="/dictionary/photosynthese" component={photosynthese} />
 
+                        <Route exact path="/sdg03/u1/infotext" component={infotext03} />
+
                         <Route exact path="/sdg04/spiel1/spiel04" component={spiel04} />
                         <Route exact path="/sdg06/u1/infotext06" component={infotext06} />
 
-
                         <Route exact path="/sdg06/u1/infotext11" component={infotext11} />
 
+                        <Route exact path="/sdg11" component={sdg12} />
 
+                        <Route exact path="/sdg12" component={sdg12} />
+
+                        <Route exact path="/sdg13" component={sdg13} />
                         <Route exact path="/sdg13/u1/infotext13" component={infotext13} />
-                        
                         <Route exact path="/sdg13/u3/tutorial1" component={tutorial_13_u3} />
                         <Route exact path="/sdg13/u3/tips" component={tips_13_u3} />
                         <Route exact path="/sdg13/u3/question1" component={question1_13_u3} />
@@ -141,11 +140,7 @@ export class App extends React.Component {
                         <Route exact path="/sdg14/play/siameseFightingFish" component={siamesefightingFish} />
                         <Route exact path="/sdg14/play/surgeonfish" component={surgeonfish} />
                         <Route exact path="/sdg14/play/turtle" component={turtle} />
-                        <Route exact path="/sdg14/play/boat" component={boat} />
-                    
-                        <Route exact path="/playground1" component={drag} />
-                        <Route exact path="/playground2" component={five} />
-                        
+                        <Route exact path="/sdg14/play/boat" component={boat} />                       
                     </Switch>
                 </div>
             </Router>
