@@ -56,11 +56,12 @@ li {
 
 .header {
     text-align: center;
-    color: #ffb85f;
+    color: #f3f3f3;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 50px;
     line-height: 80px;
+    font-family: "Copperplate", fantasy;
 }
 
 .subheading1{
@@ -110,7 +111,7 @@ li {
 }
 
 .standard-background {
-    background-color: #fcf4d9;
+    background-color: #9dcc1a;
 }
 
 .b22 {
