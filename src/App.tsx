@@ -65,10 +65,7 @@ import { question3_13_u3 } from "./SDG/SDG13/U3/question3_13_U3";
 import { answer2_13_u3 } from "./SDG/SDG13/U3/answer2_13_U3";
 import { question2_13_u3 } from "./SDG/SDG13/U3/question2_13_U3";
 import { tips_13_u3 } from "./SDG/SDG13/U3/tips_13_U3";
-import { infotext03 } from "./SDG/SDG03/U01/03infotext01";
-
-
-
+import { infotext_03_01 } from "./SDG/SDG03/U01/infotext_03_01";
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class App extends React.Component {
@@ -86,7 +83,7 @@ export class App extends React.Component {
                         <Route exact path="/dictionary/methane" component={methane} />
                         <Route exact path="/dictionary/photosynthese" component={photosynthese} />
 
-                        <Route exact path="/sdg03/u1/infotext" component={infotext03} />
+                        <Route exact path="/sdg03/u1/infotext" component={infotext_03_01} />
 
                         <Route exact path="/sdg04/spiel1/spiel04" component={spiel04} />
                         <Route exact path="/sdg06/u1/infotext06" component={infotext06} />

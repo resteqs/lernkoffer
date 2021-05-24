@@ -1,10 +1,10 @@
 // eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import logo06 from "./logo.png";
+import logo06 from "./logo_03_01.png";
 
 // eslint-disable-next-line react/prefer-stateless-function
-export class infotext03 extends React.Component {
+export class infotext_03_01 extends React.Component {
     render(): JSX.Element {
         return (
             <div>
