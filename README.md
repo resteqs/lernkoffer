@@ -7,4 +7,4 @@ URL der Website
     - /SDG/Umsetzungsnummer/name/...
 
 Name der Files
-    - Nummer des SDGs_name(spiel,quiz,info)_UmsetzungX
+    - name(spiel,quiz,info)_Nummer des SDGs_UmsetzungX
