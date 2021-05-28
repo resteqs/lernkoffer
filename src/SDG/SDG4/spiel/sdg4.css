@@ -9,3 +9,9 @@
     max-width: 10%;
     margin-top: 5%;
 }
+.question{
+    position: absolute;
+    right: 16%;
+    max-width: 7%;
+    margin-top: 25%;
+}
