@@ -5,6 +5,8 @@ import Modal, { ICustomModalStyle } from '@bdenzer/react-modal'; /* https://gith
 import Spielfeld from './spielfeld.png';
 import Cards from './cards.png';
 import './sdg4.css';
+import '../../../styles/colour_sdgs.css';
+import Logo from '../../../SDGLogos/Goal-04.png'
 
 const colors = ["red","blue","green","yellow"];
 let randColor = colors[Math.floor(Math.random() * colors.length)];
@@ -60,14 +62,15 @@ export class spiel04 extends React.Component<unknown, IAppState>{
             }
           };
         return(
-           <div><div className = "standard-background" >
+           <div><div className = "colour_sdg04" >
            <div className = "header">
-          SDG 4:    
+          Hochwertige Bildung <img className ="sdglogo" alt="logo" src={Logo}/>    
            </div> 
            
        </div>
      
         <div>
+        <img className = "board" alt ="spielfeld" src={Spielfeld}/>
           <Modal
             closeModal={this.closeModal}
             customStyle={modalStyle}
