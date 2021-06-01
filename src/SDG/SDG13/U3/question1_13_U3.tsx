@@ -3,8 +3,25 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
+
+
+// eslint-disable-next-line import/no-mutable-exports
+let answer = 0;
+
 // eslint-disable-next-line react/prefer-stateless-function
 export class question1_13_u3 extends React.Component {
+    
+   // eslint-disable-next-line class-methods-use-this
+   public answer1() : void
+    {
+        answer = 1;
+    }
+
+    // eslint-disable-next-line class-methods-use-this
+    public answer2() : void
+    {
+        answer = 2;
+    }
 
     render(): JSX.Element {
         return (
@@ -15,10 +32,10 @@ export class question1_13_u3 extends React.Component {
                 </div>
                 <div>
                     <Link to = "/sdg13/u3/answer1">
-                        <button className = "answerButtonleft" type = "button" onClick = { () => alert("Think about it") }>
+                        <button className = "answerButtonleft" type = "button" onClick = { () => this.answer1()}> 
                             The passenger car
-                        </button>
-                        <button className = "answerButtonright" type = "button" onClick = { () => alert("Well done") } >
+                        </button> 
+                        <button className = "answerButtonright" type = "button" onClick = { () => this.answer2 } >
                             The plane
                         </button>
                     </Link>
@@ -27,3 +44,5 @@ export class question1_13_u3 extends React.Component {
         );
     }
 }
+
+export { answer }
