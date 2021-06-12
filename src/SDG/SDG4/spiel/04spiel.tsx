@@ -19,6 +19,7 @@ enum modals {
 interface IAppState {
     shouldShowModal: modals;
 }
+
 // eslint-disable-next-line react/prefer-stateless-function
 export class spiel04 extends React.Component<unknown, IAppState>{
     

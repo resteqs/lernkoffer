@@ -136,29 +136,7 @@
     font-size: x-large;
 }
 
-.answerButtonleftfalse{
-    background-color: red;
-    justify-content: space-around;
-    align-items: center;
-    padding:19px 40px;
-    float:left;
-    width: 25%;
-    margin-left: 12.5%;
-    border-radius: 30px;
-    font-size: x-large;
-}
 
-.answerButtonleftright{
-    background-color: green;
-    justify-content: space-around;
-    align-items: center;
-    padding:19px 40px;
-    float:left;
-    width: 25%;
-    margin-left: 12.5%;
-    border-radius: 30px;
-    font-size: x-large;
-}
 
 .answerButtonright{
     justify-content: space-around;
@@ -172,29 +150,7 @@
     font-size: x-large;
 }
 
-.answerButtonrightfalse{
-    background-color: red;
-    justify-content: space-around;
-    align-items: center;
-    padding:19px 40px;
-    float:right;
-    width: 25%;
-    margin-right: 12.5%;
-    border-radius: 30px;
-    font-size: x-large;
-}
 
-.answerButtonrightright{
-    background-color: green;
-    justify-content: space-around;
-    align-items: center;
-    padding:19px 40px;
-    float:right;
-    width: 25%;
-    margin-right: 12.5%;
-    border-radius: 30px;
-    font-size: x-large;
-}
 
 .solution{
     font-size: x-large;
