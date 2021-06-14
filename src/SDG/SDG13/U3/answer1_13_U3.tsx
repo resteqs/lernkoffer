@@ -2,27 +2,10 @@
 /* eslint-disable unicorn/filename-case */
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { answer } from "./question1_13_U3";
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class answer1_13_u3 extends React.Component {
 
-    constructor(props)
-    {   super(props);
-        this.DisplayAnswer();
-    }
-
-    // eslint-disable-next-line class-methods-use-this
-    DisplayAnswer() : void
-    {
-        if(answer === 1)
-        {
-            alert("nice")
-        } else {
-            alert("bad")
-        }
-        
-    }
 
     render(): JSX.Element {
         return (
