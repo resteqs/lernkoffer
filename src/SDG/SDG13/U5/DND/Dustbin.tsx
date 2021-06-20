@@ -45,13 +45,14 @@ export const Dustbin: FC<DustbinProps> = memo(function Dustbin({
   )
 
   const isActive = isOver && canDrop
-  let backgroundColor = '#ffb85f'
+  const backgroundColor = '#ffb85f'
+/*
   if (isActive) {
     backgroundColor = 'darkgreen'
   } else if (canDrop) {
     backgroundColor = 'darkkhaki'
   }
-
+*/
   return (
     // eslint-disable-next-line jsx-a11y/aria-role
     <div ref={drop} role="Dustbin" style={{ ...style, backgroundColor }}>
@@ -59,10 +60,14 @@ export const Dustbin: FC<DustbinProps> = memo(function Dustbin({
         ? 'Release to drop'
         : `This dustbin accepts: ${accept.join(', ')}`}
 
-      {lastDroppedItem && (
-        <p>Last dropped: {JSON.stringify(lastDroppedItem)}</p>
-        
-      )}
     </div>
   )
 })
+
+/* shows the last dropped item on Screen
+{lastDroppedItem && (
+        <p>Last dropped: {JSON.stringify(lastDroppedItem)}</p>
+ 
+      )}
+
+*/

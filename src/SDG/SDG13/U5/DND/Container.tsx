@@ -91,6 +91,7 @@ export const Container: FC = () => {
             // eslint-disable-next-line no-lone-blocks
             {
                 alert("Excelent");
+                
             }
         },
         [droppedBoxNames, dustbins],

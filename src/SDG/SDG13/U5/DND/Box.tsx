@@ -1,5 +1,6 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable react/react-in-jsx-scope */
+import { green } from '@material-ui/core/colors'
 import { CSSProperties, FC, memo } from 'react'
 import { useDrag } from 'react-dnd'
 
@@ -17,6 +18,11 @@ const coolerStyle:CSSProperties = {
   filter: "blur(10px)" 
 
 }
+
+const correctDropped: CSSProperties = {
+  filter: ""
+}
+
 
 export interface BoxProps {
   type: string
@@ -40,7 +46,7 @@ export const Box: FC<BoxProps> = memo(function Box({ name, image, type, isDroppe
   return (
     // eslint-disable-next-line jsx-a11y/aria-role
     <div ref={drag} role="Box" style={{ ...style, opacity }}>
-      {isDropped ?  <img style = {coolerStyle}src={image} alt=" "/>: <img src={image} alt=" "/>}
+      {isDropped ?  <img style = {coolerStyle}src={image} alt=" "/>: <img style = {correctDropped}  src={image} alt=" "/>}
      
     </div>
   )
