@@ -1,14 +1,16 @@
 // eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
 import { Link } from "react-router-dom";
+import '../../../styles/quiz.css';
+import Logo from '../../../SDGLogos/Goal-13.png';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class tutorial_13_u3 extends React.Component {
     render(): JSX.Element {
         return (
-            <div className = "text">
-                <p className = "header">Goal 13: CO<sub>2</sub> Quiz</p>
-                <p>
+            <div>
+                <div className =  "colour_sdg13"><p className = "header">Goal 13: CO<sub>2</sub> Quiz <img className ="sdglogo" alt="logo" src={Logo}/></p></div>
+                <div className = "quiztextbox" ><p>
                     As you know at the moment, we are taking a look at climate change and what we can do to slow it down
                     or even stop and reverse it.
                 </p>
@@ -37,7 +39,8 @@ export class tutorial_13_u3 extends React.Component {
                         Got it
                     </div>
                    
-                </Link>
+                </Link></div>
+              
             </div>
         );
     }

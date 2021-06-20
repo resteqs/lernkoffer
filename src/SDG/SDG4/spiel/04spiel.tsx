@@ -5,6 +5,9 @@ import Modal, { ICustomModalStyle } from '@bdenzer/react-modal'; /* https://gith
 import Spielfeld from './spielfeld.png';
 import Cards from './cards.png';
 import './sdg4.css';
+import '../../../styles/colour_sdgs.css';
+import Logo from '../../../SDGLogos/Goal-04.png';
+import Question from './question_mark.png';
 
 const colors = ["red","blue","green","yellow"];
 let randColor = colors[Math.floor(Math.random() * colors.length)];
@@ -16,6 +19,7 @@ enum modals {
 interface IAppState {
     shouldShowModal: modals;
 }
+
 // eslint-disable-next-line react/prefer-stateless-function
 export class spiel04 extends React.Component<unknown, IAppState>{
     
@@ -56,18 +60,42 @@ export class spiel04 extends React.Component<unknown, IAppState>{
               backgroundColor: 'green'
             },
             modalTitle: {
-              color: 'white'
+              color: 'white',
+              
+              
             }
+            
+            
+          };
+          const modalStyleSecond: ICustomModalStyle = {
+            animationTime: 400,
+            closeButtonText: {
+              color: 'white'
+            },
+            hoveredButtonText: {
+              fontWeight: 'bold'
+            },
+            modalHeader: {
+              backgroundColor: 'green'
+            },
+            modalTitle: {
+              color: 'white'
+            },
+            modalBackgroundOpen: {
+             width: 3000
+            }
+            
           };
         return(
-           <div><div className = "standard-background" >
+           <div><div className = "colour_sdg04" >
            <div className = "header">
-          SDG 4:    
+          Hochwertige Bildung <img className ="sdglogo" alt="logo" src={Logo}/>    
            </div> 
            
        </div>
      
         <div>
+        <img className = "board" alt ="spielfeld" src={Spielfeld}/>
           <Modal
             closeModal={this.closeModal}
             customStyle={modalStyle}
@@ -78,14 +106,14 @@ export class spiel04 extends React.Component<unknown, IAppState>{
           </Modal>
           <Modal
             closeModal={this.closeModal}
-            customStyle={modalStyle}
+            customStyle={modalStyleSecond}
             shouldShowModal={this.state.shouldShowModal === modals.modalTwo}
             title="Your word is:"
           >
            Modal Two Test: { randColor }
           </Modal>
           <button data-modal-id={modals.modalOne} type="button" onClick={this.openModal}> <img className = "cards" alt ="test" src={Cards}/></button>
-          <button data-modal-id={modals.modalTwo} type="button" onClick={this.openModal}>support</button>
+          <button data-modal-id={modals.modalTwo} type="button" onClick={this.openModal}><img className = "question" alt ="test" src={Question}/></button>
         </div>
         </div>
            
