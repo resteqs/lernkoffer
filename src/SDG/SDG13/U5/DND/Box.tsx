@@ -40,7 +40,7 @@ export const Box: FC<BoxProps> = memo(function Box({ name, image, type, isDroppe
         opacity: monitor.isDragging() ? 0.4 : 1,
       }),
     }),
-    [image, type],
+    [image, type], 
   )
 
   return (

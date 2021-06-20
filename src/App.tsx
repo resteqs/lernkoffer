@@ -73,7 +73,7 @@ export class App extends React.Component {
         return (
             <Router basename="/lernkoffer">
                 <div className="App">
-                    <Switch>
+                    <Switch> 
                         <Route exact path="/" component={home} />
                         <Route exact path="/help" component={help} />
                         

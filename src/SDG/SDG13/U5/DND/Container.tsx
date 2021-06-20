@@ -45,7 +45,7 @@ export interface ContainerState {
     dustbins: DustbinSpec[];
     trash: BoxSpec[];
 }
-
+ 
 export const Container: FC = () => {
     const [trash] = useState<BoxState[]>([
         { name: "apple", image: apple, type: ItemTypes.ORGANIC },

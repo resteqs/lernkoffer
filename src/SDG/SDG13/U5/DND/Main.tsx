@@ -13,7 +13,7 @@ import Logo from "../../../../SDGLogos/Goal-13.png";
 const heightLineStyle:CSS.Properties = {
     marginBottom: "2vh"
 
-};
+}; 
 
 export function Main() {
     return (

@@ -25,7 +25,7 @@ export interface DustbinProps {
   lastDroppedItem?: any
   onDrop: (item: any) => void
 }
-
+ 
 export const Dustbin: FC<DustbinProps> = memo(function Dustbin({
   accept,
   lastDroppedItem,
