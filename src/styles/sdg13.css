@@ -23,7 +23,20 @@
     display: flex;
     align-items: center;
 }
-
+.quizQuestion{
+    background-color: rgb(204,204,255);
+    text-align: center;
+    font-size: x-large;
+    padding: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-left-style: solid;
+    border-left-color: rgba(63, 126, 68, 1);
+    border-width: 10px;  
+    border-radius: 15px;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
 .bicycle {
     transform: translate(32%, 5%) scale(1.2);
     /*fill: transparent;*/
@@ -94,15 +107,6 @@
     color:green;
 }
 
-.questionText{
-    border: 5px solid #1C6EA4;
-    border-radius: 18px;
-    padding: 0;
-    text-align: center;
-    justify-content: center;
-    margin: 0%;
-    margin-bottom: 20px;
-}
 
 .answerButton{
     justify-content: space-around;

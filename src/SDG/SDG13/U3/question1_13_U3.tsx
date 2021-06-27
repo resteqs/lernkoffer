@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import Modal, { ICustomModalStyle } from '@bdenzer/react-modal';
+import Logo from '../../../SDGLogos/Goal-13.png';
 
 interface States {
     button1color: string,
@@ -16,7 +17,7 @@ export class question1_13_u3 extends React.Component <unknown, States> {
     constructor(props : unknown) {
         super(props);
         this.state = {
-          button1color: 'blue',
+          button1color: 'rgb(204,204,255)',
           button2color: 'blue',
           shouldShowModal: false
         };
@@ -59,10 +60,14 @@ export class question1_13_u3 extends React.Component <unknown, States> {
           };
         return (
             <div>
-                <p className = "header">Question 1</p>
-                <div className = "questionText">
-                    <p className = "text">Does a passenger car or a plane produce more greenhouse gases?</p>
-                </div>
+              <div className = "colour_sdg13" >
+           <div className = "header">
+          Hochwertige Bildung <img className ="sdglogo" alt="logo" src={Logo}/>    
+           </div> 
+           
+       </div>
+                
+                    <p className ="quizQuestion">Does a passenger car or a plane produce more greenhouse gases?</p>
                 <div>
                     
                         <button className = "answerButtonleft" style={{ backgroundColor: this.state.button1color }} type = "button" onClick = { () => {this.handleClick() ; setTimeout(() => {  this.openModal() }, 1000)}}> 
