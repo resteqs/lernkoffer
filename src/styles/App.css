@@ -65,12 +65,10 @@ li {
 }
 
 .sdglogo {
-    min-height: 10vh;
     position: absolute;
-    right: 0%;
-    max-width: 5.5%;
-    margin-top: 0;
-    size: 120%;
+right: 3%;
+max-width:3%;
+margin-top: 0;
     
 }
 
