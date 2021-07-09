@@ -1,71 +1,90 @@
+:root { --sdg1color:  #E5243B; }
+:root { --sdg2color:  #DDA63A;}
+:root { --sdg3color:  #4C9F38;}
+:root { --sdg4color:  #C5192D;}
+:root { --sdg5color:  #FF3A21;}
+:root { --sdg6color:  #26BDE2;}
+:root { --sdg7color:  #FCC30B;}
+:root { --sdg8color:  #A21942;}
+:root { --sdg9color:  #FD6925;}
+:root { --sdg10color: #DD1367;}
+:root { --sdg11color: #FD9D24;}
+:root { --sdg12color: #BF8B2E;}
+:root { --sdg13color: #3F7E44;}
+:root { --sdg14color: #0A97D9;}
+:root { --sdg15color: #56C02B;}
+:root { --sdg16color: #00689D;}
+:root { --sdg17color: #19486A ;}
+
 .colour_sdg01{
-    background-color: #E5243B;
+   background-color:  var(--sdg1color);
 }
 
 .colour_sdg02{
-    background-color: #DDA63A;
+    background-color: var(--sdg2color);
 }
 
 .colour_sdg03{
-    background-color: #4C9F38;
+    background-color: var(--sdg3color);
 }
 
 .colour_sdg04{
-    background-color: #C5192D;
+    background-color: var(--sdg4color);
 }
 
 .colour_sdg05{
-    background-color: #FF3A21;
+    background-color: var(--sdg5color);
 }
 
 .colour_sdg06{
-    background-color: #26BDE2;
+    background-color: var(--sdg6color);
 }
 
 .colour_sdg07{
-    background-color: #FCC30B;
+    background-color: var(--sdg7color);
 }
 
 .colour_sdg08{
-    background-color: #A21942;
+    background-color: var(--sdg8color);
 }
 
 .colour_sdg09{
-    background-color: #FD6925;
+    background-color: var(--sdg9color);
 }
 
 .colour_sdg10{
-    background-color: #DD1367 ;
+    background-color: var(--sdg10color);
 }
 
 .colour_sdg11{
-    background-color: #FD9D24 ;
+    background-color: var(--sdg11color);
 }
 
 .colour_sdg12{
-    background-color: #BF8B2E;
+    background-color: var(--sdg12color);
 }
 
 .colour_sdg13{
-    background-color: #3F7E44;
+    background-color: var(--sdg13color);
 }
 
 .colour_sdg14{
-    background-color: #0A97D9;
+    background-color: var(--sdg14color);
 }
 
 .colour_sdg15{
-    background-color: #56C02B;
+    background-color: var(--sdg15color);
 }
 
 .colour_sdg16{
-    background-color: #00689D;
+    background-color: var(--sdg16color);
 }
 
 .colour_sdg17{
-    background-color:#19486A ;
+    background-color: var(--sdg17color);
 }
 
-.colour_sdg18{
-    background-color: black;
-}
+
+
+
+
