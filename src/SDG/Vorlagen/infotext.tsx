@@ -13,7 +13,7 @@ export class infotext extends React.Component {
         return(
            <div><div className = "colour_sdg04" >
            <div className = "header">
-          Hochwertiged Bildung <img className ="sdglogo" alt="logo" src={Logo}/>    
+          Hochwertige Bildung <img className ="sdglogo" alt="logo" src={Logo}/>    
            </div> 
            
        </div>
