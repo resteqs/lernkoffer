@@ -1,7 +1,6 @@
-import { url } from 'inspector';
 import * as React from 'react'
 import { BrowserRouter, Link } from 'react-router-dom';
-import { JsxEmit } from 'typescript';
+
 import co2 from "./dictionary_png/background/co2.jpg";
 // https://pixabay.com/de/photos/verschmutzung-fabrik-industrie-2575166/
 import methane from "./dictionary_png/background/methan.jpg"
@@ -11,66 +10,50 @@ import dextrose from "./dictionary_png/background/dextrose.jpg"
 import photosynthese from "./dictionary_png/background/photosynthese.jpg"
 // https://pixabay.com/de/photos/sonnenhut-rudbeckia-black-eyed-4267632/
 
-// eslint-disable-next-line react/prefer-stateless-function
-export class dictionary extends React.Component{
+export const dictionary = ():JSX.Element => {    
     
-    
-    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-    static carbonDioxid(){
-        console.log("MONTAG")
-
+    const styleco2 = {
+        backgroundImage: `url(${co2})`
     }
-
-    render(): JSX.Element{
-        const styleco2 = {
-            // eslint-disable-next-line no-template-curly-in-string
-            backgroundImage: `url(${co2})`
-        }
-        const stylemethan = {
-            // eslint-disable-next-line no-template-curly-in-string
-            backgroundImage: `url(${methane})`
-        }
-        const styledextrose = {
-            // eslint-disable-next-line no-template-curly-in-string
-            backgroundImage: `url(${dextrose})`
-        }
-        const styledphotosynthese = {
-            // eslint-disable-next-line no-template-curly-in-string
-            backgroundImage: `url(${photosynthese})`
-        }
+    const stylemethan = {
+        backgroundImage: `url(${methane})`
+    }
+    const styledextrose = {
+        backgroundImage: `url(${dextrose})`
+    }
+    const styledphotosynthese = {
+        backgroundImage: `url(${photosynthese})`
+    }
         
-        return(
-            <BrowserRouter>
-            <div className ="standard-background"> 
-                <h1 className = "header">Dictionary</h1>
+    return(
+        <BrowserRouter>
+        <div className ="standard-background"> 
+            <h1 className = "header">Dictionary</h1>
 
-                <Link to = "/dictionary/co2">
-                        <button className = "sdg13-dictionary-b" style = {styleco2} type ="button"> 
-                            Carbon Dioxide
-                        </button>
-                </Link> 
+            <Link to = "/dictionary/co2">
+                    <button className = "sdg13-dictionary-b" style = {styleco2} type ="button"> 
+                        Carbon Dioxide
+                    </button>
+            </Link> 
 
-                <Link to = "/dictionary/methane">
-                        <button className = "sdg13-dictionary-b" style = {stylemethan} type ="button"> 
-                            Methane
-                        </button>
-                </Link> 
+            <Link to = "/dictionary/methane">
+                    <button className = "sdg13-dictionary-b" style = {stylemethan} type ="button"> 
+                        Methane
+                    </button>
+            </Link> 
 
-                <Link to = "/dictionary/dextrose">
-                        <button className = "sdg13-dictionary-b" style = {styledextrose} type ="button"> 
-                            Dextrose
-                        </button>
-                </Link> 
+            <Link to = "/dictionary/dextrose">
+                    <button className = "sdg13-dictionary-b" style = {styledextrose} type ="button"> 
+                        Dextrose
+                    </button>
+            </Link> 
 
-                <Link to = "/dictionary/photosynthese">
-                        <button className = "sdg13-dictionary-b" style = {styledphotosynthese} type ="button"> 
-                            Photosynthesis
-                        </button>
-                </Link> 
-           </div>
-           </BrowserRouter>
-        );
-    }
+            <Link to = "/dictionary/photosynthese">
+                    <button className = "sdg13-dictionary-b" style = {styledphotosynthese} type ="button"> 
+                        Photosynthesis
+                    </button>
+            </Link> 
+        </div>
+        </BrowserRouter>
+    );
 }
-export default dictionary
