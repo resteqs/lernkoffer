@@ -1,16 +1,20 @@
 import * as React from 'react';
-import '../../styles/colour_sdgs.css';
+import '../../styles/colour_sdgs.css'; 
 import '../../styles/infotext.css';
+import Logo from '../../SDGLogos/Goal-04.png'; 
 
-import Logo from '../../SDGLogos/Goal-04.png';
-
-export const infotextVorlage = ():JSX.Element => {
-    return(
-        <div className = "colour_sdg04" >
+const sdg = "sdg03"
+export const infotextVorlage = ():JSX.Element => {   
+    
+ 
+    
+ return(
+    <div>
+        <div className = {`colour_${sdg}`} > {/* change color */}
         <div className = "header">
             Hochwertige Bildung <img className ="sdglogo" alt="logo" src={Logo}/>    
         </div> 
-        
+     </div>
         <div className = "infotextbox" >
             <p>
                 As you know at the moment, we are taking a look at climate change and what we can do to slow it down
@@ -35,5 +39,7 @@ export const infotextVorlage = ():JSX.Element => {
     
         </div>
     </div>
+    
+    
 );
 }

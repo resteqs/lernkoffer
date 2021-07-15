@@ -42,7 +42,7 @@ import turtle from "./SDG/SDG14/Spiel2/search_info/turtle";
 import boat from "./SDG/SDG14/Spiel2/search_info/boat";
 
 import { Main } from "./SDG/SDG13/Spiel2/DND/Main";
-import { infotext06 } from "./SDG/SDG6/Info/06infotext";
+import { Sdg06infotext } from "./SDG/SDG6/Info/06infotext";
 import { spiel04 } from "./SDG/SDG4/Spiel/04spiel";
 import { infotext11 } from "./SDG/SDG11/Info/11infotext";
 import { infotext13 } from "./SDG/SDG13/Info/13infotext";
@@ -72,11 +72,11 @@ export const App = (): JSX.Element => {
                 <Route exact path="/dictionary/photosynthese" component={photosynthese} />
                 <Route exact path="/sdg03/u1/infotext" component={infotext_03_01} />
                 <Route exact path="/sdg04/spiel1/spiel04" component={spiel04} />                    
-                <Route exact path="/sdg06/u1/infotext06" component={infotext06} />
+                <Route exact path="/sdg06/Info/infotext06" component={Sdg06infotext} />
                 <Route exact path="/sdg06/u1/infotext11" component={infotext11} />
                 <Route exact path="/sdg13/u1/infotext13" component={infotext13} />                    
                 <Route exact path="/sdg13/u3/tutorial1" component={tutorial_13_u3} />
-                <Route exact path="/sdg13/u3/tips" component={tips_13_u3} />
+                <Route exact path="/sdg13/u3/tips" component={tips_13_u3} /> 
                 <Route exact path="/sdg13/u3/question1" component={question1_13_u3} />
                 <Route exact path="/sdg13/u3/answer1" component={answer1_13_u3} />
                 <Route exact path="/sdg13/u3/question2" component={question2_13_u3} />

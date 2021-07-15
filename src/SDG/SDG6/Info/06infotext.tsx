@@ -1,146 +1,61 @@
-// eslint-disable-next-line unicorn/filename-case
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable no-eval */
+
 import * as React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
-import logo06 from "./logo06.png";
+import renderer from "react-dom";
+import "../../../styles/colour_sdgs.css";
+import "../../../styles/infotext.css";
+import Logo from "../../../SDGLogos/Goal-06.png";
 
-// eslint-disable-next-line react/prefer-stateless-function
-export class infotext06 extends React.Component {
-    render(): JSX.Element {
-        return (
-            <div>
-                <nav className="infoNav">
-                    <div className="infoHeader">SDG 6</div>
-                    <div className="infoNavLinks">
-                        <Link
-                            activeClass="active"
-                            to="section1"
-                            // eslint-disable-next-line react/jsx-boolean-value
-                            spy={true}
-                            // eslint-disable-next-line react/jsx-boolean-value
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            Why?
-                        </Link>
-                        <Link
-                            activeClass="active"
-                            to="section2"
-                            // eslint-disable-next-line react/jsx-boolean-value
-                            spy={true}
-                            // eslint-disable-next-line react/jsx-boolean-value
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            What is the problem?
-                        </Link>
-                        <Link
-                            activeClass="active"
-                            to="section3"
-                            // eslint-disable-next-line react/jsx-boolean-value
-                            spy={true}
-                            // eslint-disable-next-line react/jsx-boolean-value
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            How is this topic connected to us?
-                        </Link>
-                        <Link
-                            to="section4"
-                            activeClass="active"
-                            // eslint-disable-next-line react/jsx-boolean-value
-                            spy={true}
-                            // eslint-disable-next-line react/jsx-boolean-value
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            What can we do?
-                        </Link>
-                    </div>
-                    <img className="infoLogo" src={logo06} alt="" />
-                </nav>
 
-                <div>
-                    <div className="infodistancebttexts" id="section1">
-                        <p className="lineHeight">_</p>
-                        <p className="header">Goal 6: Clean water and sanitation</p>
-                        <p className="subheading1">Why</p>
-                        <div className="infoText">
-                            <p>It is a human right to have access to water, sanitation and hygiene.</p>
-                            <p>
-                                Water is very important not only to health, but also to poverty reduction, food
-                                security, peace and human rights, ecosystems and education.
-                            </p>
-                            <p>
-                                The demand for water has been faster than the population growth, and half the
-                                world&rsquo;s population is already experiencing severe water scarcity at least one
-                                month a year.
-                            </p>
-                            <p>
-                                Many countries face growing challenges that are for example linked to water scarcity or
-                                water pollution!
-                            </p>
-                        </div>
-                    </div>
 
-                    <div className="infodistancebttexts" id="section2">
-                        <p className="subheading1">What is the problem?</p>
-                        <div className="infoText">
-                            <p>
-                                In 2017, an estimated 3 billion people (for comparison: there were almost 8 billion
-                                people in the world in 2020) worldwide cannot safely wash their hands at home &ndash;
-                                one of the cheapest, easiest and most effective ways to prevent the spread of diseases.
-                            </p>
-                            <p>
-                                Water, sanitation and hygiene services are also not always available at medical care
-                                facilities: many facilities around the world lack basic water supplies, have no
-                                sanitation services or have no soap and water or something similar, at points of care.
-                                And today, 4.2 billion people are still faced with daily challenges accessing even the
-                                most basic of services. Of these, 673 million people have to go to the toilet in public.
-                            </p>
-                        </div>
-                    </div>
+export const Sdg06infotext = (): JSX.Element => {
+  // eslint-disable-next-line prefer-const
+  let [showtext, setText] = React.useState(1);
+const sdg = "sdg06";
+const text = {
+    1: `
+Im Jahr 2017 konnten geschätzte 3 Milliarden Menschen (zum Vergleich: 2020 gab es welt-weit fast 8 Milliarden Menschen auf der Welt) ihre Hände zu Hause nicht sicher waschen - eine der billigsten, einfachsten und effektivsten Möglichkeiten, die Ausbreitung von Krank-heiten zu verhindern.
+Wasser-, Sanitär- und Hygienedienstleistungen sind auch nicht immer in medizinischen Ver-sorgungseinrichtungen verfügbar: In vielen Einrichtungen auf der ganzen Welt fehlt es an den Versorgungsstellen an grundlegender Wasserversorgung, es gibt keine sanitären Einrich-tungen oder es fehlt an Seife und Wasser. 
+Und heute begegnen 4,2 Milliarden Menschen im-mer noch täglichen Herausforderungen, selbst auf die grundlegendsten Dienstleistungen zu-zugreifen. 
+Davon müssen 673 Mio. Menschen in der Öffentlichkeit auf die Toilette gehen.`,
+    2: `Es wird an vielen Orten schwieriger sein, vorherzusagen, ob Wasser verfügbar sein wird. In einigen Regionen verschlimmern Dürren die Wasserknappheit und beeinträchtigen daher die Gesundheit und Produktivität der Menschen. 
+Darüber hinaus bedroht es die Natur im Allge-meinen, zum Beispiel die Artenvielfalt (d. h. die Anzahl und Art der Pflanzen und Tiere, die in einem bestimmten Gebiet oder auf der ganzen Welt existieren) und die Fähigkeit der Öko-systeme, sich an eine sich weltweit verändernde Umwelt anzupassen.
+Wenn wir sicherstellen können, dass jeder Zugang zu nachhaltigen Wasser- und Sanitär-diensten hat, wird dies uns helfen, den Klimawandel zu mildern. 
+Durch eine nachhaltige Ver-waltung unseres Wassers können wir auch unsere Nahrungsmittel- und Energieproduktion besser steuern und zu menschenwürdiger Arbeit und Wirtschaftswachstum beitragen. 
+Ohne eine bessere Infrastruktur und Verwaltung werden jedes Jahr weitere Millionen von Men-schen an wasserbedingten Krankheiten wie Malaria sterben.`,
+}; 
+const header = {
+    1: "Was ist das Problem? ", 
+    2: "Was können wir tun? "
+};
 
-                    <div className="infodistancebttexts" id="section3">
-                        <p className="subheading1">How is this topic connected to us?</p>
-                        <div className="infoText">
-                            <p>
-                                It will be harder to predict in many places if water will be available. In some regions,
-                                droughts are making water scarcity worse and because of that people&rsquo;s health and
-                                productivity is negatively impacted. In addition, it threatens nature in general, for
-                                example the biodiversity (which means the number and types of plants and animals that
-                                exist in a particular area or in the world generally) and the ability of ecosystems to
-                                adjust to a changing environment worldwide.
-                            </p>
-                            <p>
-                                When we can ensure that everyone has access to sustainable water and sanitation
-                                services, it will help us to moderate the climate change. By managing our water
-                                sustainably, we are also able to better manage our production of food and energy and
-                                contribute to decent work and economic growth. Without better infrastructure and
-                                management, millions of people will continue to die every year from water-related
-                                diseases such as malaria.
-                            </p>
-                        </div>
-                    </div>
+function incrementCount(): void {
+  setText(showtext+1);
+}
 
-                    <div id="section4">
-                        <p className="subheading1">What can we do?</p>
-                        <div className="infoText">
-                            <p>
-                                For example, you can help civil society organizations with promoting the inclusion of
-                                women, youth and indigenous communities in water resources governance. Generating
-                                awareness of these roles and turning them into action will lead to win-win results and
-                                increased sustainability and integrity for both human and ecological systems. You can
-                                also get involved in the World Water Day and World Toilet Day campaigns that aim to
-                                provide information and inspiration to take action on hygiene issues.
-                            </p>
-                        </div>
-                    </div>
+function decrementCount(): void {
+  setText(showtext-1);
+}
+    return (
+        <div>
+            <div className={`colour_${sdg}`}>
+                <div className="header">
+                    Hochwertige Bildung <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
-        );
-    }
-}
+            <div className="infotextbox">
+                <p><b>{header[showtext]}</b></p> <br/>
+                <p> {text[showtext]} </p>
+            </div>
+            <button className = "backbutton" type="button" onClick={decrementCount}>
+             Zurück
+            </button> 
+            <button className = "nextbutton" type="button" onClick={incrementCount}>
+                Weiter
+            </button>
+           
+        </div>
+    ); 
+};
+renderer.render(<Sdg06infotext/>, document.getElementById("root"))
