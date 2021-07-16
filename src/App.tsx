@@ -8,7 +8,7 @@ import { co2 } from "./SDG/dictionary/co2";
 import { dextrose } from "./SDG/dictionary/dextrose";
 import { methane } from "./SDG/dictionary/methane";
 import { photosynthese } from "./SDG/dictionary/photsynthese";
-import { infotextVorlage } from "./SDG/Vorlagen/infotext";
+import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
 
 import "./styles/App.css";
 import "./styles/sdg13.css";
@@ -49,10 +49,7 @@ import { infotext13 } from "./SDG/SDG13/Info/13infotext";
 import { infotext14 } from "./SDG/SDG14/Info/14infotext";
 import { tutorial_13_u3 } from "./SDG/SDG13/Quiz/tutorial_13_U3";
 import { question1_13_u3 } from "./SDG/SDG13/Quiz/question1_13_U3";
-import { answer1_13_u3 } from "./SDG/SDG13/Quiz/answer1_13_U3";
-import { answer3_13_u3 } from "./SDG/SDG13/Quiz/answer3_13_U3";
 import { question3_13_u3 } from "./SDG/SDG13/Quiz/question3_13_U3";
-import { answer2_13_u3 } from "./SDG/SDG13/Quiz/answer2_13_U3";
 import { question2_13_u3 } from "./SDG/SDG13/Quiz/question2_13_U3";
 import { tips_13_u3 } from "./SDG/SDG13/Quiz/tips_13_U3";
 import { infotext_03_01 } from "./SDG/SDG3/Info/infotext_03_01";
@@ -78,11 +75,8 @@ export const App = (): JSX.Element => {
                 <Route exact path="/sdg13/u3/tutorial1" component={tutorial_13_u3} />
                 <Route exact path="/sdg13/u3/tips" component={tips_13_u3} /> 
                 <Route exact path="/sdg13/u3/question1" component={question1_13_u3} />
-                <Route exact path="/sdg13/u3/answer1" component={answer1_13_u3} />
                 <Route exact path="/sdg13/u3/question2" component={question2_13_u3} />
-                <Route exact path="/sdg13/u3/answer2" component={answer2_13_u3} />
                 <Route exact path="/sdg13/u3/question3" component={question3_13_u3} />
-                <Route exact path="/sdg13/u3/answer3" component={answer3_13_u3} />
                 <Route exact path="/sdg13/tutorial/page1" component={page141} />                    
                 <Route exact path="/sdg13/tutorial/page2" component={page142} />
                 <Route exact path="/sdg13/tutorial/page3" component={page143} />
@@ -109,7 +103,7 @@ export const App = (): JSX.Element => {
                 <Route exact path="/sdg14/play/surgeonfish" component={surgeonfish} />
                 <Route exact path="/sdg14/play/turtle" component={turtle} />
                 <Route exact path="/sdg14/play/boat" component={boat} />   
-                <Route exact path ="/Vorlagen/infotext" component={infotextVorlage}/>                    
+                <Route exact path ="/Vorlagen/infotext" component={Infotext}/>                    
             </Switch>
         </div>
     </Router>
