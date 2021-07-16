@@ -50,3 +50,12 @@
     margin-top: -50px;
     
 }
+.buttonInvisible
+{
+    margin-top: -150px;
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    border-style:none;
+   
+}
