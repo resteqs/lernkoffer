@@ -1,7 +1,7 @@
 // eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import logo13 from "./logo13.png"
+import logo13 from "./logo13.png";
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class infotext13 extends React.Component {
@@ -60,12 +60,12 @@ export class infotext13 extends React.Component {
                             What can we do?
                         </Link>
                     </div>
-                    <img className ="infoLogo" src={logo13} alt=""/>
+                    <img className="infoLogo" src={logo13} alt="" />
                 </nav>
 
                 <div>
                     <div className="infodistancebttexts" id="section1">
-                        <p className ="lineHeight">_</p>
+                        <p className="lineHeight">_</p>
                         <p className="header">Goal 13: Climate action</p>
                         <p className="subheading1">Why</p>
                         <div className="infoText">
@@ -115,7 +115,7 @@ export class infotext13 extends React.Component {
                             </p>
                         </div>
                     </div>
-                    
+
                     <div id="section4">
                         <p className="subheading1">What can we do?</p>
                         <div className="infoText">
@@ -134,7 +134,6 @@ export class infotext13 extends React.Component {
                             </p>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         );

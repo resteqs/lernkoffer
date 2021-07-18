@@ -3,13 +3,13 @@
     position: absolute;
     left: 0;
 }
-.cards{
+.cards {
     position: absolute;
-    right: 15%;   
+    right: 15%;
     max-width: 10%;
     margin-top: 5%;
 }
-.question{
+.question {
     position: absolute;
     right: 16%;
     max-width: 7%;

@@ -4,5 +4,4 @@ export const ItemTypes = {
     PAPER: "paper",
     PLASTIC: "plastic",
     RESIDUAL: "residual",
-  }
-  
+};

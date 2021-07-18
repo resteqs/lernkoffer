@@ -10,10 +10,9 @@ import CSS from "csstype";
 import Example from "./example";
 import Logo from "../../../../SDGLogos/Goal-13.png";
 
-const heightLineStyle:CSS.Properties = {
-    marginBottom: "2vh"
-
-}; 
+const heightLineStyle: CSS.Properties = {
+    marginBottom: "2vh",
+};
 
 export function Main() {
     return (
@@ -25,7 +24,7 @@ export function Main() {
                         <img className="sdglogo" alt="logo" src={Logo} />
                     </p>
                 </div>
-                <div style = {heightLineStyle} />
+                <div style={heightLineStyle} />
                 <div>
                     <DndProvider backend={HTML5Backend}>
                         <Example />

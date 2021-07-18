@@ -1,7 +1,6 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable unicorn/filename-case */
 import * as React from "react";
-import { Link } from "react-router-dom";
 import Modal, { ICustomModalStyle } from "@bdenzer/react-modal";
 import Logo from "../../../SDGLogos/Goal-13.png";
 
@@ -13,7 +12,7 @@ interface States {
 }
 
 // eslint-disable-next-line react/prefer-stateless-function
-export class question1_13_u3 extends React.Component<unknown, States> {
+export class Quiz extends React.Component<unknown, States> {
     constructor(props: unknown) {
         super(props);
         this.state = {
@@ -61,7 +60,7 @@ export class question1_13_u3 extends React.Component<unknown, States> {
             <div>
                 <div className="colour_sdg13">
                     <div className="header">
-                        Hochwertige Bildung <img className="sdglogo" alt="logo" src={Logo} />
+                        Hochwertige Bildungg <img className="sdglogo" alt="logo" src={Logo} />
                     </div>
                 </div>
 

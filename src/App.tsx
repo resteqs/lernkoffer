@@ -9,13 +9,14 @@ import { dextrose } from "./SDG/dictionary/dextrose";
 import { methane } from "./SDG/dictionary/methane";
 import { photosynthese } from "./SDG/dictionary/photsynthese";
 import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
+import { Quiz } from "./SDG/Vorlagen/Quiz/quiz";
 
 import "./styles/App.css";
 import "./styles/sdg13.css";
 import "./styles/sdg14.css";
 import { help } from "./help";
 
-import { play13 }  from "./SDG/SDG13/Spiel/play";
+import { play13 } from "./SDG/SDG13/Spiel/play";
 
 import akw from "./SDG/SDG13/Spiel/information/akw";
 import cow from "./SDG/SDG13/Spiel/information/cow";
@@ -24,7 +25,6 @@ import windTurbine from "./SDG/SDG13/Spiel/information/windTurbine";
 import tractor from "./SDG/SDG13/Spiel/information/tractor";
 import tree from "./SDG/SDG13/Spiel/information/tree";
 import foxHedgehog from "./SDG/SDG13/Spiel/information/foxHedgehog";
-
 
 import page141 from "./SDG/SDG14/Spiel2/tutorial/14tut1";
 import page142 from "./SDG/SDG14/Spiel2/tutorial/14tut2";
@@ -55,56 +55,58 @@ import { tips_13_u3 } from "./SDG/SDG13/Quiz/tips_13_U3";
 import { infotext_03_01 } from "./SDG/SDG3/Info/infotext_03_01";
 
 export const App = (): JSX.Element => {
-    return (        
+    return (
         <Router basename="/lernkoffer">
-        <div className="App">
-            <Switch> 
-                <Route exact path="/" component={home} />
-                <Route exact path="/help" component={help} />
-                
-                <Route exact path="/dictionary"  component={dictionary} />
-                <Route exact path="/dictionary/co2" component={co2} />
-                <Route exact path="/dictionary/dextrose" component={dextrose} />
-                <Route exact path="/dictionary/methane" component={methane} />
-                <Route exact path="/dictionary/photosynthese" component={photosynthese} />
-                <Route exact path="/sdg03/u1/infotext" component={infotext_03_01} />
-                <Route exact path="/sdg04/spiel1/spiel04" component={spiel04} />                    
-                <Route exact path="/sdg06/Info/infotext06" component={Sdg06infotext} />
-                <Route exact path="/sdg06/u1/infotext11" component={infotext11} />
-                <Route exact path="/sdg13/u1/infotext13" component={infotext13} />                    
-                <Route exact path="/sdg13/u3/tutorial1" component={tutorial_13_u3} />
-                <Route exact path="/sdg13/u3/tips" component={tips_13_u3} /> 
-                <Route exact path="/sdg13/u3/question1" component={question1_13_u3} />
-                <Route exact path="/sdg13/u3/question2" component={question2_13_u3} />
-                <Route exact path="/sdg13/u3/question3" component={question3_13_u3} />
-                <Route exact path="/sdg13/tutorial/page1" component={page141} />                    
-                <Route exact path="/sdg13/tutorial/page2" component={page142} />
-                <Route exact path="/sdg13/tutorial/page3" component={page143} />
-                <Route exact path="/sdg13/play"  component={play13} />
-                <Route exact path="/sdg13/play/akw" component={akw} />                   
-                <Route exact path="/sdg13/play/cow" component={cow} />
-                <Route exact path="/sdg13/play/bicycle" component={bicycle} />
-                <Route exact path="/sdg13/play/wind_turbine" component={windTurbine} />
-                <Route exact path="/sdg13/play/tractor" component={tractor} />
-                <Route exact path="/sdg13/play/tree" component={tree}/>
-                <Route exact path="/sdg13/play/fox_and_hedgehog" component={foxHedgehog}/>
-                <Route exact path="/sdg13/u1/dnd" component={Main} />                    
-                <Route exact path="/sdg14/u0/infotext14" component={infotext14} />
-                <Route exact path="/sdg14/tutorial/page1" component={page141} />                    
-                <Route exact path="/sdg14/tutorial/page2" component={page142} />
-                <Route exact path="/sdg14/tutorial/page3" component={page143} />
-                
-                <Route exact path="/sdg14/play" component={play14} />
-                <Route exact path="/sdg14/play/clownfish" component={clownfish} />                    
-                <Route exact path="/sdg14/play/ray" component={ray} />
-                <Route exact path="/sdg14/play/seaHorse" component={seaHorse} />
-                <Route exact path="/sdg14/play/shark" component={shark} />
-                <Route exact path="/sdg14/play/siameseFightingFish" component={siamesefightingFish} />
-                <Route exact path="/sdg14/play/surgeonfish" component={surgeonfish} />
-                <Route exact path="/sdg14/play/turtle" component={turtle} />
-                <Route exact path="/sdg14/play/boat" component={boat} />   
-                <Route exact path ="/Vorlagen/infotext" component={Infotext}/>                    
-            </Switch>
-        </div>
-    </Router>
-);}
+            <div className="App">
+                <Switch>
+                    <Route exact path="/" component={home} />
+                    <Route exact path="/help" component={help} />
+
+                    <Route exact path="/dictionary" component={dictionary} />
+                    <Route exact path="/dictionary/co2" component={co2} />
+                    <Route exact path="/dictionary/dextrose" component={dextrose} />
+                    <Route exact path="/dictionary/methane" component={methane} />
+                    <Route exact path="/dictionary/photosynthese" component={photosynthese} />
+                    <Route exact path="/sdg03/u1/infotext" component={infotext_03_01} />
+                    <Route exact path="/sdg04/spiel1/spiel04" component={spiel04} />
+                    <Route exact path="/sdg06/Info/infotext06" component={Sdg06infotext} />
+                    <Route exact path="/sdg06/u1/infotext11" component={infotext11} />
+                    <Route exact path="/sdg13/u1/infotext13" component={infotext13} />
+                    <Route exact path="/sdg13/u3/tutorial1" component={tutorial_13_u3} />
+                    <Route exact path="/sdg13/u3/tips" component={tips_13_u3} />
+                    <Route exact path="/sdg13/u3/question1" component={question1_13_u3} />
+                    <Route exact path="/sdg13/u3/question2" component={question2_13_u3} />
+                    <Route exact path="/sdg13/u3/question3" component={question3_13_u3} />
+                    <Route exact path="/sdg13/tutorial/page1" component={page141} />
+                    <Route exact path="/sdg13/tutorial/page2" component={page142} />
+                    <Route exact path="/sdg13/tutorial/page3" component={page143} />
+                    <Route exact path="/sdg13/play" component={play13} />
+                    <Route exact path="/sdg13/play/akw" component={akw} />
+                    <Route exact path="/sdg13/play/cow" component={cow} />
+                    <Route exact path="/sdg13/play/bicycle" component={bicycle} />
+                    <Route exact path="/sdg13/play/wind_turbine" component={windTurbine} />
+                    <Route exact path="/sdg13/play/tractor" component={tractor} />
+                    <Route exact path="/sdg13/play/tree" component={tree} />
+                    <Route exact path="/sdg13/play/fox_and_hedgehog" component={foxHedgehog} />
+                    <Route exact path="/sdg13/u1/dnd" component={Main} />
+                    <Route exact path="/sdg14/u0/infotext14" component={infotext14} />
+                    <Route exact path="/sdg14/tutorial/page1" component={page141} />
+                    <Route exact path="/sdg14/tutorial/page2" component={page142} />
+                    <Route exact path="/sdg14/tutorial/page3" component={page143} />
+
+                    <Route exact path="/sdg14/play" component={play14} />
+                    <Route exact path="/sdg14/play/clownfish" component={clownfish} />
+                    <Route exact path="/sdg14/play/ray" component={ray} />
+                    <Route exact path="/sdg14/play/seaHorse" component={seaHorse} />
+                    <Route exact path="/sdg14/play/shark" component={shark} />
+                    <Route exact path="/sdg14/play/siameseFightingFish" component={siamesefightingFish} />
+                    <Route exact path="/sdg14/play/surgeonfish" component={surgeonfish} />
+                    <Route exact path="/sdg14/play/turtle" component={turtle} />
+                    <Route exact path="/sdg14/play/boat" component={boat} />
+                    <Route exact path="/Vorlagen/infotext" component={Infotext} />
+                    <Route exact path="/Vorlagen/quiz" component={Quiz} />
+                </Switch>
+            </div>
+        </Router>
+    );
+};
