@@ -21,7 +21,7 @@ interface IAppState {
 }
 
 // eslint-disable-next-line react/prefer-stateless-function
-export class spiel04 extends React.Component<unknown, IAppState>{
+export class SDG04_Spiel extends React.Component<unknown, IAppState>{
     
     constructor(props: unknown) {
         super(props);
@@ -123,4 +123,4 @@ export class spiel04 extends React.Component<unknown, IAppState>{
    
  
 }
-export default spiel04
+export default SDG04_Spiel

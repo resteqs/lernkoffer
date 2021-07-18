@@ -1,22 +1,196 @@
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { home } from "./home";
+import { Home } from "./Home";
+import { Help } from "./Help";
 
-import { dictionary } from "./SDG/dictionary/dictionary";
-import { co2 } from "./SDG/dictionary/co2";
-import { dextrose } from "./SDG/dictionary/dextrose";
-import { methane } from "./SDG/dictionary/methane";
-import { photosynthese } from "./SDG/dictionary/photsynthese";
+/**----------------------------------------------------------------------------
+ *                              Style sheets
+ ----------------------------------------------------------------------------*/
+import "./styles/App.css";
+import "./styles/colour_sdgs.css";
+import "./styles/SDG13.css";
+import "./styles/SDG14.css";
+
+/**----------------------------------------------------------------------------
+ *                              Wörterbuch
+ ----------------------------------------------------------------------------*/
+import { Wörterbuch } from "./SDG/Wörterbuch/Wörterbuch";
+import { Kohlenstoffdioxid } from "./SDG/Wörterbuch/Elemente/Kohlenstoffdioxid";
+import { Dextrose } from "./SDG/Wörterbuch/Elemente/Dextrose";
+import { Methan } from "./SDG/Wörterbuch/Elemente/Methan";
+import { Photosynthese } from "./SDG/Wörterbuch/Elemente/Photosynthese";
 import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
 
-import "./styles/App.css";
-import "./styles/sdg13.css";
-import "./styles/sdg14.css";
-import { help } from "./help";
+/**----------------------------------------------------------------------------
+ *                                SDG 01
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
 
+
+/**----------------------------------------------------------------------------
+ *                                SDG 02
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 03
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+import { SDG03_Infotext } from "./SDG/SDG3/Info/SDG03_Infotext";
+
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 04
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 05
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 05
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 06
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+import { SDG06_Infotext } from "./SDG/SDG6/Info/SDG06_Infotext";
+
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 07
+ *  -------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 08
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 09
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 10
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 11
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+import { SDG11_Infotext } from "./SDG/SDG11/Info/SDG11_Infotext";
+
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 12
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 13
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+import { SDG13_Infotext } from "./SDG/SDG13/Info/SDG13_Infotext";
+
+/**                                 Quiz                                     */
+import { SDG13_Quiz_Tutorial } from "./SDG/SDG13/Quiz/SDG13_Quiz_Tutorial";
+import { SDG13_Quiz_Question1 } from "./SDG/SDG13/Quiz/SDG13_Quiz_Question1";
+import { SDG13_Quiz_Question3 } from "./SDG/SDG13/Quiz/SDG13_Quiz_Question3";
+import { SDG13_Quiz_Question2 } from "./SDG/SDG13/Quiz/SDG13_Quiz_Question2";
+import { SDG13_Quiz_Tips } from "./SDG/SDG13/Quiz/SDG13_Quiz_Tips";
+
+/**                                Spiel                                     */
+/**                                Spiel2                                    */
 import { play13 }  from "./SDG/SDG13/Spiel/play";
-
 import akw from "./SDG/SDG13/Spiel/information/akw";
 import cow from "./SDG/SDG13/Spiel/information/cow";
 import bicycle from "./SDG/SDG13/Spiel/information/bicycle";
@@ -26,12 +200,17 @@ import tree from "./SDG/SDG13/Spiel/information/tree";
 import foxHedgehog from "./SDG/SDG13/Spiel/information/foxHedgehog";
 
 
-import page141 from "./SDG/SDG14/Spiel2/tutorial/14tut1";
-import page142 from "./SDG/SDG14/Spiel2/tutorial/14tut2";
-import page143 from "./SDG/SDG14/Spiel2/tutorial/14tut3";
+/**----------------------------------------------------------------------------
+ *                                SDG 14
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+import { infotext14 } from "./SDG/SDG14/Info/14infotext";
 
-import play14 from "./SDG/SDG14/Spiel2/play14";
+/**                                 Quiz                                     */
 
+/**                                Spiel                                     */
 import clownfish from "./SDG/SDG14/Spiel2/search_info/clownfish";
 import ray from "./SDG/SDG14/Spiel2/search_info/ray";
 import seaHorse from "./SDG/SDG14/Spiel2/search_info/seaHorse";
@@ -41,69 +220,291 @@ import surgeonfish from "./SDG/SDG14/Spiel2/search_info/surgeonfish";
 import turtle from "./SDG/SDG14/Spiel2/search_info/turtle";
 import boat from "./SDG/SDG14/Spiel2/search_info/boat";
 
+/**                                Spiel2                                    */
 import { Main } from "./SDG/SDG13/Spiel2/DND/Main";
-import { Sdg06infotext } from "./SDG/SDG6/Info/06infotext";
-import { spiel04 } from "./SDG/SDG4/Spiel/04spiel";
-import { infotext11 } from "./SDG/SDG11/Info/11infotext";
-import { infotext13 } from "./SDG/SDG13/Info/13infotext";
-import { infotext14 } from "./SDG/SDG14/Info/14infotext";
-import { tutorial_13_u3 } from "./SDG/SDG13/Quiz/tutorial_13_U3";
-import { question1_13_u3 } from "./SDG/SDG13/Quiz/question1_13_U3";
-import { question3_13_u3 } from "./SDG/SDG13/Quiz/question3_13_U3";
-import { question2_13_u3 } from "./SDG/SDG13/Quiz/question2_13_U3";
-import { tips_13_u3 } from "./SDG/SDG13/Quiz/tips_13_U3";
-import { infotext_03_01 } from "./SDG/SDG3/Info/infotext_03_01";
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 15
+ ----------------------------------------------------------------------------*/
+/**----------------------------------------------------------------------------
+ *                                SDG 16
+ ----------------------------------------------------------------------------*/
+/**----------------------------------------------------------------------------
+ *                                SDG 17
+ ----------------------------------------------------------------------------*/
+
+/**----------------------------------------------------------------------------
+ * ----------------------------------------------------------------------------
+ * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
+ * ----------------------------------------------------------------------------     
+ * --------------------------------------------------------------------------*/
+
+
+import page141 from "./SDG/SDG14/Spiel2/tutorial/14tut1";
+import page142 from "./SDG/SDG14/Spiel2/tutorial/14tut2";
+import page143 from "./SDG/SDG14/Spiel2/tutorial/14tut3";
+
+import play14 from "./SDG/SDG14/Spiel2/play14";
+
+
+import { SDG04_Spiel } from "./SDG/SDG4/Spiel/04spiel";
+
+
 
 export const App = (): JSX.Element => {
     return (        
         <Router basename="/lernkoffer">
         <div className="App">
             <Switch> 
-                <Route exact path="/" component={home} />
-                <Route exact path="/help" component={help} />
-                
-                <Route exact path="/dictionary"  component={dictionary} />
-                <Route exact path="/dictionary/co2" component={co2} />
-                <Route exact path="/dictionary/dextrose" component={dextrose} />
-                <Route exact path="/dictionary/methane" component={methane} />
-                <Route exact path="/dictionary/photosynthese" component={photosynthese} />
-                <Route exact path="/sdg03/u1/infotext" component={infotext_03_01} />
-                <Route exact path="/sdg04/spiel1/spiel04" component={spiel04} />                    
-                <Route exact path="/sdg06/Info/infotext06" component={Sdg06infotext} />
-                <Route exact path="/sdg06/u1/infotext11" component={infotext11} />
-                <Route exact path="/sdg13/u1/infotext13" component={infotext13} />                    
-                <Route exact path="/sdg13/u3/tutorial1" component={tutorial_13_u3} />
-                <Route exact path="/sdg13/u3/tips" component={tips_13_u3} /> 
-                <Route exact path="/sdg13/u3/question1" component={question1_13_u3} />
-                <Route exact path="/sdg13/u3/question2" component={question2_13_u3} />
-                <Route exact path="/sdg13/u3/question3" component={question3_13_u3} />
-                <Route exact path="/sdg13/tutorial/page1" component={page141} />                    
-                <Route exact path="/sdg13/tutorial/page2" component={page142} />
-                <Route exact path="/sdg13/tutorial/page3" component={page143} />
-                <Route exact path="/sdg13/play"  component={play13} />
-                <Route exact path="/sdg13/play/akw" component={akw} />                   
-                <Route exact path="/sdg13/play/cow" component={cow} />
-                <Route exact path="/sdg13/play/bicycle" component={bicycle} />
-                <Route exact path="/sdg13/play/wind_turbine" component={windTurbine} />
-                <Route exact path="/sdg13/play/tractor" component={tractor} />
-                <Route exact path="/sdg13/play/tree" component={tree}/>
-                <Route exact path="/sdg13/play/fox_and_hedgehog" component={foxHedgehog}/>
-                <Route exact path="/sdg13/u1/dnd" component={Main} />                    
-                <Route exact path="/sdg14/u0/infotext14" component={infotext14} />
-                <Route exact path="/sdg14/tutorial/page1" component={page141} />                    
-                <Route exact path="/sdg14/tutorial/page2" component={page142} />
-                <Route exact path="/sdg14/tutorial/page3" component={page143} />
-                
-                <Route exact path="/sdg14/play" component={play14} />
-                <Route exact path="/sdg14/play/clownfish" component={clownfish} />                    
-                <Route exact path="/sdg14/play/ray" component={ray} />
-                <Route exact path="/sdg14/play/seaHorse" component={seaHorse} />
-                <Route exact path="/sdg14/play/shark" component={shark} />
-                <Route exact path="/sdg14/play/siameseFightingFish" component={siamesefightingFish} />
-                <Route exact path="/sdg14/play/surgeonfish" component={surgeonfish} />
-                <Route exact path="/sdg14/play/turtle" component={turtle} />
-                <Route exact path="/sdg14/play/boat" component={boat} />   
-                <Route exact path ="/Vorlagen/infotext" component={Infotext}/>                    
+                <Route exact path="/" component={Home} />
+                <Route exact path="/Help" component={Help} />
+                <Route exact path ="/Vorlagen/infotext" component={Infotext}/> 
+
+/**----------------------------------------------------------------------------
+ *                              Vorlage
+ ----------------------------------------------------------------------------*/
+                <Route exact path ="/Vorlagen/infotext" component={Infotext}/> 
+
+
+/**----------------------------------------------------------------------------
+ *                              Wörterbuch
+ ----------------------------------------------------------------------------*/
+
+                <Route exact path="/Wörterbuch"  component={Wörterbuch}/>
+                <Route exact path="/Wörterbuch/Kohlenstoffdioxid" component={Kohlenstoffdioxid}/>
+                <Route exact path="/Wörterbuch/Dextrose" component={Dextrose}/>
+                <Route exact path="/Wörterbuch/Methan" component={Methan}/>
+                <Route exact path="/Wörterbuch/Photosynthese" component={Photosynthese}/>
+/**----------------------------------------------------------------------------
+ *                                SDG 01
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 02
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 03
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+        <Route exact path="/SDG03/Infotext" component={SDG03_Infotext}/>
+
+
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 04
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+            <Route exact path="/SDG04/Spiel1/SDG04_Spiel" component={SDG04_Spiel}/>                    
+
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 05
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 05
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+            <Route exact path="/SDG06/Infotext" component={SDG06_Infotext}/>
+
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 06
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 07
+ *  -------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 08
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 09
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 10
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 11
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+                <Route exact path="/SDG11/Infotext" component={SDG11_Infotext}/>
+
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 12
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+/**                                 Quiz                                     */
+/**                                Spiel                                     */
+/**                                Video                                     */
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 13
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+                <Route exact path="/SDG13/Infotext" component={SDG13_Infotext}/>                    
+
+/**                                 Quiz                                     */
+                <Route exact path="/SDG13/Quiz/Tutorial1" component={SDG13_Quiz_Tutorial}/>
+                <Route exact path="/SDG13/Quiz/Question1" component={SDG13_Quiz_Question1}/>
+                <Route exact path="/SDG13/Quiz/Question2" component={SDG13_Quiz_Question2}/>
+                <Route exact path="/SDG13/Quiz/Question3" component={SDG13_Quiz_Question3}/>
+                <Route exact path="/SDG13/Quiz/Tips" component={SDG13_Quiz_Tips} /> 
+
+/**                                Spiel                                     */
+                <Route exact path="/SDG13/tutorial/page1" component={page141}/>                    
+                <Route exact path="/SDG13/tutorial/page2" component={page142}/>
+                <Route exact path="/SDG13/tutorial/page3" component={page143}/>
+
+                <Route exact path="/SDG13/play"  component={play13}/>
+                <Route exact path="/SDG13/play/akw" component={akw}/>                   
+                <Route exact path="/SDG13/play/cow" component={cow}/>
+                <Route exact path="/SDG13/play/bicycle" component={bicycle}/>
+                <Route exact path="/SDG13/play/wind_turbine" component={windTurbine}/>
+                <Route exact path="/SDG13/play/tractor" component={tractor}/>
+                <Route exact path="/SDG13/play/tree" component={tree}/>
+                <Route exact path="/SDG13/play/fox_and_hedgehog" component={foxHedgehog}/>
+
+/**                                Spiel2                                    */
+                <Route exact path="/SDG13/u1/dnd" component={Main} />                    
+
+
+
+/**----------------------------------------------------------------------------
+ *                                SDG 14
+ * --------------------------------------------------------------------------*/
+/**                              Freie Arbeit                                */
+/**                             Gutes Beispiel                               */
+/**                               Infotext                                   */
+                <Route exact path="/SDG14/u0/infotext14" component={infotext14} />
+
+/**                                 Quiz                                     */
+
+/**                                Spiel                                     */
+
+/**                                Spiel2                                    */
+                <Route exact path="/SDG14/tutorial/page1" component={page141} />                    
+                <Route exact path="/SDG14/tutorial/page2" component={page142} />
+                <Route exact path="/SDG14/tutorial/page3" component={page143} />
+                <Route exact path="/SDG14/play" component={play14} />
+                <Route exact path="/SDG14/play/clownfish" component={clownfish} />                    
+                <Route exact path="/SDG14/play/ray" component={ray} />
+                <Route exact path="/SDG14/play/seaHorse" component={seaHorse} />
+                <Route exact path="/SDG14/play/shark" component={shark} />
+                <Route exact path="/SDG14/play/siameseFightingFish" component={siamesefightingFish} />
+                <Route exact path="/SDG14/play/surgeonfish" component={surgeonfish} />
+                <Route exact path="/SDG14/play/turtle" component={turtle} />
+                <Route exact path="/SDG14/play/boat" component={boat} />   
+
+/**----------------------------------------------------------------------------
+ *                                SDG 15
+ ----------------------------------------------------------------------------*/
+/**----------------------------------------------------------------------------
+ *                                SDG 16
+ ----------------------------------------------------------------------------*/
+/**----------------------------------------------------------------------------
+ *                                SDG 17
+ ----------------------------------------------------------------------------*/
+
+/**----------------------------------------------------------------------------
+ * ----------------------------------------------------------------------------
+ * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
+ * ----------------------------------------------------------------------------     
+ * --------------------------------------------------------------------------*/
+
             </Switch>
         </div>
     </Router>

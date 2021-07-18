@@ -69,6 +69,6 @@ module.exports = {
         "import/no-cycle": "off",
         "import/order": "warn",
         "react/static-property-placement": "off",
-        "unicorn/prefer-query-selector": "off"
+        "unicorn/prefer-query-selector": "off",
     },
 };

@@ -12,7 +12,7 @@ interface States {
 }
 
 // eslint-disable-next-line react/prefer-stateless-function
-export class question1_13_u3 extends React.Component <unknown, States> {
+export class SDG13_Quiz_Question1 extends React.Component <unknown, States> {
     
     constructor(props : unknown) {
         super(props);

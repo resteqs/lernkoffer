@@ -13,13 +13,13 @@ class page142 extends React.Component {
                         might not be able to find any of these wild animals anymore.{" "}
                     </p>
 
-                    <Link to="/sdg14/tutorial/page3">
+                    <Link to="/SDG14/tutorial/page3">
                         <button className="buttonNext" type="button">
                             NEXT
                         </button>
                     </Link>
 
-                    <Link to="/sdg14/tutorial/page1">
+                    <Link to="/SDG14/tutorial/page1">
                         <button className="buttonBack" type="button">
                             BACK
                         </button>

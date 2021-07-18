@@ -13,7 +13,7 @@ import Logo from "../../../SDGLogos/Goal-06.png";
 export const Infotext = (): JSX.Element => {
   // eslint-disable-next-line prefer-const
   let [showtext, setText] = React.useState(1);
-const sdg = "sdg06";
+const sdg = "SDG06";
 const text = {
     1: `Text1`,
     2: `Text2`,

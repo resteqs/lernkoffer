@@ -1,0 +1,10 @@
+Name der Klasse:
+    - SDG_Nummer des SDGs_Art der Umsetzung (Info/FreieArbeit/Spiel...)(_Name)
+
+URL der Website
+    - /SDG/Art der Umsetzung (Info/FreieArbeit/Spiel...)/name/...
+
+Name der Datei
+    - SDGNummer des SDGs_Art der Umsetzung (Info/FreieArbeit/Spiel...)(_Name)
+
+Ausgeschloßen ist Wörtbuch

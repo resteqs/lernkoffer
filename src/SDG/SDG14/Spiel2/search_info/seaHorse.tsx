@@ -15,7 +15,7 @@ class seaHorse extends React.Component {
                     shrinks more and more.
                 </p>
 
-                <Link to="/sdg14/play">
+                <Link to="/SDG14/play">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

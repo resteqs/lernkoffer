@@ -11,7 +11,7 @@
 :root { --sdg11color: #FD9D24;}
 :root { --sdg12color: #BF8B2E;}
 :root { --sdg13color: #3F7E44;}
-:root { --sdg14color: #0A97D9;}
+:root { --SDG14color: #0A97D9;}
 :root { --sdg15color: #56C02B;}
 :root { --sdg16color: #00689D;}
 :root { --sdg17color: #19486A ;}
@@ -68,8 +68,8 @@
     background-color: var(--sdg13color);
 }
 
-.colour_sdg14{
-    background-color: var(--sdg14color);
+.colour_SDG14{
+    background-color: var(--SDG14color);
 }
 
 .colour_sdg15{

@@ -11,7 +11,7 @@ class surgeonfish extends React.Component {
                     Finally, good news, this species is having a great time in the seas.
                 </p>
 
-                <Link to="/sdg14/play">
+                <Link to="/SDG14/play">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

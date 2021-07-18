@@ -42,7 +42,7 @@ class akw extends React.Component {
                     </p>
                 </div>
 
-                <Link to="/sdg13/play">
+                <Link to="/SDG13/play">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

@@ -12,7 +12,7 @@ class turtle extends React.Component {
                     numbers. Another reason for their extinction is the pollution of the oceans.
                 </p>
 
-                <Link to="/sdg14/play">
+                <Link to="/SDG14/play">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

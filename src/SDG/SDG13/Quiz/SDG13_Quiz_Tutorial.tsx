@@ -5,7 +5,7 @@ import '../../../styles/quiz.css';
 import Logo from '../../../SDGLogos/Goal-13.png';
 
 // eslint-disable-next-line react/prefer-stateless-function
-export class tutorial_13_u3 extends React.Component {
+export class SDG13_Quiz_Tutorial extends React.Component {
     render(): JSX.Element {
         return (
             <div>
@@ -34,7 +34,7 @@ export class tutorial_13_u3 extends React.Component {
                     After everybody chose an answer take a look at the solution and maybe those of you who chose
                     correctly can explain their thoughts to those who stood in the other corners/spots
                 </p>
-                <Link to = "/sdg13/u3/question1">
+                <Link to = "/SDG13/Quiz/Question1">
                     <div className = "greenButton"  > 
                         Got it
                     </div>

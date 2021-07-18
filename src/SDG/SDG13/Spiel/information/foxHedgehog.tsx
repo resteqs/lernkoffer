@@ -11,13 +11,13 @@ class foxHedgehog extends React.Component {
                     <p className="playinformation">
                         Lovely little animals, you could think, how should they be connected to the greenhouse effect
                         and climate change? Well, animals are somehow&nbsp;
-                        <span className="red">natural producers of certain gases</span>&nbsp;like methane or carbon
+                        <span className="red">natural producers of certain gases</span>&nbsp;like Methane or carbon
                         dioxide (CO<sub>2</sub>).&nbsp;<span className="red">Most gases</span>&nbsp;produced by brutes
                         come from industrial&nbsp;<span className="red">livestock farming</span>&nbsp;and especially
-                        from ruminants because they burp and fart out methane, which results from their digestion.&nbsp;
+                        from ruminants because they burp and fart out Methane, which results from their digestion.&nbsp;
                     </p>
                 </div>
-                <Link to="/sdg13/play">
+                <Link to="/SDG13/play">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

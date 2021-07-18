@@ -13,13 +13,13 @@ class page143 extends React.Component {
                         they die out.
                     </p>
 
-                    <Link to="/sdg14/play">
+                    <Link to="/SDG14/play">
                         <button className="buttonNext" type="button">
                             NEXT
                         </button>
                     </Link>
 
-                    <Link to="/sdg13/tutorial/page2">
+                    <Link to="/SDG13/tutorial/page2">
                         <button className="buttonBack" type="button">
                             BACK
                         </button>

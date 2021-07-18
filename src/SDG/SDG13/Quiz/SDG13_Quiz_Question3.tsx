@@ -4,7 +4,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prefer-stateless-function
-export class question3_13_u3 extends React.Component {
+export class SDG13_Quiz_Question3 extends React.Component {
 
     render(): JSX.Element {
         return (
@@ -14,7 +14,7 @@ export class question3_13_u3 extends React.Component {
                     <p className = "text">Does a passenger car or an urban bus produce more carbon dioxide?</p>
                 </div>
                 <div>
-                    <Link to = "/sdg13/u3/answer3">
+                    <Link to = "/SDG13/u3/answer3">
                         <button className = "answerButtonleft" type = "button" onClick = { () => alert("excellent") }>
                             The passenger car
                         </button>

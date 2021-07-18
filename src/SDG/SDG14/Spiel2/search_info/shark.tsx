@@ -13,7 +13,7 @@ class shark extends React.Component {
                     shark in the water again.
                 </p>
 
-                <Link to="/sdg14/play">
+                <Link to="/SDG14/play">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

@@ -3,7 +3,7 @@
 import * as React from "react";
 
 // eslint-disable-next-line react/prefer-stateless-function
-export class tips_13_u3 extends React.Component {
+export class SDG13_Quiz_Tips extends React.Component {
 
     render(): JSX.Element {
         return (

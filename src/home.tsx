@@ -1,16 +1,16 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom';
 
-export const home  = ():JSX.Element => {
+export const Home  = ():JSX.Element => {
     return(
         <div className = "standard-background" >
             <div className = "header">
-                This is our home page
+                This is our Home page
                 Need help
                 Go to:    
             </div> 
             <div className = "header">
-            <Link  to = "/help" >HELP</Link>
+            <Link  to = "/Help" >Help</Link>
             </div>
             <button type = "button">
                 Hallo
