@@ -11,4 +11,4 @@ export const Photosynthese = ():JSX.Element => {
             </Link>  
         </div>
     );
-}
+};

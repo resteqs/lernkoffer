@@ -7,9 +7,7 @@ class surgeonfish extends React.Component {
         return (
             <div className="standard-background">
                 <h1 className="header">surgeonfish</h1>
-                <p className="playinformation">
-                    Finally, good news, this species is having a great time in the seas.
-                </p>
+                <p className="playinformation">Finally, good news, this species is having a great time in the seas.</p>
 
                 <Link to="/SDG14/play">
                     <button className="buttonBack" type="button">

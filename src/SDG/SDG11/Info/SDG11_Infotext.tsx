@@ -45,7 +45,7 @@ export class SDG11_Infotext extends React.Component {
                             offset={-70}
                             duration={500}
                         >
-                            How does it affect us? 
+                            How does it affect us?
                         </Link>
                         <Link
                             to="section4"

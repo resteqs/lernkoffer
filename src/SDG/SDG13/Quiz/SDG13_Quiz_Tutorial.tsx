@@ -1,8 +1,8 @@
 // eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
 import { Link } from "react-router-dom";
-import '../../../styles/quiz.css';
-import Logo from '../../../SDGLogos/Goal-13.png';
+import "../../../styles/quiz.css";
+import Logo from "../../../SDGLogos/Goal-13.png";
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class SDG13_Quiz_Tutorial extends React.Component {

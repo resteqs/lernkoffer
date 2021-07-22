@@ -19,7 +19,6 @@ class page1 extends React.Component {
                        
                     
                 </div>
-                
             </div>
         );
     }

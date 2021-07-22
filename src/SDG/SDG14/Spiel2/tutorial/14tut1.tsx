@@ -8,7 +8,7 @@ class page141 extends React.Component {
             <div className="standard-background">
                 <h1 className="header">Tutorial</h1>
                 <div>
-                    <p className = "playinformation">
+                    <p className="playinformation">
                         In the Oceans, there are living more than 2.2 million species like blue whales, common sea stars
                         and Atlantic salmons.
                     </p>
@@ -18,11 +18,10 @@ class page141 extends React.Component {
                             NEXT
                         </button>
                     </Link>
-                    
                 </div>
             </div>
         );
     }
 }
 
-export default page141
+export default page141;

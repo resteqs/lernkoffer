@@ -10,4 +10,4 @@ export const Methan = ():JSX.Element => {
             </Link>  
         </div>
     );
-}
+};

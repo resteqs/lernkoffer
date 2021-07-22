@@ -7,9 +7,6 @@ import "../../../styles/colour_sdgs.css";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-06.png";
 
-
-
-
 export const Infotext = (): JSX.Element => {
   // eslint-disable-next-line prefer-const
   let [showtext, setText] = React.useState(1);
@@ -31,17 +28,37 @@ function incrementCount(): void {
   setText(showtext+1);
 }
 
-function decrementCount(): void {
-  setText(showtext-1); 
-}
-let buttonBack;
-let buttonNext;
-// eslint-disable-next-line prefer-const
-buttonBack = showtext >= 2 ? <button className = "backbutton" type="button" onClick={decrementCount}>Zurück</button> : <button className = "buttonInvisible" type="button"> </button>;
-// eslint-disable-next-line prefer-const
-buttonNext = showtext <= 3 ? <button className = "nextbutton" type="button" onClick={incrementCount}>Weiter</button> : <button className = "buttonInvisible" type="button"> </button>;
-  
+    function incrementCount(): void {
+        setText(showtext + 1);
+    }
 
+    function decrementCount(): void {
+        setText(showtext - 1);
+    }
+    let buttonBack;
+    let buttonNext;
+    // eslint-disable-next-line prefer-const
+    buttonBack =
+        showtext >= 2 ? (
+            <button className="backbutton" type="button" onClick={decrementCount}>
+                Zurück
+            </button>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+    // eslint-disable-next-line prefer-const
+    buttonNext =
+        showtext <= 3 ? (
+            <button className="nextbutton" type="button" onClick={incrementCount}>
+                Weiter
+            </button>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
 
     return (
         <div>
@@ -51,13 +68,15 @@ buttonNext = showtext <= 3 ? <button className = "nextbutton" type="button" onCl
                 </div>
             </div>
             <div className="infotextbox">
-                <p><b>{header[showtext]}</b></p> <br/>
+                <p>
+                    <b>{header[showtext]}</b>
+                </p>{" "}
+                <br />
                 <p> {text[showtext]} </p>
             </div>
             {buttonBack}
             {buttonNext}
-           
         </div>
-    ); 
+    );
 };
-renderer.render(<Infotext/> , document.getElementById("root"))
+renderer.render(<Infotext />, document.getElementById("root"));

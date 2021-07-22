@@ -16,7 +16,6 @@ class page3 extends React.Component {
                     <Link to = "/SDG13/page2">
                         <button className = "buttonBack" type = "button">BACK</button>
                     </Link>
-                    
                 </div>
             </div>
         );

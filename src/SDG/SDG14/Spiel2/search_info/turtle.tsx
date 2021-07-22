@@ -7,7 +7,7 @@ class turtle extends React.Component {
         return (
             <div className="standard-background">
                 <h1 className="header">turtle</h1>
-                <p className = "playinformation">
+                <p className="playinformation">
                     Turtles are rarely fished, yet they often get in the fisherman’s net what causes enormous shrinking
                     numbers. Another reason for their extinction is the pollution of the oceans.
                 </p>

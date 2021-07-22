@@ -23,6 +23,7 @@ import { Dextrose } from "./SDG/Wörterbuch/Elemente/Dextrose";
 import { Methan } from "./SDG/Wörterbuch/Elemente/Methan";
 import { Photosynthese } from "./SDG/Wörterbuch/Elemente/Photosynthese";
 import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
+import { Quiz } from "./SDG/Vorlagen/Quiz/quiz";
 
 /**----------------------------------------------------------------------------
  *                                SDG 01
@@ -253,7 +254,7 @@ import { SDG04_Spiel } from "./SDG/SDG4/Spiel/04spiel";
 
 
 export const App = (): JSX.Element => {
-    return (        
+    return (
         <Router basename="/lernkoffer">
         <div className="App">
             <Switch> 

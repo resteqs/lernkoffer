@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { Link } from 'react-router-dom';
+import * as React from "react";
+import { Link } from "react-router-dom";
 
 export const Home  = ():JSX.Element => {
     return(
@@ -12,10 +12,7 @@ export const Home  = ():JSX.Element => {
             <div className = "header">
             <Link  to = "/Help" >Help</Link>
             </div>
-            <button type = "button">
-                Hallo
-            </button>
+            <button type="button">Hallo</button>
         </div>
-
     );
-}
+};

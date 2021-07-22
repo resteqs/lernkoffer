@@ -23,8 +23,8 @@
     display: flex;
     align-items: center;
 }
-.quizQuestion{
-    background-color: rgb(204,204,255);
+.quizQuestion {
+    background-color: rgb(204, 204, 255);
     text-align: center;
     font-size: x-large;
     padding: 30px;
@@ -32,7 +32,7 @@
     margin-right: 30%;
     border-left-style: solid;
     border-left-color: rgba(63, 126, 68, 1);
-    border-width: 10px;  
+    border-width: 10px;
     border-radius: 15px;
     margin-top: 0.5%;
     margin-bottom: 1%;
@@ -103,60 +103,54 @@
     color: red;
 }
 
-.green{
-    color:green;
+.green {
+    color: green;
 }
 
-
-.answerButton{
+.answerButton {
     justify-content: space-around;
     background-color: white;
     display: flex;
-    background-color:#ffffff;
-	border-radius:25px;
-	border:2px solid #000000;
-	display:inline-block;
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    display: inline-block;
 
-	color:#000000;
-	font-family:Arial;
-	font-size:23px;
-	padding:19px 40px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
+    color: #000000;
+    font-family: Arial;
+    font-size: 23px;
+    padding: 19px 40px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
     justify-content: space-around;
     align-items: center;
 }
 
-
-.answerButtonleft{
+.answerButtonleft {
     justify-content: space-around;
     align-items: center;
     background-color: #fcf4d9;
-    padding:19px 40px;
-    float:left;
+    padding: 19px 40px;
+    float: left;
     width: 25%;
     margin-left: 12.5%;
     border-radius: 30px;
     font-size: x-large;
 }
 
-
-
-.answerButtonright{
+.answerButtonright {
     justify-content: space-around;
     align-items: center;
     background-color: #fcf4d9;
-    padding:19px 40px;
-    float:right;
+    padding: 19px 40px;
+    float: right;
     width: 25%;
     margin-right: 12.5%;
     border-radius: 30px;
     font-size: x-large;
 }
 
-
-
-.solution{
+.solution {
     font-size: x-large;
     align-items: center;
     margin: 12%;

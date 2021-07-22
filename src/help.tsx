@@ -61,8 +61,7 @@ export const Help = ():JSX.Element => {
                 <Link to="/SDG14/play">
                     <div className="centre">SDG 14 game</div>
                 </Link>
-                
             </div>
         </div>
     );
-}
+};

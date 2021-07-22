@@ -45,7 +45,7 @@ export interface ContainerState {
     dustbins: DustbinSpec[];
     trash: BoxSpec[];
 }
- 
+
 export const Container: FC = () => {
     const [trash] = useState<BoxState[]>([
         { name: "apple", image: apple, type: ItemTypes.ORGANIC },
@@ -91,7 +91,6 @@ export const Container: FC = () => {
             // eslint-disable-next-line no-lone-blocks
             {
                 alert("Excelent");
-                
             }
         },
         [droppedBoxNames, dustbins],

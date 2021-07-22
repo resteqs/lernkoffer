@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import logo from "./13_Bild_Suchspiel.png";
 
-export const play13 = ():JSX.Element => {
+export const play13 = (): JSX.Element => {
     return (
         <div className="SDG13-play-scale" >
             <img className="logoGeneral" src={logo} alt="" />
@@ -62,4 +62,4 @@ export const play13 = ():JSX.Element => {
             </svg>
         </div>
     );
-}
+};

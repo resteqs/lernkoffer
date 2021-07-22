@@ -8,7 +8,7 @@ class page142 extends React.Component {
             <div className="standard-background">
                 <h1 className="header">Tutorial</h1>
                 <div>
-                    <p className = "playinformation">
+                    <p className="playinformation">
                         But many living creatures are threatened with extinction which means that in a few years we
                         might not be able to find any of these wild animals anymore.{" "}
                     </p>
