@@ -9,7 +9,7 @@ class surgeonfish extends React.Component {
                 <h1 className="header">surgeonfish</h1>
                 <p className="playinformation">Finally, good news, this species is having a great time in the seas.</p>
 
-                <Link to="/SDG14/play">
+                <Link to="/SDG14/Spiel2">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

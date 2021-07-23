@@ -13,7 +13,7 @@ class page141 extends React.Component {
                         and Atlantic salmons.
                     </p>
 
-                    <Link to="/SDG14/tutorial/page2">
+                    <Link to="/SDG14/Spiel2/tutorial2">
                         <button className="buttonNext" type="button">
                             NEXT
                         </button>

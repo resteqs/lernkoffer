@@ -17,7 +17,7 @@ class foxHedgehog extends React.Component {
                         from ruminants because they burp and fart out Methane, which results from their digestion.&nbsp;
                     </p>
                 </div>
-                <Link to="/SDG13/play">
+                <Link to="/SDG13/Spiel1">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

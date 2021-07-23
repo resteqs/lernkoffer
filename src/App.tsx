@@ -3,8 +3,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { Home } from "./Home";
-import { Help } from "./Help";
+import { Home } from "./home";
+import { Help } from "./help";
 
 /**----------------------------------------------------------------------------
  *                              Style sheets
@@ -450,17 +450,17 @@ export const App = (): JSX.Element => {
                 <Route exact path="/SDG13/tutorial/page2" component={page142}/>
                 <Route exact path="/SDG13/tutorial/page3" component={page143}/>
 
-                <Route exact path="/SDG13/play"  component={play13}/>
-                <Route exact path="/SDG13/play/akw" component={akw}/>                   
-                <Route exact path="/SDG13/play/cow" component={cow}/>
-                <Route exact path="/SDG13/play/bicycle" component={bicycle}/>
-                <Route exact path="/SDG13/play/wind_turbine" component={windTurbine}/>
-                <Route exact path="/SDG13/play/tractor" component={tractor}/>
-                <Route exact path="/SDG13/play/tree" component={tree}/>
-                <Route exact path="/SDG13/play/fox_and_hedgehog" component={foxHedgehog}/>
+                <Route exact path="/SDG13/Spiel1"  component={play13}/>
+                <Route exact path="/SDG13/Spiel1/akw" component={akw}/>                   
+                <Route exact path="/SDG13/Spiel1/cow" component={cow}/>
+                <Route exact path="/SDG13/Spiel1/bicycle" component={bicycle}/>
+                <Route exact path="/SDG13/Spiel1/wind_turbine" component={windTurbine}/>
+                <Route exact path="/SDG13/Spiel1/tractor" component={tractor}/>
+                <Route exact path="/SDG13/Spiel1/tree" component={tree}/>
+                <Route exact path="/SDG13/Spiel1/fox_and_hedgehog" component={foxHedgehog}/>
 
 /**                                Spiel2                                    */
-                <Route exact path="/SDG13/u1/dnd" component={Main} />                    
+                <Route exact path="/SDG13/Spiel2" component={Main} />                    
 
 
 
@@ -470,25 +470,25 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
-                <Route exact path="/SDG14/u0/infotext14" component={infotext14} />
+                <Route exact path="/SDG14/Infotext" component={infotext14} />
 
 /**                                 Quiz                                     */
 
 /**                                Spiel                                     */
 
 /**                                Spiel2                                    */
-                <Route exact path="/SDG14/tutorial/page1" component={page141} />                    
-                <Route exact path="/SDG14/tutorial/page2" component={page142} />
-                <Route exact path="/SDG14/tutorial/page3" component={page143} />
-                <Route exact path="/SDG14/play" component={play14} />
-                <Route exact path="/SDG14/play/clownfish" component={clownfish} />                    
-                <Route exact path="/SDG14/play/ray" component={ray} />
-                <Route exact path="/SDG14/play/seaHorse" component={seaHorse} />
-                <Route exact path="/SDG14/play/shark" component={shark} />
-                <Route exact path="/SDG14/play/siameseFightingFish" component={siamesefightingFish} />
-                <Route exact path="/SDG14/play/surgeonfish" component={surgeonfish} />
-                <Route exact path="/SDG14/play/turtle" component={turtle} />
-                <Route exact path="/SDG14/play/boat" component={boat} />   
+                <Route exact path="/SDG14/Spiel2/tutorial1" component={page141} />                    
+                <Route exact path="/SDG14/Spiel2/tutorial2" component={page142} />
+                <Route exact path="/SDG14/Spiel2/tutorial3" component={page143} />
+                <Route exact path="/SDG14/Spiel2" component={play14} />
+                <Route exact path="/SDG14/Spiel2/clownfish" component={clownfish} />                    
+                <Route exact path="/SDG14/Spiel2/ray" component={ray} />
+                <Route exact path="/SDG14/Spiel2/seaHorse" component={seaHorse} />
+                <Route exact path="/SDG14/Spiel2/shark" component={shark} />
+                <Route exact path="/SDG14/Spiel2/siameseFightingFish" component={siamesefightingFish} />
+                <Route exact path="/SDG14/Spiel2/surgeonfish" component={surgeonfish} />
+                <Route exact path="/SDG14/Spiel2/turtle" component={turtle} />
+                <Route exact path="/SDG14/Spiel2/boat" component={boat} />   
 
 /**----------------------------------------------------------------------------
  *                                SDG 15

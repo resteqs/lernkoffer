@@ -9,7 +9,7 @@ class page3 extends React.Component {
                 <h1 className="header">Tutorial</h1>
                 <div> 
                     <p className = "playinformation">Can you guess which element produces what amount of gases? Click on them and find out.</p>
-                    <Link to = "/SDG13/play">
+                    <Link to = "/SDG13/Spiel1">
                         <button className = "buttonNext" type = "button">NEXT</button>
                     </Link>
 

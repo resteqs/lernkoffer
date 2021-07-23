@@ -23,7 +23,7 @@ class boat extends React.Component {
                     </p>
                 </p>
 
-                <Link to="/SDG14/play">
+                <Link to="/SDG14/Spiel2">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

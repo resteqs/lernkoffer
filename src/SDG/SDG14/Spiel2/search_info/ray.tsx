@@ -12,7 +12,7 @@ class ray extends React.Component {
                     important role.
                 </p>
 
-                <Link to="/SDG14/play">
+                <Link to="/SDG14/Spiel2">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

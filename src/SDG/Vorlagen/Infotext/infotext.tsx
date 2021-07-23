@@ -8,25 +8,21 @@ import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-06.png";
 
 export const Infotext = (): JSX.Element => {
-  // eslint-disable-next-line prefer-const
-  let [showtext, setText] = React.useState(1);
-const sdg = "SDG06";
-const text = {
-    1: `Text1`,
-    2: `Text2`,
-    3: `Text3`,
-    4: `Text4`,
-}; 
-const header = {
-    1: "Warum?", 
-    2: "Was ist das Problem?",
-    3: "Wie ist dieses Thema mit uns verbunden?",
-    4: "Was können wir tun?",
-};
-
-function incrementCount(): void {
-  setText(showtext+1);
-}
+    // eslint-disable-next-line prefer-const
+    let [showtext, setText] = React.useState(1);
+    const sdg = "SDG06";
+    const text = {
+        1: `Text1`,
+        2: `Text2`,
+        3: `Text3`,
+        4: `Text4`,
+    };
+    const header = {
+        1: "Warum?",
+        2: "Was ist das Problem?",
+        3: "Wie ist dieses Thema mit uns verbunden?",
+        4: "Was können wir tun?",
+    };
 
     function incrementCount(): void {
         setText(showtext + 1);

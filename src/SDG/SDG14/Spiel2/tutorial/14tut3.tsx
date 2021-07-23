@@ -13,7 +13,7 @@ class page143 extends React.Component {
                         they die out.
                     </p>
 
-                    <Link to="/SDG14/play">
+                    <Link to="/SDG14/Spiel2">
                         <button className="buttonNext" type="button">
                             NEXT
                         </button>

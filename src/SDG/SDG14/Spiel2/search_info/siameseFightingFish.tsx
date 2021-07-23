@@ -12,7 +12,7 @@ class siameseFightingFish extends React.Component {
                     home is in the aquarium back home.
                 </p>
 
-                <Link to="/SDG14/play">
+                <Link to="/SDG14/Spiel2">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

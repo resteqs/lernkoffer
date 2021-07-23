@@ -14,7 +14,7 @@ class clownfish extends React.Component {
                     also damaged the coral reefs which normally are a home for these fishes.
                 </p>
 
-                <Link to="/SDG14/play">
+                <Link to="/SDG14/Spiel2">
                     <button className="buttonBack" type="button">
                         Back
                     </button>

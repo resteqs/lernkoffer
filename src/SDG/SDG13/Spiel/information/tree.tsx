@@ -34,7 +34,7 @@ class tree extends React.Component {
                         </p>
                     </p>
                 </div>
-                <Link to="/SDG13/play">
+                <Link to="/SDG13/Spiel1">
                     <button className="buttonBack" type="button">
                         Back
                     </button>
