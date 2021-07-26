@@ -10,7 +10,7 @@ interface States {
     shouldShowModal: boolean;
     onlyCloseWithButton: boolean;
 }
-
+const sdg = "SDG06";
 // eslint-disable-next-line react/prefer-stateless-function
 export class Quiz extends React.Component<unknown, States> {
     constructor(props: unknown) {
@@ -58,11 +58,11 @@ export class Quiz extends React.Component<unknown, States> {
         };
         return (
             <div>
-                <div className="colour_sdg13">
-                    <div className="header">
-                        Hochwertige Bildungg <img className="sdglogo" alt="logo" src={Logo} />
-                    </div>
+              <div className={`colour_${sdg}`}>
+                <div className="header">
+                    Hochwertige Bildung <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
+            </div>
 
                 <p className="quizQuestion">Does a passenger car or a plane produce more greenhouse gases?</p>
                 <div>

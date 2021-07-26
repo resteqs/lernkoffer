@@ -11,9 +11,14 @@ import { Help } from "./help";
  ----------------------------------------------------------------------------*/
 import "./styles/App.css";
 import "./styles/colour_sdgs.css";
-import "./styles/SDG13.css";
-import "./styles/SDG14.css";
+import "./styles/sdg13.css";
+import "./styles/sdg14.css";
 
+/**----------------------------------------------------------------------------
+ *                              Vorlage
+ ----------------------------------------------------------------------------*/
+ import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
+ import { Quiz } from "./SDG/Vorlagen/Quiz/quiz";
 /**----------------------------------------------------------------------------
  *                              Wörterbuch
  ----------------------------------------------------------------------------*/
@@ -22,8 +27,7 @@ import { Kohlenstoffdioxid } from "./SDG/Wörterbuch/Elemente/Kohlenstoffdioxid"
 import { Dextrose } from "./SDG/Wörterbuch/Elemente/Dextrose";
 import { Methan } from "./SDG/Wörterbuch/Elemente/Methan";
 import { Photosynthese } from "./SDG/Wörterbuch/Elemente/Photosynthese";
-import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
-import { Quiz } from "./SDG/Vorlagen/Quiz/quiz";
+
 
 /**----------------------------------------------------------------------------
  *                                SDG 01
@@ -260,13 +264,12 @@ export const App = (): JSX.Element => {
             <Switch> 
                 <Route exact path="/" component={Home} />
                 <Route exact path="/Help" component={Help} />
-                <Route exact path ="/Vorlagen/infotext" component={Infotext}/> 
 
 /**----------------------------------------------------------------------------
  *                              Vorlage
  ----------------------------------------------------------------------------*/
                 <Route exact path ="/Vorlagen/infotext" component={Infotext}/> 
-
+                <Route exact path ="/Vorlagen/quiz" component={Quiz}/> 
 
 /**----------------------------------------------------------------------------
  *                              Wörterbuch
@@ -343,7 +346,6 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
-            <Route exact path="/SDG06/Infotext" component={SDG06_Infotext}/>
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
@@ -356,7 +358,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
-
+            <Route exact path="/SDG06/Infotext" component={SDG06_Infotext}/>
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
 /**                                Video                                     */
