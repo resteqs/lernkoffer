@@ -2,22 +2,21 @@
 /* eslint-disable unicorn/filename-case */
 import * as React from "react";
 import Modal, { ICustomModalStyle } from "@bdenzer/react-modal";
-import Logo from "../../../SDGLogos/Goal-13.png";
+import Logo from "../../../SDGLogos/Goal-06.png";
 
 interface States {
-    button1color: string;
-    button2color: string;
     shouldShowModal: boolean;
     onlyCloseWithButton: boolean;
 }
 const sdg = "SDG06";
+let answer1 = 0;
+let answer2 = 0;
+
 // eslint-disable-next-line react/prefer-stateless-function
 export class Quiz extends React.Component<unknown, States> {
     constructor(props: unknown) {
         super(props);
         this.state = {
-            button1color: "rgb(204,204,255)",
-            button2color: "blue",
             shouldShowModal: false,
             onlyCloseWithButton: true,
         };
@@ -25,11 +24,11 @@ export class Quiz extends React.Component<unknown, States> {
         this.openModal = this.openModal.bind(this);
     }
 
-    handleClick(): void {
-        this.setState(({ button1color }) => ({
-            button1color: "green",
-            button2color: "red",
-        }));
+    // eslint-disable-next-line class-methods-use-this
+    public  handleClick(): void {
+       answer1 = 1 /* leftbutton answer 1 is true 2 is false */
+       answer2 = 2 /* rightbutton answer 1 is true 2 is false */
+       
     }
 
     private closeModal(): void {
@@ -68,10 +67,10 @@ export class Quiz extends React.Component<unknown, States> {
                 <div>
                     <button
                         className="answerButtonleft"
-                        style={{ backgroundColor: this.state.button1color }}
+                        style = { answer1 === 1 ? { backgroundColor: "green" }: (answer1 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }
                         type="button"
                         onClick={() => {
-                            this.handleClick();
+                            this.handleClick()
                             setTimeout(() => {
                                 this.openModal();
                             }, 1000);
@@ -81,10 +80,10 @@ export class Quiz extends React.Component<unknown, States> {
                     </button>
                     <button
                         className="answerButtonright"
-                        style={{ backgroundColor: this.state.button2color }}
                         type="button"
+                        style = { answer2 === 1 ? { backgroundColor: "green" }: (answer2 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }
                         onClick={() => {
-                            this.handleClick();
+                            this.handleClick()
                             setTimeout(() => {
                                 this.openModal();
                             }, 1000);

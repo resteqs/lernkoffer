@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
+    font-family: Arial;
 }
 
 .infoNav {
@@ -61,7 +62,6 @@ li {
     text-transform: uppercase;
     font-size: 50px;
     line-height: 80px;
-    font-family: "Copperplate", fantasy;
 }
 
 .sdglogo {
