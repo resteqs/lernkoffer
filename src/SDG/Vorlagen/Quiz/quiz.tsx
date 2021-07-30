@@ -1,16 +1,25 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable unicorn/filename-case */
 import * as React from "react";
+import ReactRef, { useState, useRef, useEffect } from 'react';
 import Modal, { ICustomModalStyle } from "@bdenzer/react-modal";
+import classNames from 'classnames';
+import a from "./letter-a.png"
+import b from "./letter-b.png"
 import Logo from "../../../SDGLogos/Goal-06.png";
+
 
 interface States {
     shouldShowModal: boolean;
     onlyCloseWithButton: boolean;
 }
+
+
 const sdg = "SDG06";
 let answer1 = 0;
 let answer2 = 0;
+const button1class = classNames ('pushable', 'answerButtonleft');
+const button2class = classNames ('pushable', 'answerButtonright');
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class Quiz extends React.Component<unknown, States> {
@@ -22,7 +31,10 @@ export class Quiz extends React.Component<unknown, States> {
         };
         this.closeModal = this.closeModal.bind(this);
         this.openModal = this.openModal.bind(this);
+        
     }
+
+  
 
     // eslint-disable-next-line class-methods-use-this
     public  handleClick(): void {
@@ -31,6 +43,9 @@ export class Quiz extends React.Component<unknown, States> {
        
     }
 
+
+        
+        
     private closeModal(): void {
         this.setState({ shouldShowModal: false });
     }
@@ -57,39 +72,52 @@ export class Quiz extends React.Component<unknown, States> {
         };
         return (
             <div>
+                <head>
+                <style>{'body { background-color: #fff; }'}</style>
+                </head>
               <div className={`colour_${sdg}`}>
                 <div className="header">
                     Hochwertige Bildung <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
-            </div>
+                 </div>
 
                 <p className="quizQuestion">Does a passenger car or a plane produce more greenhouse gases?</p>
                 <div>
                     <button
-                        className="answerButtonleft"
-                        style = { answer1 === 1 ? { backgroundColor: "green" }: (answer1 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }
+                        className= {button1class}
                         type="button"
+                        style = { { height: '15%' } }
                         onClick={() => {
                             this.handleClick()
                             setTimeout(() => {
                                 this.openModal();
                             }, 1000);
                         }}
+                        
                     >
-                        The passenger car
+                     <span className="shadow" />
+                    <span className= { answer1 === 1 ?  "edgegreen" : (answer1 === 2 ? "edgered"  :  "edgeblue" ) }/>
+                    <span className="front" style = { answer1 === 1 ? { backgroundColor: "green" }: (answer1 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }>
+                    <img className="letterbox" src= {a} alt="a"/> <br/>car
+        </span>
                     </button>
                     <button
-                        className="answerButtonright"
+                        className= {button2class}
                         type="button"
-                        style = { answer2 === 1 ? { backgroundColor: "green" }: (answer2 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }
+                        style = { { height: '15%' } }
                         onClick={() => {
                             this.handleClick()
                             setTimeout(() => {
                                 this.openModal();
                             }, 1000);
                         }}
+                        
                     >
-                        The plane
+                     <span className="shadow" />
+                    <span className= { answer2 === 1 ?  "edgegreen" : (answer2 === 2 ? "edgered"  :  "edgeblue" ) }/>
+                    <span className="front" style = { answer2 === 1 ? { backgroundColor: "green" }: (answer2 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }>
+                    <img className="letterbox" src= {b} alt="b"/> <br/>Plane
+        </span>
                     </button>
                 </div>
                 <div>
@@ -100,7 +128,7 @@ export class Quiz extends React.Component<unknown, States> {
                         title="React Modal in TypeScript"
                         onlyCloseWithButton={this.state.onlyCloseWithButton === true}
                     >
-                        The plane does. Studies show that a plane produces about 230 grams per Person per kilometer
+                        The plane does. Studies show that a plexport default Quiz; ne produces about 230 grams per Person per kilometer
                         (g/Pkm) while a passenger car only frees about 147 g/Pkm.
                     </Modal>
                 </div>

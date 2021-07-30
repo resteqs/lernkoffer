@@ -75,6 +75,8 @@ export const Help = ():JSX.Element => {
                 <Link to="/Vorlagen/MagicButton">
                     <div className="centre">Magic Awesome Button with magic</div>
                 </Link>
+
+                <Link to="/Vorlagen/Quiz">  <div className="centre">Quiz vorlage</div> </Link>
                 
             </div>
         </div>

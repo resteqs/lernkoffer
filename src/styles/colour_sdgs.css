@@ -30,6 +30,7 @@
 
 .colour_SDG04 {
     background-color: var(--SDG04color);
+    
 }
 
 .colour_SDG05 {
@@ -38,6 +39,10 @@
 
 .colour_SDG06 {
     background-color: var(--SDG06color);
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 30px;
 }
 
 .colour_SDG07 {
