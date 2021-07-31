@@ -15,7 +15,9 @@ const style: CSSProperties = {
 };
 
 const coolerStyle: CSSProperties = {
+    visibility: "hidden",
     filter: "blur(10px)",
+    cursor: "move",
 };
 
 const correctDropped: CSSProperties = {

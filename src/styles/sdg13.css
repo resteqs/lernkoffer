@@ -143,3 +143,10 @@
     margin: 12%;
     margin-top: 9%;
 }
+
+.ifeelLikeTrash{
+    transform:scale(0.9 , 0.9);
+    padding-bottom: 41;
+    cursor: default;
+
+}
