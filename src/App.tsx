@@ -11,14 +11,9 @@ import { Help } from "./help";
  ----------------------------------------------------------------------------*/
 import "./styles/App.css";
 import "./styles/colour_sdgs.css";
-import "./styles/SDG13.css";
-import "./styles/SDG14.css";
+import "./styles/sdg13.css";
+import "./styles/sdg14.css";
 
-/**----------------------------------------------------------------------------
- *                              Vorlage
- ----------------------------------------------------------------------------*/
- import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
- import { Quiz } from "./SDG/Vorlagen/Quiz/quiz";
 /**----------------------------------------------------------------------------
  *                              Wörterbuch
  ----------------------------------------------------------------------------*/
@@ -243,6 +238,10 @@ import { Main } from "./SDG/SDG13/Spiel2/DND/Main";
  *                                Vorlagen
  ----------------------------------------------------------------------------*/
 import { MagicButton } from "./SDG/Vorlagen/Button/MagicButton"
+import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
+import { Quiz } from "./SDG/Vorlagen/Quiz/quiz";
+import { countdown } from "./SDG/Vorlagen/Countdown/countdown";
+import { SimpleCountdown } from "./SDG/Vorlagen/Countdown/simpleCountdown"
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
@@ -268,12 +267,6 @@ export const App = (): JSX.Element => {
             <Switch> 
                 <Route exact path="/" component={Home} />
                 <Route exact path="/Help" component={Help} />
-
-/**----------------------------------------------------------------------------
- *                              Vorlage
- ----------------------------------------------------------------------------*/
-                <Route exact path ="/Vorlagen/infotext" component={Infotext}/> 
-                <Route exact path ="/Vorlagen/quiz" component={Quiz}/> 
 
 /**----------------------------------------------------------------------------
  *                              Wörterbuch
@@ -510,6 +503,12 @@ export const App = (): JSX.Element => {
 *                                 Vorlagen
 ----------------------------------------------------------------------------*/
                 <Route exact path="/Vorlagen/MagicButton" component={MagicButton} />  
+                <Route exact path="/Vorlagen/infotext" component={Infotext} />  
+                <Route exact path="/Vorlagen/countdown" component={countdown} />  
+                <Route exact path ="/Vorlagen/SimpleCountdown" component={SimpleCountdown}/> 
+                <Route exact path ="/Vorlagen/quiz" component={Quiz}/> 
+                
+
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  

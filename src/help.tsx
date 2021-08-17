@@ -76,6 +76,18 @@ export const Help = ():JSX.Element => {
                     <div className="centre">Magic Awesome Button with magic</div>
                 </Link>
 
+                <Link to="/Vorlagen/countdown">
+                    <div className="centre">Clock goes tick tack </div>
+                </Link>
+                
+                <Link to="/Vorlagen/SimpleCountdown">
+                    <div className="centre">clock (easy one) </div>
+                </Link>
+
+                <Link to="/Vorlagen/infotext">
+                    <div className="centre">Infotext</div>
+                </Link>
+
                 <Link to="/Vorlagen/Quiz">  <div className="centre">Quiz vorlage</div> </Link>
                 
             </div>

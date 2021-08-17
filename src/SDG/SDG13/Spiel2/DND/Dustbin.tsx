@@ -7,7 +7,7 @@
 import { CSSProperties, FC, memo } from "react";
 import { useDrop } from "react-dnd";
 import { transform } from "typescript";
-import "../../../../styles/SDG13.css"
+import "../../../../styles/sdg13.css"
 import "../../../../styles/App.css"
 // eslint-disable-next-line import/extensions
 
