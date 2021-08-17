@@ -77,16 +77,16 @@ export class Quiz extends React.Component<unknown, States> {
                 </head>
               <div className={`colour_${sdg}`}>
                 <div className="header">
-                    Hochwertige Bildung <img className="sdglogo" alt="logo" src={Logo} />
+                Hochwertige Bildung<img className="sdglogo" alt="logo" src={Logo} />
                 </div>
                  </div>
-
+                <p className="questionNumber">Question 1/4</p>
                 <p className="quizQuestion">Does a passenger car or a plane produce more greenhouse gases?</p>
                 <div>
                     <button
                         className= {button1class}
                         type="button"
-                        style = { { height: '15%' } }
+                        style = { { height: '30%' } }
                         onClick={() => {
                             this.handleClick()
                             setTimeout(() => {
@@ -98,13 +98,13 @@ export class Quiz extends React.Component<unknown, States> {
                      <span className="shadow" />
                     <span className= { answer1 === 1 ?  "edgegreen" : (answer1 === 2 ? "edgered"  :  "edgeblue" ) }/>
                     <span className="front" style = { answer1 === 1 ? { backgroundColor: "green" }: (answer1 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }>
-                    <img className="letterbox" src= {a} alt="a"/> <br/>car
+                    <img className="letterbox" src= {a} alt="a"/> <br/> <p className="buttontext">Car</p>
         </span>
                     </button>
                     <button
                         className= {button2class}
                         type="button"
-                        style = { { height: '15%' } }
+                        style = { { height: '30%' } }
                         onClick={() => {
                             this.handleClick()
                             setTimeout(() => {
@@ -116,7 +116,7 @@ export class Quiz extends React.Component<unknown, States> {
                      <span className="shadow" />
                     <span className= { answer2 === 1 ?  "edgegreen" : (answer2 === 2 ? "edgered"  :  "edgeblue" ) }/>
                     <span className="front" style = { answer2 === 1 ? { backgroundColor: "green" }: (answer2 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }>
-                    <img className="letterbox" src= {b} alt="b"/> <br/>Plane
+                    <img className="letterbox" src= {b} alt="b"/> <br/><p className="buttontext">Planes</p>
         </span>
                     </button>
                 </div>

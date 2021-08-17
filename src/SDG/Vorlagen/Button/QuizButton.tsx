@@ -1,8 +1,8 @@
 
 import * as React from "react";
-import "../../../styles/button.css";
+import "../../../styles/Quizbutton.css";
 
-export const MagicButton = ():JSX.Element => {
+export const QuizButton = ():JSX.Element => {
     return(
         <button className="pushable" type = "button">
         <span className="shadow" />

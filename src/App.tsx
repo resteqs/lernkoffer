@@ -242,7 +242,7 @@ import { Main } from "./SDG/SDG13/Spiel2/DND/Main";
  /**----------------------------------------------------------------------------
  *                                Vorlagen
  ----------------------------------------------------------------------------*/
-import { MagicButton } from "./SDG/Vorlagen/Button/MagicButton"
+import { QuizButton } from "./SDG/Vorlagen/Button/QuizButton"
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
@@ -509,7 +509,7 @@ export const App = (): JSX.Element => {
 /**----------------------------------------------------------------------------
 *                                 Vorlagen
 ----------------------------------------------------------------------------*/
-                <Route exact path="/Vorlagen/MagicButton" component={MagicButton} />  
+                <Route exact path="/Vorlagen/MagicButton" component={QuizButton} />  
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
