@@ -155,6 +155,7 @@ import { SDG06_Infotext } from "./SDG/SDG6/Info/SDG06_Infotext";
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
+
 import { SDG11_Infotext } from "./SDG/SDG11/Info/SDG11_Infotext";
 
 /**                                 Quiz                                     */
