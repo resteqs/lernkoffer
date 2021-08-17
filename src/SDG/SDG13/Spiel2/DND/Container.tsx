@@ -18,9 +18,16 @@ import shoe from "../trash/shoe.png";
 import teddy from "../trash/teddy.png";
 import tin_can from "../trash/tin_can.png";
 
+import glas_container from "../trash_cans/glas.png"
+import organic_container from "../trash_cans/organic.png"
+import paper_container from "../trash_cans/paper.png"
+import plastic_container from "../trash_cans/plastic.png"
+import residual_container from "../trash_cans/residual.png"
+
 interface DustbinState {
     accepts: string[];
     lastDroppedItem: any;
+    img: string;
 }
 
 export interface DustbinSpec {
@@ -61,11 +68,11 @@ export const Container: FC = () => {
     ]);
 
     const [dustbins, setDustbins] = useState<DustbinState[]>([
-        { accepts: [ItemTypes.GLASS], lastDroppedItem: null },
-        { accepts: [ItemTypes.ORGANIC], lastDroppedItem: null },
-        { accepts: [ItemTypes.PAPER], lastDroppedItem: null },
-        { accepts: [ItemTypes.PLASTIC], lastDroppedItem: null },
-        { accepts: [ItemTypes.RESIDUAL], lastDroppedItem: null },
+        { accepts: [ItemTypes.GLASS], lastDroppedItem: null, img: glas_container },
+        { accepts: [ItemTypes.ORGANIC], lastDroppedItem: null, img: organic_container },
+        { accepts: [ItemTypes.PAPER], lastDroppedItem: null, img: paper_container },
+        { accepts: [ItemTypes.PLASTIC], lastDroppedItem: null, img: plastic_container },
+        { accepts: [ItemTypes.RESIDUAL], lastDroppedItem: null, img: residual_container },
     ]);
 
     const [droppedBoxNames, setDroppedBoxNames] = useState<string[]>([]);
@@ -99,9 +106,10 @@ export const Container: FC = () => {
     return (
         <div>
             <div style={{ overflow: "hidden", clear: "both" }}>
-                {dustbins.map(({ accepts, lastDroppedItem }, index) => (
+            {dustbins.map(({ accepts, lastDroppedItem, img }, index) => (
                     <Dustbin
                         accept={accepts}
+                        img = {img}
                         lastDroppedItem={lastDroppedItem}
                         onDrop={(item: { name: string }) => handleDrop(index, item)}
                         // eslint-disable-next-line react/no-array-index-key

@@ -18,7 +18,7 @@ export function Main() {
     return (
         <div className="App">
             <nav>
-                <div className="colour_sdg13">
+                <div className="colour_SDG03">
                     <p className="header">
                         Mülltrennung
                         <img className="sdglogo" alt="logo" src={Logo} />
