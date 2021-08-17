@@ -237,11 +237,11 @@ import { Main } from "./SDG/SDG13/Spiel2/DND/Main";
  /**----------------------------------------------------------------------------
  *                                Vorlagen
  ----------------------------------------------------------------------------*/
-import { MagicButton } from "./SDG/Vorlagen/Button/MagicButton"
 import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
 import { Quiz } from "./SDG/Vorlagen/Quiz/quiz";
 import { countdown } from "./SDG/Vorlagen/Countdown/countdown";
 import { SimpleCountdown } from "./SDG/Vorlagen/Countdown/simpleCountdown"
+import { QuizButton } from "./SDG/Vorlagen/Button/QuizButton"
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
@@ -502,13 +502,13 @@ export const App = (): JSX.Element => {
 /**----------------------------------------------------------------------------
 *                                 Vorlagen
 ----------------------------------------------------------------------------*/
-                <Route exact path="/Vorlagen/MagicButton" component={MagicButton} />  
                 <Route exact path="/Vorlagen/infotext" component={Infotext} />  
                 <Route exact path="/Vorlagen/countdown" component={countdown} />  
                 <Route exact path ="/Vorlagen/SimpleCountdown" component={SimpleCountdown}/> 
                 <Route exact path ="/Vorlagen/quiz" component={Quiz}/> 
                 
 
+                <Route exact path="/Vorlagen/MagicButton" component={QuizButton} />  
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
