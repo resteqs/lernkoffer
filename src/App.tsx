@@ -15,11 +15,6 @@ import "./styles/sdg13.css";
 import "./styles/sdg14.css";
 
 /**----------------------------------------------------------------------------
- *                              Vorlage
- ----------------------------------------------------------------------------*/
- import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
- import { Quiz } from "./SDG/Vorlagen/Quiz/quiz";
-/**----------------------------------------------------------------------------
  *                              Wörterbuch
  ----------------------------------------------------------------------------*/
 import { Wörterbuch } from "./SDG/Wörterbuch/Wörterbuch";
@@ -160,6 +155,7 @@ import { SDG06_Infotext } from "./SDG/SDG6/Info/SDG06_Infotext";
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
+
 import { SDG11_Infotext } from "./SDG/SDG11/Info/SDG11_Infotext";
 
 /**                                 Quiz                                     */
@@ -242,6 +238,10 @@ import { Main } from "./SDG/SDG13/Spiel2/DND/Main";
  /**----------------------------------------------------------------------------
  *                                Vorlagen
  ----------------------------------------------------------------------------*/
+import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
+import { Quiz } from "./SDG/Vorlagen/Quiz/quiz";
+import { countdown } from "./SDG/Vorlagen/Countdown/countdown";
+import { SimpleCountdown } from "./SDG/Vorlagen/Countdown/simpleCountdown"
 import { QuizButton } from "./SDG/Vorlagen/Button/QuizButton"
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
@@ -268,12 +268,6 @@ export const App = (): JSX.Element => {
             <Switch> 
                 <Route exact path="/" component={Home} />
                 <Route exact path="/Help" component={Help} />
-
-/**----------------------------------------------------------------------------
- *                              Vorlage
- ----------------------------------------------------------------------------*/
-                <Route exact path ="/Vorlagen/infotext" component={Infotext}/> 
-                <Route exact path ="/Vorlagen/quiz" component={Quiz}/> 
 
 /**----------------------------------------------------------------------------
  *                              Wörterbuch
@@ -509,6 +503,12 @@ export const App = (): JSX.Element => {
 /**----------------------------------------------------------------------------
 *                                 Vorlagen
 ----------------------------------------------------------------------------*/
+                <Route exact path="/Vorlagen/infotext" component={Infotext} />  
+                <Route exact path="/Vorlagen/countdown" component={countdown} />  
+                <Route exact path ="/Vorlagen/SimpleCountdown" component={SimpleCountdown}/> 
+                <Route exact path ="/Vorlagen/quiz" component={Quiz}/> 
+                
+
                 <Route exact path="/Vorlagen/MagicButton" component={QuizButton} />  
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
