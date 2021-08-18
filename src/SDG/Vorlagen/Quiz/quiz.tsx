@@ -1,7 +1,10 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable prefer-const */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable unicorn/filename-case */
 import * as React from "react";
-import ReactRef, { useState, useRef, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import Modal, { ICustomModalStyle } from "@bdenzer/react-modal";
 import classNames from 'classnames';
 import a from "./letter-a.png"
@@ -14,15 +17,66 @@ interface States {
     onlyCloseWithButton: boolean;
 }
 
-
-const sdg = "SDG06";
-let answer1 = 0;
-let answer2 = 0;
-const button1class = classNames ('pushable', 'answerButtonleft');
-const button2class = classNames ('pushable', 'answerButtonright');
-
 // eslint-disable-next-line react/prefer-stateless-function
 export class Quiz extends React.Component<unknown, States> {
+   
+    sdg = "SDG06";
+
+    questionsNumber = 4;
+
+    button1class = classNames ('pushable', 'answerButtonleft');
+
+    button2class = classNames ('pushable', 'answerButtonright');
+
+    Question = {
+        1: `Text1`,
+        2: `Text2`,
+        3: `Text3`,
+        4: `Text4`,
+    };
+
+    Answer1Text = {
+        1: `Text1`,
+        2: `Text2`,
+        3: `Text3`,
+        4: `Text4`,
+    };
+
+    Answer2Text = {
+        1: `Text1`,
+        2: `Text2`,
+        3: `Text3`,
+        4: `Text4`,
+    };
+
+    Explanation = {
+        1: `Text1`,
+        2: `Text2`,
+        3: `Text3`,
+        4: `Text4`,
+    };
+
+    answerNumbers1 = { /* leftbutton, answer 1 is true 2 is false */
+        1: 2,
+        2: 1,
+        3: 2,
+        4: 1,
+    };
+
+    answerNumbers2 = { /* rightbutton, answer 1 is true 2 is false */
+        1: 1,
+        2: 2,
+        3: 1,
+        4: 2,
+    };
+
+    answer1 = 0;
+
+    answer2 = 0;
+
+    showtext = 1;
+
+   
     constructor(props: unknown) {
         super(props);
         this.state = {
@@ -38,16 +92,32 @@ export class Quiz extends React.Component<unknown, States> {
 
     // eslint-disable-next-line class-methods-use-this
     public  handleClick(): void {
-       answer1 = 1 /* leftbutton answer 1 is true 2 is false */
-       answer2 = 2 /* rightbutton answer 1 is true 2 is false */
+       this.answer1 = this.answerNumbers1[this.showtext] /* leftbutton, answer 1 is true 2 is false */
+       this.answer2 = this.answerNumbers2[this.showtext] /* rightbutton, answer 1 is true 2 is false */
        
     }
 
+    public incrementCount(): void {
+        this.showtext += 1
+    }
 
         
         
     private closeModal(): void {
         this.setState({ shouldShowModal: false });
+       
+       if(this.showtext < this.questionsNumber)
+       {
+        this.incrementCount()
+        this.answer1 = 0;
+        this.answer2 = 0;
+       }
+       else
+       {
+        window.location.href = "src/help.tsx"
+       }
+
+
     }
 
     private openModal(): void {
@@ -58,33 +128,45 @@ export class Quiz extends React.Component<unknown, States> {
         const modalStyle: ICustomModalStyle = {
             animationTime: 400,
             closeButtonText: {
-                color: "white",
+                color: "red",
+                position: "absolute",
+                marginTop: "1000px",
+                width: "300px",
+                zIndex: 100000,
             },
             hoveredButtonText: {
                 fontWeight: "bold",
             },
             modalHeader: {
                 backgroundColor: "green",
+                fontSize: '80px',
+                justifyContent: "center"
             },
             modalTitle: {
                 color: "white",
             },
+            modalInner: {
+                maxWidth: '1500px',
+                minHeight: '700px',
+                marginTop: '100px',
+                fontSize: '50px'
+            }
         };
         return (
             <div>
                 <head>
                 <style>{'body { background-color: #fff; }'}</style>
                 </head>
-              <div className={`colour_${sdg}`}>
+              <div className={`colour_${this.sdg}`}>
                 <div className="header">
                 Hochwertige Bildung<img className="sdglogo" alt="logo" src={Logo} />
                 </div>
                  </div>
-                <p className="questionNumber">Question 1/4</p>
-                <p className="quizQuestion">Does a passenger car or a plane produce more greenhouse gases?</p>
+                <p className="questionNumber">Question {this.showtext}</p>
+                <p className="quizQuestion">{this.Question[this.showtext]}</p>
                 <div>
                     <button
-                        className= {button1class}
+                        className= {this.button1class}
                         type="button"
                         style = { { height: '30%' } }
                         onClick={() => {
@@ -96,13 +178,13 @@ export class Quiz extends React.Component<unknown, States> {
                         
                     >
                      <span className="shadow" />
-                    <span className= { answer1 === 1 ?  "edgegreen" : (answer1 === 2 ? "edgered"  :  "edgeblue" ) }/>
-                    <span className="front" style = { answer1 === 1 ? { backgroundColor: "green" }: (answer1 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }>
-                    <img className="letterbox" src= {a} alt="a"/> <br/> <p className="buttontext">Car</p>
+                    <span className= { this.answer1 === 1 ?  "edgegreen" : (this.answer1 === 2 ? "edgered"  :  "edgeblue" ) }/>
+                    <span className="front" style = { this.answer1 === 1 ? { backgroundColor: "green" }: (this.answer1 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }>
+                    <img className="letterbox" src= {a} alt="a"/> <br/> <p className="buttontext">{this.Answer1Text[this.showtext]}</p>
         </span>
-                    </button>
+                    </button>  <FontAwesomeIcon icon="check-square" />
                     <button
-                        className= {button2class}
+                        className= {this.button2class}
                         type="button"
                         style = { { height: '30%' } }
                         onClick={() => {
@@ -114,9 +196,9 @@ export class Quiz extends React.Component<unknown, States> {
                         
                     >
                      <span className="shadow" />
-                    <span className= { answer2 === 1 ?  "edgegreen" : (answer2 === 2 ? "edgered"  :  "edgeblue" ) }/>
-                    <span className="front" style = { answer2 === 1 ? { backgroundColor: "green" }: (answer2 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }>
-                    <img className="letterbox" src= {b} alt="b"/> <br/><p className="buttontext">Planes</p>
+                    <span className= { this.answer2 === 1 ?  "edgegreen" : (this.answer2 === 2 ? "edgered"  :  "edgeblue" ) }/>
+                    <span className="front" style = { this.answer2 === 1 ? { backgroundColor: "green" }: (this.answer2 === 2 ? { backgroundColor: "red" } : { backgroundColor: "blue" }) }>
+                    <img className="letterbox" src= {b} alt="b"/> <br/><p className="buttontext">{this.Answer2Text[this.showtext]}</p>
         </span>
                     </button>
                 </div>
@@ -128,8 +210,7 @@ export class Quiz extends React.Component<unknown, States> {
                         title="React Modal in TypeScript"
                         onlyCloseWithButton={this.state.onlyCloseWithButton === true}
                     >
-                        The plane does. Studies show that a plexport default Quiz; ne produces about 230 grams per Person per kilometer
-                        (g/Pkm) while a passenger car only frees about 147 g/Pkm.
+                        {this.Explanation[this.showtext]}
                     </Modal>
                 </div>
             </div>

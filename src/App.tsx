@@ -11,8 +11,8 @@ import { Help } from "./help";
  ----------------------------------------------------------------------------*/
 import "./styles/App.css";
 import "./styles/colour_sdgs.css";
-import "./styles/SDG13.css";
-import "./styles/SDG14.css";
+import "./styles/sdg13.css";
+import "./styles/sdg14.css";
 
 /**----------------------------------------------------------------------------
  *                              Vorlage
