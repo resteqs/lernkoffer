@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import Modal, { ICustomModalStyle } from "@bdenzer/react-modal";
-import Logo from "../../../SDGLogos/Goal-13.png";
+import Logo from "../../../SDGLogos/Goal-SDG13.png";
 
 interface States {
     button1color: string;

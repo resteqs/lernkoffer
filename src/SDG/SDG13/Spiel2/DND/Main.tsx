@@ -8,7 +8,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import CSS from "csstype";
 import Example from "./example";
-import Logo from "../../../../SDGLogos/Goal-13.png";
+import Logo from "../../../../SDGLogos/Goal-SDG13.png";
 
 const heightLineStyle: CSS.Properties = {
     marginBottom: "2vh",

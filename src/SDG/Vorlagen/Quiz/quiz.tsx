@@ -9,7 +9,7 @@ import Modal, { ICustomModalStyle } from "@bdenzer/react-modal";
 import classNames from 'classnames';
 import a from "./letter-a.png"
 import b from "./letter-b.png"
-import Logo from "../../../SDGLogos/Goal-06.png";
+import Logo from "../../../SDGLogos/Goal-SDG06.png";
 
 
 interface States {
@@ -20,7 +20,7 @@ interface States {
 // eslint-disable-next-line react/prefer-stateless-function
 export class Quiz extends React.Component<unknown, States> {
    
-    sdg = "SDG06";
+    sdg = "SDG07";
 
     questionsNumber = 4;
 
@@ -157,7 +157,7 @@ export class Quiz extends React.Component<unknown, States> {
                 <head>
                 <style>{'body { background-color: #fff; }'}</style>
                 </head>
-              <div className={`colour_${this.sdg}`}>
+              <div className={`colour_${this.sdg}_header`}>
                 <div className="header">
                 Hochwertige Bildung<img className="sdglogo" alt="logo" src={Logo} />
                 </div>

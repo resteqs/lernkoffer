@@ -8,7 +8,7 @@ import Spielfeld from "./spielfeld.png";
 import Cards from "./cards.png";
 import "./sdg4.css";
 import "../../../styles/colour_sdgs.css";
-import Logo from "../../../SDGLogos/Goal-04.png";
+import Logo from "../../../SDGLogos/Goal-SDG04.png";
 import Question from "./question_mark.png";
 
 const colors = ["red", "blue", "green", "yellow"];

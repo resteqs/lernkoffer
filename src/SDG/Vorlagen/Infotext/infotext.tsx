@@ -5,7 +5,7 @@ import * as React from "react";
 import renderer from "react-dom";
 import "../../../styles/colour_sdgs.css";
 import "../../../styles/infotext.css";
-import Logo from "../../../SDGLogos/Goal-06.png";
+import Logo from "../../../SDGLogos/Goal-SDG06.png";
 
 export const Infotext = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
