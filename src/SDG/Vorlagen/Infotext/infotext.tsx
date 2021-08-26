@@ -3,6 +3,7 @@
 
 import * as React from "react";
 import renderer from "react-dom";
+import infotextbutton from "../../../styles/Infotextbutton.module.css" ;
 import "../../../styles/colour_sdgs.css";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG06.png";
@@ -36,9 +37,14 @@ export const Infotext = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     buttonBack =
         showtext >= 2 ? (
-            <button className="backbutton" type="button" onClick={decrementCount}>
-                Zurück
-            </button>
+            <div className="backbutton"> <button className= {infotextbutton.pushable} type = "button" onClick={decrementCount} >
+            <span className={infotextbutton.shadow} />
+            <span className={infotextbutton.edge} />
+            <span className={infotextbutton.front}>
+               <p className={infotextbutton.buttontext}>Zurück</p> 
+            </span>
+            </button></div>
+           
         ) : (
             <button className="buttonInvisible" type="button">
                 {" "}
@@ -47,9 +53,13 @@ export const Infotext = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     buttonNext =
         showtext <= 3 ? (
-            <button className="nextbutton" type="button" onClick={incrementCount}>
-                Weiter
-            </button>
+            <div className="nextbutton"> <button className= {infotextbutton.pushable} type = "button" onClick={incrementCount}>
+            <span className={infotextbutton.shadow} />
+            <span className={infotextbutton.edgegreen} />
+            <span className={infotextbutton.front} style = { { backgroundColor: "green" } } >
+                <p className={infotextbutton.buttontext}>Weiter</p> 
+            </span>
+            </button></div>
         ) : (
             <button className="buttonInvisible" type="button">
                 {" "}
@@ -58,7 +68,7 @@ export const Infotext = (): JSX.Element => {
 
     return (
         <div>
-            <div className={`colour_${sdg}`}>
+            <div className={`colour_${sdg}_header`}>
                 <div className="header">
                     Hochwertige Bildung <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
