@@ -5,16 +5,22 @@ import * as React from "react";
 import renderer from "react-dom";
 import infotextbutton from "../../../styles/Infotextbutton.module.css" ;
 import "../../../styles/colour_sdgs.css";
+import { Link } from 'react-router-dom';
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG06.png";
+import EG from "../../../EG/eg.png";
 
 export const Infotext = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     let [showtext, setText] = React.useState(1);
     const sdg = "SDG06";
     const text = {
-        1: `Text1`,
-        2: `Text2`,
+        1: `A secure job and, above all, fair salary for everyone are enormously important for the structure of a society. 
+        Many aspects such as food security, peace and education depend heavily on it. But a steady job also provides the foundation for a life in which you can meet all your basic needs, such as feeding yourself and having a roof over your head. 
+        In addition, children living in poverty are more likely to experience poor education or even no education at all.`,
+        2: `A secure job and, above all, fair salary for everyone are enormously important for the structure of a society. 
+        Many aspects such as food security, peace and education depend heavily on it. But a steady job also provides the foundation for a life in which you can meet all your basic needs, such as feeding yourself and having a roof over your head. 
+        In addition, children living in poverty are more likely to experience poor education or even no education at all.`,
         3: `Text3`,
         4: `Text4`,
     };
@@ -34,6 +40,7 @@ export const Infotext = (): JSX.Element => {
     }
     let buttonBack;
     let buttonNext;
+    let buttonEnd;
     // eslint-disable-next-line prefer-const
     buttonBack =
         showtext >= 2 ? (
@@ -65,6 +72,21 @@ export const Infotext = (): JSX.Element => {
                 {" "}
             </button>
         );
+        // eslint-disable-next-line prefer-const
+    buttonEnd =
+        showtext === 4 ? (
+            <div className="nextbutton"><Link to= "/Vorlagen/Endscreen"> <button className= {infotextbutton.pushable} type = "button">
+            <span className={infotextbutton.shadow} />
+            <span className={infotextbutton.edgegreen} />
+            <span className={infotextbutton.front} style = { { backgroundColor: "green" } } >
+                <p className={infotextbutton.buttontext}>Weiter </p> 
+            </span>
+            </button></Link> </div>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
 
     return (
         <div>
@@ -74,14 +96,15 @@ export const Infotext = (): JSX.Element => {
                 </div>
             </div>
             <div className="infotextbox">
-                <p>
+                <p className="headertext">
                     <b>{header[showtext]}</b>
                 </p>{" "}
                 <br />
-                <p> {text[showtext]} </p>
+                <p className="bodytext"> {text[showtext]} </p>
             </div>
             {buttonBack}
             {buttonNext}
+            {buttonEnd}
         </div>
     );
 };
