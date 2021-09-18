@@ -67,8 +67,8 @@ li {
 .sdglogo {
     position: absolute;
     right: 12%;
-    max-width: 3%;
-    margin-top: 2px;
+    max-width: 4%;
+    margin-top: 3px;
 }
 
 .subheading1 {
@@ -204,4 +204,16 @@ li {
     border-radius: 5px;
     margin: 10px 0px;
     cursor: pointer;
+}
+
+.underlinedHeader {
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.einleitungText {
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
 }

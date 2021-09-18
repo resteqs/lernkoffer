@@ -32,6 +32,7 @@ import { Photosynthese } from "./SDG/Wörterbuch/Elemente/Photosynthese";
 /**                               Infotext                                   */
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+import { SDG01_Spiel } from "./SDG/SDG1/Spiel/SDG01_Spiel";
 /**                                Video                                     */
 
 
@@ -286,6 +287,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+ <Route exact path ="/SDG01/Spiel" component={SDG01_Spiel}/>
 /**                                Video                                     */
 
 

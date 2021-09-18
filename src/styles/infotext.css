@@ -14,14 +14,14 @@
 .nextbutton {
     float: right;
     justify-content: space-around;
-    margin-right: 8%;
-    margin-top: -50px;
+    margin-right: 5%;
+    margin-top: -60px;
 }
 .backbutton {
     float: left;
     justify-content: space-around;
     margin-left: 8em;
-    margin-top: -50px;
+    margin-top: -60px;
 }
 .buttonInvisible {
     margin-top: -150px;
@@ -31,7 +31,7 @@
     border-style: none;
 }
 .bodytext {
-    font-size: 70px;
+    font-size: 50px;
 }
 .headertext {
     font-size: 70px;
