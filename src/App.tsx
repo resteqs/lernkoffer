@@ -42,6 +42,10 @@ import { SDG01_Spiel } from "./SDG/SDG1/Spiel/SDG01_Spiel";
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
+// fable
+import { SDG02_Infotext_Fable } from "./SDG/SDG2/Info/fable/SDG02_Info_Fable";
+
+
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
 /**                                Video                                     */
@@ -297,6 +301,8 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
+<Route exact path ="/SDG02/Infotext/Fable" component={SDG02_Infotext_Fable}/>
+
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
 /**                                Video                                     */
