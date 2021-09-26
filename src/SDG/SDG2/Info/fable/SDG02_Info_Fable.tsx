@@ -29,9 +29,12 @@ export const SDG02_Infotext_Fable = (): JSX.Element => {
         8: "Auch bei uns Menschen gibt es die einen, die sehr viel und die anderen, die zu wenig Essen haben. Das kann eben daran liegen, dass in manchen Regionen nur zu bestimmten Jahreszeiten bestimmte Lebensmittel da sind. Oder dass die Ernte kaputt geht, nach zu viel oder zu wenig Regen. ",
         9: "Menschen in reichen Ländern merken das oft nicht, weil sie viel Essen von außerhalb ihres eigenen Landes kaufen. Die Bewohner aus ärmeren Ländern hingegen können sich das nicht leisten und müssen dann hungern",
         10: "Das Problem ist, dass die Gruppe mit zu viel Nahrung oft nicht weiß, wie sie denen mit zu wenig Nahrung helfen kann. Dabei können Fehler passieren und im schlimmsten Fall die aktuelle Lage verschlechtern. ",
-        11: "Weil die „Reichen“ nicht immer wissen, wie es „Armen“ geht, verstehen sie nicht die Herausforderungen, die bei der benachteiligten Gemeinschaft tagtäglich bestehen. Deshalb ist es so wichtig, dass alle miteinander reden, um herauszufinden wie am besten geholfen werden kann, damit wie in diesem Beispiel der Wolf dem Hasen gegen dessen Hunger helfen kann.",
-        12: "Alle Lebewesen auf der Erde sollten genügend zum Essen haben. Im Nachhaltigkeitsziel 02 geht es darum, dafür zu sorgen, dass es keinen Hunger mehr in unserer Welt gibt. In diesem werden verschiedene Bereiche angegangen, die mit Essen und der Landwirtschaft verbunden sind. ",
-        13: "Um mehr darüber zu erfahren, nehmt euch die EarthyGlobe Figur und lest über den Hintergrund und die Probleme, die durch den Hunger weltweit entstehen. Abschließend erfahrt ihr auch, wie ihr helfen könnt.",
+        11: "Weil die „Reichen“ nicht immer wissen, wie es „Armen“ geht, verstehen sie nicht die Herausforderungen, die bei der benachteiligten Gemeinschaft tagtäglich bestehen.",
+        12: "Deshalb ist es so wichtig, dass alle miteinander reden, um herauszufinden wie am besten geholfen werden kann, damit wie in diesem Beispiel der Wolf dem Hasen gegen dessen Hunger helfen kann.",
+
+        13: "Alle Lebewesen auf der Erde sollten genügend zum Essen haben. Im Nachhaltigkeitsziel 02 geht es darum, dafür zu sorgen, dass es keinen Hunger mehr in unserer Welt gibt. In diesem werden verschiedene Bereiche angegangen, die mit Essen und der Landwirtschaft verbunden sind.",
+        14: "Um mehr darüber zu erfahren, nehmt euch die EarthyGlobe Figur und lest über den Hintergrund und die Probleme, die durch den Hunger weltweit entstehen. Abschließend erfahrt ihr auch, wie ihr helfen könnt.",
+
     };
     const header = {
         1: "Fabel – Der Wolf und der Hase?",
@@ -43,8 +46,9 @@ export const SDG02_Infotext_Fable = (): JSX.Element => {
         9: "Moral der Fabel",
         10: "Moral der Fabel",
         11: "Moral der Fabel",
-        12: "Überleitung",
+        12: "Moral der Fabel",
         13: "Überleitung",
+        14: "Überleitung",
     };
 
     function incrementCount(): void {
@@ -80,7 +84,7 @@ export const SDG02_Infotext_Fable = (): JSX.Element => {
         );
     // eslint-disable-next-line prefer-const
     buttonNext =
-        showtext <= 10 ? (
+        showtext <= 13 ? (
             <div className="nextbutton">
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
@@ -98,7 +102,7 @@ export const SDG02_Infotext_Fable = (): JSX.Element => {
         );
     // eslint-disable-next-line prefer-const
     buttonEnd =
-        showtext === 11 ? (
+        showtext === 14? (
             <div className="nextbutton">
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
