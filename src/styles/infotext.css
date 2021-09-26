@@ -36,3 +36,13 @@
 .headertext {
     font-size: 70px;
 }
+
+.pic_show {
+    max-width: 750px;
+    visibility: visible;
+}
+
+.pic_hide {
+    visibility: hidden;
+    max-width: 1px;
+}

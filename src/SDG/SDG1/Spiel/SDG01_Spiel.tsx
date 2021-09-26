@@ -10,6 +10,7 @@ import "../../../styles/colour_sdgs.css";
 import { Link } from "react-router-dom";
 import Logo from "../../../SDGLogos/Goal-SDG01.png";
 
+
 export const SDG01_Spiel = (): JSX.Element => {
     const sdg = "SDG01";
     let [showtext, setText] = React.useState(1);
