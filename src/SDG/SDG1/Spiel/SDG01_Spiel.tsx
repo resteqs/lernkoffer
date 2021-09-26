@@ -1,4 +1,6 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable prefer-const */
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable unicorn/filename-case */
@@ -21,9 +23,19 @@ export const SDG01_Spiel = (): JSX.Element => {
     function decrementCount(): void {
         setText(showtext - 1);
     }
+    // eslint-disable-next-line unicorn/consistent-function-scoping
+    function toggleExplenation(): void {
+        const x = document.getElementById("hover")!;
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+    }
 
     let buttonNext;
     let einleitung;
+    let person1_1;
     buttonNext =
         showtext <= 3 ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
@@ -32,7 +44,7 @@ export const SDG01_Spiel = (): JSX.Element => {
                     <span className={infotextbutton.shadow} />
                     <span className={infotextbutton.edgegreen} />
                     <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                        <p className={infotextbutton.buttontext}>Weiter</p>
+                        <p className={infotextbutton.buttontext}>Weiter</p> 
                     </span>
                 </button>
             </div>
@@ -60,6 +72,28 @@ export const SDG01_Spiel = (): JSX.Element => {
             <div />
         );
 
+        person1_1 =
+        showtext === 2 ? (
+            <div>
+                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                    Person Nr. 1.1: Wirtschaftsinformatiker{" "}
+                </p>
+                <p className="einleitungText">
+                   <ul>
+                    <li>&#9679;Branche: </li>
+                    <li>&#9679;Definition: Arbeit in einem (meist großen) Unternehmen. Beschäftigt sich mit der Technik eines Unternehmens. Genauer gesagt damit, dass wichtige betriebswirtschaftliche Fragen (sagen einer Firma, was sie machen müssen, damit ihre Produkte gut verkauft werden/welche Produkte momentan besonders gut verkauft werden können) <abbr title="mit der Hilfe von Computern und moderner Technik" tabIndex={0}>digital</abbr> gelöst werden </li>  
+                    <li>&#9679; </li>  
+                    <li>&#9679; </li>  
+                    <li>&#9679; </li>  
+                    <li>&#9679; </li>  
+
+                       </ul>{" "}
+                </p>
+            </div>
+        ) : (
+            <div />
+        );
+
     return (
         <div>
             <div className={`colour_${sdg}_header`}>
@@ -68,7 +102,10 @@ export const SDG01_Spiel = (): JSX.Element => {
                 </div>
             </div>
 
+            <div id="hover"><p>test</p></div>
+
             {einleitung}
+            {person1_1}
             {buttonNext}
         </div>
     );
