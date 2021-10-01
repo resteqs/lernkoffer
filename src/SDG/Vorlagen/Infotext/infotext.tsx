@@ -15,20 +15,16 @@ export const Infotext = (): JSX.Element => {
     let [showtext, setText] = React.useState(1);
     const sdg = "SDG06";
     const text = {
-        1: `A secure job and, above all, fair salary for everyone are enormously important for the structure of a society. 
-        Many aspects such as food security, peace and education depend heavily on it. But a steady job also provides the foundation for a life in which you can meet all your basic needs, such as feeding yourself and having a roof over your head. 
-        In addition, children living in poverty are more likely to experience poor education or even no education at all.`,
-        2: `A secure job and, above all, fair salary for everyone are enormously important for the structure of a society. 
-        Many aspects such as food security, peace and education depend heavily on it. But a steady job also provides the foundation for a life in which you can meet all your basic needs, such as feeding yourself and having a roof over your head. 
-        In addition, children living in poverty are more likely to experience poor education or even no education at all.`,
-        3: `Text3`,
-        4: `Text4`,
+        1: <div><p>Text1</p></div>,
+        2: <div><p>Text1</p></div>,
+        3: <div><p>Text3</p></div>,
+        4: <div><p>Text4</p></div>,
     };
     const header = {
-        1: "Warum?",
-        2: "Was ist das Problem?",
-        3: "Wie ist dieses Thema mit uns verbunden?",
-        4: "Was können wir tun?",
+        1: <div><p>Warum?</p></div>,
+        2: <div><p>Was ist das Problem?</p></div>,
+        3: <div><p>Wie ist dieses Thema mit uns verbunden?</p></div>,
+        4: <div><p>Was können wir tun?</p></div>,
     };
 
     function incrementCount(): void {
