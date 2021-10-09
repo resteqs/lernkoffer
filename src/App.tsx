@@ -50,6 +50,8 @@ import { SDG02_Infotext_Fable } from "./SDG/SDG2/Info/fable/SDG02_Info_Fable";
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+import { SDG02_Spiel } from "./SDG/SDG2/Spiel/SDG02_Spiel";
+
 /**                                Video                                     */
 
 
@@ -308,6 +310,8 @@ export const App = (): JSX.Element => {
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+<Route exact path ="/SDG02/Spiel" component={SDG02_Spiel}/>
+
 /**                                Video                                     */
 
 
