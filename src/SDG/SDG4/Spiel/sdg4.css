@@ -1,17 +1,11 @@
-.board {
-    max-width: 70%;
-    position: absolute;
-    left: 0;
+.BildSDG4{
+    width: 60px;
 }
-.cards {
-    position: absolute;
-    right: 15%;
-    max-width: 10%;
-    margin-top: 5%;
+.EinleitungSDG04{
+    font-size: 30px;
 }
-.question {
-    position: absolute;
-    right: 16%;
-    max-width: 7%;
-    margin-top: 25%;
+.SpielregelnSDG04{
+    font-size: 30px;
 }
+
+
