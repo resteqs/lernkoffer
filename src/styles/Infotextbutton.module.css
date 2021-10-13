@@ -52,6 +52,22 @@
         hsl(120deg 100% 16%) 100%
     );
 }
+.edgeorange {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--buttonBorderInfotext);
+    background: linear-gradient(
+        to left,
+        hsl(35deg 100% 16%) 0%,
+        hsl(35deg 100% 32%) 8%,
+        hsl(35deg 100% 32%) 92%,
+        hsl(35deg 100% 16%) 100%
+    );
+}
+
 
 .front {
     display: block;

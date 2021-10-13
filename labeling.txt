@@ -5,6 +5,6 @@ URL der Website
     - /SDG/Art der Umsetzung (Info/FreieArbeit/Spiel...)/name/...
 
 Name der Datei
-    - SDGNummer des SDGs_Art der Umsetzung (Info/FreieArbeit/Spiel...)(_Name)
+    - SDG Nummer des SDGs_Art der Umsetzung (Info/FreieArbeit/Spiel...)(_Name)
 
 Ausgeschloßen ist Wörtbuch
