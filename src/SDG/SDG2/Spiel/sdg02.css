@@ -11,3 +11,10 @@
 .movedown{
     margin-top: 60px;
 }
+
+.center{
+    align-items: center;
+    max-width: 800px;
+    position: relative;
+    left: 30%;
+}

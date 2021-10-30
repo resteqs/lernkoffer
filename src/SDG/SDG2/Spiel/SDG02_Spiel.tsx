@@ -9,30 +9,64 @@ import { Link } from "react-router-dom";
 import Logo from "../../../SDGLogos/Goal-SDG02.png";
 import "./sdg02.css";
 
+import chilli from "./media/chilli.jpg";
+import earth from "./media/earth.jpg";
+import hamburger from "./media/hamburger.jpg";
+import pumpkin from "./media/pumpkin.jpg";
+import sushi from "./media/sushi.jpg";
+import tajine from "./media/tajine.jpg";
+
 import { CSSProperties } from "react";
+import { faAlignCenter } from "@fortawesome/free-solid-svg-icons";
 
 export const SDG02_Spiel = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     let [showtext, setText] = React.useState(1);
+    let obj1:boolean; let obj2:boolean; let obj3:boolean;
     const sdg = "SDG02";
+
+    function incrementCount(): void {
+        setText(showtext + 1);
+    }
+
+    function decrementCount(): void {
+        setText(showtext - 1);
+    }
+
+    // eslint-disable-next-line unicorn/consistent-function-scoping
+    function obj1select(): void {
+        obj1 = !obj1;        
+    }
+    function obj2select(): void {
+        obj1 = !obj1;        
+    }
+    function obj3select(): void {
+        obj1 = !obj1;        
+    }
 
     const text = {
         1: (
             <div>
-                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader"> Einleitung: { " " }</p>
-                <p className = "einleitungText">
+                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                    {" "}
+                    Einleitung:{" "}
+                </p>
+                <p className="einleitungText">
                     Bestimmt gibt es Sachen, die du sehr gerne isst und andere, die dir nicht so gut schmecken. Das ist
                     bei jedem etwas anderes, die einen mögen lieber süßes Essen, die anderen lieber scharfes Essen und
                     wieder andere essen bestimmte Dinge gar nicht, wie zum Beispiel Fleisch (diese Menschen leben
-                    vegetarisch). {" "}
+                    vegetarisch).{" "}
                 </p>
             </div>
         ),
 
         2: (
             <div>
-                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader"> Einleitung: { " " }</p>  
-                    <p className = "einleitungText">
+                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                    {" "}
+                    Einleitung:{" "}
+                </p>
+                <p className="einleitungText">
                     Auf der ganzen Welt isst man unterschiedliche Sachen. Das ist oftmals durch die Geschichte eines
                     Landes bedingt. Ein weiterer großer Faktor ist die Lage des Landes und damit verbunden, was dort
                     wächst und entsprechend gegessen werden kann.
@@ -42,8 +76,11 @@ export const SDG02_Spiel = (): JSX.Element => {
 
         3: (
             <div>
-                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader"> Einleitung: { " " }</p>  
-                    <p className = "einleitungText">
+                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                    {" "}
+                    Einleitung:{" "}
+                </p>
+                <p className="einleitungText">
                     In diesem Spiel möchte ich, dass du dir verschiedene Gerichte ansiehst, die Beschreibung dazu liest
                     und dann entscheidest, von welchem Kontinent (Afrika, Asien, Europa, Nord Amerika oder Süd Amerika)
                     dieses Gericht kommt (das könnt ihr natürlich auch in der Gruppe überlegen und entscheiden). Wenn
@@ -53,33 +90,67 @@ export const SDG02_Spiel = (): JSX.Element => {
             </div>
         ),
 
-        6: (
+        4: (
             <div>
-                <p>
-.
-                </p>
+                <img className="center" src={pumpkin} alt="" />
             </div>
         ),
-        7: (
+        
+        5: (
             <div>
-                <p>
-.
-                </p>
+                <section>
+                    <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
+                        <p>
+                            Beschreibung: Das ist eine Kürbissuppe. Bei der Zubereitung nimmt man einen Kürbis, schneidet
+                            ihn in kleine Stücken und kocht diese, bis sie weich sind. Wenn die Stückchen fertiggekocht
+                            sind, dann püriert man sie und gibt noch etwas Flüssigkeit (z.B. Wasser oder Brühe) dazu, damit
+                            die Suppe flüssiger wird.{" "}
+                        </p>
+                    </div>
+                </section>
+                
+                <section style = {{ display: "block", float: "right" }}> 
+                    <div id = "choice">    
+                        <div style = {{ marginBottom : "50px" }}>
+                            <button className = "pushable" type="button">
+                                <div style = {{ width: "768px" }}>
+                                    <span className="shadow" style = {{ backgroundColor: "cc7000" }} />
+                                    <span className={infotextbutton.edgeorange} />
+                                    <span className="front" style = {{ backgroundColor: "orange", fontSize: "30px", }}>Europa</span>
+                                </div>
+                            </button> { " " }
+                        </div>
+                        <div style = {{ marginBottom : "50px", paddingBottom: "20px" }}>
+                            <button className = "pushable" type="button">
+                                <div style = {{ width: "768px" }}>
+                                    <span className="shadow" />
+                                    <span className={infotextbutton.edgeorange} />
+                                    <span className="front" style = {{ backgroundColor: "orange", fontSize: "30px" }}>Amerika</span>
+                                </div>
+                            </button> { " " }
+                        </div>
+                        <div style = {{ marginBottom : "50px", paddingBottom: "20px" }}>
+                            <button className = "pushable" type="button" >
+                                <div style = {{ width: "768px" }}>
+                                    <span className="shadow" />
+                                    <span className={infotextbutton.edgeorange} />
+                                    <span className="front" style = {{ backgroundColor: "orange", fontSize: "30px" }}>Afrika</span>
+                                </div>
+                            </button> { " " }
+                        </div>
+                    </div>
+                </section>
             </div>
         ),
 
         8: (
             <div>
-                <p>
-.
-                </p>
+                <p>.</p>
             </div>
         ),
         9: (
             <div>
-                <p>
-.
-                </p>
+                <p>.</p>
             </div>
         ),
         10: (
@@ -190,32 +261,28 @@ export const SDG02_Spiel = (): JSX.Element => {
         ),
     };
 
-    function incrementCount(): void {
-        setText(showtext + 1);
-    }
-
-    function decrementCount(): void {
-        setText(showtext - 1);
-    }
+    
     let buttonBack;
     let buttonNext;
     let buttonEnd;
-    let wolf;
-    let rabbit;
+    let showobject1;
+    let showobject2;
 
     // eslint-disable-next-line prefer-const
     buttonBack =
         showtext >= 2 ? (
-            <div className ="movedown">
+            <div className="movedown">
                 <div className="backbutton">
-                    {" "}
-                    <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
-                        <span className={infotextbutton.shadow} />
-                        <span className={infotextbutton.edge} />
-                        <span className={infotextbutton.front}>
-                            <p className={infotextbutton.buttontext}>Zurück</p>
-                        </span>
-                    </button>
+                    <div>
+                        {" "}
+                        <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
+                            <span className={infotextbutton.shadow} />
+                            <span className={infotextbutton.edge} />
+                            <span className={infotextbutton.front}>
+                                <p className={infotextbutton.buttontext}>Zurück</p>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         ) : (
@@ -226,16 +293,18 @@ export const SDG02_Spiel = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     buttonNext =
         showtext <= 13 ? (
-            <div className ="movedown">
+            <div className="movedown">
                 <div className="nextbutton">
-                    {" "}
-                    <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
-                        <span className={infotextbutton.shadow} />
-                        <span className={infotextbutton.edgegreen} />
-                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                            <p className={infotextbutton.buttontext}>Weiter</p>
-                        </span>
-                    </button>
+                    <div>
+                        {" "}
+                        <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
+                            <span className={infotextbutton.shadow} />
+                            <span className={infotextbutton.edgegreen} />
+                            <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                                <p className={infotextbutton.buttontext}>Weiter</p>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         ) : (
@@ -273,10 +342,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                 </div>
             </div>
             <div className="spacer">
-                <p className="bodytext">
-                    {" "}
-                    {text[showtext]} {wolf} {rabbit}
-                </p>
+                <p className="bodytext"> {text[showtext]}</p>
             </div>
             {buttonBack}
             {buttonNext}
