@@ -46,14 +46,20 @@ export const SDG01_Spiel = (): JSX.Element => {
           x.style.display = "none";
         }
     }
-showtext=4
+
     let buttonNext;
+    let buttonBack; 
     let buttonCheck;
     let einleitung;
     let person1_1;
     let person1_2;
     let question1;
     let modal;
+    let answer;
+    
+    
+    answer = itemSelected === 0 ?(<p>Wrong</p>) : (itemSelected === 1 ?(<p>Correct</p>):(<p>Wrong</p>));
+
     modal =
     <Modal
         isOpen={modalIsOpen}
@@ -70,21 +76,31 @@ showtext=4
         }}
         closeTimeoutMS={500}
       >
-        <div className="content-header"><p>Title</p> <button type="button" className="personCheckOkButton" onClick={() => setIsOpen(false)}><b>Okay</b></button></div>
-        
+
+
+        <div className="content-header"><p>Title</p><button type="button" className="personCheckOkButton" onClick={() => {setIsOpen(false); incrementCount() }}><b>Okay</b></button></div>
+        {answer}
       </Modal>
+
+    buttonBack = showtext > 1 ?( <div style={{ marginTop: "1px" }} className ="backButtonDiv">
+    {" "}
+   <button type="button" onClick={decrementCount} className= "backButton">&#129044;</button>
+</div> ):(<div>{" "}</div>);
+       
+    
 
     buttonNext =
         showtext <= 3 ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
-                <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
+                <div style={{ position: "absolute" , top: "950px" , left: "1700px" }}><button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
                     <span className={infotextbutton.shadow} />
                     <span className={infotextbutton.edgegreen} />
                     <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
                         <p className={infotextbutton.buttontext}>Weiter</p> 
                     </span>
-                </button>
+                </button></div>
+                
             </div>
         ) : (
             <button className="buttonInvisible" type="button">
@@ -130,11 +146,11 @@ showtext=4
 
         person1_1 =
         showtext === 2 ? (
-            <div>
-                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+            <div style={{ marginTop: "60px", marginLeft: "50px" }}>
+                <p  className="underlinedHeader">
                     Person Nr. 1.1: Wirtschaftsinformatiker{" "}
                 </p>
-                <p className="personText">
+                <p style={{ marginTop: "20px", marginLeft: "30px", marginRight: "80px" }} className="personText">
                    <ul>
                     <li>&#9679;<b>Branche:</b> IT und Development (= Entwicklung) </li>
                     <li>&#9679;<b>Definition:</b>Beschäftigt sich mit der Technik eines Unternehmens. Genauer gesagt damit, dass wichtige <abbr title=" (sagen einer Firma, was sie machen müssen, damit ihre Produkte gut verkauft werden/welche Produkte
@@ -191,6 +207,7 @@ showtext=4
                     Hochwertige Bildung <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
+            {buttonBack}
             {einleitung}
             {person1_1}
             {person1_2}

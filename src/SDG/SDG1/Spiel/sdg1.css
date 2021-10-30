@@ -18,6 +18,7 @@ outline-width: 40px;
     margin-left:auto;
     margin-right: auto;
     width:350px;
+  
 
 }
 .personCheckOkButton
@@ -34,7 +35,9 @@ outline-width: 40px;
   
   
 }
-
+.personText{
+  font-size: 39px;
+}
 abbr[title] {
     position: relative;
     

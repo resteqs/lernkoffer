@@ -284,3 +284,18 @@ li {
      text-align: center;
      
   }
+  .backButtonDiv{
+      position: absolute;
+      top: -20px;
+      left: 30px;
+  }
+  .backButton{
+      width: 50px;
+      height:  50px;
+      font-size: 150px;
+      text-align: center;
+      display: table;
+      background: none;
+      border: none;
+      
+  }
