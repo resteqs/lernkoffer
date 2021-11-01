@@ -68,7 +68,7 @@ export const SDG01_Spiel = (): JSX.Element => {
     
  
     answerCW1 = showtext === 4?(itemSelected === 0 || itemSelected === 1 ?(<p>Wrong</p>):(<p>Correct</p>)):(<div>{" "}</div>);
-    answerCW2 = showtext === 4?(itemSelected === 0 || itemSelected === 1 ?(<p>Wrong</p>):(<p>Correct</p>)):(<div>{" "}</div>);
+    answerCW2 = showtext === 7?(itemSelected === 0 || itemSelected === 1 ?(<p>Wrong</p>):(<p>Correct</p>)):(<div>{" "}</div>);
 
     answer1 = showtext === 4?(<p style={{ fontSize: "40px" }}> <b>Antwort:</b> Zahlen aus Deutschland (2019) haben gezeigt, dass ein/e Wirtschaftsinformatiker:in im Schnitt 65.206€ verdient, während ein/e Grafikdesigner:in etwa 27.840€ verdient. Als Wirtschaftsinformatiker:in verdient man im Schnitt etwa 37.400€ mehr als ein/e Grafikdesigner:in, was mehr als das Doppelte von diesem Gehalt ist. Aber warum? Diese Unterschiede sind größtenteils dadurch zu begründen, dass in der modernen Wirtschaft wesentlich mehr Wirtschaftsinformatiker:innen gesucht werden als Grafikdesigner:innen</p>):(<div>{" "}</div>);
     answer2 = showtext === 7?(<p style={{ fontSize: "40px" }}> <b>Antwort:</b> Zahlen aus Deutschland (2019) haben gezeigt, dass ein/e Wirtschaftsinformatiker:in im Schnitt 65.206€ verdient, während ein/e Grafikdesigner:in etwa 27.840€ verdient. Als Wirtschaftsinformatiker:in verdient man im Schnitt etwa 37.400€ mehr als ein/e Grafikdesigner:in, was mehr als das Doppelte von diesem Gehalt ist. Aber warum? Diese Unterschiede sind größtenteils dadurch zu begründen, dass in der modernen Wirtschaft wesentlich mehr Wirtschaftsinformatiker:innen gesucht werden als Grafikdesigner:innen</p>):(<div>{" "}</div>);
@@ -90,7 +90,7 @@ export const SDG01_Spiel = (): JSX.Element => {
       >
 
 
-        <div className="content-header">{answerCW1}<button type="button" className="personCheckOkButton" onClick={() => {setIsOpen(false); incrementCount() }}><b>Okay</b></button></div>
+        <div className="content-header">{answerCW1}{answerCW2}<button type="button" className="personCheckOkButton" onClick={() => {setIsOpen(false); incrementCount() }}><b>Okay</b></button></div>
         {answer1}{answer2}
       </Modal>
 

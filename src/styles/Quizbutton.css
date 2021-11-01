@@ -85,7 +85,7 @@
 .front {
     display: block;
     position: relative;
-    padding: 95px 42px;
+    padding:105px 42px;
     border-radius: var(--buttonBorder);
     font-size: 1.25rem;
     color: white;
