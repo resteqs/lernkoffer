@@ -65,6 +65,7 @@ import { SDG03_Infotext } from "./SDG/SDG3/Info/SDG03_Infotext";
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+import { SDG03_Spiel } from "./SDG/SDG3/Spiel/SDG03_Spiel";
 /**                                Video                                     */
 
 
@@ -76,6 +77,7 @@ import { SDG03_Infotext } from "./SDG/SDG3/Info/SDG03_Infotext";
 /**                               Infotext                                   */
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+import { SDG04_Spiel } from "./SDG/SDG4/Spiel/04spiel";
 /**                                Video                                     */
 
 
@@ -268,7 +270,7 @@ import page143 from "./SDG/SDG14/Spiel2/tutorial/14tut3";
 import play14 from "./SDG/SDG14/Spiel2/play14";
 
 
-import { SDG04_Spiel } from "./SDG/SDG4/Spiel/04spiel";
+
 
 
 
@@ -327,6 +329,7 @@ export const App = (): JSX.Element => {
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+        <Route exact path="/SDG03/Spiel" component={SDG03_Spiel}/>
 /**                                Video                                     */
 
 
