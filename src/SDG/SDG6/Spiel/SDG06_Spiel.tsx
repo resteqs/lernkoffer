@@ -22,25 +22,25 @@ export const SDG06_Spiel = (): JSX.Element => {
     const sdg = "SDG06";
     const [modalIsOpen, setIsOpen] = React.useState(false);
     
-    showtext = 6;
 
     function select(x:any): void
     {
         setSelectedItem(x);
     }
     const modalHeader = {
-        1: `Text1`,
-        2: `Text2`,
-        3: `Text3`,
-        4: `Text4`,
-        5: 'Text5'
+        1: `Information`,
+        2: `Toilette`,
+        3: `Berge`,
+        4: `Ein Bad im See`,
+        5: 'Eine kurze Trinkpause'
     };
     const modalBody = {
-        1: `Text1`,
-        2: `Text2`,
-        3: `Text3`,
-        4: `Text4`,
-        5: 'Text5'
+        1: `Du liest dir folgende Informationen am Infostand durch und setzt deshalb für eine Runde aus. In dem 6. Nachhaltigkeitsziel ist es ein wichtiger Punkt, dass die Menschen über Probleme informiert werden, die durch verschmutztes Wasser entstehen. Außerdem möchte die UN (das ist die Organisation, die die Nachhaltigkeitsziele entwickelt hat) Gemeinden und Städte dabei unterstützen, sich bei Projekten zum verbesserten Umgang mit Wasser einzubringen. Frage einmal in deiner Umgebung die Leute, ob sie solche Projekte kennen und vielleicht sogar selbst bei diesen mithelfen. Wenn nicht, wäre es eine gute Idee, in deinem Dorf, deiner Gemeinde oder Stadt solche Projekte vorzustellen oder sogar zu unterstützen.`,
+        2: `Ohje, du hast wohl zu viel getrunken und musst daher auf die Toilette. Setze eine Runde aus. Auf der Welt gibt es viele Regionen, in denen es nicht selbstverständlich ist, dass es saubere
+        Toiletten gibt und dass diese auch immer für alle zugänglich sind. Das ist jedoch ein Problem, da durch verschmutzte Sanitäranlagen (Toiletten, Waschbecken…) viele Krankheiten verbreitet werden können.`,
+        3: `Weißt du, woher das Wasser kommt? Du hast einen kleinen Bach gefunden, neben dem ein Weg läuft und möchtest dem Ursprung des Wassers auf den Grund gehen. Setze eine Runde aus. Die Berge sind eine Gegend, die sich in den letzten Jahrzehnten sehr stark verändert hat. So sind viele Gletscher (große Mengen Eis) geschmolzen und deren Wasser fließt jetzt in unseren Bächen, Flüssen, Seen und Meeren. Es gibt sehr viele Stellen in der Natur, an denen Wasser besonders zu schützen ist. Die Berge sind ein Beispiel dafür, genauso wie Wälder, Bäche und Sümpfe. Sei hier also bitte besonders vorsichtig: wenn du zum Beispiel Müll bei dir hast, dann wirf ihm nicht einfach in den nächsten See, denn dieser verschmutzt sonst sehr schnell und das Wasser kann schlimme Auswirkungen auf deine Gesundheit, die Natur und vieles mehr haben. Behalte deine Abfälle lieber so lange bei dir, bis du eine Gelegenheit hast, den Müll getrennt zu entsorgen.`,
+        4: `Der See hier sieht herrlich aus. Warum schwimmst du nicht ein Runde? Setze dafür eine Runde aus. So schönes hellblaues Wasser findet man nicht in jedem See, da einige sehr stark verschmutzt sind. Allerdings ist meist nicht nur die gut sichtbare Verschmutzung (z.B. herumschwimmende Flaschen) ein Problem, sondern auch häufig die Verunreinigung, die man nicht sieht. Wenn zum Beispiel aus Fabriken oder von Feldern Chemikalien in Bäche, Flüsse oder Seen gespült werden, oft nicht mehr zum Trinken geeignet. Auch Pflanzen und Tiere sind häufig betroffen. Aus diesen Gründen ist es sehr wichtig, dass Wasser jeder Art gut geschützt wird. Um das zu tun, gibt es verschiedene Ansätze. Entweder man schließt sich Organisationen an, die Umweltschutz im Allgemeinen oder speziell den Schutz der Gewässer unterstützen oder man stimmt bei Wahlen für Kandidaten, die sich für den Umweltschutz engagieren.`,
+        5: 'Du hast schon einen so weiten Weg zurückgelegt, dass du unbedingt etwas trinken solltest. Setze dafür eine Runde aus. In vielen Regionen der Welt haben Menschen nicht ausreichend Trinkwasser oder müssen hierfür weite Strecken zurücklegen. Ein Ziel der UN und ihrer Nachhaltigkeitsziele ist es, dass jeder Mensch bis zum Jahr 2030 Zugang zu ausreichend Trinkwasser hat. Das wiederum bedeutet, dass die Wasserverschmutzung aufhören muss, damit das vorhandene Wasser auf der Erde auch als Trinkwasser genutzt werden kann. Denn ist das Wasser verunreinigt, sollte es weder getrunken noch zum Beispiel zum Kochen verwendet werden, da das schlecht für die Gesundheit sein kann'
     };
 
 
@@ -130,6 +130,7 @@ export const SDG06_Spiel = (): JSX.Element => {
     let card3;
     let card4;
     let card5;
+    let cards;
 
     buttonBack =
         showtext >= 2 && showtext <= 5? (
@@ -189,7 +190,7 @@ export const SDG06_Spiel = (): JSX.Element => {
             closeTimeoutMS={500}
           >
             <div className="content-header"><p>{modalHeader[itemSelected]}</p> <button type="button" className="personCheckOkButton" onClick={() => setIsOpen(false)}><b>Okay</b></button></div>
-            {modalBody[itemSelected]}
+            <p style={{ fontSize: "35px" , textAlign: "center", marginTop: "40px" }}>{modalBody[itemSelected]}</p>
         </Modal>
 
     infotextbox = showtext <= 5?(<div className="infotextbox">
@@ -207,7 +208,7 @@ card2 = <div><button className="sdg6card" type="button" onClick={() => {setIsOpe
 card3 = <div><button className="sdg6card" type="button" onClick={() => {setIsOpen(true); select(3)}}>3</button></div>
 card4 = <div><button className="sdg6card" type="button" onClick={() => {setIsOpen(true); select(4)}}>4</button></div>
 card5 = <div><button className="sdg6card" type="button" onClick={() => {setIsOpen(true); select(5)}}>5</button></div>
-
+cards = showtext ===6?(<div style={{ marginTop:"300px", display: "flex", justifyContent: "center",alignItems: "center" }}>{card1} {card2}{card3}{card4}{card5}</div>):(<div>{" "}</div>);
 return (
         <div>
             <div className={`colour_${sdg}_header`}>
@@ -222,7 +223,7 @@ return (
             {buttonNext}
             {buttonEnd}
             {modal}
-            <div style={{ marginTop:"300px", display: "flex", justifyContent: "center",alignItems: "center" }}>{card1} {card2}{card3}{card4}{card5}</div>
+            {cards}
         </div>
     );
 };
