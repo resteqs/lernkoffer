@@ -37,7 +37,6 @@ export const SDG01_Spiel = (): JSX.Element => {
     }
 
 
-
     // eslint-disable-next-line unicorn/consistent-function-scoping
     function toggleExplenation(): void {
         const x = document.getElementById("hover")!;
