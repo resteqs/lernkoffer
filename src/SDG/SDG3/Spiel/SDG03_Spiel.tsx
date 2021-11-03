@@ -43,8 +43,9 @@ export const SDG03_Spiel = (): JSX.Element => {
         3: (
             <div>
                 <p className="SpielregelnSDG04" style={{ fontSize: "45px" }}>
-                Nimm dir ein Blatt zur Hand und male den Umriss eines Kopfes darauf ( Wenn du das hast, kannst du den Kopf entweder einfach auf dem Blatt lassen oder ausschneiden.
+                Nimm dir ein Blatt zur Hand und male den Umriss eines Kopfes darauf (wenn du dir nicht sicher bist, wie du den Umriss eines Kopfes zeichnen kannst, dann kannst du einfach hier klicken, dann kommst du zu einer Vorlage, die du einfach abzeichnen kannst) Wenn du das hast, kannst du den Kopf entweder einfach auf dem Blatt lassen oder ausschneiden.
                 </p>
+                <button type="button" style={{ background: "none", borderColor :"blue" , borderWidth: "11px", borderRadius: "15px", marginTop: "350px" }} onClick={() => openVorlage() }><img  style={{ maxWidth: "100px", maxHeight: "100px" }} src="https://picsum.photos/id/237/1000/1000" alt="Wirtschaftsinformatiker"/></button>
             </div>
         ),
         4: (
@@ -62,6 +63,12 @@ export const SDG03_Spiel = (): JSX.Element => {
                 Vielleicht zeigt euch das, dass es guttun kann, über seine Sorgen zu reden.
                 </p>
             </div>
+        ),
+        69: (
+         <div><div><img  style={{ maxWidth: "600px", maxHeight: "700px", marginTop: "-70px" }}src="https://picsum.photos/id/237/1000/1000" alt="vorlage"/>
+         </div>
+        <div><button type="button" style={{ background: "none", borderColor :"blue" , borderWidth: "11px", borderRadius: "15px", marginTop: "150px", fontSize: "30px" }} onClick={() => closeVorlage() }>Zurück</button></div></div>
+            
         ),
 
     };
@@ -92,6 +99,7 @@ export const SDG03_Spiel = (): JSX.Element => {
             </div>
         ),
     };
+    let a;
     function incrementCount(): void {
         setText(showtext + 1);
     }
@@ -99,13 +107,19 @@ export const SDG03_Spiel = (): JSX.Element => {
     function decrementCount(): void {
         setText(showtext - 1);
     }
+    function openVorlage(): void {
+        setText(69);
+    }
+    function closeVorlage(): void{
+        setText(3);
+    }
     let buttonBack;
     let buttonNext;
     let buttonEnd; 
     let modal;
 
     buttonBack =
-        showtext >= 2 ? (
+        showtext >= 2 && showtext !== 69? (
             <div className="backbutton">
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
@@ -124,7 +138,7 @@ export const SDG03_Spiel = (): JSX.Element => {
 
       
         buttonNext =
-        showtext <= 4 ? (
+        showtext <= 4  && showtext !== 69 ?  (
             <div className="nextbutton">
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
@@ -160,7 +174,6 @@ export const SDG03_Spiel = (): JSX.Element => {
             <div className="content-header"><p>Title</p> <button type="button" className="personCheckOkButton" onClick={() => setIsOpen(false)}><b>Okay</b></button></div>
             
         </Modal>
-
 
 
 return (
