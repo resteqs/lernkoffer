@@ -1,15 +1,20 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable eslint-comments/no-duplicate-disable */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable prefer-const */
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable unicorn/filename-case */
 import * as React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
-import a from "../../Vorlagen/Quiz/letter-a.png";
-import b from "../../Vorlagen/Quiz/letter-b.png";
+import a from "./letter-a.png";
+import b from "./letter-b.png";
 import Logo from "../../../SDGLogos/Goal-SDG06.png";
 import Modal from "react-modal";
-import { debug } from "console";
+import infotextbutton from "../../../styles/Infotextbutton.module.css";
+
+import thumbup from "../Quiz/thumbs/like.png";
+import thumbdown from "../Quiz/thumbs/dislike.png";
+import { Link } from "react-router-dom";
 
 interface States {
     shouldShowModal: boolean;
@@ -18,83 +23,237 @@ interface States {
 
 // eslint-disable-next-line react/prefer-stateless-function
 export const SDG05_Quiz = (): JSX.Element => {
-    const sdg = "SDG07";
-
+    const sdg = "SDG05";
     const [modalIsOpen, setIsOpen] = React.useState(false);
-
+    let [showtext, setText] = React.useState(1);
+    let [itemSelected, setSelectedItem] = React.useState(0);
     const questionsNumber = 4;
 
     const button1class = classNames("pushable", "answerButtonleft");
-
     const button2class = classNames("pushable", "answerButtonright");
 
+    function incrementCount(): void {
+        setText(showtext + 1);
+    }
+
+    function decrementCount(): void {
+        setText(showtext - 1);
+    }
+    function select1(): void {
+        setSelectedItem(1);
+    }
+    function select2(): void {
+        setSelectedItem(2);
+    }
+
     const Question = {
-        1: `Text1`,
-        2: `Text2`,
-        3: `Text3`,
-        4: `Text4`,
+        1: (
+            <div>
+                <p>
+                    „In einer Beziehung soll nur der Mann Geld verdienen! Die Aufgabe der Frau ist es, den Haushalt zu
+                    führen und auf die Kinder aufzupassen, falls es welche gibt!“{" "}
+                </p>
+            </div>
+        ),
+        2: (
+            <div>
+                <p>„In Firmen und Geschäften dürfen sowohl Männer als auch Frauen die Chefs sein!“ </p>
+            </div>
+        ),
+        3: (
+            <div>
+                <p>„Jede Frau soll (genauso wie jeder Mann) aus freien Stücken heiraten können“ </p>
+            </div>
+        ),
+        4: (
+            <div>
+                <p>„Auch Männer dürfen Berufe wie Krankenpfleger, Sekretär oder Friseur ausüben“ </p>
+            </div>
+        ),
+        5: (
+            <div>
+                <p>„In einer Beziehung darf der Mann wegen seines Geschlechts über die Frau bestimmen“ </p>
+            </div>
+        ),
+        6: (
+            <div>
+                <p>„Jeder soll für dieselbe Arbeit auch genau gleich viel Geld bekommen!“ </p>
+            </div>
+        ),
+        7: (
+            <div>
+                <p>
+                    „Wenn beispielsweise ein verheirateter Mann stirbt, sollen nur männliche Verwandte wie der Sohn
+                    erben, nicht die Ehefrau!“{" "}
+                </p>
+            </div>
+        ),
     };
 
     const Answer1Text = {
-        1: `Text1`,
+        1: `Text2`,
         2: `Text2`,
         3: `Text3`,
         4: `Text4`,
     };
 
     const Answer2Text = {
-        1: `Text1`,
+        1: `Text2`,
         2: `Text2`,
         3: `Text3`,
         4: `Text4`,
     };
 
     const Explanation = {
-        1: `Text1`,
-        2: `Text2`,
-        3: `Text3`,
-        4: `Text4`,
+        1: (
+            <div>
+                <p>
+                    Da jeder Mensch, unabhängig des Geschlechts, gleichbehandelt werden und die gleichen Möglichkeiten
+                    haben soll, gehört es sich, dass in einer Beziehung die Partner gemeinsam entscheiden, wer welche
+                    Aufgaben übernimmt, ob die Aufgaben so strickt vergeben werden müssen und ob sie aufgeteilt werden
+                    können. Das sollte nur geschehen, wenn beide Partner einverstanden sind. Dadurch sind dann beide
+                    Partner im Idealfall zufriedener mit ihren Aufgaben, was natürlich auch die Stimmung im Haus und in
+                    der Beziehung generell besser macht!{" "}
+                </p>
+            </div>
+        ),
+        2: (
+            <div>
+                <p>
+                    Wer Chef wird sollte nur danach entschieden werden, ob jemand für diesen Job geeignet ist und die
+                    notwendigen Fähigkeiten dazu besitzt. Dementsprechend sollte nicht danach ausgewählt werden, welches
+                    Geschlecht die Person hat, sondern nur auf das Können geachtet werden. Wenn dadurch gleich viele
+                    Männer und Frauen Chefs würden, könnten die Frauen und Männer sich dann auch selbst besser darum
+                    kümmern, dass sie gerechter behandelt werden.{" "}
+                </p>
+            </div>
+        ),
+        3: (
+            <div>
+                <p>
+                    Jeder Mensch, egal ob Mann oder Frau, hat das Recht sein Leben so zu gestalten, wie er das möchte.
+                    Dazu gehören unter anderem, wen und ob man heiraten möchte, beziehungsweise mit wem man zusammen
+                    sein möchte. Das wird auch in der „Allgemeinen Erklärung der Menschenrechte“ gesagt. Ein weiterer
+                    Vorteil von einer freien Wahl des Partners ist, dass die Beziehung wahrscheinlich glücklicher ist
+                    und länger hält!{" "}
+                </p>
+            </div>
+        ),
+        4: (
+            <div>
+                <p>
+                    Die Berufswahl ist unabhängig vom Geschlecht, und jeder darf sich für jeden Beruf bewerben, wenn er
+                    das möchte. Denn es ist für die Jobwahl egal welches Geschlecht man hat, solange man den Job ausüben
+                    will, sollte man auch versuchen, ihn auszuüben!{" "}
+                </p>
+            </div>
+        ),
+        5: (
+            <div>
+                <p>
+                    In der „Allgemeinen Erklärung der Menschenrechte“ wird gesagt, dass jeder Mensch die gleichen Rechte
+                    hat, deswegen sollten auch innerhalb einer Beziehung beide Partner die gleichen Rechte haben! So
+                    könnte es verhindert werden, dass der Mann die Frau zu irgendetwas schlimmem zwingt (zum Beispiel
+                    Gewalt gegen Frauen).{" "}
+                </p>
+            </div>
+        ),
+        6: (
+            <div>
+                <p>
+                    Dies steht fast genauso in der „Allgemeinen Erklärung der Menschenrechte“: „Jeder, ohne Unterschied,
+                    hat das Recht auf gleichen Lohn für gleiche Arbeit.“{" "}
+                </p>
+            </div>
+        ),
+        7: (
+            <div>
+                <p>
+                    Hier wird gesagt, dass nur männliche Verwandte erben dürfen. Das heißt, dass der Mann, wenn die Frau
+                    sterben würde, erben würde. Also hat der Mann dieses Recht. Da aber in der Ehe beide Partner die
+                    gleichen Rechte haben, dürfen auch beide vom jeweils anderen etwas erben.{" "}
+                </p>
+            </div>
+        ),
     };
 
     const answerNumbers1 = {
-        /* leftbutton, answer 1 is true 2 is false */ 1: 2,
-        2: 1,
-        3: 2,
-        4: 1,
+        1: "Wrong",
+        2: "True",
+        3: "True",
+        4: "True",
+        5: "Wrong",
+        6: "True",
+        7: "Wrong",
     };
 
     const answerNumbers2 = {
-        /* rightbutton, answer 1 is true 2 is false */ 1: 1,
-        2: 2,
-        3: 1,
-        4: 2,
+        1: "True",
+        2: "Wrong",
+        3: "Wrong",
+        4: "Wrong",
+        5: "True",
+        6: "Wrong",
+        7: "True",
     };
 
-    let answer1 = 0;
+    const text = {
+        8: (
+            <div>
+                <p className="einleitungText">
+                    Falls ihr euch fragt, wie ich auf das komme, was ich euch gerade gesagt habe: Ich beziehe mich auf
+                    den in der „Allgemeinen Erklärung der Menschenrechte“ der UNO festgehaltenen Grundsatz, „Alle
+                    Menschen sind frei und gleich an Würde und Rechten geboren“{" "}
+                </p>
+            </div>
+        ),
+        9: (
+            <div>
+                <p className="einleitungText">
+                    Dadurch wird gesagt, dass unabhängig von Geschlecht, Herkunft, Religion und vielen weiteren Sachen
+                    jeder Mensch die gleichen Rechte hat Bei manchen von den Beispielen, die ich euch gerade genannt
+                    habe, wurden Menschenrechte verletzt. Manchmal habe ich euch auch einfach ein Zitat aus der
+                    „Allgemeinen Erklärung der Menschenrechte &ldquo; dazugegeben!{" "}
+                </p>
+            </div>
+        ),
+        10: (
+            <div>
+                <p className="einleitungText">
+                    Ich hoffe, ihr erkennt durch diese Beispiele jetzt besser, wo Frauen und Männer ungleich behandelt
+                    werden!{" "}
+                </p>
+            </div>
+        ),
+    };
 
-    let answer2 = 0;
-
-    let showtext = 1;
-
-    // eslint-disable-next-line class-methods-use-this
-    function handleClick(): void {
-        answer1 = answerNumbers1[showtext]; /* leftbutton, answer 1 is true 2 is false */
-        answer2 = answerNumbers2[showtext]; /* rightbutton, answer 1 is true 2 is false */
-    }
-
-    function incrementCount(): void {
-        showtext += 1;
-    }
+    let answerCW;
+    let answer;
+    let buttonCheck;
+    let question;
+    let button1;
+    let button2;
 
     let modal;
+    answerCW =
+        itemSelected === 0 ? (
+            <p>Wrong</p>
+        ) : (itemSelected === 1 ? (
+            <p>{answerNumbers1[showtext]}</p>
+        ) : (
+            <p>{answerNumbers2[showtext]}</p>
+        ));
+    answer = (
+        <p style={{ fontSize: "40px" }}>
+            {" "}
+            <b>Antwort:</b>
+            {Explanation[showtext]}{" "}
+        </p>
+    );
     modal = (
         <Modal
             isOpen={modalIsOpen}
-            onRequestClose={() => {
-                setIsOpen(false);
-                incrementCount();
-                console.log(showtext);
-            }}
+            onRequestClose={() => setIsOpen(false)}
             overlayClassName={{
                 base: "overlay-base",
                 afterOpen: "overlay-after",
@@ -105,88 +264,214 @@ export const SDG05_Quiz = (): JSX.Element => {
                 afterOpen: "content-after",
                 beforeClose: "content-before",
             }}
-            closeTimeoutMS={500}
+            closeTimeoutMS={50}
         >
             <div className="content-header">
-                <p>Title</p>{" "}
-                <button type="button" className="personCheckOkButton" onClick={() => setIsOpen(false)}>
+                {answerCW}
+                <button
+                    type="button"
+                    className="personCheckOkButton"
+                    onClick={() => {
+                        setIsOpen(false);
+                        incrementCount();
+                        setSelectedItem(0);
+                    }}
+                >
                     <b>Okay</b>
                 </button>
             </div>
+            {answer}
         </Modal>
     );
 
+    buttonCheck =
+        showtext <= 7 ? (
+            <div style={{ marginTop: "10px" }} className="personCheckAnswerButton">
+                {" "}
+                <button className={infotextbutton.pushable} type="button" onClick={() => setIsOpen(true)}>
+                    <span className={infotextbutton.shadow} />
+                    <span className={infotextbutton.edgegreen} />
+                    <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                        <p className={infotextbutton.buttontext}>Überprüfe</p>
+                    </span>
+                </button>
+            </div>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+
+    // source of the thumb: https://pixabay.com/de/vectors/hand-m%c3%b6gen-daumen-hoch-157251/
+    button1 =
+        showtext <= 7 ? (
+            <button
+                type="button"
+                style={{
+                    marginLeft: "150px",
+                    marginTop: "60px",
+                    background: "none",
+                    borderColor: "blue",
+                    borderWidth: "11px",
+                    borderRadius: "15px",
+                }}
+                className={itemSelected === 1 ? "selectedPerson" : ""}
+                onClick={() => select1()}
+            >
+                <div
+                    style={{
+                        width: "500px",
+                        height: "500px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    <p style={{ fontSize: "190px" }}>
+                        <div>
+                            <img style={{ maxWidth: "300px" }} src={thumbup} alt="yes" />
+                        </div>
+                    </p>{" "}
+                </div>{" "}
+            </button>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+
+    // source of the thumb: https://pixabay.com/de/vectors/abneigung-hand-daumen-nieder-nein-157252/
+    button2 =
+        showtext <= 7 ? (
+            <button
+                type="button"
+                style={{
+                    marginRight: "150px",
+                    marginTop: "60px",
+                    float: "right",
+                    background: "none",
+                    borderColor: "blue",
+                    borderWidth: "11px",
+                    borderRadius: "15px",
+                }}
+                className={itemSelected === 2 ? "selectedPerson" : ""}
+                onClick={() => select2()}
+            >
+                <div
+                    style={{
+                        width: "500px",
+                        height: "500px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    <p style={{ fontSize: "190px" }}>
+                        <div>
+                            <img style={{ maxWidth: "300px" }} src={thumbdown} alt="yes" />
+                        </div>
+                    </p>{" "}
+                </div>
+            </button>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+    question =
+        showtext !== 10 ? (
+            <div style={{ textAlign: "center" }}>
+                <p style={{ marginTop: "60px", marginLeft: "50px", fontSize: "50px" }} className="underlinedHeader">
+                    {Question[showtext]}
+                </p>
+            </div>
+        ) : (
+            <div />
+        );
+    
+    let buttonBack =
+        showtext >= 9 ? (
+            <div className="movedown">
+                <div className="backbutton">
+                    <div>
+                        {" "}
+                        <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
+                            <span className={infotextbutton.shadow} />
+                            <span className={infotextbutton.edge} />
+                            <span className={infotextbutton.front}>
+                                <p className={infotextbutton.buttontext}>Zurück</p>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+    // eslint-disable-next-line prefer-const
+    let buttonNext =
+        showtext >= 8 && showtext <= 9? (
+            <div className="movedown">
+                <div className="nextbutton">
+                    <div>
+                        {" "}
+                        <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
+                            <span className={infotextbutton.shadow} />
+                            <span className={infotextbutton.edgegreen} />
+                            <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                                <p className={infotextbutton.buttontext}>Weiter</p>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+    let buttonEnd =
+        showtext === 10 ? (
+            <div className="nextbutton">
+                <Link to="/Vorlagen/Endscreen">
+                    {" "}
+                    <button className={infotextbutton.pushable} type="button">
+                        <span className={infotextbutton.shadow} />
+                        <span className={infotextbutton.edgegreen} />
+                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                            <p className={infotextbutton.buttontext}>Weiter </p>
+                        </span>
+                    </button>
+                </Link>{" "}
+            </div>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+
     return (
         <div>
-            <head>
-                <style>{"body { background-color: #fff; }"}</style>
-            </head>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
                     Hochwertige Bildung
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
-            <p className="questionNumber">Question {showtext}</p>
-            <p className="quizQuestion">{Question[showtext]}</p>
-            <div>
-                <button
-                    className={button1class}
-                    type="button"
-                    style={{ height: "30%" }}
-                    onClick={() => {
-                        handleClick();
-                        setTimeout(() => {
-                            setIsOpen(true);
-                        }, 1000);
-                    }}
-                >
-                    <span className="shadow" />
-                    <span className={answer1 === 1 ? "edgegreen" : (answer1 === 2 ? "edgered" : "edgeblue")} />
-                    <span
-                        className="front"
-                        style={
-                            answer1 === 1
-                                ? { backgroundColor: "green" }
-                                : (answer1 === 2
-                                ? { backgroundColor: "red" }
-                                : { backgroundColor: "blue" })
-                        }
-                >
-                        <img className="letterbox" src={a} alt="a" /> <br />{" "}
-                        <p className="buttontext">{Answer1Text[showtext]}</p>
-                    </span>
-                </button>{" "}
-                <FontAwesomeIcon icon="check-square" />
-                <button
-                    className={button2class}
-                    type="button"
-                    style={{ height: "30%" }}
-                    onClick={() => {
-                        handleClick();
-                        setTimeout(() => {
-                            setIsOpen(true);
-                        }, 1000);
-                    }}
-                >
-                    <span className="shadow" />
-                    <span className={answer2 === 1 ? "edgegreen" : (answer2 === 2 ? "edgered" : "edgeblue")} />
-                    <span
-                        className="front"
-                        style={
-                            answer2 === 1
-                                ? { backgroundColor: "green" }
-                                : (answer2 === 2
-                                ? { backgroundColor: "red" }
-                                : { backgroundColor: "blue" })
-                        }
-                    >
-                        <img className="letterbox" src={b} alt="b" /> <br />
-                        <p className="buttontext">{Answer2Text[showtext]}</p>
-                    </span>
-                </button>
+            <div className="spacer">
+                <p className="bodytext"> {text[showtext]}</p>
             </div>
+            <p className="questionNumber">Frage: {showtext}/7</p>
+            {question}
+            {button1}
+            {button2}
+            {buttonCheck}
             {modal}
+            {buttonNext}
+            {buttonBack}
+            {buttonEnd}
         </div>
     );
 };

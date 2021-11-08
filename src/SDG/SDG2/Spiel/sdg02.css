@@ -18,3 +18,14 @@
     position: relative;
     left: 30%;
 }
+
+.noborder{
+    background-color: orange;
+    font-size: 30px;
+}
+
+.withborder{
+    background-color: "orange";
+    font-size: "30px";
+    border: black 10px solid; 
+}

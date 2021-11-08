@@ -1,4 +1,6 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable no-eval */
 
 // eslint-disable-next-line unicorn/filename-case
@@ -18,12 +20,33 @@ import tajine from "./media/tajine.jpg";
 
 import { CSSProperties } from "react";
 import { faAlignCenter } from "@fortawesome/free-solid-svg-icons";
+import { debug } from "console";
 
 export const SDG02_Spiel = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     let [showtext, setText] = React.useState(1);
     let obj1:boolean; let obj2:boolean; let obj3:boolean;
     const sdg = "SDG02";
+
+    const noborder:CSSProperties = {
+        background: "orange",
+        fontSize: "30px",
+    }
+    
+    const withborder: CSSProperties = {
+        background: "orange",
+        fontSize: "30px",
+        border: "black 10px solid",
+    }
+
+    
+    let buttonStyle = noborder;
+
+    function toggleClass():any {
+        (buttonStyle === noborder) ? (buttonStyle = noborder):(buttonStyle === noborder);
+
+        
+    }
 
     function incrementCount(): void {
         setText(showtext + 1);
@@ -110,31 +133,33 @@ export const SDG02_Spiel = (): JSX.Element => {
                 </section>
                 
                 <section style = {{ display: "block", float: "right" }}> 
-                    <div id = "choice">    
+                    <div >    
                         <div style = {{ marginBottom : "50px" }}>
-                            <button className = "pushable" type="button">
+                            <button className = "pushable" type="button" onClick = { () => {(buttonStyle === noborder) ? (buttonStyle = withborder):( " " ) }} >
                                 <div style = {{ width: "768px" }}>
                                     <span className="shadow" style = {{ backgroundColor: "cc7000" }} />
                                     <span className={infotextbutton.edgeorange} />
-                                    <span className="front" style = {{ backgroundColor: "orange", fontSize: "30px", }}>Europa</span>
+                                    <span className="front" style = { buttonStyle }>Europa</span>
                                 </div>
                             </button> { " " }
                         </div>
                         <div style = {{ marginBottom : "50px", paddingBottom: "20px" }}>
-                            <button className = "pushable" type="button">
+                            <button className = "pushable" type="button" onClick = { () => toggleClass()}> 
                                 <div style = {{ width: "768px" }}>
                                     <span className="shadow" />
                                     <span className={infotextbutton.edgeorange} />
-                                    <span className="front" style = {{ backgroundColor: "orange", fontSize: "30px" }}>Amerika</span>
+                                    <span className="front" style = { buttonStyle }>Amerika</span>
                                 </div>
                             </button> { " " }
                         </div>
                         <div style = {{ marginBottom : "50px", paddingBottom: "20px" }}>
-                            <button className = "pushable" type="button" >
+                            <button className = "pushable" type="button" onClick = { () => toggleClass()}>
                                 <div style = {{ width: "768px" }}>
                                     <span className="shadow" />
                                     <span className={infotextbutton.edgeorange} />
-                                    <span className="front" style = {{ backgroundColor: "orange", fontSize: "30px" }}>Afrika</span>
+                                    <span className= "front " style = { buttonStyle }> 
+                                        Afrika
+                                    </span>
                                 </div>
                             </button> { " " }
                         </div>
@@ -312,6 +337,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                 {" "}
             </button>
         );
+    
     // eslint-disable-next-line prefer-const
     buttonEnd =
         showtext === 14 ? (
