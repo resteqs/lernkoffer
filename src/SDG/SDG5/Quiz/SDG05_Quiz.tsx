@@ -388,21 +388,31 @@ export const SDG05_Quiz = (): JSX.Element => {
         ) : (
             <div />
         );
-    
+
     let buttonBack =
         showtext >= 9 ? (
-            <div className="movedown">
-                <div className="backbutton">
-                    <div>
-                        {" "}
-                        <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
-                            <span className={infotextbutton.shadow} />
-                            <span className={infotextbutton.edge} />
-                            <span className={infotextbutton.front}>
-                                <p className={infotextbutton.buttontext}>Zurück</p>
-                            </span>
-                        </button>
-                    </div>
+            <div style={{ marginTop: "1px" }} className="backButtonDiv">
+                {" "}
+                <button type="button" onClick={decrementCount} className="backButton">
+                    &#129044;
+                </button>
+            </div>
+        ) : (
+            <div> </div>
+        );
+
+    let buttonNext =
+        showtext >= 8 && showtext <= 9 ? (
+            <div style={{ marginTop: "10px" }} className="nextbutton">
+                {" "}
+                <div style={{ position: "absolute", top: "750px", left: "1700px" }}>
+                    <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
+                        <span className={infotextbutton.shadow} />
+                        <span className={infotextbutton.edgegreen} />
+                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                            <p className={infotextbutton.buttontext}>Weiter</p>
+                        </span>
+                    </button>
                 </div>
             </div>
         ) : (
@@ -410,13 +420,14 @@ export const SDG05_Quiz = (): JSX.Element => {
                 {" "}
             </button>
         );
-    // eslint-disable-next-line prefer-const
-    let buttonNext =
-        showtext >= 8 && showtext <= 9? (
-            <div className="movedown">
-                <div className="nextbutton">
-                    <div>
-                        {" "}
+
+    let buttonEnd =
+        showtext === 10 ? (
+            <div style={{ marginTop: "10px" }} className="nextbutton">
+                {" "}
+                <Link to="/Vorlagen/Endscreen">
+                    {" "}
+                    <div style={{ position: "absolute", top: "750px", left: "1700px" }}>
                         <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
                             <span className={infotextbutton.shadow} />
                             <span className={infotextbutton.edgegreen} />
@@ -425,25 +436,6 @@ export const SDG05_Quiz = (): JSX.Element => {
                             </span>
                         </button>
                     </div>
-                </div>
-            </div>
-        ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
-        );
-    let buttonEnd =
-        showtext === 10 ? (
-            <div className="nextbutton">
-                <Link to="/Vorlagen/Endscreen">
-                    {" "}
-                    <button className={infotextbutton.pushable} type="button">
-                        <span className={infotextbutton.shadow} />
-                        <span className={infotextbutton.edgegreen} />
-                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                            <p className={infotextbutton.buttontext}>Weiter </p>
-                        </span>
-                    </button>
                 </Link>{" "}
             </div>
         ) : (
@@ -451,7 +443,13 @@ export const SDG05_Quiz = (): JSX.Element => {
                 {" "}
             </button>
         );
-
+    
+    let questionNumber = 
+        showtext >= 10 ? (
+            <p className="questionNumber">Frage: {showtext}/7</p>
+            ) : (
+                <div> </div>
+        );
     return (
         <div>
             <div className={`colour_${sdg}_header`}>
@@ -460,10 +458,8 @@ export const SDG05_Quiz = (): JSX.Element => {
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
-            <div className="spacer">
-                <p className="bodytext"> {text[showtext]}</p>
-            </div>
-            <p className="questionNumber">Frage: {showtext}/7</p>
+            <p className="bodytext"> {text[showtext]}</p>
+            
             {question}
             {button1}
             {button2}
@@ -472,6 +468,7 @@ export const SDG05_Quiz = (): JSX.Element => {
             {buttonNext}
             {buttonBack}
             {buttonEnd}
+            {questionNumber}
         </div>
     );
 };

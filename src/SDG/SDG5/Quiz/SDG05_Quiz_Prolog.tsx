@@ -86,40 +86,29 @@ export const SDG05_Quiz_Prolog = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     buttonBack =
         showtext >= 2 ? (
-            <div className="movedown">
-                <div className="backbutton">
-                    <div>
-                        {" "}
-                        <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
-                            <span className={infotextbutton.shadow} />
-                            <span className={infotextbutton.edge} />
-                            <span className={infotextbutton.front}>
-                                <p className={infotextbutton.buttontext}>Zurück</p>
-                            </span>
-                        </button>
-                    </div>
-                </div>
+            <div style={{ marginTop: "1px" }} className="backButtonDiv">
+                {" "}
+                <button type="button" onClick={decrementCount} className="backButton">
+                    &#129044;
+                </button>
             </div>
         ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
+            <div> </div>
         );
+        
     // eslint-disable-next-line prefer-const
     buttonNext =
         showtext <= 3 ? (
-            <div className="movedown">
-                <div className="nextbutton">
-                    <div>
-                        {" "}
-                        <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
-                            <span className={infotextbutton.shadow} />
-                            <span className={infotextbutton.edgegreen} />
-                            <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                                <p className={infotextbutton.buttontext}>Weiter</p>
-                            </span>
-                        </button>
-                    </div>
+            <div style={{ marginTop: "10px" }} className="nextbutton">
+                {" "}
+                <div style={{ position: "absolute", top: "750px", left: "1700px" }}>
+                    <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
+                        <span className={infotextbutton.shadow} />
+                        <span className={infotextbutton.edgegreen} />
+                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                            <p className={infotextbutton.buttontext}>Weiter</p>
+                        </span>
+                    </button>
                 </div>
             </div>
         ) : (
