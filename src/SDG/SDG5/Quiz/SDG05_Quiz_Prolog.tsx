@@ -73,7 +73,7 @@ export const SDG05_Quiz_Prolog = (): JSX.Element => {
                 </p>
                 <p className="einleitungText">
                     Danach möchte ich euch erklären, warum das so ist. Diese Erklärungen könnt ihr anschließend mit
-                    euren eigenen Überlegungen vergleichen und vielleicht auch darüber diskutieren{" "}
+                    euren eigenen Überlegungen vergleichen und vielleicht auch darüber diskutieren.{" "}
                 </p>
             </div>
         ),

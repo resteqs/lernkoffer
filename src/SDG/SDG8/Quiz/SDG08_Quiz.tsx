@@ -6,14 +6,12 @@
 /* eslint-disable unicorn/filename-case */
 import * as React from "react";
 import classNames from "classnames";
-import a from "./letter-a.png";
-import b from "./letter-b.png";
-import Logo from "../../../SDGLogos/Goal-SDG05.png";
+import renderer from "react-dom";
+
+import Logo from "../../../SDGLogos/Goal-SDG08.png";
 import Modal from "react-modal";
 import infotextbutton from "../../../styles/Infotextbutton.module.css";
 
-import thumbup from "../Quiz/thumbs/like.png";
-import thumbdown from "../Quiz/thumbs/dislike.png";
 import { Link } from "react-router-dom";
 
 interface States {
@@ -22,15 +20,11 @@ interface States {
 }
 
 // eslint-disable-next-line react/prefer-stateless-function
-export const SDG05_Quiz = (): JSX.Element => {
-    const sdg = "SDG05";
+export const SDG08_Quiz = (): JSX.Element => {
+    const sdg = "SDG08";
     const [modalIsOpen, setIsOpen] = React.useState(false);
     let [showtext, setText] = React.useState(1);
     let [itemSelected, setSelectedItem] = React.useState(0);
-    const questionsNumber = 4;
-
-    const button1class = classNames("pushable", "answerButtonleft");
-    const button2class = classNames("pushable", "answerButtonright");
 
     function incrementCount(): void {
         setText(showtext + 1);
@@ -39,11 +33,15 @@ export const SDG05_Quiz = (): JSX.Element => {
     function decrementCount(): void {
         setText(showtext - 1);
     }
+
     function select1(): void {
         setSelectedItem(1);
     }
     function select2(): void {
         setSelectedItem(2);
+    }
+    function select3(): void {
+        setSelectedItem(3);
     }
 
     const Question = {
@@ -197,17 +195,28 @@ export const SDG05_Quiz = (): JSX.Element => {
         7: "True",
     };
 
+    const answerNumbers3 = {
+        1: "True",
+        2: "Wrong",
+        3: "Wrong",
+        4: "Wrong",
+        5: "True",
+        6: "Wrong",
+        7: "True",
+    };
+
     const text = {
-        8: (
+        1: (
             <div>
                 <p className="einleitungText">
-                    Falls ihr euch fragt, wie ich auf das komme, was ich euch gerade gesagt habe: Ich beziehe mich auf
-                    den in der „Allgemeinen Erklärung der Menschenrechte“ der UNO festgehaltenen Grundsatz, „Alle
-                    Menschen sind frei und gleich an Würde und Rechten geboren“{" "}
+                    Welche dieser Kinderrechte sind, denkst du, bei Milo verletzt worden? Wenn du denkst, dass er das
+                    Kinderrecht besitzt, dann tippe auf den &#128522;, wenn du dir unsicher bist oder denkst, dass er es
+                    nur teilweise ausführen kann, dann tippe auf &#128528;, wenn er das Recht nicht hat, dann tippe auf
+                    &#128577;.{" "}
                 </p>
             </div>
         ),
-        9: (
+        2: (
             <div>
                 <p className="einleitungText">
                     Dadurch wird gesagt, dass unabhängig von Geschlecht, Herkunft, Religion und vielen weiteren Sachen
@@ -217,7 +226,7 @@ export const SDG05_Quiz = (): JSX.Element => {
                 </p>
             </div>
         ),
-        10: (
+        3: (
             <div>
                 <p className="einleitungText">
                     Ich hoffe, ihr erkennt durch diese Beispiele jetzt besser, wo Frauen und Männer ungleich behandelt
@@ -240,9 +249,16 @@ export const SDG05_Quiz = (): JSX.Element => {
             <p>Wrong</p>
         ) : (itemSelected === 1 ? (
             <p>{answerNumbers1[showtext]}</p>
-        ) : (
+        ) : 
+        // eslint-disable-next-line unicorn/no-nested-ternary
+        (itemSelected === 2 ? (
             <p>{answerNumbers2[showtext]}</p>
-        ));
+        ) : itemSelected === 3 ? (
+            <p>{answerNumbers3[showtext]}</p>
+        ) : (
+            <div> </div>
+        )));
+
     answer = (
         <p style={{ fontSize: "40px" }}>
             {" "}
@@ -250,6 +266,7 @@ export const SDG05_Quiz = (): JSX.Element => {
             {Explanation[showtext]}{" "}
         </p>
     );
+
     modal = (
         <Modal
             isOpen={modalIsOpen}
@@ -308,7 +325,8 @@ export const SDG05_Quiz = (): JSX.Element => {
             <button
                 type="button"
                 style={{
-                    marginLeft: "150px",
+                    marginLeft: "120px",
+                    marginRight: "20px",
                     marginTop: "60px",
                     background: "none",
                     borderColor: "blue",
@@ -326,11 +344,10 @@ export const SDG05_Quiz = (): JSX.Element => {
                         justifyContent: "center",
                         alignItems: "center",
                     }}
+                    id="1"
                 >
                     <p style={{ fontSize: "190px" }}>
-                        <div>
-                            <img style={{ maxWidth: "300px" }} src={thumbup} alt="yes" />
-                        </div>
+                        <div>&#128522;</div>
                     </p>{" "}
                 </div>{" "}
             </button>
@@ -342,11 +359,48 @@ export const SDG05_Quiz = (): JSX.Element => {
 
     // source of the thumb: https://pixabay.com/de/vectors/abneigung-hand-daumen-nieder-nein-157252/
     button2 =
-        showtext <= 7 ? (
+        showtext >= 2 && showtext <= 7 ? (
             <button
                 type="button"
                 style={{
                     marginRight: "150px",
+                    marginTop: "60px",
+                    float: "right",
+                    background: "none",
+                    borderColor: "blue",
+                    borderWidth: "11px",
+                    borderRadius: "15px",
+                }}
+                className={itemSelected === 3 ? "selectedPerson" : ""}
+                onClick={() => select3()}
+            >
+                <div
+                    style={{
+                        width: "500px",
+                        height: "500px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                    id="2"
+                >
+                    <p style={{ fontSize: "190px" }}>
+                        <div>&#128577;</div>
+                    </p>{" "}
+                </div>
+            </button>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+
+    let button3 =
+        showtext >= 2 && showtext <= 7 ? (
+            <button
+                type="button"
+                style={{
+                    marginRight: "100px",
                     marginTop: "60px",
                     float: "right",
                     background: "none",
@@ -365,11 +419,10 @@ export const SDG05_Quiz = (): JSX.Element => {
                         justifyContent: "center",
                         alignItems: "center",
                     }}
+                    id="3"
                 >
                     <p style={{ fontSize: "190px" }}>
-                        <div>
-                            <img style={{ maxWidth: "300px" }} src={thumbdown} alt="yes" />
-                        </div>
+                        <div>&#128528;</div>
                     </p>{" "}
                 </div>
             </button>
@@ -379,7 +432,7 @@ export const SDG05_Quiz = (): JSX.Element => {
             </button>
         );
     question =
-        showtext !== 10 ? (
+        showtext >= 2 ? (
             <div style={{ textAlign: "center" }}>
                 <p style={{ marginTop: "60px", marginLeft: "50px", fontSize: "50px" }} className="underlinedHeader">
                     {Question[showtext]}
@@ -443,13 +496,11 @@ export const SDG05_Quiz = (): JSX.Element => {
                 {" "}
             </button>
         );
-    
-    let questionNumber = 
-        showtext >= 10 ? (
-            <p className="questionNumber">Frage: {showtext}/7</p>
-            ) : (
-                <div> </div>
-        );
+
+    let textDisplay = showtext === 1 ? <p className="bodytext"> {text[showtext]}</p> : <div> </div>;
+
+    let questionNumber = showtext >= 10 ? <p className="questionNumber">Frage: {showtext}/7</p> : <div> </div>;
+
     return (
         <div>
             <div className={`colour_${sdg}_header`}>
@@ -458,11 +509,12 @@ export const SDG05_Quiz = (): JSX.Element => {
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
-            <p className="bodytext"> {text[showtext]}</p>
-            
+
+            {textDisplay}
             {question}
             {button1}
             {button2}
+            {button3}
             {buttonCheck}
             {modal}
             {buttonNext}
@@ -473,3 +525,4 @@ export const SDG05_Quiz = (): JSX.Element => {
     );
 };
 // eslint-disable-next-line react/jsx-pascal-case
+renderer.render(<SDG08_Quiz />, document.getElementById("root"));

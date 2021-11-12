@@ -1,0 +1,4 @@
+Different Faces
+good:&#128522;
+meh: &#128528;
+bad: &#128577;

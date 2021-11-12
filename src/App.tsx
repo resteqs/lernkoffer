@@ -137,6 +137,8 @@ import { SDG06_Spiel } from "./SDG/SDG6/Spiel/SDG06_Spiel";
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
 /**                                 Quiz                                     */
+import { SDG08_Quiz_Prolog } from "./SDG/SDG8/Quiz/SDG08_Quiz_Prolog";
+import { SDG08_Quiz } from "./SDG/SDG8/Quiz/SDG08_Quiz";
 /**                                Spiel                                     */
 /**                                Video                                     */
 
@@ -300,7 +302,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
- <Route exact path ="/SDG01/Spiel" component={SDG01_Spiel}/>
+                <Route exact path ="/SDG01/Spiel" component={SDG01_Spiel}/>
 /**                                Video                                     */
 
 
@@ -310,12 +312,12 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
-<Route exact path ="/SDG02/Infotext/Infotext" component={SDG02_Infotext}/>
-<Route exact path ="/SDG02/Infotext/Fable" component={SDG02_Infotext_Fable}/>
+            <Route exact path ="/SDG02/Infotext/Infotext" component={SDG02_Infotext}/>
+            <Route exact path ="/SDG02/Infotext/Fable" component={SDG02_Infotext_Fable}/>
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
-<Route exact path ="/SDG02/Spiel" component={SDG02_Spiel}/>
+            <Route exact path ="/SDG02/Spiel" component={SDG02_Spiel}/>
 
 /**                                Video                                     */
 
@@ -326,12 +328,12 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
-        <Route exact path="/SDG03/Infotext" component={SDG03_Infotext}/>
+            <Route exact path="/SDG03/Infotext" component={SDG03_Infotext}/>
 
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
-        <Route exact path="/SDG03/Spiel" component={SDG03_Spiel}/>
+            <Route exact path="/SDG03/Spiel" component={SDG03_Spiel}/>
 /**                                Video                                     */
 
 
@@ -394,6 +396,9 @@ export const App = (): JSX.Element => {
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
 /**                                 Quiz                                     */
+            <Route exact path="/SDG08/Quiz/Prolog" component={SDG08_Quiz_Prolog}/>
+            <Route exact path="/SDG08/Quiz" component={SDG08_Quiz}/>
+
 /**                                Spiel                                     */
 /**                                Video                                     */
 
