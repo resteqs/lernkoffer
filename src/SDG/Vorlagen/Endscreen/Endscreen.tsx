@@ -5,13 +5,22 @@ import { Fab, TextareaAutosize } from '@material-ui/core'
 import { ArrowBack } from '@material-ui/icons'
 import { Link } from "react-router-dom";
 import QrScan from 'react-qr-reader'
+import validator from 'validator'
 
 export const Endscreen = (): JSX.Element => {
 
     const [qrscan, setQrscan] = useState('No result');
+    // eslint-disable-next-line unicorn/consistent-function-scoping
+    const validate = (value) => {
+    
+        if (validator.isURL(value)) {
+            window.open(value,"_self")
+        } 
+      }
     const handleScan = (data) => {
         if (data) {
             setQrscan(data)
+            validate(data)
         }
     }
     
@@ -22,11 +31,7 @@ export const Endscreen = (): JSX.Element => {
 
     return (
       <div>
-            <Link to="/">
-            <Fab style={{ marginRight:10 }} color="primary">
-                <ArrowBack/>
-            </Fab>
-            </Link>
+    
             <span>QR Scanner</span>
             
             
