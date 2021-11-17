@@ -45,144 +45,69 @@ export const SDG08_Quiz = (): JSX.Element => {
     }
 
     const Question = {
-        1: (
-            <div>
-                <p>
-                    „In einer Beziehung soll nur der Mann Geld verdienen! Die Aufgabe der Frau ist es, den Haushalt zu
-                    führen und auf die Kinder aufzupassen, falls es welche gibt!“{" "}
-                </p>
-            </div>
-        ),
         2: (
             <div>
-                <p>„In Firmen und Geschäften dürfen sowohl Männer als auch Frauen die Chefs sein!“ </p>
+                <p>Erholung </p>
             </div>
         ),
         3: (
             <div>
-                <p>„Jede Frau soll (genauso wie jeder Mann) aus freien Stücken heiraten können“ </p>
+                <p>Freizeit und Spiel </p>
             </div>
         ),
         4: (
             <div>
-                <p>„Auch Männer dürfen Berufe wie Krankenpfleger, Sekretär oder Friseur ausüben“ </p>
+                <p>Bildung </p>
             </div>
         ),
         5: (
             <div>
-                <p>„In einer Beziehung darf der Mann wegen seines Geschlechts über die Frau bestimmen“ </p>
+                <p>Gesundheit </p>
             </div>
         ),
-        6: (
-            <div>
-                <p>„Jeder soll für dieselbe Arbeit auch genau gleich viel Geld bekommen!“ </p>
-            </div>
-        ),
-        7: (
-            <div>
-                <p>
-                    „Wenn beispielsweise ein verheirateter Mann stirbt, sollen nur männliche Verwandte wie der Sohn
-                    erben, nicht die Ehefrau!“{" "}
-                </p>
-            </div>
-        ),
-    };
-
-    const Answer1Text = {
-        1: `Text2`,
-        2: `Text2`,
-        3: `Text3`,
-        4: `Text4`,
-    };
-
-    const Answer2Text = {
-        1: `Text2`,
-        2: `Text2`,
-        3: `Text3`,
-        4: `Text4`,
     };
 
     const Explanation = {
-        1: (
-            <div>
-                <p>
-                    Da jeder Mensch, unabhängig des Geschlechts, gleichbehandelt werden und die gleichen Möglichkeiten
-                    haben soll, gehört es sich, dass in einer Beziehung die Partner gemeinsam entscheiden, wer welche
-                    Aufgaben übernimmt, ob die Aufgaben so strickt vergeben werden müssen und ob sie aufgeteilt werden
-                    können. Das sollte nur geschehen, wenn beide Partner einverstanden sind. Dadurch sind dann beide
-                    Partner im Idealfall zufriedener mit ihren Aufgaben, was natürlich auch die Stimmung im Haus und in
-                    der Beziehung generell besser macht!{" "}
-                </p>
-            </div>
-        ),
         2: (
             <div>
                 <p>
-                    Wer Chef wird sollte nur danach entschieden werden, ob jemand für diesen Job geeignet ist und die
-                    notwendigen Fähigkeiten dazu besitzt. Dementsprechend sollte nicht danach ausgewählt werden, welches
-                    Geschlecht die Person hat, sondern nur auf das Können geachtet werden. Wenn dadurch gleich viele
-                    Männer und Frauen Chefs würden, könnten die Frauen und Männer sich dann auch selbst besser darum
-                    kümmern, dass sie gerechter behandelt werden.{" "}
+                    &#128528;,da Milao nicht schwer körperlich arbeiten muss, so wie seine Brü-der auf dem Feld, jedoch
+                    kann das lange Sitzen auch sehr anstrengend werden.{" "}
                 </p>
             </div>
         ),
         3: (
             <div>
                 <p>
-                    Jeder Mensch, egal ob Mann oder Frau, hat das Recht sein Leben so zu gestalten, wie er das möchte.
-                    Dazu gehören unter anderem, wen und ob man heiraten möchte, beziehungsweise mit wem man zusammen
-                    sein möchte. Das wird auch in der „Allgemeinen Erklärung der Menschenrechte“ gesagt. Ein weiterer
-                    Vorteil von einer freien Wahl des Partners ist, dass die Beziehung wahrscheinlich glücklicher ist
-                    und länger hält!{" "}
+                    &#128577;,da Milo selbst erzählt hat, dass er wieder in die Schule möchte, um auch mit anderen
+                    Kindern spielen zu können; am Markt sitzt er oft allein da.{" "}
                 </p>
             </div>
         ),
         4: (
             <div>
                 <p>
-                    Die Berufswahl ist unabhängig vom Geschlecht, und jeder darf sich für jeden Beruf bewerben, wenn er
-                    das möchte. Denn es ist für die Jobwahl egal welches Geschlecht man hat, solange man den Job ausüben
-                    will, sollte man auch versuchen, ihn auszuüben!{" "}
+                    &#128577;,da Milo schon seit Monaten nicht mehr in der Schule war und noch die Grundlage, wie Lesen
+                    und Schreiben, üben muss.{" "}
                 </p>
             </div>
         ),
         5: (
             <div>
                 <p>
-                    In der „Allgemeinen Erklärung der Menschenrechte“ wird gesagt, dass jeder Mensch die gleichen Rechte
-                    hat, deswegen sollten auch innerhalb einer Beziehung beide Partner die gleichen Rechte haben! So
-                    könnte es verhindert werden, dass der Mann die Frau zu irgendetwas schlimmem zwingt (zum Beispiel
-                    Gewalt gegen Frauen).{" "}
-                </p>
-            </div>
-        ),
-        6: (
-            <div>
-                <p>
-                    Dies steht fast genauso in der „Allgemeinen Erklärung der Menschenrechte“: „Jeder, ohne Unterschied,
-                    hat das Recht auf gleichen Lohn für gleiche Arbeit.“{" "}
-                </p>
-            </div>
-        ),
-        7: (
-            <div>
-                <p>
-                    Hier wird gesagt, dass nur männliche Verwandte erben dürfen. Das heißt, dass der Mann, wenn die Frau
-                    sterben würde, erben würde. Also hat der Mann dieses Recht. Da aber in der Ehe beide Partner die
-                    gleichen Rechte haben, dürfen auch beide vom jeweils anderen etwas erben.{" "}
+                    &#128522;,da Milo keiner gesundheitlichen Gefahr ausgesetzt ist; er sitzt zwar oft lange, was auch
+                    nicht unbedingt gesund ist, besonders für ein Kind, jedoch ist das mittlerweile auch in vielen Büros
+                    so.{" "}
                 </p>
             </div>
         ),
     };
 
     const answerNumbers1 = {
-        1: "Wrong",
-        2: "True",
-        3: "True",
+        1: "False",
+        2: "False",
+        3: "False",
         4: "True",
-        5: "Wrong",
-        6: "True",
-        7: "Wrong",
     };
 
     const answerNumbers2 = {
@@ -190,19 +115,13 @@ export const SDG08_Quiz = (): JSX.Element => {
         2: "Wrong",
         3: "Wrong",
         4: "Wrong",
-        5: "True",
-        6: "Wrong",
-        7: "True",
     };
 
     const answerNumbers3 = {
-        1: "True",
-        2: "Wrong",
-        3: "Wrong",
+        1: "Wrong",
+        2: "True",
+        3: "True",
         4: "Wrong",
-        5: "True",
-        6: "Wrong",
-        7: "True",
     };
 
     const text = {
@@ -216,21 +135,19 @@ export const SDG08_Quiz = (): JSX.Element => {
                 </p>
             </div>
         ),
-        2: (
+       
+        6: (
             <div>
                 <p className="einleitungText">
-                    Dadurch wird gesagt, dass unabhängig von Geschlecht, Herkunft, Religion und vielen weiteren Sachen
-                    jeder Mensch die gleichen Rechte hat Bei manchen von den Beispielen, die ich euch gerade genannt
-                    habe, wurden Menschenrechte verletzt. Manchmal habe ich euch auch einfach ein Zitat aus der
-                    „Allgemeinen Erklärung der Menschenrechte &ldquo; dazugegeben!{" "}
-                </p>
-            </div>
-        ),
-        3: (
-            <div>
-                <p className="einleitungText">
-                    Ich hoffe, ihr erkennt durch diese Beispiele jetzt besser, wo Frauen und Männer ungleich behandelt
-                    werden!{" "}
+                    Milo leistet also Kinderarbeit: er kann nicht mehr zur Schule gehen oder spielen und somit sind
+                    seine Kinderrechte verletzt. Außerdem ist er mit 10 Jahren noch zu jung dafür den ganzen Tag auf dem
+                    Markt zu arbeiten. Aber auch alle seine Geschwister leisten Kinderarbeit. Das zeigt, dass die
+                    Familie in Armut lebt und das Geld braucht, das ihre Kinder erarbeiten. Dies sollte jedoch nicht der
+                    Fall sein. Zwei arbeitende Erwachsene sollten genug verdienen können, um vier Kinder zu versorgen.
+                    Wenn das nicht der Fall ist, verdienen sie nicht so viel, wie ihnen eigentlich zu steht. Um Milo und
+                    seinen Geschwistern zu helfen, müssten ihre Mutter und ihr Vater vom Staat oder von
+                    Hilfsorganisationen Geld bekommen, damit alle Kinder wieder zur Schule gehen können. Außerdem sollte
+                    es besser überprüft werden, ob auf dem Markt oder auf den Feldern Kinderarbeit vorhanden ist.{" "}
                 </p>
             </div>
         ),
@@ -249,15 +166,14 @@ export const SDG08_Quiz = (): JSX.Element => {
             <p>Wrong</p>
         ) : (itemSelected === 1 ? (
             <p>{answerNumbers1[showtext]}</p>
-        ) : 
-        // eslint-disable-next-line unicorn/no-nested-ternary
-        (itemSelected === 2 ? (
+        ) : // eslint-disable-next-line unicorn/no-nested-ternary
+        itemSelected === 2 ? (
             <p>{answerNumbers2[showtext]}</p>
         ) : itemSelected === 3 ? (
             <p>{answerNumbers3[showtext]}</p>
         ) : (
             <div> </div>
-        )));
+        ));
 
     answer = (
         <p style={{ fontSize: "40px" }}>
@@ -302,16 +218,18 @@ export const SDG08_Quiz = (): JSX.Element => {
     );
 
     buttonCheck =
-        showtext <= 7 ? (
+        showtext <= 5 && showtext !== 1 ? (
             <div style={{ marginTop: "10px" }} className="personCheckAnswerButton">
                 {" "}
-                <button className={infotextbutton.pushable} type="button" onClick={() => setIsOpen(true)}>
-                    <span className={infotextbutton.shadow} />
-                    <span className={infotextbutton.edgegreen} />
-                    <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                        <p className={infotextbutton.buttontext}>Überprüfe</p>
-                    </span>
-                </button>
+                <div style={{ position: "absolute", top: "950px" }}>
+                    <button className={infotextbutton.pushable} type="button" onClick={() => setIsOpen(true)}>
+                        <span className={infotextbutton.shadow} />
+                        <span className={infotextbutton.edgegreen} />
+                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                            <p className={infotextbutton.buttontext}>Überprüfe</p>
+                        </span>
+                    </button>
+                </div>
             </div>
         ) : (
             <button className="buttonInvisible" type="button">
@@ -319,9 +237,8 @@ export const SDG08_Quiz = (): JSX.Element => {
             </button>
         );
 
-    // source of the thumb: https://pixabay.com/de/vectors/hand-m%c3%b6gen-daumen-hoch-157251/
     button1 =
-        showtext <= 7 ? (
+        showtext >= 2 && showtext <= 5 ? (
             <button
                 type="button"
                 style={{
@@ -338,8 +255,8 @@ export const SDG08_Quiz = (): JSX.Element => {
             >
                 <div
                     style={{
-                        width: "500px",
-                        height: "500px",
+                        width: "350px",
+                        height: "350px",
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
@@ -357,27 +274,29 @@ export const SDG08_Quiz = (): JSX.Element => {
             </button>
         );
 
-    // source of the thumb: https://pixabay.com/de/vectors/abneigung-hand-daumen-nieder-nein-157252/
     button2 =
-        showtext >= 2 && showtext <= 7 ? (
+        showtext >= 2 && showtext <= 5 ? (
             <button
                 type="button"
                 style={{
-                    marginRight: "150px",
+                    marginRight: "120px",
                     marginTop: "60px",
                     float: "right",
                     background: "none",
                     borderColor: "blue",
                     borderWidth: "11px",
                     borderRadius: "15px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
                 }}
                 className={itemSelected === 3 ? "selectedPerson" : ""}
                 onClick={() => select3()}
             >
                 <div
                     style={{
-                        width: "500px",
-                        height: "500px",
+                        width: "300px",
+                        height: "350px",
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
@@ -396,11 +315,11 @@ export const SDG08_Quiz = (): JSX.Element => {
         );
 
     let button3 =
-        showtext >= 2 && showtext <= 7 ? (
+        showtext >= 2 && showtext <= 5 ? (
             <button
                 type="button"
                 style={{
-                    marginRight: "100px",
+                    marginRight: "350px",
                     marginTop: "60px",
                     float: "right",
                     background: "none",
@@ -413,8 +332,8 @@ export const SDG08_Quiz = (): JSX.Element => {
             >
                 <div
                     style={{
-                        width: "500px",
-                        height: "500px",
+                        width: "350px",
+                        height: "350px",
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
@@ -455,10 +374,10 @@ export const SDG08_Quiz = (): JSX.Element => {
         );
 
     let buttonNext =
-        showtext >= 8 && showtext <= 9 ? (
+        (showtext >= 6 && showtext <= 9) || showtext === 1 ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
-                <div style={{ position: "absolute", top: "750px", left: "1700px" }}>
+                <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
                     <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
                         <span className={infotextbutton.shadow} />
                         <span className={infotextbutton.edgegreen} />
@@ -497,7 +416,7 @@ export const SDG08_Quiz = (): JSX.Element => {
             </button>
         );
 
-    let textDisplay = showtext === 1 ? <p className="bodytext"> {text[showtext]}</p> : <div> </div>;
+    let textDisplay = ( showtext === 1 || showtext >= 6) ? <p className="bodytext"> {text[showtext]}</p> : <div> </div>;
 
     let questionNumber = showtext >= 10 ? <p className="questionNumber">Frage: {showtext}/7</p> : <div> </div>;
 

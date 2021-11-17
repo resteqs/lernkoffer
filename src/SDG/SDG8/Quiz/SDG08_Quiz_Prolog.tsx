@@ -94,7 +94,7 @@ export const SDG08_Quiz_Prolog = (): JSX.Element => {
                 <p className="einleitungText">
                     Aber ich mag es zu wissen, dass ich meiner Familie gerade helfen kann und ohne mich, meine Schwester
                     und meine Brüder könnten meine Eltern nicht genug Geld verdienen. Dann hätten wir zu wenig zu essen
-                    oder kein Haus, in dem wir leben könnten. Für diese Dinge bin ich nämlich sehr dank-bar. Vielleicht
+                    oder kein Haus, in dem wir leben könnten. Für diese Dinge bin ich nämlich sehr dankbar. Vielleicht
                     kann ich ja irgendwann doch wieder in die Schule und später Lehrer werden. Das wäre mein Traumberuf.
                     Dafür muss ich jedoch selbst gut Lesen, Schreiben und Rechnen können.{" "}
                 </p>
@@ -153,7 +153,7 @@ export const SDG08_Quiz_Prolog = (): JSX.Element => {
         showtext < 7  ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
-                <div style={{ position: "absolute", top: "750px", left: "1700px" }}>
+                <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
                     <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
                         <span className={infotextbutton.shadow} />
                         <span className={infotextbutton.edgegreen} />
@@ -174,13 +174,15 @@ export const SDG08_Quiz_Prolog = (): JSX.Element => {
             <div className="nextbutton">
                 <Link to="/SDG08/Quiz">
                     {" "}
-                    <button className={infotextbutton.pushable} type="button">
-                        <span className={infotextbutton.shadow} />
-                        <span className={infotextbutton.edgegreen} />
-                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                            <p className={infotextbutton.buttontext}>Weiter </p>
-                        </span>
-                    </button>
+                    <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
+                        <button className={infotextbutton.pushable} type="button">
+                            <span className={infotextbutton.shadow} />
+                            <span className={infotextbutton.edgegreen} />
+                            <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                                <p className={infotextbutton.buttontext}>Weiter </p>
+                            </span>
+                        </button>
+                    </div>
                 </Link>{" "}
             </div>
         ) : (
