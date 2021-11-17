@@ -144,7 +144,7 @@ export const SDG01_Spiel = (): JSX.Element => {
         showtext !== 4 && showtext < 7 ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
-                <div style={{ position: "absolute", top: "750px", left: "1700px" }}>
+                <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
                     <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
                         <span className={infotextbutton.shadow} />
                         <span className={infotextbutton.edgegreen} />

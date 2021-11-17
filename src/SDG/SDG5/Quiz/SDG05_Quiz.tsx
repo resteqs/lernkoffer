@@ -427,7 +427,7 @@ export const SDG05_Quiz = (): JSX.Element => {
                 {" "}
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
-                    <div style={{ position: "absolute", top: "750px", left: "1700px" }}>
+                    <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
                         <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
                             <span className={infotextbutton.shadow} />
                             <span className={infotextbutton.edgegreen} />
