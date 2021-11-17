@@ -1,0 +1,20 @@
+.Spielfeld03{
+    width: 1200px;
+}
+body {
+    background-color: white;
+}
+.infotextbox {
+    background-color: white;
+    text-align: center;
+    font-size: x-large;
+    padding: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    border-left-style: solid;
+    border-left-color: var(--SDG04color);
+    border-width: 10px;
+    font-size: 35px;
+    height: 650px;
+}
