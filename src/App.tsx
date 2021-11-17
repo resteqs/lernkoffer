@@ -1,7 +1,7 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
-import { BrowserRouter , Route, Switch } from "react-router-dom";
+import { HashRouter , Route, Switch } from "react-router-dom";
 
 import { Home } from "./home";
 import { Help } from "./help";
@@ -59,6 +59,7 @@ import { SDG02_Spiel } from "./SDG/SDG2/Spiel/SDG02_Spiel";
  *                                SDG 03
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+import { SDG03_FreieArbeit } from "./SDG/SDG3/Freie Arbeit/SDG03_FreieArbeit";
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
 import { SDG03_Infotext } from "./SDG/SDG3/Info/SDG03_Infotext";
@@ -280,7 +281,7 @@ import play14 from "./SDG/SDG14/Spiel2/play14";
 
 export const App = (): JSX.Element => {
     return (
-        <BrowserRouter basename="/lernkoffer">
+        <HashRouter basename="/lernkoffer">
             <Switch> 
                 <Route exact path="/" component={Home} />
                 <Route exact path="/Help" component={Help} />
@@ -326,6 +327,7 @@ export const App = (): JSX.Element => {
  *                                SDG 03
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+ <Route exact path ="/SDG03/FreieArbeit" component={SDG03_FreieArbeit}/>
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
             <Route exact path="/SDG03/Infotext" component={SDG03_Infotext}/>
@@ -536,5 +538,5 @@ export const App = (): JSX.Element => {
  * --------------------------------------------------------------------------*/
 
             </Switch>
-    </BrowserRouter>
+    </HashRouter>
 );}
