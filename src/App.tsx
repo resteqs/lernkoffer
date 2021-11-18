@@ -261,6 +261,7 @@ import { countdown } from "./SDG/Vorlagen/Countdown/countdown";
 import { SimpleCountdown } from "./SDG/Vorlagen/Countdown/simpleCountdown"
 import { QuizButton } from "./SDG/Vorlagen/Button/QuizButton"
 import { Endscreen } from "./SDG/Vorlagen/Endscreen/Endscreen"
+import { Video } from "./SDG/Vorlagen/Video/video";
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
@@ -529,7 +530,7 @@ export const App = (): JSX.Element => {
                 <Route exact path ="/Vorlagen/SimpleCountdown" component={SimpleCountdown}/> 
                 <Route exact path ="/Vorlagen/quiz" component={Quiz}/> 
                 <Route exact path ="/Vorlagen/endscreen" component={Endscreen} />
-
+                <Route exact path ="/Vorlagen/video" component={Video}/> 
                 <Route exact path="/Vorlagen/MagicButton" component={QuizButton} />  
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------

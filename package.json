@@ -34,6 +34,7 @@
         "react-dom": "^17.0.2",
         "react-icons": "^4.2.0",
         "react-modal": "^3.14.3",
+        "react-player": "^2.9.0",
         "react-qr-reader": "^2.2.1",
         "react-qr-scanner": "^1.0.0-alpha.7",
         "react-quiz-component": "^0.3.8",
