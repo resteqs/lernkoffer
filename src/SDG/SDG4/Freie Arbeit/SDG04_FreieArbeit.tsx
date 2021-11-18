@@ -51,8 +51,7 @@ export const SDG04_FreieArbeit = (): JSX.Element => {
         ),
         4: (
             <div style={{ textAlign: "left", fontSize: "30px" }}>
-                <p> In der Pause (auf dem Bild links) könnt ihr Seilspringen oder andere Dinge spielen. Die Person links vom Baum isst gerade Essen, was selbst von den Schüler:innen gekocht wurde (Zimmer oben rechts). Manche Zutaten zum Kochen kann man auch oben auf dem Schuldach anbauen, wie Obst und Gemüse. Andere Fächer im Schulhaus sind Musik, Sport, Mathe und Deutsch. Bei Musik ist die Besonderheit, dass man sich ganz entspannt hinlegen kann und gemeinsam Musik hört, während etwas dazu erzählt wird. In Sport kann jeder die Sportart machen, die ihm/ihr am meisten Spaß macht. Mathe und Deutsch ist im Klassenzimmer mit Tischen und Stühlen und es gibt eine Tafel mit Kreide. Außerdem gibt es regelmäßig Stunden draußen in der Natur, bei denen es darum geht, wie man die Natur schützen kann, aber auch, wie wir gemeinsam miteinander leben können. Dabei wird auch gelernt, wie wir respektvoll und freundlich sind und was wir für uns und unsere Gesundheit machen sollten. </p>
-
+                <p>  In der Pause (auf dem Bild links) könnt ihr Seilspringen oder andere Dinge spielen. Die Person links vom Baum isst gerade Essen, was selbst von den Schüler:innen gekocht wurde (Zimmer unten links). Manche Zutaten zum Kochen kann man auch oben auf dem Schuldach anbauen, wie Obst und Gemüse. Andere Fächer im Schulhaus sind z.B. Musik, Sport und Mathe. Bei Musik ist die Besonderheit, dass man sich ganz entspannt hinlegen kann und gemeinsam Musik hört, während etwas dazu erzählt wird. In Sport kann jeder die Sportart machen, die ihm/ihr am meisten Spaß macht. Mathe, sowie andere Fächer, bei denen man schreiben muss, finden im Klassenzimmer mit Tischen und Stühlen statt. Dort gibt es auch eine Tafel für die Lehrkraft.Außerdem gibt es regelmäßig Stunden draußen in der Natur, bei denen es darum geht, wie man die Natur schützen kann, aber auch, wie wir gemeinsam miteinander leben können. Dabei wird auch gelernt, wie wir respektvoll und freundlich sind und was wir für uns und unsere Gesundheit machen sollten. </p>
             </div>
         ),
         5: (
@@ -75,12 +74,12 @@ export const SDG04_FreieArbeit = (): JSX.Element => {
         ),
         3: (
             <div>
-                <p>Beispiel</p>
+                <p>So sieht meine Wunsch-Schule aus:</p>
             </div>
         ),
         4: (
             <div>
-                <p>Beispiel:</p>
+                <p>So sieht meine Wunsch-Schule aus:</p>
             </div>
         ),
         5: (
