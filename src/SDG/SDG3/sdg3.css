@@ -1,5 +1,6 @@
 .Spielfeld03{
-    width: 1200px;
+    width: 1200px; 
+    margin-top: -90px; 
 }
 body {
     background-color: white;
