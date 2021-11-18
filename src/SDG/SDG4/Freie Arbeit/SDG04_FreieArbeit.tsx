@@ -121,7 +121,7 @@ export const SDG04_FreieArbeit = (): JSX.Element => {
         );
     // eslint-disable-next-line prefer-const
     buttonNext =
-        showtext <= 5 ? (
+        showtext <= 4 ? (
             <div className="nextbutton" style={{ marginTop: "50px" }}>
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
@@ -139,7 +139,7 @@ export const SDG04_FreieArbeit = (): JSX.Element => {
         );
     // eslint-disable-next-line prefer-const
     buttonEnd =
-        showtext === 6 ? (
+        showtext === 5 ? (
             <div className="nextbutton" style={{ marginTop: "50px" }}>
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
@@ -164,7 +164,7 @@ export const SDG04_FreieArbeit = (): JSX.Element => {
         <div>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
-                    Freie Arbeit
+                    Hochwertige Bildung
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
