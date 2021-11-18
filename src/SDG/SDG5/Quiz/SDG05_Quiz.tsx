@@ -178,23 +178,23 @@ export const SDG05_Quiz = (): JSX.Element => {
     };
 
     const answerNumbers1 = {
-        1: "Wrong",
-        2: "True",
-        3: "True",
-        4: "True",
-        5: "Wrong",
-        6: "True",
-        7: "Wrong",
+        1: "Falsch",
+        2: "Richtig",
+        3: "Richtig",
+        4: "Richtig",
+        5: "Falsch",
+        6: "Richtig",
+        7: "Falsch",
     };
 
     const answerNumbers2 = {
-        1: "True",
-        2: "Wrong",
-        3: "Wrong",
-        4: "Wrong",
-        5: "True",
-        6: "Wrong",
-        7: "True",
+        1: "Richtig",
+        2: "Falsch",
+        3: "Falsch",
+        4: "Falsch",
+        5: "Richtig",
+        6: "Falsch",
+        7: "Richtig",
     };
 
     const text = {
@@ -288,13 +288,15 @@ export const SDG05_Quiz = (): JSX.Element => {
         showtext <= 7 ? (
             <div style={{ marginTop: "10px" }} className="personCheckAnswerButton">
                 {" "}
-                <button className={infotextbutton.pushable} type="button" onClick={() => setIsOpen(true)}>
-                    <span className={infotextbutton.shadow} />
-                    <span className={infotextbutton.edgegreen} />
-                    <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                        <p className={infotextbutton.buttontext}>Überprüfe</p>
-                    </span>
-                </button>
+                <div style={{ position: "absolute", top: "950px" }}>
+                    <button className={infotextbutton.pushable} type="button" onClick={() => setIsOpen(true)}>
+                        <span className={infotextbutton.shadow} />
+                        <span className={infotextbutton.edgegreen} />
+                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                            <p className={infotextbutton.buttontext}>Überprüfe</p>
+                        </span>
+                    </button>
+                </div>
             </div>
         ) : (
             <button className="buttonInvisible" type="button">
@@ -405,7 +407,7 @@ export const SDG05_Quiz = (): JSX.Element => {
         showtext >= 8 && showtext <= 9 ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
-                <div style={{ position: "absolute", top: "750px", left: "1700px" }}>
+                <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
                     <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
                         <span className={infotextbutton.shadow} />
                         <span className={infotextbutton.edgegreen} />
@@ -454,7 +456,7 @@ export const SDG05_Quiz = (): JSX.Element => {
         <div>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
-                    Hochwertige Bildung
+                Geschlechtergleichheit
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>

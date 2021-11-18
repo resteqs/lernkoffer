@@ -1,4 +1,6 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable unicorn/no-nested-ternary */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable eslint-comments/no-duplicate-disable */
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable prefer-const */
@@ -11,6 +13,9 @@ import renderer from "react-dom";
 import Logo from "../../../SDGLogos/Goal-SDG08.png";
 import Modal from "react-modal";
 import infotextbutton from "../../../styles/Infotextbutton.module.css";
+
+import thumbup from "../../SDG5/Quiz/thumbs/like.png";
+import thumbdown from "../../SDG5/Quiz/thumbs/dislike.png";
 
 import { Link } from "react-router-dom";
 
@@ -43,6 +48,12 @@ export const SDG08_Quiz = (): JSX.Element => {
     function select3(): void {
         setSelectedItem(3);
     }
+    function select4(): void {
+        setSelectedItem(4);
+    }
+    function select5(): void {
+        setSelectedItem(5);
+    }
 
     const Question = {
         2: (
@@ -65,13 +76,34 @@ export const SDG08_Quiz = (): JSX.Element => {
                 <p>Gesundheit </p>
             </div>
         ),
+        9: (
+            <div>
+                <p>
+                    Ein 13-jähriges Mädchen soll jedes Wochenende mit dem Fahrrad 15min auf einem Fahrradweg zur Oma
+                    fahren und ihr etwas zu essen mitbringen{" "}
+                </p>
+            </div>
+        ),
+        10: (
+            <div>
+                <p>Ein 8-jähriger Junge muss jeden Tag 5 Stunden in einem Bergwerk ohne Schutzkleidung arbeiten </p>
+            </div>
+        ),
+        11: (
+            <div>
+                <p>
+                    Zwei Geschwister, ein sechsjähriger Junge und ein zehnjähriges Mädchen fahren mit ihrem Vater für
+                    drei Stunden mit dem Traktor auf eine Wiese zum Mähen{" "}
+                </p>
+            </div>
+        ),
     };
 
     const Explanation = {
         2: (
             <div>
                 <p>
-                    &#128528;,da Milao nicht schwer körperlich arbeiten muss, so wie seine Brü-der auf dem Feld, jedoch
+                    &#128528;,da Milao nicht schwer körperlich arbeiten muss, so wie seine Brüder auf dem Feld, jedoch
                     kann das lange Sitzen auch sehr anstrengend werden.{" "}
                 </p>
             </div>
@@ -101,32 +133,57 @@ export const SDG08_Quiz = (): JSX.Element => {
                 </p>
             </div>
         ),
+        9: (
+            <div>
+                <p>Kein Kinderrecht verletzt.</p>
+            </div>
+        ),
+        10: (
+            <div>
+                <p>Kinderarbeit, da es sehr gefährlich ist und seine Gesundheit geschädigt wird.</p>
+            </div>
+        ),
+        11: (
+            <div>
+                <p>Kein Kinderrecht verletzt, die Kinder sollten aber gesichert auf dem Traktor sitzen können.</p>
+            </div>
+        ),
     };
 
     const answerNumbers1 = {
-        1: "False",
-        2: "False",
-        3: "False",
-        4: "True",
+        2: "Falsch",
+        3: "Falsch",
+        4: "Falsch",
+        5: "Richtig",
+        9: "Richtig",
+        10: "Falsch",
+        11: "Richtig",
     };
 
     const answerNumbers2 = {
-        1: "True",
-        2: "Wrong",
-        3: "Wrong",
-        4: "Wrong",
+        2: "Richtig",
+        3: "Falsch",
+        4: "Falsch",
+        5: "Falsch",
+        9: "Falsch",
+        10: "Richtig",
+        11: "Falsch",
     };
 
     const answerNumbers3 = {
-        1: "Wrong",
-        2: "True",
-        3: "True",
-        4: "Wrong",
+        2: "Falsch",
+        3: "Richtig",
+        4: "Richtig",
+        5: "Falsch",
     };
 
     const text = {
         1: (
             <div>
+                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                    {" "}
+                    Aufgabe 1:{" "}
+                </p>
                 <p className="einleitungText">
                     Welche dieser Kinderrechte sind, denkst du, bei Milo verletzt worden? Wenn du denkst, dass er das
                     Kinderrecht besitzt, dann tippe auf den &#128522;, wenn du dir unsicher bist oder denkst, dass er es
@@ -135,9 +192,13 @@ export const SDG08_Quiz = (): JSX.Element => {
                 </p>
             </div>
         ),
-       
+
         6: (
             <div>
+                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                    {" "}
+                    Fazit{" "}
+                </p>
                 <p className="einleitungText">
                     Milo leistet also Kinderarbeit: er kann nicht mehr zur Schule gehen oder spielen und somit sind
                     seine Kinderrechte verletzt. Außerdem ist er mit 10 Jahren noch zu jung dafür den ganzen Tag auf dem
@@ -148,6 +209,52 @@ export const SDG08_Quiz = (): JSX.Element => {
                     seinen Geschwistern zu helfen, müssten ihre Mutter und ihr Vater vom Staat oder von
                     Hilfsorganisationen Geld bekommen, damit alle Kinder wieder zur Schule gehen können. Außerdem sollte
                     es besser überprüft werden, ob auf dem Markt oder auf den Feldern Kinderarbeit vorhanden ist.{" "}
+                </p>
+            </div>
+        ),
+        7: (
+            <div>
+                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                    {" "}
+                    Aufgabe 2:{" "}
+                </p>
+                <p className="einleitungText">
+                    Das heißt aber nicht, dass Kinder gar nicht „arbeiten“ dürfen. Solange keines ihrer Rechte
+                    einge-schränkt wird oder sie es ganz verlieren, kann es sogar gut sein für Kinder etwas mitzuhelfen.
+                    Durch z.B. Helfen im Haushalt oder Füttern eines eigenen Haustieres lernen Kinder Verantwortung zu
+                    über-nehmen und was es heißt, sich um andere und sich selbst zu kümmern. Außerdem kann es ihnen
+                    hel-fen selbstbewusster zu werden und viele Kinder freuen sich auch, wenn sie fertig sind, da sie
+                    ihren Eltern und dem Rest der Familie helfen konnten. Wichtig ist immer darauf zu achten, wie alt
+                    die Kin-der sind, ob es gefährlich oder schädigend ist und wie viel Zeit es beansprucht.{" "}
+                </p>
+            </div>
+        ),
+
+        8: (
+            <div>
+                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                    {" "}
+                    Aufgabe 2:{" "}
+                </p>
+                <p className="einleitungText">
+                    Entscheide bei den folgenden 3 Bespielen, ob es für Kinder erlaubt ist, dies zu arbeiten oder nicht.
+                    Wenn es erlaubt ist, wähle den grünen Daumen aus, ansonsten den roten Daumen.{" "}
+                </p>
+            </div>
+        ),
+
+        12: (
+            <div>
+                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                    {" "}
+                    Fazit Aufgabe 2:{" "}
+                </p>
+                <p className="einleitungText">
+                    Ihr wisst nun hoffentlich, was Kinderarbeit bedeutet. Hoffentlich musstet ihr diese noch nicht
+                    selbst erleben und wenn doch, dann wisst ihr nun, dass es nicht okay ist und könnt mit jemandem, dem
+                    ihr vertraut, darüber reden. Grundsätzlich solltet ihr immer sagen, wenn euch eine Arbeit zu viel
+                    wird, ihr Hilfe braucht oder euch einfach nicht wohlfühlt diese zu machen. Das kann sehr viel helfen
+                    und ist wichtig.{" "}
                 </p>
             </div>
         ),
@@ -164,16 +271,15 @@ export const SDG08_Quiz = (): JSX.Element => {
     answerCW =
         itemSelected === 0 ? (
             <p>Wrong</p>
-        ) : (itemSelected === 1 ? (
+        ) : itemSelected === 1 ? (
             <p>{answerNumbers1[showtext]}</p>
-        ) : // eslint-disable-next-line unicorn/no-nested-ternary
-        itemSelected === 2 ? (
+        ) : itemSelected === 2 ? (
             <p>{answerNumbers2[showtext]}</p>
         ) : itemSelected === 3 ? (
             <p>{answerNumbers3[showtext]}</p>
         ) : (
             <div> </div>
-        ));
+        );
 
     answer = (
         <p style={{ fontSize: "40px" }}>
@@ -216,26 +322,6 @@ export const SDG08_Quiz = (): JSX.Element => {
             {answer}
         </Modal>
     );
-
-    buttonCheck =
-        showtext <= 5 && showtext !== 1 ? (
-            <div style={{ marginTop: "10px" }} className="personCheckAnswerButton">
-                {" "}
-                <div style={{ position: "absolute", top: "950px" }}>
-                    <button className={infotextbutton.pushable} type="button" onClick={() => setIsOpen(true)}>
-                        <span className={infotextbutton.shadow} />
-                        <span className={infotextbutton.edgegreen} />
-                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                            <p className={infotextbutton.buttontext}>Überprüfe</p>
-                        </span>
-                    </button>
-                </div>
-            </div>
-        ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
-        );
 
     button1 =
         showtext >= 2 && showtext <= 5 ? (
@@ -295,7 +381,7 @@ export const SDG08_Quiz = (): JSX.Element => {
             >
                 <div
                     style={{
-                        width: "300px",
+                        width: "350px",
                         height: "350px",
                         display: "flex",
                         justifyContent: "center",
@@ -319,7 +405,7 @@ export const SDG08_Quiz = (): JSX.Element => {
             <button
                 type="button"
                 style={{
-                    marginRight: "350px",
+                    marginRight: "300px",
                     marginTop: "60px",
                     float: "right",
                     background: "none",
@@ -342,6 +428,83 @@ export const SDG08_Quiz = (): JSX.Element => {
                 >
                     <p style={{ fontSize: "190px" }}>
                         <div>&#128528;</div>
+                    </p>{" "}
+                </div>
+            </button>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+
+    // source of the thumb: https://pixabay.com/de/vectors/hand-m%c3%b6gen-daumen-hoch-157251/
+    let button4 =
+        showtext >= 9 && showtext <= 11 ? (
+            <button
+                type="button"
+                style={{
+                    marginLeft: "150px",
+                    marginTop: "60px",
+                    background: "none",
+                    borderColor: "blue",
+                    borderWidth: "11px",
+                    borderRadius: "15px",
+                }}
+                className={itemSelected === 1 ? "selectedPerson" : ""}
+                onClick={() => select1()}
+            >
+                <div
+                    style={{
+                        width: "500px",
+                        height: "500px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    <p style={{ fontSize: "190px" }}>
+                        <div>
+                            <img style={{ maxWidth: "300px" }} src={thumbup} alt="yes" />
+                        </div>
+                    </p>{" "}
+                </div>{" "}
+            </button>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+
+    // source of the thumb: https://pixabay.com/de/vectors/abneigung-hand-daumen-nieder-nein-157252/
+    let button5 =
+        showtext >= 9 && showtext <= 11 ? (
+            <button
+                type="button"
+                style={{
+                    marginRight: "150px",
+                    marginTop: "60px",
+                    float: "right",
+                    background: "none",
+                    borderColor: "blue",
+                    borderWidth: "11px",
+                    borderRadius: "15px",
+                }}
+                className={itemSelected === 2 ? "selectedPerson" : ""}
+                onClick={() => select2()}
+            >
+                <div
+                    style={{
+                        width: "500px",
+                        height: "500px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    <p style={{ fontSize: "190px" }}>
+                        <div>
+                            <img style={{ maxWidth: "300px" }} src={thumbdown} alt="yes" />
+                        </div>
                     </p>{" "}
                 </div>
             </button>
@@ -374,7 +537,7 @@ export const SDG08_Quiz = (): JSX.Element => {
         );
 
     let buttonNext =
-        (showtext >= 6 && showtext <= 9) || showtext === 1 ? (
+        (showtext >= 6 && showtext <= 8) || showtext === 1 ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
                 <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
@@ -394,7 +557,7 @@ export const SDG08_Quiz = (): JSX.Element => {
         );
 
     let buttonEnd =
-        showtext === 10 ? (
+        showtext === 12 ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
                 <Link to="/Vorlagen/Endscreen">
@@ -416,7 +579,26 @@ export const SDG08_Quiz = (): JSX.Element => {
             </button>
         );
 
-    let textDisplay = ( showtext === 1 || showtext >= 6) ? <p className="bodytext"> {text[showtext]}</p> : <div> </div>;
+    buttonCheck =
+        (showtext > 1 && showtext < 6) || (showtext > 8 && showtext <= 11) ? (
+            <div style={{ marginTop: "10px" }} className="personCheckAnswerButton">
+                {" "}
+                <div style={{ position: "absolute", top: "950px" }}>
+                    <button className={infotextbutton.pushable} type="button" onClick={() => setIsOpen(true)}>
+                        <span className={infotextbutton.shadow} />
+                        <span className={infotextbutton.edgegreen} />
+                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                            <p className={infotextbutton.buttontext}>Überprüfe</p>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+    let textDisplay = showtext === 1 || showtext >= 6 ? <p className="bodytext"> {text[showtext]}</p> : <div> </div>;
 
     let questionNumber = showtext >= 10 ? <p className="questionNumber">Frage: {showtext}/7</p> : <div> </div>;
 
@@ -424,7 +606,7 @@ export const SDG08_Quiz = (): JSX.Element => {
         <div>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
-                    Hochwertige Bildung
+                    Menschenwürdige Arbeit und Wirtschaftswachstum
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
@@ -434,6 +616,8 @@ export const SDG08_Quiz = (): JSX.Element => {
             {button1}
             {button2}
             {button3}
+            {button4}
+            {button5}
             {buttonCheck}
             {modal}
             {buttonNext}
