@@ -143,7 +143,7 @@ export const SDG05_Quiz_Prolog = (): JSX.Element => {
         <div>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
-                    Geschlechter­gleichstellung
+                Geschlechtergleichheit
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>

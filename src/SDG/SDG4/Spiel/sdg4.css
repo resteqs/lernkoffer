@@ -7,5 +7,10 @@
 .SpielregelnSDG04{
     font-size: 30px;
 }
-
+.GB_Text{
+    font-size: 22px;
+    margin-bottom: 20px;
+    border: 2px solid ;
+    border-radius: 5px;
+}
 

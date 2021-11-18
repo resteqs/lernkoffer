@@ -77,6 +77,7 @@ import { SDG03_Spiel } from "./SDG/SDG3/Spiel/SDG03_Spiel";
 import { SDG04_FreieArbeit } from "./SDG/SDG4/Freie Arbeit/SDG04_FreieArbeit";
 
 /**                             Gutes Beispiel                               */
+import { SDG04_GB } from "./SDG/SDG4/Gute Bsp/SDG04_GB";
 /**                               Infotext                                   */
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
@@ -173,6 +174,7 @@ import { SDG08_Quiz } from "./SDG/SDG8/Quiz/SDG08_Quiz";
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
+import { SDG11_GB } from "./SDG/SDG11/Gute Bsp/SDG11_GB";
 /**                               Infotext                                   */
 
 import { SDG11_Infotext } from "./SDG/SDG11/Info/SDG11_Infotext";
@@ -349,6 +351,7 @@ export const App = (): JSX.Element => {
 <Route exact path="/SDG04/Freie Arbeit" component={SDG04_FreieArbeit}/>                    
 
 /**                             Gutes Beispiel                               */
+        <Route exact path="/SDG04/GutesBeispiel" component={SDG04_GB}/>
 /**                               Infotext                                   */
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
@@ -437,6 +440,7 @@ export const App = (): JSX.Element => {
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
+<Route exact path="/SDG11/GutesBeispiel" component={SDG11_GB}/> 
 /**                               Infotext                                   */
                 <Route exact path="/SDG11/Infotext" component={SDG11_Infotext}/>
 
