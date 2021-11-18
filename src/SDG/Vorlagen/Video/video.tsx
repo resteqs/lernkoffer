@@ -34,7 +34,7 @@ export const Video = (): JSX.Element => {
             </div>
         </div>
         <div style = {{ display: 'flex' ,justifyContent: "center" , alignItems: "center", marginTop: "120px" }}><ReactPlayer
-        url="https://www.youtube.com/watch?v=UVCP4bKy9Iw" width="1366px" height="720px"
+        url="https://youtu.be/LLvO6geKh_k" width="1366px" height="720px"
       /></div>
       {buttonNext}
     </div>)
