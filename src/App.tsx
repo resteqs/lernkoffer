@@ -79,6 +79,7 @@ import { SDG04_FreieArbeit } from "./SDG/SDG4/Freie Arbeit/SDG04_FreieArbeit";
 /**                             Gutes Beispiel                               */
 import { SDG04_GB } from "./SDG/SDG4/Gute Bsp/SDG04_GB";
 /**                               Infotext                                   */
+import { SDG04_Infotext } from "./SDG/SDG4/Info/SDG04_Infotext";
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
 import { SDG04_Spiel } from "./SDG/SDG4/Spiel/04spiel";
@@ -354,6 +355,8 @@ export const App = (): JSX.Element => {
 /**                             Gutes Beispiel                               */
         <Route exact path="/SDG04/Gute Bsp" component={SDG04_GB}/>
 /**                               Infotext                                   */
+        <Route exact path="/SDG04/Infotext" component={SDG04_Infotext}/>
+
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
             <Route exact path="/SDG04/Spiel1/SDG04_Spiel" component={SDG04_Spiel}/>                    
