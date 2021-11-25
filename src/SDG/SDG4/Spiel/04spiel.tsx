@@ -24,12 +24,31 @@ import "./sdg4.css";
 
 export const SDG04_Spiel = (): JSX.Element => {
    
-    const [showtext, setText] = React.useState(7);
+    const [showtext, setText] = React.useState(6);
     const sdg = "SDG04";
     const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [modalText, setModalText] = React.useState(1);
+    const colors = ["red","blue","green","yellow"];
+    let randColor = colors[Math.floor(Math.random() * colors.length)];
+
+    const textModal = {
+        1: (<div> <p>1 +</p>{randColor}</div>),
+
+        2: (<div><p>2 +</p>{randColor}</div>),
+
+        3: (<div><p>3 +</p>{randColor}</div>)
+    }
+
     
-
-
+    function openModal1(): void {
+        setModalText(1)
+    }
+    function openModal2(): void {
+        setModalText(2)
+    }
+    function openModal3(): void {
+        setModalText(3)
+    }
     const text = {
         1: (
             <div>
@@ -118,7 +137,7 @@ export const SDG04_Spiel = (): JSX.Element => {
                         marginTop: "150px",
                         
                     }}
-                    onClick={()=> setIsOpen(true)}          >
+                    onClick={()=> {setIsOpen(true); openModal1()}}          >
                     <img className = "Cards" style= {{ right: "200px" }}   src={Cards} alt="" />
                 </button>
         
@@ -130,7 +149,7 @@ export const SDG04_Spiel = (): JSX.Element => {
                         marginTop: "150px",
                         
                     }}
-                    onClick={()=> setIsOpen(true)}          >
+                    onClick={()=> {setIsOpen(true); openModal2()}}        >
                     <img className = "Cards" style= {{ right: "400px" }} src={Cards} alt="" />
                 </button>
 
@@ -142,7 +161,7 @@ export const SDG04_Spiel = (): JSX.Element => {
                         marginTop: "150px",
                         
                     }}
-                    onClick={()=> setIsOpen(true)}          >
+                    onClick={()=> {setIsOpen(true); openModal3()}}          >
                     <img className = "Cards" style= {{ right: "600px" }} src={Cards} alt="" />
                 </button>
             </div>
@@ -182,8 +201,7 @@ export const SDG04_Spiel = (): JSX.Element => {
         ),
     }; 
 
-    const colors = ["red","blue","green","yellow"];
-    let randColor = colors[Math.floor(Math.random() * colors.length)];
+
 
     function incrementCount(): void {
         setText(showtext + 1);
@@ -254,7 +272,7 @@ export const SDG04_Spiel = (): JSX.Element => {
         closeTimeoutMS={50}
     >
         <div className="content-header">
-            {randColor}
+            {textModal[modalText]}
             <button
                 type="button"
                 className="personCheckOkButton"
