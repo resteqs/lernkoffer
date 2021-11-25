@@ -1,6 +1,6 @@
 .BildSDG4{
     width: 60px;
-}
+    }
 .EinleitungSDG04{
     font-size: 30px;
 }
@@ -13,4 +13,36 @@
     border: 2px solid ;
     border-radius: 5px;
 }
-
+.Spielfeld04 {
+    height: 500px;
+    margin-left: 0%;
+}
+.infotextbox04 {
+    background-color: #ffffff;
+    text-align: left;
+    font-size: x-large;
+    padding: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    border-width: 15px;
+    font-size: 35px;
+    height: 800px;
+}
+.Card1 {
+    height: 250px;
+    
+    float: right;
+    
+}
+.Card2 {
+    height: 250px;
+   
+    float: right;
+    
+}
+.Card3 {
+    height: 250px;
+    
+    float: right;
+}

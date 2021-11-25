@@ -92,33 +92,30 @@ export const SDG04_Spiel = (): JSX.Element => {
         5: (
             <div>
                 <p className="SpielregelnSDG04">Nun zu unterschieden Arten, wie ihr das Bild beschreibt:</p>
-            </div>
-        ),
-        6: (
-            <div>
                 <p className="SpielregelnSDG04">
                     {" "}
                     <img src={Lips} alt=""  className="BildSDG4"/> → beschreibt nur mit Worten; ihr dürft dabei das abgedruckte Wort nicht
                     benutzen
                 </p>
-            </div>
-        ),
-        7: (
-            <div>
                 <p className="SpielregelnSDG04">
                     {" "}
                     <img src={Pen} alt=""  className="BildSDG4" /> → beschreibt nur mithilfe von Zeichnungen; ihr dürft nicht reden oder Worte
                     aufschreiben
                 </p>
-            </div>
-        ),
-        8: (
-            <div>
                 <p className="SpielregelnSDG04">
                     {" "}
                     <img src={Stickman} alt=""  className="BildSDG4" /> → beschreibt nur mit euren Händen (das wird auch „Pantomime“ genannt);
                     ihr dürft nicht Reden, Worte aufschreiben oder sonst etwas zeichnen
                 </p>
+            </div>
+        ),
+        6: (
+            <div>
+                 <img className = "Spielfeld04" src= {Spielfeld} alt="" />
+                 <img className = "Card1" src= {Cards} alt=""/> 
+                 
+                 <img className = "Card2" src= {Cards} alt=""/> 
+                 <img className = "Card3" src= {Cards} alt=""/> 
             </div>
         ),
     };
@@ -150,17 +147,7 @@ export const SDG04_Spiel = (): JSX.Element => {
         ),
         6: (
             <div>
-                <p>Spielregeln</p>
-            </div>
-        ),
-        7: (
-            <div>
-                <p>Spielregeln</p>
-            </div>
-        ),
-        8: (
-            <div>
-                <p>Spielregeln</p>
+                <p> Spiel</p>
             </div>
         ),
     };
@@ -196,7 +183,7 @@ export const SDG04_Spiel = (): JSX.Element => {
 
       
         buttonNext =
-        showtext <= 8 ? (
+        showtext <= 9 ? (
             <div className="nextbutton">
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
@@ -213,25 +200,40 @@ export const SDG04_Spiel = (): JSX.Element => {
             </button> 
         ); 
 
-        modal=
-        <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={() => setIsOpen(false)}
-            overlayClassName={{
-              base: "overlay-base",
-              afterOpen: "overlay-after",
-              beforeClose: "overlay-before"
-            }}
-            className={{
-              base: "content-base",
-              afterOpen: "content-after",
-              beforeClose: "content-before"
-            }}
-            closeTimeoutMS={500}
-          >
-            <div className="content-header"><p>Title</p> <button type="button" className="personCheckOkButton" onClick={() => setIsOpen(false)}><b>Okay</b></button></div>
-            
-        </Modal>
+        
+       
+     modal=
+       <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setIsOpen(false)}
+        overlayClassName={{
+            base: "overlay-base",
+            afterOpen: "overlay-after",
+            beforeClose: "overlay-before",
+        }}
+        className={{
+            base: "content-base",
+            afterOpen: "content-after",
+            beforeClose: "content-before",
+        }}
+        closeTimeoutMS={50}
+    >
+        <div className="content-header">
+            {}
+            <button
+                type="button"
+                className="personCheckOkButton"
+                onClick={() => {
+                    setIsOpen(false);
+                    incrementCount();
+                    
+                }}
+            >
+                <b>Okay</b>
+            </button>
+        </div>
+        {}
+    </Modal>
 
 
 
@@ -243,7 +245,7 @@ return (
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
-            <div className="infotextbox">
+            <div className="infotextbox04">
                 <p className="headertext">
                     <b>{header[showtext]}</b>
                 </p>{" "}
