@@ -278,6 +278,7 @@ import page142 from "./SDG/SDG14/Spiel2/tutorial/14tut2";
 import page143 from "./SDG/SDG14/Spiel2/tutorial/14tut3";
 
 import play14 from "./SDG/SDG14/Spiel2/play14";
+import { InfotextButtons } from "./Components/Buttons/InfotextButton";
 
 
 
@@ -348,7 +349,7 @@ export const App = (): JSX.Element => {
  *                                SDG 04
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-<Route exact path="/SDG04/FreieArbeit" component={SDG04_FreieArbeit}/>                    
+        <Route exact path="/SDG04/FreieArbeit" component={SDG04_FreieArbeit}/>                    
 
 /**                             Gutes Beispiel                               */
         <Route exact path="/SDG04/Gute Bsp" component={SDG04_GB}/>
@@ -540,6 +541,11 @@ export const App = (): JSX.Element => {
                 <Route exact path ="/Vorlagen/endscreen" component={Endscreen} />
                 <Route exact path ="/Vorlagen/video" component={Video}/> 
                 <Route exact path="/Vorlagen/MagicButton" component={QuizButton} />  
+
+/**----------------------------------------------------------------------------
+*                                 Components
+----------------------------------------------------------------------------*/
+                <Route exact path="/Component/InfotextButton" component={InfotextButtons} />  
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
