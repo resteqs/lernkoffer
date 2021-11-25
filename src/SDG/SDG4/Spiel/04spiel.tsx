@@ -199,7 +199,8 @@ export const SDG04_Spiel = (): JSX.Element => {
                 {" "}
             </button> 
         ); 
-
+    
+   
         
        
      modal=
