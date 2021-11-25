@@ -20,11 +20,11 @@ import Pen from "./Media/pen.png";
 import Stickman from "./Media/stickman.png";
 import "./sdg4.css";
 
-import Question from "./question_mark.png";
+
 
 export const SDG04_Spiel = (): JSX.Element => {
    
-    const [showtext, setText] = React.useState(1);
+    const [showtext, setText] = React.useState(7);
     const sdg = "SDG04";
     const [modalIsOpen, setIsOpen] = React.useState(false);
     
@@ -94,30 +94,60 @@ export const SDG04_Spiel = (): JSX.Element => {
                 <p className="SpielregelnSDG04">Nun zu unterschieden Arten, wie ihr das Bild beschreibt:</p>
                 <p className="SpielregelnSDG04">
                     {" "}
-                    <img src={Lips} alt=""  className="BildSDG4"/> → beschreibt nur mit Worten; ihr dürft dabei das abgedruckte Wort nicht
-                    benutzen
+                    <img src={Lips} alt=""  className="BildSDG4"/> → beschreibt nur mit Worten; ihr dürft dabei das abgedruckte Wort nicht benutzen
                 </p>
                 <p className="SpielregelnSDG04">
                     {" "}
-                    <img src={Pen} alt=""  className="BildSDG4" /> → beschreibt nur mithilfe von Zeichnungen; ihr dürft nicht reden oder Worte
-                    aufschreiben
+                    <img src={Pen} alt=""  className="BildSDG4" /> → beschreibt nur mithilfe von Zeichnungen; ihr dürft nicht reden oder Worte aufschreiben
                 </p>
                 <p className="SpielregelnSDG04">
                     {" "}
-                    <img src={Stickman} alt=""  className="BildSDG4" /> → beschreibt nur mit euren Händen (das wird auch „Pantomime“ genannt);
-                    ihr dürft nicht Reden, Worte aufschreiben oder sonst etwas zeichnen
+                    <img src={Stickman} alt=""  className="BildSDG4" /> → beschreibt nur mit euren Händen (das wird auch „Pantomime“ genannt); ihr dürft nicht Reden, Worte aufschreiben oder sonst etwas zeichnen
                 </p>
             </div>
         ),
         6: (
             <div>
                  <img className = "Spielfeld04" src= {Spielfeld} alt="" />
-                 <img className = "Card1" src= {Cards} alt=""/> 
-                 
-                 <img className = "Card2" src= {Cards} alt=""/> 
-                 <img className = "Card3" src= {Cards} alt=""/> 
+
+                <button
+                    type="button"
+                    style={{
+                        background: "none",
+                        borderStyle: "none",
+                        marginTop: "150px",
+                        
+                    }}
+                    onClick={()=> setIsOpen(true)}          >
+                    <img className = "Cards" style= {{ right: "200px" }}   src={Cards} alt="" />
+                </button>
+        
+                 <button
+                    type="button"
+                    style={{
+                        background: "none",
+                        borderStyle: "none",
+                        marginTop: "150px",
+                        
+                    }}
+                    onClick={()=> setIsOpen(true)}          >
+                    <img className = "Cards" style= {{ right: "400px" }} src={Cards} alt="" />
+                </button>
+
+                 <button
+                    type="button"
+                    style={{
+                        background: "none",
+                        borderStyle: "none",
+                        marginTop: "150px",
+                        
+                    }}
+                    onClick={()=> setIsOpen(true)}          >
+                    <img className = "Cards" style= {{ right: "600px" }} src={Cards} alt="" />
+                </button>
             </div>
         ),
+       
     };
     const header = {
         1: (
@@ -150,7 +180,11 @@ export const SDG04_Spiel = (): JSX.Element => {
                 <p> Spiel</p>
             </div>
         ),
-    };
+    }; 
+
+    const colors = ["red","blue","green","yellow"];
+    let randColor = colors[Math.floor(Math.random() * colors.length)];
+
     function incrementCount(): void {
         setText(showtext + 1);
     }
@@ -220,17 +254,16 @@ export const SDG04_Spiel = (): JSX.Element => {
         closeTimeoutMS={50}
     >
         <div className="content-header">
-            {}
+            {randColor}
             <button
                 type="button"
                 className="personCheckOkButton"
                 onClick={() => {
                     setIsOpen(false);
-                    incrementCount();
                     
                 }}
             >
-                <b>Okay</b>
+                <b>Zurück</b>
             </button>
         </div>
         {}

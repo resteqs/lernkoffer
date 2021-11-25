@@ -29,23 +29,16 @@
     font-size: 35px;
     height: 800px;
 }
-.Card1 {
+.Cards {
     height: 250px;
-    
+    padding-right: 40px; 
     float: right;
+    position: absolute; 
+    top: 450px;
+    
     
 }
-.Card2 {
-    height: 250px;
-   
-    float: right;
-    
-}
-.Card3 {
-    height: 250px;
-    
-    float: right;
-}
+
 .Infotext04 {
     font-size: 35px;
 }
