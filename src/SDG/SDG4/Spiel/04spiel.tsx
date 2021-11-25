@@ -28,18 +28,71 @@ export const SDG04_Spiel = (): JSX.Element => {
     const sdg = "SDG04";
     const [modalIsOpen, setIsOpen] = React.useState(false);
     const [modalText, setModalText] = React.useState(1);
-    const colors = ["red","blue","green","yellow"];
-    let randColor = colors[Math.floor(Math.random() * colors.length)];
 
-    const textModal = {
-        1: (<div> <p>1 +</p>{randColor}</div>),
+    const Erklären = {
+        1: ("Kindergarten/Vorschule"),
+        2: ("Schulhaus"),
+        3: ("Lesen"),
+        4: ("Rechnen"),
+        5: ("Üben"),
+        6: ("Weltweit"),
+        7: ("Nachhaltigkeit")
+    };
 
-        2: (<div><p>2 +</p>{randColor}</div>),
-
-        3: (<div><p>3 +</p>{randColor}</div>)
-    }
-
+    const ErklärenText={
+        1: (" -> Kleinkinder sollten die Möglichkeit haben, sich zu entwickeln, damit sie auf die Grundschule vorbereitet sind"),
+        2: (" -> alle sollten einen ruhigen, sicheren Platz zum Lernen haben"),
+        3: (" -> wie Rechnen und Schreiben sollte jeder Mensch die Möglichkeit haben, das zu lernen"),
+        4: (" -> wie Lesen und Schreiben sollte jeder Mensch die Möglichkeit haben, das zu lernen"),
+        5: (" -> in der Schule sollte man die Möglichkeit haben, gelerntes auch zu üben"),
+        6: (" -> Bildung sollte für alle in allen Ländern verfügbar sein" ),
+        7: (" -> je-der soll über Nachhal-tigkeit und ein nach-haltiges Leben lernen können"),
     
+    };
+
+    const Zeichnen ={
+        1: ("Stift"),
+        2: ("Klasse"),
+        3: ("Tisch"),
+        4: ("Freunde"),
+        5: ("Hausaufgaben"),
+        6: ("Kostenlos"),
+        7: ("Fragen")
+    };
+    
+    const ZeichnenText ={
+        1: ("-> alle Schüler:innen brauchen zum Schreiben und Rechnen Stifte"),
+        2: ("-> wenn Lehrer:innen nicht so viele Kinder auf einmal unterrichten müssen, können sie meist besser allen helfen"),
+        3: ("-> es ist immer gut, wenn man eine stabile Unterlage zum Schreiben hat"),
+        4: ("-> in der Schule kannst du viele Freunde finden und gemeinsam lernen macht auch viel Spaß"),
+        5: ("-> diese dienen dazu, gelernte Sachen aus der Schule daheim zu wiederholen und zu üben"),
+        6: ("-> Bildung sollte für alle nichts kosten!"),
+        7: ("-> jedes Mal, wenn man etwas neu lernt, hat man Fragen und diese sollten auch beant-wortet werden kön-nen")
+    };
+   
+    const Phantomime={
+        1: ("Schreiben"),
+        2: ("Bauen"),
+        3: ("Lehrer:in"),
+        4: ("Heft"),
+        5: ("Arbeit"),
+        6: ("Sport/Bewegung"),
+        7: ("Pause")
+    };
+
+    const PhantomimeText={
+        1: ("-> wie Lesen und Rechnen sollte jeder Mensch die Möglichkeit haben, das zu lernen"),
+        2: ("-> es ist wichtig, dass weitere Bil-dungseinrichtungen gebaut werden bzw. die bestehenden verbessert werden"),
+        3: ("-> Leh-rer:innen sollten gut ausgebildet sein und überall ausreichend vorhanden sein"),
+        4: ("-> alle Schüler:innen brauchen Hefte, um wichtige Dinge aufzuschrei-ben"),
+        5: ("-> alle sollten die Möglichkeit haben, die Fähigkeiten zu erlernen, die es braucht, um eine Arbeit zu finden"),
+        6: ("-> Sport ist gesund und in Lernpausen sollte man sich bewegen, dann fällt einem das Lernen danach auch wieder leichte"),
+        7: ("-> beim Lernen sollte man immer mal wieder Pausen ma-chen, damit sich das Gehirn erholen kann; z.B. draußen spielen")
+    }; 
+    
+
+
+
     function openModal1(): void {
         setModalText(1)
     }
@@ -272,7 +325,7 @@ export const SDG04_Spiel = (): JSX.Element => {
         closeTimeoutMS={50}
     >
         <div className="content-header">
-            {textModal[modalText]}
+            {}
             <button
                 type="button"
                 className="personCheckOkButton"
@@ -284,7 +337,12 @@ export const SDG04_Spiel = (): JSX.Element => {
                 <b>Zurück</b>
             </button>
         </div>
-        {}
+        {
+        
+        
+
+
+        }
     </Modal>
 
 
