@@ -80,6 +80,8 @@ import { SDG04_FreieArbeit } from "./SDG/SDG4/Freie Arbeit/SDG04_FreieArbeit";
 import { SDG04_GB } from "./SDG/SDG4/Gute Bsp/SDG04_GB";
 /**                               Infotext                                   */
 /**                                 Quiz                                     */
+import { SDG04_Quiz } from "./SDG/SDG4/Quiz/SDG04_Quiz";
+
 /**                                Spiel                                     */
 import { SDG04_Spiel } from "./SDG/SDG4/Spiel/04spiel";
 /**                                Video                                     */
@@ -333,7 +335,7 @@ export const App = (): JSX.Element => {
  *                                SDG 03
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
- <Route exact path ="/SDG03/FreieArbeit" component={SDG03_FreieArbeit}/>
+            <Route exact path ="/SDG03/FreieArbeit" component={SDG03_FreieArbeit}/>
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
             <Route exact path="/SDG03/Infotext" component={SDG03_Infotext}/>
@@ -349,12 +351,14 @@ export const App = (): JSX.Element => {
  *                                SDG 04
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-        <Route exact path="/SDG04/FreieArbeit" component={SDG04_FreieArbeit}/>                    
+            <Route exact path="/SDG04/FreieArbeit" component={SDG04_FreieArbeit}/>                    
 
 /**                             Gutes Beispiel                               */
-        <Route exact path="/SDG04/GutesBeispiel" component={SDG04_GB}/>
+            <Route exact path="/SDG04/GutesBeispiel" component={SDG04_GB}/>
 /**                               Infotext                                   */
 /**                                 Quiz                                     */
+            <Route exact path="/SDG04/Quiz" component={SDG04_Quiz}/>                    
+
 /**                                Spiel                                     */
             <Route exact path="/SDG04/Spiel1/SDG04_Spiel" component={SDG04_Spiel}/>                    
 
