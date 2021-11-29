@@ -20,87 +20,97 @@ import Pen from "./Media/pen.png";
 import Stickman from "./Media/stickman.png";
 import "./sdg4.css";
 
-
-
 export const SDG04_Spiel = (): JSX.Element => {
-   
-    const [showtext, setText] = React.useState(6);
+    const [showtext, setText] = React.useState(1);
     const sdg = "SDG04";
     const [modalIsOpen, setIsOpen] = React.useState(false);
-    const [modalText, setModalText] = React.useState(1);
+    const [modalOpened, setModalOpened] = React.useState(0);
+    const [modalOne, setModalOne] = React.useState(0);
+    const [modalTwo, setModalTwo] = React.useState(0);
+    const [modalThree, setModalThree] = React.useState(0);
 
     const Erklären = {
-        1: ("Kindergarten/Vorschule"),
-        2: ("Schulhaus"),
-        3: ("Lesen"),
-        4: ("Rechnen"),
-        5: ("Üben"),
-        6: ("Weltweit"),
-        7: ("Nachhaltigkeit")
+        1: "Kindergarten/Vorschule",
+        2: "Schulhaus",
+        3: "Lesen",
+        4: "Rechnen",
+        5: "Üben",
+        6: "Weltweit",
+        7: "Nachhaltigkeit",
     };
 
-    const ErklärenText={
-        1: (" -> Kleinkinder sollten die Möglichkeit haben, sich zu entwickeln, damit sie auf die Grundschule vorbereitet sind"),
-        2: (" -> alle sollten einen ruhigen, sicheren Platz zum Lernen haben"),
-        3: (" -> wie Rechnen und Schreiben sollte jeder Mensch die Möglichkeit haben, das zu lernen"),
-        4: (" -> wie Lesen und Schreiben sollte jeder Mensch die Möglichkeit haben, das zu lernen"),
-        5: (" -> in der Schule sollte man die Möglichkeit haben, gelerntes auch zu üben"),
-        6: (" -> Bildung sollte für alle in allen Ländern verfügbar sein" ),
-        7: (" -> je-der soll über Nachhal-tigkeit und ein nach-haltiges Leben lernen können"),
-    
+    const ErklärenText = {
+        1: " -> Kleinkinder sollten die Möglichkeit haben, sich zu entwickeln, damit sie auf die Grundschule vorbereitet sind",
+        2: " -> alle sollten einen ruhigen, sicheren Platz zum Lernen haben",
+        3: " -> wie Rechnen und Schreiben sollte jeder Mensch die Möglichkeit haben, das zu lernen",
+        4: " -> wie Lesen und Schreiben sollte jeder Mensch die Möglichkeit haben, das zu lernen",
+        5: " -> in der Schule sollte man die Möglichkeit haben, gelerntes auch zu üben",
+        6: " -> Bildung sollte für alle in allen Ländern verfügbar sein",
+        7: " -> je-der soll über Nachhal-tigkeit und ein nach-haltiges Leben lernen können",
     };
 
-    const Zeichnen ={
-        1: ("Stift"),
-        2: ("Klasse"),
-        3: ("Tisch"),
-        4: ("Freunde"),
-        5: ("Hausaufgaben"),
-        6: ("Kostenlos"),
-        7: ("Fragen")
-    };
-    
-    const ZeichnenText ={
-        1: ("-> alle Schüler:innen brauchen zum Schreiben und Rechnen Stifte"),
-        2: ("-> wenn Lehrer:innen nicht so viele Kinder auf einmal unterrichten müssen, können sie meist besser allen helfen"),
-        3: ("-> es ist immer gut, wenn man eine stabile Unterlage zum Schreiben hat"),
-        4: ("-> in der Schule kannst du viele Freunde finden und gemeinsam lernen macht auch viel Spaß"),
-        5: ("-> diese dienen dazu, gelernte Sachen aus der Schule daheim zu wiederholen und zu üben"),
-        6: ("-> Bildung sollte für alle nichts kosten!"),
-        7: ("-> jedes Mal, wenn man etwas neu lernt, hat man Fragen und diese sollten auch beant-wortet werden kön-nen")
-    };
-   
-    const Phantomime={
-        1: ("Schreiben"),
-        2: ("Bauen"),
-        3: ("Lehrer:in"),
-        4: ("Heft"),
-        5: ("Arbeit"),
-        6: ("Sport/Bewegung"),
-        7: ("Pause")
+    const Zeichnen = {
+        1: "Stift",
+        2: "Klasse",
+        3: "Tisch",
+        4: "Freunde",
+        5: "Hausaufgaben",
+        6: "Kostenlos",
+        7: "Fragen",
     };
 
-    const PhantomimeText={
-        1: ("-> wie Lesen und Rechnen sollte jeder Mensch die Möglichkeit haben, das zu lernen"),
-        2: ("-> es ist wichtig, dass weitere Bil-dungseinrichtungen gebaut werden bzw. die bestehenden verbessert werden"),
-        3: ("-> Leh-rer:innen sollten gut ausgebildet sein und überall ausreichend vorhanden sein"),
-        4: ("-> alle Schüler:innen brauchen Hefte, um wichtige Dinge aufzuschrei-ben"),
-        5: ("-> alle sollten die Möglichkeit haben, die Fähigkeiten zu erlernen, die es braucht, um eine Arbeit zu finden"),
-        6: ("-> Sport ist gesund und in Lernpausen sollte man sich bewegen, dann fällt einem das Lernen danach auch wieder leichte"),
-        7: ("-> beim Lernen sollte man immer mal wieder Pausen ma-chen, damit sich das Gehirn erholen kann; z.B. draußen spielen")
-    }; 
-    
+    const ZeichnenText = {
+        1: "-> alle Schüler:innen brauchen zum Schreiben und Rechnen Stifte",
+        2: "-> wenn Lehrer:innen nicht so viele Kinder auf einmal unterrichten müssen, können sie meist besser allen helfen",
+        3: "-> es ist immer gut, wenn man eine stabile Unterlage zum Schreiben hat",
+        4: "-> in der Schule kannst du viele Freunde finden und gemeinsam lernen macht auch viel Spaß",
+        5: "-> diese dienen dazu, gelernte Sachen aus der Schule daheim zu wiederholen und zu üben",
+        6: "-> Bildung sollte für alle nichts kosten!",
+        7: "-> jedes Mal, wenn man etwas neu lernt, hat man Fragen und diese sollten auch beant-wortet werden kön-nen",
+    };
 
+    const Phantomime = {
+        1: "Schreiben",
+        2: "Bauen",
+        3: "Lehrer:in",
+        4: "Heft",
+        5: "Arbeit",
+        6: "Sport/Bewegung",
+        7: "Pause",
+    };
 
+    const PhantomimeText = {
+        1: "-> wie Lesen und Rechnen sollte jeder Mensch die Möglichkeit haben, das zu lernen",
+        2: "-> es ist wichtig, dass weitere Bil-dungseinrichtungen gebaut werden bzw. die bestehenden verbessert werden",
+        3: "-> Leh-rer:innen sollten gut ausgebildet sein und überall ausreichend vorhanden sein",
+        4: "-> alle Schüler:innen brauchen Hefte, um wichtige Dinge aufzuschrei-ben",
+        5: "-> alle sollten die Möglichkeit haben, die Fähigkeiten zu erlernen, die es braucht, um eine Arbeit zu finden",
+        6: "-> Sport ist gesund und in Lernpausen sollte man sich bewegen, dann fällt einem das Lernen danach auch wieder leichte",
+        7: "-> beim Lernen sollte man immer mal wieder Pausen ma-chen, damit sich das Gehirn erholen kann; z.B. draußen spielen",
+    };
 
     function openModal1(): void {
-        setModalText(1)
+        setModalOpened(1);
+        if(modalOne === 7){
+            setModalOne(1);
+        }else{setModalOne(modalOne +1);}
+        
     }
     function openModal2(): void {
-        setModalText(2)
+        setModalOpened(2);
+        if(modalTwo === 7){
+            setModalTwo(1);
+        }
+        else{setModalTwo(modalTwo +1);}
     }
     function openModal3(): void {
-        setModalText(3)
+        setModalOpened(3);
+        if(modalThree === 7){
+            setModalThree(1);
+        }else{
+
+        setModalThree(modalThree +1);
+    }
     }
     const text = {
         1: (
@@ -130,15 +140,15 @@ export const SDG04_Spiel = (): JSX.Element => {
             <div>
                 <p className="SpielregelnSDG04">
                     {" "}
-                    Steht ihr auf einem dieser drei Bilder, <img src={Lips} alt="" className="BildSDG4" /> <img src={Pen} alt="" className="BildSDG4"/>{" "}
-                    <img src={Stickman} alt="" className="BildSDG4" />
+                    Steht ihr auf einem dieser drei Bilder, <img src={Lips} alt="" className="BildSDG4" />{" "}
+                    <img src={Pen} alt="" className="BildSDG4" /> <img src={Stickman} alt="" className="BildSDG4" />
                     müsst ihr folgendes machen:
                 </p>
             </div>
         ),
         4: (
             <div>
-                <p className="SpielregelnSDG04" style={{ textAlign:"left" }}> 
+                <p className="SpielregelnSDG04" style={{ textAlign: "left" }}>
                     <ol>
                         <li>- Klickt auf das Kartensymbol neben dem Spielfeld</li>
                         <li>- Beschreibt das nun abgebildete Wort innerhalb 3 Minute</li>
@@ -166,21 +176,24 @@ export const SDG04_Spiel = (): JSX.Element => {
                 <p className="SpielregelnSDG04">Nun zu unterschieden Arten, wie ihr das Bild beschreibt:</p>
                 <p className="SpielregelnSDG04">
                     {" "}
-                    <img src={Lips} alt=""  className="BildSDG4"/> → beschreibt nur mit Worten; ihr dürft dabei das abgedruckte Wort nicht benutzen
+                    <img src={Lips} alt="" className="BildSDG4" /> → beschreibt nur mit Worten; ihr dürft dabei das
+                    abgedruckte Wort nicht benutzen
                 </p>
                 <p className="SpielregelnSDG04">
                     {" "}
-                    <img src={Pen} alt=""  className="BildSDG4" /> → beschreibt nur mithilfe von Zeichnungen; ihr dürft nicht reden oder Worte aufschreiben
+                    <img src={Pen} alt="" className="BildSDG4" /> → beschreibt nur mithilfe von Zeichnungen; ihr dürft
+                    nicht reden oder Worte aufschreiben
                 </p>
                 <p className="SpielregelnSDG04">
                     {" "}
-                    <img src={Stickman} alt=""  className="BildSDG4" /> → beschreibt nur mit euren Händen (das wird auch „Pantomime“ genannt); ihr dürft nicht Reden, Worte aufschreiben oder sonst etwas zeichnen
+                    <img src={Stickman} alt="" className="BildSDG4" /> → beschreibt nur mit euren Händen (das wird auch
+                    „Pantomime“ genannt); ihr dürft nicht Reden, Worte aufschreiben oder sonst etwas zeichnen
                 </p>
             </div>
         ),
         6: (
             <div>
-                 <img className = "Spielfeld04" src= {Spielfeld} alt="" />
+                <img className="Spielfeld04" src={Spielfeld} alt="" />
 
                 <button
                     type="button"
@@ -188,38 +201,46 @@ export const SDG04_Spiel = (): JSX.Element => {
                         background: "none",
                         borderStyle: "none",
                         marginTop: "150px",
-                        
                     }}
-                    onClick={()=> {setIsOpen(true); openModal1()}}          >
-                    <img className = "Cards" style= {{ right: "200px" }}   src={Cards} alt="" />
-                </button>
-        
-                 <button
-                    type="button"
-                    style={{
-                        background: "none",
-                        borderStyle: "none",
-                        marginTop: "150px",
-                        
+                    onClick={() => {
+                        setIsOpen(true);
+                        openModal1();
                     }}
-                    onClick={()=> {setIsOpen(true); openModal2()}}        >
-                    <img className = "Cards" style= {{ right: "400px" }} src={Cards} alt="" />
+                >
+                    <img className="Cards" style={{ right: "200px" }} src={Cards} alt="" />
                 </button>
 
-                 <button
+                <button
                     type="button"
                     style={{
                         background: "none",
                         borderStyle: "none",
                         marginTop: "150px",
-                        
                     }}
-                    onClick={()=> {setIsOpen(true); openModal3()}}          >
-                    <img className = "Cards" style= {{ right: "600px" }} src={Cards} alt="" />
+                    onClick={() => {
+                        setIsOpen(true);
+                        openModal2();
+                    }}
+                >
+                    <img className="Cards" style={{ right: "400px" }} src={Cards} alt="" />
+                </button>
+
+                <button
+                    type="button"
+                    style={{
+                        background: "none",
+                        borderStyle: "none",
+                        marginTop: "150px",
+                    }}
+                    onClick={() => {
+                        setIsOpen(true);
+                        openModal3();
+                    }}
+                >
+                    <img className="Cards" style={{ right: "600px" }} src={Cards} alt="" />
                 </button>
             </div>
         ),
-       
     };
     const header = {
         1: (
@@ -252,9 +273,7 @@ export const SDG04_Spiel = (): JSX.Element => {
                 <p> Spiel</p>
             </div>
         ),
-    }; 
-
-
+    };
 
     function incrementCount(): void {
         setText(showtext + 1);
@@ -265,7 +284,7 @@ export const SDG04_Spiel = (): JSX.Element => {
     }
     let buttonBack;
     let buttonNext;
-    let buttonEnd; 
+    let buttonEnd;
     let modal;
 
     buttonBack =
@@ -286,8 +305,7 @@ export const SDG04_Spiel = (): JSX.Element => {
             </button>
         );
 
-      
-        buttonNext =
+    buttonNext =
         showtext <= 9 ? (
             <div className="nextbutton">
                 {" "}
@@ -302,56 +320,88 @@ export const SDG04_Spiel = (): JSX.Element => {
         ) : (
             <button className="buttonInvisible" type="button">
                 {" "}
-            </button> 
-        ); 
-    
-   
-        
-       
-     modal=
-       <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={() => setIsOpen(false)}
-        overlayClassName={{
-            base: "overlay-base",
-            afterOpen: "overlay-after",
-            beforeClose: "overlay-before",
-        }}
-        className={{
-            base: "content-base",
-            afterOpen: "content-after",
-            beforeClose: "content-before",
-        }}
-        closeTimeoutMS={50}
-    >
-        <div className="content-header">
-            {}
-            <button
-                type="button"
-                className="personCheckOkButton"
-                onClick={() => {
-                    setIsOpen(false);
-                    
-                }}
-            >
-                <b>Zurück</b>
             </button>
-        </div>
-        {
-        
-        
+        );
 
+    const modalContent = {
+        1: (
+            <div>
+                <div className="content-header">
+                    {Erklären[modalOne]}
+                    <button
+                        type="button"
+                        className="personCheckOkButton"
+                        onClick={() => {
+                            setIsOpen(false);
+                        }}
+                    >
+                        <b>Zurück</b>
+                    </button>
+                </div>{" "}
+                {ErklärenText[modalOne]}
+            </div>
+        ),
+        2: (
+            <div>
+                <div className="content-header">
+                    {Zeichnen[modalTwo]}
+                    <button
+                        type="button"
+                        className="personCheckOkButton"
+                        onClick={() => {
+                            setIsOpen(false);
+                        }}
+                    >
+                        <b>Zurück</b>
+                    </button>
+                </div>{" "}
+                {ZeichnenText[modalTwo]}
+            </div>
+        ),
+        3: (
+            <div>
+                <div className="content-header">
+                    {Phantomime[modalThree]}
+                    <button
+                        type="button"
+                        className="personCheckOkButton"
+                        onClick={() => {
+                            setIsOpen(false);
+                        }}
+                    >
+                        <b>Zurück</b>
+                    </button>
+                </div>{" "}
+                {PhantomimeText[modalThree]}
+            </div>
+        ),
+    };
 
-        }
-    </Modal>
+    modal = (
+        <Modal
+            isOpen={modalIsOpen}
+            onRequestClose={() => setIsOpen(false)}
+            overlayClassName={{
+                base: "overlay-base",
+                afterOpen: "overlay-after",
+                beforeClose: "overlay-before",
+            }}
+            className={{
+                base: "content-base",
+                afterOpen: "content-after",
+                beforeClose: "content-before",
+            }}
+            closeTimeoutMS={50}
+        >
+            {modalContent[modalOpened]}
+        </Modal>
+    );
 
-
-
-return (
+    return (
         <div>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
-                     Activity
+                    Activity
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
