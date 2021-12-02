@@ -12,13 +12,12 @@
 import * as React from "react";
 import renderer from "react-dom";
 import { BrowserRouter, Link } from 'react-router-dom';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core';
-import AudioPlayer from 'material-ui-audio-player';
 import infotextbutton from "../../../styles/Infotextbutton.module.css" ;
 import "../../../styles/colour_sdgs.css";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG04.png";
 import "../Spiel/sdg4.css";
+import ReactAudioPlayer from 'react-audio-player';
 
 
 
@@ -27,7 +26,6 @@ import "../Spiel/sdg4.css";
 export const SDG04_Infotext = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     let [showtext, setText] = React.useState(1);
-    const muiTheme = createMuiTheme({});
     const sdg = "SDG04";
    
 
@@ -125,7 +123,11 @@ export const SDG04_Infotext = (): JSX.Element => {
             {buttonBack}
             {buttonNext}
             {buttonEnd}
-            <ThemeProvider theme={muiTheme}><AudioPlayer  src="https://github.com/resteqs/lernkoffer/blob/Lernkoffer/src/SDG/SDG4/sdg4.mp3" /> </ThemeProvider>
+            <ReactAudioPlayer
+  src="https://cdn.discordapp.com/attachments/807650919780057129/916030116767891456/Mobiles_Museum_Infotext_4.mp3"
+  controls
+  style={{ position: 'absolute' ,top:"1100px", left:"80px" }}
+/>
         </div>
     );
 };
