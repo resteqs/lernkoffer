@@ -50,3 +50,10 @@
     top: 700px;
 font-size: 31px;}
 
+.textBoxes{
+    outline: 1px solid;
+    width: 100px;
+    margin-left: 100px;
+    font-size: 40px;
+    margin-top: 40px;
+}

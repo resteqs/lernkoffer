@@ -11,18 +11,26 @@
 
 import * as React from "react";
 import renderer from "react-dom";
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import AudioPlayer from 'material-ui-audio-player';
 import infotextbutton from "../../../styles/Infotextbutton.module.css" ;
 import "../../../styles/colour_sdgs.css";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG04.png";
-import "../Spiel/sdg4.css"
+import "../Spiel/sdg4.css";
+
+
+
 
 
 export const SDG04_Infotext = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     let [showtext, setText] = React.useState(1);
+    const muiTheme = createMuiTheme({});
     const sdg = "SDG04";
+   
+
     const text = {
         1: <div><p><b>“inklusive, gleichberechtigte und hochwertige Bildung gewährleisten und Möglichkeiten lebenslangen Lernens für alle fördern”</b></p></div>,
         2: <div><p className="Infotext04">Bildung ermöglicht Menschen den gesellschaftlichen Aufstieg. Damit bekommen sie mehr Vorteile, z.B. im Arbeitsleben und deshalb ist Bildung sehr wichtig, um der Armut zu entkommen. Sie hilft, Ungleichheiten zu verringern und die Gleichstellung der Geschlechter zu erreichen. Außerdem ist sie entscheidend für die Förderung von Toleranz (= Offenheit, frei von Vorurteilen) und friedlicheren Gesellschaften. In den letzten zehn Jahren wurden große Fortschritte erzielt: es gibt einen besseren Zugang zu Bildung und mehr Kinder, besonders Mädchen, können in die Schule gehen. Dennoch waren im Jahr 2018 immer noch rund 258 Millionen Kinder und Jugendliche nicht eingeschult - fast jede:r Fünfte auf der ganzen Welt in diesem Alter.</p></div>,
@@ -83,7 +91,7 @@ export const SDG04_Infotext = (): JSX.Element => {
         buttonEnd =
         showtext === 5? (
             <div className="nextbutton">
-                <Link to="/Vorlagen/Endscreen">
+               <BrowserRouter> <Link to="/Vorlagen/Endscreen">
                     {" "}
                     <button className={infotextbutton.pushable} type="button">
                         <span className={infotextbutton.shadow} />
@@ -92,7 +100,7 @@ export const SDG04_Infotext = (): JSX.Element => {
                             <p className={infotextbutton.buttontext}>Weiter </p>
                         </span>
                     </button>
-                </Link>{" "}
+                </Link>{" "}</BrowserRouter>
             </div>
         ) : (
             <button className="buttonInvisible" type="button">
@@ -117,6 +125,7 @@ export const SDG04_Infotext = (): JSX.Element => {
             {buttonBack}
             {buttonNext}
             {buttonEnd}
+            <ThemeProvider theme={muiTheme}><AudioPlayer  src="https://github.com/resteqs/lernkoffer/blob/Lernkoffer/src/SDG/SDG4/sdg4.mp3" /> </ThemeProvider>
         </div>
     );
 };
