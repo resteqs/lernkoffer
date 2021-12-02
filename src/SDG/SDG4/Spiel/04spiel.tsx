@@ -338,16 +338,18 @@ export const SDG04_Spiel = (): JSX.Element => {
     buttonEnd =
         showtext === 6? (
             <div className="nextbutton">
-                <BrowserRouter><Link to="/Vorlagen/Endscreen">
-                    {" "}
-                    <button className={infotextbutton.pushable} type="button">
-                        <span className={infotextbutton.shadow} />
-                        <span className={infotextbutton.edgegreen} />
-                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                            <p className={infotextbutton.buttontext}>Weiter </p>
-                        </span>
-                    </button>
-                </Link>{" "} </BrowserRouter>
+                <BrowserRouter>
+                    <Link to="/Vorlagen/Endscreen">
+                        {" "}
+                        <button className={infotextbutton.pushable} type="button">
+                            <span className={infotextbutton.shadow} />
+                            <span className={infotextbutton.edgegreen} />
+                            <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                                <p className={infotextbutton.buttontext}>Weiter </p>
+                            </span>
+                        </button>
+                    </Link>{" "} 
+                </BrowserRouter>
             </div>
         ) : (
             <button className="buttonInvisible" type="button">
