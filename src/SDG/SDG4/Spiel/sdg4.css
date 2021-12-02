@@ -14,8 +14,11 @@
     border-radius: 5px;
 }
 .Spielfeld04 {
-    height: 500px;
-    margin-left: 0%;
+    height: 760px;
+    margin-left: 0;
+    position: absolute;
+    top: 200px;
+    left: 10px;
 }
 .infotextbox04 {
     background-color: #ffffff;
@@ -42,3 +45,8 @@
 .Infotext04 {
     font-size: 35px;
 }
+.cardDescription {
+    position: absolute;
+    top: 700px;
+font-size: 31px;}
+

@@ -2,15 +2,23 @@
 /* eslint-disable prefer-const */
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable no-eval */
-
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable eslint-comments/no-duplicate-disable */
+/* eslint-disable eslint-comments/disable-enable-pair */
+/* eslint-disable react/jsx-pascal-case */
+/* eslint-disable eslint-comments/disable-enable-pair */
+// eslint-disable-next-line eslint-comments/no-duplicate-disable
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable no-eval */
+/* eslint-disable unicorn/filename-case */
 // eslint-disable-next-line unicorn/filename-case
 
 import * as React from "react";
 import renderer from "react-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import Modal from "react-modal";
 import infotextbutton from "../../../styles/Infotextbutton.module.css";
 import "../../../styles/colour_sdgs.css";
-import { Link } from "react-router-dom";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG04.png";
 import Spielfeld from "./Media/spielfeld.png";
@@ -21,7 +29,7 @@ import Stickman from "./Media/stickman.png";
 import "./sdg4.css";
 
 export const SDG04_Spiel = (): JSX.Element => {
-    const [showtext, setText] = React.useState(1);
+    const [showtext, setText] = React.useState(6);
     const sdg = "SDG04";
     const [modalIsOpen, setIsOpen] = React.useState(false);
     const [modalOpened, setModalOpened] = React.useState(0);
@@ -195,7 +203,7 @@ export const SDG04_Spiel = (): JSX.Element => {
             <div>
                 <img className="Spielfeld04" src={Spielfeld} alt="" />
 
-                <button
+               <button
                     type="button"
                     style={{
                         background: "none",
@@ -209,7 +217,6 @@ export const SDG04_Spiel = (): JSX.Element => {
                 >
                     <img className="Cards" style={{ right: "200px" }} src={Cards} alt="" />
                 </button>
-
                 <button
                     type="button"
                     style={{
@@ -239,6 +246,11 @@ export const SDG04_Spiel = (): JSX.Element => {
                 >
                     <img className="Cards" style={{ right: "600px" }} src={Cards} alt="" />
                 </button>
+
+                <p className="cardDescription" style={{ left: "1200px" }}>Phantomime</p>
+                <p className="cardDescription" style={{ left: "1420px" }}>Zeichnen</p>
+                <p className="cardDescription" style={{ left: "1620px" }}>Erklären</p>
+                
             </div>
         ),
     };
@@ -306,7 +318,7 @@ export const SDG04_Spiel = (): JSX.Element => {
         );
 
     buttonNext =
-        showtext <= 9 ? (
+        showtext <= 5 ? (
             <div className="nextbutton">
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
@@ -322,6 +334,27 @@ export const SDG04_Spiel = (): JSX.Element => {
                 {" "}
             </button>
         );
+   
+    buttonEnd =
+        showtext === 6? (
+            <div className="nextbutton">
+                <BrowserRouter><Link to="/Vorlagen/Endscreen">
+                    {" "}
+                    <button className={infotextbutton.pushable} type="button">
+                        <span className={infotextbutton.shadow} />
+                        <span className={infotextbutton.edgegreen} />
+                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                            <p className={infotextbutton.buttontext}>Weiter </p>
+                        </span>
+                    </button>
+                </Link>{" "} </BrowserRouter>
+            </div>
+        ) : (
+            <button className="buttonInvisible" type="button">
+                {" "}
+            </button>
+        );
+  
 
     const modalContent = {
         1: (
@@ -393,7 +426,7 @@ export const SDG04_Spiel = (): JSX.Element => {
             }}
             closeTimeoutMS={50}
         >
-            {modalContent[modalOpened]}
+            <p style={{ fontSize: "50px" }}>{modalContent[modalOpened]}</p>
         </Modal>
     );
 
@@ -415,8 +448,9 @@ export const SDG04_Spiel = (): JSX.Element => {
                 </p>{" "}
             </div>
             {buttonBack}
-            {buttonNext}
             {buttonEnd}
+            {buttonNext}
+            
             {modal}
         </div>
     );

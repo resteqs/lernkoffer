@@ -66,7 +66,7 @@ export const SDG04_Infotext = (): JSX.Element => {
         );
     // eslint-disable-next-line prefer-const
     buttonNext =
-        showtext <= 5 ? (
+        showtext < 5 ? (
             <div className="nextbutton"> <button className= {infotextbutton.pushable} type = "button" onClick={incrementCount}>
             <span className={infotextbutton.shadow} />
             <span className={infotextbutton.edgegreen} />
