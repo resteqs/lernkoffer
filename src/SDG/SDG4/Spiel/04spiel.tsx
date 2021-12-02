@@ -29,7 +29,7 @@ import Stickman from "./Media/stickman.png";
 import "./sdg4.css";
 
 export const SDG04_Spiel = (): JSX.Element => {
-    const [showtext, setText] = React.useState(6);
+    const [showtext, setText] = React.useState(1);
     const sdg = "SDG04";
     const [modalIsOpen, setIsOpen] = React.useState(false);
     const [modalOpened, setModalOpened] = React.useState(0);
