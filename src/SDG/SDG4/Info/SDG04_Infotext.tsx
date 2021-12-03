@@ -11,11 +11,12 @@
 
 import * as React from "react";
 import renderer from "react-dom";
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import infotextbutton from "../../../styles/Infotextbutton.module.css" ;
 import "../../../styles/colour_sdgs.css";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG04.png";
+import EG from "../../../EG/EG2.png"
 import "../Spiel/sdg4.css";
 import ReactAudioPlayer from 'react-audio-player';
 
@@ -89,16 +90,21 @@ export const SDG04_Infotext = (): JSX.Element => {
         buttonEnd =
         showtext === 5? (
             <div className="nextbutton">
-               <BrowserRouter> <Link to="/Vorlagen/Endscreen">
+               <div style={{ marginTop: "10px" }} className="nextbutton">
+                {" "}
+                <Link to="/Vorlagen/Endscreen">
                     {" "}
-                    <button className={infotextbutton.pushable} type="button">
-                        <span className={infotextbutton.shadow} />
-                        <span className={infotextbutton.edgegreen} />
-                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                            <p className={infotextbutton.buttontext}>Weiter </p>
-                        </span>
-                    </button>
-                </Link>{" "}</BrowserRouter>
+                    <div>
+                        <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
+                            <span className={infotextbutton.shadow} />
+                            <span className={infotextbutton.edgegreen} />
+                            <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                                <p className={infotextbutton.buttontext}>Weiter</p>
+                            </span>
+                        </button>
+                    </div>
+                </Link>{" "}
+            </div>
             </div>
         ) : (
             <button className="buttonInvisible" type="button">
@@ -127,7 +133,7 @@ export const SDG04_Infotext = (): JSX.Element => {
   src="https://cdn.discordapp.com/attachments/807650919780057129/916030116767891456/Mobiles_Museum_Infotext_4.mp3"
   controls
   style={{ position: 'absolute' ,top:"1100px", left:"80px" }}
-/>
+/>  <img className="EG "alt="" src={EG}/>
         </div>
     );
 };
