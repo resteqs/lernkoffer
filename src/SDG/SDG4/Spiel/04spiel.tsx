@@ -15,7 +15,7 @@
 
 import * as React from "react";
 import renderer from "react-dom";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Modal from "react-modal";
 import infotextbutton from "../../../styles/Infotextbutton.module.css";
 import "../../../styles/colour_sdgs.css";
@@ -25,6 +25,7 @@ import Spielfeld from "./Media/spielfeld.png";
 import Cards from "./Media/cards.png";
 import Lips from "./Media/lips.png";
 import Pen from "./Media/pen.png";
+import EG from "../../../EG/EG2.png"
 import Stickman from "./Media/stickman.png";
 import "./sdg4.css";
 
@@ -338,19 +339,22 @@ export const SDG04_Spiel = (): JSX.Element => {
     buttonEnd =
         showtext === 6? (
             <div className="nextbutton">
-                <BrowserRouter>
-                    <Link to="/Vorlagen/Endscreen">
-                        {" "}
-                        <button className={infotextbutton.pushable} type="button">
-                            <span className={infotextbutton.shadow} />
-                            <span className={infotextbutton.edgegreen} />
-                            <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                                <p className={infotextbutton.buttontext}>Weiter </p>
-                            </span>
-                        </button>
-                    </Link>{" "} 
-                </BrowserRouter>
-            </div>
+            <div style={{ marginTop: "10px" }} className="nextbutton">
+             {" "}
+             <Link to="/Vorlagen/Endscreen">
+                 {" "}
+                 <div>
+                     <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
+                         <span className={infotextbutton.shadow} />
+                         <span className={infotextbutton.edgegreen} />
+                         <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                             <p className={infotextbutton.buttontext}>Weiter</p>
+                         </span>
+                     </button>
+                 </div>
+             </Link>{" "}
+         </div>
+         </div>
         ) : (
             <button className="buttonInvisible" type="button">
                 {" "}
@@ -454,6 +458,7 @@ export const SDG04_Spiel = (): JSX.Element => {
             {buttonNext}
             
             {modal}
+            <img className="EG "alt="" src={EG}/>
         </div>
     );
 };
