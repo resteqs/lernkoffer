@@ -41,6 +41,7 @@ import { SDG01_Spiel } from "./SDG/SDG1/Spiel/SDG01_Spiel";
  *                                SDG 02
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+import { SDG02_FreieArbeit } from "./SDG/SDG2/Freie Arbeit/SDG02_FreieArbeit";
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
 // infotext
@@ -320,6 +321,7 @@ export const App = (): JSX.Element => {
  *                                SDG 02
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+            <Route exact path ="/SDG02/Freie Arebit/SDG02_FreieArbeit" component={SDG02_FreieArbeit}/>      
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
             <Route exact path ="/SDG02/Infotext/Infotext" component={SDG02_Infotext}/>
