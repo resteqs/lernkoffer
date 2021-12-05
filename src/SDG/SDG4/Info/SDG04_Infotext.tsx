@@ -16,13 +16,20 @@ import infotextbutton from "../../../styles/Infotextbutton.module.css" ;
 import "../../../styles/colour_sdgs.css";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG04.png";
-import "../Spiel/sdg4.css"
+import EG from "../../../EG/EG2.png"
+import "../Spiel/sdg4.css";
+import ReactAudioPlayer from 'react-audio-player';
+
+
+
 
 
 export const SDG04_Infotext = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     let [showtext, setText] = React.useState(1);
     const sdg = "SDG04";
+   
+
     const text = {
         1: <div><p><b>“inklusive, gleichberechtigte und hochwertige Bildung gewährleisten und Möglichkeiten lebenslangen Lernens für alle fördern”</b></p></div>,
         2: <div><p className="Infotext04">Bildung ermöglicht Menschen den gesellschaftlichen Aufstieg. Damit bekommen sie mehr Vorteile, z.B. im Arbeitsleben und deshalb ist Bildung sehr wichtig, um der Armut zu entkommen. Sie hilft, Ungleichheiten zu verringern und die Gleichstellung der Geschlechter zu erreichen. Außerdem ist sie entscheidend für die Förderung von Toleranz (= Offenheit, frei von Vorurteilen) und friedlicheren Gesellschaften. In den letzten zehn Jahren wurden große Fortschritte erzielt: es gibt einen besseren Zugang zu Bildung und mehr Kinder, besonders Mädchen, können in die Schule gehen. Dennoch waren im Jahr 2018 immer noch rund 258 Millionen Kinder und Jugendliche nicht eingeschult - fast jede:r Fünfte auf der ganzen Welt in diesem Alter.</p></div>,
@@ -66,7 +73,7 @@ export const SDG04_Infotext = (): JSX.Element => {
         );
     // eslint-disable-next-line prefer-const
     buttonNext =
-        showtext <= 5 ? (
+        showtext < 5 ? (
             <div className="nextbutton"> <button className= {infotextbutton.pushable} type = "button" onClick={incrementCount}>
             <span className={infotextbutton.shadow} />
             <span className={infotextbutton.edgegreen} />
@@ -83,16 +90,21 @@ export const SDG04_Infotext = (): JSX.Element => {
         buttonEnd =
         showtext === 5? (
             <div className="nextbutton">
+               <div style={{ marginTop: "10px" }} className="nextbutton">
+                {" "}
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
-                    <button className={infotextbutton.pushable} type="button">
-                        <span className={infotextbutton.shadow} />
-                        <span className={infotextbutton.edgegreen} />
-                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                            <p className={infotextbutton.buttontext}>Weiter </p>
-                        </span>
-                    </button>
+                    <div>
+                        <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
+                            <span className={infotextbutton.shadow} />
+                            <span className={infotextbutton.edgegreen} />
+                            <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                                <p className={infotextbutton.buttontext}>Weiter</p>
+                            </span>
+                        </button>
+                    </div>
                 </Link>{" "}
+            </div>
             </div>
         ) : (
             <button className="buttonInvisible" type="button">
@@ -117,6 +129,11 @@ export const SDG04_Infotext = (): JSX.Element => {
             {buttonBack}
             {buttonNext}
             {buttonEnd}
+            <ReactAudioPlayer
+  src="https://cdn.discordapp.com/attachments/807650919780057129/916030116767891456/Mobiles_Museum_Infotext_4.mp3"
+  controls
+  style={{ position: 'absolute' ,top:"1100px", left:"80px" }}
+/>  <img className="EG "alt="" src={EG}/>
         </div>
     );
 };
