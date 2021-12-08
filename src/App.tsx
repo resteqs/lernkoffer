@@ -282,7 +282,9 @@ import page142 from "./SDG/SDG14/Spiel2/tutorial/14tut2";
 import page143 from "./SDG/SDG14/Spiel2/tutorial/14tut3";
 
 import play14 from "./SDG/SDG14/Spiel2/play14";
-import { InfotextButtons } from "./Components/Buttons/InfotextButton";
+import { InfotextButtonGreen } from "./Components/Buttons/InfotextButtonGreen";
+import { InfotextButtonRed } from "./Components/Buttons/InfotextButtonRed";
+import { Infotext_Component } from "./Components/Infotext_Component";
 
 
 
@@ -554,7 +556,13 @@ export const App = (): JSX.Element => {
 /**----------------------------------------------------------------------------
 *                                 Components
 ----------------------------------------------------------------------------*/
-                <Route exact path="/Component/InfotextButton" component={InfotextButtons} />  
+                <Route exact path="/Component/InfotextButtonGreen" component={InfotextButtonGreen} />  
+                <Route exact path="/Component/InfotextButtonRed" component={InfotextButtonRed} />  
+                <Route exact path="/Component/Infotext_Component" component={Infotext_Component} />  
+
+
+
+
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  

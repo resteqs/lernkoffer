@@ -18,7 +18,7 @@ import thumbup from "../../SDG5/Quiz/thumbs/like.png";
 import thumbdown from "../../SDG5/Quiz/thumbs/dislike.png";
 
 import { Link } from "react-router-dom";
-import { InfotextButtons } from "../../../Components/Buttons/InfotextButton";
+import { InfotextButtonGreen } from "../../../Components/Buttons/InfotextButtonGreen";
 
 interface States {
     shouldShowModal: boolean;
@@ -542,7 +542,7 @@ export const SDG08_Quiz = (): JSX.Element => {
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
                 <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
-                    <InfotextButtons showtext={showtext} text="Weiter" setText = {setText}/>
+                    <InfotextButtonGreen showtext={showtext} text="Weiter" setText = {setText}/>
                 </div>
             </div>
         ) : (

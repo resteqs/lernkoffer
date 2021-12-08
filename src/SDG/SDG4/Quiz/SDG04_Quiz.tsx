@@ -11,7 +11,7 @@ import Logo from "../../../SDGLogos/Goal-SDG04.png";
 import infotextbutton from "../../../styles/Infotextbutton.module.css";
 
 import { Link } from "react-router-dom";
-import { InfotextButtons } from "../../../Components/Buttons/InfotextButton";
+import { InfotextButtonGreen } from "../../../Components/Buttons/InfotextButtonGreen";
 
 interface States {
     shouldShowModal: boolean;
@@ -228,7 +228,7 @@ export const SDG04_Quiz = (): JSX.Element => {
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
                 <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
-                    <InfotextButtons showtext={showtext} text="Weiter" setText = {setText}/>
+                    <InfotextButtonGreen showtext={showtext} text="Weiter" setText = {setText}/>
                 </div>
             </div>
         ) : (
@@ -244,7 +244,7 @@ export const SDG04_Quiz = (): JSX.Element => {
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
                     <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
-                        <InfotextButtons showtext={showtext} text="Weiter" setText = {setText}/>
+                        <InfotextButtonGreen showtext={showtext} text="Weiter" setText = {setText}/>
                     </div>
                 </Link>{" "}
             </div>
