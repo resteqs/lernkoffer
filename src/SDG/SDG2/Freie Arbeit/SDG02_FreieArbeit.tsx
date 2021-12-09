@@ -1,3 +1,7 @@
+/* eslint-disable eslint-comments/disable-enable-pair */
+/* eslint-disable eslint-comments/no-duplicate-disable */
+/* eslint-disable eslint-comments/disable-enable-pair */
+/* eslint-disable prefer-const */
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable no-eval */
 
@@ -10,10 +14,11 @@ import infotextbutton from "../../../styles/Infotextbutton.module.css";
 import "../../../styles/colour_sdgs.css";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG02.png";
+import LeereFlügel from "./Leere Flügel.jpg";
+import FlügelSDG02 from "./Schmetterling SD02.png"
 
 export const SDG02_FreieArbeit = (): JSX.Element => {
-    // eslint-disable-next-line prefer-const 
-
+   
     const [showtext, setText] = React.useState(1);
     const sdg = "SDG02";
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -56,6 +61,21 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                 > 
                    <p> Bild </p>
                 </button>
+
+                <button
+                    type="button"
+                    style={{
+                        background: "none",
+                        borderStyle: "none",
+                        marginTop: "150px",
+                    }}
+                    onClick={() => {
+                        setIsOpen(true);
+                        openModal1();
+                    }}
+                > 
+                   <p> Vorlage </p>
+                </button>
            
             </div>
         ), 
@@ -63,13 +83,21 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
     };
 
     const Bilder = {
-        1: <div>
-            <p>
-                <img className = "LeereSchmetterling" src="" alt="" />
-                <img className =  " SchmetterlingSDG02" src=" " alt= "" />
+        1: (
+            <div>
+                <p>
+                    <img className =  " SchmetterlingSDG02" src= {FlügelSDG02} alt= "" />
 
-            </p>
-        </div>
+                </p>
+            </div> 
+        ),
+    };
+    const Vorlage = {
+        1: (
+            <div>
+                <p><img className = "LeereFlügel" src= {LeereFlügel} alt="" /></p>
+            </div>
+        ),
     };
     const header = {
         1: (
@@ -100,13 +128,14 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                     </button>
                 </div>{" "}
                 { Bilder[modalOne]}
+                { Vorlage[modalOne]}
             </div>
         ),
     };
 
     function openModal1(): void {
         setModalOpened(1);
-        if(modalOne === 7){
+        if(modalOne === 2){
             setModalOne(1);
         }else{setModalOne(modalOne +1);}
     }
@@ -120,12 +149,12 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
     let buttonBack;
     let buttonNext;
     let buttonEnd;
+    let modal; 
     
 
     
     
 
-    // eslint-disable-next-line prefer-const
     buttonBack =
         showtext >= 2 ? (
             <div className="backbutton" style={{ marginTop: "50px" }}>
@@ -143,7 +172,7 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                 {" "}
             </button>
         );
-    // eslint-disable-next-line prefer-const
+  
     buttonNext =
         showtext <= 2 ? (
             <div className="nextbutton" style={{ marginTop: "50px" }}>
@@ -161,7 +190,7 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                 {" "}
             </button>
         );
-    // eslint-disable-next-line prefer-const
+    
     buttonEnd =
         showtext === 2 ? (
             <div className="nextbutton" style={{ marginTop: "50px" }}>
@@ -182,29 +211,30 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
             </button>
         );
     
-        const modal = (
-           <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={() => setIsOpen(false)}
-            overlayClassName={{
-                base: "overlay-base",
-                afterOpen: "overlay-after",
-                beforeClose: "overlay-before",
-            }}
-            className={{
-                base: "content-base",
-                afterOpen: "content-after",
-                beforeClose: "content-before",
-            }}
-            closeTimeoutMS={50}
-        >
-            {modalContent[modalOpened]}
-        </Modal> 
-        );
         
+        modal = (
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setIsOpen(false)}
+                overlayClassName={{
+                    base: "overlay-base",
+                    afterOpen: "overlay-after",
+                    beforeClose: "overlay-before",
+                }}
+                className={{
+                    base: "content-base",
+                    afterOpen: "content-after",
+                    beforeClose: "content-before",
+                }}
+                closeTimeoutMS={50}
+            >
+                <p style={{ fontSize: "50px" }}>{modalContent[modalOpened]}</p>
+            </Modal>
+        );
+    
     
 
-    // eslint-disable-next-line prefer-const
+   
     return (
         <div>
             <div className={`colour_${sdg}_header`}>
