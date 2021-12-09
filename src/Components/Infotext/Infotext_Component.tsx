@@ -108,7 +108,7 @@ export const Infotext_Component: React.FC<Props> = ({
             </div>
             <div className="infotextbox">
                 <p className="headertext">
-                    <b>{header[sdgNumber]}</b>
+                    <b>{header[showtext]}</b>
                 </p>{" "}
                 <br />
                 <p className="bodytext"> {} </p>

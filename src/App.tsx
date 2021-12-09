@@ -287,6 +287,7 @@ import { InfotextButtonGreen } from "./Components/Buttons/InfotextButtonGreen";
 import { InfotextButtonRed } from "./Components/Buttons/InfotextButtonRed";
 import { Infotext_Component } from "./Components/Infotext/Infotext_Component";
 import { SDG02_Quiz } from "./SDG/SDG2/Quiz/SDG02_Quiz";
+import { SDG01_Infotext } from "./SDG/SDG1/Info/SDG01_Infotext";
 
 
 
@@ -315,6 +316,8 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
+                <Route exact path ="/SDG01/Infotext" component={SDG01_Infotext}/>
+
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
                 <Route exact path ="/SDG01/Spiel" component={SDG01_Spiel}/>
@@ -325,7 +328,7 @@ export const App = (): JSX.Element => {
  *                                SDG 02
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-            <Route exact path ="/SDG02/FreieArbeit/FreieArbeit" component={SDG02_FreieArbeit}/>      
+            <Route exact path ="/SDG02/FreieArbeit" component={SDG02_FreieArbeit}/>      
 /**                             Gutes Beispiel                               */
             <Route exact path = "/SDG02/Gute Bsp" component={SDG02_GutesBeispiel}/>
 /**                               Infotext                                   */
