@@ -45,6 +45,15 @@
     height: 500px;
 }
 
-.Button{
-    align-items: center;
+.infotextbox02info{
+    background-color: #ffffff;
+    text-align: center;
+    font-size: x-large;
+    padding: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    font-size: 35px;
+    height: 650px;
 }
+
