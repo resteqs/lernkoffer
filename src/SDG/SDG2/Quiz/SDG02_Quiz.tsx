@@ -5,12 +5,16 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable unicorn/filename-case */
 import * as React from "react";
-import classNames from "classnames";
 
 import Logo from "../../../SDGLogos/Goal-SDG02.png";
-
 import { Link } from "react-router-dom";
 import { InfotextButtonGreen } from "../../../Components/Buttons/InfotextButtonGreen";
+import croissant from "./media/frenchdisguistingthing.png";
+import bread from "./media/germanbreadsprakeldwithstones.png";
+import choko from "./media/chokolalalalalalalalalallalalall.png";
+import cake from "./media/inLydiasKüche.png";
+import apple from "./media/poneyfood.png";
+import potato from "./media/yellowthing.png";
 
 interface States {
     shouldShowModal: boolean;
@@ -23,6 +27,7 @@ export const SDG02_Quiz = (): JSX.Element => {
     let [showtext, setText] = React.useState(1);
     let [itemSelected, setSelectedItem] = React.useState(0);
     let [rightAnswers, setRightAnswer] = React.useState(0);
+    const maxSlides = 12;
 
     function incrementCount(): void {
         setText(showtext + 1);
@@ -32,65 +37,38 @@ export const SDG02_Quiz = (): JSX.Element => {
         setText(showtext - 1);
     }
     function select1(): void {
-        incrementAnswer();
         incrementCount();
     }
     function select2(): void {
         incrementCount();
     }
 
-    function incrementAnswer(): void {
-        setRightAnswer(rightAnswers + 1);
+    const leftpicture = {
+        3: <img src={apple} alt="apple" />,
+        4: <img src={bread} alt="bread" />, 
+        5: <img src={potato} alt="potato" /> 
     }
 
-    const leftpicture = {
-        1: <img src="" alt="" />,
-    };
+    const rightpicture = {
+        3: <img src={choko} alt="choko" />,
+        4: <img src={croissant} alt="croissabwaghio" />, 
+        5: <img src={cake} alt="cake" /> 
+    }
+
     const Question = {
-        2: (
-            <div>
-                <p>1. Genießt du eine kostenlose Schulausbildung, die dir Lesen, Schreiben und Rechnen beibringt? </p>
-            </div>
-        ),
         3: (
             <div>
-                <p>
-                    2. Bietet dir deine Schule die Möglichkeit später zu arbeiten oder zu studieren/deinen Traumberuf zu
-                    machen?{" "}
-                </p>
+                <p>Apfel und Schokolade </p>
             </div>
         ),
         4: (
             <div>
-                <p>
-                    3. Ist deine Schule mit grundlegenden Unterrichtsmaterialien (Tafel, Kreide, Stühle und Tische) und
-                    Lehrkräften, die für ihren Job ausgebildet wurden, ausgestattet?{" "}
-                </p>
+                <p>Vollkornbrot und Croissant </p>
             </div>
         ),
         5: (
             <div>
-                <p>4. Hat deine Schule eine Toilette und einen Waschbereich, die allen offen zur Verfügung steht? </p>
-            </div>
-        ),
-        6: (
-            <div>
-                <p>5. Bietet dir deine Schule preisgünstiges und gutes Essen und Trinken? </p>
-            </div>
-        ),
-        7: (
-            <div>
-                <p>
-                    6. Ist jedes Kind in deinem Land, unabhängig von deren Geschlecht, berechtigt zur Schule zu gehen?{" "}
-                </p>
-            </div>
-        ),
-        8: (
-            <div>
-                <p>
-                    7. Vermittelt deine Schule Wissen im Bereich der Menschenrechte, Demokratie, Frieden, Freiheit und
-                    Toleranz?{" "}
-                </p>
+                <p>Kartoffel und Kuchen </p>
             </div>
         ),
     };
@@ -109,6 +87,10 @@ export const SDG02_Quiz = (): JSX.Element => {
                     (ihr könnt natürlich auch gerne in der Gruppe überlegen). Wenn du dich entschieden hast, dann tippe
                     den Gegenstand an und du wirst sehen, ob du richtig liegst.{" "}
                 </p>
+            </div>
+        ),
+        2: (
+            <div>
                 <p className="einleitungText">
                     Damit du herausfinden kannst wie hochwertig deine Bildung ist, spielen wir jetzt ein Spiel.
                 </p>
@@ -120,9 +102,45 @@ export const SDG02_Quiz = (): JSX.Element => {
                 </p>
             </div>
         ),
+        6: (
+            <div>
+                <p className="einleitungText">
+                    Du hast nun schon ein paar Sachen gesehen, die gesünder als andere sind. Aber warum gibt es gesunde
+                    und ungesunde Sachen? Das ist nicht ganz einfach zu erklären, aber du schaffst es bestimmt trotzdem,
+                    das zu verstehen!
+                </p>
+            </div>
+        ),
+        7: (
+            <div>
+                <p className="einleitungText">
+                    Unser Körper braucht bestimmte Stoffe (Sachen, die im Essen sind), um gesund zu bleiben. Ganz
+                    wichtig sind zum Beispiel „Vitamine“, die dem Körper helfen, dich vor Krankheiten zu schützen.
+                    Außerdem brauchst du auch so genannte „Kohlenhydrate“. Das sind Stoffe, die dir Energie liefern,
+                    damit du herumlaufen und andere Dinge tun kannst, bei denen sich deine Muskeln anstrengen müssen. Es
+                    gibt noch viele weitere Stoffe, ohne die dein Körper nicht auskommt, wie „Ballaststoffe“, „Fette“
+                    und viele mehr.
+                </p>
+            </div>
+        ),
+        8: (
+            <div>
+                <p className="einleitungText">
+                    Wenn man zu wenig von wichtigen Stoffen über das Essen aufnimmt, dann spricht man von einer
+                    „Mangelernährung“. Die Folgen davon sind meist sehr schlimm, denn es führt dazu, dass man öfter
+                    krank wird, weil der Körper sich nicht mehr gegen Krankheiten wehren kann. Man ist auch nicht mehr
+                    so leistungsfähig wie sonst, das bedeutet, dass man sich nicht mehr konzentrieren kann und auch
+                    keine Kraft hat, um zum Beispiel zu spielen.
+                </p>
+            </div>
+        ),
         9: (
             <div>
-                <p className="einleitungText">Deine Punktzahl: {rightAnswers}</p>
+                <p className="einleitungText">
+                    Wenn du dich genauer mit diesem Thema beschäftigen möchtest, dann könnte dir die
+                    „Ernährungspyramide“ helfen. Das ist eine Zeichnung, die zeigt, welche Lebensmittel (Dinge zum
+                    Essen) sehr viel oder eher weniger gegessen werden sollen.
+                </p>
             </div>
         ),
     };
@@ -157,7 +175,7 @@ export const SDG02_Quiz = (): JSX.Element => {
                     }}
                 >
                     <p style={{ fontSize: "190px" }}>
-                        <div>JA</div>
+                        <div>{leftpicture[showtext]}</div>
                     </p>{" "}
                 </div>{" "}
             </button>
@@ -194,7 +212,7 @@ export const SDG02_Quiz = (): JSX.Element => {
                     }}
                 >
                     <p style={{ fontSize: "190px" }}>
-                        <div>NEIN</div>
+                        <div>{rightpicture[showtext]}</div>
                     </p>{" "}
                 </div>
             </button>

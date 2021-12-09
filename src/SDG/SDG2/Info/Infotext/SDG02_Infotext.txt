@@ -1,29 +1,32 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable eslint-comments/no-duplicate-disable */
 /* eslint-disable eslint-comments/disable-enable-pair */
 /* eslint-disable react/jsx-pascal-case */
-/* eslint-disable eslint-comments/disable-enable-pair */
-// eslint-disable-next-line eslint-comments/no-duplicate-disable
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable no-eval */
 /* eslint-disable unicorn/filename-case */
 
 import * as React from "react";
 import renderer from "react-dom";
-import { Link } from "react-router-dom";
-import infotextbutton from "../../../../styles/Infotextbutton.module.css";
 import "../../../../styles/colour_sdgs.css";
 import "../../../../styles/infotext.css";
 import Logo from "../../../../SDGLogos/Goal-SDG02.png";
-import EG from "../../../../EG/EG2.png";
 import "../../Spiel/sdg02.css";
-import ReactAudioPlayer from "react-audio-player";
+import { Infotext_Component } from "../../../../Components/Infotext/Infotext_Component";
+// eslint-disable-next-line import/no-duplicates
+import EG from "../../../../EG/EG2.png";
+// eslint-disable-next-line import/no-duplicates
+import audiofile from "../../../../EG/EG2.png";
+
+
+interface header {
+    id:number;
+    text:string
+}
 
 export const SDG02_Infotext = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     let [showtext, setText] = React.useState(1);
     const sdg = "SDG02";
-
+    const sdgNumber = 2;
+    const maxSlides = 8;
+/*
     const text = {
         1: (
             <div>
@@ -107,144 +110,47 @@ export const SDG02_Infotext = (): JSX.Element => {
             </div>
         ),
     };
-    const header = {
-        1: (
-            <div>
-                <p> </p>
-            </div>
-        ),
-        2: (
-            <div>
-                <p>Warum?</p>
-            </div>
-        ),
-        3: (
-            <div>
-                <p>Was ist das Problem?</p>
-            </div>
-        ),
-        4: (
-            <div>
-                <p>Was ist das Problem?</p>
-            </div>
-        ),
-        5: (
-            <div>
-                <p>Was ist das Problem?</p>
-            </div>
-        ),
-        6: (
-            <div>
-                <p>Wie ist dieses Thema mit uns verbunden?</p>
-            </div>
-        ),
-        7: (
-            <div>
-                <p>Was können wir tun?</p>
-            </div>
-        ),
-        8: (
-            <div>
-                <p>Was können wir tun?</p>
-            </div>
-        ),
+
+    const headert = {
+        1: <p> </p>,
+        2: <p>Warum?</p>,
+        3: <p>Was ist das Problem?</p>,
+        4: <p>Was ist das Problem?</p>,
+        5: <p>Was ist das Problem?</p>,
+        6: <p>Was können wir tun?</p>,
     };
-
-    function incrementCount(): void {
-        setText(showtext + 1);
-    }
-
-    function decrementCount(): void {
-        setText(showtext - 1);
-    }
-    let buttonBack;
-    let buttonNext;
-    let buttonEnd;
-    // eslint-disable-next-line prefer-const
-    buttonBack =
-        showtext >= 2 ? (
-            <div className="backbutton">
-                {" "}
-                <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
-                    <span className={infotextbutton.shadow} />
-                    <span className={infotextbutton.edge} />
-                    <span className={infotextbutton.front}>
-                        <p className={infotextbutton.buttontext}>Zurück</p>
-                    </span>
-                </button>
-            </div>
-        ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
-        );
-    // eslint-disable-next-line prefer-const
-    buttonNext =
-        showtext < 8 ? (
-            <div className="nextbutton">
-                {" "}
-                <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
-                    <span className={infotextbutton.shadow} />
-                    <span className={infotextbutton.edgegreen} />
-                    <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                        <p className={infotextbutton.buttontext}>Weiter</p>
-                    </span>
-                </button>
-            </div>
-        ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
-        );
-    // eslint-disable-next-line prefer-const
-    buttonEnd =
-        showtext === 8 ? (
-            <div className="nextbutton">
-                <div style={{ marginTop: "10px" }} className="nextbutton">
-                    {" "}
-                    <Link to="/Vorlagen/Endscreen">
-                        {" "}
-                        <div>
-                            <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
-                                <span className={infotextbutton.shadow} />
-                                <span className={infotextbutton.edgegreen} />
-                                <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                                    <p className={infotextbutton.buttontext}>Weiter</p>
-                                </span>
-                            </button>
-                        </div>
-                    </Link>{" "}
-                </div>
-            </div>
-        ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
-        );
+*/
+    const headera  = [
+        { id: 1, text: <p> </p> },
+        { id: 2, text: <p>Warum?</p> },
+        { id: 3, text: <p>Was ist das Problem?</p> },
+        { id: 4, text: <p>Was ist das Problem?</p> },
+        { id: 5, text: <p>Was können wir tun?</p> },       
+    
+    ]
+    
+    const header = [
+        { id: 1, text: " " },
+        { id: 2, text: "Warum?" },
+        { id: 3, text: "Was ist das Problem?" },
+        { id: 4, text: "Was ist das Problem?" },
+        { id: 5, text: "Was können wir tun?" },       
+    ]
 
     return (
         <div>
-            <div className={`colour_${sdg}_header`}>
-                <div className="header">
-                    Kein Hunger <img className="sdglogo" alt="logo" src={Logo} />
-                </div>
-            </div>
-            <div className="infotextbox">
-                <p className="headertext">
-                    <b>{header[showtext]}</b>
-                </p>{" "}
-                <br />
-                <p className="bodytext"> {text[showtext]} </p>
-            </div>
-            {buttonBack}
-            {buttonNext}
-            {buttonEnd}
-            <ReactAudioPlayer
-                src="https://cdn.discordapp.com/attachments/807650919780057129/916030116767891456/Mobiles_Museum_Infotext_4.mp3"
-                controls
-                style={{ position: "absolute", top: "1100px", left: "80px" }}
-            />{" "}
-            <img className="EG " alt="" src={EG} />
+            <Infotext_Component
+                logo={Logo}
+                sdgNumber={sdgNumber}
+                // text={text}
+                header= {header}
+                maxSlides={maxSlides}
+                audioFile={audiofile}
+                eg={EG}
+                sdg={sdg}
+                showtext={showtext}
+                setText={setText}
+            />
         </div>
     );
 };
