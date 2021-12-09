@@ -8,7 +8,7 @@
 // eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
 import renderer from "react-dom";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { CSSProperties, useState } from "react";
 import { faAlignCenter } from "@fortawesome/free-solid-svg-icons";
 import { debug } from "console";
@@ -458,7 +458,7 @@ export const SDG02_Spiel = (): JSX.Element => {
     buttonEnd =
         showtext === 14 ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
-                 <BrowserRouter><Link to="/Vorlagen/Endscreen">
+                 <Link to="/Vorlagen/Endscreen">
                     {" "}
                     <button className={infotextbutton.pushable} type="button">
                         <span className={infotextbutton.shadow} />
@@ -467,7 +467,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                             <p className={infotextbutton.buttontext}>Weiter </p>
                         </span>
                     </button>
-                </Link></BrowserRouter>
+                </Link>
                
             </div>
         ) : (
