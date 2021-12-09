@@ -131,7 +131,7 @@ export const SDG02_Infotext = (): JSX.Element => {
                 logo={Logo}
                 sdgNumber={sdgNumber}
                 // text={text}
-                header= {header.map((element) => (element))}
+                header= {header}
                 maxSlides={maxSlides}
                 audioFile={audiofile}
                 eg={EG}
