@@ -8,7 +8,7 @@
 // eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
 import renderer from "react-dom";
-import { Link } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import { CSSProperties, useState } from "react";
 import { faAlignCenter } from "@fortawesome/free-solid-svg-icons";
 import { debug } from "console";
@@ -112,7 +112,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                         <span className="shadow" />
                         <span className={infotextbutton.edgeorange} />
                         <span className="front" style={buttonStyle}>
-                            Nord Amerika
+                            Afrika
                         </span>
                     </div>
                 </button>{" "}
@@ -137,7 +137,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                         <span className="shadow" />
                         <span className={infotextbutton.edgeorange} />
                         <span className="front" style={buttonStyle}>
-                            Nord Amerika
+                           Europa
                         </span>
                     </div>
                 </button>{" "}
@@ -162,7 +162,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                         <span className="shadow" />
                         <span className={infotextbutton.edgeorange} />
                         <span className="front" style={buttonStyle}>
-                            Nord Amerika
+                            Süd Amerika
                         </span>
                     </div>
                 </button>{" "}
@@ -187,7 +187,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                         <span className="shadow" />
                         <span className={infotextbutton.edgeorange} />
                         <span className="front" style={buttonStyle}>
-                            Nord Amerika
+                            Asien
                         </span>
                     </div>
                 </button>{" "}
@@ -277,72 +277,80 @@ export const SDG02_Spiel = (): JSX.Element => {
         ),
         6: (
             <div>
+            <img className="center" src={hamburger} alt="" />
+        </div>
+        ),
+         7:(<div>
+            <section>
+                <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
+                    <p>
+                    Beschreibung: Das ist ein Burger. Hier wird ein Brötchen in der Mitte durchgeschnitten und mit verschiedenen Zutaten belegt. Im Normalfall ist eine Scheibe Fleisch dabei (aus Hackfleisch) und Käse. Man kann sich diese Burger sehr verschieden belegen. Manche legen noch Zwiebel und Tomaten darauf oder Salat. Oft kommt auch eine Scheibe Gurke drauf und dann wird das Ganze noch mit verschiedenen Saucen bestrichen.{" "}
+                    </p>
+                </div>
+            </section>
+            {buttons}
+        </div>),
+        8: (
+            <div>
+            <img className="center" src={chilli} alt="" />
+        </div>
+        ),
+        9: (
+            <div>
+                <div>
                 <section>
                     <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
                         <p>
-                            Beschreibung: Das ist eine Kürbissuppe. Bei der Zubereitung nimmt man einen Kürbis,
-                            schneidet ihn in kleine Stücken und kocht diese, bis sie weich sind. Wenn die Stückchen
-                            fertiggekocht sind, dann püriert man sie und gibt noch etwas Flüssigkeit (z.B. Wasser oder
-                            Brühe) dazu, damit die Suppe flüssiger wird.{" "}
+                        Beschreibung: Das ist Chili Con Carne. Es ist eine Art Eintopf in dem Hackfleisch und Gemüse zusammen gekocht werden. Traditionell werden spezielle Chilibohnen sowie Mais benutzt. Man kann aber auch sehr unterschiedliche Sachen selbst noch mit hineingeben. Es gibt dieses Gericht auch für Vegetarier ohne Fleisch, dann heißt es Chili Sin Carne. Meist ist dieses (egal ob mit oder ohne Fleisch) eher scharf, wie der Name „Chili“ schon verrät.{" "}
+                        </p>
+                    </div>
+                </section>
+                {buttons}
+            </div>
+            </div>
+        ),
+        10: (
+            <div>
+                <img className="center" src={sushi} alt="" />
+            </div>
+        ),
+        11: (
+            <div>
+                <section>
+                    <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
+                        <p>
+                        Beschreibung: Das ist Sushi. Es gibt viele verschiedene Arten von Sushi. Doch die meisten bestehen aus klebrigem Reis und Fisch oder Gemüse. Das dunkle, was um den Reis gewickelt ist, ist eine bestimmte Art Algen, die man essen kann und kaum einen eigenen Geschmack hat.{" "}
                         </p>
                     </div>
                 </section>
                 {buttons}
             </div>
         ),
-
-        8: (
-            <div>
-                <p>.</p>
-            </div>
-        ),
-        9: (
-            <div>
-                <p>.</p>
-            </div>
-        ),
-        10: (
-            <div>
-                <p>
-                    Das Problem ist, dass die Gruppe mit zu viel Nahrung oft nicht weiß, wie sie denen mit zu wenig
-                    Nahrung helfen kann. Dabei können Fehler passieren und im schlimmsten Fall die aktuelle Lage
-                    verschlechtern.{" "}
-                </p>
-            </div>
-        ),
-        11: (
-            <div>
-                <p>
-                    Weil die „Reichen“ nicht immer wissen, wie es „Armen“ geht, verstehen sie nicht die
-                    Herausforderungen, die bei der benachteiligten Gemeinschaft tagtäglich bestehen.
-                </p>
-            </div>
-        ),
         12: (
             <div>
-                <p>
-                    Deshalb ist es so wichtig, dass alle miteinander reden, um herauszufinden wie am besten geholfen
-                    werden kann, damit wie in diesem Beispiel der Wolf dem Hasen gegen dessen Hunger helfen kann.
-                </p>
+                <img className="center" src={tajine} alt="" />
             </div>
         ),
 
         13: (
             <div>
-                <p>
-                    Alle Lebewesen auf der Erde sollten genügend zum Essen haben. Im Nachhaltigkeitsziel 02 geht es
-                    darum, dafür zu sorgen, dass es keinen Hunger mehr in unserer Welt gibt. In diesem werden
-                    verschiedene Bereiche angegangen, die mit Essen und der Landwirtschaft verbunden sind.
-                </p>
-            </div>
+            <section>
+                <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
+                    <p>
+                    Beschreibung: Das ist Tajine. Es ist ein sehr traditionelles Gericht, das nach dem Namen der Tontöpfe benannt wurde, in denen es gekocht wird. Es gibt sehr viele verschiedene Arten von Tajine. Meist wird sehr viel Gemüse, Fisch oder Fleisch und jede Menge verschiedener Gewürze verwendet.{" "}
+                    </p>
+                </div>
+            </section>
+            {buttons}
+        </div>
         ),
         14: (
             <div>
-                <p>
-                    Um mehr darüber zu erfahren, nehmt euch die EarthyGlobe Figur und lest über den Hintergrund und die
-                    Probleme, die durch den Hunger weltweit entstehen. Abschließend erfahrt ihr auch, wie ihr helfen
-                    könnt.
-                </p>
+             <p style={ obj3number === 1? { color: "green" }: { color:"red" } }>Kürbissuppe kommt aus Europa</p>
+             <p  style={ obj1number === 2? { color: "green" }: { color:"red" } }>Burger kommt aus Nord Amerika</p>
+             <p  style={ obj4number === 3? { color: "green" }: { color:"red" } }>Chili Con Carne kommt aus Süd Amerika</p>
+             <p  style={ obj5number === 4? { color: "green" }: { color:"red" } }>Sushi kommt aus Asien</p>
+             <p  style={ obj2number === 5? { color: "green" }: { color:"red" } }>Tajine kommt aus Afrika</p>
             </div>
         ),
     };
@@ -428,7 +436,7 @@ export const SDG02_Spiel = (): JSX.Element => {
         );
 
     buttonNext =
-        showtext <= 13 ? (
+        showtext < 5 || showtext === 6 || showtext === 8 || showtext === 10 || showtext === 12 ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
                 <div style={{ position: "absolute", top: "750px", left: "1700px" }}>
@@ -450,7 +458,7 @@ export const SDG02_Spiel = (): JSX.Element => {
     buttonEnd =
         showtext === 14 ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
-                <Link to="/Vorlagen/Endscreen">
+                 <BrowserRouter><Link to="/Vorlagen/Endscreen">
                     {" "}
                     <button className={infotextbutton.pushable} type="button">
                         <span className={infotextbutton.shadow} />
@@ -459,7 +467,8 @@ export const SDG02_Spiel = (): JSX.Element => {
                             <p className={infotextbutton.buttontext}>Weiter </p>
                         </span>
                     </button>
-                </Link>{" "}
+                </Link></BrowserRouter>
+               
             </div>
         ) : (
             <button className="buttonInvisible" type="button">
