@@ -21,6 +21,11 @@ import { InfotextButtonGreen } from "../Buttons/InfotextButtonGreen";
 import { InfotextButtonRed } from "../Buttons/InfotextButtonRed";
 import { NameOfSDG } from "../NameOfSDG";
 
+interface header {
+    id:number;
+    text:string
+}
+
 interface Props {
     logo: string;
     sdg: string;
@@ -28,7 +33,7 @@ interface Props {
     showtext: number,
     setText:React.Dispatch<React.SetStateAction<number>>,
     // text;
-    header: JSX.Element[];
+    header:header[];
     maxSlides: number;
     audioFile: string;
     eg: string;
