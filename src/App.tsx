@@ -284,7 +284,8 @@ import page143 from "./SDG/SDG14/Spiel2/tutorial/14tut3";
 import play14 from "./SDG/SDG14/Spiel2/play14";
 import { InfotextButtonGreen } from "./Components/Buttons/InfotextButtonGreen";
 import { InfotextButtonRed } from "./Components/Buttons/InfotextButtonRed";
-import { Infotext_Component } from "./Components/Infotext_Component";
+import { Infotext_Component } from "./Components/Infotext/Infotext_Component";
+import { SDG02_Quiz } from "./SDG/SDG2/Quiz/SDG02_Quiz";
 
 
 
@@ -330,6 +331,7 @@ export const App = (): JSX.Element => {
             <Route exact path ="/SDG02/Infotext/Fable" component={SDG02_Infotext_Fable}/>
 
 /**                                 Quiz                                     */
+            <Route exact path ="/SDG02/Quiz" component={SDG02_Quiz}/>
 /**                                Spiel                                     */
             <Route exact path ="/SDG02/Spiel" component={SDG02_Spiel}/>
 

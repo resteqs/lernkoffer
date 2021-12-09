@@ -12,14 +12,14 @@
 
 import * as React from "react";
 import { Link } from "react-router-dom";
-import "../styles/colour_sdgs.css";
-import "../styles/App.css";
-import "../styles/infotext.css";
-import "../styles/component.css"
+import "../../styles/colour_sdgs.css";
+import "../../styles/App.css";
+import "../../styles/infotext.css";
+import "../../styles/component.css"
 import ReactAudioPlayer from "react-audio-player";
-import { InfotextButtonGreen } from "./Buttons/InfotextButtonGreen";
-import { InfotextButtonRed } from "./Buttons/InfotextButtonRed";
-import { NameOfSDG } from "./NameOfSDG";
+import { InfotextButtonGreen } from "../Buttons/InfotextButtonGreen";
+import { InfotextButtonRed } from "../Buttons/InfotextButtonRed";
+import { NameOfSDG } from "../NameOfSDG";
 
 interface Props {
     logo: string;
@@ -27,7 +27,7 @@ interface Props {
     sdgNumber: number,
     showtext: number,
     setText:React.Dispatch<React.SetStateAction<number>>,
-    text: JSX.Element[];
+    // text;
     header: JSX.Element[];
     maxSlides: number;
     audioFile: string;
@@ -40,12 +40,15 @@ export const Infotext_Component: React.FC<Props> = ({
     sdgNumber,
     showtext,
     setText,
-    text,
+    // text,
     header,
     maxSlides,
     audioFile,
     eg,
 }: Props): JSX.Element => {
+    // eslint-disable-next-line no-param-reassign
+    [showtext, setText] = React.useState(showtext);
+
     const buttonBack =
         showtext >= 2 ? (
             <div className="backbutton">
@@ -100,10 +103,10 @@ export const Infotext_Component: React.FC<Props> = ({
             </div>
             <div className="infotextbox">
                 <p className="headertext">
-                    <b>{header}</b>
+                    <b>{header[sdgNumber]}</b>
                 </p>{" "}
                 <br />
-                <p className="bodytext"> {text} </p>
+                <p className="bodytext"> {} </p>
             </div>
             {buttonBack}
             {buttonNext}

@@ -1,28 +1,15 @@
 /* eslint-disable eslint-comments/disable-enable-pair */
-/* eslint-disable react/jsx-pascal-case */
 /* eslint-disable unicorn/filename-case */
 
 import * as React from "react";
-import renderer from "react-dom";
-import "../../../../styles/colour_sdgs.css";
-import "../../../../styles/infotext.css";
-import Logo from "../../../../SDGLogos/Goal-SDG02.png";
-import "../../Spiel/sdg02.css";
-import { Infotext_Component } from "../../../../Components/Infotext/Infotext_Component";
-// eslint-disable-next-line import/no-duplicates
-import EG from "../../../../EG/EG2.png";
-// eslint-disable-next-line import/no-duplicates
-import audiofile from "../../../../EG/EG2.png";
 
-
-export const SDG02_Infotext = (): JSX.Element => {
-    // eslint-disable-next-line prefer-const
-    let [showtext, setText] = React.useState(1);
-    const sdg = "SDG02";
-    const sdgNumber = 2;
-    const maxSlides = 8;
-/*
-    const text = {
+interface Props{
+    sdgNumber: number
+    
+}
+export const NameOfSDG: React.FC<Props> = ({ sdgNumber }:Props ):JSX.Element => {
+    
+    const text_SDG02 = {
         1: (
             <div>
                 <p>
@@ -106,7 +93,7 @@ export const SDG02_Infotext = (): JSX.Element => {
         ),
     };
 
-    const headert = {
+    const header_SDG02= {
         1: <p> </p>,
         2: <p>Warum?</p>,
         3: <p>Was ist das Problem?</p>,
@@ -114,32 +101,11 @@ export const SDG02_Infotext = (): JSX.Element => {
         5: <p>Was ist das Problem?</p>,
         6: <p>Was können wir tun?</p>,
     };
-*/
-    const header: JSX.Element[]  = [
-        <div> </div>,
-        <p>Warum?</p>,
-        <p>Was ist das Problem?</p>,
-        <p>Was ist das Problem?</p>,
-        <p>Was ist das Problem?</p>,
-        <p>Was können wir tun?</p>,
 
-    ]
-
-    return (
+    return(
         <div>
-            <Infotext_Component
-                logo={Logo}
-                sdgNumber={sdgNumber}
-                // text={text}
-                header= {header.map((element) => (element))}
-                maxSlides={maxSlides}
-                audioFile={audiofile}
-                eg={EG}
-                sdg={sdg}
-                showtext={showtext}
-                setText={setText}
-            />
+            {text_SDG02 [sdgNumber]}
+            {header_SDG02 [sdgNumber]}
         </div>
     );
-};
-renderer.render(<SDG02_Infotext />, document.getElementById("root"));
+}
