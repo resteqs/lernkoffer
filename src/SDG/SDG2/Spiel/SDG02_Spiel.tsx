@@ -24,7 +24,7 @@ import sushi from "./media/sushi.jpg";
 import tajine from "./media/tajine.jpg";
 
 export const SDG02_Spiel = (): JSX.Element => {
-    let [showtext, setText] = React.useState(5);
+    let [showtext, setText] = React.useState(1);
 
     let [currentlyPicked, setPicked] = React.useState(1);
 
