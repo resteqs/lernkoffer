@@ -15,7 +15,8 @@ import "../../../styles/colour_sdgs.css";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG02.png";
 import LeereFlügel from "./Leere Flügel.jpg";
-import FlügelSDG02 from "./Schmetterling SD02.png"
+import FlügelSDG02 from "./Schmetterling SD02.png";
+import "../Spiel/sdg02.css"
 
 export const SDG02_FreieArbeit = (): JSX.Element => {
    
@@ -24,7 +25,8 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
     const [modalIsOpen, setIsOpen] = React.useState(false);
     const [modalOpened, setModalOpened] = React.useState(0);
     const [modalOne, setModalOne] = React.useState(0);
-    
+    const [modalTwo, setModalTwo] = React.useState(0);
+    const maxslide = 3; 
     
     const text = {
         1: (
@@ -43,25 +45,6 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                     </ul>  
                 </p>
 
-                <p> Seid ihr alle fertig? Dann könntet ihr euch zusammen in einen Kreis setzen und jede:r stellt seine/ihre Flügel kurz vor (Was habe ich gemalt? Warum denke ich, dass dieses Nahrungsmittel wichtig ist?....). </p>
-                <p> Am Ende könntet ihr all die verschiedenen Bilder auch aufhängen und die Vielfalt bewundern. </p> 
-                <p>Zusatz: Es gibt offiziell zu jedem einzelnen SDG (Nachhaltigkeitsziel) jeweils ein Paar Flügel. Diese könnt ihr euch ansehen, wenn ihr auf den Button „Bild“ tippt.</p>
-                
-                <button
-                    type="button"
-                    style={{
-                        background: "none",
-                        borderStyle: "none",
-                        marginTop: "150px",
-                    }}
-                    onClick={() => {
-                        setIsOpen(true);
-                        openModal1();
-                    }}
-                > 
-                   <p> Bild </p>
-                </button>
-
                 <button
                     type="button"
                     style={{
@@ -79,10 +62,52 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
            
             </div>
         ), 
+        3: ( 
+            <div style={{ textAlign: "left", fontSize: "30px" }}>
+                <p> Seid ihr alle fertig? Dann könntet ihr euch zusammen in einen Kreis setzen und jede:r stellt seine/ihre Flügel kurz vor (Was habe ich gemalt? Warum denke ich, dass dieses Nahrungsmittel wichtig ist?....). </p>
+                <p> Am Ende könntet ihr all die verschiedenen Bilder auch aufhängen und die Vielfalt bewundern. </p> 
+                <p>Zusatz: Es gibt offiziell zu jedem einzelnen SDG (Nachhaltigkeitsziel) jeweils ein Paar Flügel. Diese könnt ihr euch ansehen, wenn ihr auf den Button „Bild“ tippt.</p>
+                
+                <button
+                
+                    className="Button"
+                    type="button"
+                    style={{
+                        background: "green  ",
+                        borderStyle: "none",
+                        marginTop: "150px",
+                    }}
+                    
+                    onClick={() => {
+                        setIsOpen(true);
+                        openModal2();
+                    }}
+                > 
+                   <p> Bild </p>
+                </button>
+            </div>
+
+        )
         
     };
 
-    const Bilder = {
+    const VorlageÜberschrift = {
+        1: (
+            <div>
+                <p> Vorlage </p>
+            </div>
+        )
+    }; 
+
+    const BeispielSDG02Überschrift = {
+        1: (
+            <div>
+                <p> offizielles Flügelpaar SDG02 </p>
+            </div>
+        )
+    }
+
+    const Sdg02_Schmetterlingsflügel = {
         1: (
             <div>
                 <p>
@@ -110,34 +135,28 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                 <p>Erklärung</p>
             </div>
         ),
+        3: (
+            <div>
+                <p> Ende </p>
+            </div>
+        )
         
     };
-    const modalContent ={
-        1: (
-            <div>
-                <div className="content-header">
-                    {[modalOne]}
-                    <button
-                        type="button"
-                        className="personCheckOkButton"
-                        onClick={() => {
-                            setIsOpen(false);
-                        }}
-                    >
-                        <b>Zurück</b>
-                    </button>
-                </div>{" "}
-                { Bilder[modalOne]}
-                { Vorlage[modalOne]}
-            </div>
-        ),
-    };
+
 
     function openModal1(): void {
         setModalOpened(1);
         if(modalOne === 2){
             setModalOne(1);
         }else{setModalOne(modalOne +1);}
+    } 
+
+    function openModal2(): void {
+        setModalOpened(2);
+        if(modalTwo === 7){
+            setModalTwo(1);
+        }
+        else{setModalTwo(modalTwo +1);}
     }
     function incrementCount(): void {
         setText(showtext + 1);
@@ -174,7 +193,7 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
         );
   
     buttonNext =
-        showtext <= 2 ? (
+        showtext < maxslide ? (
             <div className="nextbutton" style={{ marginTop: "50px" }}>
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
@@ -192,7 +211,7 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
         );
     
     buttonEnd =
-        showtext === 2 ? (
+        showtext === maxslide ? (
             <div className="nextbutton" style={{ marginTop: "50px" }}>
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
@@ -211,27 +230,62 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
             </button>
         );
     
-        
-        modal = (
-            <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={() => setIsOpen(false)}
-                overlayClassName={{
-                    base: "overlay-base",
-                    afterOpen: "overlay-after",
-                    beforeClose: "overlay-before",
-                }}
-                className={{
-                    base: "content-base",
-                    afterOpen: "content-after",
-                    beforeClose: "content-before",
-                }}
-                closeTimeoutMS={50}
-            >
-                <p style={{ fontSize: "50px" }}>{modalContent[modalOpened]}</p>
-            </Modal>
-        );
-    
+ const modalContent = {
+        1: (
+            <div>
+                <div className="content-header">
+                    {VorlageÜberschrift[modalOne]}
+                    <button
+                        type="button"
+                        className="personCheckOkButton"
+                        onClick={() => {
+                            setIsOpen(false);
+                        }}
+                    >
+                        <b>Zurück</b>
+                    </button>
+                </div>{" "}
+                {Vorlage[modalOne]}
+            </div>
+        ),
+        2: (
+            <div>
+                <div className="content-header">
+                    {BeispielSDG02Überschrift[modalTwo]}
+                    <button
+                        type="button"
+                        className="personCheckOkButton"
+                        onClick={() => {
+                            setIsOpen(false);
+                        }}
+                    >
+                        <b>Zurück</b>
+                    </button>
+                </div>{" "}
+                {Sdg02_Schmetterlingsflügel[modalTwo]}
+            </div>
+        ),
+};
+
+    modal = (
+        <Modal
+            isOpen={modalIsOpen}
+            onRequestClose={() => setIsOpen(false)}
+            overlayClassName={{
+                base: "overlay-base",
+                afterOpen: "overlay-after",
+                beforeClose: "overlay-before",
+            }}
+            className={{
+                base: "content-base",
+                afterOpen: "content-after",
+                beforeClose: "content-before",
+            }}
+            closeTimeoutMS={50}
+        >
+            <p style={{ fontSize: "50px" }}>{modalContent[modalOpened]}</p>
+        </Modal>
+    );
     
 
    
