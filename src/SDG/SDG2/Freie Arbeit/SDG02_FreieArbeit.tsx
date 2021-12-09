@@ -16,7 +16,7 @@ import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG02.png";
 import LeereFlügel from "./Leere Flügel.jpg";
 import FlügelSDG02 from "./Schmetterling SD02.png";
-import "../Spiel/sdg02.css"
+import "../Spiel/sdg02.css";
 
 export const SDG02_FreieArbeit = (): JSX.Element => {
     const [showtext, setText] = React.useState(1);
@@ -25,8 +25,8 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
     const [modalOpened, setModalOpened] = React.useState(0);
     const [modalOne, setModalOne] = React.useState(0);
     const [modalTwo, setModalTwo] = React.useState(0);
-    const maxslide = 3; 
-    
+    const maxslide = 3;
+
     const text = {
         1: (
             <div>
@@ -61,6 +61,27 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                     </ul>
                 </p>
 
+                <button
+                    type="button"
+                    style={{
+                        background: "#15b408",
+                        borderStyle: "none",
+                        marginTop: "100px",
+                        marginLeft: "700px",
+                        borderRadius: "30px 30px 30px 30px",
+                        padding: "20px"
+                    }}
+                    onClick={() => {
+                        setIsOpen(true);
+                        openModal1();
+                    }}
+                >
+                    <p  style={{ fontSize:"60px" }}> Vorlage </p>
+                </button>
+            </div>
+        ),
+        3: (
+            <div style={{ textAlign: "left", fontSize: "30px" }}>
                 <p>
                     {" "}
                     Seid ihr alle fertig? Dann könntet ihr euch zusammen in einen Kreis setzen und jede:r stellt
@@ -74,49 +95,26 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                 </p>
 
                 <button
-                    type="button"
-                    style={{
-                        background: "none",
-                        borderStyle: "none",
-                        marginTop: "150px",
-                    }}
-                    onClick={() => {
-                        setIsOpen(true);
-                        openModal1();
-                    }}
-                > 
-                   <p> Vorlage </p>
-                </button>
-           
-            </div>
-        ), 
-        3: ( 
-            <div style={{ textAlign: "left", fontSize: "30px" }}>
-                <p> Seid ihr alle fertig? Dann könntet ihr euch zusammen in einen Kreis setzen und jede:r stellt seine/ihre Flügel kurz vor (Was habe ich gemalt? Warum denke ich, dass dieses Nahrungsmittel wichtig ist?....). </p>
-                <p> Am Ende könntet ihr all die verschiedenen Bilder auch aufhängen und die Vielfalt bewundern. </p> 
-                <p>Zusatz: Es gibt offiziell zu jedem einzelnen SDG (Nachhaltigkeitsziel) jeweils ein Paar Flügel. Diese könnt ihr euch ansehen, wenn ihr auf den Button „Bild“ tippt.</p>
-                
-                <button
-                
                     className="Button"
                     type="button"
                     style={{
-                        background: "green  ",
+                        background: "#15b408",
                         borderStyle: "none",
-                        marginTop: "150px",
+                        marginTop: "100px",
+                        marginLeft: "700px",
+                        borderRadius: "30px 30px 30px 30px",
+                        padding: "20px"
+                        
                     }}
-                    
                     onClick={() => {
                         setIsOpen(true);
                         openModal2();
                     }}
-                > 
-                   <p> Bild </p>
+                >
+                    <p style={{ fontSize:"60px" }}> Bild </p>
                 </button>
             </div>
-
-        )
-        
+        ),
     };
 
     const VorlageÜberschrift = {
@@ -124,16 +122,16 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
             <div>
                 <p> Vorlage </p>
             </div>
-        )
-    }; 
+        ),
+    };
 
     const BeispielSDG02Überschrift = {
         1: (
             <div>
                 <p> offizielles Flügelpaar SDG02 </p>
             </div>
-        )
-    }
+        ),
+    };
 
     const Sdg02_Schmetterlingsflügel = {
         1: (
@@ -168,24 +166,25 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
             <div>
                 <p> Ende </p>
             </div>
-        )
-        
+        ),
     };
-
 
     function openModal1(): void {
         setModalOpened(1);
         if (modalOne === 2) {
             setModalOne(1);
-        }else{setModalOne(modalOne +1);}
-    } 
+        } else {
+            setModalOne(modalOne + 1);
+        }
+    }
 
     function openModal2(): void {
         setModalOpened(2);
-        if(modalTwo === 7){
+        if (modalTwo === 7) {
             setModalTwo(1);
+        } else {
+            setModalTwo(modalTwo + 1);
         }
-        else{setModalTwo(modalTwo +1);}
     }
     function incrementCount(): void {
         setText(showtext + 1);
@@ -254,8 +253,8 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                 {" "}
             </button>
         );
-    
- const modalContent = {
+
+    const modalContent = {
         1: (
             <div>
                 <div className="content-header">
@@ -290,7 +289,7 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                 {Sdg02_Schmetterlingsflügel[modalTwo]}
             </div>
         ),
-};
+    };
 
     modal = (
         <Modal
@@ -311,7 +310,6 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
             <p style={{ fontSize: "50px" }}>{modalContent[modalOpened]}</p>
         </Modal>
     );
-    
 
     modal = (
         <Modal
