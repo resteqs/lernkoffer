@@ -14,7 +14,7 @@ interface Props{
     
 }
 export const InfotextButtonGreen: React.FC<Props> = ({ showtext, text, setText }:Props ):JSX.Element => {
-     
+    
     function incrementCount(): void {
         setText(showtext += 1);
     }
