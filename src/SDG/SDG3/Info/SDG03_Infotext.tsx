@@ -11,98 +11,91 @@
 import * as React from "react";
 import renderer from "react-dom";
 import { Link } from "react-router-dom";
-import infotextbutton from "../../../../styles/Infotextbutton.module.css";
-import "../../../../styles/colour_sdgs.css";
-import "../../../../styles/infotext.css";
-import Logo from "../../../../SDGLogos/Goal-SDG02.png";
-import EG from "../../../../EG/EG2.png";
-import "../../Spiel/sdg02.css";
+import infotextbutton from "../../../styles/Infotextbutton.module.css";
+import "../../../styles/colour_sdgs.css";
+import "../../../styles/infotext.css";
+import Logo from "../../../SDGLogos/Goal-SDG03.png";
+import EG from "../../../EG/EG2.png";
 import ReactAudioPlayer from "react-audio-player";
 
-export const SDG02_Infotext = (): JSX.Element => {
+export const SDG03_Infotext = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     let [showtext, setText] = React.useState(1);
-    const sdg = "SDG02";
+    const sdg = "SDG03";
 
     const text = {
         1: (
             <div>
                 <p>
                     <b>
-                        „den Hunger beenden, Ernährungssicherheit und eine bessere Ernährung erreichen und eine
-                        nachhaltige Landwirtschaft fördern“
+                    “Ein gesundes Leben für alle Menschen jeden Alters gewährleisten und ihr Wohlergehen fördern”
                     </b>
                 </p>
             </div>
         ),
         2: (
             <div>
-                <p className="Infotext02">
-                    Wenn Menschen extrem hungern und unterernährt sind, kann es keine nachhaltige Entwicklung geben. Da
-                    sie so wenig Essen haben, werden sie geschwächt und können schneller krank werden. Infolgedessen
-                    können sie nicht mehr so viel arbeiten und verdienen weniger Geld. Ohne das können sie nicht mehr
-                    Essen kaufen. Das heißt, dass durch den Hunger und die Unterernährung eine Falle entsteht, aus
-                    welcher sie sich nicht so einfach befreien können.{" "}
+                <p className="Infotext03">
+                Es ist wichtig für den Aufbau wohlhabender Gesellschaften. Die meisten Länder, insbesondere arme
+                Länder, haben nicht genügend Gesundheitseinrichtungen, medizinische Versorgung und medizinisches
+                Personal. Im Falle eines gesundheitlichen Notfalls können Menschen in jedem Land, unabhängig von
+                seinem Reichtum, in den Bankrott oder in die Armut getrieben werden. {" "}
                 </p>
             </div>
         ),
         3: (
             <div>
-                <p className="Infotext02">
-                    Es gibt Menschen, die sich nicht regelmäßig gesund und ausgewogen, also abwechslungsreich, ernähren
-                    können. Das liegt dann daran, dass manche Dinge, wie Geld oder Nahrung, nicht ausreichend vorhanden
-                    sind.
+                <p className="Infotext03">
+                Wir müssen unsere Anstrengungen koordinieren, um eine universelle Gesundheitsversorgung und eine
+                nachhaltige Finanzierung der Gesundheit zu erreichen. Darüber hinaus werden wir durch neu entstehende
+                Gesundheitsgefahren herausgefordert.
                 </p>
             </div>
         ),
         4: (
             <div>
-                <p className="Infotext02">
-                    Ein Ernährungssystem (Anbauen &#10140; Verarbeiten &#10140; Verpacken &#10140; Transportieren
-                    &#10140; Verteilen &#10140; Handeln &#10140; Einkaufen &#10140; Zubereiten &#10140; Verzehren von
-                    Essen) kann von Konflikten, Klimakrisen, Heuschrecken-Plagen und Pandemien bedroht werden.
+                <p className="Infotext03">
+                Die Fortschritte in vielen Gesundheitsbereichen, z. B. bei der Senkung der Mütter- und
+                Kindersterblichkeit, bei der Erhöhung der Durchimpfungsrate und bei der Reduzierung einiger
+                Infektionskrankheiten, gehen weiter, aber das Tempo der Verbesserung hat sich verlangsamt.
+                Im Jahr 2018 erhielten schätzungsweise 19,4 Millionen Kinder im ersten Lebensjahr nicht die
+                notwendigen Impfstoffe.
                 </p>
             </div>
         ),
         5: (
             <div>
-                <p className="Infotext02">
-                    Wenn die Bürger:innen unsicher werden, produzieren sie weniger Nahrung, was dazu führt, dass es
-                    weniger Essen gibt und die Preise dafür steigen. Deshalb ist es wichtig, dass der Agrarsektor (=
-                    Landwirtschaft) mit Geld unterstützt wird. Dadurch können Hunger und Armut verringert werden, die
-                    Ernährung wird besser gesichert, es entstehen mehr Arbeitsplätze und die Anfälligkeit für
-                    Katastrophen oder andere Bedrohungen sinkt.
+                <p className="Infotext03">
+                Obwohl die Immunisierung (der Prozess der Verabreichung eines Impfstoffs zum Schutz vor Krankheiten)
+                eine der erfolgreichsten und kosteneffektivsten Gesundheitsmaßnahmen der Welt ist. Im Jahr 2017 war
+                nur etwa ein Drittel bis die Hälfte der Weltbevölkerung durch essenzielle Gesundheitsleistungen abgedeckt.
                 </p>
             </div>
         ),
         6: (
             <div>
-                <p className="Infotext02">
-                    Eine Welt ohne Hunger kann unser Arbeitsleben, unsere Gesundheit, Bildung, Gleichberechtigung und
-                    gesellschaftliche Entwicklung verbessern. Sie ist sehr wichtig, um eine bessere Zukunft für alle zu
-                    schaffen. Darüber hinaus sind wir mit Hunger nicht in der Lage die anderen Nachhaltigkeitsziele zu
-                    erreichen, da er dazu führt, dass wir uns nicht mehr so gut weiterentwickeln können.{" "}
+                <p className="Infotext03">
+                Krankheiten und Todesfälle durch übertragbare Krankheiten werden in die Höhe schnellen. Jedoch erfordert
+                 es ein starkes Engagement ein gesundes Leben für alle zu gewährleisten. Es ist aber wichtig, da die Vorteile 
+                 die Kosten überwiegen. Gesunde Menschen sind die Grundlage für gesunde Volkswirtschaften. {" "}
                 </p>
             </div>
         ),
         7: (
             <div>
-                <p className="Infotext02">
-                    Um Ernährung sicher zu stellen, müssen wir uns mit mehreren Themen befassen: z. B. mit dem Schutz
-                    der Gesellschaft, um sichere und nahrhafte Lebensmittel besonders für Kinder zu gewährleisten. Ein
-                    anderes Beispiel ist die Veränderung der Ernährungssysteme, damit die Welt nachhaltiger und
-                    inklusiver (= mehr alle miteinbeziehen) wird. Du kannst helfen, indem du bei Landwirten oder Märkten
-                    aus deiner Gegend einkaufst und dich für nachhaltige Lebensmittel entscheidest.
+                <p className="Infotext03">
+                Du kannst damit beginnen, deine eigene Gesundheit und die Gesundheit der Menschen in deiner Umgebung zu fördern
+                 und zu schützen, indem du gut informierte Entscheidungen triffst und zum Beispiel dich selbst und deine 
+                 zukünftigen Kinder impfen lässt.
                 </p>
             </div>
         ),
         8: (
             <div>
-                <p className="Infotext02">
-                    Außerdem ist es wichtig, eine gute Ernährung für alle zu unterstützen und Lebensmittelverschwendung
-                    zu bekämpfen. Auch Unternehmen und deine Regierung sollten Entscheidungen und Veränderungen treffen,
-                    die dieses Nachhaltigkeitsziel unterstützen. Bei diesen, sowie in deiner Gemeinde zählt deine Stimme
-                    als zukünftige:r Wähler:in und Verbraucher:in von Nahrung.
+                <p className="Infotext03">
+                Du kannst in deiner Gemeinde das Bewusstsein für die Bedeutung einer guten Gesundheit, eines gesunden
+                Lebensstils sowie für das Recht der Menschen auf eine hochwertige Gesundheitsversorgung schärfen, insbesondere
+                für die Schwächsten, wie Frauen und Kin-der.
                 </p>
             </div>
         ),
@@ -120,7 +113,7 @@ export const SDG02_Infotext = (): JSX.Element => {
         ),
         3: (
             <div>
-                <p>Was ist das Problem?</p>
+                <p>Warum?</p>
             </div>
         ),
         4: (
@@ -226,7 +219,7 @@ export const SDG02_Infotext = (): JSX.Element => {
         <div>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
-                    Kein Hunger <img className="sdglogo" alt="logo" src={Logo} />
+                    Gesundheit und Wohlergehen <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
             <div className="infotextbox">
@@ -248,4 +241,4 @@ export const SDG02_Infotext = (): JSX.Element => {
         </div>
     );
 };
-renderer.render(<SDG02_Infotext />, document.getElementById("root"));
+renderer.render(<SDG03_Infotext />, document.getElementById("root"));
