@@ -24,7 +24,7 @@ export const InfotextButtonRed: React.FC<Props> = ({ showtext, text, setText }:P
         <span className={infotextbutton.shadow} />
         <span className={infotextbutton.edge} />
         <span className={infotextbutton.front}> 
-           <p className={infotextbutton.buttontext}>{{ text }}</p> 
+           <p className={infotextbutton.buttontext}>{ text}</p> 
         </span>
         </button>
     );
