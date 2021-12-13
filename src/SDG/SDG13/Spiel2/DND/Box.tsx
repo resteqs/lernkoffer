@@ -1,7 +1,4 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable react/react-in-jsx-scope */
-import { green } from "@material-ui/core/colors";
-import { CSSProperties, FC, memo } from "react";
+import React, { CSSProperties, FC, memo } from "react";
 import { useDrag } from "react-dnd";
 
 const style: CSSProperties = {
@@ -31,25 +28,23 @@ export interface BoxProps {
     isDropped: boolean;
 }
 
-// eslint-disable-next-line react/prop-types
-export const Box: FC<BoxProps> = memo(function Box({ name, image, type, isDropped }) {
+export const Box: FC<BoxProps> = memo((props: BoxProps) => {
     const [{ opacity }, drag] = useDrag(
         () => ({
-            item: { image, type },
+            item: { image: props.image, type: props.type },
             collect: (monitor) => ({
                 opacity: monitor.isDragging() ? 0.4 : 1,
             }),
         }),
-        [image, type],
+        [props.image, props.type],
     );
 
     return (
-        // eslint-disable-next-line jsx-a11y/aria-role
-        <div ref={drag} role="Box" style={{ ...style, opacity }}>
-            {isDropped ? (
-                <img style={coolerStyle} src={image} alt=" " />
+        <div ref={drag} style={{ ...style, opacity }}>
+            {props.isDropped ? (
+                <img style={coolerStyle} src={props.image} alt=" " />
             ) : (
-                <img style={correctDropped} src={image} alt=" " />
+                <img style={correctDropped} src={props.image} alt=" " />
             )}
         </div>
     );

@@ -1,4 +1,3 @@
-// eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import logo14 from "./logo14.png";
@@ -11,16 +10,7 @@ export class infotext14 extends React.Component {
                 <nav className="infoNav">
                     <div className="infoHeader">SDG 14</div>
                     <div className="infoNavLinks">
-                        <Link
-                            activeClass="active"
-                            to="section1"
-                            // eslint-disable-next-line react/jsx-boolean-value
-                            spy={true}
-                            // eslint-disable-next-line react/jsx-boolean-value
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
+                        <Link activeClass="active" to="section1" spy smooth offset={-70} duration={500}>
                             Why?
                         </Link>
                         <Link

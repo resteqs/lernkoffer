@@ -248,4 +248,3 @@ export const SDG02_Infotext = (): JSX.Element => {
         </div>
     );
 };
-renderer.render(<SDG02_Infotext />, document.getElementById("root"));

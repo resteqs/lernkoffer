@@ -8,7 +8,7 @@ import * as React from "react";
 
 import Logo from "../../../SDGLogos/Goal-SDG02.png";
 import { Link } from "react-router-dom";
-import { InfotextButtonGreen } from "../../../Components/Buttons/InfotextButtonGreen";
+import { InfotextButton } from "../../../Components/Buttons/InfotextButton";
 import croissant from "./media/frenchdisguistingthing.png";
 import bread from "./media/germanbreadsprakeldwithstones.png";
 import choko from "./media/chokolalalalalalalalalallalalall.png";
@@ -178,14 +178,12 @@ export const SDG02_Quiz = (): JSX.Element => {
         5: "Falsch",
     };
 
-    let answerCW =
-        itemSelected === 0 ? (
-            <p>Falsch</p>
-        ) : (itemSelected === 1 ? (
-            <p>{answerNumbers1[showtext]}</p>
-        ) : (
-            <p>{answerNumbers2[showtext]}</p>
-        ));
+    let answerCW: JSX.Element;
+    if (itemSelected === 1) {
+        answerCW = <p>{answerNumbers1[showtext]}</p>;
+    } else {
+        answerCW = itemSelected === 0 ? <p>Falsch</p> : <p>{answerNumbers2[showtext]}</p>;
+    }
     let answer = (
         <p style={{ fontSize: "40px" }}>
             {" "}
@@ -327,7 +325,9 @@ export const SDG02_Quiz = (): JSX.Element => {
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
                 <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
-                    <InfotextButtonGreen showtext={showtext} text="Weiter" setText={setText} />
+                    <InfotextButton onClick={() => setText((prev) => prev + 1)} version="green">
+                        Weiter
+                    </InfotextButton>
                 </div>
             </div>
         ) : (
@@ -343,7 +343,7 @@ export const SDG02_Quiz = (): JSX.Element => {
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
                     <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
-                        <InfotextButtonGreen showtext={showtext} text="Weiter" setText={setText} />
+                        <InfotextButton version="green">Weiter</InfotextButton>
                     </div>
                 </Link>{" "}
             </div>
@@ -358,13 +358,9 @@ export const SDG02_Quiz = (): JSX.Element => {
             <div style={{ marginTop: "10px" }} className="personCheckAnswerButton">
                 {" "}
                 <div style={{ position: "absolute", top: "950px" }}>
-                    <button className={infotextbutton.pushable} type="button" onClick={() => setIsOpen(true)}>
-                        <span className={infotextbutton.shadow} />
-                        <span className={infotextbutton.edgegreen} />
-                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                            <p className={infotextbutton.buttontext}>Überprüfe</p>
-                        </span>
-                    </button>
+                    <InfotextButton onClick={() => setIsOpen(true)} version="green">
+                        Überprüfe
+                    </InfotextButton>
                 </div>
             </div>
         ) : (
