@@ -1,6 +1,3 @@
-/* eslint-disable eslint-comments/disable-enable-pair */
-/* eslint-disable unicorn/filename-case */
-
 import * as React from "react";
 
 interface Props{

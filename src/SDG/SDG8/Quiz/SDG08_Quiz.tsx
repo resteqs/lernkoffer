@@ -18,7 +18,7 @@ import thumbup from "../../SDG5/Quiz/thumbs/like.png";
 import thumbdown from "../../SDG5/Quiz/thumbs/dislike.png";
 
 import { Link } from "react-router-dom";
-import { InfotextButtonGreen } from "../../../Components/Buttons/InfotextButtonGreen";
+import { InfotextButton } from "../../../Components/Buttons/InfotextButton";
 
 interface States {
     shouldShowModal: boolean;
@@ -55,7 +55,7 @@ export const SDG08_Quiz = (): JSX.Element => {
     function select5(): void {
         setSelectedItem(5);
     }
-    
+
     const Question = {
         2: (
             <div>
@@ -542,7 +542,9 @@ export const SDG08_Quiz = (): JSX.Element => {
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
                 <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
-                    <InfotextButtonGreen showtext={showtext} text="Weiter" setText = {setText}/>
+                    <InfotextButton onClick={() => setIsOpen(true)} version="green">
+                        Überprüfe
+                    </InfotextButton>
                 </div>
             </div>
         ) : (
@@ -622,5 +624,3 @@ export const SDG08_Quiz = (): JSX.Element => {
         </div>
     );
 };
-// eslint-disable-next-line react/jsx-pascal-case
-renderer.render(<SDG08_Quiz />, document.getElementById("root"));

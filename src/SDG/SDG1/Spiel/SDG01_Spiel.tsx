@@ -1,10 +1,3 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable prefer-const */
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable unicorn/filename-case */
-
 import * as React from "react";
 import renderer from "react-dom";
 import infotextbutton from "../../../styles/Infotextbutton.module.css";
@@ -61,9 +54,9 @@ export const SDG01_Spiel = (): JSX.Element => {
     let ende;
 
     answerCW1 =
-        showtext === 4 ? (itemSelected === 0 || itemSelected === 1 ? <p>Wrong</p> : <p>Correct</p>) : <div> </div>;
+        showtext === 4 ? itemSelected === 0 || itemSelected === 1 ? <p>Wrong</p> : <p>Correct</p> : <div> </div>;
     answerCW2 =
-        showtext === 7 ? (itemSelected === 0 || itemSelected === 1 ? <p>Wrong</p> : <p>Correct</p>) : <div> </div>;
+        showtext === 7 ? itemSelected === 0 || itemSelected === 1 ? <p>Wrong</p> : <p>Correct</p> : <div> </div>;
 
     answer1 =
         showtext === 4 ? (
@@ -487,5 +480,3 @@ export const SDG01_Spiel = (): JSX.Element => {
         </div>
     );
 };
-// eslint-disable-next-line react/jsx-pascal-case
-renderer.render(<SDG01_Spiel />, document.getElementById("root"));

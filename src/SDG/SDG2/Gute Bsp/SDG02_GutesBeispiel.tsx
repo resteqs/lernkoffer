@@ -58,30 +58,48 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
         ),
         2: (
             <div>
-                <p style={{ float:"left", width:"40%", textAlign: "left", fontSize: "25px" }}>
+                <p style={{ float: "left", width: "40%", textAlign: "left", fontSize: "25px" }}>
                     <ul>
                         <li>
-                            1. Das Ziel: Weltweit soll jeder Mensch eine sichere Ernährung haben und diese sollte nachhaltig gestaltet werden. Daher sollen auch die Bildung, der Zugang zu sauberem Wasser und eine umweltfreundliche Energieversorgung garantiert werden. Das alles soll bis zum Jahr 2030 erreicht werden.
+                            1. Das Ziel: Weltweit soll jeder Mensch eine sichere Ernährung haben und diese sollte
+                            nachhaltig gestaltet werden. Daher sollen auch die Bildung, der Zugang zu sauberem Wasser
+                            und eine umweltfreundliche Energieversorgung garantiert werden. Das alles soll bis zum Jahr
+                            2030 erreicht werden.
                         </li>
                         <li>
                             {" "}
-                            2. Die Arbeit: Die Organisation setzt sich für ein selbstbestimmtes Leben in Würde und Gerechtigkeit für jeden Menschen unter dem Motto „Zero Hunger wherever we work by 2030“ (Kein Hunger, wo immer wir arbeiten, bis zum Jahr 2030) ein.
+                            2. Die Arbeit: Die Organisation setzt sich für ein selbstbestimmtes Leben in Würde und
+                            Gerechtigkeit für jeden Menschen unter dem Motto „Zero Hunger wherever we work by 2030“
+                            (Kein Hunger, wo immer wir arbeiten, bis zum Jahr 2030) ein.
                         </li>
                         <li>
                             {" "}
-                            3. Die Themen: Hunger kann man nicht dadurch beenden, Leute nur mit Essen zu versorgen. Egal aus welchen Gründen ein Mensch zu wenig zu essen hat, muss ihm/ihr aber geholfen werden. Das kann auf sehr vielen verschiedenen Wegen passieren. Einige wichtige Dinge dabei sind, Wissen über gesunde Ernährung und nachhaltige Landwirtschaft zu vermitteln.
+                            3. Die Themen: Hunger kann man nicht dadurch beenden, Leute nur mit Essen zu versorgen. Egal
+                            aus welchen Gründen ein Mensch zu wenig zu essen hat, muss ihm/ihr aber geholfen werden. Das
+                            kann auf sehr vielen verschiedenen Wegen passieren. Einige wichtige Dinge dabei sind, Wissen
+                            über gesunde Ernährung und nachhaltige Landwirtschaft zu vermitteln.
                         </li>
-                        
                     </ul>
                 </p>
-    
-                <p style={{ float:"right", width:"40%", textAlign: "left", fontSize: "25px" }}>
+
+                <p style={{ float: "right", width: "40%", textAlign: "left", fontSize: "25px" }}>
                     <ul>
-                        <li> a.) Insgesamt wird diese Arbeit in 35 Ländern weltweit durch hunderte Projekte umgesetzt.</li>
-                        <li> b.) Zusätzlich werden Gründungen von Unternehmen und Gruppen unterstützt, damit Menschen sich zusammen für ihre Rechte einfacher stark machen können. </li>
-                        <li> c.) Wichtig hierbei ist, dass die Verbesserungen nicht nur kurzfristig sein sollen, sondern so lang wie möglich, also im Idealfall für immer, anhalten sollen. Um diese Ziele erreichen zu können, arbeitet die Welthungerhilfe mit verschiedenen Partnern zusammen.</li>
-                    </ul>    
-                
+                        <li>
+                            {" "}
+                            a.) Insgesamt wird diese Arbeit in 35 Ländern weltweit durch hunderte Projekte umgesetzt.
+                        </li>
+                        <li>
+                            {" "}
+                            b.) Zusätzlich werden Gründungen von Unternehmen und Gruppen unterstützt, damit Menschen
+                            sich zusammen für ihre Rechte einfacher stark machen können.{" "}
+                        </li>
+                        <li>
+                            {" "}
+                            c.) Wichtig hierbei ist, dass die Verbesserungen nicht nur kurzfristig sein sollen, sondern
+                            so lang wie möglich, also im Idealfall für immer, anhalten sollen. Um diese Ziele erreichen
+                            zu können, arbeitet die Welthungerhilfe mit verschiedenen Partnern zusammen.
+                        </li>
+                    </ul>
                 </p>
 
                 <button
@@ -116,7 +134,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
     const Lösung = {
         1: (
             <div>
-                <p> 
+                <p>
                     <ul>
                         <li> 1. zu c.) </li>
                         <li> 2. zu a.) </li>
@@ -139,7 +157,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
         ),
         3: (
             <div>
-                <p>  </p>
+                <p> </p>
             </div>
         ),
     };
@@ -283,5 +301,3 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
         </div>
     );
 };
-// eslint-disable-next-line react/jsx-pascal-case
-renderer.render(<SDG02_GutesBeispiel />, document.getElementById("root"));
