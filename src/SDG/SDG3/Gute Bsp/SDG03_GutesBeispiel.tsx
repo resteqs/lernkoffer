@@ -27,11 +27,11 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
     const [modalFour, setModalFour] = React.useState(0);
     const [modalFive, setModalFive] = React.useState(0);
     const [modalSix, setModalSix] = React.useState(0);
-    const maxslide = 4;
+    const maxslide = 5;
 
     const text = {
         1: (
-            <div>
+            <div style={{ textAlign: "left", fontSize: "30px" }}>
                 <p>
                     {" "}
                     Das ist das Logo der Hilfsorganisation „Ärzte ohne Grenzen“ beziehungsweise auf Französisch
@@ -49,9 +49,13 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
                     {" "}
                     Einsatzländer: ungefähr 70 Länder, in denen Erwachsene und Kinder Schwierigkeiten haben zu überleben
                 </p>
+            </div>
+        ),
+        2: ( 
+            <div style={{ textAlign: "left", fontSize: "30px" }}>
                 <p>
                     {" "}
-                    leitlinien
+                    Leitlinien
                     <ul>
                         <li>
                             {" "}
@@ -78,8 +82,8 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
                 </p>
             </div>
         ),
-        2: (
-            <div>
+        3: (
+            <div style = {{ textAlign: "left", fontSize: "30px" }}>
                 <p>
                     <ul>
                         <li> - Bekämpfung und Behandlung von Krankheiten</li>
@@ -98,16 +102,17 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
                 </p>
             </div>
         ),
-        3: (
+        4: (
             <div>
-                <p> Wo wurde Ärtze ohne Grenzen gegründet</p>
+                <p> Wo wurde Ärtzte ohne Grenzen gegründet?</p>
                 <button
                     type="button"
                     style={{
                         background: "#15b408",
                         borderStyle: "none",
-                        marginTop: "100px",
-                        marginLeft: "500px",
+                        position: "absolute",
+                        marginLeft: "-800px", 
+                        marginTop: "300px",
                         borderRadius: "30px 30px 30px 30px",
                         padding: "20px",
                     }}
@@ -123,8 +128,9 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
                     style={{
                         background: "#15b408",
                         borderStyle: "none",
-                        marginTop: "100px",
-                        marginLeft: "700px",
+                        position: "absolute",
+                        marginLeft: "600px",
+                        marginTop: "300px",
                         borderRadius: "30px 30px 30px 30px",
                         padding: "20px",
                     }}
@@ -140,8 +146,9 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
                     style={{
                         background: "#15b408",
                         borderStyle: "none",
-                        marginTop: "100px",
-                        marginLeft: "900px",
+                        position: "absolute", 
+                        marginLeft: "-100px",
+                        marginTop: "300px",
                         borderRadius: "30px 30px 30px 30px",
                         padding: "20px",
                     }}
@@ -154,7 +161,7 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
                 </button>
             </div>
         ),
-        4: (
+        5: (
             <div>
                 <p> Welche Aktivitäten stehen bei der Organisation im Mittelpunkt? </p>
                 <button
@@ -162,8 +169,9 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
                     style={{
                         background: "#15b408",
                         borderStyle: "none",
-                        marginTop: "100px",
-                        marginLeft: "500px",
+                        position: "absolute",
+                        marginLeft: "-900px", 
+                        marginTop: "300px",
                         borderRadius: "30px 30px 30px 30px",
                         padding: "20px",
                     }}
@@ -179,8 +187,9 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
                     style={{
                         background: "#15b408",
                         borderStyle: "none",
-                        marginTop: "100px",
-                        marginLeft: "700px",
+                        position: "absolute",
+                        marginLeft: "-200px", 
+                        marginTop: "300px",
                         borderRadius: "30px 30px 30px 30px",
                         padding: "20px",
                     }}
@@ -196,8 +205,9 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
                     style={{
                         background: "#15b408",
                         borderStyle: "none",
-                        marginTop: "100px",
-                        marginLeft: "900px",
+                        position: "absolute", 
+                        marginLeft: "400px",
+                        marginTop: "300px",
                         borderRadius: "30px 30px 30px 30px",
                         padding: "20px",
                     }}
@@ -219,12 +229,12 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
         ),
         2: (
             <div>
-                <p>Aufgabengebiete</p>
+                <p>Einleitung</p>
             </div>
         ),
         3: (
             <div>
-                <p>Fragen</p>
+                <p>Aufgabengebiete</p>
             </div>
         ),
         4: (
@@ -290,7 +300,7 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
 
     function openModal1(): void {
         setModalOpened(1);
-        if (modalOne === 2) {
+        if (modalOne === 4) {
             setModalOne(1);
         } else {
             setModalOne(modalOne + 1);
@@ -299,7 +309,7 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
 
     function openModal2(): void {
         setModalOpened(2);
-        if (modalTwo === 2) {
+        if (modalTwo === 4) {
             setModalTwo(2);
         } else {
             setModalTwo(modalTwo + 2);
@@ -307,7 +317,7 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
     }
     function openModal3(): void {
         setModalOpened(3);
-        if (modalTwo === 2) {
+        if (modalTwo === 4) {
             setModalThree(3);
         } else {
             setModalThree(modalThree + 3);
@@ -315,7 +325,7 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
     }
     function openModal4(): void {
         setModalOpened(4);
-        if (modalFour === 3) {
+        if (modalFour === 5) {
             setModalFour(4);
         } else {
             setModalFour(modalFour + 4);
@@ -323,7 +333,7 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
     }
     function openModal5(): void {
         setModalOpened(5);
-        if (modalFive === 3) {
+        if (modalFive === 5) {
             setModalFive(5);
         } else {
             setModalFour(modalFive + 5);
@@ -331,7 +341,7 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
     }
     function openModal6(): void {
         setModalOpened(6);
-        if (modalSix === 3) {
+        if (modalSix === 5) {
             setModalSix(4);
         } else {
             setModalFour(modalSix + 6);
@@ -350,7 +360,7 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
     let modal;
 
     buttonBack =
-        showtext >= 4 ? (
+        showtext >= 5 ? (
             <div className="backbutton" style={{ marginTop: "50px" }}>
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
