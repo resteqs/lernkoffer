@@ -66,6 +66,7 @@ import { SDG03_FreieArbeit } from "./SDG/SDG3/Freie Arbeit/SDG03_FreieArbeit";
 import { SDG03_Infotext } from "./SDG/SDG3/Info/SDG03_Infotext";
 
 /**                                 Quiz                                     */
+import { SDG03_Quiz } from "./SDG/SDG3/Quiz/SDG03_Quiz";
 /**                                Spiel                                     */
 import { SDG03_Spiel } from "./SDG/SDG3/Spiel/SDG03_Spiel";
 /**                                Video                                     */
@@ -350,6 +351,7 @@ export const App = (): JSX.Element => {
 
 
 /**                                 Quiz                                     */
+<Route exact path="/SDG03/Quiz" component={SDG03_Quiz}/>
 /**                                Spiel                                     */
             <Route exact path="/SDG03/Spiel" component={SDG03_Spiel}/>
 /**                                Video                                     */
