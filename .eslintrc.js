@@ -44,7 +44,15 @@ module.exports = {
         "unicorn/prevent-abbreviations": "off",
         "@typescript-eslint/naming-convention": "off",
         "import/no-useless-path-segments": "off",
-        "unicorn/filename-case": "off",
+        "unicorn/filename-case": [
+            "warn",
+            {
+                cases: {
+                    pascalCase: true,
+                    camelCase: true,
+                },
+            },
+        ],
         "@typescript-eslint/no-empty-interface": "off",
         "promise/no-return-wrap": "off",
         "no-console": "off",
@@ -58,14 +66,9 @@ module.exports = {
         ],
         "no-plusplus": "off",
         "unicorn/no-null": "off",
-        "import/no-cycle": "warn",
+        "import/no-cycle": "off",
         "import/order": "warn",
         "react/static-property-placement": "off",
         "unicorn/prefer-query-selector": "off",
-        // Disabling this is okay, since it will be a static tab
-        "no-alert": "off",
-        // It's okay to deactivate this since we use TS
-        "react/require-default-props": "off",
-        "jsx-a11y/media-has-caption": "off",
     },
 };

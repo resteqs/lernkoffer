@@ -46,7 +46,8 @@ export const SDG11_GB = (): JSX.Element => {
                         <li>
                             {" "}
                             - Optional: Farbe oder Wolle, um es bunter zu machen; Fäden und Perlen oder Knöpfe (zum
-                            Beispiel, wenn du es wie ein Tier gestalten möchtest, <p>das Beine hat</p>{" "}
+                            Beispiel, wenn du es wie ein Tier gestalten möchtest,{" "} 
+                            <p>das Beine hat</p> {" "} 
                         </li>
                     </ul>
                 </p>
@@ -511,7 +512,7 @@ export const SDG11_GB = (): JSX.Element => {
         );
     let buttonEnd =
         showtext === 5 ? (
-            <div className="nextbutton">
+            <div className="nextbutton" >
                 {" "}
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
@@ -579,3 +580,5 @@ export const SDG11_GB = (): JSX.Element => {
         </div>
     );
 };
+// eslint-disable-next-line react/jsx-pascal-case
+renderer.render(<SDG11_GB />, document.getElementById("root"));

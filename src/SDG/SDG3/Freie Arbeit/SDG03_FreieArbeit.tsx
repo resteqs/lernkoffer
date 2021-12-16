@@ -12,6 +12,7 @@ import Logo from "../../../SDGLogos/Goal-SDG03.png";
 import Spielfeld from "./Spielfeld 03.png";
 import "../sdg3.css";
 
+
 export const SDG03_FreieArbeit = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
     let [showtext, setText] = React.useState(1);
@@ -23,7 +24,7 @@ export const SDG03_FreieArbeit = (): JSX.Element => {
         3: "Das Spielfeld ist ein Kreis, weil ihr so viele Runden spielen könnt, wie ihr möchtet. Auf den Feldern mit der Blume darfst du etwas Nettes über einen anderen Spieler/eine andere Spielerin sagen. Wenn du auf einem Spielfeld mit einem Buch ankommst, dann denke dir etwas aus, das du selbst sehr gut kannst und möchtest, dass die anderen wissen.",
         4: "Die Dinge, die ihr sagt, können ganz unterschiedlich sein. Zum Beispiel könntet ihr sagen, dass ihr die Augenfarbe einer Mitspielerin/eines Mitspielers sehr schön findet. Oder wenn ihr selbst zum Beispiel sehr gut zeichnen könnt oder gerne Sport macht, oder sonst etwas gerne macht, dann könnt ihr das den anderen mitteilen",
         5: "Außerdem könnt ihr euch die Sachen aufschreiben, die andere zu euch sagen und wenn es euch einmal nicht so gut geht, dann könnt ihr euch daran erinnern, was ihr alles könnt und was andere an euch toll finden. Hoffentlich geht es euch dann auch gleich wieder besser.",
-        6: <img className="Spielfeld03" src={Spielfeld} alt="" />,
+        6: <img className = "Spielfeld03" src={Spielfeld} alt=""/>
     };
     const header = {
         1: "Einleitung",
@@ -31,6 +32,7 @@ export const SDG03_FreieArbeit = (): JSX.Element => {
         3: "Spielablauf",
         4: "Spielablauf",
         5: "Spielablauf",
+    
     };
     function incrementCount(): void {
         setText(showtext + 1);
@@ -99,6 +101,7 @@ export const SDG03_FreieArbeit = (): JSX.Element => {
                 {" "}
             </button>
         );
+    
 
     // eslint-disable-next-line prefer-const
     return (
@@ -122,3 +125,5 @@ export const SDG03_FreieArbeit = (): JSX.Element => {
         </div>
     );
 };
+// eslint-disable-next-line react/jsx-pascal-case
+renderer.render(<SDG03_FreieArbeit />, document.getElementById("root"));

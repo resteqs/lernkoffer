@@ -1,16 +1,26 @@
-import React from "react";
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable prefer-const */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable unicorn/filename-case */
+import * as React from "react";
 import classNames from "classnames";
-import Modal from "react-modal";
+import a from "./letter-a.png";
 import b from "./letter-b.png";
 import Logo from "../../../SDGLogos/Goal-SDG06.png";
+import Modal from "react-modal";
 import infotextbutton from "../../../styles/Infotextbutton.module.css";
-import { InfotextButton } from "../../../Components/Buttons/InfotextButton";
 
+interface States {
+    shouldShowModal: boolean;
+    onlyCloseWithButton: boolean;
+}
+
+// eslint-disable-next-line react/prefer-stateless-function
 export const Quiz = (): JSX.Element => {
     const sdg = "SDG07";
     const [modalIsOpen, setIsOpen] = React.useState(false);
-    const [showtext, setText] = React.useState(1);
-    const [itemSelected, setSelectedItem] = React.useState(0);
+    let [showtext, setText] = React.useState(1);
+    let [itemSelected, setSelectedItem] = React.useState(0)
     const questionsNumber = 4;
 
     const button1class = classNames("pushable", "answerButtonleft");
@@ -24,12 +34,12 @@ export const Quiz = (): JSX.Element => {
     function decrementCount(): void {
         setText(showtext - 1);
     }
-
-    function select1(): void {
+    function select1(): void
+    {
         setSelectedItem(1);
     }
-
-    function select2(): void {
+    function select2(): void
+    {
         setSelectedItem(2);
     }
 
@@ -75,60 +85,49 @@ export const Quiz = (): JSX.Element => {
         4: "Wrong",
     };
 
-    let answerCW: JSX.Element;
-    if (itemSelected === 1) {
-        answerCW = <p>{answerNumbers1[showtext]}</p>;
-    } else {
-        answerCW = itemSelected === 0 ? <p>Wrong</p> : <p>{answerNumbers2[showtext]}</p>;
-    }
+    let answerCW;
+    let answer;
+    let buttonCheck;
+    let question;
+    let button1;
+    let button2;
 
-    const answer = (
-        <p style={{ fontSize: "40px" }}>
-            <b>Antwort:</b>
-            {Explanation[showtext]}{" "}
-        </p>
-    );
-    const modal = (
-        <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={() => setIsOpen(false)}
-            overlayClassName={{
-                base: "overlay-base",
-                afterOpen: "overlay-after",
-                beforeClose: "overlay-before",
-            }}
-            className={{
-                base: "content-base",
-                afterOpen: "content-after",
-                beforeClose: "content-before",
-            }}
-            closeTimeoutMS={50}
-        >
-            <div className="content-header">
-                {answerCW}
-                <button
-                    type="button"
-                    className="personCheckOkButton"
-                    onClick={() => {
-                        setIsOpen(false);
-                        incrementCount();
-                        setSelectedItem(0);
-                    }}
-                >
-                    <b>Okay</b>
-                </button>
-            </div>
-            {answer}
-        </Modal>
-    );
+    let modal;
+    answerCW = itemSelected === 0 ?(<p>Wrong</p>):( itemSelected === 1 ?( <p>{answerNumbers1[showtext]}</p> ):(<p>{answerNumbers2[showtext]}</p>))
+    answer = <p style={{ fontSize: "40px" }}> <b>Antwort:</b>{Explanation[showtext]} </p>
+    modal =
+    <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setIsOpen(false)}
+        overlayClassName={{
+          base: "overlay-base",
+          afterOpen: "overlay-after",
+          beforeClose: "overlay-before"
+        }}
+        className={{
+          base: "content-base",
+          afterOpen: "content-after",
+          beforeClose: "content-before"
+        }}
+        closeTimeoutMS={50}
+      >
 
-    const buttonCheck =
+
+        <div className="content-header">{answerCW}<button type="button" className="personCheckOkButton" onClick={() => {setIsOpen(false); incrementCount(); setSelectedItem(0) }}><b>Okay</b></button></div>
+        {answer}
+      </Modal>
+
+buttonCheck =
         showtext < 10 ? (
             <div style={{ marginTop: "10px" }} className="personCheckAnswerButton">
                 {" "}
-                <InfotextButton onClick={() => setIsOpen(true)} version="green">
-                    Weiter
-                </InfotextButton>
+                <button className={infotextbutton.pushable} type="button" onClick={() => setIsOpen(true)}>
+                    <span className={infotextbutton.shadow} />
+                    <span className={infotextbutton.edgegreen} />
+                    <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                        <p className={infotextbutton.buttontext}>Überprüfe</p> 
+                    </span>
+                </button>
             </div>
         ) : (
             <button className="buttonInvisible" type="button">
@@ -136,68 +135,15 @@ export const Quiz = (): JSX.Element => {
             </button>
         );
 
-    const button1 = (
-        <button
-            type="button"
-            style={{
-                marginLeft: "150px",
-                marginTop: "60px",
-                background: "none",
-                borderColor: "blue",
-                borderWidth: "11px",
-                borderRadius: "15px",
-            }}
-            className={itemSelected === 1 ? "selectedPerson" : ""}
-            onClick={select1}
-        >
-            <div
-                style={{
-                    width: "500px",
-                    height: "500px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
-            >
-                <p style={{ fontSize: "190px" }}>Ja</p>
-            </div>
-        </button>
-    );
+button1 =  <button type="button" style={{ marginLeft: "150px",marginTop:"60px", background: "none", borderColor :"blue" , borderWidth: "11px", borderRadius: "15px" }} className={(itemSelected === 1) ? 'selectedPerson': ''} onClick={() => select1()}><div  style={{ width: "500px", height: "500px", display: "flex", justifyContent: "center", alignItems: "center" , }}><p style ={{ fontSize: "190px" }}>Ja</p> </div> </button>
 
-    const button2 = (
-        <button
-            type="button"
-            style={{
-                marginRight: "150px",
-                marginTop: "60px",
-                float: "right",
-                background: "none",
-                borderColor: "blue",
-                borderWidth: "11px",
-                borderRadius: "15px",
-            }}
-            className={itemSelected === 2 ? "selectedPerson" : ""}
-            onClick={select2}
-        >
-            <div
-                style={{
-                    width: "500px",
-                    height: "500px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
-            >
-                <p style={{ fontSize: "190px" }}>Ja</p>
-            </div>
-        </button>
-    );
+button2= <button type="button" style={{ marginRight: "150px", marginTop:"60px", float: "right", background: "none", borderColor :"blue" , borderWidth: "11px", borderRadius: "15px" }} className={(itemSelected === 2) ? 'selectedPerson': ''} onClick={() => select2()}><div  style={{ width: "500px", height: "500px", display: "flex", justifyContent: "center", alignItems: "center" , }}><p style ={{ fontSize: "190px" }}>Ja</p> </div> </button>
 
-    const question =
+question =
         showtext !== 10 ? (
             <div style={{ textAlign: "center" }}>
-                <p style={{ marginTop: "60px", marginLeft: "50px", fontSize: "50px" }} className="underlinedHeader">
-                    {Question[showtext]}
+                <p style={{ marginTop: "60px", marginLeft: "50px", fontSize: "50px",  }} className="underlinedHeader">
+                {Question[showtext]}
                 </p>
             </div>
         ) : (
@@ -221,3 +167,4 @@ export const Quiz = (): JSX.Element => {
         </div>
     );
 };
+// eslint-disable-next-line react/jsx-pascal-case

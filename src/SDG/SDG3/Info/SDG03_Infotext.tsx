@@ -27,75 +27,75 @@ export const SDG03_Infotext = (): JSX.Element => {
         1: (
             <div>
                 <p>
-                    <b>“Ein gesundes Leben für alle Menschen jeden Alters gewährleisten und ihr Wohlergehen fördern”</b>
+                    <b>
+                    “Ein gesundes Leben für alle Menschen jeden Alters gewährleisten und ihr Wohlergehen fördern”
+                    </b>
                 </p>
             </div>
         ),
         2: (
             <div>
                 <p className="Infotext03">
-                    Es ist wichtig für den Aufbau wohlhabender Gesellschaften. Die meisten Länder, insbesondere arme
-                    Länder, haben nicht genügend Gesundheitseinrichtungen, medizinische Versorgung und medizinisches
-                    Personal. Im Falle eines gesundheitlichen Notfalls können Menschen in jedem Land, unabhängig von
-                    seinem Reichtum, in den Bankrott oder in die Armut getrieben werden.{" "}
+                Es ist wichtig für den Aufbau wohlhabender Gesellschaften. Die meisten Länder, insbesondere arme
+                Länder, haben nicht genügend Gesundheitseinrichtungen, medizinische Versorgung und medizinisches
+                Personal. Im Falle eines gesundheitlichen Notfalls können Menschen in jedem Land, unabhängig von
+                seinem Reichtum, in den Bankrott oder in die Armut getrieben werden. {" "}
                 </p>
             </div>
         ),
         3: (
             <div>
                 <p className="Infotext03">
-                    Wir müssen unsere Anstrengungen koordinieren, um eine universelle Gesundheitsversorgung und eine
-                    nachhaltige Finanzierung der Gesundheit zu erreichen. Darüber hinaus werden wir durch neu
-                    entstehende Gesundheitsgefahren herausgefordert.
+                Wir müssen unsere Anstrengungen koordinieren, um eine universelle Gesundheitsversorgung und eine
+                nachhaltige Finanzierung der Gesundheit zu erreichen. Darüber hinaus werden wir durch neu entstehende
+                Gesundheitsgefahren herausgefordert.
                 </p>
             </div>
         ),
         4: (
             <div>
                 <p className="Infotext03">
-                    Die Fortschritte in vielen Gesundheitsbereichen, z. B. bei der Senkung der Mütter- und
-                    Kindersterblichkeit, bei der Erhöhung der Durchimpfungsrate und bei der Reduzierung einiger
-                    Infektionskrankheiten, gehen weiter, aber das Tempo der Verbesserung hat sich verlangsamt. Im Jahr
-                    2018 erhielten schätzungsweise 19,4 Millionen Kinder im ersten Lebensjahr nicht die notwendigen
-                    Impfstoffe.
+                Die Fortschritte in vielen Gesundheitsbereichen, z. B. bei der Senkung der Mütter- und
+                Kindersterblichkeit, bei der Erhöhung der Durchimpfungsrate und bei der Reduzierung einiger
+                Infektionskrankheiten, gehen weiter, aber das Tempo der Verbesserung hat sich verlangsamt.
+                Im Jahr 2018 erhielten schätzungsweise 19,4 Millionen Kinder im ersten Lebensjahr nicht die
+                notwendigen Impfstoffe.
                 </p>
             </div>
         ),
         5: (
             <div>
                 <p className="Infotext03">
-                    Obwohl die Immunisierung (der Prozess der Verabreichung eines Impfstoffs zum Schutz vor Krankheiten)
-                    eine der erfolgreichsten und kosteneffektivsten Gesundheitsmaßnahmen der Welt ist. Im Jahr 2017 war
-                    nur etwa ein Drittel bis die Hälfte der Weltbevölkerung durch essenzielle Gesundheitsleistungen
-                    abgedeckt.
+                Obwohl die Immunisierung (der Prozess der Verabreichung eines Impfstoffs zum Schutz vor Krankheiten)
+                eine der erfolgreichsten und kosteneffektivsten Gesundheitsmaßnahmen der Welt ist. Im Jahr 2017 war
+                nur etwa ein Drittel bis die Hälfte der Weltbevölkerung durch essenzielle Gesundheitsleistungen abgedeckt.
                 </p>
             </div>
         ),
         6: (
             <div>
                 <p className="Infotext03">
-                    Krankheiten und Todesfälle durch übertragbare Krankheiten werden in die Höhe schnellen. Jedoch
-                    erfordert es ein starkes Engagement ein gesundes Leben für alle zu gewährleisten. Es ist aber
-                    wichtig, da die Vorteile die Kosten überwiegen. Gesunde Menschen sind die Grundlage für gesunde
-                    Volkswirtschaften.{" "}
+                Krankheiten und Todesfälle durch übertragbare Krankheiten werden in die Höhe schnellen. Jedoch erfordert
+                 es ein starkes Engagement ein gesundes Leben für alle zu gewährleisten. Es ist aber wichtig, da die Vorteile 
+                 die Kosten überwiegen. Gesunde Menschen sind die Grundlage für gesunde Volkswirtschaften. {" "}
                 </p>
             </div>
         ),
         7: (
             <div>
                 <p className="Infotext03">
-                    Du kannst damit beginnen, deine eigene Gesundheit und die Gesundheit der Menschen in deiner Umgebung
-                    zu fördern und zu schützen, indem du gut informierte Entscheidungen triffst und zum Beispiel dich
-                    selbst und deine zukünftigen Kinder impfen lässt.
+                Du kannst damit beginnen, deine eigene Gesundheit und die Gesundheit der Menschen in deiner Umgebung zu fördern
+                 und zu schützen, indem du gut informierte Entscheidungen triffst und zum Beispiel dich selbst und deine 
+                 zukünftigen Kinder impfen lässt.
                 </p>
             </div>
         ),
         8: (
             <div>
                 <p className="Infotext03">
-                    Du kannst in deiner Gemeinde das Bewusstsein für die Bedeutung einer guten Gesundheit, eines
-                    gesunden Lebensstils sowie für das Recht der Menschen auf eine hochwertige Gesundheitsversorgung
-                    schärfen, insbesondere für die Schwächsten, wie Frauen und Kin-der.
+                Du kannst in deiner Gemeinde das Bewusstsein für die Bedeutung einer guten Gesundheit, eines gesunden
+                Lebensstils sowie für das Recht der Menschen auf eine hochwertige Gesundheitsversorgung schärfen, insbesondere
+                für die Schwächsten, wie Frauen und Kin-der.
                 </p>
             </div>
         ),
@@ -241,3 +241,4 @@ export const SDG03_Infotext = (): JSX.Element => {
         </div>
     );
 };
+renderer.render(<SDG03_Infotext />, document.getElementById("root"));

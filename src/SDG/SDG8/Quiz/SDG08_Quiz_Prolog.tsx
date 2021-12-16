@@ -150,7 +150,7 @@ export const SDG08_Quiz_Prolog = (): JSX.Element => {
 
     // eslint-disable-next-line prefer-const
     buttonNext =
-        showtext < 7 ? (
+        showtext < 7  ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
                 <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
@@ -195,8 +195,8 @@ export const SDG08_Quiz_Prolog = (): JSX.Element => {
         <div>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
-                    Menschenwürdige Arbeit und Wirtschaftswachstum
-                    <img className="sdglogo" alt="logo" src={Logo} />
+                Menschenwürdige Arbeit und Wirtschaftswachstum
+                                    <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
             <div className="spacer">
@@ -208,3 +208,5 @@ export const SDG08_Quiz_Prolog = (): JSX.Element => {
         </div>
     );
 };
+// eslint-disable-next-line react/jsx-pascal-case
+renderer.render(<SDG08_Quiz_Prolog />, document.getElementById("root"));
