@@ -310,41 +310,41 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
     function openModal2(): void {
         setModalOpened(2);
         if (modalTwo === 4) {
-            setModalTwo(2);
+            setModalTwo(1);
         } else {
-            setModalTwo(modalTwo + 2);
+            setModalTwo(modalTwo + 1);
         }
     }
     function openModal3(): void {
         setModalOpened(3);
         if (modalTwo === 4) {
-            setModalThree(3);
+            setModalThree(1);
         } else {
-            setModalThree(modalThree + 3);
+            setModalThree(modalThree + 1);
         }
     }
     function openModal4(): void {
         setModalOpened(4);
         if (modalFour === 5) {
-            setModalFour(4);
+            setModalFour(1);
         } else {
-            setModalFour(modalFour + 4);
+            setModalFour(modalFour + 1);
         }
     }
     function openModal5(): void {
         setModalOpened(5);
         if (modalFive === 5) {
-            setModalFive(5);
+            setModalFive(1);
         } else {
-            setModalFour(modalFive + 5);
+            setModalFour(modalFive + 1);
         }
     }
     function openModal6(): void {
         setModalOpened(6);
         if (modalSix === 5) {
-            setModalSix(4);
+            setModalSix(1);
         } else {
-            setModalFour(modalSix + 6);
+            setModalFour(modalSix + 1);
         }
     }
     function incrementCount(): void {
@@ -419,11 +419,7 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
             <div>
                 <div className="content-header">
                     {LösungÜberschrift[modalOne]}
-                    {LösungÜberschrift[modalTwo]}
-                    {LösungÜberschrift[modalThree]}
-                    {LösungÜberschrift[modalFour]}
-                    {LösungÜberschrift[modalFive]}
-                    {LösungÜberschrift[modalSix]}
+
                     <button
                         type="button"
                         className="personCheckOkButton"
@@ -435,11 +431,91 @@ export const SDG03_GutesBeispiel = (): JSX.Element => {
                     </button>
                 </div>{" "}
                 {Berlin[modalOne]}
+            </div>
+        ),
+        2: (
+            <div>
+                <div className="content-header">
+                    {LösungÜberschrift[modalTwo]}
+                    <button
+                        type="button"
+                        className="personCheckOkButton"
+                        onClick={() => {
+                            setIsOpen(false);
+                        }}
+                    >
+                        <b>Zurück</b>
+                    </button>
+                </div>{" "}
                 {Oslo[modalTwo]}
+            </div>
+        ),
+        3: (
+            <div>
+                <div className="content-header">
+                    {LösungÜberschrift[modalThree]}
+                    <button
+                        type="button"
+                        className="personCheckOkButton"
+                        onClick={() => {
+                            setIsOpen(false);
+                        }}
+                    >
+                        <b>Zurück</b>
+                    </button>
+                </div>{" "}
                 {Paris[modalThree]}
+            </div>
+        ),
+        4: (
+            <div>
+                <div className="content-header">
+                    {LösungÜberschrift[modalFour]}
+                    <button
+                        type="button"
+                        className="personCheckOkButton"
+                        onClick={() => {
+                            setIsOpen(false);
+                        }}
+                    >
+                        <b>Zurück</b>
+                    </button>
+                </div>{" "}
                 {Geld[modalFour]}
+            </div>
+        ),
+        5: (
+            <div>
+                <div className="content-header">
+                    {LösungÜberschrift[modalFive]}
+                    <button
+                        type="button"
+                        className="personCheckOkButton"
+                        onClick={() => {
+                            setIsOpen(false);
+                        }}
+                    >
+                        <b>Zurück</b>
+                    </button>
+                </div>{" "}
                 {Leben[modalFive]}
-                {Spaß[modalFive]}
+            </div>
+        ),
+        6: (
+            <div>
+                <div className="content-header">
+                    {LösungÜberschrift[modalSix]}
+                    <button
+                        type="button"
+                        className="personCheckOkButton"
+                        onClick={() => {
+                            setIsOpen(false);
+                        }}
+                    >
+                        <b>Zurück</b>
+                    </button>
+                </div>{" "}
+                {Spaß[modalSix]}
             </div>
         ),
     };
