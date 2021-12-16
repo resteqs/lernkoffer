@@ -12,6 +12,7 @@ import "../../../styles/colour_sdgs.css";
 import { Link } from "react-router-dom";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG03.png";
+import Kopf from "./Kopf.png"
 
 import Question from "./question_mark.png";
 
@@ -45,7 +46,7 @@ export const SDG03_Spiel = (): JSX.Element => {
                 <p className="SpielregelnSDG04" style={{ fontSize: "45px" }}>
                 Nimm dir ein Blatt zur Hand und male den Umriss eines Kopfes darauf (wenn du dir nicht sicher bist, wie du den Umriss eines Kopfes zeichnen kannst, dann kannst du einfach hier klicken, dann kommst du zu einer Vorlage, die du einfach abzeichnen kannst) Wenn du das hast, kannst du den Kopf entweder einfach auf dem Blatt lassen oder ausschneiden.
                 </p>
-                <button type="button" style={{ background: "none", borderColor :"blue" , borderWidth: "11px", borderRadius: "15px", marginTop: "350px" }} onClick={() => openVorlage() }><img  style={{ maxWidth: "100px", maxHeight: "100px" }} src="https://picsum.photos/id/237/1000/1000" alt="Wirtschaftsinformatiker"/></button>
+                <button type="button" style={{ background: "none", borderColor :"blue" , borderWidth: "11px", borderRadius: "15px", marginTop: "350px" }} onClick={() => openVorlage() }><img  style={{ maxWidth: "100px", maxHeight: "100px" }} src={Kopf} alt="Wirtschaftsinformatiker"/></button>
             </div>
         ),
         4: (
@@ -65,7 +66,7 @@ export const SDG03_Spiel = (): JSX.Element => {
             </div>
         ),
         69: (
-         <div><div><img  style={{ maxWidth: "600px", maxHeight: "700px", marginTop: "-70px" }}src="https://picsum.photos/id/237/1000/1000" alt="vorlage"/>
+         <div><div><img  style={{ maxWidth: "600px", maxHeight: "700px", marginTop: "-70px" }}src={Kopf} alt="vorlage"/>
          </div>
         <div><button type="button" style={{ background: "none", borderColor :"blue" , borderWidth: "11px", borderRadius: "15px", marginTop: "150px", fontSize: "30px" }} onClick={() => closeVorlage() }>Zurück</button></div></div>
             
