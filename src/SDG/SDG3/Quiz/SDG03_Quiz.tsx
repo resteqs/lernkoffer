@@ -7,10 +7,13 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable no-eval */
 /* eslint-disable unicorn/filename-case */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable prefer-const */
 
 import * as React from "react";
 import renderer from "react-dom";
 import { Link } from "react-router-dom";
+import { CSSProperties, useState } from "react";
 import infotextbutton from "../../../styles/Infotextbutton.module.css";
 import "../../../styles/colour_sdgs.css";
 import "../../../styles/infotext.css";
@@ -21,16 +24,124 @@ import ReactAudioPlayer from "react-audio-player";
 
 export const SDG03_Quiz = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
-    let [showtext, setText] = React.useState(1);
+    let [showtext, setText] = React.useState(15);
+
+    let [currentlyPicked, setPicked] = React.useState(1);
+
+    let [obj1, setObj1] = React.useState(false);
+    let [obj2, setObj2] = React.useState(false);
+    let [obj3, setObj3] = React.useState(false);
+
+    let [obj1number, setObj1number] = React.useState(0);
+    let [obj2number, setObj2number] = React.useState(0);
+    let [obj3number, setObj3number] = React.useState(0);
     const sdg = "SDG03";
+
+
+    const noborder: CSSProperties = {
+        background: "orange",
+        fontSize: "30px",
+        padding: "20px 10px",
+    };
+
+
+    let buttonStyle = noborder;
+
+
+    let button1 =
+        obj1 === false ? (
+            <div style={{ marginBottom: "50px", paddingBottom: "20px", marginRight: "400px" }}>
+                <button
+                    className="pushable"
+                    type="button"
+                    onClick={() => {
+                        setObj1number(currentlyPicked);
+                        setPicked(currentlyPicked + 1);
+                        incrementCount();
+                        setObj1(true);
+                    }}
+                >
+                    <div style={{ width: "400px" }}>
+                        <span className="shadow" />
+                        <span className={infotextbutton.edgeorange} />
+                        <span className="front" style={buttonStyle}>
+                            Alkohol
+                        </span>
+                    </div>
+                </button>{" "}
+            </div>
+        ) : (
+            <div>{}</div>
+        );
+    let button2 =
+        obj2 === false ? (
+            <div style={{ marginBottom: "50px", paddingBottom: "20px", marginRight: "400px" }}>
+                <button
+                    className="pushable"
+                    type="button"
+                    onClick={() => {
+                        setObj2number(currentlyPicked);
+                        setPicked(currentlyPicked + 1);
+                        incrementCount();
+                        setObj2(true);
+                    }}
+                >
+                    <div style={{ width: "400px" }}>
+                        <span className="shadow" />
+                        <span className={infotextbutton.edgeorange} />
+                        <span className="front" style={buttonStyle}>
+                            Cannabis
+                        </span>
+                    </div>
+                </button>{" "}
+            </div>
+        ) : (
+            <div>{}</div>
+        );
+    let button3 =
+        obj3 === false ? (
+            <div style={{ marginBottom: "50px", paddingBottom: "20px", marginRight: "400px" }}>
+                <button
+                    className="pushable"
+                    type="button"
+                    onClick={() => {
+                        setObj3number(currentlyPicked);
+                        setPicked(currentlyPicked + 1);
+                        incrementCount();
+                        setObj3(true);
+                    }}
+                >
+                    <div style={{ width: "400px" }}>
+                        <span className="shadow" />
+                        <span className={infotextbutton.edgeorange} />
+                        <span className="front" style={buttonStyle}>
+                           Zigaretten
+                        </span>
+                    </div>
+                </button>{" "}
+            </div>
+        ) : (
+            <div>{}</div>
+        );
+
+        let buttons = (
+            <section style={{ display: "block", float: "right" }}>
+                <div>
+                    {button1}
+                    {button2}
+                    {button3}
+                </div>
+            </section>
+        );
 
     const text = {
         1: (
             <div>
-                <p>
+                <p className="Infotext03">
                     <b>
                     „Iss nicht so viele Süßigkeiten, das ist ungesund!“
-                    </b><br/>
+                    </b>
+                    
                     <b>
                     „Bleib bitte weg von der Straße, die ist gefährlich!“
                     </b>
@@ -93,7 +204,7 @@ export const SDG03_Quiz = (): JSX.Element => {
         9: (
             <div>
                 <p className="Infotext03">
-                Hier könnt ihr eine Zigarette sehen. Ihr Hauptbestandteil ist Tabak, also die braunen Krümel, die in Zigarettenpapier eingerollt sind. Tabak ist eigentlich eine Pflanze mit grünen Blättern, welche jedoch für die Zigaretten getrocknet und zerkleinert werden.
+                Hier könnt ihr eine <b>Zigarette</b> sehen. Ihr Hauptbestandteil ist Tabak, also die braunen Krümel, die in Zigarettenpapier eingerollt sind. Tabak ist eigentlich eine Pflanze mit grünen Blättern, welche jedoch für die Zigaretten getrocknet und zerkleinert werden.
                 </p>
                 <img  style={{ maxWidth: "600px", maxHeight: "500px", marginTop: "40px", zIndex:5 }}src="https://picsum.photos/id/237/1000/1000" alt="vorlage"/>
             </div>
@@ -101,21 +212,21 @@ export const SDG03_Quiz = (): JSX.Element => {
         10: (
             <div>
                 <p className="Infotext03">
-                In diesen ist der Stoff Nikotin, der nach dem Anzünden der Zigarette mit dem Rauch in die Lunge gelangt. Nachdem er vom Körper aufgenommen wurde, sorgt er dafür, dass das Herz schneller schlägt, wodurch das Blut schneller fließt. Das ist auf Dauer nicht gut für das Herz und die Blutgefäße (kleine Röhrchen im Körper, durch die das Blut fließt). Jedoch kann man durch das Nikotin und dessen Wirkung süchtig nach Zigaretten werden. Dann muss man immer wieder rauchen, ansonsten wird man gereizt und ruhelos.
+                In diesen ist der Stoff <b>Nikotin</b>, der nach dem Anzünden der Zigarette mit dem Rauch in die Lunge gelangt. Nachdem er vom Körper aufgenommen wurde, sorgt er dafür, dass das <b>Herz</b> schneller schlägt, wodurch das Blut schneller fließt. Das ist auf Dauer nicht gut für das Herz und die <b>Blutgefäße</b> (kleine Röhrchen im Körper, durch die das Blut fließt). Jedoch kann man durch das Nikotin und dessen Wirkung <b>süchtig</b> nach Zigaretten werden. Dann muss man immer wieder rauchen, ansonsten wird man gereizt und ruhelos.
                 </p>
             </div>
         ),
         11: (
             <div>
                 <p className="Infotext03">
-                Aber wusstet ihr schon, dass in Zigaretten noch andere schädliche Stoffe sind außer Nikotin? Insgesamt sind mehr als 40 Stoffe im Rauch nachweislich krebserregend. Ein weiterer ist zum Beispiel Teer. Dieser zerstört kleine Härchen in der Lunge, welche diese sauber halten. Wenn sie kaputt sein, kann die Lunge nicht mehr vor dem Schmutz geschützt werden. Das merkt der Raucher dann dadurch, dass er weniger Ausdauer hat und schneller außer Puste kommt. Aber durch die Schadstoffe im Tabak leiden nicht nur das Herz und die Lunge. Auch die Haut, die Zähne, die Zunge und Teile des Halses werden krank
+                Aber wusstet ihr schon, dass in Zigaretten noch andere schädliche Stoffe sind außer Nikotin? Insgesamt sind <b>mehr als 40 Stoffe</b> im Rauch nachweislich <b>krebserregend</b>. Ein weiterer ist zum Beispiel <b>Teer</b>. Dieser zerstört kleine Härchen in der Lunge, welche diese sauber halten. Wenn sie kaputt sein, kann die Lunge nicht mehr vor dem Schmutz geschützt werden. Das merkt der Raucher dann dadurch, dass er weniger Ausdauer hat und schneller außer Puste kommt. Aber durch die Schadstoffe im Tabak leiden nicht nur das Herz und die Lunge. Auch die <b>Haut</b>, die <b>Zähne</b>, die <b>Zunge</b> und <b>Teile des Halses</b> werden krank
                 </p>
             </div>
         ),
         12: (
             <div>
                 <p className="Infotext03">
-                Die abgebildeten Blätter sind von der Hanf- bzw. Cannabis-Pflanze. Die weiblichen Blüten und die Blätter dieser Pflanze werden, wenn man sie trocknet, Marihuana. Das Harz der Pflanze wird Haschisch genannt. Am häufigsten wird Marihuana oder Haschisch geraucht, indem man es zerbröselt mit Tabak (von normalen Zigaretten) vermischt und zu einem Joint dreht. Dieser sieht meist einer selbst gedrehten Zigarette ähnlich, wie man auf dem gezeigten Bild sehen kann. Andere Möglichkeiten wären auch noch über unterschiedliche Arten von Pfeifen zu rauchen oder Cannabisprodukte in Keksen etc. zu verbacken und dann zu essen.
+                Die abgebildeten Blätter sind von der Hanf- bzw. Cannabis-Pflanze. Die weiblichen Blüten und die Blätter dieser Pflanze werden, wenn man sie trocknet, <b>Marihuana</b>. Das Harz der Pflanze wird <b>Haschisch</b> genannt. Am häufigsten wird Marihuana oder Haschisch geraucht, indem man es zerbröselt mit Tabak (von normalen Zigaretten) vermischt und zu einem Joint dreht. Dieser sieht meist einer selbst gedrehten Zigarette ähnlich, wie man auf dem gezeigten Bild sehen kann. Andere Möglichkeiten wären auch noch über unterschiedliche Arten von Pfeifen zu rauchen oder Cannabisprodukte in Keksen etc. zu verbacken und dann zu essen.
                 </p>
                 <img  style={{ maxWidth: "600px", maxHeight: "500px", marginTop: "40px", zIndex:5 }}src="https://picsum.photos/id/237/1000/1000" alt="vorlage"/>
             </div>
@@ -123,21 +234,73 @@ export const SDG03_Quiz = (): JSX.Element => {
         13: (
             <div>
                 <p className="Infotext03">
-                Aber wusstet ihr schon, dass in Zigaretten noch andere schädliche Stoffe sind außer Nikotin? Insgesamt sind mehr als 40 Stoffe im Rauch nachweislich krebserregend. Ein weiterer ist zum Beispiel Teer. Dieser zerstört kleine Härchen in der Lunge, welche diese sauber halten. Wenn sie kaputt sein, kann die Lunge nicht mehr vor dem Schmutz geschützt werden. Das merkt der Raucher dann dadurch, dass er weniger Ausdauer hat und schneller außer Puste kommt. Aber durch die Schadstoffe im Tabak leiden nicht nur das Herz und die Lunge. Auch die Haut, die Zähne, die Zunge und Teile des Halses werden krank
+                Die Wirkung von Marihuana kommt durch einen Stoff in den Blüten, der abgekürzt <b>THC</b> genannt wird. Insgesamt sind die gesundheitlichen Folgen von Cannabis noch nicht ganz erforscht, aber man weiß zum Beispiel, dass der Körper deutlich länger braucht THC als Alkohol abzubauen. Außerdem leidet die <b>Leistungsfähigkeit des Gehirns</b> bei regelmäßigem Rauchen. Man geht sogar davon aus, dass es Gehirnschäden verursachen kann, wenn man als Jugendliche:r damit anfäng
                 </p>
             </div>
         ),
         14: (
             <div>
                 <p className="Infotext03">
-                Die Wirkung von Marihuana kommt durch einen Stoff in den Blüten, der abgekürzt THC genannt wird. Insgesamt sind die gesundheitlichen Folgen von Cannabis noch nicht ganz erforscht, aber man weiß zum Beispiel, dass der Körper deutlich länger braucht THC als Alkohol abzubauen. Außerdem leidet die Leistungsfähigkeit des Gehirns bei regelmäßigem Rauchen. Man geht sogar davon aus, dass es Gehirnschäden verursachen kann, wenn man als Jugendliche:r damit anfäng
+                Da es oft vermischt mit Tabak geraucht wird, werden dessen Risiken übernommen und dementsprechend die Lunge geschädigt. Ein erhöhtes Risiko für Krebserkrankungen ist noch nicht sicher festgestellt worden, aber man geht davon aus, dass auch Cannabisrauch Teer und andere Schadstoffe enthält. Noch dazu gibt es ein erhöhtes Herzinfarktrisiko und auch wieder die Gefahr, dass man <b>abhängig</b> werden kann.
                 </p>
             </div>
         ),
         15: (
             <div>
+               <p className="Infotext03" style={{ fontSize:"30px" }}>
+                 Please select the belowed listed items in the right order (1st ist the most dangerous one and 3rd least dangerous from above)
+                </p>
+                
+                {buttons}
+            </div>
+        ),
+        16: (
+            <div>
+               <p className="Infotext03" style={{ fontSize:"30px" }}>
+                 Please select the belowed listed items in the right order (1st ist the most dangerous one and 3rd least dangerous from above)
+                </p>
+                
+                {buttons}
+            </div>
+        ),
+        17: (
+            <div>
+               <p className="Infotext03" style={{ fontSize:"30px" }}>
+                 Please select the belowed listed items in the right order (1st ist the most dangerous one and 3rd least dangerous from above)
+                </p>
+                
+                {buttons}
+            </div>
+        ),
+        18: (
+            <div>
+                <p className="Infotext03" style={ obj3number === 1? { color: "green" }: { color:"red" }}>
+                Platz 1: Zigarette
+
+- Ungefähr 7 Millionen (7 000 000) Todesfälle weltweit 2017 durch (die Folgen von) Rauchen
+
+- Ungefähr 1,7 Milliarden (1 700 000 000) Menschen rauchen weltweit regelmäßig
+
+Platz 2: Alkohol
+
+- Ungefähr 3 Millionen (3 000 000) Todesfälle weltweit 2017 durch Alkohol
+
+- Ungefähr 140 Millionen (140 000 000) Menschen weltweit alkoholabhängig
+
+Platz 3: Cannabis
+
+- Kaum Todesfälle durch Cannabis
+
+- Ungefähr 13 Millionen (13 000 000) Menschen weltweit abhängig von Cannabis
+                </p>
+            </div>
+        ),
+    19: (
+            <div>
                 <p className="Infotext03">
-                Da es oft vermischt mit Tabak geraucht wird, werden dessen Risiken übernommen und dementsprechend die Lunge geschädigt. Ein erhöhtes Risiko für Krebserkrankungen ist noch nicht sicher festgestellt worden, aber man geht davon aus, dass auch Cannabisrauch Teer und andere Schadstoffe enthält. Noch dazu gibt es ein erhöhtes Herzinfarktrisiko und auch wieder die Gefahr, dass man abhängig werden kann.
+                Das heißt jedoch nicht, dass man Cannabis nun ohne Risiken konsumieren kann. Alle drei Dinge sind Drogen, also wird man von ihnen in einen Rausch versetzt. Obwohl Alkohol und Zigaretten, und auch in manchen Ländern Cannabis, legal (gesetzlich erlaubt) sind, muss man vorsichtig mit ihnen umgehen. Die Gefahr ist immer vorhanden, süchtig zu werden und sie sind alle schädigend für die Gesundheit. Also haltet euch an die Altersbegrenzungen in eurem Land, informiert euch, bevor ihr etwas zu euch nehmt, was ihr nicht kennt und geht keine Risiken ein. Denkt einfach an folgendes Sprichwort, welches bereits im Mittelalter entstand:
+
+„Die Menge macht das Gift“
                 </p>
             </div>
         ),
@@ -151,39 +314,94 @@ export const SDG03_Quiz = (): JSX.Element => {
         ),
         2: (
             <div>
-                <p>Warum?</p>
+                <p>Einstieg</p> 
             </div>
         ),
         3: (
             <div>
-                <p>Warum?</p>
+                <p>Einstieg</p>
             </div>
         ),
         4: (
             <div>
-                <p>Was ist das Problem?</p>
+                <p>Einstieg</p>
             </div>
         ),
         5: (
             <div>
-                <p>Was ist das Problem?</p>
+                <p>Einstieg</p>
             </div>
         ),
         6: (
             <div>
-                <p>Wie ist dieses Thema mit uns verbunden?</p>
+                <p>Einstieg</p>
             </div>
         ),
         7: (
             <div>
-                <p>Was können wir tun?</p>
+                <p>Alkohol</p>
             </div>
         ),
         8: (
             <div>
-                <p>Was können wir tun?</p>
+                <p>Alkohol</p>
             </div>
         ),
+        9: (
+            <div>
+                <p>Zigaretten</p>
+            </div>
+        ),
+        10: (
+            <div>
+                <p>Zigaretten</p>
+            </div>
+        ),
+        11: (
+            <div>
+                <p>Zigaretten</p>
+            </div>
+        ),
+        12: (
+            <div>
+                <p>Cannabis</p>
+            </div>
+        ),
+        13: (
+            <div>
+                <p>Cannabis</p>
+            </div>
+        ),
+        14: (
+            <div>
+                <p>Cannabis</p>
+            </div>
+        ),
+        15:(
+            <div>
+                <p>Quiz</p>
+            </div>
+        ),
+        16:(
+            <div>
+                <p>Quiz</p>
+            </div>
+        ),
+        17:(
+            <div>
+                <p>Quiz</p>
+            </div>
+        ),
+        18:(
+            <div>
+                <p>Loesung</p>
+            </div>
+        ),
+        19:(
+            <div>
+                <p>Loesung</p>
+            </div>
+        )
     };
 
     function incrementCount(): void {
@@ -198,7 +416,7 @@ export const SDG03_Quiz = (): JSX.Element => {
     let buttonEnd;
     // eslint-disable-next-line prefer-const
     buttonBack =
-        showtext >= 2 ? (
+        showtext >= 2 && showtext <= 14? (
             <div className="backbutton">
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
@@ -216,7 +434,7 @@ export const SDG03_Quiz = (): JSX.Element => {
         );
     // eslint-disable-next-line prefer-const
     buttonNext =
-        showtext < 8 ? (
+        showtext <= 14 && showtext ===18 ? (
             <div className="nextbutton">
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
@@ -234,7 +452,7 @@ export const SDG03_Quiz = (): JSX.Element => {
         );
     // eslint-disable-next-line prefer-const
     buttonEnd =
-        showtext === 8 ? (
+        showtext === 19 ? (
             <div className="nextbutton">
                 <div style={{ marginTop: "10px" }} className="nextbutton">
                     {" "}

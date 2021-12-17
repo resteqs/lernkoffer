@@ -237,7 +237,7 @@ export const SDG03_Infotext = (): JSX.Element => {
                 controls
                 style={{ position: "absolute", top: "1100px", left: "80px" }}
             />{" "}
-            <img className="EG " alt="" src={EG} />
+            <img className="EG" alt="" src={EG} />
         </div>
     );
 };
