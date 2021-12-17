@@ -24,7 +24,7 @@ import ReactAudioPlayer from "react-audio-player";
 
 export const SDG03_Quiz = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
-    let [showtext, setText] = React.useState(15);
+    let [showtext, setText] = React.useState(1);
 
     let [currentlyPicked, setPicked] = React.useState(1);
 
