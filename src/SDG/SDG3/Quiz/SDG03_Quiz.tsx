@@ -434,7 +434,7 @@ Platz 3: Cannabis
         );
     // eslint-disable-next-line prefer-const
     buttonNext =
-        showtext <= 14 && showtext ===18 ? (
+        showtext <= 14 || showtext ===18 ? (
             <div className="nextbutton">
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
