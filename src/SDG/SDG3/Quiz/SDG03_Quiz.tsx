@@ -21,7 +21,7 @@ import ReactAudioPlayer from "react-audio-player";
 
 export const SDG03_Quiz = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
-    let [showtext, setText] = React.useState(7);
+    let [showtext, setText] = React.useState(1);
     const sdg = "SDG03";
 
     const text = {
@@ -90,6 +90,58 @@ export const SDG03_Quiz = (): JSX.Element => {
                 </p>
             </div>
         ),
+        9: (
+            <div>
+                <p className="Infotext03">
+                Hier könnt ihr eine Zigarette sehen. Ihr Hauptbestandteil ist Tabak, also die braunen Krümel, die in Zigarettenpapier eingerollt sind. Tabak ist eigentlich eine Pflanze mit grünen Blättern, welche jedoch für die Zigaretten getrocknet und zerkleinert werden.
+                </p>
+                <img  style={{ maxWidth: "600px", maxHeight: "500px", marginTop: "40px", zIndex:5 }}src="https://picsum.photos/id/237/1000/1000" alt="vorlage"/>
+            </div>
+        ),
+        10: (
+            <div>
+                <p className="Infotext03">
+                In diesen ist der Stoff Nikotin, der nach dem Anzünden der Zigarette mit dem Rauch in die Lunge gelangt. Nachdem er vom Körper aufgenommen wurde, sorgt er dafür, dass das Herz schneller schlägt, wodurch das Blut schneller fließt. Das ist auf Dauer nicht gut für das Herz und die Blutgefäße (kleine Röhrchen im Körper, durch die das Blut fließt). Jedoch kann man durch das Nikotin und dessen Wirkung süchtig nach Zigaretten werden. Dann muss man immer wieder rauchen, ansonsten wird man gereizt und ruhelos.
+                </p>
+            </div>
+        ),
+        11: (
+            <div>
+                <p className="Infotext03">
+                Aber wusstet ihr schon, dass in Zigaretten noch andere schädliche Stoffe sind außer Nikotin? Insgesamt sind mehr als 40 Stoffe im Rauch nachweislich krebserregend. Ein weiterer ist zum Beispiel Teer. Dieser zerstört kleine Härchen in der Lunge, welche diese sauber halten. Wenn sie kaputt sein, kann die Lunge nicht mehr vor dem Schmutz geschützt werden. Das merkt der Raucher dann dadurch, dass er weniger Ausdauer hat und schneller außer Puste kommt. Aber durch die Schadstoffe im Tabak leiden nicht nur das Herz und die Lunge. Auch die Haut, die Zähne, die Zunge und Teile des Halses werden krank
+                </p>
+            </div>
+        ),
+        12: (
+            <div>
+                <p className="Infotext03">
+                Die abgebildeten Blätter sind von der Hanf- bzw. Cannabis-Pflanze. Die weiblichen Blüten und die Blätter dieser Pflanze werden, wenn man sie trocknet, Marihuana. Das Harz der Pflanze wird Haschisch genannt. Am häufigsten wird Marihuana oder Haschisch geraucht, indem man es zerbröselt mit Tabak (von normalen Zigaretten) vermischt und zu einem Joint dreht. Dieser sieht meist einer selbst gedrehten Zigarette ähnlich, wie man auf dem gezeigten Bild sehen kann. Andere Möglichkeiten wären auch noch über unterschiedliche Arten von Pfeifen zu rauchen oder Cannabisprodukte in Keksen etc. zu verbacken und dann zu essen.
+                </p>
+                <img  style={{ maxWidth: "600px", maxHeight: "500px", marginTop: "40px", zIndex:5 }}src="https://picsum.photos/id/237/1000/1000" alt="vorlage"/>
+            </div>
+        ),
+        13: (
+            <div>
+                <p className="Infotext03">
+                Aber wusstet ihr schon, dass in Zigaretten noch andere schädliche Stoffe sind außer Nikotin? Insgesamt sind mehr als 40 Stoffe im Rauch nachweislich krebserregend. Ein weiterer ist zum Beispiel Teer. Dieser zerstört kleine Härchen in der Lunge, welche diese sauber halten. Wenn sie kaputt sein, kann die Lunge nicht mehr vor dem Schmutz geschützt werden. Das merkt der Raucher dann dadurch, dass er weniger Ausdauer hat und schneller außer Puste kommt. Aber durch die Schadstoffe im Tabak leiden nicht nur das Herz und die Lunge. Auch die Haut, die Zähne, die Zunge und Teile des Halses werden krank
+                </p>
+            </div>
+        ),
+        14: (
+            <div>
+                <p className="Infotext03">
+                Die Wirkung von Marihuana kommt durch einen Stoff in den Blüten, der abgekürzt THC genannt wird. Insgesamt sind die gesundheitlichen Folgen von Cannabis noch nicht ganz erforscht, aber man weiß zum Beispiel, dass der Körper deutlich länger braucht THC als Alkohol abzubauen. Außerdem leidet die Leistungsfähigkeit des Gehirns bei regelmäßigem Rauchen. Man geht sogar davon aus, dass es Gehirnschäden verursachen kann, wenn man als Jugendliche:r damit anfäng
+                </p>
+            </div>
+        ),
+        15: (
+            <div>
+                <p className="Infotext03">
+                Da es oft vermischt mit Tabak geraucht wird, werden dessen Risiken übernommen und dementsprechend die Lunge geschädigt. Ein erhöhtes Risiko für Krebserkrankungen ist noch nicht sicher festgestellt worden, aber man geht davon aus, dass auch Cannabisrauch Teer und andere Schadstoffe enthält. Noch dazu gibt es ein erhöhtes Herzinfarktrisiko und auch wieder die Gefahr, dass man abhängig werden kann.
+                </p>
+            </div>
+        ),
+
     };
     const header = {
         1: (
