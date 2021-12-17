@@ -6,10 +6,10 @@ import "../../styles/infotext.css";
 import "../../styles/component.css";
 import { useEffect } from "react";
 import { FancyButton } from "../Buttons/FancyButton";
-import { SDG } from "../../SDG/SDG";
+import { InfotextProps } from "../../Interfaces/SDG";
 
 interface Props {
-    sdg: SDG;
+    sdg: InfotextProps;
 }
 
 export const InfotextComponent = (props: Props): JSX.Element => {
@@ -23,7 +23,7 @@ export const InfotextComponent = (props: Props): JSX.Element => {
     const maxSlides = Object.keys(props.sdg.text).length;
 
     const incrementCount = (): void => {
-        setText((prevState) => prevState + 1);
+        setText((prevState) => prevState + 1);               
     };
 
     const decrementCount = (): void => {
@@ -85,6 +85,6 @@ export const InfotextComponent = (props: Props): JSX.Element => {
                 Your browser does not support the audio element.
             </audio>
             <img className="EG" alt="" src={props.sdg.eg} />
-        </>
+        </>        
     );
 };

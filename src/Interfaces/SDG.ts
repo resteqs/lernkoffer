@@ -1,4 +1,4 @@
-export interface SDG {
+export interface InfotextProps {
     number: number;
     name: string;
     sdg: string;

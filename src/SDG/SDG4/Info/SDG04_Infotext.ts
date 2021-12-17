@@ -3,9 +3,9 @@
 import soundfile from "./Mobiles_Museum_Infotext_4.mp3";
 import Logo from "../../../SDGLogos/Goal-SDG04.png";
 import EG from "../../../EG/EG2.png";
-import { SDG } from "../../SDG";
+import { InfotextProps } from "../../../Interfaces/SDG";
 
-export const SDG04: SDG = {
+export const SDG04_Infotext: InfotextProps = {
     number: 4,
     name: "Hochwertige Bildung",
     sdg: "SDG04",

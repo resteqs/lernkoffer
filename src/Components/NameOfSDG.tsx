@@ -1,9 +1,8 @@
-import * as React from "react";
-
 interface Props {
     sdgNumber: number;
 }
-export const NameOfSDG = (props: Props): JSX.Element => {
+ 
+export const NameOfSDG = (props: Props): string => {
     const titleOfSDG = {
         1: "Keine Armut",
         2: "Kein Hunger",
@@ -24,5 +23,5 @@ export const NameOfSDG = (props: Props): JSX.Element => {
         17: "Partnerschaften zur Erreichung der Ziele",
     };
 
-    return <p>{titleOfSDG[props.sdgNumber]}</p>;
+    return titleOfSDG[props.sdgNumber];
 };
