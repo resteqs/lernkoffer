@@ -222,14 +222,13 @@ import { SDG13_Quiz_Tips } from "./SDG/SDG13/Quiz/SDG13_Quiz_Tips";
 /**                                Spiel                                     */
 /**                                Spiel2                                    */
 import { play13 }  from "./SDG/SDG13/Spiel/play";
-import { akw } from "./SDG/SDG13/Spiel/information/akw";
-import { cow } from "./SDG/SDG13/Spiel/information/cow";
-import { bicycle } from "./SDG/SDG13/Spiel/information/bicycle";
-import { windTurbine } from "./SDG/SDG13/Spiel/information/windTurbine";
-import { tractor } from "./SDG/SDG13/Spiel/information/tractor";
-import { tree } from "./SDG/SDG13/Spiel/information/tree";
-import { foxHedgehog } from "./SDG/SDG13/Spiel/information/foxHedgehog";
-
+import  akw  from "./SDG/SDG13/Spiel/information/akw";
+import  cow  from "./SDG/SDG13/Spiel/information/cow";
+import  bicycle from "./SDG/SDG13/Spiel/information/bicycle";
+import  windTurbine  from "./SDG/SDG13/Spiel/information/windTurbine";
+import  tractor from "./SDG/SDG13/Spiel/information/tractor";
+import  tree  from "./SDG/SDG13/Spiel/information/tree";
+import foxHedgehog  from "./SDG/SDG13/Spiel/information/foxHedgehog";
 
 /**----------------------------------------------------------------------------
  *                                SDG 14
