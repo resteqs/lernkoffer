@@ -1,3 +1,5 @@
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable jsx-a11y/media-has-caption */
 import * as React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/colour_sdgs.css";
