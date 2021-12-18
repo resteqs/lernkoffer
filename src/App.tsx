@@ -31,6 +31,8 @@ import { Photosynthese } from "./SDG/Wörterbuch/Elemente/Photosynthese";
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
+import { SDG01_Infotext } from "./SDG/SDG1/Info/SDG01_Infotext";
+
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
 /**                                Video                                     */
@@ -48,8 +50,9 @@ import { SDG02_GutesBeispiel } from "./SDG/SDG2/Gute Bsp/SDG02_GutesBeispiel";
 import { SDG02_Infotext } from "./SDG/SDG2/Info/Infotext/SDG02_Infotext"; 
 // fable
 import { SDG02_Infotext_Fable } from "./SDG/SDG2/Info/fable/SDG02_Info_Fable";
-
 /**                                 Quiz                                     */
+import { SDG02_Quiz } from "./SDG/SDG2/Quiz/SDG02_Quiz";
+
 /**                                Spiel                                     */
 import { SDG02_Spiel } from "./SDG/SDG2/Spiel/SDG02_Spiel";
 
@@ -219,14 +222,13 @@ import { SDG13_Quiz_Tips } from "./SDG/SDG13/Quiz/SDG13_Quiz_Tips";
 /**                                Spiel                                     */
 /**                                Spiel2                                    */
 import { play13 }  from "./SDG/SDG13/Spiel/play";
-import akw from "./SDG/SDG13/Spiel/information/akw";
-import cow from "./SDG/SDG13/Spiel/information/cow";
-import bicycle from "./SDG/SDG13/Spiel/information/bicycle";
-import windTurbine from "./SDG/SDG13/Spiel/information/windTurbine";
-import tractor from "./SDG/SDG13/Spiel/information/tractor";
-import tree from "./SDG/SDG13/Spiel/information/tree";
-import foxHedgehog from "./SDG/SDG13/Spiel/information/foxHedgehog";
-
+import  akw  from "./SDG/SDG13/Spiel/information/akw";
+import  cow  from "./SDG/SDG13/Spiel/information/cow";
+import  bicycle from "./SDG/SDG13/Spiel/information/bicycle";
+import  windTurbine  from "./SDG/SDG13/Spiel/information/windTurbine";
+import  tractor from "./SDG/SDG13/Spiel/information/tractor";
+import  tree  from "./SDG/SDG13/Spiel/information/tree";
+import foxHedgehog  from "./SDG/SDG13/Spiel/information/foxHedgehog";
 
 /**----------------------------------------------------------------------------
  *                                SDG 14
@@ -272,6 +274,14 @@ import { SimpleCountdown } from "./SDG/Vorlagen/Countdown/simpleCountdown"
 import { QuizButton } from "./SDG/Vorlagen/Button/QuizButton"
 import { Endscreen } from "./SDG/Vorlagen/Endscreen/Endscreen"
 import { Video } from "./SDG/Vorlagen/Video/video";
+
+ /**----------------------------------------------------------------------------
+ *                                Components
+ ----------------------------------------------------------------------------*/
+import { InfotextComponent } from "./Components/Infotext/InfotextComponent";
+import { InfotextButtonGreen } from "./Components/Buttons/InfotextButtonGreen";
+import { InfotextButtonRed } from "./Components/Buttons/InfotextButtonRed";
+
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
@@ -284,11 +294,7 @@ import page142 from "./SDG/SDG14/Spiel2/tutorial/14tut2";
 import page143 from "./SDG/SDG14/Spiel2/tutorial/14tut3";
 
 import play14 from "./SDG/SDG14/Spiel2/play14";
-import { InfotextButtonGreen } from "./Components/Buttons/InfotextButtonGreen";
-import { InfotextButtonRed } from "./Components/Buttons/InfotextButtonRed";
-import { Infotext_Component } from "./Components/Infotext/Infotext_Component";
-import { SDG02_Quiz } from "./SDG/SDG2/Quiz/SDG02_Quiz";
-import { SDG01_Infotext } from "./SDG/SDG1/Info/SDG01_Infotext";
+
 
 
 
@@ -316,7 +322,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
-            <Route exact path ="/SDG01/Infotext/" component={SDG01_Infotext}/>
+                <Route exact path="/SDG01/Infotext"><InfotextComponent sdg = {SDG01_Infotext}/></Route>
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
@@ -347,15 +353,11 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
             <Route exact path ="/SDG03/FreieArbeit" component={SDG03_FreieArbeit}/>
 /**                             Gutes Beispiel                               */
-<Route exact path = "/SDG03/Gute Bsp" component={SDG03_GutesBeispiel}/>
-            
+            <Route exact path = "/SDG03/Gute Bsp" component={SDG03_GutesBeispiel}/>
 /**                               Infotext                                   */
             <Route exact path="/SDG03/Infotext" component={SDG03_Infotext}/>
-
-
 /**                                 Quiz                                     */
-<Route exact path="/SDG03/Quiz" component={SDG03_Quiz}/>
-
+            <Route exact path="/SDG03/Quiz" component={SDG03_Quiz}/>
 /**                                Spiel                                     */
             <Route exact path="/SDG03/Spiel" component={SDG03_Spiel}/>
 /**                                Video                                     */
@@ -366,21 +368,15 @@ export const App = (): JSX.Element => {
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
             <Route exact path="/SDG04/FreieArbeit" component={SDG04_FreieArbeit}/>                    
-
 /**                             Gutes Beispiel                               */
-        <Route exact path="/SDG04/GutesBeispiel" component={SDG04_GB}/>
+            <Route exact path="/SDG04/GutesBeispiel" component={SDG04_GB}/>
 /**                               Infotext                                   */
-        <Route exact path="/SDG04/Infotext" component={SDG04_Infotext}/>
-
+            <Route exact path="/SDG04/Infotext"><InfotextComponent sdg = {SDG04_Infotext}/></Route>
 /**                                 Quiz                                     */
             <Route exact path="/SDG04/Quiz" component={SDG04_Quiz}/>                    
-
 /**                                Spiel                                     */
             <Route exact path="/SDG04/Spiel1/SDG04_Spiel" component={SDG04_Spiel}/>                    
-
 /**                                Video                                     */
-
-
 
 /**----------------------------------------------------------------------------
  *                                SDG 05
@@ -567,10 +563,6 @@ export const App = (): JSX.Element => {
 ----------------------------------------------------------------------------*/
                 <Route exact path="/Component/InfotextButtonGreen" component={InfotextButtonGreen} />  
                 <Route exact path="/Component/InfotextButtonRed" component={InfotextButtonRed} />  
-                <Route exact path="/Component/Infotext_Component" component={Infotext_Component} />  
-
-
-
 
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
