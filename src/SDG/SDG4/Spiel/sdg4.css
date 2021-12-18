@@ -23,6 +23,7 @@
 .infotextbox04 {
     background-color: #ffffff;
     text-align: left;
+    font-size: x-large;
     padding: 50px;
     margin-left: 10%;
     margin-right: 10%;
@@ -59,6 +60,5 @@ font-size: 31px;}
 .EG{
     max-width: 300px;
     position: absolute;
-    top: 900px;
-    left: 830px;
+    z-index: 4;
 }

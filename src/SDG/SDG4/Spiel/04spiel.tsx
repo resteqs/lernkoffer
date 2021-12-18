@@ -1,3 +1,18 @@
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable prefer-const */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable no-eval */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable eslint-comments/no-duplicate-disable */
+/* eslint-disable eslint-comments/disable-enable-pair */
+/* eslint-disable react/jsx-pascal-case */
+/* eslint-disable eslint-comments/disable-enable-pair */
+// eslint-disable-next-line eslint-comments/no-duplicate-disable
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable no-eval */
+/* eslint-disable unicorn/filename-case */
+// eslint-disable-next-line unicorn/filename-case
+
 import * as React from "react";
 import renderer from "react-dom";
 import { Link } from "react-router-dom";
@@ -10,7 +25,7 @@ import Spielfeld from "./Media/spielfeld.png";
 import Cards from "./Media/cards.png";
 import Lips from "./Media/lips.png";
 import Pen from "./Media/pen.png";
-import EG from "../../../EG/EG2.png";
+import EG from "../../../EG/EG2.png"
 import Stickman from "./Media/stickman.png";
 import "./sdg4.css";
 
@@ -85,27 +100,26 @@ export const SDG04_Spiel = (): JSX.Element => {
 
     function openModal1(): void {
         setModalOpened(1);
-        if (modalOne === 7) {
+        if(modalOne === 7){
             setModalOne(1);
-        } else {
-            setModalOne(modalOne + 1);
-        }
+        }else{setModalOne(modalOne +1);}
+        
     }
     function openModal2(): void {
         setModalOpened(2);
-        if (modalTwo === 7) {
+        if(modalTwo === 7){
             setModalTwo(1);
-        } else {
-            setModalTwo(modalTwo + 1);
         }
+        else{setModalTwo(modalTwo +1);}
     }
     function openModal3(): void {
         setModalOpened(3);
-        if (modalThree === 7) {
+        if(modalThree === 7){
             setModalThree(1);
-        } else {
-            setModalThree(modalThree + 1);
-        }
+        }else{
+
+        setModalThree(modalThree +1);
+    }
     }
     const text = {
         1: (
@@ -190,7 +204,7 @@ export const SDG04_Spiel = (): JSX.Element => {
             <div>
                 <img className="Spielfeld04" src={Spielfeld} alt="" />
 
-                <button
+               <button
                     type="button"
                     style={{
                         background: "none",
@@ -234,15 +248,10 @@ export const SDG04_Spiel = (): JSX.Element => {
                     <img className="Cards" style={{ right: "600px" }} src={Cards} alt="" />
                 </button>
 
-                <p className="cardDescription" style={{ left: "1200px" }}>
-                    Phantomime
-                </p>
-                <p className="cardDescription" style={{ left: "1420px" }}>
-                    Zeichnen
-                </p>
-                <p className="cardDescription" style={{ left: "1620px" }}>
-                    Erklären
-                </p>
+                <p className="cardDescription" style={{ left: "1200px" }}>Phantomime</p>
+                <p className="cardDescription" style={{ left: "1420px" }}>Zeichnen</p>
+                <p className="cardDescription" style={{ left: "1620px" }}>Erklären</p>
+                
             </div>
         ),
     };
@@ -286,8 +295,12 @@ export const SDG04_Spiel = (): JSX.Element => {
     function decrementCount(): void {
         setText(showtext - 1);
     }
+    let buttonBack;
+    let buttonNext;
+    let buttonEnd;
+    let modal;
 
-    const buttonBack =
+    buttonBack =
         showtext >= 2 ? (
             <div className="backbutton">
                 {" "}
@@ -305,7 +318,7 @@ export const SDG04_Spiel = (): JSX.Element => {
             </button>
         );
 
-    const buttonNext =
+    buttonNext =
         showtext <= 5 ? (
             <div className="nextbutton">
                 {" "}
@@ -322,31 +335,32 @@ export const SDG04_Spiel = (): JSX.Element => {
                 {" "}
             </button>
         );
-
-    const buttonEnd =
-        showtext === 6 ? (
+   
+    buttonEnd =
+        showtext === 6? (
             <div className="nextbutton">
-                <div style={{ marginTop: "10px" }} className="nextbutton">
-                    {" "}
-                    <Link to="/Vorlagen/Endscreen">
-                        {" "}
-                        <div>
-                            <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
-                                <span className={infotextbutton.shadow} />
-                                <span className={infotextbutton.edgegreen} />
-                                <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                                    <p className={infotextbutton.buttontext}>Weiter</p>
-                                </span>
-                            </button>
-                        </div>
-                    </Link>{" "}
-                </div>
-            </div>
+            <div style={{ marginTop: "10px" }} className="nextbutton">
+             {" "}
+             <Link to="/Vorlagen/Endscreen">
+                 {" "}
+                 <div>
+                     <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
+                         <span className={infotextbutton.shadow} />
+                         <span className={infotextbutton.edgegreen} />
+                         <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
+                             <p className={infotextbutton.buttontext}>Weiter</p>
+                         </span>
+                     </button>
+                 </div>
+             </Link>{" "}
+         </div>
+         </div>
         ) : (
             <button className="buttonInvisible" type="button">
                 {" "}
             </button>
         );
+  
 
     const modalContent = {
         1: (
@@ -402,7 +416,7 @@ export const SDG04_Spiel = (): JSX.Element => {
         ),
     };
 
-    const modal = (
+    modal = (
         <Modal
             isOpen={modalIsOpen}
             onRequestClose={() => setIsOpen(false)}
@@ -442,9 +456,11 @@ export const SDG04_Spiel = (): JSX.Element => {
             {buttonBack}
             {buttonEnd}
             {buttonNext}
-
+            
             {modal}
-            <img className="EG " alt="" src={EG} />
+            <img className="EG "alt="" src={EG}/>
         </div>
     );
 };
+// eslint-disable-next-line react/jsx-pascal-case
+renderer.render(<SDG04_Spiel />, document.getElementById("root"));

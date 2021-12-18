@@ -1,6 +1,6 @@
 // eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import logo11 from "./logo11.png";
 
 // eslint-disable-next-line react/prefer-stateless-function

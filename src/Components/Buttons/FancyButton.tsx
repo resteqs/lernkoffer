@@ -1,3 +1,6 @@
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable react/require-default-props */
+
 import React, { PropsWithChildren } from "react";
 import { InfotextButton } from "./InfotextButton";
 

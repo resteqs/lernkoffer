@@ -1,23 +1,61 @@
+// eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import logo13 from "./logo13.png";
 
+// eslint-disable-next-line react/prefer-stateless-function
 export const SDG13_Infotext = (): JSX.Element => {
     return (
-        <>
+        <div>
             <nav className="infoNav">
                 <div className="infoHeader">SDG 13</div>
                 <div className="infoNavLinks">
-                    <Link activeClass="active" to="section1" spy smooth offset={-70} duration={500}>
+                    <Link
+                        activeClass="active"
+                        to="section1"
+                        // eslint-disable-next-line react/jsx-boolean-value
+                        spy={true}
+                        // eslint-disable-next-line react/jsx-boolean-value
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         Why?
                     </Link>
-                    <Link activeClass="active" to="section2" spy smooth offset={-70} duration={500}>
+                    <Link
+                        activeClass="active"
+                        to="section2"
+                        // eslint-disable-next-line react/jsx-boolean-value
+                        spy={true}
+                        // eslint-disable-next-line react/jsx-boolean-value
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         What is the problem?
                     </Link>
-                    <Link activeClass="active" to="section3" spy smooth offset={-70} duration={500}>
+                    <Link
+                        activeClass="active"
+                        to="section3"
+                        // eslint-disable-next-line react/jsx-boolean-value
+                        spy={true}
+                        // eslint-disable-next-line react/jsx-boolean-value
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         How does climate change affect us?
                     </Link>
-                    <Link to="section4" activeClass="active" spy smooth offset={-70} duration={500}>
+                    <Link
+                        to="section4"
+                        activeClass="active"
+                        // eslint-disable-next-line react/jsx-boolean-value
+                        spy={true}
+                        // eslint-disable-next-line react/jsx-boolean-value
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         What can we do?
                     </Link>
                 </div>
@@ -96,6 +134,6 @@ export const SDG13_Infotext = (): JSX.Element => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };

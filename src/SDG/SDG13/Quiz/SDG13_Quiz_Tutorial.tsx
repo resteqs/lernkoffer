@@ -1,18 +1,16 @@
-import React from "react";
+// eslint-disable-next-line unicorn/filename-case
+import * as React from "react";
 import { Link } from "react-router-dom";
 import "../../../styles/quiz.css";
 import Logo from "../../../SDGLogos/Goal-SDG13.png";
 
-export const SDG13_Quiz_Tutorial = (): JSX.Element => {
-    return (
-        <div>
-            <div className="colour_sdg13">
-                <p className="header">
-                    Goal 13: CO<sub>2</sub> Quiz <img className="sdglogo" alt="logo" src={Logo} />
-                </p>
-            </div>
-            <div className="quiztextbox">
-                <p>
+// eslint-disable-next-line react/prefer-stateless-function
+export class SDG13_Quiz_Tutorial extends React.Component {
+    render(): JSX.Element {
+        return (
+            <div>
+                <div className =  "colour_sdg13"><p className = "header">Goal 13: CO<sub>2</sub> Quiz <img className ="sdglogo" alt="logo" src={Logo}/></p></div>
+                <div className = "quiztextbox" ><p>
                     As you know at the moment, we are taking a look at climate change and what we can do to slow it down
                     or even stop and reverse it.
                 </p>
@@ -36,10 +34,14 @@ export const SDG13_Quiz_Tutorial = (): JSX.Element => {
                     After everybody chose an answer take a look at the solution and maybe those of you who chose
                     correctly can explain their thoughts to those who stood in the other corners/spots
                 </p>
-                <Link to="/SDG13/Quiz/Question1">
-                    <div className="greenButton">Got it</div>
-                </Link>
+                <Link to = "/SDG13/Quiz/Question1">
+                    <div className = "greenButton"  > 
+                        Got it
+                    </div>
+                   
+                </Link></div>
+              
             </div>
-        </div>
-    );
-};
+        );
+    }
+}

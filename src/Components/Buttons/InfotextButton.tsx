@@ -1,3 +1,5 @@
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable react/require-default-props */
 import React from "react";
 import cssStyle from "../../styles/Infotextbutton.module.css";
 

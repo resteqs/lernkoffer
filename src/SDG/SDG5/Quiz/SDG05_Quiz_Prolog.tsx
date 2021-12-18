@@ -95,7 +95,7 @@ export const SDG05_Quiz_Prolog = (): JSX.Element => {
         ) : (
             <div> </div>
         );
-
+        
     // eslint-disable-next-line prefer-const
     buttonNext =
         showtext <= 3 ? (
@@ -143,7 +143,7 @@ export const SDG05_Quiz_Prolog = (): JSX.Element => {
         <div>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
-                    Geschlechtergleichheit
+                Geschlechtergleichheit
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
@@ -156,3 +156,5 @@ export const SDG05_Quiz_Prolog = (): JSX.Element => {
         </div>
     );
 };
+// eslint-disable-next-line react/jsx-pascal-case
+renderer.render(<SDG05_Quiz_Prolog />, document.getElementById("root"));

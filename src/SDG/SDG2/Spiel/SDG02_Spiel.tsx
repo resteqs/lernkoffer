@@ -137,7 +137,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                         <span className="shadow" />
                         <span className={infotextbutton.edgeorange} />
                         <span className="front" style={buttonStyle}>
-                            Europa
+                           Europa
                         </span>
                     </div>
                 </button>{" "}
@@ -277,47 +277,36 @@ export const SDG02_Spiel = (): JSX.Element => {
         ),
         6: (
             <div>
-                <img className="center" src={hamburger} alt="" />
-            </div>
+            <img className="center" src={hamburger} alt="" />
+        </div>
         ),
-        7: (
+         7:(<div>
+            <section>
+                <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
+                    <p>
+                    Beschreibung: Das ist ein Burger. Hier wird ein Brötchen in der Mitte durchgeschnitten und mit verschiedenen Zutaten belegt. Im Normalfall ist eine Scheibe Fleisch dabei (aus Hackfleisch) und Käse. Man kann sich diese Burger sehr verschieden belegen. Manche legen noch Zwiebel und Tomaten darauf oder Salat. Oft kommt auch eine Scheibe Gurke drauf und dann wird das Ganze noch mit verschiedenen Saucen bestrichen.{" "}
+                    </p>
+                </div>
+            </section>
+            {buttons}
+        </div>),
+        8: (
             <div>
+            <img className="center" src={chilli} alt="" />
+        </div>
+        ),
+        9: (
+            <div>
+                <div>
                 <section>
                     <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
                         <p>
-                            Beschreibung: Das ist ein Burger. Hier wird ein Brötchen in der Mitte durchgeschnitten und
-                            mit verschiedenen Zutaten belegt. Im Normalfall ist eine Scheibe Fleisch dabei (aus
-                            Hackfleisch) und Käse. Man kann sich diese Burger sehr verschieden belegen. Manche legen
-                            noch Zwiebel und Tomaten darauf oder Salat. Oft kommt auch eine Scheibe Gurke drauf und dann
-                            wird das Ganze noch mit verschiedenen Saucen bestrichen.{" "}
+                        Beschreibung: Das ist Chili Con Carne. Es ist eine Art Eintopf in dem Hackfleisch und Gemüse zusammen gekocht werden. Traditionell werden spezielle Chilibohnen sowie Mais benutzt. Man kann aber auch sehr unterschiedliche Sachen selbst noch mit hineingeben. Es gibt dieses Gericht auch für Vegetarier ohne Fleisch, dann heißt es Chili Sin Carne. Meist ist dieses (egal ob mit oder ohne Fleisch) eher scharf, wie der Name „Chili“ schon verrät.{" "}
                         </p>
                     </div>
                 </section>
                 {buttons}
             </div>
-        ),
-        8: (
-            <div>
-                <img className="center" src={chilli} alt="" />
-            </div>
-        ),
-        9: (
-            <div>
-                <div>
-                    <section>
-                        <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
-                            <p>
-                                Beschreibung: Das ist Chili Con Carne. Es ist eine Art Eintopf in dem Hackfleisch und
-                                Gemüse zusammen gekocht werden. Traditionell werden spezielle Chilibohnen sowie Mais
-                                benutzt. Man kann aber auch sehr unterschiedliche Sachen selbst noch mit hineingeben. Es
-                                gibt dieses Gericht auch für Vegetarier ohne Fleisch, dann heißt es Chili Sin Carne.
-                                Meist ist dieses (egal ob mit oder ohne Fleisch) eher scharf, wie der Name „Chili“ schon
-                                verrät.{" "}
-                            </p>
-                        </div>
-                    </section>
-                    {buttons}
-                </div>
             </div>
         ),
         10: (
@@ -330,9 +319,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                 <section>
                     <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
                         <p>
-                            Beschreibung: Das ist Sushi. Es gibt viele verschiedene Arten von Sushi. Doch die meisten
-                            bestehen aus klebrigem Reis und Fisch oder Gemüse. Das dunkle, was um den Reis gewickelt
-                            ist, ist eine bestimmte Art Algen, die man essen kann und kaum einen eigenen Geschmack hat.{" "}
+                        Beschreibung: Das ist Sushi. Es gibt viele verschiedene Arten von Sushi. Doch die meisten bestehen aus klebrigem Reis und Fisch oder Gemüse. Das dunkle, was um den Reis gewickelt ist, ist eine bestimmte Art Algen, die man essen kann und kaum einen eigenen Geschmack hat.{" "}
                         </p>
                     </div>
                 </section>
@@ -347,28 +334,23 @@ export const SDG02_Spiel = (): JSX.Element => {
 
         13: (
             <div>
-                <section>
-                    <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
-                        <p>
-                            Beschreibung: Das ist Tajine. Es ist ein sehr traditionelles Gericht, das nach dem Namen der
-                            Tontöpfe benannt wurde, in denen es gekocht wird. Es gibt sehr viele verschiedene Arten von
-                            Tajine. Meist wird sehr viel Gemüse, Fisch oder Fleisch und jede Menge verschiedener Gewürze
-                            verwendet.{" "}
-                        </p>
-                    </div>
-                </section>
-                {buttons}
-            </div>
+            <section>
+                <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
+                    <p>
+                    Beschreibung: Das ist Tajine. Es ist ein sehr traditionelles Gericht, das nach dem Namen der Tontöpfe benannt wurde, in denen es gekocht wird. Es gibt sehr viele verschiedene Arten von Tajine. Meist wird sehr viel Gemüse, Fisch oder Fleisch und jede Menge verschiedener Gewürze verwendet.{" "}
+                    </p>
+                </div>
+            </section>
+            {buttons}
+        </div>
         ),
         14: (
             <div>
-                <p style={obj3number === 1 ? { color: "green" } : { color: "red" }}>Kürbissuppe kommt aus Europa</p>
-                <p style={obj1number === 2 ? { color: "green" } : { color: "red" }}>Burger kommt aus Nord Amerika</p>
-                <p style={obj4number === 3 ? { color: "green" } : { color: "red" }}>
-                    Chili Con Carne kommt aus Süd Amerika
-                </p>
-                <p style={obj5number === 4 ? { color: "green" } : { color: "red" }}>Sushi kommt aus Asien</p>
-                <p style={obj2number === 5 ? { color: "green" } : { color: "red" }}>Tajine kommt aus Afrika</p>
+             <p style={ obj3number === 1? { color: "green" }: { color:"red" } }>Kürbissuppe kommt aus Europa</p>
+             <p  style={ obj1number === 2? { color: "green" }: { color:"red" } }>Burger kommt aus Nord Amerika</p>
+             <p  style={ obj4number === 3? { color: "green" }: { color:"red" } }>Chili Con Carne kommt aus Süd Amerika</p>
+             <p  style={ obj5number === 4? { color: "green" }: { color:"red" } }>Sushi kommt aus Asien</p>
+             <p  style={ obj2number === 5? { color: "green" }: { color:"red" } }>Tajine kommt aus Afrika</p>
             </div>
         ),
     };
@@ -476,7 +458,7 @@ export const SDG02_Spiel = (): JSX.Element => {
     buttonEnd =
         showtext === 14 ? (
             <div style={{ marginTop: "10px" }} className="nextbutton">
-                <Link to="/Vorlagen/Endscreen">
+                 <Link to="/Vorlagen/Endscreen">
                     {" "}
                     <button className={infotextbutton.pushable} type="button">
                         <span className={infotextbutton.shadow} />
@@ -486,6 +468,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                         </span>
                     </button>
                 </Link>
+               
             </div>
         ) : (
             <button className="buttonInvisible" type="button">
@@ -510,3 +493,5 @@ export const SDG02_Spiel = (): JSX.Element => {
         </div>
     );
 };
+// eslint-disable-next-line react/jsx-pascal-case
+renderer.render(<SDG02_Spiel />, document.getElementById("root"));

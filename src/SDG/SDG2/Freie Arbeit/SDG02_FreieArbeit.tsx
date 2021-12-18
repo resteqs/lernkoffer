@@ -69,14 +69,14 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                         marginTop: "100px",
                         marginLeft: "700px",
                         borderRadius: "30px 30px 30px 30px",
-                        padding: "20px",
+                        padding: "20px"
                     }}
                     onClick={() => {
                         setIsOpen(true);
                         openModal1();
                     }}
                 >
-                    <p style={{ fontSize: "60px" }}> Vorlage </p>
+                    <p  style={{ fontSize:"60px" }}> Vorlage </p>
                 </button>
             </div>
         ),
@@ -103,14 +103,15 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
                         marginTop: "100px",
                         marginLeft: "700px",
                         borderRadius: "30px 30px 30px 30px",
-                        padding: "20px",
+                        padding: "20px"
+                        
                     }}
                     onClick={() => {
                         setIsOpen(true);
                         openModal2();
                     }}
                 >
-                    <p style={{ fontSize: "60px" }}> Bild </p>
+                    <p style={{ fontSize:"60px" }}> Bild </p>
                 </button>
             </div>
         ),
@@ -352,3 +353,5 @@ export const SDG02_FreieArbeit = (): JSX.Element => {
         </div>
     );
 };
+// eslint-disable-next-line react/jsx-pascal-case
+renderer.render(<SDG02_FreieArbeit />, document.getElementById("root"));
