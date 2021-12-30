@@ -204,6 +204,7 @@ import { SDG11_Infotext } from "./SDG/SDG11/Info/SDG11_Infotext";
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
+import { SDG12_Infotext } from "./SDG/SDG12/Info/SDG12_Infotext";
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
 /**                                Video                                     */
@@ -466,9 +467,9 @@ export const App = (): JSX.Element => {
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
-<Route exact path="/SDG11/GutesBeispiel" component={SDG11_GB}/> 
+            <Route exact path="/SDG11/GutesBeispiel" component={SDG11_GB}/> 
 /**                               Infotext                                   */
-                <Route exact path="/SDG11/Infotext"><InfotextComponent sdg={SDG11_Infotext}/></Route>
+            <Route exact path="/SDG11/Infotext"><InfotextComponent sdg={SDG11_Infotext}/></Route>
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
@@ -481,6 +482,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
+            <Route exact path="/SDG12/Infotext"><InfotextComponent sdg={SDG12_Infotext}/></Route>
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
 /**                                Video                                     */
