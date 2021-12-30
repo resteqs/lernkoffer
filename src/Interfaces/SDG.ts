@@ -8,3 +8,8 @@ export interface InfotextProps {
     eg: string;
     audioFile?: string;
 }
+export interface ModalComponnet {
+    header:string;
+    text:string;
+    
+}
