@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/filename-case */ 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import soundfile from "./Mobiles_Museum_Infotext_4.mp3";
@@ -25,4 +26,5 @@ export const SDG04_Infotext: InfotextProps = {
     logo: Logo,
     eg: EG,
     audioFile: soundfile,
+    /* eslint-enable unicorn/filename-case */ 
 };
