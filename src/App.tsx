@@ -390,7 +390,6 @@ export const App = (): JSX.Element => {
             <Route exact path ="/SDG05/Quiz/Prolog" component={SDG05_Quiz_Prolog}/>
             <Route exact path ="/SDG05/Quiz" component={SDG05_Quiz}/>
 /**                                Spiel                                     */
-            <Route exact path="/SDG06/Spiel" component={SDG06_Spiel}/>
 /**                                Video                                     */
 
 
@@ -400,9 +399,10 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
-            <Route exact path="/SDG06/Infotext" component={SDG06_Infotext}/>
+            <Route exact path="/SDG06/Infotext"><InfotextComponent sdg={SDG06_Infotext}/></Route>
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+            <Route exact path="/SDG06/Spiel" component={SDG06_Spiel}/>
 /**                                Video                                     */
 
 

@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/filename-case */
 export interface InfotextProps {
     number: number;
     name: string;
@@ -8,3 +9,4 @@ export interface InfotextProps {
     eg: string;
     audioFile?: string;
 }
+/* eslint-enable unicorn/filename-case */
