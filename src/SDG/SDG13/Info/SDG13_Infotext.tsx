@@ -1,139 +1,34 @@
-// eslint-disable-next-line unicorn/filename-case
-import * as React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
-import logo13 from "./logo13.png";
+/* eslint-disable unicorn/filename-case */ 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import soundfile from "./test.mp3";
+import Logo from "../../../SDGLogos/Goal-SDG13.png";
+import EG from "../../../EG/EG2.png";
+import { InfotextProps } from "../../../Interfaces/SDG";
 
-// eslint-disable-next-line react/prefer-stateless-function
-export const SDG13_Infotext = (): JSX.Element => {
-    return (
-        <div>
-            <nav className="infoNav">
-                <div className="infoHeader">SDG 13</div>
-                <div className="infoNavLinks">
-                    <Link
-                        activeClass="active"
-                        to="section1"
-                        // eslint-disable-next-line react/jsx-boolean-value
-                        spy={true}
-                        // eslint-disable-next-line react/jsx-boolean-value
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >
-                        Why?
-                    </Link>
-                    <Link
-                        activeClass="active"
-                        to="section2"
-                        // eslint-disable-next-line react/jsx-boolean-value
-                        spy={true}
-                        // eslint-disable-next-line react/jsx-boolean-value
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >
-                        What is the problem?
-                    </Link>
-                    <Link
-                        activeClass="active"
-                        to="section3"
-                        // eslint-disable-next-line react/jsx-boolean-value
-                        spy={true}
-                        // eslint-disable-next-line react/jsx-boolean-value
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >
-                        How does climate change affect us?
-                    </Link>
-                    <Link
-                        to="section4"
-                        activeClass="active"
-                        // eslint-disable-next-line react/jsx-boolean-value
-                        spy={true}
-                        // eslint-disable-next-line react/jsx-boolean-value
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >
-                        What can we do?
-                    </Link>
-                </div>
-                <img className="infoLogo" src={logo13} alt="" />
-            </nav>
-
-            <div>
-                <div className="infodistancebttexts" id="section1">
-                    <p className="lineHeight">_</p>
-                    <p className="header">Goal 13: Climate action</p>
-                    <p className="subheading1">Why</p>
-                    <div className="infoText">
-                        <p>
-                            The climate crisis continues unabated as the global community shies away from the full
-                            commitment required for its reversal.
-                        </p>
-                        <p>
-                            2010-2019 was the warmest decade ever recorded, bringing with it massive wildfires,
-                            hurricanes, droughts, floods and other climate disasters across continents.
-                        </p>
-                        <p>
-                            If left unchecked, climate change will cause average global temperatures to increase beyond
-                            3°C and will adversely affect every ecosystem.
-                        </p>
-                        <p>
-                            Already, we are seeing its impacts, causing threats like food and water scarcity, which can
-                            lead to conflicts.
-                        </p>
-                    </div>
-                </div>
-
-                <div className="infodistancebttexts" id="section2">
-                    <p className="subheading1">What is the problem?</p>
-                    <div className="infoText">
-                        <p>
-                            Next to causing immense problems to human existence by affecting us with its impacts, the
-                            biggest one of them all is our lack of commitments required to reverse the climate crisis.
-                            We are seeing and feeling the extend of this crisis but still shy away to admit and take
-                            responsibility.
-                        </p>
-                    </div>
-                </div>
-
-                <div className="infodistancebttexts" id="section3">
-                    <p className="subheading1">How does climate change affect us?</p>
-                    <div className="infoText">
-                        <p>2019 was the second warmest year on record.&nbsp;</p>
-                        <p>Global temperatures are projected to rise by up to 3,2&deg; C by 2100.&nbsp;</p>
-                        <p>
-                            Climate change continues to exacerbate the frequency and severity of natural disasters,
-                            affecting more than 39 million people in 2019.&nbsp;
-                        </p>
-                        <p>
-                            Furthermore, climate change can also lead to conflicts about food, water and resources, for
-                            example.&nbsp;
-                        </p>
-                    </div>
-                </div>
-
-                <div id="section4">
-                    <p className="subheading1">What can we do?</p>
-                    <div className="infoText">
-                        <p>
-                            To address climate change, we&nbsp;have to&nbsp;vastly increase our efforts. Much is
-                            happening around the world&nbsp;-which is great-&nbsp;but so much more needs to be
-                            done.&nbsp;&nbsp;
-                        </p>
-                        <p>
-                            In 2015, the world took a significant first step by adopting the Paris Agreement, in which
-                            all countries committed to take action to address climate change.&nbsp;&nbsp;
-                        </p>
-                        <p>
-                            Every single one of us can make an impact by informing ourselves, doing everything in our
-                            power to tackle this issue and by bringing attention to it.&nbsp;&nbsp;
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+export const SDG13_Infotext: InfotextProps = {
+    number: 13,
+    name: "Maßnahmen zum Klimaschutz",
+    sdg: "SDG13",
+    text: {
+        1: "“Umgehend Maßnahmen zur Bekämpfung des Klimawandels und seiner Auswirkungen ergreifen“",
+        2: "Die Klimakrise dauert unvermindert an, da die Weltgemeinschaft vor der vollen Verpflichtung, die für deren Umkehrung erforderlich ist, zurückschreckt. 2010-2019 war das wärmste Jahrzehnt, das je aufgezeichnet wurde, und brachte massive Waldbrände, Hurrikane, Dürren, Überschwemmungen und andere Klimakatastrophen auf allen Kontinenten mit sich.",
+        3: "Wenn der Klimawandel unkontrolliert bleibt, wird er dafür sorgen, dass die globalen Durchschnittstemperaturen über 3°C steigen und sich negativ auf jedes Ökosystem auswirken. Wir sehen bereits die Auswirkungen, die Bedrohungen wie Nahrungs- und Wassermangel verursachen, welche zu Konflikten führen können.",
+        4: "Neben der Tatsache, dass die Klimakrise immense Probleme für die menschliche Existenz verursacht, indem sie uns mit ihren Auswirkungen betrifft, ist das größte aller Probleme unser Mangel an Engagement, um diese umzukehren. Wir sehen und fühlen das Ausmaß der Krise, aber scheuen uns noch immer davor, es zuzugeben und Verantwortung zu übernehmen.",
+        5: "2019 war aktenkundig das zweitwärmste Jahr. Die globalen Temperaturen werden voraussichtlich bis 2100 um bis zu 3,2°C ansteigen. Der Klimawandel verschlimmert weiterhin die Häufigkeit und den Schweregrad von Naturkatastrophen, im Jahr 2019 betraf dies mehr als 39 Millionen Menschen. Darüber hinaus kann der Klimawandel beispielsweise auch zu Konflikten um Nahrung, Wasser und Ressourcen führen.",
+        6: "Um an den Klimawandel heranzugehen, müssen wir unsere Anstrengungen erheblich verstärken. Es passiert viel auf der ganzen Welt – was großartig ist – aber es muss noch viel mehr gemacht werden. 2015 machte die Welt einen bedeutenden Schritt mit der Verabschiedung des Pariser Abkommens, in welchem sich alle Länder dazu verpflichtet haben, Maßnahmen zur Bekämpfung des Klimawandels zu ergreifen.",
+        7: "Jeder einzelne von uns kann etwas bewirken, indem er sich informiert, alles in seiner Macht Stehende tut, um dieses Problem anzugehen und indem er darauf aufmerksam macht."
+    },
+    header: {
+        2: "Warum?",
+        3: "Warum?",
+        4: "Was ist das Problem?",
+        5: "Wie ist dieses Thema mit uns verbunden?",
+        6: "Was können wir tun?",
+        7: "Was können wir tun?",
+    },
+    logo: Logo,
+    eg: EG,
+    audioFile: soundfile,
+    /* eslint-enable unicorn/filename-case */ 
 };
