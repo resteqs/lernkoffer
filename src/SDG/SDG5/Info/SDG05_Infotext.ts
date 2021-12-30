@@ -2,30 +2,34 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import soundfile from "./test.mp3";
-import Logo from "../../../SDGLogos/Goal-SDG01.png";
+import Logo from "../../../SDGLogos/Goal-SDG05.png";
 import EG from "../../../EG/EG2.png";
 import { InfotextProps } from "../../../Interfaces/SDG";
 
 export const SDG05_Infotext: InfotextProps = {
     number: 5,
-    name: "Keine Armut",
+    name: "Geschlechtergleichheit",
     sdg: "SDG05",
     text: {
-        1: "“Verfügbarkeit von Jobs und einem gerechten Gehalt für alle gewährleisten”",
-        2: "Ein sicherer Arbeitsplatz und vor allem faires Gehalt für jeden sind für die Struktur einer Gesellschaft enorm wichtig. Viele Aspekte wie Ernährungssicherheit, Frieden und Bildung hängen stark davon ab. Ein fester Job bildet aber auch die Grundlage für ein Leben, in dem ihr alle Grundbedürfnisse befriedigen könnt, wie sich zu ernähren und ein Dach über dem Kopf zu haben. Außerdem ist es wahrscheinlicher, dass Kinder, die in Armut leben, schlechte oder sogar gar keine Bildung erfahren.",
-        3: "Im Jahre 2015 waren 700 Millionen Menschen von extremer Armut betroffen (zum Vergleich: 2020 lebten fast 8 Milliarden Menschen auf der Welt). Extreme Armut betrifft Menschen die mit weniger als 1,57€ am Tag leben müssen und so ihre Grundbedürfnisse nicht mehr befriedigen können.",
-        4: "Aber Armut ist nicht nur auf schlechtes Einkommen zurückzuführen, sondern auch darauf ob Personen eine Wahl haben, was sie tun wollen, ob die Menschenrechte in ihrem Land eingehalten werden und ob sie Zugriff zu bestimmten Dienstleistungen (z.B. Arztbesuche) haben.",
-        5: "An vielen Orten auf dieser Welt werden Menschen schlecht bezahlt oder haben keinen Job und leben daher unter der Armutsgrenze. Dies schränkt ihren Handlungsspielraum ein und lässt ihnen oft keine Wahl, sodass sie Berufe mit niedrigen Sicherheitsstandards ausführen müssen, in denen sie möglichen Gefahren ausgesetzt werden.",
-        6: "Wenn wir sicherstellen können, dass jeder einen sicheren und gut bezahlten Job je nach seinen Fähigkeiten ausführen kann, wird dies natürlich dazu beitragen Armut zu bekämpfen und auszulöschen. Es gehört aber noch mehr Arbeit dazu. Wir müssen zum Beispiel die Lebensstandards erhöhen, ihnen Zugriff auf Bildung geben und vieles mehr.",
-        7: "Auch wir können gegen die Armut kämpfen indem wir Fördervereinen beitreten, Obdachlosen mit Geld oder anderen Mitteln helfen oder benutzte Sachen spenden, anstatt sie wegzuwerfen."
+        1: "“Geschlechtergleichstellung erreichen und alle Frauen und Mädchen zur Selbstbestimmung befähigen”",
+        2: "Frauen und Mädchen machen die Hälfte der Weltbevölkerung aus und damit auch die Hälfte der Möglichkeiten, die sie hat. Aber es gibt weiterhin auf der ganzen Welt eine Ungleichheit zwischen den Geschlechtern, und als Folge davon kann sich unsere Gesellschaft nicht weiterentwickeln. Frauen sind in nicht so vielen politischen Positionen wie Männer angestellt und sie leisten im Vergleich mehr unbezahlter Hausarbeit.",
+        3: "Die Ungleichheit, mit der Mädchen konfrontiert sind, kann bereits bei der Geburt beginnen und sie ihr ganzes Leben lang begleiten. In einigen Ländern haben Mädchen nicht den gleichen Zugang zu medizinischer Versorgung oder angemessener Ernährung wie Männer (was zu einer höheren Sterblichkeitsrate führt).",
+        4: "Wenn Mädchen in der Bildung benachteiligt sind, führt dies zu einem mangelnden Zugang zu Fähigkeiten. Außerdem führt es zu eingeschränkten Möglichkeiten für sie, einen Arbeitsplatz zu finden. Die Befähigung von Frauen und Mädchen (der Prozess, Freiheit und Macht zu erlangen, das zu tun, was man will oder zu kontrollieren, was mit einem geschieht) und ihre volle Beteiligung an den Arbeitskräften sind wichtig, um die wirtschaftliche und soziale Entwicklung zu verbessern.",
+        5: "Leider ist das nicht die einzige geschlechtsspezifische Herausforderung. Weltweit hat mehr als jede dritte Frau zwischen 15 und 49 Jahren irgendeine Form von Gewalt erlebt.",
+        6: "Die Gleichstellung der Geschlechter ist ein grundlegendes Menschenrecht, egal wo man lebt. Ihre Förderung ist für alle Bereiche einer gesunden Gesellschaft von Bedeutung, zum Beispiel für die Verringerung von Armut und die Förderung von Gesundheit, Bildung, Schutz und Wohlbefinden von Mädchen und Jungen.",
+        7: "Wenn du ein Mädchen bist, kannst du in der Schule bleiben und dazu beitragen, dass deine Mitschülerinnen dasselbe tun und für ihr Recht auf Zugang zu Gesundheitsdiensten kämpfen. Wenn du älter bist, kannst du dich mit Vorurteilen und anderen Formen der Ungleichheit auseinandersetzen, egal ob es absichtlich war oder nicht.",
+        8: "Wenn du ein Junge bist, kannst du Mädchen im Kampf für die Gleichberechtigung der Geschlechter unterstützen und dich für Beziehungen einsetzen, in denen Mädchen respektvoll behandelt werden und den gleichen Wert haben wie ihre Partner.",
+        9: "Generell kannst du für Gesetze kämpfen, die die Rechte von Frauen und Mädchen nicht einschränken und sie nicht daran hindern, ihr volles Potenzial auszuschöpfen.",
     },
     header: {
         2: "Warum?",
-        3: "Was ist das Problem?",
+        3: "Warum?",
         4: "Was ist das Problem?",
-        5: "Wie ist dieses Thema mit uns verbunden?",
+        5: "Was ist das Problem?",
         6: "Wie ist dieses Thema mit uns verbunden?",
         7: "Was können wir tun?",
+        8: "Was können wir tun?",
+        9: "Was können wir tun?",
     },
     logo: Logo,
     eg: EG,
