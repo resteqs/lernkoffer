@@ -468,7 +468,7 @@ export const App = (): JSX.Element => {
 /**                             Gutes Beispiel                               */
 <Route exact path="/SDG11/GutesBeispiel" component={SDG11_GB}/> 
 /**                               Infotext                                   */
-                <Route exact path="/SDG11/Infotext" component={SDG11_Infotext}/>
+                <Route exact path="/SDG11/Infotext"><InfotextComponent sdg={SDG11_Infotext}/></Route>
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
