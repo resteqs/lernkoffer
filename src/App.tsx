@@ -242,7 +242,7 @@ import foxHedgehog  from "./SDG/SDG13/Spiel/information/foxHedgehog";
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
-import { infotext14 } from "./SDG/SDG14/Info/14infotext";
+import { SDG14_Infotext } from "./SDG/SDG14/Info/SDG14_Infotext";
 
 /**                                 Quiz                                     */
 
@@ -528,7 +528,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
-                <Route exact path="/SDG14/Infotext" component={infotext14} />
+                <Route exact path="/SDG14/Infotext"><InfotextComponent sdg={SDG14_Infotext}/></Route> 
 
 /**                                 Quiz                                     */
 
