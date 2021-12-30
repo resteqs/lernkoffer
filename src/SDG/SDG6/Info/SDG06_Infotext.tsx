@@ -9,7 +9,7 @@ import { InfotextProps } from "../../../Interfaces/SDG";
 export const SDG06_Infotext: InfotextProps = {
     number: 6,
     name: "Sauberes Wasser und Sanitäreinrichtungen",
-    sdg: "SDG05",
+    sdg: "SDG06",
     text: {
         1: "“Verfügbarkeit und nachhaltige Bewirtschaftung von Wasser und Sanitärversorgung für alle gewährleisten”",
         2: "Es ist ein Menschenrecht Zugang zu Wasser, Sanitäreinrichtungen und Hygiene zu haben. Wasser ist nicht nur für die Gesundheit, sondern auch für die Armutsbekämpfung, die Ernährungssicherheit, den Frieden und die Menschenrechte, die Ökosysteme und die Bildung sehr wichtig.",
