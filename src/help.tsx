@@ -97,6 +97,10 @@ export const Help = ():JSX.Element => {
                     <div className="centre">SDG 08 Infotext</div>
                 </Link>
 
+                <Link to = "/SDG09/Infotext">
+                    <div className="centre">SDG 09 Infotext</div>
+                </Link>
+
                 <Link to = "/SDG08/Quiz/Prolog">
                     <div className="centre">SDG 08 Quiz</div>
                 </Link>
