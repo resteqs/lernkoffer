@@ -139,7 +139,7 @@ export const Help = ():JSX.Element => {
                 </Link>
 
                 <Link to="/SDG13/Spiel1">
-                    <div className="centre">SDG 13 Suchspiel (Land)</div>
+                    <div className="centre">SDG 13 Antippspiel (Land)</div>
                 </Link>
 
                 <Link to="/SDG13/Spiel2">
@@ -155,7 +155,7 @@ export const Help = ():JSX.Element => {
                 </Link>
 
                 <Link to="/SDG14/Spiel2">
-                    <div className="centre">SDG 14 game</div>
+                    <div className="centre">SDG 14 Antippspiel</div>
                 </Link>
 
                 <Link to = "/SDG15/Infotext">
