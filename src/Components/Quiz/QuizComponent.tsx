@@ -3,7 +3,7 @@
 
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { QuizProps } from "../../Interfaces/Sdg";
+import { QuizProps } from "../../Interfaces/SDG";
 import { QuizButton } from "./QuizButton";
 import { ModalComponent } from "../Modal/ModalComponent";
 import { FancyButton } from "../Buttons/FancyButton";

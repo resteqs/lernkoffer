@@ -1,6 +1,6 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable react/react-in-jsx-scope */
-import { QuizProps } from "../Interfaces/Sdg";
+import { QuizProps } from "../Interfaces/SDG";
 import Logo from  "../SDGLogos/Goal-SDG01.png";
 
 

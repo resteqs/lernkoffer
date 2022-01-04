@@ -1,6 +1,7 @@
+/* eslint-disable eslint-comments/disable-enable-pair */
+/* eslint-disable unicorn/filename-case */
 import React, { CSSProperties } from "react";
 
-/* eslint-disable unicorn/filename-case */
 export interface InfotextProps {
     number: number;
     name: string;

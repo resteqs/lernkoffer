@@ -7,7 +7,7 @@ import "../../styles/colour_sdgs.css";
 import "../../styles/App.css";
 import "../../styles/component.css";
 import Modal from "react-modal";
-import { ModalProps } from "../../Interfaces/Sdg";
+import { ModalProps } from "../../Interfaces/SDG";
 
 export const ModalComponent = (props: ModalProps): JSX.Element => {
 
