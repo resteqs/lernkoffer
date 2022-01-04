@@ -1,5 +1,6 @@
 import React, { CSSProperties } from "react";
 
+/* eslint-disable unicorn/filename-case */
 export interface InfotextProps {
     number: number;
     name: string;
@@ -10,6 +11,7 @@ export interface InfotextProps {
     eg: string;
     audioFile?: string;
 }
+
 export interface ModalProps {
     modalContent?:JSX.Element;
     modalStyle?:CSSProperties

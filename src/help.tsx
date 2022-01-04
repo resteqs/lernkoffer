@@ -77,22 +77,49 @@ export const Help = ():JSX.Element => {
                     <div className="centre">SDG 04 Gutes Beispiel</div>
                 </Link>
 
+                <Link to = "/SDG05/Infotext">
+                    <div className="centre">SDG 05 Infotext</div>
+                </Link>
+
                 <Link to = "/SDG05/Quiz/Prolog">
                     <div className="centre">SDG 05 Quiz</div>
                 </Link>
 
                 <Link to = "/SDG06/Infotext">
-                    <div className="centre">SDG 06 infotext</div>
+                    <div className="centre">SDG 06 Infotext</div>
+                </Link>
+
+                <Link to = "/SDG07/Infotext">
+                    <div className="centre">SDG 07 Infotext</div>
+                </Link>
+
+                <Link to = "/SDG08/Infotext">
+                    <div className="centre">SDG 08 Infotext</div>
                 </Link>
 
                 <Link to = "/SDG08/Quiz/Prolog">
                     <div className="centre">SDG 08 Quiz</div>
                 </Link>
 
+                <Link to = "/SDG09/Infotext">
+                    <div className="centre">SDG 09 Infotext</div>
+                </Link>
+
+                 <Link to = "/SDG09/Spiel">
+                    <div className="centre">SDG 09 Spiel</div>
+                </Link>
+
+                <Link to = "/SDG10/Infotext">
+                    <div className="centre">SDG 10 Infotext</div>
+                </Link>
+
                 <Link to = "/SDG11/Infotext">
                     <div className="centre">SDG 11 infotext</div>
                 </Link>
 
+                <Link to = "/SDG12/Infotext">
+                    <div className="centre">SDG 12 infotext</div>
+                </Link>
 
                 <Link to = "/SDG13/Infotext">
                     <div className="centre">SDG 13 infotext</div>
@@ -116,7 +143,7 @@ export const Help = ():JSX.Element => {
                 </Link>
 
                 <Link to="/SDG13/Spiel1">
-                    <div className="centre">SDG 13 Suchspiel (Land)</div>
+                    <div className="centre">SDG 13 Antippspiel (Land)</div>
                 </Link>
 
                 <Link to="/SDG13/Spiel2">
@@ -132,7 +159,19 @@ export const Help = ():JSX.Element => {
                 </Link>
 
                 <Link to="/SDG14/Spiel2">
-                    <div className="centre">SDG 14 game</div>
+                    <div className="centre">SDG 14 Antippspiel</div>
+                </Link>
+
+                <Link to = "/SDG15/Infotext">
+                    <div className="centre">SDG 15 infotext</div>
+                </Link>
+
+                <Link to = "/SDG16/Infotext">
+                    <div className="centre">SDG 16 infotext</div>
+                </Link>
+
+                <Link to = "/SDG17/Infotext">
+                    <div className="centre">SDG 17 infotext WIP</div>
                 </Link>
 
                 <Link to="/Vorlagen/MagicButton">
