@@ -3,7 +3,7 @@
 import EG from "./eg/EG.png";
 import Logo from  "../../../SDGLogos/Goal-SDG01.png";
 import soundfile from "./eg/EG.png";
-import { InfotextProps } from "../../../Interfaces/SDG";
+import { InfotextProps } from "../../../Interfaces/Sdg";
 
 export const SDG01_Infotext:InfotextProps = {
     number: 1,

@@ -20,10 +20,6 @@ import Modal from "react-modal";
 import infotextbutton from "../../../styles/Infotextbutton.module.css";
 import { CSSProperties } from "@material-ui/styles";
 
-interface States {
-    shouldShowModal: boolean;
-    onlyCloseWithButton: boolean;
-}
 
 // eslint-disable-next-line react/prefer-stateless-function
 export const SDG02_Quiz = (): JSX.Element => {
@@ -186,6 +182,7 @@ export const SDG02_Quiz = (): JSX.Element => {
         ) : (
             <p>{answerNumbers2[showtext]}</p>
         ));
+        
     let answer = (
         <p style={{ fontSize: "40px" }}>
             {" "}
