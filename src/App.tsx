@@ -196,6 +196,7 @@ import { SDG11_Infotext } from "./SDG/SDG11/Info/SDG11_Infotext";
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+import { SDG11_Spiel } from "./SDG/SDG11/Spiel/SDG11_Spiel";
 /**                                Video                                     */
 
 
@@ -498,6 +499,7 @@ export const App = (): JSX.Element => {
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+<Route exact path="/SDG11/Spiel" component={SDG11_Spiel}/>
 /**                                Video                                     */
 
 
