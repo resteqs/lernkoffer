@@ -1,4 +1,5 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable eslint-comments/disable-enable-pair */
+/* eslint-disable react/jsx-pascal-case */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 import { HashRouter , Route, Switch } from "react-router-dom";
@@ -324,6 +325,8 @@ import page142 from "./SDG/SDG14/Spiel2/tutorial/14tut2";
 import page143 from "./SDG/SDG14/Spiel2/tutorial/14tut3";
 
 import play14 from "./SDG/SDG14/Spiel2/play14";
+import { Quiz_Component } from "./Components/Quiz/QuizComponent";
+import { SDGX_Quiz } from "./Components/test";
 
 
 
@@ -621,7 +624,7 @@ export const App = (): JSX.Element => {
 ----------------------------------------------------------------------------*/
                 <Route exact path="/Component/InfotextButtonGreen" component={InfotextButtonGreen} />  
                 <Route exact path="/Component/InfotextButtonRed" component={InfotextButtonRed} />  
-
+                <Route exact path= "/Component/test"><Quiz_Component sdg={SDGX_Quiz}/></Route>
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  

@@ -23,6 +23,14 @@
     margin-left: 8em;
     margin-top: -60px;
 }
+
+.checkButton {
+    position: "absolute";
+    top: "950px";
+    left: "1700px";
+    margin-top: 10px;
+    
+}
 .buttonInvisible {
     margin-top: -150px;
     width: 1px;

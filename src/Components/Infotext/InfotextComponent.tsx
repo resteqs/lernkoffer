@@ -8,7 +8,7 @@ import "../../styles/infotext.css";
 import "../../styles/component.css";
 import { useEffect } from "react";
 import { FancyButton } from "../Buttons/FancyButton";
-import { InfotextProps } from "../../Interfaces/SDG";
+import { InfotextProps } from "../../Interfaces/Sdg";
 
 interface Props {
     sdg: InfotextProps;
