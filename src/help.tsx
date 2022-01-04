@@ -163,7 +163,7 @@ export const Help = ():JSX.Element => {
                 </Link>
 
                 <Link to = "/SDG16/Infotext">
-                    <div className="centre">SDG 16 infotext WIP</div>
+                    <div className="centre">SDG 16 infotext</div>
                 </Link>
 
                 <Link to = "/SDG17/Infotext">
