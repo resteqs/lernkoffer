@@ -1,0 +1,16 @@
+.textbox5 {
+    background-color: white;
+    text-align: center;
+    font-size: x-large;
+    padding: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    border-width: 10px;
+    font-size: 35px;
+    height: 650px;
+}
+.Bilder05Spiel {
+    position: relative;
+    height: 500px;
+}
