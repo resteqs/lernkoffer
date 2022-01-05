@@ -5,7 +5,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { QuizProps } from "../../Interfaces/SDG";
 import { QuizButton } from "./QuizButton";
-import { ModalComponent } from "../Modal/ModalComponent";
+import { ModalQuizComponent } from "../Modal/ModalComponent";
 import { FancyButton } from "../Buttons/FancyButton";
 import "../../styles/quizComponentStyle.css";
 
@@ -140,7 +140,7 @@ export const Quiz_Component = (props: Props): JSX.Element => {
 
     const Modal =
         modalIsOpen === true ? (
-            <ModalComponent
+            <ModalQuizComponent
                 incrementCount={incrementCount}
                 answercw={answerCW}
                 setSelectedItem={setSelectedItem}

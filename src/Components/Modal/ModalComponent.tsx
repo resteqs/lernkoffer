@@ -9,7 +9,7 @@ import "../../styles/component.css";
 import Modal from "react-modal";
 import { ModalProps } from "../../Interfaces/SDG";
 
-export const ModalComponent = (props: ModalProps): JSX.Element => {
+export const ModalQuizComponent = (props: ModalProps): JSX.Element => {
 
     function closeModal(): void {
         props.incrementCount();

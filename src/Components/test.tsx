@@ -1,6 +1,6 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable react/react-in-jsx-scope */
-import { QuizProps, TextProps } from "../Interfaces/SDG";
+import { TextProps } from "../Interfaces/SDG";
 import Logo from  "../SDGLogos/Goal-SDG01.png";
 
 export const SDGX_Quiz:TextProps = {
@@ -11,3 +11,4 @@ export const SDGX_Quiz:TextProps = {
     header: { 1: <div>I am a header</div> },
     text: { 1: <div>I am a text</div> },
 }
+
