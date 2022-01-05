@@ -3,14 +3,12 @@
 import { QuizProps } from "../Interfaces/SDG";
 import Logo from  "../SDGLogos/Goal-SDG01.png";
 
-
 export const SDGX_Quiz:QuizProps = {
     sdgNumber: 1,
     sdgTitle: "Keine Armut",
     sdg: "SDG01",
     logo: Logo,
     tile: { 
-        1: "1. Frage", 
         2: "Ich bin" },
     text: { 2: "der Depp" },
     question: { 1: "Wie heißt der große Bär von Deutschland?" },

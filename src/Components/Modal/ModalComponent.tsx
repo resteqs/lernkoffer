@@ -40,6 +40,11 @@ export const ModalComponent = (props: ModalProps): JSX.Element => {
                         <b>Okay</b>
                     </button>
                 </div>
+                <p style={{ fontSize: "40px", margin: "10px" }}>
+                    {" "}
+                    <b>Antwort: </b>
+                    {props.answer}{" "}
+                </p>
             </Modal>
         </>
     );

@@ -21,6 +21,7 @@ export interface ModalProps {
     answercw;
     modalIsOpen;
     setIsOpen;
+    answer:string;
 }
 
 export interface QuizProps {

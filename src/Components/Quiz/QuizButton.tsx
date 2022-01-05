@@ -52,9 +52,9 @@ export const QuizButton = (props: QuizButtonProps):JSX.Element => {
                         alignItems: "center",
                     }}
                 >
-                    <p style={maxWith}>
+                    <div style={maxWith}>
                       {props.content}
-                    </p>
+                    </div>
                 </div>
             </button>
         );

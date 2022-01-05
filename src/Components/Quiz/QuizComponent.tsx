@@ -146,6 +146,7 @@ export const Quiz_Component = (props: Props): JSX.Element => {
                 setSelectedItem={setSelectedItem}
                 modalIsOpen={modalIsOpen}
                 setIsOpen={setIsOpen}
+                answer={props.sdg.explanation[showtext]}
             />
         ) : (
             <div> </div>
