@@ -505,7 +505,7 @@ export const App = (): JSX.Element => {
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
-            <Route exact path="/SDG11/GutesBeispiel" component={SDG11_GB}/> 
+            <Route exact path="/SDG11/Gute Bsp"><TextComponent sdg= {SDG11_GB}/> </Route> 
 /**                               Infotext                                   */
             <Route exact path="/SDG11/Infotext"><InfotextComponent sdg={SDG11_Infotext}/></Route>
 
