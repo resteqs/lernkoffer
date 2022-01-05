@@ -63,6 +63,6 @@ export interface TextProps{
     sdg: string;
     logo:string
 
-    header: Record<number, JSX.Element>;
+    header: Record<number, string>;
     text: Record<number, JSX.Element>;
 }

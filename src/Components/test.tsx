@@ -8,7 +8,7 @@ export const SDGX_Quiz:TextProps = {
     sdgTitle: "Keine Armut",
     sdg: "SDG01",
     logo: Logo,
-    header: { 1: <div>I am a header</div> },
+    header: { 1: "I am a header" },
     text: { 1: <div>I am a text</div> },
 }
 

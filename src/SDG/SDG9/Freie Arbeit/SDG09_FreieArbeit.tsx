@@ -13,14 +13,14 @@ export const SDG09_FreieArbeit: TextProps = {
     sdg: "SDG09",
     logo: Logo,
     header: {
-        1: <div> Einleitung </div>,
-        2: <div> Spiel </div>,
-        3: <div> Spiel </div>,
-        4: <div> Spiel </div>,
-        5: <div> Ende </div>,
-        6: <div> Ende </div>,
-        7: <div> Ende </div>,
-        8: <div> Ende </div>,
+        1: "Einleitung",
+        2: "Spiel",
+        3: "Spiel",
+        4: "Spiel",
+        5: "Ende",
+        6: "Ende",
+        7: "Ende",
+        8: "Ende",
     },
 
     text: {
@@ -53,10 +53,10 @@ export const SDG09_FreieArbeit: TextProps = {
                     </li>
                 </ul>
             </div>
-        ), 
+        ),
         3: (
-            <div> 
-                <ul> 
+            <div>
+                <ul>
                     <li>
                         {" "}
                         Probiert einfach viele verschiedene Ideen aus und beobachtet, welche am besten funktionieren und
@@ -73,7 +73,7 @@ export const SDG09_FreieArbeit: TextProps = {
         4: (
             <div>
                 {" "}
-                <img style= {{ marginLeft: "680px" }}   src= {Kartenhaus} alt="" />
+                <img style={{ marginLeft: "680px" }} src={Kartenhaus} alt="" />
             </div>
         ),
         5: (

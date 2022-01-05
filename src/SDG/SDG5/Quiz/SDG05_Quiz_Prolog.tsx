@@ -10,8 +10,6 @@ import infotextbutton from "../../../styles/Infotextbutton.module.css";
 import { Link } from "react-router-dom";
 import Logo from "../../../SDGLogos/Goal-SDG05.png";
 
-import { CSSProperties } from "react";
-import { faAlignCenter } from "@fortawesome/free-solid-svg-icons";
 
 export const SDG05_Quiz_Prolog = (): JSX.Element => {
     // eslint-disable-next-line prefer-const
