@@ -193,6 +193,7 @@ import { SDG10_Infotext } from "./SDG/SDG10/Info/SDG10_Infotext";
  *                                SDG 11
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+import { SDG11_FreieArbeit } from "./SDG/SDG11/Freie Arbeit/SDG11_FreieArbeit";
 /**                             Gutes Beispiel                               */
 import { SDG11_GB } from "./SDG/SDG11/Gute Bsp/SDG11_GB";
 /**                               Infotext                                   */
@@ -504,6 +505,7 @@ export const App = (): JSX.Element => {
  *                                SDG 11
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+            <Route exact path="/SDG11/Freie Arbeit"><TextComponent sdg= {SDG11_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
             <Route exact path="/SDG11/Gute Bsp"><TextComponent sdg= {SDG11_GB}/> </Route> 
 /**                               Infotext                                   */
