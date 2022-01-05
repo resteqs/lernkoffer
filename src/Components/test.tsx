@@ -1,25 +1,13 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable react/react-in-jsx-scope */
-import { QuizProps } from "../Interfaces/SDG";
+import { QuizProps, TextProps } from "../Interfaces/SDG";
 import Logo from  "../SDGLogos/Goal-SDG01.png";
 
-export const SDGX_Quiz:QuizProps = {
+export const SDGX_Quiz:TextProps = {
     sdgNumber: 1,
     sdgTitle: "Keine Armut",
     sdg: "SDG01",
     logo: Logo,
-    tile: { 
-        2: "Ich bin" },
-    text: { 2: "der Depp" },
-    question: { 1: "Wie heißt der große Bär von Deutschland?" },
-    buttonLeftContent: { 1: <div>Peter</div> },
-    buttonRightContent: { 1: <div>Elisa</div> },
-    answerNumbersLeft: { 1: "Falsch :(" },
-    answerNumbersRight: { 1: "Richtig :)" },
-    explanation: { 1: "ich bin dumm :(" },
-    // modalContent: <div>Petersdom</div>,
-    isQuizActive: {
-        1: true,
-        2: false,
-    }
+    header: { 1: <div>I am a header</div> },
+    text: { 1: <div>I am a text</div> },
 }

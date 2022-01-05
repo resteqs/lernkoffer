@@ -56,3 +56,13 @@ export interface QuizProps {
     modalStyle?:CSSProperties
     isQuizActive: Record<number, boolean>; 
 }
+
+export interface TextProps{
+    sdgNumber: number;
+    sdgTitle: string;
+    sdg: string;
+    logo:string
+
+    header: Record<number, JSX.Element>;
+    text: Record<number, JSX.Element>;
+}
