@@ -165,6 +165,8 @@ import { SDG08_Quiz } from "./SDG/SDG8/Quiz/SDG08_Quiz";
  *                                SDG 09
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+import { SDG09_FreieArbeit } from "./SDG/SDG9/Freie Arbeit/SDG09_FreieArbeit";
+
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
 import { SDG09_Infotext } from "./SDG/SDG9/Info/SDG09_Infotext";
@@ -336,6 +338,7 @@ import { TextComponent } from "./Components/Text/TextComponent";
 
 
 
+
 export const App = (): JSX.Element => {
     return (
         <HashRouter basename="/lernkoffer">
@@ -473,6 +476,7 @@ export const App = (): JSX.Element => {
  *                                SDG 09
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+            <Route exact path="/SDG09/Freie Arbeit"><TextComponent sdg={SDG09_FreieArbeit}/></Route>
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
             <Route exact path="/SDG09/Infotext"><InfotextComponent sdg={SDG09_Infotext}/></Route>
