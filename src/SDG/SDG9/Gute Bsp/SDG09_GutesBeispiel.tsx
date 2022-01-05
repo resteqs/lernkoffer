@@ -12,11 +12,11 @@ export const SDG09_GutesBeispiel: TextProps = {
     sdg: "SDG09",
     logo: Logo,
     header: {
-        1: <div> Einleitung </div>,
-        2: <div> Info </div>,
-        3: <div> Info </div>,
-        4: <div> Info </div>,
-        5: <div> Aufgabe </div>,
+        1: " Einleitung",
+        2:  "Info" ,
+        3:  "Info" ,
+        4:  "Info" ,
+        5:  "Aufgabe",
     },
 
     text: {
