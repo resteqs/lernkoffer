@@ -333,6 +333,7 @@ import play14 from "./SDG/SDG14/Spiel2/play14";
 import { Quiz_Component } from "./Components/Quiz/QuizComponent";
 import { SDGX_Quiz } from "./Components/test";
 import { TextComponent } from "./Components/Text/TextComponent";
+import { SDG05_GB } from "./SDG/SDG5/Gute Bsp/SDG05_GB";
 
 
 
@@ -423,13 +424,14 @@ export const App = (): JSX.Element => {
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
 /**                             Gutes Beispiel                               */
+            <Route exact path="/SDG05/GutesBeispiel"><TextComponent sdg = {SDG05_GB}/></Route>
 /**                               Infotext                                   */
             <Route exact path="/SDG05/Infotext"><InfotextComponent sdg = {SDG05_Infotext}/></Route>
 /**                                 Quiz                                     */
             <Route exact path ="/SDG05/Quiz/Prolog" component={SDG05_Quiz_Prolog}/>
             <Route exact path ="/SDG05/Quiz" component={SDG05_Quiz}/>
 /**                                Spiel                                     */
-<Route exact path="/SDG05/Spiel" component={SDG05_Spiel}/>
+            <Route exact path="/SDG05/Spiel" component={SDG05_Spiel}/>
 /**                                Video                                     */
 
 
