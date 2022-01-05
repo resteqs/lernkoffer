@@ -18,7 +18,7 @@ export const Quiz_Component = (props: Props): JSX.Element => {
     const [showtext, setText] = React.useState(1);
     const [itemSelected, setSelectedItem] = React.useState(0);
     const [modalIsOpen, setIsOpen] = React.useState(false);
-    const maxSlides = Object.keys(props.sdg.text).length;
+    const maxSlides = Object.keys(props.sdg.isQuizActive).length;
 
     const incrementCount = (): void => {
         setText((prevState) => prevState + 1);
