@@ -86,27 +86,30 @@ export const Help = ():JSX.Element => {
                     <div className="centre">SDG 04 Gutes Beispiel</div>
                 </Link>
 
-                <Link to = "/SDG05/FreieArbeit">
-                    <div className="centre">SDG 05 Freie Arbeit</div>
+                <Link to = "/SDG05/Einstieg">
+                    <div className="centre">SDG 05 Einstieg</div>
                 </Link>
-                <Link to = "/SDG05/GutesBeispiel">
-                    <div className="centre">SDG 05 Gutes Beispiel</div>
-                </Link>
+
                 <Link to = "/SDG05/Infotext">
                     <div className="centre">SDG 05 Infotext</div>
-                </Link>
-                <Link to = "/SDG05/Spiel">
-                    <div className="centre">SDG 05 Spiel</div>
                 </Link>
 
                 <Link to = "/SDG05/Quiz/Prolog">
                     <div className="centre">SDG 05 Quiz</div>
                 </Link>
 
-                <Link to = "/SDG05/Einstieg">
-                    <div className="centre">SDG 05 Einstieg WIP</div>
+                <Link to = "/SDG05/Spiel">
+                    <div className="centre">SDG 05 Spiel</div>
                 </Link>
 
+                <Link to = "/SDG05/GutesBeispiel">
+                    <div className="centre">SDG 05 Gutes Beispiel</div>
+                </Link>
+
+                <Link to = "/SDG05/FreieArbeit">
+                    <div className="centre">SDG 05 Freie Arbeit</div>
+                </Link>
+ 
                 <Link to = "/SDG06/Infotext">
                     <div className="centre">SDG 06 Infotext</div>
                 </Link>
