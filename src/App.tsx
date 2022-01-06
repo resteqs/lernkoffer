@@ -346,12 +346,6 @@ import { SDG05_FreieArbeit } from "./SDG/SDG5/Freie Arbeit/SDG05_FreieArbeit";
 import { SDG10_Spiel } from "./SDG/SDG10/Spiel/SDG10_Spiel";
 import { SDG06_FreieArbeit } from "./SDG/SDG6/Freie Arbeit/SDG06_FreieArbeit";
 
-
-
-
-
-
-
 export const App = (): JSX.Element => {
     return (
         <HashRouter basename="/lernkoffer">
