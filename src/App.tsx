@@ -347,6 +347,7 @@ import { SDG05_FreieArbeit } from "./SDG/SDG5/Freie Arbeit/SDG05_FreieArbeit";
 import { SDG10_Spiel } from "./SDG/SDG10/Spiel/SDG10_Spiel";
 import { SDG10_Quiz } from "./SDG/SDG10/Quiz/SDG10_Quiz";
 import { SDG06_FreieArbeit } from "./SDG/SDG6/Freie Arbeit/SDG06_FreieArbeit";
+import { SDG07_Quiz } from "./SDG/SDG7/Quiz/SDG07_Quiz";
 
 
 
@@ -478,6 +479,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
             <Route exact path="/SDG07/Infotext"><InfotextComponent sdg={SDG07_Infotext}/></Route>
 /**                                 Quiz                                     */
+            <Route exact path="/SDG07/Quiz"><Quiz_Component sdg={SDG07_Quiz}/></Route>
 /**                                Spiel                                     */
 /**                                Video                                     */
 
