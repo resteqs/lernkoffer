@@ -133,6 +133,7 @@ import { SDG05_Spiel } from "./SDG/SDG5/Spiel/SDG05_Spiel";
 import { SDG06_Infotext } from "./SDG/SDG6/Info/SDG06_Infotext";
 
 /**                                 Quiz                                     */
+import { SDG06_Quiz } from "./SDG/SDG6/Quiz/SDG06_Quiz";
 /**                                Spiel                                     */
 import { SDG06_Spiel } from "./SDG/SDG6/Spiel/SDG06_Spiel";
 /**                                Video                                     */
@@ -217,7 +218,9 @@ import { SDG11_Spiel } from "./SDG/SDG11/Spiel/SDG11_Spiel";
  *                                SDG 12
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+import { SDG12_FreieArbeit } from "./SDG/SDG12/Freie Arbeit/SDG12_FreieArbeit";
 /**                             Gutes Beispiel                               */
+import { SDG12_GutesBeispiel } from "./SDG/SDG12/Gute Bsp/SDG12_GutesBeispiel";
 /**                               Infotext                                   */
 import { SDG12_Infotext } from "./SDG/SDG12/Info/SDG12_Infotext";
 /**                                 Quiz                                     */
@@ -344,6 +347,7 @@ import { TextComponent } from "./Components/Text/TextComponent";
 import { SDG05_GB } from "./SDG/SDG5/Gute Bsp/SDG05_GB";
 import { SDG05_FreieArbeit } from "./SDG/SDG5/Freie Arbeit/SDG05_FreieArbeit";
 import { SDG10_Spiel } from "./SDG/SDG10/Spiel/SDG10_Spiel";
+import { SDG10_Quiz } from "./SDG/SDG10/Quiz/SDG10_Quiz";
 import { SDG06_FreieArbeit } from "./SDG/SDG6/Freie Arbeit/SDG06_FreieArbeit";
 
 export const App = (): JSX.Element => {
@@ -444,7 +448,7 @@ export const App = (): JSX.Element => {
 /**                                Video                                     */
 
 
-/**----------------------------------------------------------------------------
+/**---------------------------------------------------------------------------- 
  *                                SDG 06
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
@@ -454,6 +458,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
             <Route exact path="/SDG06/Infotext"><InfotextComponent sdg={SDG06_Infotext}/></Route>
 /**                                 Quiz                                     */
+            <Route exact path="/SDG06/Quiz"><Quiz_Component sdg={SDG06_Quiz}/></Route>
 /**                                Spiel                                     */
             <Route exact path="/SDG06/Spiel" component={SDG06_Spiel}/>
 /**                                Video                                     */
@@ -514,6 +519,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
             <Route exact path="/SDG10/Infotext"><InfotextComponent sdg={SDG10_Infotext}/></Route>
 /**                                 Quiz                                     */
+            <Route exact path="/SDG10/Quiz"><Quiz_Component sdg={SDG10_Quiz}/></Route>
 /**                                Spiel                                     */
             <Route exact path="/SDG10/Spiel"><TextComponent sdg={SDG10_Spiel}/></Route>
 
@@ -540,7 +546,9 @@ export const App = (): JSX.Element => {
  *                                SDG 12
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+<Route exact path="/SDG12/FreieArbeit"><TextComponent sdg= {SDG12_FreieArbeit}/> </Route>
 /**                             Gutes Beispiel                               */
+<Route exact path="/SDG12/GutesBeispiel"><TextComponent sdg= {SDG12_GutesBeispiel}/> </Route> 
 /**                               Infotext                                   */
             <Route exact path="/SDG12/Infotext"><InfotextComponent sdg={SDG12_Infotext}/></Route>
 /**                                 Quiz                                     */
@@ -552,6 +560,7 @@ export const App = (): JSX.Element => {
  *                                SDG 13
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+<Route exact path="/SDG12/FreieArbeit"><TextComponent sdg= {SDG12_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
                 <Route exact path="/SDG13/Infotext"><InfotextComponent sdg={SDG13_Infotext}/></Route>                  

@@ -90,6 +90,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG07/Quiz">Quiz WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG08/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/Quiz">Quiz WIP</Link></td>
+
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG01/Video">Video WIP</Link></td>
@@ -147,6 +148,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG15/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/Infotext">Infotext</Link></td>
+
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG10/Spiel">Spiel</Link></td>
