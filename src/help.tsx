@@ -32,14 +32,14 @@ export const Help = (): JSX.Element => {
                 </thead>
                 <tbody style={{ fontSize: "50px" }}>
                     <tr>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG01/FreieArbeit">Freie Arbeit</a></td>
+                        <td className="tg-c3ow"><Link to ="/SDG01/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG02/FreieArbeit">Freie Arbeit</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG03/FreieArbeit">Freie Arbeit</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG04/FreieArbeit">Freie Arbeit</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG05/FreieArbeit">Freie Arbeit</a></td>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG06/FreieArbeit">Freie Arbeit WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG06/FreieArbeit">Freie Arbeit</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG07/FreieArbeit">Freie Arbeit WIP</a></td>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG08/FreieArbeit">Freie Arbeit </a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG08/FreieArbeit">Freie Arbeit</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG09/FreieArbeit">Freie Arbeit</a></td>
                     </tr>
                     <tr>
