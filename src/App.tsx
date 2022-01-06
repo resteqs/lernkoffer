@@ -367,7 +367,7 @@ export const App = (): JSX.Element => {
  *                                SDG 01
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-        <Route exact path="/SDG1/FreieArbeit"> <TextComponent sdg = {SDG01_FreieArbeit}/> </Route>
+                <Route exact path="/SDG01/FreieArbeit"> <TextComponent sdg = {SDG01_FreieArbeit}/> </Route>
 /**                             Gutes Beispiel                               */
 <Route exact path="/SDG1/Gute Bsp"> <TextComponent sdg = {SDG01_GB}/> </Route>
 /**                               Infotext                                   */
@@ -384,7 +384,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
             <Route exact path ="/SDG02/FreieArbeit" component={SDG02_FreieArbeit}/>      
 /**                             Gutes Beispiel                               */
-            <Route exact path = "/SDG02/Gute Bsp" component={SDG02_GutesBeispiel}/>
+            <Route exact path = "/SDG02/GutesBeispiel" component={SDG02_GutesBeispiel}/>
 /**                               Infotext                                   */
             <Route exact path ="/SDG02/Infotext/Infotext" component={SDG02_Infotext}/>
             <Route exact path ="/SDG02/Infotext/Fable" component={SDG02_Infotext_Fable}/>
@@ -402,7 +402,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
             <Route exact path ="/SDG03/FreieArbeit" component={SDG03_FreieArbeit}/>
 /**                             Gutes Beispiel                               */
-            <Route exact path = "/SDG03/Gute Bsp" component={SDG03_GutesBeispiel}/>
+            <Route exact path = "/SDG03/GutesBeispiel" component={SDG03_GutesBeispiel}/>
 /**                               Infotext                                   */
             <Route exact path="/SDG03/Infotext" component={SDG03_Infotext}/>
 /**                                 Quiz                                     */
@@ -493,7 +493,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
             <Route exact path="/SDG09/FreieArbeit"><TextComponent sdg={SDG09_FreieArbeit}/></Route>
 /**                             Gutes Beispiel                               */ 
-            <Route exact path="/SDG09/Gute Bsp"><TextComponent sdg={SDG09_GutesBeispiel}/></Route>
+            <Route exact path="/SDG09/GutesBeispiel"><TextComponent sdg={SDG09_GutesBeispiel}/></Route>
 /**                               Infotext                                   */
             <Route exact path="/SDG09/Infotext"><InfotextComponent sdg={SDG09_Infotext}/></Route>
 /**                                 Quiz                                     */
@@ -520,7 +520,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
             <Route exact path="/SDG11/Freie Arbeit"><TextComponent sdg= {SDG11_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
-            <Route exact path="/SDG11/Gute Bsp"><TextComponent sdg= {SDG11_GB}/> </Route> 
+            <Route exact path="/SDG11/GutesBeispiel"><TextComponent sdg= {SDG11_GB}/> </Route> 
 /**                               Infotext                                   */
             <Route exact path="/SDG11/Infotext"><InfotextComponent sdg={SDG11_Infotext}/></Route>
 
