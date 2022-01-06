@@ -5,7 +5,7 @@
 
 import { TextProps } from "../../../Interfaces/SDG";
 import Logo from "../../../SDGLogos/Goal-SDG11.png";
-import Stadt from "./Bild1.png"
+import Stadt from "./Bild1.png";
 
 export const SDG11_FreieArbeit: TextProps = {
     sdgNumber: 9,
@@ -17,7 +17,6 @@ export const SDG11_FreieArbeit: TextProps = {
         2: "Schritt 2: ",
         3: "Schritt 3: ",
         4: "Lösungsvorschlag",
-     
     },
 
     text: {
@@ -45,10 +44,13 @@ export const SDG11_FreieArbeit: TextProps = {
                 den Sinn kommt und werde so kreativ wie du möchtest und kannst.
             </div>
         ),
-        4: <div> 
-            Nur ein Beispiel, wie ich mir eine nachhaltige Stadt vorstelle. Wie du sehen kannst, sind hier viele Pflanzen und im Hintergrund wird mit Windrädern nachhaltig Strom produziert und auch auf den Hausdächern und dem Bus befinden sich Solarzellen, um grünen Strom zu produzieren.
-            <img style= {{ marginBottom: "-600px", marginLeft: "100px", height: "500px" }} src= {Stadt} alt="" />
-        </div>,
-        
+        4: (
+            <div>
+                Nur ein Beispiel, wie ich mir eine nachhaltige Stadt vorstelle. Wie du sehen kannst, sind hier viele
+                Pflanzen und im Hintergrund wird mit Windrädern nachhaltig Strom produziert und auch auf den Hausdächern
+                und dem Bus befinden sich Solarzellen, um grünen Strom zu produzieren.
+                <img style={{ marginBottom: "-600px", marginLeft: "100px", height: "500px" }} src={Stadt} alt="" />
+            </div>
+        ),
     },
 };
