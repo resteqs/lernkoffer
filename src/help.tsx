@@ -86,7 +86,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG03/Quiz">Quiz</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG04/Quiz">Quiz</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG05/Quiz">Quiz</a></td>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG06/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG06/Quiz">Quiz</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG07/Quiz">Quiz WIP</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG08/Quiz">Quiz</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG09/Quiz">Quiz WIP</a></td>
@@ -163,7 +163,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG17/Spiel">Spiel WIP</a></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG10/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG10/Quiz">Quiz</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG11/Quiz">Quiz WIP</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG12/Quiz">Quiz WIP</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG13/Quiz">Quiz WIP</a></td>

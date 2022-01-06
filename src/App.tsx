@@ -133,6 +133,7 @@ import { SDG05_Spiel } from "./SDG/SDG5/Spiel/SDG05_Spiel";
 import { SDG06_Infotext } from "./SDG/SDG6/Info/SDG06_Infotext";
 
 /**                                 Quiz                                     */
+import { SDG06_Quiz } from "./SDG/SDG6/Quiz/SDG06_Quiz";
 /**                                Spiel                                     */
 import { SDG06_Spiel } from "./SDG/SDG6/Spiel/SDG06_Spiel";
 /**                                Video                                     */
@@ -450,7 +451,7 @@ export const App = (): JSX.Element => {
 /**                                Video                                     */
 
 
-/**----------------------------------------------------------------------------
+/**---------------------------------------------------------------------------- 
  *                                SDG 06
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
@@ -458,6 +459,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
             <Route exact path="/SDG06/Infotext"><InfotextComponent sdg={SDG06_Infotext}/></Route>
 /**                                 Quiz                                     */
+            <Route exact path="/SDG06/Quiz"><Quiz_Component sdg={SDG06_Quiz}/></Route>
 /**                                Spiel                                     */
             <Route exact path="/SDG06/Spiel" component={SDG06_Spiel}/>
 /**                                Video                                     */
