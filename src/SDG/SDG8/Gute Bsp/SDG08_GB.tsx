@@ -20,7 +20,7 @@ export const SDG08_GB: TextProps = {
         5: "Einsatz vom SOS-Kinderdorf",
         6: "Aufgabe",
         7: "Gruppe 1",
-        8: "gruppe 2",
+        8: "Gruppe 2",
         9: "Wichtige Dinge für junge Menschen bei der Arbeitssuche",
         10: "Wichtige Dinge für junge Menschen bei der Arbeitssuche",
         11: "Gruppe 1 + 2",
