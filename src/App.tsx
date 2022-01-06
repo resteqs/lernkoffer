@@ -156,6 +156,7 @@ import { SDG07_Infotext } from "./SDG/SDG7/Info/SDG07_Infotext";
 /**                              Freie Arbeit                                */
 import { SDG08_FreieArbeit } from "./SDG/SDG8/Freie Arbeit/SDG08_FreieArbeot";
 /**                             Gutes Beispiel                               */
+import { SDG08_GB } from "./SDG/SDG8/Gute Bsp/SDG08_GB";
 /**                               Infotext                                   */
 import { SDG08_Infotext } from "./SDG/SDG8/Info/SDG08_Infotext";
 /**                                 Quiz                                     */
@@ -477,6 +478,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
             <Route exact path= "/SDG08/FreieArbeit"> <TextComponent sdg= {SDG08_FreieArbeit}/> </Route>
 /**                             Gutes Beispiel                               */
+            <Route exact path="/SDG08/GutesBeispiel"><TextComponent sdg = {SDG08_GB}/></Route>
 /**                               Infotext                                   */
             <Route exact path="/SDG08/Infotext"><InfotextComponent sdg={SDG08_Infotext}/></Route>
 /**                                 Quiz                                     */
