@@ -9,7 +9,7 @@ export const Help = (): JSX.Element => {
         margin:"10px",
         fontSize:"60px",
         marginBottom: "30px",
-        marginTop: "50px",
+        marginTop: "40px",
         textAlign:"center" ,
                
     }
@@ -39,14 +39,14 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG05/FreieArbeit">Freie Arbeit</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG06/FreieArbeit">Freie Arbeit WIP</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG07/FreieArbeit">Freie Arbeit WIP</a></td>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG08/FreieArbeit">Freie Arbeit WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG08/FreieArbeit">Freie Arbeit </a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG09/FreieArbeit">Freie Arbeit</a></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG01/GutesBeispiel">Gutes Beispiel WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG01/GutesBeispiel">Gutes Beispiel</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG02/GutesBeispiel">Gutes Beispiel</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG03/GutesBeispiel">Gutes Beispiel</a></td>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG04/GutesBeispiel">Gutes Beispiel ???</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG04/GutesBeispiel">Gutes Beispiel</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG05/GutesBeispiel">Gutes Beispiel</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG06/GutesBeispiel">Gutes Beispiel WIP</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG07/GutesBeispiel">Gutes Beispiel WIP</a></td>
@@ -79,6 +79,17 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG07/Spiel">Spiel WIP</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG08/Spiel">Spiel WIP</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG09/Spiel">Spiel</a></td>
+                    </tr>
+                    <tr>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG01/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG02/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG03/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG04/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG05/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG06/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG07/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG08/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG09/Quiz">Quiz WIP</a></td>
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG01/Video">Video WIP</a></td>
@@ -139,13 +150,27 @@ export const Help = (): JSX.Element => {
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG10/Spiel">Spiel WIP</a></td>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG11/Spiel">Spiel WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG11/Spiel">Spiel</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG12/Spiel">Spiel WIP</a></td>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG13/Spiel2/tutorial1">Spiel ??? </a></td>
+                        <td className="tg-c3ow">
+                            <a href="lernkoffer#/lernkoffer/SDG13/tutorial/page1">Spiel 1 ??? </a>
+                            <p>und</p>
+                            <a href="lernkoffer#/lernkoffer/SDG13/Spiel2/">Spiel 2 DND ???  </a>
+                        </td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG14/Spiel2/tutorial1">Spiel ??? </a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG15/Spiel">Spiel WIP</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG16/Spiel">Spiel WIP</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG17/Spiel">Spiel WIP</a></td>
+                    </tr>
+                    <tr>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG10/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG11/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG12/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG13/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG14/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG15/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG16/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG17/Quiz">Quiz WIP</a></td>
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG10/Video">Video WIP</a></td>
