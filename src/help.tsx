@@ -129,7 +129,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG17/FreieArbeit">Freie Arbeit WIP</a></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG10/GutesBeispiel">Gutes Beispiel WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG10/GutesBeispiel">Gutes Beispiel </a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG11/GutesBeispiel">Gutes Beispiel </a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG12/GutesBeispiel">Gutes Beispiel WIP</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG13/GutesBeispiel">Gutes Beispiel WIP</a></td>
