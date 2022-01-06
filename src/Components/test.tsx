@@ -8,7 +8,18 @@ export const SDGX_Quiz:TextProps = {
     sdgTitle: "Keine Armut",
     sdg: "SDG01",
     logo: Logo,
-    header: { 1: "I am a header" },
-    text: { 1: <div>I am a text</div> },
+    tile: { 
+        2: "Ich bin" },
+    text: { 2: "der Depp" },
+    question: { 1: "Wie heißt der große Bär von Deutschland?" },
+    buttonLeftContent: { 1: <div style ={{ maxWidth: "500px" }}>{Logo}</div> },
+    buttonRightContent: { 1: <div>Elisa</div> },
+    answerNumbersLeft: { 1: "Falsch :(" },
+    answerNumbersRight: { 1: "Richtig :)" },
+    explanation: { 1: "ich bin dumm :(" },
+    // modalContent: <div>Petersdom</div>,
+    isQuizActive: {
+        1: true,
+        2: false,
+    }
 }
-
