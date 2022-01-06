@@ -650,7 +650,7 @@ export const App = (): JSX.Element => {
 ----------------------------------------------------------------------------*/
                 <Route exact path="/Component/InfotextButtonGreen" component={InfotextButtonGreen} />  
                 <Route exact path="/Component/InfotextButtonRed" component={InfotextButtonRed} />  
-                <Route exact path= "/Component/test"><TextComponent sdg={SDGX_Quiz}/></Route>
+                <Route exact path= "/Component/test"><Quiz_Component sdg={SDGX_Quiz}/></Route>
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
