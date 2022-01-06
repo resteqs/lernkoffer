@@ -13,6 +13,8 @@ export const Help = ():JSX.Element => {
                     <div className="centre">Wörterbuch</div>
                 </Link>
 
+
+
                 <Link to = "/SDG01/Spiel">
                     <div className="centre">SDG 01 Spiel</div>
                 </Link>
@@ -28,6 +30,10 @@ export const Help = ():JSX.Element => {
                 <Link to = "/SDG01/Infotext">
                     <div className="centre">SDG 01 Infotext</div>
                 </Link>
+
+
+
+
 
                 <Link to = "/SDG02/Infotext/Infotext">
                     <div className="centre">SDG 02 Infotext Infotext</div>
@@ -54,6 +60,10 @@ export const Help = ():JSX.Element => {
                 </Link>
                 
 
+
+
+
+
                 <Link to = "/SDG03/FreieArbeit">
                     <div className="centre">SDG 03 Freie Arbeit</div>
                 </Link>
@@ -65,6 +75,10 @@ export const Help = ():JSX.Element => {
                 <Link to = "/SDG03/Infotext">
                     <div className="centre">SDG 03 infotext</div>
                 </Link>
+
+
+
+
 
                 <Link to = "/SDG04/Infotext">
                     <div className="centre">SDG 04 Infotext</div>
@@ -86,6 +100,10 @@ export const Help = ():JSX.Element => {
                     <div className="centre">SDG 04 Gutes Beispiel</div>
                 </Link>
 
+
+
+
+
                 <Link to = "/SDG05/FreieArbeit">
                     <div className="centre">SDG 05 Freie Arbeit</div>
                 </Link>
@@ -103,13 +121,25 @@ export const Help = ():JSX.Element => {
                     <div className="centre">SDG 05 Quiz</div>
                 </Link>
 
+
+
+
+
+
                 <Link to = "/SDG06/Infotext">
                     <div className="centre">SDG 06 Infotext</div>
                 </Link>
 
+
+
+
+
                 <Link to = "/SDG07/Infotext">
                     <div className="centre">SDG 07 Infotext</div>
                 </Link>
+
+
+
 
                 <Link to = "/SDG08/Infotext">
                     <div className="centre">SDG 08 Infotext</div>
@@ -118,6 +148,13 @@ export const Help = ():JSX.Element => {
                 <Link to = "/SDG08/Quiz/Prolog">
                     <div className="centre">SDG 08 Quiz</div>
                 </Link>
+                <Link to = "/SDG08/FreieArbeit">
+                    <div className="centre">SDG 08 Freie Arbeit</div>
+                </Link>
+
+
+
+
 
                 <Link to = "/SDG09/Infotext">
                     <div className="centre">SDG 09 Infotext</div>
@@ -135,9 +172,20 @@ export const Help = ():JSX.Element => {
                     <div className="centre">SDG 09 Spiel</div>
                 </Link>
 
+
+
+
+
+
+
                 <Link to = "/SDG10/Infotext">
                     <div className="centre">SDG 10 Infotext</div>
                 </Link>
+
+
+
+
+
 
                 <Link to = "/SDG11/Infotext">
                     <div className="centre">SDG 11 infotext</div>
@@ -154,14 +202,23 @@ export const Help = ():JSX.Element => {
                     <div className="centre">SDG 11 Spiel</div>
                 </Link>
 
+
+
+
+
+
                 <Link to = "/SDG12/Infotext">
                     <div className="centre">SDG 12 infotext</div>
                 </Link>
 
+
+
+
+
                 <Link to = "/SDG13/Infotext">
                     <div className="centre">SDG 13 infotext</div>
                 </Link>
-                
+
                 <Link to = "/SDG13/Quiz/Tutorial1">
                     <div className="centre">SDG 13 Quiz - Tutorial</div>
                 </Link>
@@ -187,6 +244,11 @@ export const Help = ():JSX.Element => {
                     <div className="centre">SDG 13 Spiel 2 - Mülltrennung</div>
                 </Link>
 
+
+
+
+
+
                 <Link to = "/SDG14/Infotext">
                     <div className="centre">SDG 14 infotext</div>
                 </Link>
@@ -199,17 +261,33 @@ export const Help = ():JSX.Element => {
                     <div className="centre">SDG 14 Antippspiel</div>
                 </Link>
 
+
+
+
+
                 <Link to = "/SDG15/Infotext">
                     <div className="centre">SDG 15 infotext</div>
                 </Link>
+
+
+
+
+
 
                 <Link to = "/SDG16/Infotext">
                     <div className="centre">SDG 16 infotext</div>
                 </Link>
 
+
+
+
                 <Link to = "/SDG17/Infotext">
                     <div className="centre">SDG 17 infotext WIP</div>
                 </Link>
+
+
+
+
 
                 <Link to="/Vorlagen/MagicButton">
                     <div className="centre">Magic Awesome Button with magic</div>
