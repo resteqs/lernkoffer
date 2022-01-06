@@ -32,6 +32,7 @@ import { Photosynthese } from "./SDG/Wörterbuch/Elemente/Photosynthese";
 /**                              Freie Arbeit                                */
 import { SDG01_FreieArbeit } from "./SDG/SDG1/Freie Arbeit/SDG01_FreieArbeit";
 /**                             Gutes Beispiel                               */
+import  { SDG01_GB } from "./SDG/SDG1/Gute Bsp/SDG01_GB"
 /**                               Infotext                                   */
 import { SDG01_Infotext } from "./SDG/SDG1/Info/SDG01_Infotext";
 
@@ -364,6 +365,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
         <Route exact path="/SDG1/FreieArbeit"> <TextComponent sdg = {SDG01_FreieArbeit}/> </Route>
 /**                             Gutes Beispiel                               */
+<Route exact path="/SDG1/Gute Bsp"> <TextComponent sdg = {SDG01_GB}/> </Route>
 /**                               Infotext                                   */
                 <Route exact path="/SDG01/Infotext"><InfotextComponent sdg = {SDG01_Infotext}/></Route>
 
