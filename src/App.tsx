@@ -369,7 +369,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
                 <Route exact path="/SDG01/FreieArbeit"> <TextComponent sdg = {SDG01_FreieArbeit}/> </Route>
 /**                             Gutes Beispiel                               */
-<Route exact path="/SDG1/Gute Bsp"> <TextComponent sdg = {SDG01_GB}/> </Route>
+                <Route exact path="/SDG01/GutesBeispiel"> <TextComponent sdg = {SDG01_GB}/> </Route>
 /**                               Infotext                                   */
                 <Route exact path="/SDG01/Infotext"><InfotextComponent sdg = {SDG01_Infotext}/></Route>
 
@@ -518,7 +518,7 @@ export const App = (): JSX.Element => {
  *                                SDG 11
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-            <Route exact path="/SDG11/Freie Arbeit"><TextComponent sdg= {SDG11_FreieArbeit}/> </Route> 
+            <Route exact path="/SDG11/FreieArbeit"><TextComponent sdg= {SDG11_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
             <Route exact path="/SDG11/GutesBeispiel"><TextComponent sdg= {SDG11_GB}/> </Route> 
 /**                               Infotext                                   */
@@ -526,7 +526,7 @@ export const App = (): JSX.Element => {
 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
-<Route exact path="/SDG11/Spiel" component={SDG11_Spiel}/>
+            <Route exact path="/SDG11/Spiel" component={SDG11_Spiel}/>
 /**                                Video                                     */
 
 
@@ -602,7 +602,7 @@ export const App = (): JSX.Element => {
                 <Route exact path="/SDG14/Spiel2/turtle" component={turtle} />
                 <Route exact path="/SDG14/Spiel2/boat" component={boat} />   
 
-                /**----------------------------------------------------------------------------
+/**----------------------------------------------------------------------------
  *                                SDG 15
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
