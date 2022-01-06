@@ -334,6 +334,7 @@ import { Quiz_Component } from "./Components/Quiz/QuizComponent";
 import { SDGX_Quiz } from "./Components/test";
 import { TextComponent } from "./Components/Text/TextComponent";
 import { SDG05_GB } from "./SDG/SDG5/Gute Bsp/SDG05_GB";
+import { SDG05_FreieArbeit } from "./SDG/SDG5/Freie Arbeit/SDG05_FreieArbeit";
 
 
 
@@ -423,6 +424,7 @@ export const App = (): JSX.Element => {
  *                                SDG 05
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+            <Route exact path="/SDG05/FreieArbeit"><TextComponent sdg = {SDG05_FreieArbeit}/></Route>
 /**                             Gutes Beispiel                               */
             <Route exact path="/SDG05/GutesBeispiel"><TextComponent sdg = {SDG05_GB}/></Route>
 /**                               Infotext                                   */
