@@ -344,7 +344,9 @@ import { TextComponent } from "./Components/Text/TextComponent";
 import { SDG05_GB } from "./SDG/SDG5/Gute Bsp/SDG05_GB";
 import { SDG05_FreieArbeit } from "./SDG/SDG5/Freie Arbeit/SDG05_FreieArbeit";
 import { SDG10_Spiel } from "./SDG/SDG10/Spiel/SDG10_Spiel";
+import { SDG10_Quiz } from "./SDG/SDG10/Quiz/SDG10_Quiz";
 import { SDG06_FreieArbeit } from "./SDG/SDG6/Freie Arbeit/SDG06_FreieArbeit";
+
 
 
 
@@ -520,6 +522,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
             <Route exact path="/SDG10/Infotext"><InfotextComponent sdg={SDG10_Infotext}/></Route>
 /**                                 Quiz                                     */
+            <Route exact path="/SDG10/Quiz"><Quiz_Component sdg={SDG10_Quiz}/></Route>
 /**                                Spiel                                     */
             <Route exact path="/SDG10/Spiel"><TextComponent sdg={SDG10_Spiel}/></Route>
 
