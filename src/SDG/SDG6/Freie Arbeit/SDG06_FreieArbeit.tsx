@@ -9,7 +9,7 @@ import React from "react";
 export const SDG06_FreieArbeit: TextProps = {
     sdgNumber: 6,
     sdgTitle: "Forschertagebuch - Wasserverbrauch ",
-    sdg: "SDG01",
+    sdg: "SDG06",
     logo: Logo,
     header: {
         1: "Aufgabe",

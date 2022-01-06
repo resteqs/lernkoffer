@@ -218,7 +218,9 @@ import { SDG11_Spiel } from "./SDG/SDG11/Spiel/SDG11_Spiel";
  *                                SDG 12
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+import { SDG12_FreieArbeit } from "./SDG/SDG12/Freie Arbeit/SDG12_FreieArbeit";
 /**                             Gutes Beispiel                               */
+import { SDG12_GutesBeispiel } from "./SDG/SDG12/Gute Bsp/SDG12_GutesBeispiel";
 /**                               Infotext                                   */
 import { SDG12_Infotext } from "./SDG/SDG12/Info/SDG12_Infotext";
 /**                                 Quiz                                     */
@@ -348,13 +350,6 @@ import { SDG10_Spiel } from "./SDG/SDG10/Spiel/SDG10_Spiel";
 import { SDG10_Quiz } from "./SDG/SDG10/Quiz/SDG10_Quiz";
 import { SDG06_FreieArbeit } from "./SDG/SDG6/Freie Arbeit/SDG06_FreieArbeit";
 import { SDG07_Quiz } from "./SDG/SDG7/Quiz/SDG07_Quiz";
-
-
-
-
-
-
-
 
 export const App = (): JSX.Element => {
     return (
@@ -553,7 +548,9 @@ export const App = (): JSX.Element => {
  *                                SDG 12
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+<Route exact path="/SDG12/FreieArbeit"><TextComponent sdg= {SDG12_FreieArbeit}/> </Route>
 /**                             Gutes Beispiel                               */
+<Route exact path="/SDG12/GutesBeispiel"><TextComponent sdg= {SDG12_GutesBeispiel}/> </Route> 
 /**                               Infotext                                   */
             <Route exact path="/SDG12/Infotext"><InfotextComponent sdg={SDG12_Infotext}/></Route>
 /**                                 Quiz                                     */
@@ -565,6 +562,7 @@ export const App = (): JSX.Element => {
  *                                SDG 13
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+<Route exact path="/SDG12/FreieArbeit"><TextComponent sdg= {SDG12_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
                 <Route exact path="/SDG13/Infotext"><InfotextComponent sdg={SDG13_Infotext}/></Route>                  
