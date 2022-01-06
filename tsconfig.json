@@ -17,5 +17,5 @@
         "jsx": "react-jsx",
         "noImplicitAny": false
     },
-    "include": ["src", "SDG/SDG13"]
+    "include": ["src", "SDG/SDG13", "src/SDG/SDG5/Spiel/.gitkeep", "src/SDG/SDG5/Spiel/.gitkeep"]
 }

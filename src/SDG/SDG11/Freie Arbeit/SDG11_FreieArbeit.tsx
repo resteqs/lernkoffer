@@ -8,7 +8,7 @@ import Logo from "../../../SDGLogos/Goal-SDG11.png";
 import Stadt from "./Bild1.png";
 
 export const SDG11_FreieArbeit: TextProps = {
-    sdgNumber: 9,
+    sdgNumber: 11,
     sdgTitle: "Gestalte deine eigene kleine nachhaltige Stadt",
     sdg: "SDG11",
     logo: Logo,
