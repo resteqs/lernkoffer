@@ -44,6 +44,10 @@
 .headertext {
     font-size: 70px;
 }
+.texttext {
+    font-size: 50px;
+    text-align: justify;
+}
 
 .pic_show {
     max-width: 750px;

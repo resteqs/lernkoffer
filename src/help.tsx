@@ -16,6 +16,15 @@ export const Help = ():JSX.Element => {
                 <Link to = "/SDG01/Spiel">
                     <div className="centre">SDG 01 Spiel</div>
                 </Link>
+
+                <Link to = "/SDG1/FreieArbeit">
+                    <div className="centre">SDG 01 Freie Arbeit</div>
+                </Link> 
+
+                <Link to = "/SDG1/Gute Bsp">
+                    <div className="centre">SDG 01 Gutes Bsp</div>
+                </Link> 
+
                 <Link to = "/SDG01/Infotext">
                     <div className="centre">SDG 01 Infotext</div>
                 </Link>
@@ -77,6 +86,12 @@ export const Help = ():JSX.Element => {
                     <div className="centre">SDG 04 Gutes Beispiel</div>
                 </Link>
 
+                <Link to = "/SDG05/FreieArbeit">
+                    <div className="centre">SDG 05 Freie Arbeit</div>
+                </Link>
+                <Link to = "/SDG05/GutesBeispiel">
+                    <div className="centre">SDG 05 Gutes Beispiel</div>
+                </Link>
                 <Link to = "/SDG05/Infotext">
                     <div className="centre">SDG 05 Infotext</div>
                 </Link>
@@ -112,6 +127,14 @@ export const Help = ():JSX.Element => {
                     <div className="centre">SDG 09 Infotext</div>
                 </Link>
 
+                <Link to = "/SDG09/Gute Bsp">
+                    <div className="centre">SDG 09 Gutes Beispiel</div>
+                </Link>
+
+                <Link to = "/SDG09/FreieArbeit">
+                    <div className="centre">SDG 09 Freie Arbeit</div>
+                </Link>
+
                  <Link to = "/SDG09/Spiel">
                     <div className="centre">SDG 09 Spiel</div>
                 </Link>
@@ -122,6 +145,13 @@ export const Help = ():JSX.Element => {
 
                 <Link to = "/SDG11/Infotext">
                     <div className="centre">SDG 11 infotext</div>
+                </Link> 
+                <Link to = "/SDG11/Freie Arbeit">
+                    <div className="centre">SDG 11 Freie Arbeit</div>
+                </Link> 
+
+                <Link to = "/SDG11/Gute Bsp">
+                    <div className="centre">SDG 11 Gutes Beispiel</div>
                 </Link>
 
                 <Link to = "/SDG11/Spiel">
