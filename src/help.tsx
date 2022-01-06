@@ -81,15 +81,16 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG09/Spiel">Spiel</Link></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG01/Quiz">Quiz WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG02/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG03/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG04/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG05/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG06/Quiz">Quiz WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/Quiz">Quiz WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG09/Quiz">Quiz WIP</Link></td>
+                      
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG01/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG02/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG03/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG04/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG05/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG06/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG07/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG08/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG09/Quiz">Quiz WIP</a></td>
 
                     </tr>
                     <tr>
