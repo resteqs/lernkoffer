@@ -37,7 +37,7 @@ export interface QuizProps {
      * props for text part
      */
     tile: Record<number, string>;
-    text: Record<number, string>;
+    text: Record<number, JSX.Element>;
           
     /**
      * props for quiz part 
