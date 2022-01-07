@@ -103,12 +103,12 @@ export const SDG03_GutesBeispiel:Quiz3OProps = {
                              5: <div> Geld verdienen</div>, 
         
         },
-        buttonMiddleContent: { 1: <div> Oslo </div>,
-                               2: <div> Leben retten</div>, 
+        buttonMiddleContent: { 4: <div> Oslo </div>,
+                               5: <div> Leben retten</div>, 
     
         },
-        buttonRightContent: { 1: <div> Paris </div> ,                
-                              2: <div> Spaß haben </div>
+        buttonRightContent: { 4: <div> Paris </div> ,                
+                              5: <div> Spaß haben </div>
         
         },
         answerNumbersLeft: { 4: "Falsch",  
