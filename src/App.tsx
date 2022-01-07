@@ -302,7 +302,7 @@ import { SDG16_Infotext } from "./SDG/SDG16/Info/SDG16_Infotext";
 /**                                Spiel                                     */
 /**                                Video                                     */
 /**----------------------------------------------------------------------------
- *                                SDG 16
+ *                                SDG 17
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
 import { SDG17_FreieArbeit } from "./SDG/SDG17/Freie Arbeit/SDG17_FreieArbeit";
@@ -311,6 +311,7 @@ import { SDG17_FreieArbeit } from "./SDG/SDG17/Freie Arbeit/SDG17_FreieArbeit";
 import { SDG17_Infotext } from "./SDG/SDG17/Info/SDG17_Infotext";
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+import { SDG17_Spiel } from "./SDG/SDG17/Spiel/SDG17_Spiel";
 /**                                Video                                     */
 /**----------------------------------------------------------------------------
 
@@ -663,6 +664,7 @@ export const App = (): JSX.Element => {
                 <Route exact path="/SDG17/Infotext"><InfotextComponent sdg={SDG17_Infotext}/></Route>
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+<Route exact path="/SDG17/Spiel"><TextComponent sdg= {SDG17_Spiel}/> </Route> 
 /**                                Video                                     */
 /**----------------------------------------------------------------------------
 
