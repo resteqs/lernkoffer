@@ -48,7 +48,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG03/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG04/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/GutesBeispiel">Gutes Beispiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG06/GutesBeispiel">Gutes Beispiel WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG06/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG07/GutesBeispiel">Gutes Beispiel WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG08/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/GutesBeispiel">Gutes Beispiel</Link></td>

@@ -36,7 +36,7 @@ export const TextComponent = (props: Props): JSX.Element => {
     };
 
     const buttonBack = (
-        <div style={{ top: "900px", position: "fixed" }}>
+        <div style={{ top: "950px", left: "-50px",position: "fixed" }}>
             <FancyButton
                 onClick={decrementCount}
                 version="red"
@@ -48,7 +48,7 @@ export const TextComponent = (props: Props): JSX.Element => {
         </div>
     );
     const buttonNext = (
-        <div style={{ top: "900px", right: "60px", position: "fixed" }}>
+        <div style={{ top: "950px", right: "60px", position: "fixed" }}>
             <FancyButton
                 onClick={incrementCount}
                 version="green"
@@ -62,7 +62,7 @@ export const TextComponent = (props: Props): JSX.Element => {
 
     const buttonEnd = (
         <Link to="/Vorlagen/Endscreen">
-            <div style={{ top: "900px", right: "60px", position: "fixed" }}>
+            <div style={{ top: "950px", right: "60px", position: "fixed" }}>
                 <FancyButton
                     onClick={incrementCount}
                     version="green"
