@@ -360,6 +360,7 @@ import { SDG01_Quiz } from "./SDG/SDG1/Quiz/SDG01_Quiz";
 import { SDG12_Quiz } from "./SDG/SDG12/Quiz/SDG12_Quiz";
 import { SDG13_Quiz } from "./SDG/SDG13/Quiz/SDG13_Quiz";
 import { SDG16_Einstieg } from "./SDG/SDG16/Einstieg/SDG16_Einstieg";
+import { SDG15_Spiel } from "./SDG/SDG15/Spiel/SDG15_Spiel";
 
 
 export const App = (): JSX.Element => {
@@ -642,6 +643,7 @@ export const App = (): JSX.Element => {
                 <Route exact path="/SDG15/Infotext"><InfotextComponent sdg={SDG15_Infotext}/></Route>
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+<Route exact path="/SDG15/Spiel"><TextComponent sdg= {SDG15_Spiel}/> </Route> 
 /**                                Video                                     */
 /**----------------------------------------------------------------------------
  *                                SDG 16
