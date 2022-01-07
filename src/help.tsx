@@ -88,7 +88,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG04/Quiz">Quiz</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG05/Quiz">Quiz</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG06/Quiz">Quiz</a></td>
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG07/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG07/Quiz">Quiz </a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG08/Quiz">Quiz</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG09/Quiz">Quiz WIP</a></td>
 
@@ -127,14 +127,14 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG13/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG14/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/FreieArbeit">Freie Arbeit</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG16/FreieArbeit">Freie Arbeit WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG17/FreieArbeit">Freie Arbeit WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG16/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG17/FreieArbeit">Freie Arbeit</Link></td>
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG10/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/GutesBeispiel">Gutes Beispiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG13/GutesBeispiel">Gutes Beispiel WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG13/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG14/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/GutesBeispiel">Gutes Beispiel WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/GutesBeispiel">Gutes Beispiel WIP</Link></td>
@@ -147,7 +147,9 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG13/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG14/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/Infotext">Infotext</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG16/Infotext">Infotext</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG16/Einstieg">Einstieg</Link>
+                        <p>und</p>
+                        <Link to ="/SDG16/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/Infotext">Infotext</Link></td>
 
                     </tr>
@@ -162,17 +164,17 @@ export const Help = (): JSX.Element => {
                         </td>
                         <td className="tg-c3ow"><Link to ="/SDG14/Spiel2/tutorial1">Spiel ???</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/Spiel">Spiel WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG16/Spiel">Spiel WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG17/Spiel">Spiel WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG16/Spiel">Spiel </Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG17/Spiel">Spiel </Link></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG10/Quiz">Quiz WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG10/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/Quiz">Quiz WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG12/Quiz">Quiz WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG13/Quiz">Quiz WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG12/Quiz">Quiz</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG13/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG14/Quiz">Quiz WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/Quiz">Quiz WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG16/Quiz">Quiz WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG16/Quiz">Quiz WWIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/Quiz">Quiz WIP</Link></td>
                     </tr>
                     <tr>
