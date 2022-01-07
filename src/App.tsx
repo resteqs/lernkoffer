@@ -321,7 +321,6 @@ import { SDG17_Spiel } from "./SDG/SDG17/Spiel/SDG17_Spiel";
  *                                Vorlagen
  ----------------------------------------------------------------------------*/
 import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
-import { Quiz } from "./SDG/Vorlagen/Quiz/quiz";
 import { countdown } from "./SDG/Vorlagen/Countdown/countdown";
 import { SimpleCountdown } from "./SDG/Vorlagen/Countdown/simpleCountdown"
 import { QuizButton } from "./SDG/Vorlagen/Button/QuizButton"
@@ -348,6 +347,7 @@ import page143 from "./SDG/SDG14/Spiel2/tutorial/14tut3";
 
 import play14 from "./SDG/SDG14/Spiel2/play14";
 import { Quiz_Component } from "./Components/Quiz/QuizComponent";
+
 import { SDGX_Quiz } from "./Components/test";
 import { TextComponent } from "./Components/Text/TextComponent";
 import { SDG05_GB } from "./SDG/SDG5/Gute Bsp/SDG05_GB";
@@ -363,6 +363,7 @@ import { SDG12_Quiz } from "./SDG/SDG12/Quiz/SDG12_Quiz";
 import { SDG13_Quiz } from "./SDG/SDG13/Quiz/SDG13_Quiz";
 import { SDG16_Einstieg } from "./SDG/SDG16/Einstieg/SDG16_Einstieg";
 import { SDG15_Spiel } from "./SDG/SDG15/Spiel/SDG15_Spiel";
+import { Quiz3Component } from "./Components/Quiz/Quiz3Component";
 
 
 export const App = (): JSX.Element => {
@@ -681,7 +682,6 @@ export const App = (): JSX.Element => {
                 <Route exact path="/Vorlagen/infotext" component={Infotext} />  
                 <Route exact path="/Vorlagen/countdown" component={countdown} />  
                 <Route exact path ="/Vorlagen/SimpleCountdown" component={SimpleCountdown}/> 
-                <Route exact path ="/Vorlagen/quiz" component={Quiz}/> 
                 <Route exact path ="/Vorlagen/endscreen" component={Endscreen} />
                 <Route exact path ="/Vorlagen/video" component={Video}/> 
                 <Route exact path="/Vorlagen/MagicButton" component={QuizButton} />  
@@ -691,7 +691,7 @@ export const App = (): JSX.Element => {
 ----------------------------------------------------------------------------*/
                 <Route exact path="/Component/InfotextButtonGreen" component={InfotextButtonGreen} />  
                 <Route exact path="/Component/InfotextButtonRed" component={InfotextButtonRed} />  
-                <Route exact path= "/Component/test"><Quiz_Component sdg={SDGX_Quiz}/></Route>
+                <Route exact path= "/Component/test"><Quiz3Component sdg={SDGX_Quiz}/></Route>
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  

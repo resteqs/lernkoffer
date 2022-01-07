@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../../../SDGLogos/Goal-SDG06.png";
-import ReactPlayer from "react-player";
-import infotextbutton from "../../../styles/Infotextbutton.module.css";
 import { Link } from "react-router-dom";
+import ReactPlayer from "react-player";
+import Logo from "../../../SDGLogos/Goal-SDG06.png";
+import infotextbutton from "../../../styles/Infotextbutton.module.css";
 
 export const Video = (): JSX.Element => {
     const sdg = "SDG06";

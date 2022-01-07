@@ -1,4 +1,5 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable eslint-comments/disable-enable-pair */
+/* eslint-disable import/order */
 /* eslint-disable no-eval */
 
 import * as React from "react";

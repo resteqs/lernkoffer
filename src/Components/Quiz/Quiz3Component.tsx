@@ -1,20 +1,21 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable eslint-comments/disable-enable-pair */
+/* eslint-disable unicorn/no-nested-ternary */
 /* eslint-disable unicorn/filename-case */
 
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { QuizProps } from "../../Interfaces/SDG";
-import { QuizButton } from "./Button/QuizButton";
+import { Quiz3OProps } from "../../Interfaces/SDG";
+import { Quiz3Button } from "./Button/Quiz3Button";
 import { ModalQuizComponent } from "../Modal/ModalComponent";
 import { FancyButton } from "../Buttons/FancyButton";
 import "../../styles/quizComponentStyle.css";
 
 interface Props {
-    sdg: QuizProps;
+    sdg: Quiz3OProps;
 }
 
 // orientiert an 04 Quiz
-export const Quiz_Component = (props: Props): JSX.Element => {
+export const Quiz3Component = (props: Props): JSX.Element => {
     const [showtext, setText] = React.useState(1);
     const [itemSelected, setSelectedItem] = React.useState(0);
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -35,19 +36,15 @@ export const Quiz_Component = (props: Props): JSX.Element => {
     const answerCW =
         itemSelected === 0 ? (
             <p>Falsch</p>
-        ) : (itemSelected === 1 ? (
+        ) : itemSelected === 1 ? (
             <p>{props.sdg.answerNumbersLeft[showtext]}</p>
-        ) : (
+        ) : itemSelected === 2 ? (
+            <p>{props.sdg.answerNumbersMiddle[showtext]}</p>
+        ) : itemSelected === 3 ? (
             <p>{props.sdg.answerNumbersRight[showtext]}</p>
-        ));
-
-    const answer = (
-        <p style={{ fontSize: "40px" }}>
-            {" "}
-            <b>Antwort:</b>
-            {props.sdg.explanation[showtext]}{" "}
-        </p>
-    );
+        ) : (
+            <div> </div>
+        );
 
     const question =
         props.sdg.isQuizActive[showtext] === true ? (
@@ -59,33 +56,47 @@ export const Quiz_Component = (props: Props): JSX.Element => {
     const buttonLeftOnClick = (): void => {
         setSelectedItem(1);
     };
-    const buttonLeft = (
-        <QuizButton
-            id="left"
-            content={props.sdg.buttonLeftContent[showtext]}
-            float="left"
-            className={itemSelected === 1 ? "selectedPerson" : ""}
-            active={props.sdg.isQuizActive[showtext] === true}
-            onClick={buttonLeftOnClick}
-        />
-    );
-
-    const buttonRightOnClick = (): void => {
+    const buttonMiddleOnClick = (): void => {
         setSelectedItem(2);
     };
-    const buttonRight = (
-        <QuizButton
-            id="right"
-            content={props.sdg.buttonRightContent[showtext]}
-            float="right"
-            className={itemSelected === 2 ? "selectedPerson" : ""}
-            active={props.sdg.isQuizActive[showtext] === true}
-            onClick={buttonRightOnClick}
-        />
+    const buttonRightOnClick = (): void => {
+        setSelectedItem(3);
+    };
+
+    const button = (
+        <div>
+            <Quiz3Button
+                id="left"
+                content={props.sdg.buttonLeftContent[showtext]}
+                className={itemSelected === 1 ? "selectedPerson" : ""}
+                active={props.sdg.isQuizActive[showtext] === true}
+                onClick={buttonLeftOnClick}
+                styleDiv={{ float:"left" }}
+            />
+
+            <Quiz3Button
+                id="middle"
+                content={props.sdg.buttonMiddleContent[showtext]}
+                className={itemSelected === 2 ? "selectedPerson" : ""}
+                active={props.sdg.isQuizActive[showtext] === true}
+                onClick={buttonMiddleOnClick}
+                styleDiv={{ display:"inline", marginLeft:"60px" }}
+            />
+            <Quiz3Button
+                id="right"
+                content={props.sdg.buttonRightContent[showtext]}
+                className={itemSelected === 3 ? "selectedPerson" : ""}
+                active={props.sdg.isQuizActive[showtext] === true}
+                onClick={buttonRightOnClick}
+                styleDiv={{ float:"right", }}
+            />
+
+            
+        </div>
     );
 
     const buttonCheck = (
-        <div style={{ top: "900px",position: "fixed",  left: "800px" }}>
+        <div style={{ top: "900px", position: "fixed", left: "800px" }}>
             <FancyButton
                 onClick={openModal}
                 version="green"
@@ -120,7 +131,6 @@ export const Quiz_Component = (props: Props): JSX.Element => {
                 Weiter
             </FancyButton>
         </div>
-
     );
 
     const buttonEnd = (
@@ -134,7 +144,7 @@ export const Quiz_Component = (props: Props): JSX.Element => {
                 >
                     Beenden
                 </FancyButton>
-           </div>
+            </div>
         </Link>
     );
 
@@ -162,22 +172,17 @@ export const Quiz_Component = (props: Props): JSX.Element => {
 
             {props.sdg.isQuizActive[showtext] === false ? (
                 <>
-                    <p className="title">
-                        {props.sdg.tile[showtext]}
-                    </p>
+                    <p className="title">{props.sdg.tile[showtext]}</p>
                     <p className="einleitungText" style={{ fontSize: "50px" }}>
                         {props.sdg.text[showtext]}
                     </p>
                 </>
-                ):(<div> </div>)
-            }
-
-            
+            ) : (
+                <div> </div>
+            )}
 
             {question}
-
-            {buttonLeft}
-            {buttonRight}
+            {button}
             {buttonCheck}
             {Modal}
 
