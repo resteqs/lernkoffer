@@ -356,6 +356,7 @@ import { SDG10_Quiz } from "./SDG/SDG10/Quiz/SDG10_Quiz";
 import { SDG06_FreieArbeit } from "./SDG/SDG6/Freie Arbeit/SDG06_FreieArbeit";
 import { SDG07_FreieArbeit } from "./SDG/SDG7/Freie Arbeit/SDG07_FreieArbeit";
 import { SDG07_Quiz } from "./SDG/SDG7/Quiz/SDG07_Quiz";
+import { SDG06_GutesBeispiel } from "./SDG/SDG6/Gute Bsp/SDG06_GutesBeispiel";
 
 export const App = (): JSX.Element => {
     return (
@@ -460,8 +461,8 @@ export const App = (): JSX.Element => {
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
             <Route exact path="/SDG06/FreieArbeit"><TextComponent sdg={SDG06_FreieArbeit}/></Route>
-
 /**                             Gutes Beispiel                               */
+            <Route exact path="/SDG06/GutesBeispiel"><TextComponent sdg={SDG06_GutesBeispiel}/></Route>
 /**                               Infotext                                   */
             <Route exact path="/SDG06/Infotext"><InfotextComponent sdg={SDG06_Infotext}/></Route>
 /**                                 Quiz                                     */
