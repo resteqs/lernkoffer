@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lernkoffer/static/css/main.2a687804.chunk.css",
+    "main.css": "/lernkoffer/static/css/main.c353b5ae.chunk.css",
     "main.js": "/lernkoffer/static/js/main.d3b8d057.chunk.js",
     "main.js.map": "/lernkoffer/static/js/main.d3b8d057.chunk.js.map",
     "runtime-main.js": "/lernkoffer/static/js/runtime-main.b920e5b4.js",
@@ -10,7 +10,7 @@
     "static/js/3.34534c32.chunk.js": "/lernkoffer/static/js/3.34534c32.chunk.js",
     "static/js/3.34534c32.chunk.js.map": "/lernkoffer/static/js/3.34534c32.chunk.js.map",
     "index.html": "/lernkoffer/index.html",
-    "static/css/main.2a687804.chunk.css.map": "/lernkoffer/static/css/main.2a687804.chunk.css.map",
+    "static/css/main.c353b5ae.chunk.css.map": "/lernkoffer/static/css/main.c353b5ae.chunk.css.map",
     "static/js/2.fb01a077.chunk.js.LICENSE.txt": "/lernkoffer/static/js/2.fb01a077.chunk.js.LICENSE.txt",
     "static/media/12_1.8855d9cb.jpg": "/lernkoffer/static/media/12_1.8855d9cb.jpg",
     "static/media/12_2.c0a72ee0.jpg": "/lernkoffer/static/media/12_2.c0a72ee0.jpg",
@@ -144,7 +144,7 @@
   "entrypoints": [
     "static/js/runtime-main.b920e5b4.js",
     "static/js/2.fb01a077.chunk.js",
-    "static/css/main.2a687804.chunk.css",
+    "static/css/main.c353b5ae.chunk.css",
     "static/js/main.d3b8d057.chunk.js"
   ]
 }
