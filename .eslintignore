@@ -1,8 +1,0 @@
-src/serviceWorker.ts
-src/react-app-env.d.ts
-build/
-node_modules/
-config-overrides.js
-.eslintrc.js
-src/reportWebVitals.ts
-.eslintcache
