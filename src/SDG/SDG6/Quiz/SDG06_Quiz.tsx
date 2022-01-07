@@ -53,7 +53,7 @@ export const SDG06_Quiz:QuizProps = {
                         4: "1200 ml entsprechen 6 Wassergläsern",
                         5: "1600 ml entsprechen 8 Wassergläsern",
     },
-    // modalContent: <div>Quiz SDG 10</div>,
+    // modalContent: <div>Quiz SDG 06</div>,
     isQuizActive: {
         1: false,
         2: true,

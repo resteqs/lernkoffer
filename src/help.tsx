@@ -81,15 +81,16 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG09/Spiel">Spiel</Link></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG01/Quiz">Quiz WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG02/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG03/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG04/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG05/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG06/Quiz">Quiz WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/Quiz">Quiz WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG09/Quiz">Quiz WIP</Link></td>
+                      
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG01/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG02/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG03/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG04/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG05/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG06/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG07/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG08/Quiz">Quiz</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG09/Quiz">Quiz WIP</a></td>
 
                     </tr>
                     <tr>
@@ -122,19 +123,19 @@ export const Help = (): JSX.Element => {
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG10/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/FreieArbeit">Freie Arbeit</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG12/FreieArbeit">Freie Arbeit WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG13/FreieArbeit">Freie Arbeit WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG14/FreieArbeit">Freie Arbeit WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG15/FreieArbeit">Freie Arbeit WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG12/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG13/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG14/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG15/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/FreieArbeit">Freie Arbeit WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/FreieArbeit">Freie Arbeit WIP</Link></td>
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG10/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/GutesBeispiel">Gutes Beispiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG12/GutesBeispiel">Gutes Beispiel WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG12/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG13/GutesBeispiel">Gutes Beispiel WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG14/GutesBeispiel">Gutes Beispiel WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG14/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/GutesBeispiel">Gutes Beispiel WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/GutesBeispiel">Gutes Beispiel WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/GutesBeispiel">Gutes Beispiel WIP</Link></td>
@@ -153,7 +154,7 @@ export const Help = (): JSX.Element => {
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG10/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/Spiel">Spiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG12/Spiel">Spiel WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG12/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow">
                             <Link to ="/SDG13/tutorial/page1">Spiel 1 ???</Link>
                             <p>und</p>

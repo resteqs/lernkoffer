@@ -225,6 +225,7 @@ import { SDG12_GutesBeispiel } from "./SDG/SDG12/Gute Bsp/SDG12_GutesBeispiel";
 import { SDG12_Infotext } from "./SDG/SDG12/Info/SDG12_Infotext";
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+import { SDG12_Spiel } from "./SDG/SDG12/Spiel/SDG12_Spiel";
 /**                                Video                                     */
 
 
@@ -232,6 +233,7 @@ import { SDG12_Infotext } from "./SDG/SDG12/Info/SDG12_Infotext";
  *                                SDG 13
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+import { SDG13_FreieArbeit } from "./SDG/SDG13/Freie Arbeit/SDG13_FreieArbeit";
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
 import { SDG13_Infotext } from "./SDG/SDG13/Info/SDG13_Infotext";
@@ -258,7 +260,9 @@ import foxHedgehog  from "./SDG/SDG13/Spiel/information/foxHedgehog";
  *                                SDG 14
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+import { SDG14_FreieArbeit } from "./SDG/SDG14/Freie Arbeit/SDG14_FreieArbeit";
 /**                             Gutes Beispiel                               */
+import { SDG14_GutesBeispiel } from "./SDG/SDG14/Gute Bsp/SDG14_GutesBeispiel";
 /**                               Infotext                                   */
 import { SDG14_Infotext } from "./SDG/SDG14/Info/SDG14_Infotext";
 
@@ -282,6 +286,7 @@ import { Main } from "./SDG/SDG13/Spiel2/DND/Main";
  *                                SDG 15
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+import { SDG15_FreieArbeit } from "./SDG/SDG15/Freie Arbeit/SDG15_FreieArbeit";
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
 import { SDG15_Infotext } from "./SDG/SDG15/Info/SDG15_Infotext";
@@ -350,6 +355,7 @@ import { SDG10_Spiel } from "./SDG/SDG10/Spiel/SDG10_Spiel";
 import { SDG10_Quiz } from "./SDG/SDG10/Quiz/SDG10_Quiz";
 import { SDG06_FreieArbeit } from "./SDG/SDG6/Freie Arbeit/SDG06_FreieArbeit";
 import { SDG07_FreieArbeit } from "./SDG/SDG7/Freie Arbeit/SDG07_FreieArbeit";
+import { SDG07_Quiz } from "./SDG/SDG7/Quiz/SDG07_Quiz";
 
 export const App = (): JSX.Element => {
     return (
@@ -474,6 +480,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
             <Route exact path="/SDG07/Infotext"><InfotextComponent sdg={SDG07_Infotext}/></Route>
 /**                                 Quiz                                     */
+            <Route exact path="/SDG07/Quiz"><Quiz_Component sdg={SDG07_Quiz}/></Route>
 /**                                Spiel                                     */
 /**                                Video                                     */
 
@@ -554,6 +561,7 @@ export const App = (): JSX.Element => {
             <Route exact path="/SDG12/Infotext"><InfotextComponent sdg={SDG12_Infotext}/></Route>
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+<Route exact path="/SDG12/Spiel"><TextComponent sdg= {SDG12_Spiel}/> </Route> 
 /**                                Video                                     */
 
 
@@ -561,7 +569,7 @@ export const App = (): JSX.Element => {
  *                                SDG 13
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-<Route exact path="/SDG12/FreieArbeit"><TextComponent sdg= {SDG12_FreieArbeit}/> </Route> 
+<Route exact path="/SDG13/FreieArbeit"><TextComponent sdg= {SDG13_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
                 <Route exact path="/SDG13/Infotext"><InfotextComponent sdg={SDG13_Infotext}/></Route>                  
@@ -596,7 +604,9 @@ export const App = (): JSX.Element => {
  *                                SDG 14
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+<Route exact path="/SDG14/FreieArbeit"><TextComponent sdg= {SDG14_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
+<Route exact path="/SDG14/GutesBeispiel"><TextComponent sdg= {SDG14_GutesBeispiel}/> </Route> 
 /**                               Infotext                                   */
                 <Route exact path="/SDG14/Infotext"><InfotextComponent sdg={SDG14_Infotext}/></Route> 
 
@@ -622,6 +632,7 @@ export const App = (): JSX.Element => {
  *                                SDG 15
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
+<Route exact path="/SDG15/FreieArbeit"><TextComponent sdg= {SDG15_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
                 <Route exact path="/SDG15/Infotext"><InfotextComponent sdg={SDG15_Infotext}/></Route>
