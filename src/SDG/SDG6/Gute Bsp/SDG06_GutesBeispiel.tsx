@@ -454,7 +454,7 @@ export const SDG06_GutesBeispiel: TextProps = {
         28: <img style={{ margin: "auto", display: "block", width: "40%" }} src={SystemHydra} alt="" />,
         29: (
             <div style={{ margin: "auto", display: "block", width: "40%" }}>
-                <Link to="/home">
+                <Link to="/SDG06/GutesBeispielQuiz">
                     <InfotextButton version="green">Zum Quiz</InfotextButton>
                 </Link>
             </div>
