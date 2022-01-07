@@ -38,7 +38,7 @@ export const SDG01_Quiz:QuizProps = {
     answerNumbersRight:{2: "Richtig",
                         3: "Falsch",
                         },
-    explanation:{       2: "Der Apfel ist das Geld eher Wert. In vielen Regionen der Welt herrsch noch Lebensmittelknappheit, und wenn man dann noch finanziell instabil ist, sollte man auf jeden Fall Kosmetik ist nicht ein lebenswichtiger Bestandteil, man kann also auf ihn verzichten, wenn man Geldprobleme hat. ",
+    explanation:{       2: "Der Apfel ist das Geld eher wert. In vielen Regionen der Welt herrscht noch Lebensmittelknappheit, und wenn man dann noch finanziell instabil ist, sollte man auf jeden Fall Kosmetik ist nicht ein lebenswichtiger Bestandteil, man kann also auf ihn verzichten, wenn man Geldprobleme hat. ",
                         3: "Die Bücher vertreiben zwar toll Langeweile, doch wenn man knapp bei Kasse ist, sollte man lieber zu der Kleidung greifen. Diese schützen dich vor Regen, Schmutz, Verletzungen, Sonnenbränden und halten dich im Winter warm. Nicht genügend intakte Kleidung zu haben, ist ein großes Problem bei armen Menschen. Sie müssen sich mit zerrissenen Hosen und löchrigen Hemden durch Kälte und Regen kämpfen.",
                 },
     // modalContent: <div>Quiz SDG 01</div>,
