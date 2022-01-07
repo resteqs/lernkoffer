@@ -140,7 +140,7 @@ export const Quiz3Component = (props: Props): JSX.Element => {
                     onClick={incrementCount}
                     version="green"
                     className="nextbutton"
-                    active={showtext === maxSlides && props.sdg.isQuizActive[showtext] === false}
+                    active={showtext === maxSlides}
                 >
                     Beenden
                 </FancyButton>
