@@ -357,10 +357,12 @@ import { SDG10_Quiz } from "./SDG/SDG10/Quiz/SDG10_Quiz";
 import { SDG06_FreieArbeit } from "./SDG/SDG6/Freie Arbeit/SDG06_FreieArbeit";
 import { SDG07_FreieArbeit } from "./SDG/SDG7/Freie Arbeit/SDG07_FreieArbeit";
 import { SDG07_Quiz } from "./SDG/SDG7/Quiz/SDG07_Quiz";
+import { SDG06_GutesBeispiel } from "./SDG/SDG6/Gute Bsp/SDG06_GutesBeispiel";
 import { SDG01_Quiz } from "./SDG/SDG1/Quiz/SDG01_Quiz";
 import { SDG12_Quiz } from "./SDG/SDG12/Quiz/SDG12_Quiz";
 import { SDG13_Quiz } from "./SDG/SDG13/Quiz/SDG13_Quiz";
 import { SDG16_Einstieg } from "./SDG/SDG16/Einstieg/SDG16_Einstieg";
+import { SDG15_Spiel } from "./SDG/SDG15/Spiel/SDG15_Spiel";
 
 
 export const App = (): JSX.Element => {
@@ -467,8 +469,8 @@ export const App = (): JSX.Element => {
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
             <Route exact path="/SDG06/FreieArbeit"><TextComponent sdg={SDG06_FreieArbeit}/></Route>
-
 /**                             Gutes Beispiel                               */
+            <Route exact path="/SDG06/GutesBeispiel"><TextComponent sdg={SDG06_GutesBeispiel}/></Route>
 /**                               Infotext                                   */
             <Route exact path="/SDG06/Infotext"><InfotextComponent sdg={SDG06_Infotext}/></Route>
 /**                                 Quiz                                     */
@@ -643,6 +645,7 @@ export const App = (): JSX.Element => {
                 <Route exact path="/SDG15/Infotext"><InfotextComponent sdg={SDG15_Infotext}/></Route>
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
+<Route exact path="/SDG15/Spiel"><TextComponent sdg= {SDG15_Spiel}/> </Route> 
 /**                                Video                                     */
 /**----------------------------------------------------------------------------
  *                                SDG 16
