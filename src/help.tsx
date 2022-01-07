@@ -147,7 +147,9 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG13/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG14/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/Infotext">Infotext</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG16/Infotext">Infotext</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG16/Einstieg">Einstieg</Link>
+                        <p>und</p>
+                        <Link to ="/SDG16/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/Infotext">Infotext</Link></td>
 
                     </tr>
