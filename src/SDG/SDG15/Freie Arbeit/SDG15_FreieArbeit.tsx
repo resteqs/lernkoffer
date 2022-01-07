@@ -5,7 +5,7 @@
 
 import { TextProps } from "../../../Interfaces/SDG";
 import Logo from "../../../SDGLogos/Goal-SDG15.png";
-import KresseHang from "../Freie Arbeit/Media/KresseHang.png"
+import KresseHang from "../Freie Arbeit/Media/Kressehang.png"
 
 export const SDG15_FreieArbeit: TextProps = {
     sdgNumber: 15,
@@ -92,6 +92,9 @@ export const SDG15_FreieArbeit: TextProps = {
                 Beobachtet was passiert. Nun macht ihr das gleich auf der Seite ohne Pflanzen. Beobachtet auch hier
                 wieder, was passiert. Ist euch etwas aufgefallen? Besprecht eure Beobachtungen in der Gruppe, bevor ihr
                 weiterlest.{" "}
+                <ul>
+                    <li> <img style={{ height: "600px", marginLeft: "600px" }} src= {KresseHang} alt="" /></li>
+                </ul>
             </div>
         ),
         6: (
