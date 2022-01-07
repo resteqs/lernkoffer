@@ -424,7 +424,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
             <Route exact path ="/SDG03/FreieArbeit" component={SDG03_FreieArbeit}/>
 /**                             Gutes Beispiel                               */
-            <Route exact path = "/SDG03/GutesBeispiel"/> <Quiz3Component sdg={SDG03_GutesBeispiel}/>
+            <Route exact path = "/SDG03/GutesBeispiel"> <Quiz3Component sdg={SDG03_GutesBeispiel}/></Route>
 /**                               Infotext                                   */
             <Route exact path="/SDG03/Infotext" component={SDG03_Infotext}/>
 /**                                 Quiz                                     */
