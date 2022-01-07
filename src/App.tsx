@@ -262,6 +262,7 @@ import foxHedgehog  from "./SDG/SDG13/Spiel/information/foxHedgehog";
 /**                              Freie Arbeit                                */
 import { SDG14_FreieArbeit } from "./SDG/SDG14/Freie Arbeit/SDG14_FreieArbeit";
 /**                             Gutes Beispiel                               */
+import { SDG14_GutesBeispiel } from "./SDG/SDG14/Gute Bsp/SDG14_GutesBeispiel";
 /**                               Infotext                                   */
 import { SDG14_Infotext } from "./SDG/SDG14/Info/SDG14_Infotext";
 
@@ -603,6 +604,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
 <Route exact path="/SDG14/FreieArbeit"><TextComponent sdg= {SDG14_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
+<Route exact path="/SDG14/GutesBeispiel"><TextComponent sdg= {SDG14_GutesBeispiel}/> </Route> 
 /**                               Infotext                                   */
                 <Route exact path="/SDG14/Infotext"><InfotextComponent sdg={SDG14_Infotext}/></Route> 
 
