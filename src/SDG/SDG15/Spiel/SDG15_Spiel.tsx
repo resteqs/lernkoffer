@@ -100,7 +100,7 @@ export const SDG15_Spiel: TextProps = {
                     ist. Nach der Diskussion bestimmen sie einen Tierbesitzer, dessen Tier aus dem Reservat geworfen
                     wird und der dadurch aus dem Spiel ausscheidet.
                 </p>
-                <img style={{ height: "400px", marginLeft: "900px" }} src={Tierbesitzer} alt="" />
+                <img style={{ height: "400px", margin: "auto", display: "block" }} src={Tierbesitzer} alt="" />
             </div>
         ),
         7: (
@@ -111,7 +111,7 @@ export const SDG15_Spiel: TextProps = {
                     dadurch aus dem Spiel aus. In der allmonatlichen Diskussion ist es ihre Aufgabe, nicht als
                     Umweltsünderin enttarnt zu werden.
                 </p>
-                <img style={{ height: "600px", marginLeft: "700px" }} src={Umweltsünder} alt="" />
+                <img style={{ height: "600px", margin: "auto", display: "block" }} src={Umweltsünder} alt="" />
             </div>
         ),
         8: (
@@ -122,13 +122,13 @@ export const SDG15_Spiel: TextProps = {
                     pro Spiel, dann danach ist ihr Müllwagen voll. Sie kann diesen jedoch wieder entleeren, indem sie
                     den Müll wieder auf einem der Reviere ablädt…
                 </p>
-                <img style={{ height: "500px", marginLeft: "650px" }} src={Müllfrau} alt="" />
+                <img style={{ height: "500px", margin: "auto", display: "block" }} src={Müllfrau} alt="" />
             </div>
         ),
         9: (
             <div>
                 <p>Jeden Monat spioniert der Detektiv einer Person nach und erfährt so dessen wahre Identität.</p>
-                <img style={{ height: "700px", marginLeft: "500px" }} src={Detektiv} alt="" />
+                <img style={{ height: "700px", margin: "auto", display: "block" }} src={Detektiv} alt="" />
             </div>
         ),
         10: (
@@ -137,7 +137,7 @@ export const SDG15_Spiel: TextProps = {
                     Wird das Revier des Tieres des Rächers zugemüllt, so rächt er sich, bevor er ausscheidet, indem er
                     den Müll auf das Revier eines anderen Tieres räumt.
                 </p>
-                <img style={{ height: "800px", marginLeft: "450px" }} src={Raecher} alt="" />
+                <img style={{ height: "800px", margin: "auto", display: "block" }} src={Raecher} alt="" />
             </div>
         ),
         11: (
@@ -147,7 +147,7 @@ export const SDG15_Spiel: TextProps = {
                     Umweltverschmutzer zuschlagen, sie versucht aber von ihnen nicht erwischt werden, da sie die
                     Identität der Umweltverschmutzer dadurch kennt!
                 </p>
-                <img style={{ height: "700px", marginLeft: "700px" }} src={Mädchen} alt="" />
+                <img style={{ height: "700px", margin: "auto", display: "block" }} src={Mädchen} alt="" />
             </div>
         ),
         12: (
