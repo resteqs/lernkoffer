@@ -2,7 +2,6 @@
 /* eslint-disable react/no-unused-prop-types */
 
 import * as React from "react";
-import { Link } from "react-router-dom";
 import "../../styles/colour_sdgs.css";
 import "../../styles/App.css";
 import "../../styles/component.css";

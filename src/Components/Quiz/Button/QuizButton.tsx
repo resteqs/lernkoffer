@@ -11,6 +11,7 @@ interface QuizButtonProps{
     className: string;
     onClick: () => void;
     active: boolean;
+    styleDiv?:CSSProperties;
 
 }
 
@@ -36,27 +37,29 @@ export const QuizButton = (props: QuizButtonProps):JSX.Element => {
     if (active)
     {
         return (
-            <button
-                id = {props.id}
-                type="button"
-                style={ButtonStyle}
-                className={props.className}
-                onClick={() => props.onClick()}
-            >
-                <div
-                    style={{
-                        width: "500px",
-                        height: "500px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                    }}
+            <div style= {props.styleDiv}>
+                <button
+                    id = {props.id}
+                    type="button"
+                    style={ButtonStyle}
+                    className={props.className}
+                    onClick={() => props.onClick()}
                 >
-                    <div style={maxWith}>
-                      {props.content}
+                    <div
+                        style={{
+                            width: "500px",
+                            height: "500px",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <div style={maxWith}>
+                        {props.content}
+                        </div>
                     </div>
-                </div>
-            </button>
+                </button>
+            </div>
         );
     }
     return(

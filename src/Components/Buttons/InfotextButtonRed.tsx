@@ -3,7 +3,6 @@
 
 import * as React from "react";
 import  infotextbutton from "../../styles/Infotextbutton.module.css";
-import renderer from "react-dom";
 
 
 
