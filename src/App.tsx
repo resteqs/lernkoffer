@@ -439,7 +439,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
             <Route exact path="/SDG04/FreieArbeit" component={SDG04_FreieArbeit}/>                    
 /**                             Gutes Beispiel                               */
-            <Route exact path="/SDG04/GutesBeispiel" component={SDG04_GB}/>
+            <Route exact path="/SDG04/GutesBeispiel"><Quiz_Component sdg = {SDG04_GB}/></Route>
 /**                               Infotext                                   */
             <Route exact path="/SDG04/Infotext"><InfotextComponent sdg = {SDG04_Infotext}/></Route>
 /**                                 Quiz                                     */
