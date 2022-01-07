@@ -239,11 +239,6 @@ import { SDG13_FreieArbeit } from "./SDG/SDG13/Freie Arbeit/SDG13_FreieArbeit";
 import { SDG13_Infotext } from "./SDG/SDG13/Info/SDG13_Infotext";
 
 /**                                 Quiz                                     */
-import { SDG13_Quiz_Tutorial } from "./SDG/SDG13/Quiz/SDG13_Quiz_Tutorial";
-import { SDG13_Quiz_Question1 } from "./SDG/SDG13/Quiz/SDG13_Quiz_Question1";
-import { SDG13_Quiz_Question3 } from "./SDG/SDG13/Quiz/SDG13_Quiz_Question3";
-import { SDG13_Quiz_Question2 } from "./SDG/SDG13/Quiz/SDG13_Quiz_Question2";
-import { SDG13_Quiz_Tips } from "./SDG/SDG13/Quiz/SDG13_Quiz_Tips";
 
 /**                                Spiel                                     */
 /**                                Spiel2                                    */
@@ -360,6 +355,8 @@ import { SDG07_FreieArbeit } from "./SDG/SDG7/Freie Arbeit/SDG07_FreieArbeit";
 import { SDG07_Quiz } from "./SDG/SDG7/Quiz/SDG07_Quiz";
 import { SDG01_Quiz } from "./SDG/SDG1/Quiz/SDG01_Quiz";
 import { SDG12_Quiz } from "./SDG/SDG12/Quiz/SDG12_Quiz";
+import { SDG13_Quiz } from "./SDG/SDG13/Quiz/SDG13_Quiz";
+import { SDG16_Einstieg } from "./SDG/SDG16/Einstieg/SDG16_Einstieg";
 
 
 export const App = (): JSX.Element => {
@@ -389,6 +386,7 @@ export const App = (): JSX.Element => {
                 <Route exact path="/SDG01/Infotext"><InfotextComponent sdg = {SDG01_Infotext}/></Route>
 
 /**                                 Quiz                                     */
+                <Route exact path="/SDG01/Quiz"><Quiz_Component sdg = {SDG01_Quiz}/></Route>
 /**                                Spiel                                     */
 /**                                Video                                     */
 
@@ -581,11 +579,7 @@ export const App = (): JSX.Element => {
                 <Route exact path="/SDG13/Infotext"><InfotextComponent sdg={SDG13_Infotext}/></Route>                  
 
 /**                                 Quiz                                     */
-                <Route exact path="/SDG13/Quiz/Tutorial1" component={SDG13_Quiz_Tutorial}/>
-                <Route exact path="/SDG13/Quiz/Question1" component={SDG13_Quiz_Question1}/>
-                <Route exact path="/SDG13/Quiz/Question2" component={SDG13_Quiz_Question2}/>
-                <Route exact path="/SDG13/Quiz/Question3" component={SDG13_Quiz_Question3}/>
-                <Route exact path="/SDG13/Quiz/Tips" component={SDG13_Quiz_Tips} /> 
+                <Route exact path="/SDG13/Quiz"><Quiz_Component sdg={SDG13_Quiz}/></Route>
 
 /**                                Spiel                                     */
                 <Route exact path="/SDG13/tutorial/page1" component={page141}/>                    
@@ -653,6 +647,7 @@ export const App = (): JSX.Element => {
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
                 <Route exact path="/SDG16/Infotext"><InfotextComponent sdg={SDG16_Infotext}/></Route>
+                <Route exact path="/SDG16/Einstieg"><TextComponent sdg= {SDG16_Einstieg}/> </Route> 
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
 /**                                Video                                     */
