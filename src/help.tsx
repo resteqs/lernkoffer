@@ -82,7 +82,7 @@ export const Help = (): JSX.Element => {
                     </tr>
                     <tr>
                       
-                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG01/Quiz">Quiz WIP</a></td>
+                        <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG01/Quiz">Quiz</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG02/Quiz">Quiz</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG03/Quiz">Quiz</a></td>
                         <td className="tg-c3ow"><a href="lernkoffer#/lernkoffer/SDG04/Quiz">Quiz</a></td>
@@ -124,7 +124,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG10/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/FreieArbeit">Freie Arbeit</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG13/FreieArbeit">Freie Arbeit WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG13/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG14/FreieArbeit">Freie Arbeit WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/FreieArbeit">Freie Arbeit WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/FreieArbeit">Freie Arbeit WIP</Link></td>
