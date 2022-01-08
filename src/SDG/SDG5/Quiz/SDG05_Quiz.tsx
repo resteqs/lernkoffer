@@ -16,10 +16,10 @@ export const SDG05_Quiz: QuizProps = {
     logo: Logo,
     tile: {
         1: "Einleitung",
-        2: "Erste Frage",
-        3: "Zweite Frage",
-        4: "Dritte Frage",
-        5: "Vierte Frage",
+        2: "Einleitung",
+        3: "Einleitung",
+        11: "Schluss",
+        12: "Schluss",
     },
     text: {
         1: (

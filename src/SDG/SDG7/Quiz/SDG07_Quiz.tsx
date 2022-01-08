@@ -9,7 +9,7 @@ import { QuizProps } from "../../../Interfaces/SDG";
 
 export const SDG07_Quiz:QuizProps = {
     sdgNumber: 7,
-    sdgTitle: "Bezahlbare und saubere Energie",
+    sdgTitle: "Stromverbrauch im Haushalt",
     sdg: "SDG07",
     logo: Logo,
     tile: { 

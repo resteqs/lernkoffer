@@ -52,10 +52,12 @@ export const SDG07_FreieArbeit: TextProps = {
                 <p style={{ marginLeft: "50px" }}>- 1 kleine Kartoffel</p>
                 <p style={{ marginLeft: "50px" }}>- 1 sauberer Nagel </p>
                 <img
-                    style={{ float: "right", marginRight: "600px", marginTop: "-350px", width: "500px" }}
+                    style={{ float: "right", marginRight: "200px", marginTop: "-350px", width: "500px" }}
                     src={Bild1}
                     alt=""
                 />
+                <ul style= {{ marginTop: "60px" }}> <li>Ziel des Experiments: eine Kartoffel durchkochen </li></ul>
+                
             </div>
         ),
         3: (
