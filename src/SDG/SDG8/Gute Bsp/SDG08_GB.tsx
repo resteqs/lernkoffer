@@ -9,7 +9,7 @@ import Bild05 from "../Gute Bsp/Media/Bild05.png";
 
 export const SDG08_GB: TextProps = {
     sdgNumber: 8,
-    sdgTitle: "MISEREOR",
+    sdgTitle: "YouthCan",
     sdg: "SDG08",
     logo: Logo,
     header: {
