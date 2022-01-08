@@ -56,49 +56,47 @@ export const SDG17_Quiz_1: Quiz3Mixed = {
         ),
     },
     question: {
-        1: "XXX",
-        3: "XXX",
+        1: "Leben jetzt weniger Menschen in Armut als vor 25 Jahren?",
+        3: "Menschen sind arm, wenn ihre Grundbedürfnisse nicht erfüllt werden. Was hältst du von den nächsten drei Antworten als lebenswichtig? (Nur eine Antwort ist richtig)",
         5: "XXX",
         7: "XXX",
     },
     buttonLeftContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
+        1: <p>Ja</p>,
+        3: <p  style={{ fontSize: "60px" }}>Wasser</p>,
         5: <p>XXX</p>,
         7: <p>XXX</p>,
     },
     buttonMiddleContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
+        3: <p>Schockolade</p>,
         5: <p>XXX</p>,
         7: <p>XXX</p>,
     },
     buttonRightContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
+        1: <p>Nein</p>,
+        3: <p>Gemütliche Matraze</p>,
         5: <p>XXX</p>,
         7: <p>XXX</p>,
     },
     answerNumbersLeft: {
-        1: "XXX",
+        1: "Richtig",
         3: "XXX",
         5: "XXX",
         7: "XXX",
     },
     answerNumbersMiddle: {
-        1: "XXX",
         3: "XXX",
         5: "XXX",
         7: "XXX",
     },
     answerNumbersRight: {
-        1: "XXX",
+        1: "Falsch",
         3: "XXX",
         5: "XXX",
         7: "XXX",
     },
     explanation: {
-        1: "XXX",
+        1: "1996 lebten 35,2% weltweit mit einem Einkommen von unter 1,90 US-Dollar pro Tag, 2012 nur noch 14,9%",
         3: "XXX",
         5: "XXX",
         7: "XXX",
@@ -114,7 +112,12 @@ export const SDG17_Quiz_1: Quiz3Mixed = {
         7: true,
         8: false,
     },
-    isThreeAnswerActive: {},
+    isThreeAnswerActive: {
+        1: false,
+        3: true,
+        5: true,
+        7: true,
+    },
     /* eslint-enable unicorn/filename-case */
     /* eslint-enable react/react-in-jsx-scope */
     /* eslint-enable react/no-unescaped-entities */
