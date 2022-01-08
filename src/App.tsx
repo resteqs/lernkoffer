@@ -370,6 +370,22 @@ import { SDG15_Quiz } from "./SDG/SDG15/Quiz/SDG15_Quiz";
 import { SDG17_Übersicht } from "./SDG/SDG17/Quiz/SDG17_QuizÜbersicht";
 import { SDG17_Quiz_1 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_1";
 import { QuizMixedComponent } from "./Components/Quiz/QuizMixedComponent";
+import { SDG17_Quiz_2 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_2";
+import { SDG17_Quiz_3 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_3";
+import { SDG17_Quiz_4 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_4";
+import { SDG17_Quiz_15 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_15";
+import { SDG17_Quiz_6 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_6";
+import { SDG17_Quiz_7 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_7";
+import { SDG17_Quiz_8 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_8";
+import { SDG17_Quiz_9 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_9";
+import { SDG17_Quiz_10 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_10";
+import { SDG17_Quiz_5 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_5";
+import { SDG17_Quiz_11 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_11";
+import { SDG17_Quiz_12 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_12";
+import { SDG17_Quiz_13 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_13";
+import { SDG17_Quiz_14 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_14";
+import { SDG17_Quiz_16 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_16";
+import { SDG17_Quiz_17 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_17";
 
 
 export const App = (): JSX.Element => {
@@ -682,6 +698,22 @@ export const App = (): JSX.Element => {
 /**                                 Quiz                                     */
                 <Route exact path="/SDG17/QuizÜbersicht"><TextComponent sdg= {SDG17_Übersicht}/> </Route> 
                 <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_1}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_2}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_3}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_4}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_5}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_6}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_7}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_8}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_9}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_10}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_11}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_12}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_13}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_14}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_15}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_16}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_17}/> </Route> 
 /**                                Spiel                                     */
 <Route exact path="/SDG17/Spiel"><TextComponent sdg= {SDG17_Spiel}/> </Route> 
 /**                                Video                                     */

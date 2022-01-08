@@ -6,11 +6,11 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import Logo from "../../../../SDGLogos/Goal-SDG17.png";
-import { Quiz3OProps } from "../../../../Interfaces/SDG";
+import { Quiz3Mixed } from "../../../../Interfaces/SDG";
 import { InfotextButton } from "../../../../Components/Buttons/InfotextButton";
 import { Link } from "react-router-dom";
 
-export const SDG17_Quiz_10: Quiz3OProps = {
+export const SDG17_Quiz_10: Quiz3Mixed = {
     sdgNumber: 17,
     sdgTitle: "Leiterspiel",
     sdg: "SDG17",
@@ -102,6 +102,7 @@ export const SDG17_Quiz_10: Quiz3OProps = {
         9: false,
         10: false,
     },
+    isThreeAnswerActive: {},
     /* eslint-enable unicorn/filename-case */
     /* eslint-enable react/react-in-jsx-scope */
     /* eslint-enable react/no-unescaped-entities */
