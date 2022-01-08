@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lernkoffer/static/css/main.86035aca.chunk.css",
-    "main.js": "/lernkoffer/static/js/main.0ff0a95b.chunk.js",
-    "main.js.map": "/lernkoffer/static/js/main.0ff0a95b.chunk.js.map",
+    "main.js": "/lernkoffer/static/js/main.2720d347.chunk.js",
+    "main.js.map": "/lernkoffer/static/js/main.2720d347.chunk.js.map",
     "runtime-main.js": "/lernkoffer/static/js/runtime-main.4fd7d633.js",
     "runtime-main.js.map": "/lernkoffer/static/js/runtime-main.4fd7d633.js.map",
     "static/js/2.57220d62.chunk.js": "/lernkoffer/static/js/2.57220d62.chunk.js",
@@ -154,6 +154,6 @@
     "static/js/runtime-main.4fd7d633.js",
     "static/js/2.57220d62.chunk.js",
     "static/css/main.86035aca.chunk.css",
-    "static/js/main.0ff0a95b.chunk.js"
+    "static/js/main.2720d347.chunk.js"
   ]
 }
