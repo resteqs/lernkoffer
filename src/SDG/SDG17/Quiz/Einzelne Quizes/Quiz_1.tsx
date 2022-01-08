@@ -26,80 +26,81 @@ export const SDG17_Quiz_1: Quiz3Mixed = {
         8: "",
     },
     text: {
-        2:
-            (
-                <div style={{ margin: "auto", display: "block", width: "40%" }}>
-                    <Link to="/SDG17/QuizÜbersicht">
-                        <InfotextButton version="green">Zur Überischt</InfotextButton>
-                    </Link>
-                </div>
-            ),
+        2: (
+            <div style={{ margin: "auto", display: "block", width: "40%" }}>
+                <Link to="/SDG17/QuizÜbersicht">
+                    <InfotextButton version="green">Zur Überischt</InfotextButton>
+                </Link>
+            </div>
+        ),
         4: (
             <div style={{ margin: "auto", display: "block", width: "40%" }}>
-            <Link to="/SDG17/QuizÜbersicht">
-                <InfotextButton version="green">Zur Überischt</InfotextButton>
-            </Link>
-        </div>
+                <Link to="/SDG17/QuizÜbersicht">
+                    <InfotextButton version="green">Zur Überischt</InfotextButton>
+                </Link>
+            </div>
         ),
-        6:                 <div style={{ margin: "auto", display: "block", width: "40%" }}>
-        <Link to="/SDG17/QuizÜbersicht">
-            <InfotextButton version="green">Zur Überischt</InfotextButton>
-        </Link>
-    </div>,
+        6: (
+            <div style={{ margin: "auto", display: "block", width: "40%" }}>
+                <Link to="/SDG17/QuizÜbersicht">
+                    <InfotextButton version="green">Zur Überischt</InfotextButton>
+                </Link>
+            </div>
+        ),
 
         8: (
             <div style={{ margin: "auto", display: "block", width: "40%" }}>
-            <Link to="/SDG17/QuizÜbersicht">
-                <InfotextButton version="green">Zur Überischt</InfotextButton>
-            </Link>
-        </div>
+                <Link to="/SDG17/QuizÜbersicht">
+                    <InfotextButton version="green">Zur Überischt</InfotextButton>
+                </Link>
+            </div>
         ),
     },
     question: {
         1: "Leben jetzt weniger Menschen in Armut als vor 25 Jahren?",
         3: "Menschen sind arm, wenn ihre Grundbedürfnisse nicht erfüllt werden. Was hältst du von den nächsten drei Antworten als lebenswichtig? (Nur eine Antwort ist richtig)",
-        5: "XXX",
-        7: "XXX",
+        5: "Kannst du die Antwort finden, die Armut verursacht?",
+        7: "Was ist wichtig, wenn Armut bekämpft werden soll?",
     },
     buttonLeftContent: {
         1: <p>Ja</p>,
-        3: <p  style={{ fontSize: "60px" }}>Wasser</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        3: <p style={{ fontSize: "100px" }}>Wasser</p>,
+        5: <p style={{ fontSize: "100px" }}>Umzug </p>,
+        7: <p style={{ fontSize: "60px" }}>Den armen Menschen ganz viel Geld geben </p>,
     },
     buttonMiddleContent: {
-        3: <p>Schockolade</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        3: <p style={{ fontSize: "80px" }}>Schocko-lade</p>,
+        5: <p style={{ fontSize: "80px" }}>Schlechte Bildung </p>,
+        7: <p style={{ fontSize: "60px" }}>Gar nichts, weil sie selbst daran schuld sind</p>,
     },
     buttonRightContent: {
         1: <p>Nein</p>,
-        3: <p>Gemütliche Matraze</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        3: <p style={{ fontSize: "75px" }}>Gemütliche Matraze</p>,
+        5: <p style={{ fontSize: "60px" }}>Einkauf eines Geburtstags-geschenks </p>,
+        7: <p style={{ fontSize: "54px" }}>ihnen Unterstützung geben, damit sie sich selbst helfen können </p>,
     },
     answerNumbersLeft: {
         1: "Richtig",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        3: "Richtig",
+        5: "Falsch",
+        7: "Falsch",
     },
     answerNumbersMiddle: {
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        3: "Falsch",
+        5: "Richtig",
+        7: "Falsch",
     },
     answerNumbersRight: {
         1: "Falsch",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        3: "Falsch",
+        5: "Falsch",
+        7: "Richtig",
     },
     explanation: {
         1: "1996 lebten 35,2% weltweit mit einem Einkommen von unter 1,90 US-Dollar pro Tag, 2012 nur noch 14,9%",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        3: "Ein Mensch kann ohne Wasser nicht sehr lange überleben (je nach Umständen, im Durchschnitt bei einem jungen, gesunden Menschen ungefähr drei bis vier Tage)",
+        5: "Menschen mit einem niedrigen Schulabschluss finden nicht so einfach eine Arbeit und das Risiko arbeitslos zu werden ist höher. Meistens verdienen sie auch weniger als andere mit einer höheren Ausbildung.",
+        7: "Menschen, die in Armut leben, sollen nicht eingeschränkt werden und sind auch oft bereit für ein besseres Leben zu arbeiten. Leider fehlen ihnen dazu nur oft die Mittel.",
     },
     // modalContent: <div>Quiz SDG 01</div>,
     isQuizActive: {
