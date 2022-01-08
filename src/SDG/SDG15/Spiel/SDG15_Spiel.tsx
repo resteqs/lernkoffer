@@ -38,12 +38,12 @@ export const SDG15_Spiel: TextProps = {
         18: "Spielablauf - Detektiv",
         19: "Spielablauf - Umweltsünderinnen",
         20: "Spielablauf - Müllfrau",
-        21: "Spielablauf - Bertatung der verbleibenden Spieler",
-        22: "Spielablauf - Bertatung der verbleibenden Spieler",
+        21: "Spielablauf - Beratung der verbleibenden Spieler",
+        22: "Spielablauf - Beratung der verbleibenden Spieler",
         23: "Spielablauf",
         24: "Überleitung",
         25: "Die Tierbesitzer gewinnen:",
-        26: "Die Umwetlsünderinnen gewinnen:",
+        26: "Die Umweltsünderinnen gewinnen:",
     },
 
     text: {
