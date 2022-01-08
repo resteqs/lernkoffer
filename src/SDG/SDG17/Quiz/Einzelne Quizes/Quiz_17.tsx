@@ -1,14 +1,9 @@
-/* eslint-disable import/extensions */
-/* eslint-disable @typescript-eslint/object-curly-spacing */
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable unicorn/filename-case */
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
+// eslint-disable-next-line unicorn/filename-case
+import * as React from "react"
+import { Link } from "react-router-dom";
 import Logo from "../../../../SDGLogos/Goal-SDG17.png";
 import { Quiz3Mixed } from "../../../../Interfaces/SDG";
 import { InfotextButton } from "../../../../Components/Buttons/InfotextButton";
-import { Link } from "react-router-dom";
 
 export const SDG17_Quiz_17: Quiz3Mixed = {
     sdgNumber: 17,
@@ -57,54 +52,45 @@ export const SDG17_Quiz_17: Quiz3Mixed = {
         ),
     },
     question: {
-        1: "XXX",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        1: "Welche der folgenden Aussagen stimmt?",    
+        3: "Für eine internationale Partnerschaft, um die Nachhaltigkeitsziele zu erreichen, reicht es, dass in den jeweiligen Ländern…",
+        5: "Ein großer Punkt im 17. Nachhaltigkeitsziel ist es auch, die sogenannten Entwicklungsländer zu stärken. Was sind diese denn überhaupt?",
     },
     buttonLeftContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        1: <p style={{ fontSize:"2.2vw" }}>„Für eine internationale Partnerschaft ist es nötig, dass alle zusammenarbeiten.“ </p>,
+        3: <p style={{ fontSize:"2.5vw" }}>„die Regierung aktiv wird“</p>,
+        5: <p style={{ fontSize:"2vw" }}>Die Länder mit der besten Entwicklung  </p>,
     },
     buttonMiddleContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        1: <p style={{ fontSize:"2.2vw" }}>„Für eine internationale Partnerschaft reicht, dass sich ein Land engagiert und der Rest nur zuschaut“ </p>,
+        3: <p style={{ fontSize:"2.5vw" }}>„dass die Bevölkerung aktiv wird“ </p>,
+        5: <p style={{ fontSize:"2vw" }}>Die Länder, die sich noch am weitesten Entwickeln müsse, damit Menschen dort angenehm leben können </p>,
     },
     buttonRightContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        1: <p style={{ fontSize:"2.2vw" }}>„Für eine internationale Partnerschaft ist es nur nötig, dass man sich ab und zu mal trifft, aber sonst nichts macht“ </p>,
+        3: <p style={{ fontSize:"2.5vw" }}>„Regierung und Bevölkerung beide aktiv werden“</p>,
+        5: <p style={{ fontSize:"2vw" }}>Die Länder, die sich gerade stark entwickeln. </p>,
     },
     answerNumbersLeft: {
-        1: "XXX",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        1: "Richtig",
+        3: "Falsch",
+        5: "Falsch",
     },
     answerNumbersMiddle: {
-        1: "XXX",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        1: "Falsch",
+        3: "Falsch",
+        5: "Richtig",
     },
     answerNumbersRight: {
-        1: "XXX",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        1: "Falsch",
+        3: "Richtig",
+        5: "Falsch",
     },
     explanation: {
-        1: "XXX",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        1: "„International“ heißt, dass etwas mehrere Länder betrifft. Besonders bei den Nachhaltigkeitszielen ist es so, dass viele unterschiedliche Meinungen der Staaten aufeinandertreffen, die versuchen ihre eigene Nation und deren Interesse zu vertreten. Dabei arbeiten alle an einem gemeinsamen Ziel: Sie wollen diese Ziele umsetzen, Nachhaltigkeit fördern und die Umwelt schützen. Deshalb braucht es eine Zusammenarbeit und die Bereitschaft, Kompromisse zu schließen. ",
+        3: "Beide würden allein nicht so viel erreichen, wie sie es zusammen schaffen können.",
+        5: "In diesen Ländern sind die Menschen oft sehr arm, sind häufiger krank, etc.",
     },
-    // modalContent: <div>Quiz SDG 01</div>,
     isQuizActive: {
         1: true,
         2: false,
@@ -112,13 +98,10 @@ export const SDG17_Quiz_17: Quiz3Mixed = {
         4: false,
         5: true,
         6: false,
-        7: true,
-        8: false,
     },
-    isThreeAnswerActive: {},
-    /* eslint-enable unicorn/filename-case */
-    /* eslint-enable react/react-in-jsx-scope */
-    /* eslint-enable react/no-unescaped-entities */
-    /* eslint-enable @typescript-eslint/object-curly-spacing */
-    /* eslint-enable import/extensions */
+    isThreeAnswerActive: {
+        1: true,
+        3: true,
+        5: true,
+    },
 };

@@ -1,14 +1,9 @@
-/* eslint-disable import/extensions */
-/* eslint-disable @typescript-eslint/object-curly-spacing */
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable unicorn/filename-case */
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
+// eslint-disable-next-line unicorn/filename-case
+import * as React from "react"
+import { Link } from "react-router-dom";
 import Logo from "../../../../SDGLogos/Goal-SDG17.png";
 import { Quiz3Mixed } from "../../../../Interfaces/SDG";
 import { InfotextButton } from "../../../../Components/Buttons/InfotextButton";
-import { Link } from "react-router-dom";
 
 export const SDG17_Quiz_16: Quiz3Mixed = {
     sdgNumber: 17,
@@ -57,54 +52,45 @@ export const SDG17_Quiz_16: Quiz3Mixed = {
         ),
     },
     question: {
-        1: "XXX",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        1: "In welcher der folgenden Situationen verstoßen die Eltern gegen die Kinderrechte?",    
+        3: "Wenn zwei Personen sich streiten, wie kannst du den beiden Personen am besten helfen?",
+        5: "In welcher der folgenden Situationen wurde ungerecht gehandelt?",
     },
     buttonLeftContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        1: <p style={{ fontSize:"2.2vw" }}>Die Eltern lesen, ohne zu fragen im Tagebuch des Kindes</p>,
+        3: <p style={{ fontSize:"2.5vw" }}>Sie fragen, was für ein Problem sie haben und dann eine gemeinsame Lösung finden  </p>,
+        5: <p style={{ fontSize:"2vw" }}>Dein Freund hat in einem Test nur einen Punkt schlechter abgeschnitten und eine schlechtere Note bekommen  </p>,
     },
     buttonMiddleContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        1: <p style={{ fontSize:"2.2vw" }}>Das Kind darf keine Süßigkeiten essen, weil seine Eltern finden, dass sich das Kind sehr gesund ernähren muss</p>,
+        3: <p style={{ fontSize:"2.5vw" }}>Die Person, von der du glaubst, dass sie eher Recht hat, unterstützen </p>,
+        5: <p style={{ fontSize:"2vw" }}>Jemand behauptet du hättest etwas Schlimmes gemacht und du wirst dafür bestraft, obwohl du nichts gemacht hast  </p>,
     },
     buttonRightContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        1: <p style={{ fontSize:"2.2vw" }}>Die Eltern sagen dem Kind, dass es zur Grundschule gehen muss  </p>,
+        3: <p style={{ fontSize:"2.5vw" }}>Beiden Personen sagen, sie sollen sich nicht so anstellen </p>,
+        5: <p style={{ fontSize:"2vw" }}>Bei einem Kunstwettbewerb belegst du nur den zweiten Platz, obwohl du findest, dass deine Einreichung viel schöner ist“ </p>,
     },
     answerNumbersLeft: {
-        1: "XXX",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        1: "Richtig",
+        3: "Richtig",
+        5: "Falsch",
     },
     answerNumbersMiddle: {
-        1: "XXX",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        1: "Falsch",
+        3: "Falsch",
+        5: "Richtig",
     },
     answerNumbersRight: {
-        1: "XXX",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        1: "Falsch",
+        3: "Falsch",
+        5: "Falsch",
     },
     explanation: {
-        1: "XXX",
-        3: "XXX",
-        5: "XXX",
-        7: "XXX",
+        1: "Das Kind hat ein Recht auf Privatsphäre (auch gegenüber den Eltern)",
+        3: "So kann man den Konflikt im besten Fall ganz oder für längere Zeit lösen und keiner ist unzufrieden. So wird der Friede zwischen beiden Personen (zumindest zeitweise) wiederhergestellt.",
+        5: "Du warst unschuldig. Also war die Strafe nicht gerecht.",
     },
-    // modalContent: <div>Quiz SDG 01</div>,
     isQuizActive: {
         1: true,
         2: false,
@@ -112,13 +98,10 @@ export const SDG17_Quiz_16: Quiz3Mixed = {
         4: false,
         5: true,
         6: false,
-        7: true,
-        8: false,
     },
-    isThreeAnswerActive: {},
-    /* eslint-enable unicorn/filename-case */
-    /* eslint-enable react/react-in-jsx-scope */
-    /* eslint-enable react/no-unescaped-entities */
-    /* eslint-enable @typescript-eslint/object-curly-spacing */
-    /* eslint-enable import/extensions */
+    isThreeAnswerActive: {
+        1: true,
+        3: true,
+        5: true,
+    },
 };
