@@ -23,7 +23,7 @@ export const SDG15_Spiel: TextProps = {
         3: "Einleitung",
         4: "Einleitung",
         5: "Anleitung",
-        6: "Die Tierbestitzer",
+        6: "Die Tierbesitzer",
         7: "Die Umweltsünder",
         8: "Die Müllfrau",
         9: "Der Detektiv",
@@ -84,7 +84,7 @@ export const SDG15_Spiel: TextProps = {
         ),
         5: (
             <div>
-                Zunächst möchte ich euch die Karten erklären, die vor euch liegen! Ihr findet sie neben diesem Tabelet
+                Zunächst möchte ich euch die Karten erklären, die vor euch liegen! Ihr findet sie neben diesem Tablet
                 im Koffer!
             </div>
         ),

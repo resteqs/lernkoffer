@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 export const SDG17_Quiz_4: Quiz3Mixed = {
     sdgNumber: 17,
-    sdgTitle: "Leiterspiel",
+    sdgTitle: "Leiterspiel - Fragen zu Ziel 4",
     sdg: "SDG17",
     logo: Logo,
     tile: {
@@ -30,76 +30,76 @@ export const SDG17_Quiz_4: Quiz3Mixed = {
             (
                 <div style={{ margin: "auto", display: "block", width: "40%" }}>
                     <Link to="/SDG17/QuizÜbersicht">
-                        <InfotextButton version="green">Zur Überischt</InfotextButton>
+                        <InfotextButton version="green">Zur Übersicht</InfotextButton>
                     </Link>
                 </div>
             ),
         4: (
             <div style={{ margin: "auto", display: "block", width: "40%" }}>
             <Link to="/SDG17/QuizÜbersicht">
-                <InfotextButton version="green">Zur Überischt</InfotextButton>
+                <InfotextButton version="green">Zur Übersicht</InfotextButton>
             </Link>
         </div>
         ),
         6:                 <div style={{ margin: "auto", display: "block", width: "40%" }}>
         <Link to="/SDG17/QuizÜbersicht">
-            <InfotextButton version="green">Zur Überischt</InfotextButton>
+            <InfotextButton version="green">Zur Übersicht</InfotextButton>
         </Link>
     </div>,
 
         8: (
             <div style={{ margin: "auto", display: "block", width: "40%" }}>
             <Link to="/SDG17/QuizÜbersicht">
-                <InfotextButton version="green">Zur Überischt</InfotextButton>
+                <InfotextButton version="green">Zur Übersicht</InfotextButton>
             </Link>
         </div>
         ),
     },
     question: {
-        1: "XXX",
-        3: "XXX",
+        1: "Welche Personengruppe ist benachteiligt beim Thema Bildung?",
+        3: "Welche Fähigkeiten sollte jede:r erlernen können, damit man später eine Arbeit finden kann?",
         5: "XXX",
         7: "XXX",
     },
     buttonLeftContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        1: <p style={{ fontSize: "90px" }}>Jungs</p>,
+        3: <p style={{ fontSize: "50px" }}>Skateboard fahren, Fußball spielen, Ballett tanzen </p>,
+        5: <p style={{ fontSize: "70px" }}>XXX</p>,
+        7: <p style={{ fontSize: "70px" }}>XXX</p>,
     },
     buttonMiddleContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        1: <p style={{ fontSize: "90px" }}>Mädchen</p>,
+        3: <p style={{ fontSize: "60px" }}>Malen, Singen, Seilspringen </p>,
+        5: <p style={{ fontSize: "70px" }}>XXX</p>,
+        7: <p style={{ fontSize: "70px" }}>XXX</p>,
     },
     buttonRightContent: {
-        1: <p>XXX</p>,
-        3: <p>XXX</p>,
-        5: <p>XXX</p>,
-        7: <p>XXX</p>,
+        1: <p style={{ fontSize: "90px" }}>Reiche Kinder</p>,
+        3: <p style={{ fontSize: "60px" }}>Lesen, Schreiben, Rechnen </p>,
+        5: <p style={{ fontSize: "70px" }}>XXX</p>,
+        7: <p style={{ fontSize: "70px" }}>XXX</p>,
     },
     answerNumbersLeft: {
-        1: "XXX",
-        3: "XXX",
+        1: "Falsch",
+        3: "Falsch",
         5: "XXX",
         7: "XXX",
     },
     answerNumbersMiddle: {
-        1: "XXX",
-        3: "XXX",
+        1: "Richtig",
+        3: "Falsch",
         5: "XXX",
         7: "XXX",
     },
     answerNumbersRight: {
-        1: "XXX",
-        3: "XXX",
+        1: "Falsch",
+        3: "Richtig",
         5: "XXX",
         7: "XXX",
     },
     explanation: {
-        1: "XXX",
-        3: "XXX",
+        1: "Weltweit können im Alter von 15 bis 24 Jahren rund 44 Millionen Jungen und fast 58 Millionen Mädchen weder lesen noch schreiben",
+        3: "Diese drei Fähigkeiten sind ausschlaggebend dafür später eine Arbeit zu finden, da sie in vielen Bereichen gebraucht werden",
         5: "XXX",
         7: "XXX",
     },
@@ -114,7 +114,12 @@ export const SDG17_Quiz_4: Quiz3Mixed = {
         7: true,
         8: false,
     },
-    isThreeAnswerActive: {},
+    isThreeAnswerActive: {
+        1: true,
+        3: true,
+        5: true,
+        7: true,
+    },
     /* eslint-enable unicorn/filename-case */
     /* eslint-enable react/react-in-jsx-scope */
     /* eslint-enable react/no-unescaped-entities */

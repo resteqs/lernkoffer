@@ -26,33 +26,34 @@ export const SDG17_Quiz_16: Quiz3Mixed = {
         8: "",
     },
     text: {
-        2:
-            (
-                <div style={{ margin: "auto", display: "block", width: "40%" }}>
-                    <Link to="/SDG17/QuizÜbersicht">
-                        <InfotextButton version="green">Zur Überischt</InfotextButton>
-                    </Link>
-                </div>
-            ),
+        2: (
+            <div style={{ margin: "auto", display: "block", width: "40%" }}>
+                <Link to="/SDG17/QuizÜbersicht">
+                    <InfotextButton version="green">Zur Übersicht</InfotextButton>
+                </Link>
+            </div>
+        ),
         4: (
             <div style={{ margin: "auto", display: "block", width: "40%" }}>
-            <Link to="/SDG17/QuizÜbersicht">
-                <InfotextButton version="green">Zur Überischt</InfotextButton>
-            </Link>
-        </div>
+                <Link to="/SDG17/QuizÜbersicht">
+                    <InfotextButton version="green">Zur Übersicht</InfotextButton>
+                </Link>
+            </div>
         ),
-        6:                 <div style={{ margin: "auto", display: "block", width: "40%" }}>
-        <Link to="/SDG17/QuizÜbersicht">
-            <InfotextButton version="green">Zur Überischt</InfotextButton>
-        </Link>
-    </div>,
+        6: (
+            <div style={{ margin: "auto", display: "block", width: "40%" }}>
+                <Link to="/SDG17/QuizÜbersicht">
+                    <InfotextButton version="green">Zur Übersicht</InfotextButton>
+                </Link>
+            </div>
+        ),
 
         8: (
             <div style={{ margin: "auto", display: "block", width: "40%" }}>
-            <Link to="/SDG17/QuizÜbersicht">
-                <InfotextButton version="green">Zur Überischt</InfotextButton>
-            </Link>
-        </div>
+                <Link to="/SDG17/QuizÜbersicht">
+                    <InfotextButton version="green">Zur Übersicht</InfotextButton>
+                </Link>
+            </div>
         ),
     },
     question: {
