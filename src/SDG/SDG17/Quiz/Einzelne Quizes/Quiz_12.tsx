@@ -34,61 +34,75 @@ export const SDG17_Quiz_12: Quiz3Mixed = {
                     </Link>
                 </div>
             ),
-        3: <p>Produziert ein Pkw (normales Auto) oder ein Flugzeug mehr Treibhausgase?</p>,
         4: (
-            <p>
-                Ein Flugzeug produziert mehr davon. Studien zeigen, dass die erzeugt Menge hier ungefähr bei 230 Gramm
-                pro Person pro Kilometer (g/Pkm) liegt, während dieser Wert bei Pkws nur bei 147 liegt.
-            </p>
+            <div style={{ margin: "auto", display: "block", width: "40%" }}>
+            <Link to="/SDG17/QuizÜbersicht">
+                <InfotextButton version="green">Zur Überischt</InfotextButton>
+            </Link>
+        </div>
         ),
-        5: (
-            <p>
-                Produziert eine Eisenbahn (Fernverkehr) oder eine Straßen-/Stadt-/ und U-Bahn mehr flüchtige
-                Kohlenwasserstoffe (Gase die sehr instabil sind)?
-            </p>
-        ),
-        6: <p>Keines der beiden Transportmittel produziert diese Gase.</p>,
-        7: <p>Produziert ein Pkw oder ein Linienbus mehr Kohlenstoffdioxid?</p>,
+        6:                 <div style={{ margin: "auto", display: "block", width: "40%" }}>
+        <Link to="/SDG17/QuizÜbersicht">
+            <InfotextButton version="green">Zur Überischt</InfotextButton>
+        </Link>
+    </div>,
+
         8: (
-            <p>
-                Das Auto ist hier richtig. Dieses produziert ungefähr 1,00 g/Pkm während dieser Wert bei Linienbusen bei
-                etwa 0,06 g/Pkm liegt.
-            </p>
-        ),
-        9: (
-            <div>
-                <p>Ein paar Ideen, die ich toll finde:</p>
-                <p>- bildet Fahrgemeinschaften, wenn ihr alle das gleiche oder ein ähnliches Ziel habt</p>
-                <p>- nutze öffentliche Verkehrsmittel wann immer es möglich ist</p>
-                <p>
-                    - und wie so oft: versuche lokal oder saisonal zu kaufen, um Transportwege von Waren so kurz wie
-                    möglich zu halten
-                </p>
-            </div>
-        ),
-        10: (
-            <div>
-                <p>
-                    - außerdem versuche das Fliegen in einem Flugzeug zu vermeiden und reise eher mit einem Zug, auch
-                    wenn das länger dauert
-                </p>
-                <p>
-                    - wenn du die Möglichkeit hast, in einem Elektroauto oder sogar einem Wasserstoff betriebenen Auto
-                    zu fahren, tu das oder hilf diese Technologien zu verbreiten, indem du mit anderen darüber redest
-                    oder vielleicht kannst du sogar einmal dazu beitragen, dass diese Technologien für alle Menschen
-                    zugänglich sind
-                </p>
-            </div>
+            <div style={{ margin: "auto", display: "block", width: "40%" }}>
+            <Link to="/SDG17/QuizÜbersicht">
+                <InfotextButton version="green">Zur Überischt</InfotextButton>
+            </Link>
+        </div>
         ),
     },
-    question: {},
-    buttonLeftContent: {},
-    buttonMiddleContent: {},
-    buttonRightContent: {},
-    answerNumbersLeft: {},
-    answerNumbersMiddle: {},
-    answerNumbersRight: {},
-    explanation: {},
+    question: {
+        1: "XXX",
+        3: "XXX",
+        5: "XXX",
+        7: "XXX",
+    },
+    buttonLeftContent: {
+        1: <p>XXX</p>,
+        3: <p>XXX</p>,
+        5: <p>XXX</p>,
+        7: <p>XXX</p>,
+    },
+    buttonMiddleContent: {
+        1: <p>XXX</p>,
+        3: <p>XXX</p>,
+        5: <p>XXX</p>,
+        7: <p>XXX</p>,
+    },
+    buttonRightContent: {
+        1: <p>XXX</p>,
+        3: <p>XXX</p>,
+        5: <p>XXX</p>,
+        7: <p>XXX</p>,
+    },
+    answerNumbersLeft: {
+        1: "XXX",
+        3: "XXX",
+        5: "XXX",
+        7: "XXX",
+    },
+    answerNumbersMiddle: {
+        1: "XXX",
+        3: "XXX",
+        5: "XXX",
+        7: "XXX",
+    },
+    answerNumbersRight: {
+        1: "XXX",
+        3: "XXX",
+        5: "XXX",
+        7: "XXX",
+    },
+    explanation: {
+        1: "XXX",
+        3: "XXX",
+        5: "XXX",
+        7: "XXX",
+    },
     // modalContent: <div>Quiz SDG 01</div>,
     isQuizActive: {
         1: true,
@@ -97,10 +111,8 @@ export const SDG17_Quiz_12: Quiz3Mixed = {
         4: false,
         5: true,
         6: false,
-        7: false,
+        7: true,
         8: false,
-        9: false,
-        10: false,
     },
     isThreeAnswerActive: {},
     /* eslint-enable unicorn/filename-case */
