@@ -109,7 +109,7 @@ export const SDG05_FreieArbeit: TextProps = {
             <ul>
                 <li>
                     Nach jedem Spiel könnt ihr noch alle zusammen überlegen, wie Frauen und Männern jetzt gleich
-                    behandelt wurden bzw. wie eine ungleiche Behandlungen wieder ausgebessert wurden.
+                    behandelt wurden bzw. wie eine ungleiche Behandlungen wieder ausgebessert wurde.
                 </li>
             </ul>
         ),
