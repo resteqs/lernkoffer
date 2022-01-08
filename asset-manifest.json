@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lernkoffer/static/css/main.86035aca.chunk.css",
-    "main.js": "/lernkoffer/static/js/main.2720d347.chunk.js",
-    "main.js.map": "/lernkoffer/static/js/main.2720d347.chunk.js.map",
+    "main.js": "/lernkoffer/static/js/main.d5fb6ea1.chunk.js",
+    "main.js.map": "/lernkoffer/static/js/main.d5fb6ea1.chunk.js.map",
     "runtime-main.js": "/lernkoffer/static/js/runtime-main.4fd7d633.js",
     "runtime-main.js.map": "/lernkoffer/static/js/runtime-main.4fd7d633.js.map",
     "static/js/2.57220d62.chunk.js": "/lernkoffer/static/js/2.57220d62.chunk.js",
@@ -108,6 +108,7 @@
     "static/media/Tabelle.a19e69ab.png": "/lernkoffer/static/media/Tabelle.a19e69ab.png",
     "static/media/Tabelle.a1c6990a.png": "/lernkoffer/static/media/Tabelle.a1c6990a.png",
     "static/media/Tierbesitzer.0d289eb9.png": "/lernkoffer/static/media/Tierbesitzer.0d289eb9.png",
+    "static/media/TreibhauseffektGrafik.d544ef82.png": "/lernkoffer/static/media/TreibhauseffektGrafik.d544ef82.png",
     "static/media/Umweltsünder.353c93c5.png": "/lernkoffer/static/media/Umweltsünder.353c93c5.png",
     "static/media/WasserBox.f5802d7c.png": "/lernkoffer/static/media/WasserBox.f5802d7c.png",
     "static/media/Werkstatt.5fd745a4.jpg": "/lernkoffer/static/media/Werkstatt.5fd745a4.jpg",
@@ -154,6 +155,6 @@
     "static/js/runtime-main.4fd7d633.js",
     "static/js/2.57220d62.chunk.js",
     "static/css/main.86035aca.chunk.css",
-    "static/js/main.2720d347.chunk.js"
+    "static/js/main.d5fb6ea1.chunk.js"
   ]
 }
