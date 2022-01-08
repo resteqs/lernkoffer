@@ -8,7 +8,7 @@ import { InfotextButton } from "../../../../Components/Buttons/InfotextButton";
 
 export const SDG17_Quiz_10: Quiz3Mixed = {
     sdgNumber: 17,
-    sdgTitle: "Leiterspiel",
+    sdgTitle: "Leiterspiel - Fragen zu Ziel 10",
     sdg: "SDG17",
     logo: Logo,
     tile: {

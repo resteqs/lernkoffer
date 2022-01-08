@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 export const SDG17_Quiz_2: Quiz3Mixed = {
     sdgNumber: 17,
-    sdgTitle: "Leiterspiel",
+    sdgTitle: "Leiterspiel - Fragen zu Ziel 2",
     sdg: "SDG17",
     logo: Logo,
     tile: {

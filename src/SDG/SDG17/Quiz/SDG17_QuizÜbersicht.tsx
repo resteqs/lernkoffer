@@ -29,9 +29,9 @@ export const SDG17_QuizÜbersicht: TextProps = {
     sdg: "SDG17",
     logo: Logo17,
     header: {
-        1: "Zud en Quizzen",
-        2: "Zud en Quizzen",
-        3: "Zud en Quizzen",
+        1: "Zu den Quizzen",
+        2: "Zu den Quizzen",
+        3: "Zu den Quizzen",
 
     },
 
