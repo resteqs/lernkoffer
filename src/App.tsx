@@ -369,6 +369,7 @@ import { SDG06_GutesBeispielQuiz } from "./SDG/SDG6/Gute Bsp/SDG06_GutesBeispiel
 import { SDG15_Quiz } from "./SDG/SDG15/Quiz/SDG15_Quiz";
 import { SDG17_Übersicht } from "./SDG/SDG17/Quiz/SDG17_QuizÜbersicht";
 import { SDG17_Quiz_1 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_1";
+import { QuizMixedComponent } from "./Components/Quiz/QuizMixedComponent";
 
 
 export const App = (): JSX.Element => {
@@ -701,7 +702,7 @@ export const App = (): JSX.Element => {
 ----------------------------------------------------------------------------*/
                 <Route exact path="/Component/InfotextButtonGreen" component={InfotextButtonGreen} />  
                 <Route exact path="/Component/InfotextButtonRed" component={InfotextButtonRed} />  
-                <Route exact path= "/Component/test"><Quiz3Component sdg={SDGX_Quiz}/></Route>
+                <Route exact path= "/Component/test"><QuizMixedComponent sdg={SDGX_Quiz}/></Route>
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  
