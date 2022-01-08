@@ -10,7 +10,7 @@ import { Quiz3OProps } from "../../../../Interfaces/SDG";
 import { InfotextButton } from "../../../../Components/Buttons/InfotextButton";
 import { Link } from "react-router-dom";
 
-export const SDG17_Quiz_7: Quiz3OProps = {
+export const SDG17_Quiz_12: Quiz3OProps = {
     sdgNumber: 17,
     sdgTitle: "Leiterspiel",
     sdg: "SDG17",
