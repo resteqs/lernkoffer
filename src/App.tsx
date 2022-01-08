@@ -367,7 +367,7 @@ import { SDG15_Spiel } from "./SDG/SDG15/Spiel/SDG15_Spiel";
 import { Quiz3Component } from "./Components/Quiz/Quiz3Component";
 import { SDG06_GutesBeispielQuiz } from "./SDG/SDG6/Gute Bsp/SDG06_GutesBeispielQuiz";
 import { SDG15_Quiz } from "./SDG/SDG15/Quiz/SDG15_Quiz";
-import { SDG17_Übersicht } from "./SDG/SDG17/Quiz/SDG17_QuizÜbersicht";
+import { SDG17_Quiz } from "./SDG/SDG17/Quiz/SDG17_Quiz";
 import { SDG17_Quiz_1 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_1";
 import { QuizMixedComponent } from "./Components/Quiz/QuizMixedComponent";
 import { SDG17_Quiz_2 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_2";
@@ -386,6 +386,7 @@ import { SDG17_Quiz_13 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_13";
 import { SDG17_Quiz_14 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_14";
 import { SDG17_Quiz_16 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_16";
 import { SDG17_Quiz_17 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_17";
+import { SDG17_QuizÜbersicht } from "./SDG/SDG17/Quiz/SDG17_QuizÜbersicht";
 
 
 export const App = (): JSX.Element => {
@@ -696,7 +697,8 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
                 <Route exact path="/SDG17/Infotext"><InfotextComponent sdg={SDG17_Infotext}/></Route>
 /**                                 Quiz                                     */
-                <Route exact path="/SDG17/QuizÜbersicht"><TextComponent sdg= {SDG17_Übersicht}/> </Route> 
+                <Route exact path="/SDG17/Quiz"><TextComponent sdg= {SDG17_Quiz}/> </Route> 
+                <Route exact path="/SDG17/QuizÜbersicht"><TextComponent sdg= {SDG17_QuizÜbersicht}/> </Route> 
                 <Route exact path="/SDG17/Quiz1"><QuizMixedComponent sdg= {SDG17_Quiz_1}/> </Route> 
                 <Route exact path="/SDG17/Quiz2"><QuizMixedComponent sdg= {SDG17_Quiz_2}/> </Route> 
                 <Route exact path="/SDG17/Quiz3"><QuizMixedComponent sdg= {SDG17_Quiz_3}/> </Route> 

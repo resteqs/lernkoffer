@@ -133,7 +133,7 @@ export const QuizMixedComponent = (props: Props): JSX.Element => {
                 onClick={decrementCount}
                 version="red"
                 className="backbutton"
-                active={props.sdg.isQuizActive[showtext] === false}
+                active={showtext > 1}
             >
                 Zurück
             </FancyButton>
@@ -145,7 +145,7 @@ export const QuizMixedComponent = (props: Props): JSX.Element => {
                 onClick={incrementCount}
                 version="green"
                 className="nextbutton"
-                active={props.sdg.isQuizActive[showtext] === false}
+                active = {showtext < maxSlides}
             >
                 Weiter
             </FancyButton>
