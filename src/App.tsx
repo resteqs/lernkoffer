@@ -697,23 +697,23 @@ export const App = (): JSX.Element => {
                 <Route exact path="/SDG17/Infotext"><InfotextComponent sdg={SDG17_Infotext}/></Route>
 /**                                 Quiz                                     */
                 <Route exact path="/SDG17/QuizÜbersicht"><TextComponent sdg= {SDG17_Übersicht}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_1}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_2}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_3}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_4}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_5}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_6}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_7}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_8}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_9}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_10}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_11}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_12}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_13}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_14}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_15}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_16}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><Quiz3Component sdg= {SDG17_Quiz_17}/> </Route> 
+                <Route exact path="/SDG17/Quiz1"><QuizMixedComponent sdg= {SDG17_Quiz_1}/> </Route> 
+                <Route exact path="/SDG17/Quiz2"><QuizMixedComponent sdg= {SDG17_Quiz_2}/> </Route> 
+                <Route exact path="/SDG17/Quiz3"><QuizMixedComponent sdg= {SDG17_Quiz_3}/> </Route> 
+                <Route exact path="/SDG17/Quiz4"><QuizMixedComponent sdg= {SDG17_Quiz_4}/> </Route> 
+                <Route exact path="/SDG17/Quiz5"><QuizMixedComponent sdg= {SDG17_Quiz_5}/> </Route> 
+                <Route exact path="/SDG17/Quiz6"><QuizMixedComponent sdg= {SDG17_Quiz_6}/> </Route> 
+                <Route exact path="/SDG17/Quiz7"><QuizMixedComponent sdg= {SDG17_Quiz_7}/> </Route> 
+                <Route exact path="/SDG17/Quiz8"><QuizMixedComponent sdg= {SDG17_Quiz_8}/> </Route> 
+                <Route exact path="/SDG17/Quiz9"><QuizMixedComponent sdg= {SDG17_Quiz_9}/> </Route> 
+                <Route exact path="/SDG17/Quiz10"><QuizMixedComponent sdg= {SDG17_Quiz_10}/> </Route> 
+                <Route exact path="/SDG17/Quiz11"><QuizMixedComponent sdg= {SDG17_Quiz_11}/> </Route> 
+                <Route exact path="/SDG17/Quiz12"><QuizMixedComponent sdg= {SDG17_Quiz_12}/> </Route> 
+                <Route exact path="/SDG17/Quiz13"><QuizMixedComponent sdg= {SDG17_Quiz_13}/> </Route> 
+                <Route exact path="/SDG17/Quiz14"><QuizMixedComponent sdg= {SDG17_Quiz_14}/> </Route> 
+                <Route exact path="/SDG17/Quiz15"><QuizMixedComponent sdg= {SDG17_Quiz_15}/> </Route> 
+                <Route exact path="/SDG17/Quiz16"><QuizMixedComponent sdg= {SDG17_Quiz_16}/> </Route> 
+                <Route exact path="/SDG17/Quiz17"><QuizMixedComponent sdg= {SDG17_Quiz_17}/> </Route> 
 /**                                Spiel                                     */
 <Route exact path="/SDG17/Spiel"><TextComponent sdg= {SDG17_Spiel}/> </Route> 
 /**                                Video                                     */
