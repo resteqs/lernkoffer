@@ -183,7 +183,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG14/Quiz">Quiz WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/Quiz">Quiz WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG17/Quiz">Quiz</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG17/Quiz">Quiz WIP (wirklich!)</Link></td>
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG010/Video">Video WIP</Link></td>
