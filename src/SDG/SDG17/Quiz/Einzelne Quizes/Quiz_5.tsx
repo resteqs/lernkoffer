@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 export const SDG17_Quiz_5: Quiz3Mixed = {
     sdgNumber: 17,
-    sdgTitle: "Leiterspiel",
+    sdgTitle: "Leiterspiel - Fragen zu Ziel 5",
     sdg: "SDG17",
     logo: Logo,
     tile: {
@@ -71,7 +71,11 @@ export const SDG17_Quiz_5: Quiz3Mixed = {
     buttonMiddleContent: {
         1: <p style={{ fontSize: "130px" }}>1906</p>,
         3: <p style={{ fontSize: "80px" }}>10 von 193</p>,
-        5: <p style={{ fontSize: "50px" }}>Arbeiten/zur Schule gehen, allein das Haus verlassen, keine Kopfbedeckung tragen </p>,
+        5: (
+            <p style={{ fontSize: "50px" }}>
+                Arbeiten/zur Schule gehen, allein das Haus verlassen, keine Kopfbedeckung tragen{" "}
+            </p>
+        ),
         7: <p style={{ fontSize: "150px" }}>50 %</p>,
     },
     buttonRightContent: {
