@@ -213,7 +213,7 @@ return (
         <div>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
-                     Spiel
+                Spielbrett
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
