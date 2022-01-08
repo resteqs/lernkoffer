@@ -366,6 +366,7 @@ import { SDG16_Einstieg } from "./SDG/SDG16/Einstieg/SDG16_Einstieg";
 import { SDG15_Spiel } from "./SDG/SDG15/Spiel/SDG15_Spiel";
 import { Quiz3Component } from "./Components/Quiz/Quiz3Component";
 import { SDG06_GutesBeispielQuiz } from "./SDG/SDG6/Gute Bsp/SDG06_GutesBeispielQuiz";
+import { SDG15_Quiz } from "./SDG/SDG15/Quiz/SDG15_Quiz";
 
 
 export const App = (): JSX.Element => {
@@ -650,6 +651,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
                 <Route exact path="/SDG15/Infotext"><InfotextComponent sdg={SDG15_Infotext}/></Route>
 /**                                 Quiz                                     */
+                <Route exact path="/SDG15/Quiz"><Quiz3Component sdg= {SDG15_Quiz}/> </Route> 
 /**                                Spiel                                     */
                 <Route exact path="/SDG15/Spiel"><TextComponent sdg= {SDG15_Spiel}/> </Route> 
 /**                                Video                                     */

@@ -167,7 +167,7 @@ export const Help = (): JSX.Element => {
                             <Link to ="/SDG13/Spiel2/">Spiel 2 DND ???</Link>
                         </td>
                         <td className="tg-c3ow"><Link to ="/SDG14/Spiel2/tutorial1">Spiel ???</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG15/Spiel">Spiel WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG15/Spiel">Spiel </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/Spiel">Spiel </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/Spiel">Spiel </Link></td>
                     </tr>
@@ -177,7 +177,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG12/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG13/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG14/Quiz">Quiz WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG15/Quiz">Quiz WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG15/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/Quiz">Quiz WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/Quiz">Quiz WIP</Link></td>
                     </tr>
