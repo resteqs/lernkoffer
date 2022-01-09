@@ -199,7 +199,7 @@ export const Help = (): JSX.Element => {
             </table>
         </div>
 
-        /*
+        /* 
         <div>
             <h1 className="header">Helpful links</h1>
             <div>

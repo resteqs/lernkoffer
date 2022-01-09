@@ -423,7 +423,7 @@ export const App = (): JSX.Element => {
 
 
 /**----------------------------------------------------------------------------
- *                                SDG 02
+ *                                SDG 02 
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
             <Route exact path ="/SDG02/FreieArbeit"><TextComponent sdg={SDG02_FreieArbeit}/></Route>   
@@ -433,7 +433,7 @@ export const App = (): JSX.Element => {
             <Route exact path ="/SDG02/Infotext/Infotext" component={SDG02_Infotext}/>
             <Route exact path ="/SDG02/Infotext/Fable" component={SDG02_Infotext_Fable}/>
 /**                                 Quiz                                     */
-            <Route exact path ="/SDG02/Quiz" component={SDG02_Quiz}/>
+            <Route exact path ="/SDG02/Quiz"><Quiz_Component sdg={SDG02_Quiz}/></Route>
 /**                                Spiel                                     */
             <Route exact path ="/SDG02/Spiel" component={SDG02_Spiel}/>
 
