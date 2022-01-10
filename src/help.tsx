@@ -106,11 +106,14 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG02/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG04/Video">Video Probleme</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG05/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG06/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG09/Video">Video WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG05/Video">Video gibts nicht</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG06/Video">Video</Link></td>
+                        <td className="tg-c3ow">
+                            <Link to ="/SDG07/VideoWasserstoff">Video Wasserstoff </Link>
+                            <Link to ="/SDG07/VideoWindrad">Video Windrad</Link>
+                        </td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/Video">Video </Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG09/Video">Video </Link></td>
                     </tr>
                 </tbody>
             </table>
@@ -186,14 +189,14 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG17/Quiz">Quiz</Link></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG010/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG011/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG012/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG013/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG014/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG015/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG016/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG017/Video">Video WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG10/Video">Video</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG11/Video">Video</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG12/Video">Video</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG13/Video">Video gibts nicht</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG14/Video">Video</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG15/Video">Video</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG16/Video">Video</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG17/Video">Video</Link></td>
                     </tr>
                 </tbody>
             </table>

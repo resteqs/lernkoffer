@@ -393,6 +393,25 @@ import { SDG01_Video } from "./SDG/SDG1/Video/SDG01_Video";
 import { SDG02_Video } from "./SDG/SDG2/Video/SDG02_Video";
 import { SDG03_Video } from "./SDG/SDG3/Video/SDG03_Video";
 import { SDG04_Video } from "./SDG/SDG4/Video/SDG04_Video";
+import { SDG06_Video } from "./SDG/SDG6/Video/SDG06_Video";
+import { SDG07_Video_Wasserstoff } from "./SDG/SDG7/Video/SDG07_Video_Wasserstoff";
+import { SDG07_Video_Windrad } from "./SDG/SDG7/Video/SDG07_Video_Windräder";
+import { SDG08_Video } from "./SDG/SDG8/Video/SDG08_Video";
+import { SDG09_Video } from "./SDG/SDG9/Video/SDG09_Video";
+import { SDG10_Video } from "./SDG/SDG10/Video/SDG10_Video";
+import { SDG11_Video } from "./SDG/SDG11/Video/SDG11_Video";
+import { SDG12_Video } from "./SDG/SDG12/Video/SDG12_Video"
+import { SDG14_Video } from "./SDG/SDG14/Video/SDG14_Video";
+import { SDG15_Video } from "./SDG/SDG15/Video/SDG15_Video";
+import { SDG16_Video } from "./SDG/SDG16/Video/SDG16_Video";
+import { SDG17_Video } from "./SDG/SDG17/Video/SDG17_Video";
+
+
+
+
+
+
+
 
 
 export const App = (): JSX.Element => {
@@ -480,7 +499,7 @@ export const App = (): JSX.Element => {
 /**                                Spiel                                     */
             <Route exact path="/SDG04/Spiel1/SDG04_Spiel" component={SDG04_Spiel}/>                    
 /**                                Video                                     */
-            <Route exact path="/SDG03/Video"><VideoComponent sdg = {SDG04_Video}/></Route>
+            <Route exact path="/SDG04/Video"><VideoComponent sdg = {SDG04_Video}/></Route>
 
 
 /**----------------------------------------------------------------------------
@@ -494,11 +513,10 @@ export const App = (): JSX.Element => {
             <Route exact path="/SDG05/Einstieg"><Quiz_Component sdg = {SDG05_Einstieg}/></Route>
             <Route exact path="/SDG05/Infotext"><InfotextComponent sdg = {SDG05_Infotext}/></Route>
 /**                                 Quiz                                     */
-<Route exact path="/SDG05/Quiz"><Quiz_Component sdg = {SDG05_Quiz}/></Route>
+            <Route exact path="/SDG05/Quiz"><Quiz_Component sdg = {SDG05_Quiz}/></Route>
 /**                                Spiel                                     */
             <Route exact path="/SDG05/Spiel" component={SDG05_Spiel}/>
 /**                                Video                                     */
-
 
 /**---------------------------------------------------------------------------- 
  *                                SDG 06
@@ -516,6 +534,8 @@ export const App = (): JSX.Element => {
 /**                                Spiel                                     */
             <Route exact path="/SDG06/Spiel" component={SDG06_Spiel}/>
 /**                                Video                                     */
+            <Route exact path="/SDG06/Video"><VideoComponent sdg = {SDG06_Video}/></Route>
+
 
 
 /**----------------------------------------------------------------------------
@@ -530,7 +550,8 @@ export const App = (): JSX.Element => {
             <Route exact path="/SDG07/Quiz"><Quiz_Component sdg={SDG07_Quiz}/></Route>
 /**                                Spiel                                     */
 /**                                Video                                     */
-
+            <Route exact path="/SDG07/VideoWasserstoff"><VideoComponent sdg = {SDG07_Video_Wasserstoff}/></Route>
+            <Route exact path="/SDG07/VideoWindrad"><VideoComponent sdg = {SDG07_Video_Windrad}/></Route>
 
 /**----------------------------------------------------------------------------
  *                                SDG 08
@@ -548,6 +569,8 @@ export const App = (): JSX.Element => {
 /**                                Spiel                                     */
             <Route exact path="/SDG08/Spiel"><TextComponent sdg = {SDG08_Spiel}/></Route>
 /**                                Video                                     */
+            <Route exact path="/SDG08/Video"><VideoComponent sdg = {SDG08_Video}/></Route>
+
 
 
 /**----------------------------------------------------------------------------
@@ -563,15 +586,17 @@ export const App = (): JSX.Element => {
 /**                                Spiel                                     */
             <Route exact path="/SDG09/Spiel" component={SDG09_Spiel}/>
 /**                                Video                                     */
+            <Route exact path="/SDG09/Video"><VideoComponent sdg = {SDG09_Video}/></Route>
+
 
 
 /**----------------------------------------------------------------------------
  *                                SDG 10
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-<Route exact path= "/SDG10/FreieArbeit"> <TextComponent sdg= {SDG10_FreieArbeit}/> </Route>
+            <Route exact path= "/SDG10/FreieArbeit"> <TextComponent sdg= {SDG10_FreieArbeit}/> </Route>
 /**                             Gutes Beispiel                               */
-<Route exact path= "/SDG10/GutesBeispiel"> <TextComponent sdg= {SDG10_GutesBeispiel}/> </Route>
+            <Route exact path= "/SDG10/GutesBeispiel"> <TextComponent sdg= {SDG10_GutesBeispiel}/> </Route>
 /**                               Infotext                                   */
             <Route exact path="/SDG10/Infotext"><InfotextComponent sdg={SDG10_Infotext}/></Route>
 /**                                 Quiz                                     */
@@ -580,6 +605,8 @@ export const App = (): JSX.Element => {
             <Route exact path="/SDG10/Spiel"><TextComponent sdg={SDG10_Spiel}/></Route>
 
 /**                                Video                                     */
+            <Route exact path="/SDG10/Video"><VideoComponent sdg = {SDG10_Video}/></Route>
+
 
 
 /**----------------------------------------------------------------------------
@@ -591,58 +618,59 @@ export const App = (): JSX.Element => {
             <Route exact path="/SDG11/GutesBeispiel"><TextComponent sdg= {SDG11_GB}/> </Route> 
 /**                               Infotext                                   */
             <Route exact path="/SDG11/Infotext"><InfotextComponent sdg={SDG11_Infotext}/></Route>
-
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
             <Route exact path="/SDG11/Spiel" component={SDG11_Spiel}/>
 /**                                Video                                     */
+            <Route exact path="/SDG11/Video"><VideoComponent sdg = {SDG11_Video}/></Route>
+
 
 
 /**----------------------------------------------------------------------------
  *                                SDG 12
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-<Route exact path="/SDG12/FreieArbeit"><TextComponent sdg= {SDG12_FreieArbeit}/> </Route>
+            <Route exact path="/SDG12/FreieArbeit"><TextComponent sdg= {SDG12_FreieArbeit}/> </Route>
 /**                             Gutes Beispiel                               */
-<Route exact path="/SDG12/GutesBeispiel"><TextComponent sdg= {SDG12_GutesBeispiel}/> </Route> 
+            <Route exact path="/SDG12/GutesBeispiel"><TextComponent sdg= {SDG12_GutesBeispiel}/> </Route> 
 /**                               Infotext                                   */
             <Route exact path="/SDG12/Infotext"><InfotextComponent sdg={SDG12_Infotext}/></Route>
 /**                                 Quiz                                     */
             <Route exact path="/SDG12/Quiz"><Quiz_Component sdg={SDG12_Quiz}/></Route>
 /**                                Spiel                                     */
-<Route exact path="/SDG12/Spiel"><TextComponent sdg= {SDG12_Spiel}/> </Route> 
+            <Route exact path="/SDG12/Spiel"><TextComponent sdg= {SDG12_Spiel}/> </Route> 
 /**                                Video                                     */
+            <Route exact path="/SDG12/Video"><VideoComponent sdg = {SDG12_Video}/></Route>
+
 
 
 /**----------------------------------------------------------------------------
  *                                SDG 13
- * --------------------------------------------------------------------------*/
+* --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-<Route exact path="/SDG13/FreieArbeit"><TextComponent sdg= {SDG13_FreieArbeit}/> </Route> 
+            <Route exact path="/SDG13/FreieArbeit"><TextComponent sdg= {SDG13_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
-<Route exact path="/SDG13/GutesBeispiel"><TextComponent sdg= {SDG13_GutesBeispiel}/> </Route> 
+            <Route exact path="/SDG13/GutesBeispiel"><TextComponent sdg= {SDG13_GutesBeispiel}/> </Route> 
 /**                               Infotext                                   */
-                <Route exact path="/SDG13/Infotext"><InfotextComponent sdg={SDG13_Infotext}/></Route>                  
-
+            <Route exact path="/SDG13/Infotext"><InfotextComponent sdg={SDG13_Infotext}/></Route>                  
 /**                                 Quiz                                     */
-                <Route exact path="/SDG13/Quiz"><Quiz_Component sdg={SDG13_Quiz}/></Route>
-
+            <Route exact path="/SDG13/Quiz"><Quiz_Component sdg={SDG13_Quiz}/></Route>
 /**                                Spiel                                     */
-                <Route exact path="/SDG13/tutorial/page1" component={page141}/>                    
-                <Route exact path="/SDG13/tutorial/page2" component={page142}/>
-                <Route exact path="/SDG13/tutorial/page3" component={page143}/>
+            <Route exact path="/SDG13/tutorial/page1" component={page141}/>                    
+            <Route exact path="/SDG13/tutorial/page2" component={page142}/>
+            <Route exact path="/SDG13/tutorial/page3" component={page143}/>
 
-                <Route exact path="/SDG13/Spiel1"  component={play13}/>
-                <Route exact path="/SDG13/Spiel1/akw" component={akw}/>                   
-                <Route exact path="/SDG13/Spiel1/cow" component={cow}/>
-                <Route exact path="/SDG13/Spiel1/bicycle" component={bicycle}/>
-                <Route exact path="/SDG13/Spiel1/wind_turbine" component={windTurbine}/>
-                <Route exact path="/SDG13/Spiel1/tractor" component={tractor}/>
-                <Route exact path="/SDG13/Spiel1/tree" component={tree}/>
-                <Route exact path="/SDG13/Spiel1/fox_and_hedgehog" component={foxHedgehog}/>
+            <Route exact path="/SDG13/Spiel1"  component={play13}/>
+            <Route exact path="/SDG13/Spiel1/akw" component={akw}/>                   
+            <Route exact path="/SDG13/Spiel1/cow" component={cow}/>
+            <Route exact path="/SDG13/Spiel1/bicycle" component={bicycle}/>
+            <Route exact path="/SDG13/Spiel1/wind_turbine" component={windTurbine}/>
+            <Route exact path="/SDG13/Spiel1/tractor" component={tractor}/>
+            <Route exact path="/SDG13/Spiel1/tree" component={tree}/>
+            <Route exact path="/SDG13/Spiel1/fox_and_hedgehog" component={foxHedgehog}/>
 
 /**                                Spiel2                                    */
-                <Route exact path="/SDG13/Spiel2" component={Main} />                    
+            <Route exact path="/SDG13/Spiel2" component={Main} />                    
 
 
 
@@ -650,107 +678,117 @@ export const App = (): JSX.Element => {
  *                                SDG 14
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-<Route exact path="/SDG14/FreieArbeit"><TextComponent sdg= {SDG14_FreieArbeit}/> </Route> 
+            <Route exact path="/SDG14/FreieArbeit"><TextComponent sdg= {SDG14_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
-<Route exact path="/SDG14/GutesBeispiel"><TextComponent sdg= {SDG14_GutesBeispiel}/> </Route> 
+            <Route exact path="/SDG14/GutesBeispiel"><TextComponent sdg= {SDG14_GutesBeispiel}/> </Route> 
 /**                               Infotext                                   */
-                <Route exact path="/SDG14/Infotext"><InfotextComponent sdg={SDG14_Infotext}/></Route> 
+            <Route exact path="/SDG14/Infotext"><InfotextComponent sdg={SDG14_Infotext}/></Route> 
 
 /**                                 Quiz                                     */
 
 /**                                Spiel                                     */
 
 /**                                Spiel2                                    */
-                <Route exact path="/SDG14/Spiel2/tutorial1" component={page141} />                    
-                <Route exact path="/SDG14/Spiel2/tutorial2" component={page142} />
-                <Route exact path="/SDG14/Spiel2/tutorial3" component={page143} />
-                <Route exact path="/SDG14/Spiel2" component={play14} />
-                <Route exact path="/SDG14/Spiel2/clownfish" component={clownfish} />                    
-                <Route exact path="/SDG14/Spiel2/ray" component={ray} />
-                <Route exact path="/SDG14/Spiel2/seaHorse" component={seaHorse} />
-                <Route exact path="/SDG14/Spiel2/shark" component={shark} />
-                <Route exact path="/SDG14/Spiel2/siameseFightingFish" component={siamesefightingFish} />
-                <Route exact path="/SDG14/Spiel2/surgeonfish" component={surgeonfish} />
-                <Route exact path="/SDG14/Spiel2/turtle" component={turtle} />
-                <Route exact path="/SDG14/Spiel2/boat" component={boat} />   
+            <Route exact path="/SDG14/Spiel2/tutorial1" component={page141} />                    
+            <Route exact path="/SDG14/Spiel2/tutorial2" component={page142} />
+            <Route exact path="/SDG14/Spiel2/tutorial3" component={page143} />
+            <Route exact path="/SDG14/Spiel2" component={play14} />
+            <Route exact path="/SDG14/Spiel2/clownfish" component={clownfish} />                    
+            <Route exact path="/SDG14/Spiel2/ray" component={ray} />
+            <Route exact path="/SDG14/Spiel2/seaHorse" component={seaHorse} />
+            <Route exact path="/SDG14/Spiel2/shark" component={shark} />
+            <Route exact path="/SDG14/Spiel2/siameseFightingFish" component={siamesefightingFish} />
+            <Route exact path="/SDG14/Spiel2/surgeonfish" component={surgeonfish} />
+            <Route exact path="/SDG14/Spiel2/turtle" component={turtle} />
+            <Route exact path="/SDG14/Spiel2/boat" component={boat} />   
+/**                                Video                                    */
+            <Route exact path="/SDG14/Video"><VideoComponent sdg = {SDG14_Video}/></Route>
 
 /**----------------------------------------------------------------------------
  *                                SDG 15
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-                <Route exact path="/SDG15/FreieArbeit"><TextComponent sdg= {SDG15_FreieArbeit}/> </Route> 
+            <Route exact path="/SDG15/FreieArbeit"><TextComponent sdg= {SDG15_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
-                <Route exact path="/SDG15/Infotext"><InfotextComponent sdg={SDG15_Infotext}/></Route>
+            <Route exact path="/SDG15/Infotext"><InfotextComponent sdg={SDG15_Infotext}/></Route>
 /**                                 Quiz                                     */
-                <Route exact path="/SDG15/Quiz"><Quiz3Component sdg= {SDG15_Quiz}/> </Route> 
+            <Route exact path="/SDG15/Quiz"><Quiz3Component sdg= {SDG15_Quiz}/> </Route> 
 /**                                Spiel                                     */
-                <Route exact path="/SDG15/Spiel"><TextComponent sdg= {SDG15_Spiel}/> </Route> 
+            <Route exact path="/SDG15/Spiel"><TextComponent sdg= {SDG15_Spiel}/> </Route> 
 /**                                Video                                     */
+            <Route exact path="/SDG15/Video"><VideoComponent sdg = {SDG15_Video}/></Route>
+
+
 /**----------------------------------------------------------------------------
  *                                SDG 16
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-                <Route exact path="/SDG16/FreieArbeit"><TextComponent sdg= {SDG16_FreieArbeit}/> </Route> 
+            <Route exact path="/SDG16/FreieArbeit"><TextComponent sdg= {SDG16_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
-                <Route exact path="/SDG16/GutesBeispiel"><Quiz_Component sdg={SDG16_GutesBeispiel}/></Route>
+            <Route exact path="/SDG16/GutesBeispiel"><Quiz_Component sdg={SDG16_GutesBeispiel}/></Route>
 /**                               Infotext                                   */
-                <Route exact path="/SDG16/Infotext"><InfotextComponent sdg={SDG16_Infotext}/></Route>
-                <Route exact path="/SDG16/Einstieg"><TextComponent sdg= {SDG16_Einstieg}/> </Route> 
+            <Route exact path="/SDG16/Infotext"><InfotextComponent sdg={SDG16_Infotext}/></Route>
+            <Route exact path="/SDG16/Einstieg"><TextComponent sdg= {SDG16_Einstieg}/> </Route> 
 /**                                 Quiz                                     */
-                <Route exact path="/SDG16/Quiz"><QuizMixedComponent sdg={SDG16_Quiz}/></Route>
+            <Route exact path="/SDG16/Quiz"><QuizMixedComponent sdg={SDG16_Quiz}/></Route>
 /**                                Spiel                                     */
-<Route exact path="/SDG16/Spiel"><TextComponent sdg= {SDG16_Spiel}/> </Route> 
+            <Route exact path="/SDG16/Spiel"><TextComponent sdg= {SDG16_Spiel}/> </Route> 
 /**                                Video                                     */
+            <Route exact path="/SDG16/Video"><VideoComponent sdg = {SDG16_Video}/></Route>
+
 /**----------------------------------------------------------------------------
  *                                SDG 17
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-<Route exact path="/SDG17/FreieArbeit"><TextComponent sdg= {SDG17_FreieArbeit}/> </Route> 
+            <Route exact path="/SDG17/FreieArbeit"><TextComponent sdg= {SDG17_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
 /**                               Infotext                                   */
-                <Route exact path="/SDG17/Infotext"><InfotextComponent sdg={SDG17_Infotext}/></Route>
+            <Route exact path="/SDG17/Infotext"><InfotextComponent sdg={SDG17_Infotext}/></Route>
 /**                                 Quiz                                     */
-                <Route exact path="/SDG17/Quiz"><TextComponent sdg= {SDG17_Quiz}/> </Route> 
-                <Route exact path="/SDG17/QuizÜbersicht"><TextComponent sdg= {SDG17_QuizÜbersicht}/> </Route> 
-                <Route exact path="/SDG17/Quiz1"><QuizMixedComponent sdg= {SDG17_Quiz_1}/> </Route> 
-                <Route exact path="/SDG17/Quiz2"><QuizMixedComponent sdg= {SDG17_Quiz_2}/> </Route> 
-                <Route exact path="/SDG17/Quiz3"><QuizMixedComponent sdg= {SDG17_Quiz_3}/> </Route> 
-                <Route exact path="/SDG17/Quiz4"><QuizMixedComponent sdg= {SDG17_Quiz_4}/> </Route> 
-                <Route exact path="/SDG17/Quiz5"><QuizMixedComponent sdg= {SDG17_Quiz_5}/> </Route> 
-                <Route exact path="/SDG17/Quiz6"><QuizMixedComponent sdg= {SDG17_Quiz_6}/> </Route> 
-                <Route exact path="/SDG17/Quiz7"><QuizMixedComponent sdg= {SDG17_Quiz_7}/> </Route> 
-                <Route exact path="/SDG17/Quiz8"><QuizMixedComponent sdg= {SDG17_Quiz_8}/> </Route> 
-                <Route exact path="/SDG17/Quiz9"><QuizMixedComponent sdg= {SDG17_Quiz_9}/> </Route> 
-                <Route exact path="/SDG17/Quiz10"><QuizMixedComponent sdg= {SDG17_Quiz_10}/> </Route> 
-                <Route exact path="/SDG17/Quiz11"><QuizMixedComponent sdg= {SDG17_Quiz_11}/> </Route> 
-                <Route exact path="/SDG17/Quiz12"><QuizMixedComponent sdg= {SDG17_Quiz_12}/> </Route> 
-                <Route exact path="/SDG17/Quiz13"><QuizMixedComponent sdg= {SDG17_Quiz_13}/> </Route> 
-                <Route exact path="/SDG17/Quiz14"><QuizMixedComponent sdg= {SDG17_Quiz_14}/> </Route> 
-                <Route exact path="/SDG17/Quiz15"><QuizMixedComponent sdg= {SDG17_Quiz_15}/> </Route> 
-                <Route exact path="/SDG17/Quiz16"><QuizMixedComponent sdg= {SDG17_Quiz_16}/> </Route> 
-                <Route exact path="/SDG17/Quiz17"><QuizMixedComponent sdg= {SDG17_Quiz_17}/> </Route> 
+            <Route exact path="/SDG17/Quiz"><TextComponent sdg= {SDG17_Quiz}/> </Route> 
+            <Route exact path="/SDG17/QuizÜbersicht"><TextComponent sdg= {SDG17_QuizÜbersicht}/> </Route> 
+            <Route exact path="/SDG17/Quiz1"><QuizMixedComponent sdg= {SDG17_Quiz_1}/> </Route> 
+            <Route exact path="/SDG17/Quiz2"><QuizMixedComponent sdg= {SDG17_Quiz_2}/> </Route> 
+            <Route exact path="/SDG17/Quiz3"><QuizMixedComponent sdg= {SDG17_Quiz_3}/> </Route> 
+            <Route exact path="/SDG17/Quiz4"><QuizMixedComponent sdg= {SDG17_Quiz_4}/> </Route> 
+            <Route exact path="/SDG17/Quiz5"><QuizMixedComponent sdg= {SDG17_Quiz_5}/> </Route> 
+            <Route exact path="/SDG17/Quiz6"><QuizMixedComponent sdg= {SDG17_Quiz_6}/> </Route> 
+            <Route exact path="/SDG17/Quiz7"><QuizMixedComponent sdg= {SDG17_Quiz_7}/> </Route> 
+            <Route exact path="/SDG17/Quiz8"><QuizMixedComponent sdg= {SDG17_Quiz_8}/> </Route> 
+            <Route exact path="/SDG17/Quiz9"><QuizMixedComponent sdg= {SDG17_Quiz_9}/> </Route> 
+            <Route exact path="/SDG17/Quiz10"><QuizMixedComponent sdg= {SDG17_Quiz_10}/> </Route> 
+            <Route exact path="/SDG17/Quiz11"><QuizMixedComponent sdg= {SDG17_Quiz_11}/> </Route> 
+            <Route exact path="/SDG17/Quiz12"><QuizMixedComponent sdg= {SDG17_Quiz_12}/> </Route> 
+            <Route exact path="/SDG17/Quiz13"><QuizMixedComponent sdg= {SDG17_Quiz_13}/> </Route> 
+            <Route exact path="/SDG17/Quiz14"><QuizMixedComponent sdg= {SDG17_Quiz_14}/> </Route> 
+            <Route exact path="/SDG17/Quiz15"><QuizMixedComponent sdg= {SDG17_Quiz_15}/> </Route> 
+            <Route exact path="/SDG17/Quiz16"><QuizMixedComponent sdg= {SDG17_Quiz_16}/> </Route> 
+            <Route exact path="/SDG17/Quiz17"><QuizMixedComponent sdg= {SDG17_Quiz_17}/> </Route> 
 /**                                Spiel                                     */
-<Route exact path="/SDG17/Spiel"><TextComponent sdg= {SDG17_Spiel}/> </Route> 
+            <Route exact path="/SDG17/Spiel"><TextComponent sdg= {SDG17_Spiel}/> </Route> 
 /**                                Video                                     */
+            <Route exact path="/SDG17/Video"><VideoComponent sdg = {SDG17_Video}/></Route>
+
+
 /**----------------------------------------------------------------------------
 
 /**----------------------------------------------------------------------------
 *                                 Vorlagen
 ----------------------------------------------------------------------------*/
-                <Route exact path="/Vorlagen/infotext" component={Infotext} />  
-                <Route exact path="/Vorlagen/countdown" component={countdown} />  
-                <Route exact path ="/Vorlagen/SimpleCountdown" component={SimpleCountdown}/> 
-                <Route exact path ="/Vorlagen/endscreen" component={Endscreen} />
-                <Route exact path ="/Vorlagen/video" component={Video}/> 
-                <Route exact path="/Vorlagen/MagicButton" component={QuizButton} />  
+            <Route exact path="/Vorlagen/infotext" component={Infotext} />  
+            <Route exact path="/Vorlagen/countdown" component={countdown} />  
+            <Route exact path ="/Vorlagen/SimpleCountdown" component={SimpleCountdown}/> 
+            <Route exact path ="/Vorlagen/endscreen" component={Endscreen} />
+            <Route exact path ="/Vorlagen/video" component={Video}/> 
+            <Route exact path="/Vorlagen/MagicButton" component={QuizButton} />  
 
 /**----------------------------------------------------------------------------
 *                                 Components
 ----------------------------------------------------------------------------*/
-                <Route exact path="/Component/InfotextButtonGreen" component={InfotextButtonGreen} />  
-                <Route exact path="/Component/InfotextButtonRed" component={InfotextButtonRed} />  
-                <Route exact path= "/Component/test"><QuizMixedComponent sdg={SDGX_Quiz}/></Route>
+            <Route exact path="/Component/InfotextButtonGreen" component={InfotextButtonGreen} />  
+            <Route exact path="/Component/InfotextButtonRed" component={InfotextButtonRed} />  
+            <Route exact path= "/Component/test"><QuizMixedComponent sdg={SDGX_Quiz}/></Route>
 /**----------------------------------------------------------------------------
  * ----------------------------------------------------------------------------
  * ENDE - ENDE - ENDE - ENDE - ENDE - ENDE- ENDE - ENDE - ENDE - ENDE - ENDE --  

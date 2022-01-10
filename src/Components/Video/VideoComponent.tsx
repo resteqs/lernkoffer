@@ -43,7 +43,7 @@ export const VideoComponent = (props: Props): JSX.Element => {
             </div>
             <div>
                 <ReactPlayer style={videoStyle} controls url={props.sdg.source}  />
-                <p style={{ textAlign:"center", fontSize:"larger" }}>Quelle: {props.sdg.quelle}</p>
+                <p style={{ textAlign:"center", fontSize:"larger" }}>Quelle: <a href={props.sdg.quelle}>{props.sdg.quelle}</a></p>
             </div>
             
             {buttonEnd}
