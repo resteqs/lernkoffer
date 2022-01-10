@@ -479,7 +479,7 @@ export const App = (): JSX.Element => {
 /**                                 Quiz                                     */
             <Route exact path = "/SDG03/Quiz"> <TextComponent sdg={SDG03_Quiz}/></Route>
 /**                                Spiel                                     */
-            <Route exact path="/SDG03/Spiel" component={SDG03_Spiel}/>
+            <Route exact path="/SDG03/Spiel"> <TextComponent sdg={SDG03_Spiel}/></Route>
 /**                                Video                                     */
             <Route exact path="/SDG03/Video"><VideoComponent sdg = {SDG03_Video}/></Route>
 
