@@ -14,33 +14,33 @@ export interface InfotextProps {
 }
 
 export interface ModalProps {
-    modalContent?:JSX.Element;
-    modalStyle?:CSSProperties
+    modalContent?: JSX.Element;
+    modalStyle?: CSSProperties;
     incrementCount: () => void;
     setSelectedItem: (n: number) => void;
     answercw;
     modalIsOpen;
     setIsOpen;
-    answer:string;
+    answer: string;
 }
 
 export interface QuizProps {
     /**
      * header
-     */ 
+     */
     sdgNumber: number;
     sdgTitle: string;
     sdg: string;
-    logo:string
+    logo: string;
 
     /**
      * props for text part
      */
     tile: Record<number, string>;
     text: Record<number, JSX.Element>;
-          
+
     /**
-     * props for quiz part 
+     * props for quiz part
      */
     question: Record<number, string>;
     buttonLeftContent: Record<number, JSX.Element>;
@@ -52,28 +52,28 @@ export interface QuizProps {
     /**
      * Modal
      */
-    modalContent?:JSX.Element;
-    modalStyle?:CSSProperties
-    isQuizActive: Record<number, boolean>; 
+    modalContent?: JSX.Element;
+    modalStyle?: CSSProperties;
+    isQuizActive: Record<number, boolean>;
 }
 
 export interface Quiz3OProps {
     /**
      * header
-     */ 
+     */
     sdgNumber: number;
     sdgTitle: string;
     sdg: string;
-    logo:string
+    logo: string;
 
     /**
      * props for text part
      */
     tile: Record<number, string>;
     text: Record<number, JSX.Element>;
-          
+
     /**
-     * props for quiz part 
+     * props for quiz part
      */
     question: Record<number, string>;
     buttonLeftContent: Record<number, JSX.Element>;
@@ -87,28 +87,28 @@ export interface Quiz3OProps {
     /**
      * Modal
      */
-    modalContent?:JSX.Element;
-    modalStyle?:CSSProperties
-    isQuizActive: Record<number, boolean>; 
+    modalContent?: JSX.Element;
+    modalStyle?: CSSProperties;
+    isQuizActive: Record<number, boolean>;
 }
 
 export interface Quiz3Mixed {
     /**
      * header
-     */ 
+     */
     sdgNumber: number;
     sdgTitle: string;
     sdg: string;
-    logo:string
+    logo: string;
 
     /**
      * props for text part
      */
     tile: Record<number, string>;
     text: Record<number, JSX.Element>;
-          
+
     /**
-     * props for quiz part 
+     * props for quiz part
      */
     question: Record<number, string>;
     buttonLeftContent: Record<number, JSX.Element>;
@@ -122,19 +122,28 @@ export interface Quiz3Mixed {
     /**
      * Modal
      */
-    modalContent?:JSX.Element;
-    modalStyle?:CSSProperties
-    isQuizActive: Record<number, boolean>; 
-    isThreeAnswerActive: Record<number, boolean>; 
-
+    modalContent?: JSX.Element;
+    modalStyle?: CSSProperties;
+    isQuizActive: Record<number, boolean>;
+    isThreeAnswerActive: Record<number, boolean>;
 }
 
-export interface TextProps{
+export interface TextProps {
     sdgNumber: number;
     sdgTitle: string;
     sdg: string;
-    logo:string
+    logo: string;
 
     header: Record<number, string>;
     text: Record<number, JSX.Element>;
+}
+
+export interface VideoProps {
+    sdgNumber: number;
+    sdgTitle: string;
+    sdg: string;
+    logo: string;
+    source;
+    text?: Record<number, JSX.Element>;
+    quelle: string;
 }

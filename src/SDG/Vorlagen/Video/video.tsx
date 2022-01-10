@@ -33,7 +33,7 @@ export const Video = (): JSX.Element => {
                 <img className="sdglogo" alt="logo" src={Logo} />
             </div>
         </div>
-        <div style = {{ display: 'flex' ,justifyContent: "center" , alignItems: "center", marginTop: "120px" }}><ReactPlayer
+        <div style = {{ display: 'flex' ,justifyContent: "center" , alignItems: "center", marginTop: "120px" }}><ReactPlayer 
         url="https://youtu.be/LLvO6geKh_k" width="1366px" height="720px"
       /></div>
       {buttonNext}

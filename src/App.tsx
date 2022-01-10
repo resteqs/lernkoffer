@@ -388,6 +388,11 @@ import { SDG17_Quiz_16 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_16";
 import { SDG17_Quiz_17 } from "./SDG/SDG17/Quiz/Einzelne Quizes/Quiz_17";
 import { SDG17_QuizÜbersicht } from "./SDG/SDG17/Quiz/SDG17_QuizÜbersicht";
 import { SDG16_Quiz } from "./SDG/SDG16/Quiz/SDG16_Quiz";
+import { VideoComponent } from "./Components/Video/VideoComponent";
+import { SDG01_Video } from "./SDG/SDG1/Video/SDG01_Video";
+import { SDG02_Video } from "./SDG/SDG2/Video/SDG02_Video";
+import { SDG03_Video } from "./SDG/SDG3/Video/SDG03_Video";
+import { SDG04_Video } from "./SDG/SDG4/Video/SDG04_Video";
 
 
 export const App = (): JSX.Element => {
@@ -415,11 +420,13 @@ export const App = (): JSX.Element => {
                 <Route exact path="/SDG01/GutesBeispiel"> <TextComponent sdg = {SDG01_GB}/> </Route>
 /**                               Infotext                                   */
                 <Route exact path="/SDG01/Infotext"><InfotextComponent sdg = {SDG01_Infotext}/></Route>
-
 /**                                 Quiz                                     */
                 <Route exact path="/SDG01/Quiz"><Quiz_Component sdg = {SDG01_Quiz}/></Route>
 /**                                Spiel                                     */
+
 /**                                Video                                     */
+                <Route exact path="/SDG01/Video"><VideoComponent sdg = {SDG01_Video}/></Route>
+
 
 
 /**----------------------------------------------------------------------------
@@ -436,8 +443,9 @@ export const App = (): JSX.Element => {
             <Route exact path ="/SDG02/Quiz"><Quiz_Component sdg={SDG02_Quiz}/></Route>
 /**                                Spiel                                     */
             <Route exact path ="/SDG02/Spiel" component={SDG02_Spiel}/>
+/**                                Video                                     */               
+            <Route exact path="/SDG02/Video"><VideoComponent sdg = {SDG02_Video}/></Route>
 
-/**                                Video                                     */
 
 
 /**----------------------------------------------------------------------------
@@ -454,6 +462,8 @@ export const App = (): JSX.Element => {
 /**                                Spiel                                     */
             <Route exact path="/SDG03/Spiel" component={SDG03_Spiel}/>
 /**                                Video                                     */
+            <Route exact path="/SDG03/Video"><VideoComponent sdg = {SDG03_Video}/></Route>
+
 
 
 /**----------------------------------------------------------------------------
@@ -470,6 +480,8 @@ export const App = (): JSX.Element => {
 /**                                Spiel                                     */
             <Route exact path="/SDG04/Spiel1/SDG04_Spiel" component={SDG04_Spiel}/>                    
 /**                                Video                                     */
+            <Route exact path="/SDG03/Video"><VideoComponent sdg = {SDG04_Video}/></Route>
+
 
 /**----------------------------------------------------------------------------
  *                                SDG 05
@@ -524,7 +536,7 @@ export const App = (): JSX.Element => {
  *                                SDG 08
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-            <Route exact path= "/SDG08/FreieArbeit"> <TextComponent sdg= {SDG08_FreieArbeit}/> </Route>
+            <Route exact path= "/SDG08/FreieArbeit"><TextComponent sdg= {SDG08_FreieArbeit}/> </Route>
 /**                             Gutes Beispiel                               */
             <Route exact path="/SDG08/GutesBeispiel"><TextComponent sdg = {SDG08_GB}/></Route>
 /**                               Infotext                                   */
@@ -534,7 +546,7 @@ export const App = (): JSX.Element => {
             <Route exact path="/SDG08/Quiz" component={SDG08_Quiz}/>
 
 /**                                Spiel                                     */
-<Route exact path="/SDG08/Spiel"><TextComponent sdg = {SDG08_Spiel}/></Route>
+            <Route exact path="/SDG08/Spiel"><TextComponent sdg = {SDG08_Spiel}/></Route>
 /**                                Video                                     */
 
 

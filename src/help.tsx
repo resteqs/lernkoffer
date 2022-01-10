@@ -102,10 +102,10 @@ export const Help = (): JSX.Element => {
 
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG01/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG02/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG03/Video">Video WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG04/Video">Video WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG01/Video">Video</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG02/Video">Video</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG03/Video">Video</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG04/Video">Video Probleme</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/Video">Video WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/Video">Video WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG07/Video">Video WIP</Link></td>
