@@ -97,7 +97,7 @@ export const SDG01_Spiel: TextProps = {
                     </li>
                     <li style={{ marginLeft: "30px", marginTop: "20px" }}>
                         {" "}
-                        <b> Voraussetzungen: </b> Abgeschlossenes (Hochschul-)Studium à sehr viel in verschiedenen
+                        <b> Voraussetzungen: </b> Abgeschlossenes (Hochschul-)Studium:  sehr viel in verschiedenen
                         Bereichen (Technik, BWL, Soziologie, Psychologie) lernen und wissen
                     </li>
                     <li style={{ marginLeft: "30px", marginTop: "10px" }}>
@@ -118,7 +118,7 @@ export const SDG01_Spiel: TextProps = {
                     </li>
                     <li style={{ marginLeft: "30px", marginTop: "20px" }}>
                         {" "}
-                        <b> - In welcher Hinsicht anstrengend? </b> Bei diesem Beruf hast du viele Einflussfaktoren, die
+                        <b>  In welcher Hinsicht anstrengend? </b> Bei diesem Beruf hast du viele Einflussfaktoren, die
                         deinen Tag anstrengend machen. Zum einen musst du sehr viel Denken und Überlegen. Zum anderen
                         musst du immer an mehrere Sachen gleichzeitig denken, zum Beispiel daran, was der Kunde wirklich
                         will und daran, was deine Kollegen umsetzen können. Du wirst die meiste Zeit vor einem Computer
@@ -140,10 +140,10 @@ export const SDG01_Spiel: TextProps = {
                     </li>
                     <li style={{ marginLeft: "30px", marginTop: "10px" }}>
                         {" "}
-                        <b> Definition </b> Erstellung von visuellen Medien (Sachen, die du sehen kannst z.B. Bilder
+                        <b> Definition: </b> Erstellung von visuellen Medien (Sachen, die du sehen kannst z.B. Bilder
                         oder Zeichnungen), um die Aufmerksamkeit von Leuten auf zum Beispiel eine Werbetafel zu ziehen.
                         Das meiste wird mittlerweile digital (am Computer) erstellt und nur noch wenig auf Papier
-                        gezeichnet
+                        gezeichnet. 
                     </li>
                 </ul>
             </div>
@@ -240,7 +240,7 @@ export const SDG01_Spiel: TextProps = {
             <div>
                 {" "}
                 Diese Unterschiede sind größtenteils dadurch zu begründen, dass in der modernen Wirtschaft wesentlich
-                mehr Wirtschaftsinformatiker:innen gesucht werden als Grafikdesigner:innen{" "}
+                mehr Wirtschaftsinformatiker:innen gesucht werden als Grafikdesigner:innen.{" "}
             </div>
         ),
 
