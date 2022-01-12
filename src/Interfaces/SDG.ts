@@ -135,7 +135,7 @@ export interface TextProps {
     logo: string;
 
     header: Record<number, string>;
-    text: Record<number, JSX.Element>;
+    text: Record<number, JSX.Element| string>;
 }
 
 export interface VideoProps {
@@ -144,6 +144,6 @@ export interface VideoProps {
     sdg: string;
     logo: string;
     source;
-    text?: Record<number, JSX.Element>;
+    text?: Record<number, JSX.Element| string> ; 
     quelle: string;
 }
