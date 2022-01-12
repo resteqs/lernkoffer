@@ -3,7 +3,7 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable react/react-in-jsx-scope */
 
-import Logo from "../../../SDGLogos/Goal-SDG06.png";
+import Logo from "../../../SDGLogos/Goal-SDG01.png";
 import { TextProps } from "../../../Interfaces/SDG";
 
 export const SDG01_Spiel: TextProps = {
@@ -25,12 +25,12 @@ export const SDG01_Spiel: TextProps = {
         11: "Aufgabe",
         12: "Antwort",
         13: "Möglicher Grund für unterschiedliche Gehälter: ",
-        14: "Vergleich 1",
-        15: "Vergleich 1",
-        16: "Vergleich 1",
-        17: "Vergleich 1",
-        18: "Vergleich 1",
-        19: "Vergleich 1",
+        14: "Vergleich 2",
+        15: "Vergleich 2",
+        16: "Vergleich 2",
+        17: "Vergleich 2",
+        18: "Vergleich 2",
+        19: "Vergleich 2",
         20: "Aufgabe",
         21: "Antwort",
         22: "Möglicher Grund für unterschiedliche Gehälter: ",
@@ -76,11 +76,11 @@ export const SDG01_Spiel: TextProps = {
                 </li>
                 <li style={{ marginLeft: "30px", marginTop: "20px" }}>
                     {" "}
-                    <b>- Branche: </b>IT und Development (= Entwicklung){" "}
+                    <b>Branche: </b>IT und Development (= Entwicklung){" "}
                 </li>
                 <li style={{ marginLeft: "30px", marginTop: "10px" }}>
                     {" "}
-                    <b>- Definition: </b>Arbeit in einem (meist großen) Unternehmen. Beschäftigt sich mit der Technik
+                    <b>Definition: </b>Arbeit in einem (meist großen) Unternehmen. Beschäftigt sich mit der Technik
                     eines Unternehmens. Genauer gesagt damit, dass wichtige betriebswirtschaftliche Fragen (sagen einer
                     Firma, was sie machen müssen, damit ihre Produkte gut verkauft werden/welche Produkte momentan
                     besonders gut verkauft werden können) „digital“ (mit der Hilfe von Computern und moderner Technik)
@@ -97,12 +97,12 @@ export const SDG01_Spiel: TextProps = {
                     </li>
                     <li style={{ marginLeft: "30px", marginTop: "20px" }}>
                         {" "}
-                        <b> - Voraussetzungen: </b> Abgeschlossenes (Hochschul-)Studium à sehr viel in verschiedenen
+                        <b> Voraussetzungen: </b> Abgeschlossenes (Hochschul-)Studium à sehr viel in verschiedenen
                         Bereichen (Technik, BWL, Soziologie, Psychologie) lernen und wissen
                     </li>
                     <li style={{ marginLeft: "30px", marginTop: "10px" }}>
                         {" "}
-                        <b> - Mögliche Aufgabengebiete:</b> Mit Kunden kommunizieren und Lösungen für ihre Probleme
+                        <b> Mögliche Aufgabengebiete:</b> Mit Kunden kommunizieren und Lösungen für ihre Probleme
                         finden. Diese Lösungsansätze dann Spezialisten erklären und in seltenen Fällen bei der Umsetzung
                         auch selbst helfen.{" "}
                     </li>
@@ -194,7 +194,7 @@ export const SDG01_Spiel: TextProps = {
                         {" "}
                         <b> Beruf: Grafiker:in </b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "0px" }}>
+                    <li style={{ marginLeft: "30px", marginTop: "20px", fontSize: "48px" }}>
                         {" "}
                         <b> In welcher Hinsicht anstrengend?: </b> Ein wesentlicher Vorteil ist, dass du deiner
                         Kreativität freien Lauf lassen kannst. Hierbei ist allerdings Vorsicht geboten, denn du musst
@@ -250,9 +250,9 @@ export const SDG01_Spiel: TextProps = {
                     {" "}
                     <b> Beruf: Gärtner:in </b>
                 </li>
-                <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                <li style={{ marginLeft: "30px", marginTop: "20px", fontSize: "49px" }}>
                     {" "}
-                    <b>- Kurze Beschreibung: </b> Ein/e Gärtner:in sorgt sich um die Pflanzen in Grünanlagen wie zum
+                    <b> Kurze Beschreibung: </b> Ein/e Gärtner:in sorgt sich um die Pflanzen in Grünanlagen wie zum
                     Beispiel öffentlichen Parks oder auch bei großen Firmen, wenn diese zum Beispiel eine schöne
                     Einfahrt gestaltet und gepflegt haben wollen. Dabei stößt man schon auf den zweiten Punkt, der bei
                     manchen Gärtner:innen, aber nicht bei allen, der Fall ist: Das Gestalten von Gärten. Nicht immer
@@ -271,7 +271,7 @@ export const SDG01_Spiel: TextProps = {
                     </li>
                     <li style={{ marginLeft: "30px", marginTop: "20px" }}>
                         {" "}
-                        <b> - In welcher Hinsicht anstrengend?: </b> Gärtner:innen arbeiten draußen. Das bedeutet, dass
+                        <b>  In welcher Hinsicht anstrengend?: </b> Gärtner:innen arbeiten draußen. Das bedeutet, dass
                         sie dem Wetter ausgesetzt sind und daher auch bei sehr viel Regen und sehr hohen Temperaturen
                         draußen sind. Dazu kommt die schwere körperliche Belastung durch Hin- und Hertragen von Geräten
                         oder Blumentöpfen oder anderen schweren Dingen. Aus diesem Grund haben viele Gärtner:innen nach
