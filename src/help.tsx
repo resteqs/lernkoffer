@@ -60,11 +60,7 @@ export const Help = (): JSX.Element => {
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG01/Infotext">Infotext</Link></td>
-                        <td className="tg-c3ow">
-                            <Link to ="/SDG02/Infotext/Infotext">Infotext</Link>
-                            <p>oder</p>
-                            <Link to ="/SDG02/Infotext/Fable">Infotext</Link>
-                        </td>
+                        <td className="tg-c3ow"><Link to ="/SDG02/Infotext/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG04/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow">
