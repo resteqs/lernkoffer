@@ -13,7 +13,7 @@ import Frage2_2 from "../Quiz/Images/Frage2_2.png"
 
 export const SDG01_Quiz:QuizProps = {
     sdgNumber: 1,
-    sdgTitle: "Keine Armut",
+    sdgTitle: "Was solltest du eher kaufen?",
     sdg: "SDG01",
     logo: Logo,
     tile: { 
@@ -39,7 +39,7 @@ export const SDG01_Quiz:QuizProps = {
                         3: "Falsch",
                         },
     explanation:{       2: "Der Apfel ist das Geld eher wert. In vielen Regionen der Welt herrscht noch Lebensmittelknappheit, und wenn man dann noch finanziell instabil ist, sollte man auf jeden Fall Kosmetik ist nicht ein lebenswichtiger Bestandteil, man kann also auf ihn verzichten, wenn man Geldprobleme hat. ",
-                        3: "Die Bücher vertreiben zwar toll Langeweile, doch wenn man knapp bei Kasse ist, sollte man lieber zu der Kleidung greifen. Diese schützen dich vor Regen, Schmutz, Verletzungen, Sonnenbränden und halten dich im Winter warm. Nicht genügend intakte Kleidung zu haben, ist ein großes Problem bei armen Menschen. Sie müssen sich mit zerrissenen Hosen und löchrigen Hemden durch Kälte und Regen kämpfen.",
+                        3: "Die Bücher vertreiben zwar toll Langeweile, doch wenn man knapp bei Kasse ist, sollte man lieber zu der Kleidung greifen. Diese schützt dich vor Regen, Schmutz, Verletzungen, Sonnenbränden und hält dich im Winter warm. Nicht genügend intakte Kleidung zu haben, ist ein großes Problem bei armen Menschen. Sie müssen sich mit zerrissenen Hosen und löchrigen Hemden durch Kälte und Regen kämpfen.",
                 },
     // modalContent: <div>Quiz SDG 01</div>,
     isQuizActive: {

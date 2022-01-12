@@ -17,7 +17,7 @@ export const SDG01_Infotext:InfotextProps = {
         4: "Aber Armut ist nicht nur auf schlechtes Einkommen zurückzuführen, sondern auch darauf ob Personen eine Wahl haben, was sie tun wollen, ob die Menschenrechte in ihrem Land eingehalten werden und ob sie Zugriff zu bestimmten Dienstleistungen (z.B. Arztbesuche) haben.",
         5: "An vielen Orten auf dieser Welt werden Menschen schlecht bezahlt oder haben keinen Job und leben daher unter der Armutsgrenze. Dies schränkt ihren Handlungsspielraum ein und lässt ihnen oft keine Wahl, sodass sie Berufe mit niedrigen Sicherheitsstandards ausführen müssen, in denen sie möglichen Gefahren ausgesetzt werden.",
         6: "Wenn wir sicherstellen können, dass jeder einen sicheren und gut bezahlten Job je nach seinen Fähigkeiten ausführen kann, wird dies natürlich dazu beitragen Armut zu bekämpfen und auszulöschen. Es gehört aber noch mehr Arbeit dazu. Wir müssen zum Beispiel die Lebensstandards erhöhen, ihnen Zugriff auf Bildung geben und vieles mehr.",
-        7: "Auch wir können gegen die Armut kämpfen indem wir Fördervereinen beitreten, Obdachlosen mit Geld oder anderen Mitteln helfen oder benutzte Sachen spenden, anstatt sie wegzuwerfen."
+        7: "Auch wir können gegen die Armut kämpfen, indem wir Fördervereinen beitreten, Obdachlosen mit Geld oder anderen Mitteln helfen oder benutzte Sachen spenden, anstatt sie wegzuwerfen."
     },
     header: {
         2: "Warum?",

@@ -62,7 +62,7 @@ export const SDG01_GB: TextProps = {
                 häufig mehr berücksichtigt als Mensch und Umwelt. Aus diesen Gründen stellt MISEREOR klar, dass auch
                 Länder wie beispielsweise Deutschland, die eine gute Wirtschaft haben, an ihrem Verhalten arbeiten
                 müssen und die Art und Weise, wie sie Dinge herstellen und was sie kaufen, überdenken und verbessern
-                sollten.P
+                sollten.
             </div>
         ),
         6: (

@@ -13,10 +13,10 @@ export const SDG01_FreieArbeit: TextProps = {
     sdg: "SDG01",
     logo: Logo,
     header: {
-        1: " ",
-        2: " ",
-        3: " ",
-        4: " ",
+        1: " Anleitung ",
+        2: " Anleitung ",
+        3: " Anleitung ",
+        4: " Anleitung ",
     },
 
     text: {
@@ -28,7 +28,11 @@ export const SDG01_FreieArbeit: TextProps = {
         ),
         2: (
             <div>
-               In der Collage sollen nun alle zeigen, was Armut für ihn/sie persönlich bedeutet. Dabei könnt ihr euch an eurem eigenen Besitz orientieren, aber auch an Dinge, welche ihr euch wünschen würdet. Ihr könnt die Erklärung vom Anfang natürlich noch ergänzen mit Sachen, die hier noch nicht genannt sind, mit denen ihr das Gefühl habt, ein gutes Leben zu haben (z.B. eure Familie, Freund:innen, Haustiere).
+                <ul> 
+                    <li> In der Collage sollen nun alle zeigen, was Armut für ihn/sie persönlich bedeutet. Dabei könnt ihr euch an eurem eigenen Besitz orientieren, aber auch an Dinge, welche ihr euch wünschen würdet.  </li>
+                    <li style={{ marginTop:"20px" }}> Ihr könnt die Erklärung vom Anfang natürlich noch ergänzen mit Sachen, die hier noch nicht genannt sind, mit denen ihr das Gefühl habt, ein gutes Leben zu haben (z.B. eure Familie, Freund:innen, Haustiere).</li>
+                </ul>
+             
             </div>
         ),
         3: (

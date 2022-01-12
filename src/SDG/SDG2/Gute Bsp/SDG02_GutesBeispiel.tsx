@@ -265,7 +265,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
         <div>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
-                    Schmetterlingsflügel
+                Welthungerhilfe
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
