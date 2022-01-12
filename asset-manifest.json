@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lernkoffer/static/css/main.4e0067eb.chunk.css",
-    "main.js": "/lernkoffer/static/js/main.d55f423d.chunk.js",
-    "main.js.map": "/lernkoffer/static/js/main.d55f423d.chunk.js.map",
+    "main.js": "/lernkoffer/static/js/main.1bb356b1.chunk.js",
+    "main.js.map": "/lernkoffer/static/js/main.1bb356b1.chunk.js.map",
     "runtime-main.js": "/lernkoffer/static/js/runtime-main.4fd7d633.js",
     "runtime-main.js.map": "/lernkoffer/static/js/runtime-main.4fd7d633.js.map",
     "static/js/2.52221187.chunk.js": "/lernkoffer/static/js/2.52221187.chunk.js",
@@ -24,6 +24,7 @@
     "static/media/Aquädukte.6bc4e82f.mp4": "/lernkoffer/static/media/Aquädukte.6bc4e82f.mp4",
     "static/media/Artensterben.52af5eb8.mp4": "/lernkoffer/static/media/Artensterben.52af5eb8.mp4",
     "static/media/Bauarbeiter.fc018775.jpg": "/lernkoffer/static/media/Bauarbeiter.fc018775.jpg",
+    "static/media/Bild03.124b701c.png": "/lernkoffer/static/media/Bild03.124b701c.png",
     "static/media/Bild05.deee4dd0.png": "/lernkoffer/static/media/Bild05.deee4dd0.png",
     "static/media/Bild1.8d7daa99.png": "/lernkoffer/static/media/Bild1.8d7daa99.png",
     "static/media/Bild1.a00a0afb.png": "/lernkoffer/static/media/Bild1.a00a0afb.png",
@@ -76,7 +77,7 @@
     "static/media/Hand.326b0b3a.png": "/lernkoffer/static/media/Hand.326b0b3a.png",
     "static/media/Harriet Tubman.cf235717.jpg": "/lernkoffer/static/media/Harriet Tubman.cf235717.jpg",
     "static/media/Holzkohlebriketts.603f3fed.png": "/lernkoffer/static/media/Holzkohlebriketts.603f3fed.png",
-    "static/media/IlluminatiDreieck.c0846381.png": "/lernkoffer/static/media/IlluminatiDreieck.c0846381.png",
+    "static/media/IlluminatiDreieck.dca37c62.png": "/lernkoffer/static/media/IlluminatiDreieck.dca37c62.png",
     "static/media/Inflation.bf4bc585.mp4": "/lernkoffer/static/media/Inflation.bf4bc585.mp4",
     "static/media/Joint.3d036ac6.png": "/lernkoffer/static/media/Joint.3d036ac6.png",
     "static/media/Kamala Harris.24dc806c.jpg": "/lernkoffer/static/media/Kamala Harris.24dc806c.jpg",
@@ -174,6 +175,6 @@
     "static/js/runtime-main.4fd7d633.js",
     "static/js/2.52221187.chunk.js",
     "static/css/main.4e0067eb.chunk.css",
-    "static/js/main.d55f423d.chunk.js"
+    "static/js/main.1bb356b1.chunk.js"
   ]
 }
