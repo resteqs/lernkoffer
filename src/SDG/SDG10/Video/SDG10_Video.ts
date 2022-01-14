@@ -11,5 +11,5 @@ export const SDG10_Video:VideoProps = {
     sdg: "SDG10",
     logo: Logo,
     source: Xenophobie ,
-    quelle:"https://bit.ly/31uAmge"
+    quelle:"3sat/nano/SPIEGEL TV GmbH /Denise Dismer, John A. Kantara/Jakob Kastner/Ezra Tsegaye/Jochen Schmidt"
 }

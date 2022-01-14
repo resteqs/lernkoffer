@@ -11,5 +11,5 @@ export const SDG03_Video:VideoProps = {
     sdg: "SDG03",
     logo: Logo,
     source: Video,
-    quelle:"https://bit.ly/3xU4Fcf"
+    quelle:"3sat/nano/Kelvinfilm/Roberto Verdecchia/Julia Zipfel/Jochen Schmidt"
 }

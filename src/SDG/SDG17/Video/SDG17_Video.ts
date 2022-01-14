@@ -11,5 +11,5 @@ export const SDG17_Video:VideoProps = {
     sdg: "SDG17",
     logo: Logo,
     source: Nachhaltigkeit_Definition_allgemein ,
-    quelle:"https://bit.ly/3Imx0Nt "
+    quelle:"ZDF/logo/Karola Körber "
 }

@@ -11,5 +11,5 @@ export const SDG15_Video:VideoProps = {
     sdg: "SDG15",
     logo: Logo,
     source: Artensterben ,
-    quelle:"https://bit.ly/3xQUDZD"
+    quelle:"3sat/nano/scobel/Harald Zander/Claus Ast/Jochen Schmidt"
 }

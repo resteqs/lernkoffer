@@ -11,5 +11,5 @@ export const SDG16_Video:VideoProps = {
     sdg: "SDG16",
     logo: Logo,
     source: Rechtsprechung_Rom ,
-    quelle:"https://bit.ly/3xVWiNG"
+    quelle:"ZDF/Terra X/Gruppe 5/ Susanne Utzt, Cristina Trebbi/ Jens Boeck, Dieter Stürmer / Fabian Wienke / Sebastian Martinez/ xkopp, polloq"
 }

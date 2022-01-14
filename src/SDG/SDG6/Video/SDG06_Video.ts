@@ -11,5 +11,5 @@ export const SDG06_Video:VideoProps = {
     sdg: "SDG06",
     logo: Logo,
     source: Aquädukte,
-    quelle:"https://bit.ly/3rAmpbz"
+    quelle:"ZDF/Terra X/Gruppe 5/ Susanne Utzt, Cristina Trebbi/ Jens Boeck, Dieter Stürmer / Fabian Wienke / Sebastian Martinez/ xkopp, polloq"
 }

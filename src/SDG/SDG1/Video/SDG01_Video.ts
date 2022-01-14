@@ -11,5 +11,5 @@ export const SDG01_Video:VideoProps = {
     sdg: "SDG01",
     logo: Logo,
     source: Video,
-    quelle:"https://bit.ly/3ppIvLo"
+    quelle:"ZDF/ Terra X/ Gruppe5 /Sabine Klauser / Sebastian Martinez:"
 }

@@ -11,5 +11,5 @@ export const SDG02_Video:VideoProps = {
     sdg: "SDG02",
     logo: Logo,
     source: Video,
-    quelle:"https://bit.ly/3DrDFC6"
+    quelle:"3sat/nano/scobel/Kerstin Achenbach/Claus Ast"
 }

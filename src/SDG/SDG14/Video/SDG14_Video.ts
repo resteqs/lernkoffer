@@ -11,5 +11,5 @@ export const SDG14_Video:VideoProps = {
     sdg: "SDG14",
     logo: Logo,
     source: Grindwal_Video ,
-    quelle:"https://bit.ly/34pUrG4"
+    quelle:"ZDF/Terra X/E. z. Eulenburg, I. Zink, Oliver Roetz, WENDEVARGA, Region Five"
 }

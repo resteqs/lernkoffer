@@ -11,5 +11,5 @@ export const SDG09_Video:VideoProps = {
     sdg: "SDG09",
     logo: Logo,
     source: Roboterforscher,
-    quelle:"https://bit.ly/3DlSCWf"
+    quelle:"ZDF/logo/Simone Klein"
 }

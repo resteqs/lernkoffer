@@ -11,5 +11,5 @@ export const SDG07_Video_Windrad:VideoProps = {
     sdg: "SDG07",
     logo: Logo,
     source: Windräder,
-    quelle:"https://bit.ly/3GdcXPE"
+    quelle:"ZDF/Pur+/Autorenkombinat/Tobias Schönke/Rita Gerhardus-Faust/Jochen Schmidt"
 }

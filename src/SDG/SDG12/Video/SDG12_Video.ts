@@ -11,5 +11,5 @@ export const SDG12_Video:VideoProps = {
     sdg: "SDG12",
     logo: Logo,
     source: Textilien_Video ,
-    quelle:"https://bit.ly/3eURLlO"
+    quelle:"3sat/nano/medicine/Dunja Keuper/Johannes Kröger,Marius Jelonek/Catrin Füller"
 }

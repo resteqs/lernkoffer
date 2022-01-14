@@ -11,5 +11,5 @@ export const SDG11_Video:VideoProps = {
     sdg: "SDG11",
     logo: Logo,
     source: erste_Grosssiedlung_der_Menschheit ,
-    quelle:"https://bit.ly/3opjala"
+    quelle:"ZDF/Terra X/Film Produktion Stein e.K./Alexander Hogh/Martin Papirowski/Timm Westen, Roxana Ardelean/Golem Studio/Alexander Leuck/Frauenhofer Intitut für Graphische Datenverarbeitung/Christofori u.Partner"
 }
