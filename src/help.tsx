@@ -165,7 +165,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG11/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow">
-                            <Link to ="/SDG13/tutorial/page1">Spiel 1 ???</Link>
+                            <Link to ="/SDG13/Tutorial">Spiel 1 ???</Link>
                             <p>und</p>
                             <Link to ="/SDG13/Spiel2/">Spiel 2 DND ???</Link>
                         </td>

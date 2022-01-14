@@ -406,6 +406,7 @@ import { SDG14_Video } from "./SDG/SDG14/Video/SDG14_Video";
 import { SDG15_Video } from "./SDG/SDG15/Video/SDG15_Video";
 import { SDG16_Video } from "./SDG/SDG16/Video/SDG16_Video";
 import { SDG17_Video } from "./SDG/SDG17/Video/SDG17_Video";
+import { SDG13_Spiel_Tutorial } from "./SDG/SDG13/Spiel/SDG13_Spiel_Tutorial";
 
 
 
@@ -661,6 +662,8 @@ export const App = (): JSX.Element => {
             <Route exact path="/SDG13/tutorial/page1" component={page141}/>                    
             <Route exact path="/SDG13/tutorial/page2" component={page142}/>
             <Route exact path="/SDG13/tutorial/page3" component={page143}/>
+            <Route exact path="/SDG13/Tutorial"> <TextComponent sdg={SDG13_Spiel_Tutorial}/> </Route>
+
 
             <Route exact path="/SDG13/Spiel1"  component={play13}/>
             <Route exact path="/SDG13/Spiel1/akw" component={akw}/>                   

@@ -16,15 +16,6 @@ export const TextComponent = (props: Props): JSX.Element => {
     fontSize: "x-large",
     padding: "50px",
     textAlign: "center",
-    /*
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    border-width: 10px;
-    font-size: 35px;
-    height: 650px;
-    */
-    
     };
 
     const incrementCount = (): void => {
