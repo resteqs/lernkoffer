@@ -10,7 +10,7 @@ export interface InfotextProps {
     header: Record<number, string>;
     logo: string;
     eg: string;
-    audioFile?: string;
+    audioFile: Record<number, string>;
 }
 
 export interface ModalProps {
@@ -146,4 +146,5 @@ export interface VideoProps {
     source;
     text?: Record<number, JSX.Element| string> ; 
     quelle: string;
+    isCCBY?: boolean;
 }

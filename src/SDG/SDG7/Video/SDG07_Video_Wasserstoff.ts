@@ -11,5 +11,6 @@ export const SDG07_Video_Wasserstoff:VideoProps = {
     sdg: "SDG07",
     logo: Logo,
     source: Wasserstoff,
-    quelle:"https://bit.ly/3JJGpix"
+    quelle:"https://www.tagesschau.de/multimedia/video/video-cc-199~_parentId-creativecommonsdossier-101.html",
+    isCCBY: true
 }
