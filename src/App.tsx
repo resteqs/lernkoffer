@@ -162,7 +162,6 @@ import { SDG08_GB } from "./SDG/SDG8/Gute Bsp/SDG08_GB";
 /**                               Infotext                                   */
 import { SDG08_Infotext } from "./SDG/SDG8/Info/SDG08_Infotext";
 /**                                 Quiz                                     */
-import { SDG08_Quiz_Prolog } from "./SDG/SDG8/Quiz/SDG08_Quiz_Prolog";
 import { SDG08_Quiz } from "./SDG/SDG8/Quiz/SDG08_Quiz";
 /**                                Spiel                                     */
 import { SDG08_Spiel } from "./SDG/SDG8/Spiel/SDG08_Spiel";
@@ -566,8 +565,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
             <Route exact path="/SDG08/Infotext"><InfotextComponent sdg={SDG08_Infotext}/></Route>
 /**                                 Quiz                                     */
-            <Route exact path="/SDG08/Quiz/Prolog" component={SDG08_Quiz_Prolog}/>
-            <Route exact path="/SDG08/Quiz" component={SDG08_Quiz}/>
+        <Route exact path="/SDG08/Quiz"><QuizMixedComponent sdg={SDG08_Quiz}/></Route>
 
 /**                                Spiel                                     */
             <Route exact path="/SDG08/Spiel"><TextComponent sdg = {SDG08_Spiel}/></Route>
