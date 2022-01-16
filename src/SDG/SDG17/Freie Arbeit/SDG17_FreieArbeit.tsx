@@ -29,10 +29,10 @@ export const SDG17_FreieArbeit: TextProps = {
             <div>
                 {" "}
                 Die 17 Nachhaltigkeitsziele gehen die ganze Bevölkerung an, also die Regierungen, aber auch die
-                Bür-ger:innen und die Unternehmen. Es ist wichtig, dass diese zusammenarbeiten und gemeinsam die
-                Voraussetzungen für Nachhaltigkeit auf allen Ebenen schaffen. Das fordert das 17. Nachhaltigkeits-ziel:
+                Bürger:innen und die Unternehmen. Es ist wichtig, dass diese zusammenarbeiten und gemeinsam die
+                Voraussetzungen für Nachhaltigkeit auf allen Ebenen schaffen. Das fordert das 17. Nachhaltigkeitsziel:
                 eine globale Partnerschaft aller Beteiligten. Ein zentrales Leitprinzip für Partnerschaften weltweit ist
-                „niemanden zurückzulassen“ (engl.: “leave no one behind“, LNOB). Es beschreibt die gemein-schaftliche
+                „niemanden zurückzulassen“ (engl.: “leave no one behind“, LNOB). Es beschreibt die gemeinschaftliche
                 Verantwortung, alle Menschen auf dem Weg zu nachhaltiger Entwicklung mitzunehmen.
             </div>
         ),
@@ -48,7 +48,7 @@ export const SDG17_FreieArbeit: TextProps = {
             <div>
                 {" "}
                 Als erstes braucht jede:r ein Blatt Papier und Stifte. Nun legt eine Hand aufs Papier, spreizt eure
-                Fin-ger auseinander, nehmt mit der anderen Hand einen Stift und zeichnet einmal außen herum. Das sollte
+                Finger auseinander, nehmt mit der anderen Hand einen Stift und zeichnet einmal außen herum. Das sollte
                 am Ende etwa so aussehen (die Zahlen müsst ihr in eurer Zeichnung nicht übernehmen):
                 <ul>
                     {" "}
@@ -84,7 +84,7 @@ export const SDG17_FreieArbeit: TextProps = {
         5: (
             <div>
                 <ul className="ul">
-                    <li className="li"> 8: Menschenwürdige Arbeit und Wirtschafts-wachstum </li>
+                    <li className="li"> 8: Menschenwürdige Arbeit und Wirtschaftswachstum </li>
                     <li className="li"> 9: Industrie, Innovation und Infrastruktur </li>
                     <li className="li"> 10: weniger Ungleichheiten </li>
                     <li className="li"> 11: Nachhaltige Städte und Gemeinden </li>
@@ -128,9 +128,9 @@ export const SDG17_FreieArbeit: TextProps = {
         8: (
             <div>
                 {" "}
-                Wenn ihr fertig seid, kann jede:r seinen/ihren Handabdruck vorstellen und alle überlegen gemein-sam, wie
+                Wenn ihr fertig seid, kann jede:r seinen/ihren Handabdruck vorstellen und alle überlegen gemeinsam, wie
                 man die Ideen am besten umsetzen kann. Diese könnt ihr auch auf einem Plakat sammeln. Am Ende kann
-                jede:r in die Mitte der Hand seinen/ihren Namen schreiben und den Handabdruck auf-hängen.
+                jede:r in die Mitte der Hand seinen/ihren Namen schreiben und den Handabdruck aufhängen.
             </div>
         ),
     },

@@ -1,10 +1,17 @@
-/* eslint-disable unicorn/filename-case */ 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import soundfile from "./test.mp3";
+
+// eslint-disable-next-line unicorn/filename-case
 import Logo from "../../../SDGLogos/Goal-SDG08.png";
 import EG from "../../../EG/EG2.png";
 import { InfotextProps } from "../../../Interfaces/SDG";
+
+import SDG5_1 from "./audio/8_1.mp3"
+import SDG5_2 from "./audio/8_2.mp3"
+import SDG5_3 from "./audio/8_3.mp3"
+import SDG5_4 from "./audio/8_4.mp3"
+import SDG5_5 from "./audio/8_5.mp3"
+import SDG5_6 from "./audio/8_6.mp3"
+import SDG5_7 from "./audio/8_7.mp3"
+import SDG5_8 from "./audio/8_8.mp3"
 
 export const SDG08_Infotext: InfotextProps = {
     number: 8,
@@ -21,6 +28,7 @@ export const SDG08_Infotext: InfotextProps = {
         8: "Wenn dir auffällt, dass jemand unfair bezahlt wird, kannst du dies örtlichen Behörden melden, um sie darauf aufmerksam zu machen. Achte beim Einkaufen darauf, dass du Produkte kaufst, die fair produziert wurden um, den Bauern und Produzenten einen fairen Lohn zu ermöglichen.",
     },
     header: {
+
         2: "Warum?",
         3: "Was ist das Problem?",
         4: "Was ist das Problem?",
@@ -31,6 +39,14 @@ export const SDG08_Infotext: InfotextProps = {
     },
     logo: Logo,
     eg: EG,
-    audioFile: soundfile,
-    /* eslint-enable unicorn/filename-case */ 
+    audioFile: {
+        1: SDG5_1,
+        2: SDG5_2,
+        3: SDG5_3,
+        4: SDG5_4,
+        5: SDG5_5,
+        6: SDG5_6,
+        7: SDG5_7,
+        8: SDG5_8,
+    },
 };
