@@ -1,50 +1,29 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable eslint-comments/no-duplicate-disable */
-/* eslint-disable eslint-comments/disable-enable-pair */
-/* eslint-disable react/jsx-pascal-case */
-/* eslint-disable eslint-comments/disable-enable-pair */
-// eslint-disable-next-line eslint-comments/no-duplicate-disable
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable no-eval */
-/* eslint-disable unicorn/filename-case */
 
+// eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
-import renderer from "react-dom";
-import { Link } from "react-router-dom";
-import infotextbutton from "../../../../styles/Infotextbutton.module.css";
-import "../../../../styles/colour_sdgs.css";
-import "../../../../styles/infotext.css";
 import Logo from "../../../../SDGLogos/Goal-SDG02.png";
 import EG from "../../../../EG/EG2.png";
-import "../../Spiel/sdg02.css";
-import ReactAudioPlayer from "react-audio-player";
+import { InfotextProps } from "../../../../Interfaces/SDG";
 
-export const SDG02_Infotext = (): JSX.Element => {
-    // eslint-disable-next-line prefer-const
-    let [showtext, setText] = React.useState(1);
-    const sdg = "SDG02";
+import SDG2_1 from "./audio/SDG2_1.mp3"
+import SDG2_2 from "./audio/SDG2_2.mp3"
+import SDG2_3 from "./audio/SDG2_3.mp3"
+import SDG2_4 from "./audio/SDG2_4.mp3"
+import SDG2_5 from "./audio/SDG2_5.mp3"
+import SDG2_6 from "./audio/SDG2_6.mp3"
+import SDG2_7 from "./audio/SDG2_7.mp3"
+import SDG2_8 from "./audio/SDG2_8.mp3"
 
-    const text = {
+export const SDG02_Infotext: InfotextProps= {
+    number: 2,
+    name: "Kein Hunger",
+    sdg: "SDG02",
+    text: {
         1: (
-            <div>
-                <p>
-                    <b>
-                        „den Hunger beenden, Ernährungssicherheit und eine bessere Ernährung erreichen und eine
-                        nachhaltige Landwirtschaft fördern“
-                    </b>
-                </p>
-            </div>
+            "„den Hunger beenden, Ernährungssicherheit und eine bessere Ernährung erreichen und eine nachhaltige Landwirtschaft fördern“"
         ),
         2: (
-            <div>
-                <p className="Infotext02">
-                    Wenn Menschen extrem hungern und unterernährt sind, kann es keine nachhaltige Entwicklung geben. Da
-                    sie so wenig Essen haben, werden sie geschwächt und können schneller krank werden. Infolgedessen
-                    können sie nicht mehr so viel arbeiten und verdienen weniger Geld. Ohne das können sie nicht mehr
-                    Essen kaufen. Das heißt, dass durch den Hunger und die Unterernährung eine Falle entsteht, aus
-                    welcher sie sich nicht so einfach befreien können.{" "}
-                </p>
-            </div>
+            "Wenn Menschen extrem hungern und unterernährt sind, kann es keine nachhaltige Entwicklung geben. Da sie so wenig Essen haben, werden sie geschwächt und können schneller krank werden. Infolgedessen können sie nicht mehr so viel arbeiten und verdienen weniger Geld. Ohne das können sie nicht mehr Essen kaufen. Das heißt, dass durch den Hunger und die Unterernährung eine Falle entsteht, aus welcher sie sich nicht so einfach befreien können."
         ),
         3: (
             <div>
@@ -106,146 +85,27 @@ export const SDG02_Infotext = (): JSX.Element => {
                 </p>
             </div>
         ),
-    };
-    const header = {
-        1: (
-            <div>
-                <p> </p>
-            </div>
-        ),
-        2: (
-            <div>
-                <p>Warum?</p>
-            </div>
-        ),
-        3: (
-            <div>
-                <p>Was ist das Problem?</p>
-            </div>
-        ),
-        4: (
-            <div>
-                <p>Was ist das Problem?</p>
-            </div>
-        ),
-        5: (
-            <div>
-                <p>Was ist das Problem?</p>
-            </div>
-        ),
-        6: (
-            <div>
-                <p>Wie ist dieses Thema mit uns verbunden?</p>
-            </div>
-        ),
-        7: (
-            <div>
-                <p>Was können wir tun?</p>
-            </div>
-        ),
-        8: (
-            <div>
-                <p>Was können wir tun?</p>
-            </div>
-        ),
-    };
+    },
 
-    function incrementCount(): void {
-        setText(showtext + 1);
+    header: {
+        2: "Warum",
+        3: "Was ist das Problem?",
+        4: "Was ist das Problem?",
+        5: "Was ist das Problem?",
+        6: "Wie ist dieses Thema mit uns verbunden?",
+        7: "Was können wir tun",
+        8: "Was können wir tun"
+    },
+    logo: Logo,
+    eg: EG,
+    audioFile: {
+        1: SDG2_1,
+        2: SDG2_2,
+        3: SDG2_3,
+        4: SDG2_4,
+        5: SDG2_5,
+        6: SDG2_6,
+        7: SDG2_7,
+        8: SDG2_8
     }
-
-    function decrementCount(): void {
-        setText(showtext - 1);
-    }
-    let buttonBack;
-    let buttonNext;
-    let buttonEnd;
-    // eslint-disable-next-line prefer-const
-    buttonBack =
-        showtext >= 2 ? (
-            <div className="backbutton">
-                {" "}
-                <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
-                    <span className={infotextbutton.shadow} />
-                    <span className={infotextbutton.edge} />
-                    <span className={infotextbutton.front}>
-                        <p className={infotextbutton.buttontext}>Zurück</p>
-                    </span>
-                </button>
-            </div>
-        ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
-        );
-    // eslint-disable-next-line prefer-const
-    buttonNext =
-        showtext < 8 ? (
-            <div className="nextbutton">
-                {" "}
-                <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
-                    <span className={infotextbutton.shadow} />
-                    <span className={infotextbutton.edgegreen} />
-                    <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                        <p className={infotextbutton.buttontext}>Weiter</p>
-                    </span>
-                </button>
-            </div>
-        ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
-        );
-    // eslint-disable-next-line prefer-const
-    buttonEnd =
-        showtext === 8 ? (
-            <div className="nextbutton">
-                <div style={{ marginTop: "10px" }} className="nextbutton">
-                    {" "}
-                    <Link to="/Vorlagen/Endscreen">
-                        {" "}
-                        <div>
-                            <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
-                                <span className={infotextbutton.shadow} />
-                                <span className={infotextbutton.edgegreen} />
-                                <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                                    <p className={infotextbutton.buttontext}>Weiter</p>
-                                </span>
-                            </button>
-                        </div>
-                    </Link>{" "}
-                </div>
-            </div>
-        ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
-        );
-
-    return (
-        <div>
-            <div className={`colour_${sdg}_header`}>
-                <div className="header">
-                    Kein Hunger <img className="sdglogo" alt="logo" src={Logo} />
-                </div>
-            </div>
-            <div className="infotextbox">
-                <p className="headertext">
-                    <b>{header[showtext]}</b>
-                </p>{" "}
-                <br />
-                <p className="bodytext"> {text[showtext]} </p>
-            </div>
-            {buttonBack}
-            {buttonNext}
-            {buttonEnd}
-            <ReactAudioPlayer
-                src="https://cdn.discordapp.com/attachments/807650919780057129/916030116767891456/Mobiles_Museum_Infotext_4.mp3"
-                controls
-                style={{ position: "absolute", top: "1100px", left: "80px" }}
-            />{" "}
-            <img className="EG " alt="" src={EG} />
-        </div>
-    );
-};
-renderer.render(<SDG02_Infotext />, document.getElementById("root"));
+}

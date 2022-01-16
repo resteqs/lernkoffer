@@ -83,7 +83,7 @@ export const InfotextComponent = (props: Props): JSX.Element => {
             {buttonBack}
             {buttonNext}
             {buttonEnd}
-            <audio controls src={props.sdg.audioFile} style={{ position: "absolute", top: "1100px", left: "80px" }}>
+            <audio controls src={props.sdg.audioFile[showtext]} style={{ position: "absolute", top: "1100px", left: "80px" }}>
                 Your browser does not support the audio element.
             </audio>
             <img className="EG" alt="" src={props.sdg.eg} />

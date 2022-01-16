@@ -10,9 +10,10 @@ export const Home  = ():JSX.Element => {
                 Go to:    
             </div> 
             <div className = "header">
-            <Link  to = "/Help" >Help</Link>
+            <Link  to = "/Help">Help</Link>
             </div>
-            <button type="button">Hallo</button>
         </div>
     );
 };
+// <button type="button">Hallo</button>
+

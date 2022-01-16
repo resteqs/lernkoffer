@@ -1,10 +1,16 @@
-/* eslint-disable unicorn/filename-case */ 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import soundfile from "./test.mp3";
+
+// eslint-disable-next-line unicorn/filename-case
 import Logo from "../../../SDGLogos/Goal-SDG14.png";
 import EG from "../../../EG/EG2.png";
 import { InfotextProps } from "../../../Interfaces/SDG";
+import SDG14_1 from "./audio/SDG14_1.mp3"
+import SDG14_2 from "./audio/SDG14_2.mp3"
+import SDG14_3 from "./audio/SDG14_3.mp3"
+import SDG14_4 from "./audio/SDG14_4.mp3"
+import SDG14_5 from "./audio/SDG14_5.mp3"
+import SDG14_6 from "./audio/SDG14_6.mp3"
+import SDG14_7 from "./audio/SDG14_7.mp3"
+import SDG14_8 from "./audio/SDG14_8.mp3"
 
 export const SDG14_Infotext: InfotextProps = {
     number: 14,
@@ -31,6 +37,14 @@ export const SDG14_Infotext: InfotextProps = {
     },
     logo: Logo,
     eg: EG,
-    audioFile: soundfile,
-    /* eslint-enable unicorn/filename-case */ 
+    audioFile: {
+        1: SDG14_1,
+        2: SDG14_2,
+        3: SDG14_3,
+        4: SDG14_4,
+        5: SDG14_5,
+        6: SDG14_6,
+        7: SDG14_7,
+        8: SDG14_8,
+    },
 };
