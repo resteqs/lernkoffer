@@ -10,10 +10,6 @@ export const SDG08_Video:VideoProps = {
     sdg: "SDG08",
     logo: Logo,
     source: Infaltion,
-<<<<<<< HEAD
-    quelle:"Tagesschau"
-=======
-    quelle:"https://www.tagesschau.de/multimedia/video/video-cc-197~_parentId-creativecommonsdossier-101.html",
+    quelle:"tageschau",
     isCCBY:true
->>>>>>> 042d24ae403aa59b89f5b21cbb391410cca5f377
 }
