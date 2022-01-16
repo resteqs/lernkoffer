@@ -17,7 +17,7 @@ import  Tierübersetzter  from "./Media/Tierübersetzter.jpg"
 
 export const SDG09_Quiz:QuizProps = {
     sdgNumber: 9,
-    sdgTitle: "Sauberes Wasser und Sanitäreinrichtungen",
+    sdgTitle: "Innovationen",
     sdg: "SDG09",
     logo: Logo,
     tile: { 
