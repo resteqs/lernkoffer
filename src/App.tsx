@@ -180,6 +180,7 @@ import { SDG09_GutesBeispiel } from "./SDG/SDG9/Gute Bsp/SDG09_GutesBeispiel";
 /**                               Infotext                                   */
 import { SDG09_Infotext } from "./SDG/SDG9/Info/SDG09_Infotext";
 /**                                 Quiz                                     */
+import { SDG09_Quiz } from "./SDG/SDG9/Quiz/SDG09_Quiz";
 /**                                Spiel                                     */
 import { SDG09_Spiel } from "./SDG/SDG9/Spiel/SDG09_Spiel";
 /**                                Video                                     */
@@ -586,6 +587,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
             <Route exact path="/SDG09/Infotext"><InfotextComponent sdg={SDG09_Infotext}/></Route>
 /**                                 Quiz                                     */
+<Route exact path="/SDG09/Quiz"><Quiz_Component sdg={SDG09_Quiz}/></Route>
 /**                                Spiel                                     */
             <Route exact path="/SDG09/Spiel" component={SDG09_Spiel}/>
 /**                                Video                                     */
