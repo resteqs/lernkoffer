@@ -443,7 +443,7 @@ export const App = (): JSX.Element => {
 /**                                 Quiz                                     */
                 <Route exact path="/SDG01/Quiz"><Quiz_Component sdg = {SDG01_Quiz}/></Route>
 /**                                Spiel                                     */
-<Route exact path="/SDG01/Spiel"> <TextComponent sdg={SDG01_Spiel}/></Route>
+                <Route exact path="/SDG01/Spiel"> <TextComponent sdg={SDG01_Spiel}/></Route>
 
 /**                                Video                                     */
                 <Route exact path="/SDG01/Video"><VideoComponent sdg = {SDG01_Video}/></Route>
@@ -458,7 +458,7 @@ export const App = (): JSX.Element => {
 /**                             Gutes Beispiel                               */
             <Route exact path = "/SDG02/GutesBeispiel" component={SDG02_GutesBeispiel}/>
 /**                               Infotext                                   */
-            <Route exact path ="/SDG02/Infotext/Infotext" component={SDG02_Infotext}/>
+            <Route exact path ="/SDG02/Infotext/Infotext"><InfotextComponent sdg={SDG02_Infotext}/></Route>
             <Route exact path ="/SDG02/Infotext/Fable" component={SDG02_Infotext_Fable}/>
 /**                                 Quiz                                     */
             <Route exact path ="/SDG02/Quiz"><Quiz_Component sdg={SDG02_Quiz}/></Route>
@@ -477,7 +477,7 @@ export const App = (): JSX.Element => {
 /**                             Gutes Beispiel                               */
             <Route exact path = "/SDG03/GutesBeispiel"> <Quiz3Component sdg={SDG03_GutesBeispiel}/></Route>
 /**                               Infotext                                   */
-            <Route exact path="/SDG03/Infotext" component={SDG03_Infotext}/>
+            <Route exact path="/SDG03/Infotext"><InfotextComponent sdg = {SDG03_Infotext}/></Route>
 /**                                 Quiz                                     */
             <Route exact path = "/SDG03/Quiz"> <TextComponent sdg={SDG03_Quiz}/></Route>
 /**                                Spiel                                     */

@@ -38,8 +38,6 @@
     float: right;
     position: absolute; 
     top: 450px;
-    
-    
 }
 
 .Infotext04 {
@@ -56,9 +54,4 @@ font-size: 31px;}
     margin-left: 100px;
     font-size: 40px;
     margin-top: 40px;
-}
-.EG{
-    max-width: 300px;
-    position: absolute;
-    z-index: 4;
 }

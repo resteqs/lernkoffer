@@ -1,10 +1,17 @@
-/* eslint-disable unicorn/filename-case */ 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import soundfile from "./test.mp3";
+
+// eslint-disable-next-line unicorn/filename-case
 import Logo from "../../../SDGLogos/Goal-SDG01.png";
 import EG from "../../../EG/EG2.png";
 import { InfotextProps } from "../../../Interfaces/SDG";
+import SDG1_1 from "./audio/SDG1_1.mp3"
+import SDG1_2 from "./audio/SDG1_2.mp3"
+import SDG1_3 from "./audio/SDG1_3.mp3"
+import SDG1_4 from "./audio/SDG1_4.mp3"
+import SDG1_5 from "./audio/SDG1_5.mp3"
+import SDG1_6 from "./audio/SDG1_6.mp3"
+import SDG1_7 from "./audio/SDG1_7.mp3"
+
+
 
 export const SDG01_Infotext:InfotextProps = {
     number: 1,
@@ -29,6 +36,13 @@ export const SDG01_Infotext:InfotextProps = {
     },
     logo: Logo,
     eg: EG,
-    audioFile: soundfile,
-    /* eslint-enable unicorn/filename-case */ 
+    audioFile: {
+        1: SDG1_1,
+        2: SDG1_2,
+        3: SDG1_3,
+        4: SDG1_4,
+        5: SDG1_5,
+        6: SDG1_6,
+        7: SDG1_7,
+    },
 };
