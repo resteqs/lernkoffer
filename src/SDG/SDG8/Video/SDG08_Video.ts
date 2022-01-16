@@ -11,5 +11,5 @@ export const SDG08_Video:VideoProps = {
     sdg: "SDG08",
     logo: Logo,
     source: Infaltion,
-    quelle:"https://bit.ly/31rUUX2"
+    quelle:"Tagesschau"
 }
