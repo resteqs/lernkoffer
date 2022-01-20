@@ -47,8 +47,8 @@ export const QuizButton = (props: QuizButtonProps):JSX.Element => {
                 >
                     <div
                         style={{
-                            width: "500px",
-                            height: "500px",
+                            width: "25vw",
+                            height: "25vw",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",

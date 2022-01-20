@@ -96,7 +96,7 @@ export const Quiz3Component = (props: Props): JSX.Element => {
     );
 
     const buttonCheck = (
-        <div style={{ top: "900px", position: "fixed", left: "800px" }}>
+        <div style={{ top: "90vh", position: "absolute", left: "800px" }}>
             <FancyButton
                 onClick={openModal}
                 version="green"
@@ -109,7 +109,7 @@ export const Quiz3Component = (props: Props): JSX.Element => {
     );
 
     const buttonBack = (
-        <div style={{ top: "900px", position: "fixed" }}>
+        <div style={{ top: "90vh", position: "absolute" }}>
             <FancyButton
                 onClick={decrementCount}
                 version="red"

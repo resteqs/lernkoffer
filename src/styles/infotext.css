@@ -14,14 +14,17 @@
 .nextbutton {
     float: right;
     justify-content: space-around;
-    margin-right: 5%;
-    margin-top: -60px;
+    margin-left: 80vw;
+    top: 75vh;
+    position: absolute;
 }
 .backbutton {
     float: left;
     justify-content: space-around;
-    margin-left: 8em;
-    margin-top: -60px;
+    margin-left: 5vw;
+    position: absolute;
+    top: 75vh;
+
 }
 
 .checkButton {

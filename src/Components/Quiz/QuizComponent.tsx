@@ -15,7 +15,7 @@ interface Props {
 
 // orientiert an 04 Quiz
 export const Quiz_Component = (props: Props): JSX.Element => {
-    const [showtext, setText] = React.useState(1);
+    const [showtext, setText] = React.useState(12);
     const [itemSelected, setSelectedItem] = React.useState(0);
     const [modalIsOpen, setIsOpen] = React.useState(false);
     const maxSlides = Object.keys(props.sdg.isQuizActive).length;
@@ -85,7 +85,7 @@ export const Quiz_Component = (props: Props): JSX.Element => {
     );
 
     const buttonCheck = (
-        <div style={{ top: "900px",position: "fixed",  left: "800px" }}>
+        <div style={{ top: "75vh", position: "absolute", left: "41vw"  }}>
             <FancyButton
                 onClick={openModal}
                 version="green"
@@ -98,29 +98,14 @@ export const Quiz_Component = (props: Props): JSX.Element => {
     );
 
     const buttonBack = (
-        <div style={{ top: "900px", position: "fixed" }}>
-            <FancyButton
-                onClick={decrementCount}
-                version="red"
-                className="backbutton"
-                active={props.sdg.isQuizActive[showtext] === false}
-            >
-                Zurück
-            </FancyButton>
-        </div>
+        <FancyButton onClick={decrementCount} version="red" className="backbutton" active={showtext > 1}>
+            Zurück
+        </FancyButton>
     );
     const buttonNext = (
-        <div style={{ top: "900px", right: "60px", position: "fixed" }}>
-            <FancyButton
-                onClick={incrementCount}
-                version="green"
-                className="nextbutton"
-                active={props.sdg.isQuizActive[showtext] === false}
-            >
-                Weiter
-            </FancyButton>
-        </div>
-
+        <FancyButton onClick={incrementCount} version="green" className="nextbutton" active={showtext < maxSlides}>
+            Weiter
+        </FancyButton>
     );
 
     const buttonEnd = (
