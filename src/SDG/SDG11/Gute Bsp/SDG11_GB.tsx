@@ -54,11 +54,11 @@ export const SDG11_GB: TextProps = {
             <div>
                 Zuerst solltest du all das benötigte Material vorbereiten. Das wäre:
                 <ul>
-                    <li> Eine Dose (am besten machst du diese vorher grob sauber)</li>
-                    <li> Ein Draht</li>
+                    <li> <b> - Eine Dose </b> (am besten machst du diese vorher grob sauber)</li>
+                    <li> <b> - Ein Draht </b> </li>
                     <li>
                         {" "}
-                        Und natürlich die Füllung: Bambus (wenn du das nicht findest, dann nimm einfach andere hohle
+                        <b> - Und natürlich die Füllung: </b> Bambus (wenn du das nicht findest, dann nimm einfach andere hohle
                         Äste oder lass diese weg), zusammengerolltes Papier, Holzwolle, Stroh, dünne Äste, Tannenzapfen
                         oder andere Sachen, die deiner Meinung nach gut wären (Tipp: nimm unterschiedliche Materialien,
                         damit verschiedene Tiere dein Hotel nutzen können)
@@ -69,10 +69,10 @@ export const SDG11_GB: TextProps = {
         4: (
             <div>
                 <ul>
-                    <li> Ein Nagel und ein Hammer</li>
+                    <li> <b> - Ein Nagel und ein Hammer </b> </li>
                     <li>
                         {" "}
-                        Optional: Farbe oder Wolle, um es bunter zu machen und/oder Fäden und Perlen oder Knöpfe (zum
+                        <b> - Optional: </b> Farbe oder Wolle, um es bunter zu machen und/oder Fäden und Perlen oder Knöpfe (zum
                         Beispiel, wenn du es wie ein Tier gestalten möchtest, das Beine hat)
                     </li>
                 </ul>

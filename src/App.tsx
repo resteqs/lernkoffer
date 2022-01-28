@@ -623,7 +623,7 @@ export const App = (): JSX.Element => {
             <Route exact path="/SDG11/Infotext"><InfotextComponent sdg={SDG11_Infotext}/></Route>
 /**                                 Quiz                                     */
 /**                                Spiel                                     */
-            <Route exact path="/SDG11/Spiel" component={SDG11_Spiel}/>
+            <Route exact path="/SDG11/Spiel"><TextComponent sdg= {SDG11_Spiel}/>  </Route>
 /**                                Video                                     */
             <Route exact path="/SDG11/Video"><VideoComponent sdg = {SDG11_Video}/></Route>
 
