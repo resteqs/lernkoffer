@@ -24,7 +24,7 @@ export const SDG13_Spiel_Tutorial: TextProps = {
         <div>
             <p>Kannst du erraten, welches Element welche Menge an Gasen produziert? Klicke sie an und finde es heraus.</p>
             <div style={{ textAlign: "center", marginTop: "10vh"  }}>
-                <Link to = "/">
+                <Link to = "/SDG13/Spiel1">
                     <InfotextButton version="green">
                         Zum Tippspiel
                     </InfotextButton>

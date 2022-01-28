@@ -89,9 +89,7 @@ export const Quiz3Component = (props: Props): JSX.Element => {
                 active={props.sdg.isQuizActive[showtext] === true}
                 onClick={buttonRightOnClick}
                 styleDiv={{ float:"right", }}
-            />
-
-            
+            />  
         </div>
     );
 

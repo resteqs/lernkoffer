@@ -116,7 +116,7 @@ export const SDG15_Quiz: Quiz3OProps = {
     buttonMiddleContent: {
         4: (
             <div style={{ fontSize: "80px" }}>
-                <p>Ein</p> Elefant
+                <p>Ein</p> Nashorn
             </div>
         ),
         5: (
@@ -238,7 +238,7 @@ export const SDG15_Quiz: Quiz3OProps = {
         5: "Die falsche Aussage war: “Durch ihre großen Ohren können sie mögliche Feinde schon über weite Entfernungen hören. So schützt sich der Elefant vor anderen Tieren“ Die Erklärung dafür ist: Natürlich können die Elefanten so auch besser hören, doch das ist nicht der eigentliche Zweck der Ohren! Eigentlich sollen sie den Elefanten kühlen: Die Tiere fächeln sich Luft zu, indem sie mit den großen Ohren wedeln, aber auch dadurch, dass sie Wärme in die Ohren leiten und die Ohren dann durchs Wedeln wieder abkühlen",
         7: "Das war eine Fliege",
         8: "Die falsche Aussage war: “Einige Fliegenarten sind vom Aussterben bedroht, weil sie immer wieder von Menschen grundlos erschlagen werden“ Die Erklärung dafür ist: Zwar stimmt es, dass Fliegen manchmal grundlos erschlagen werden, doch sind sie deswegen noch nicht gefährdet im Moment. Bienen sind aber zum Beispiel dadurch gefährdet, dass es inzwischen viel weniger Blumen gibt. So haben die Bienen dann vielleicht irgendwann nichts mehr zu essen.",
-        10: "Das war ein Elefant",
+        10: "Das war ein Fuchs",
         11: "Die falsche Aussage war: “Weil ihr Fell sehr wertvoll ist, werden sie oft gejagt und sind deswegen vom Aussterben bedroht.“ Die Erklärung dafür ist: Fuchsfell wird kaum gekauft und deswegen wird der Fuchs auch nicht deswegen gejagt. Es ist aber, wie für fast jedes andere Tier auch, für den Fuchs eine Gefahr, dass es immer weniger freie Natur gibt, weil mehr Städte gebaut werden und Wälder abgeholzt werden",
         13: "Das war ein Koala",
         14: "Die falsche Aussage war: “Koalas legen Eier, da sie zur gleichen Tierart wie das Schnabeltier gehören, welches genauso wie der Koala nur in Australien lebt.“ Die Erklärung dafür ist: Koalas gehören zu gleichen Tierart wie Kängurus, deshalb bringen sie ihre Kinder ganz normal zur Welt, und tragen sie danach in ihrem Beutel.",
