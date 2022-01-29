@@ -17,9 +17,9 @@ interface QuizButtonProps{
 
 export const QuizButton = (props: QuizButtonProps):JSX.Element => {
     const ButtonStyle: CSSProperties = {
-        marginLeft: "150px",
-        marginRight: "150px",
-        marginTop: "60px",
+        marginLeft: "5vw",
+        marginRight: "5vw",
+        marginTop: "6vh",
         float: props.float,
         background: "none",
         borderColor: "blue",
@@ -27,10 +27,12 @@ export const QuizButton = (props: QuizButtonProps):JSX.Element => {
         borderRadius: "15px",
     }
     const maxWith: CSSProperties = {
-        maxWidth: "500px",
-        maxHeight: "500px",
+        maxWidth: "35vw",
+        maxHeight: "66vh",
         marginTop: "45px",
-        fontSize: "190px"
+        fontSize: "20vh",
+        maxInlineSize:"35vw",
+        size:"40%"
     };
 
     const active = props.active ?? true;
@@ -47,8 +49,8 @@ export const QuizButton = (props: QuizButtonProps):JSX.Element => {
                 >
                     <div
                         style={{
-                            width: "500px",
-                            height: "500px",
+                            width: "25vw",
+                            height: "25vw",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",

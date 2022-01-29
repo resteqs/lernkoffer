@@ -35,7 +35,7 @@ export const ModalQuizComponent = (props: ModalProps): JSX.Element => {
             >
                 <div className="content-header">
                     {props.answercw}
-                    <button type="button" className="personCheckOkButton" onClick={() => closeModal()}>
+                    <button type="button" style={{ bottom:"60px" }} className="personCheckOkButtonComp"  onClick={() => closeModal()}>
                         <b>Okay</b>
                     </button>
                 </div>

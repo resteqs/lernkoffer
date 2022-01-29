@@ -32,8 +32,19 @@ outline-width: 40px;
   outline-offset: 1.333vw;
   outline-color: red;
   outline-style: solid;
-  
-  
+}
+
+.personCheckOkButtonComp
+{
+  background: white;
+  border:none;
+  float: right;
+  margin-top: 40vh;
+  margin-right: 40px;
+  font-size: 4vw;
+  outline-offset: 1.333vw;
+  outline-color: red;
+  outline-style: solid;
 }
 .personText{
   font-size: 39px;
