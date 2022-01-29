@@ -143,7 +143,7 @@ export const SDG05_Spiel = (): JSX.Element => {
     }
     const text = {
         1: (
-            <div style={{ textAlign: "left", fontSize: "30px" }}>
+            <div style={{ textAlign: "left", fontSize: "2.6041666666667vh" }}>
                 <p>
                     <ul>
                         <li>
@@ -152,27 +152,27 @@ export const SDG05_Spiel = (): JSX.Element => {
                         </li>
                         <li>
                             {" "}
-                            Hast du auch ein Vorbild? Vielleicht deine Mama, dein Papa oder Oma und Opa. Oder vielleicht
+                            Hast du auch ein Vorbild? Vielleicht deine Mama, deinen Papa oder Oma und Opa, oder vielleicht
                             eine Lehrkraft.
                         </li>
                         <li> Wir orientieren uns oft an unseren Vorbildern.</li>
                         <li>
                             {" "}
-                            Leider wird nicht oft über Frauen geredet, die Großes geleistet haben, und deren Arbeit oder
+                            Leider wird nicht oft über Frauen geredet, die Großes geleistet haben und deren Arbeit oder
                             Persönlichkeit uns allen etwas beibringen kann.{" "}
                         </li>
                         <li>
                             {" "}
                             Deshalb kannst du nun mehr über starke Frauen aus der Vergangenheit und Gegenwart erfahren
                             und vielleicht findest du ein neues Vorbild. Sie alle haben sich sehr für Schwächere
-                            eingesetzt oder etwas andere Wichtiges bewirkt.
+                            eingesetzt oder etwas anderes Wichtiges bewirkt.
                         </li>
                     </ul>
                 </p>
             </div>
         ),
         2: (
-            <div style={{ textAlign: "left", fontSize: "30px"  }}>
+            <div style={{ textAlign: "left", fontSize: "2.6041666666667vh"  }}>
                 <p>
                     {" "}
                     Du wirst nun Bilder von Frauen sehen. Vielleicht kennst du schon jemanden? Überlegt gemeinsam, was
@@ -188,7 +188,7 @@ export const SDG05_Spiel = (): JSX.Element => {
                     style={{
                         background: "none",
                         borderStyle: "none",
-                        marginTop: "150px",
+                        marginTop: "7.8125vh",
                     }}
                     onClick={() => {
                         setIsOpen(true);
@@ -206,7 +206,7 @@ export const SDG05_Spiel = (): JSX.Element => {
                     style={{
                         background: "none",
                         borderStyle: "none",
-                        marginTop: "150px",
+                        marginTop: "7.8125vh",
                     }}
                     onClick={() => {
                         setIsOpen(true);
@@ -224,7 +224,7 @@ export const SDG05_Spiel = (): JSX.Element => {
                     style={{
                         background: "none",
                         borderStyle: "none",
-                        marginTop: "150px",
+                        marginTop: "7.8125vh",
                     }}
                     onClick={() => {
                         setIsOpen(true);
@@ -243,7 +243,7 @@ export const SDG05_Spiel = (): JSX.Element => {
                     style={{
                         background: "none",
                         borderStyle: "none",
-                        marginTop: "150px",
+                        marginTop: "7.8125vh",
                     }}
                     onClick={() => {
                         setIsOpen(true);
@@ -261,7 +261,7 @@ export const SDG05_Spiel = (): JSX.Element => {
                     style={{
                         background: "none",
                         borderStyle: "none",
-                        marginTop: "150px",
+                        marginTop: "7.8125vh",
                     }}
                     onClick={() => {
                         setIsOpen(true);
@@ -279,7 +279,7 @@ export const SDG05_Spiel = (): JSX.Element => {
                     style={{
                         background: "none",
                         borderStyle: "none",
-                        marginTop: "150px",
+                        marginTop: "7.8125vh",
                     }}
                     onClick={() => {
                         setIsOpen(true);
@@ -385,7 +385,7 @@ export const SDG05_Spiel = (): JSX.Element => {
     buttonEnd =
         showtext === maxslide ? (
             <div className="nextbutton">
-                <div style={{ marginTop: "10px" }} className="nextbutton">
+                <div style={{ marginTop: "0.52083333333333 vh" }} className="nextbutton">
                     {" "}
                     <Link to="/Vorlagen/Endscreen">
                         {" "}
@@ -528,7 +528,7 @@ export const SDG05_Spiel = (): JSX.Element => {
             }}
             closeTimeoutMS={50}
         >
-            <p style={{ fontSize: "30px" }}>{modalContent[modalOpened]}</p>
+            <p style={{ fontSize: "4vh" }}>{modalContent[modalOpened]}</p>
         </Modal>
     );
 

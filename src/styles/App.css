@@ -178,36 +178,36 @@ li {
 
 .greenButton {
     background-color: #44c767;
-    border-radius: 25px;
-    border: 2px solid #18ab29;
+    border-radius: 3.333vw;
+    border: 0.267vh solid #18ab29;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
     font-family: Arial;
-    font-size: 23px;
-    padding: 19px 40px;
+    font-size: 3.067vh;
+    padding: 2.533vw 5.333vw;
     text-decoration: none;
     text-shadow: 0px 1px 0px #2f6627;
-    margin-right: 20px;
+    margin-right: 2.667vw;
 }
 
 .text {
     text-align: center;
     font-size: x-large;
-    padding: 30px;
+    padding: 4vw;
 }
 .sdg1button {
     background-color: black;
     color: white;
-    font-size: 20px;
-    padding: 10px 60px;
-    border-radius: 5px;
-    margin: 10px 0px;
+    font-size: 2.667vh;
+    padding: 1.333vw 8vw;
+    border-radius: 0.667vw;
+    margin: 1.333vw 0vw;
     cursor: pointer;
 }
 
 .underlinedHeader {
-    font-size: 50px;
+    font-size: 6.667vh;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -277,8 +277,8 @@ li {
   }
   .content-header {
       background: blue;
-      min-height: 50px;
-      font-size: 50px;
+      min-height: 4.1666666666667vh;
+      font-size: 4.1666666666667vh;
       color: white;
      text-transform: uppercase;
      text-align: center;
@@ -286,13 +286,13 @@ li {
   }
   .backButtonDiv{
       position: absolute;
-      top: -20px;
-      left: 30px;
+      top: -2.667vw;
+      left: 4vw;
   }
   .backButton{
-      width: 50px;
-      height:  50px;
-      font-size: 150px;
+      width: 6.667vw;
+      height:  6.667vw;
+      font-size: 20vw;
       text-align: center;
       display: table;
       background: none;
