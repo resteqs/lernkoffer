@@ -13,8 +13,7 @@ export const TextComponent = (props: Props): JSX.Element => {
     const maxSlides = Object.keys(props.sdg.text).length;
 
     const textBox:CSSProperties = {
-    fontSize: "x-large",
-    padding: "50px",
+    padding: "4vw",
     textAlign: "center",
     };
 
@@ -27,7 +26,7 @@ export const TextComponent = (props: Props): JSX.Element => {
     };
 
     const buttonBack = (
-        <div style={{ top: "950px", left: "-50px",position: "fixed" }}>
+        <div style={{ bottom: "38px", left: "-38px", position: "fixed" }}>
             <FancyButton
                 onClick={decrementCount}
                 version="red"
@@ -39,7 +38,7 @@ export const TextComponent = (props: Props): JSX.Element => {
         </div>
     );
     const buttonNext = (
-        <div style={{ top: "950px", right: "60px", position: "fixed" }}>
+        <div style={{ bottom: "38px", right: "38px", position: "fixed" }}>
             <FancyButton
                 onClick={incrementCount}
                 version="green"
@@ -53,7 +52,7 @@ export const TextComponent = (props: Props): JSX.Element => {
 
     const buttonEnd = (
         <Link to="/Vorlagen/Endscreen">
-            <div style={{ top: "950px", right: "60px", position: "fixed" }}>
+            <div style={{  bottom: "38px", right: "38px", position: "fixed" }}>
                 <FancyButton
                     onClick={incrementCount}
                     version="green"

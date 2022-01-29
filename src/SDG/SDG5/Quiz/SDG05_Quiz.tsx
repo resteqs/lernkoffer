@@ -1,9 +1,6 @@
-/* eslint-disable @typescript-eslint/object-curly-spacing */
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable unicorn/filename-case */
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
+
+// eslint-disable-next-line unicorn/filename-case
+import * as React from "react"
 import Logo from "../../../SDGLogos/Goal-SDG05.png";
 import { QuizProps } from "../../../Interfaces/SDG";
 import thumbup from "../Quiz/thumbs/like.png";
@@ -59,7 +56,7 @@ export const SDG05_Quiz: QuizProps = {
                 frei und gleich an Würde und Rechten geboren“. Dadurch wird gesagt, dass unabhängig von Geschlecht,
                 Herkunft, Religion und vielen weiteren Sachen jeder Mensch die gleichen Rechte hat Bei manchen von den
                 Beispielen, die ich euch gerade genannt habe, wurden Menschenrechte verletzt. Manchmal habe ich euch
-                auch einfach ein Zitat aus der „Allgemeinen Erklärung der Menschenrechte" dazugegeben!{" "}
+                auch einfach ein Zitat aus der „Allgemeinen Erklärung der Menschenrechte&quot; dazugegeben!{" "}
             </div>
         ),
         12: (
@@ -192,7 +189,6 @@ export const SDG05_Quiz: QuizProps = {
         9: "Dies steht fast genauso in der „Allgemeinen Erklärung der Menschenrechte“: „Jeder, ohne Unterschied, hat das Recht auf gleichen Lohn für gleiche Arbeit.“",
         10: "Hier wird gesagt, dass nur männliche Verwandte erben dürfen. Das heißt, dass der Mann, wenn die Frau sterben würde, erben würde. Also hat der Mann dieses Recht. Da aber in der Ehe beide Partner die gleichen Rechte haben, dürfen auch beide vom jeweils anderen etwas erben.",
     },
-    // modalContent: <div>Quiz SDG 06</div>,
     isQuizActive: {
         1: false,
         2: false,
@@ -207,8 +203,4 @@ export const SDG05_Quiz: QuizProps = {
         11: false,
         12: false,
     },
-    /* eslint-enable unicorn/filename-case */
-    /* eslint-enable react/react-in-jsx-scope */
-    /* eslint-enable react/no-unescaped-entities */
-    /* eslint-enable @typescript-eslint/object-curly-spacing */
 };

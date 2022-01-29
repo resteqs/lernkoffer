@@ -25,11 +25,12 @@
 }
 
 .checkButton {
-    position: "absolute";
-    top: "950px";
-    left: "1700px";
-    margin-top: 10px;
-    
+    bottom: "5vh";
+    position: "fixed";
+    display: block;
+    margin: auto;
+    display: flex;
+justify-content: center;
 }
 .buttonInvisible {
     margin-top: -150px;
@@ -46,10 +47,17 @@
     font-size: 70px;
 }
 .texttext {
-    font-size: 50px;
+    font-size: 6vw;
+    font-size: 4vh;
     text-align: justify;
     hyphens: auto;
     
+}
+
+.textBox{
+    font-size: "x-large";
+    padding: "4vw";
+    text-align: "center";
 }
 
 .pic_show {
