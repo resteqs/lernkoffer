@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/lernkoffer/static/css/main.9fe5b6bb.chunk.css",
-    "main.js": "/lernkoffer/static/js/main.264f8524.chunk.js",
-    "main.js.map": "/lernkoffer/static/js/main.264f8524.chunk.js.map",
+    "main.css": "/lernkoffer/static/css/main.dfd73722.chunk.css",
+    "main.js": "/lernkoffer/static/js/main.7c42f7ee.chunk.js",
+    "main.js.map": "/lernkoffer/static/js/main.7c42f7ee.chunk.js.map",
     "runtime-main.js": "/lernkoffer/static/js/runtime-main.daefcb3d.js",
     "runtime-main.js.map": "/lernkoffer/static/js/runtime-main.daefcb3d.js.map",
     "static/js/2.8ae2ecb4.chunk.js": "/lernkoffer/static/js/2.8ae2ecb4.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.4b8a91a1.chunk.js": "/lernkoffer/static/js/3.4b8a91a1.chunk.js",
     "static/js/3.4b8a91a1.chunk.js.map": "/lernkoffer/static/js/3.4b8a91a1.chunk.js.map",
     "index.html": "/lernkoffer/index.html",
-    "static/css/main.9fe5b6bb.chunk.css.map": "/lernkoffer/static/css/main.9fe5b6bb.chunk.css.map",
+    "static/css/main.dfd73722.chunk.css.map": "/lernkoffer/static/css/main.dfd73722.chunk.css.map",
     "static/js/2.8ae2ecb4.chunk.js.LICENSE.txt": "/lernkoffer/static/js/2.8ae2ecb4.chunk.js.LICENSE.txt",
     "static/media/12_1.8855d9cb.jpg": "/lernkoffer/static/media/12_1.8855d9cb.jpg",
     "static/media/12_2.c0a72ee0.jpg": "/lernkoffer/static/media/12_2.c0a72ee0.jpg",
@@ -228,7 +228,7 @@
   "entrypoints": [
     "static/js/runtime-main.daefcb3d.js",
     "static/js/2.8ae2ecb4.chunk.js",
-    "static/css/main.9fe5b6bb.chunk.css",
-    "static/js/main.264f8524.chunk.js"
+    "static/css/main.dfd73722.chunk.css",
+    "static/js/main.7c42f7ee.chunk.js"
   ]
 }
