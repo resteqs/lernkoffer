@@ -26,30 +26,22 @@ export const SDG11_Spiel: TextProps = {
 
     text: {
         1: (
-            <div style={{ textAlign: "left", fontSize: "40px" }}>
-                <p>
-                    {" "}
-                    Der ökologische Fußabdruck eines Menschen zeigt, wie umweltfreundlich jemand lebt. Hierbei werden
-                    verschiedene Entscheidungen, die du triffst, bewertet.{" "}
-                </p>
-            </div>
+            "Der ökologische Fußabdruck eines Menschen zeigt, wie umweltfreundlich jemand lebt. Hierbei werden verschiedene Entscheidungen, die du triffst, bewertet."
         ),
         2: (
-            <div style={{ textAlign: "left", fontSize: "40px" }}>
-                <ul>
-                    <li>
-                        {" "}
-                        Im Folgenden wirst du immer eine Frage bekommen und drei verschiedene Antwortmöglichkeiten. Wenn
-                        du die Frage und die Antworten gelesen hast, nimm dir kurz Zeit und überlege, welche der
-                        Antworten am besten auf dich zutrifft. Dahinter siehst du in Klammern immer eine Zahl. Das sind
-                        die Punkte, die du sammelst. Diese Punkte zählst du während dem Spielen zusammen.{" "}
-                    </li>
-                    <li>
-                        {" "}
-                        Am Ende des Spiels wirst du eine Bewertung sehen, die von der Anzahl deiner Punkte abhängt.
-                    </li>
-                </ul>
-            </div>
+            <ul>
+                <li>
+                    {" "}
+                    Im Folgenden wirst du immer eine Frage bekommen und drei verschiedene Antwortmöglichkeiten. Wenn
+                    du die Frage und die Antworten gelesen hast, nimm dir kurz Zeit und überlege, welche der
+                    Antworten am besten auf dich zutrifft. Dahinter siehst du in Klammern immer eine Zahl. Das sind
+                    die Punkte, die du sammelst. Diese Punkte zählst du während dem Spielen zusammen.{" "}
+                </li>
+                <li>
+                    {" "}
+                    Am Ende des Spiels wirst du eine Bewertung sehen, die von der Anzahl deiner Punkte abhängt.
+                </li>
+            </ul>
         ),
         3: (
             <div>
@@ -91,7 +83,7 @@ export const SDG11_Spiel: TextProps = {
         ),
         6: (
             <div>
-                <p> Wie oft isst du Fleisch in der Woche</p>
+                <p> Wie oft isst du Fleisch in der Woche?</p>
                 <ul className="flex-container ">
                     <li className="flex-item"> Kein bis ein Mal (0) </li>
                     <li className="flex-item"> Zwei bis drei mal (1) </li>
@@ -100,7 +92,7 @@ export const SDG11_Spiel: TextProps = {
             </div>
         ),
         7: (
-            <div style={{ textAlign: "left", fontSize: "40px" }}>
+            <div >
                 <p>
                     {" "}
                     Nachdem du jetzt alle Fragen bearbeitet hast, sehen wir uns einmal an, wie umweltfreundlich du
@@ -121,7 +113,7 @@ export const SDG11_Spiel: TextProps = {
         ),
 
         8: (
-            <div style={{ textAlign: "left", fontSize: "40px" }}>
+            <div >
                 <ul>
                     <li>
                         {" "}
@@ -137,7 +129,7 @@ export const SDG11_Spiel: TextProps = {
             </div>
         ),
         9: (
-            <div style={{ textAlign: "left", fontSize: "40px" }}>
+            <div >
                 <ul>
                     <li>
                         {" "}

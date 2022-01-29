@@ -1,9 +1,5 @@
-/* eslint-disable @typescript-eslint/object-curly-spacing */
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable unicorn/filename-case */
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable react/react-in-jsx-scope */
 
+import * as React from "react"
 import { Quiz3OProps } from "../../../Interfaces/SDG";
 import Logo from "../../../SDGLogos/Goal-SDG15.png";
 import Elefant from "../Quiz/Media/Elefant.png";
@@ -260,5 +256,4 @@ export const SDG15_Quiz: Quiz3OProps = {
         14: true,
         15: false,
     },
-    /* eslint-enable @typescript-eslint/object-curly-spacing */
 };
