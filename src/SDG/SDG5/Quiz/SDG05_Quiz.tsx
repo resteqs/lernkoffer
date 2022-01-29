@@ -27,7 +27,7 @@ export const SDG05_Quiz: QuizProps = {
                 {" "}
                 Dass Mann und Frau nicht immer gleich behandelt werden, wisst ihr vielleicht bereits! Nun will ich mal
                 schauen, ob ihr auch erkennen könnt, wann Männer oder Frauen tatsächlich wegen ihres Geschlechts
-                ungerecht behandelt werden,
+                ungerecht behandelt werden.
             </div>
         ),
         2: (
@@ -38,7 +38,7 @@ export const SDG05_Quiz: QuizProps = {
                     <li>
                         Ich habe hier verschiedene Aussagen und ihr sollt darüber nachdenken, ob sich das so gehört oder
                         nicht. Entscheidet danach, ob Frauen und Männer in den Beispielen gleich behandelt werden oder
-                        nicht! Wer findet, dass sich das so gehört, hebt den Daumen nach oben, wenn nicht dann nach
+                        nicht! Wer findet, dass sich das so gehört, drückt auf den Daumen nach oben, wenn nicht dann auf den nach
                         unten.{" "}
                     </li>
                 </ul>{" "}
@@ -48,7 +48,7 @@ export const SDG05_Quiz: QuizProps = {
             <div>
                 {" "}
                 Danach möchte ich euch erklären, warum das so ist. Diese Erklärungen könnt ihr anschließend mit euren
-                eigenen Überlegungen vergleichen und vielleicht auch darüber diskutieren{" "}
+                eigenen Überlegungen vergleichen und vielleicht auch darüber diskutieren.{" "}
             </div>
         ),
         11: (
@@ -57,7 +57,7 @@ export const SDG05_Quiz: QuizProps = {
                 Falls ihr euch fragt, wie ich auf das komme, was ich euch gerade gesagt habe: Ich beziehe mich auf den
                 in der „Allgemeinen Erklärung der Menschenrechte“ der UNO festgehaltenen Grundsatz, „Alle Menschen sind
                 frei und gleich an Würde und Rechten geboren“. Dadurch wird gesagt, dass unabhängig von Geschlecht,
-                Herkunft, Religion und vielen weiteren Sachen jeder Mensch die gleichen Rechte hat Bei manchen von den
+                Herkunft, Religion und vielen weiteren Sachen jeder Mensch die gleichen Rechte hat. Bei manchen von den
                 Beispielen, die ich euch gerade genannt habe, wurden Menschenrechte verletzt. Manchmal habe ich euch
                 auch einfach ein Zitat aus der „Allgemeinen Erklärung der Menschenrechte" dazugegeben!{" "}
             </div>
@@ -188,7 +188,7 @@ export const SDG05_Quiz: QuizProps = {
         5: "Wer Chef wird sollte nur danach entschieden werden, ob jemand für diesen Job geeignet ist und die notwendigen Fähigkeiten dazu besitzt. Dementsprechend sollte nicht danach ausgewählt werden, welches Geschlecht die Person hat, sondern nur auf das Können geachtet werden. Wenn dadurch gleich viele Männer und Frauen Chefs würden, könnten die Frauen und Männer sich dann auch selbst besser darum kümmern, dass sie gerechter behandelt werden. ",
         6: "Jeder Mensch, egal ob Mann oder Frau, hat das Recht sein Leben so zu gestalten, wie er das möchte. Dazu gehören unter anderem, wen und ob man heiraten möchte, beziehungsweise mit wem man zusammen sein möchte. Das wird auch in der „Allgemeinen Erklärung der Menschenrechte“ gesagt. Ein weiterer Vorteil von einer freien Wahl des Partners ist, dass die Beziehung wahrscheinlich glücklicher ist und länger hält!",
         7: "Die Berufswahl ist unabhängig vom Geschlecht, und jeder darf sich für jeden Beruf bewerben, wenn er das möchte. Denn es ist für die Jobwahl egal welches Geschlecht man hat, solange man den Job ausüben will, sollte man auch versuchen, ihn auszuüben!",
-        8: "In der „Allgemeinen Erklärung der Menschenrechte“ wird gesagt, dass jeder Mensch die gleichen Rechte hat, deswegen sollten auch innerhalb einer Beziehung beide Partner die gleichen Rechte haben! So könnte es verhindert werden, dass der Mann die Frau zu irgendetwas schlimmem zwingt (zum Beispiel Gewalt gegen Frauen) ",
+        8: "In der „Allgemeinen Erklärung der Menschenrechte“ wird gesagt, dass jeder Mensch die gleichen Rechte hat, deswegen sollten auch innerhalb einer Beziehung beide Partner die gleichen Rechte haben! So könnte es verhindert werden, dass der Mann die Frau zu irgendetwas schlimmem zwingt (zum Beispiel Gewalt gegen Frauen). ",
         9: "Dies steht fast genauso in der „Allgemeinen Erklärung der Menschenrechte“: „Jeder, ohne Unterschied, hat das Recht auf gleichen Lohn für gleiche Arbeit.“",
         10: "Hier wird gesagt, dass nur männliche Verwandte erben dürfen. Das heißt, dass der Mann, wenn die Frau sterben würde, erben würde. Also hat der Mann dieses Recht. Da aber in der Ehe beide Partner die gleichen Rechte haben, dürfen auch beide vom jeweils anderen etwas erben.",
     },
