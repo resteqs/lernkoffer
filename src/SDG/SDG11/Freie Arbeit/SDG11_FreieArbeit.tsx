@@ -49,7 +49,7 @@ export const SDG11_FreieArbeit: TextProps = {
                 Nur ein Beispiel, wie ich mir eine nachhaltige Stadt vorstelle. Wie du sehen kannst, sind hier viele
                 Pflanzen und im Hintergrund wird mit Windrädern nachhaltig Strom produziert und auch auf den Hausdächern
                 und dem Bus befinden sich Solarzellen, um grünen Strom zu produzieren.
-                <img style={{ marginBottom: "-600px", marginLeft: "100px", height: "500px" }} src={Stadt} alt="" />
+                <img style={{ marginBottom: "-20vw", marginLeft: "35.333vw", height: "26.667vw" }} src={Stadt} alt="" />
             </div>
         ),
     },
