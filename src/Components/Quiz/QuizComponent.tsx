@@ -108,7 +108,7 @@ export const Quiz_Component = (props: Props): JSX.Element => {
                 onClick={decrementCount}
                 version="red"
                 className="backbutton"
-                active={props.sdg.isQuizActive[showtext] === false}
+                active={props.sdg.isQuizActive[showtext] === false && showtext>1}
             >
                 Zurück
             </FancyButton>
@@ -120,7 +120,7 @@ export const Quiz_Component = (props: Props): JSX.Element => {
                 onClick={incrementCount}
                 version="green"
                 className="nextbutton"
-                active={props.sdg.isQuizActive[showtext] === false}
+                active={props.sdg.isQuizActive[showtext] === false&& showtext !== maxSlides}
             >
                 Weiter
             </FancyButton>
