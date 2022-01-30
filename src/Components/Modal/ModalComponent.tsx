@@ -39,7 +39,7 @@ export const ModalQuizComponent = (props: ModalProps): JSX.Element => {
                         <b>Okay</b>
                     </button>
                 </div>
-                <p style={{ fontSize: "40px", margin: "10px" }}>
+                <p style={{ fontSize: "4vh", margin: "10px" }}>
                     {" "}
                     <b>Antwort: </b>
                     {props.answer}{" "}
