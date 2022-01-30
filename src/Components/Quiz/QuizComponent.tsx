@@ -23,7 +23,7 @@ export const Quiz_Component = (props: Props): JSX.Element => {
     const textBox:React.CSSProperties = {
         padding: "4vw",
         textAlign: "center",
-        };
+    };
         
     const incrementCount = (): void => {
         setText((prevState) => prevState + 1);
