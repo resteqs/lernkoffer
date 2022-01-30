@@ -126,7 +126,7 @@ export const SDG05_Spiel = ():JSX.Element => {
             <div> </div>
         )
     );
-
+    
     return (
         <>
             <div className={`colour_${sdg}_header`}>
@@ -146,9 +146,7 @@ export const SDG05_Spiel = ():JSX.Element => {
             {Modal}
             {buttonBack}
             {buttonNext}
-            {buttonEnd}
-            
+            {buttonEnd}    
         </>
-
     );
 }

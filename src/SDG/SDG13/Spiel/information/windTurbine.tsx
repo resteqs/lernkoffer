@@ -1,46 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
 // eslint-disable-next-line react/prefer-stateless-function
-class windTurbine extends React.Component {
-    render(): JSX.Element {
-        return (
-            <div className="standard-background">
-                <h1 className="header">WIND TURBINE</h1>
-                <div>
-                    <p className="playinformation">
-                        <p>
-                            A new&nbsp;<span className="red">way of energy extraction</span>. It is a rather often
-                            discussed theme of whether building wind wheels is ecologically worthwhile or not. Most
-                            debates end with a&nbsp;<span className="red">positive&nbsp;</span>result for&nbsp;these
-                            wheels because they
-                            <span className="red">&nbsp;work with wind</span>, which is&nbsp;
-                            <span className="red">endlessly as well as in the nights available</span>. In contrast, a
-                            big problem with solar energy is that the sunlight is only available for a limited time,
-                            more specifically during the day. Also, the&nbsp;<span className="red">space needed</span>
-                            &nbsp;to build them is rather&nbsp;<span className="red">small</span>.
-                        </p>
-                        <p>
-                            The&nbsp;
-                            <span className="red">only emissions</span>&nbsp;produced by wind wheels emerge from
-                            the&nbsp;fabrication&nbsp;of the parts. But as always there is also a not quite sunny side
-                            to this topic. One main reason why people dislike windmills is that they are big and&nbsp;
-                            <span className="red">throw a huge shadow</span>&nbsp;above the surrounding areas. That is
-                            why most countries set&nbsp;<span className="red">regulations&nbsp;</span>for a&nbsp;
-                            <span className="red">minimum distance</span>&nbsp;of such wind parks from cities and towns.
-                            The most significant problem is that they&nbsp;<span className="red">hardly</span> produce
-                            the amount as a nuclear power plant&nbsp;could do.&nbsp;
-                        </p>
-                    </p>
-                </div>
-                <Link to="/SDG13/Spiel1">
-                    <button className="buttonBack" type="button">
-                        Back
-                    </button>
-                </Link>
-            </div>
-        );
-    }
-}
+import * as React from "react";
+import { Link } from "react-router-dom";
+import { InfotextButton } from "../../../../Components/Buttons/InfotextButton";
+import { TextProps } from "../../../../Interfaces/SDG";
+import Logo from "../../../../SDGLogos/Goal-SDG13.png";
 
-export default windTurbine;
+export const windTurbine:TextProps = {
+    sdgNumber: 13,
+    sdgTitle: "Suchspiel",
+    sdg: "SDG13",
+    logo: Logo,
+    header: {
+        1: "Windrad",
+        2: "Windrad",
+        3: "Windrad",
+    },
+    text: {
+        1: "Eine neue Art der Energiegewinnung. Es ist ein recht häufig diskutiertes Thema, ob der Bau von Windrädern ökologisch sinnvoll ist oder nicht. Die meisten Debatten enden mit einem positiven Ergebnis für diese Räder, weil sie mit Wind arbeiten, der sowohl endlos als auch in den Nächten verfügbar ist. Im Gegensatz dazu ist ein großes Problem bei der Solarenergie, dass das Sonnenlicht nur für eine begrenzte Zeit, genauer gesagt tagsüber, zur Verfügung steht. Außerdem ist der Platzbedarf für den Bau der Anlagen eher gering. Die einzigen Emissionen, die bei Windrädern entstehen, entstehen bei der Herstellung der Teile.",
+        2: "Aber wie immer gibt es auch bei diesem Thema eine nicht ganz so sonnige Seite. Ein Hauptgrund, warum die Menschen Windräder nicht mögen, ist, dass sie groß sind und einen großen Schatten auf die Umgebung werfen. Deshalb gibt es in den meisten Ländern Vorschriften für einen Mindestabstand solcher Windparks zu Städten und Ortschaften. Das größte Problem ist, dass sie kaum die Menge produzieren, die ein Atomkraftwerk leisten könnte.",
+        3: <div style={{ textAlign: "center", marginTop: "10vh"  }}><Link to = "/SDG13/Spiel1"><InfotextButton version="green">Zürück zum Tippspiel</InfotextButton></Link></div>
+    },
+}
