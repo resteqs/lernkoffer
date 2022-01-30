@@ -28,16 +28,16 @@ export const SDG13_Quiz:QuizProps = {
             Ein wichtiges Thema hierbei ist der Transport von Dingen und Leuten. Jeder und alles muss zu verschiedenen Orten gelangen und das passiert auf unterschiedliche Arten.
             Im Folgenden darfst du dich entscheiden, welches der genannten Transportmittel mehr Emissionen (Gase, die von vielen Dingen produziert werden, z.B. bei Autos, während der Motor läuft) produziert. Es stehen immer zwei Transportmittel zur Auswahl. 
             </p>,
-            2: <p>Damit das mehr Spaß macht, spielen wir ein Spiel. Dafür müsst ihr euch drei Ecken oder Orte aussuchen, die ihr nutzen wollt. Diejenigen, die denken, dass Objekt Nummer eins mehr des gefragten Gases produziert gehen zu Ecke/Ort eins. Diejenigen die denken, dass Objekt Nummer zwei mehr des gefragten Gases produziert gehen zu Ecke/Ort zwei und die, die denken, dass beide gleich viel des Gases produzieren, gehen zu Ecke/Ort drei. Nachdem sich alle in eine Ecke/an einen Ort gestellt haben, lest die Lösungen. Vielleicht können auch diejenigen, die sich richtig positioniert haben, den anderen ihre Gedanken erklären und begründen, warum sie sich in genau diese Ecke gestellt haben.</p>,
+            2: <p>Damit das mehr Spaß macht, spielen wir ein Spiel. Dafür müsst ihr euch drei Ecken oder Orte aussuchen, die ihr nutzen wollt. Diejenigen, die denken, dass Objekt Nummer eins mehr des gefragten Gases produziert, gehen zu Ecke/Ort eins. Diejenigen, die denken, dass Objekt Nummer zwei mehr des gefragten Gases produziert, gehen zu Ecke/Ort zwei und die, die denken, dass beide gleich viel des Gases produzieren, gehen zu Ecke/Ort drei. Nachdem sich alle in eine Ecke/an einen Ort gestellt haben, lest die Lösungen. Vielleicht können auch diejenigen, die sich richtig positioniert haben, den anderen ihre Gedanken erklären und begründen, warum sie sich in genau diese Ecke gestellt haben.</p>,
             3: <p>Produziert ein Pkw (normales Auto) oder ein Flugzeug mehr Treibhausgase?</p>,
             4: <p>Ein Flugzeug produziert mehr davon. Studien zeigen, dass die erzeugt Menge hier ungefähr bei 230 Gramm pro Person pro Kilometer (g/Pkm) liegt, während dieser Wert bei Pkws nur bei 147 liegt.</p>,
-            5: <p>Produziert eine Eisenbahn (Fernverkehr) oder eine Straßen-/Stadt-/ und U-Bahn mehr flüchtige Kohlenwasserstoffe (Gase die sehr instabil sind)?</p>,
+            5: <p>Produziert eine Eisenbahn (Fernverkehr) oder eine Straßen-/Stadt-/ und U-Bahn mehr flüchtige Kohlenwasserstoffe (Gase, die sehr instabil sind)?</p>,
             6: <p>Keines der beiden Transportmittel produziert diese Gase.</p>,
             7: <p>Produziert ein Pkw oder ein Linienbus mehr Kohlenstoffdioxid?</p>,
-            8: <p>Das Auto ist hier richtig. Dieses produziert ungefähr 1,00 g/Pkm während dieser Wert bei Linienbusen bei etwa 0,06 g/Pkm liegt.</p>,
+            8: <p>Das Auto ist hier richtig. Dieses produziert ungefähr 1,00 g/Pkm während dieser Wert bei Linienbussen bei etwa 0,06 g/Pkm liegt.</p>,
             9: <div><p>Ein paar Ideen, die ich toll finde:</p>
             <p>-	bildet Fahrgemeinschaften, wenn ihr alle das gleiche oder ein ähnliches Ziel habt</p>
-            <p>-	nutze öffentliche Verkehrsmittel wann immer es möglich ist</p>
+            <p>-	nutze öffentliche Verkehrsmittel, wann immer es möglich ist</p>
             <p>-	und wie so oft: versuche lokal oder saisonal zu kaufen, um Transportwege von Waren so kurz wie möglich zu halten</p>
             </div>,
             10: <div><p>-	außerdem versuche das Fliegen in einem Flugzeug zu vermeiden und reise eher mit einem Zug, auch wenn das länger dauert</p>

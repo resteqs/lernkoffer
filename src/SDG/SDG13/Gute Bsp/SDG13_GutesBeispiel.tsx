@@ -29,7 +29,7 @@ export const SDG13_GutesBeispiel: TextProps = {
                     <li style={{ marginTop: "30px" }}>
                         {" "}
                         In dieser Version geht es um Dinge, die die Umwelt belasten und auch gleichzeitig darum, was du
-                        selbst tun kannst
+                        selbst tun kannst.
                     </li>
                     <li style={{ marginTop: "30px" }}>
                         {" "}
@@ -52,7 +52,7 @@ export const SDG13_GutesBeispiel: TextProps = {
                 Ihr könnt immer gerne Pausen machen und über die angegebenen Probleme und Lösungen reden. Eine Idee für
                 eine Diskussion wäre die Umsetzbarkeit der Lösungen für euch und eure Freunde, Familie… Eine andere Idee
                 wäre auch, darüber zu diskutieren, ob euch andere Sachen einfallen, die entweder schlecht für die Umwelt
-                sind und wie man sie lösen kann, oder auch, wie man die bereits angegebenen Probleme anders lösen kann,
+                sind und wie man sie lösen kann, oder auch, wie man die bereits angegebenen Probleme anders lösen kann
                 als hier steht.
             </div>
         ),

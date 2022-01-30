@@ -17,7 +17,7 @@ export const SDG13_Infotext: InfotextProps = {
         4: "Neben der Tatsache, dass die Klimakrise immense Probleme für die menschliche Existenz verursacht, indem sie uns mit ihren Auswirkungen betrifft, ist das größte aller Probleme unser Mangel an Engagement, um diese umzukehren. Wir sehen und fühlen das Ausmaß der Krise, aber scheuen uns noch immer davor, es zuzugeben und Verantwortung zu übernehmen.",
         5: "2019 war aktenkundig das zweitwärmste Jahr. Die globalen Temperaturen werden voraussichtlich bis 2100 um bis zu 3,2°C ansteigen. Der Klimawandel verschlimmert weiterhin die Häufigkeit und den Schweregrad von Naturkatastrophen, im Jahr 2019 betraf dies mehr als 39 Millionen Menschen. Darüber hinaus kann der Klimawandel beispielsweise auch zu Konflikten um Nahrung, Wasser und Ressourcen führen.",
         6: "Um an den Klimawandel heranzugehen, müssen wir unsere Anstrengungen erheblich verstärken. Es passiert viel auf der ganzen Welt – was großartig ist – aber es muss noch viel mehr gemacht werden. 2015 machte die Welt einen bedeutenden Schritt mit der Verabschiedung des Pariser Abkommens, in welchem sich alle Länder dazu verpflichtet haben, Maßnahmen zur Bekämpfung des Klimawandels zu ergreifen.",
-        7: "Jeder einzelne von uns kann etwas bewirken, indem er sich informiert, alles in seiner Macht Stehende tut, um dieses Problem anzugehen und indem er darauf aufmerksam macht."
+        7: "Jeder Einzelne von uns kann etwas bewirken, indem er sich informiert, alles in seiner Macht Stehende tut, um dieses Problem anzugehen und indem er darauf aufmerksam macht."
     },
     header: {
         2: "Warum?",

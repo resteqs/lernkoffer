@@ -35,7 +35,7 @@ export const SDG11_GB: TextProps = {
         1: (
             <div>
                 {" "}
-                Es gibt viele Möglichkeiten, wie dein Insektenhotel am Ende aussehen könnte. Eine davon ist, es wie eine
+                Es gibt viele Möglichkeiten, wie dein Insektenhotel am Ende aussehen könnte. Eine davon ist es wie eine
                 Biene oder ein anderes Tier, das du magst, aussehen zu lassen. Aber natürlich kannst du es auch ganz
                 einfach halten und die Dose nur in einer Farbe oder gar nicht bemalen. Mach es einfach so, wie es dir am
                 besten gefällt und vor allem auch so, wie es am besten für dich möglich ist.
@@ -58,9 +58,9 @@ export const SDG11_GB: TextProps = {
                     <li> <b> - Ein Draht </b> </li>
                     <li>
                         {" "}
-                        <b> - Und natürlich die Füllung: </b> Bambus (wenn du das nicht findest, dann nimm einfach andere hohle
-                        Äste oder lass diese weg), zusammengerolltes Papier, Holzwolle, Stroh, dünne Äste, Tannenzapfen
-                        oder andere Sachen, die deiner Meinung nach gut wären (Tipp: nimm unterschiedliche Materialien,
+                        - Und natürlich die Füllung:  <b> Bambus </b> (wenn du das nicht findest, dann nimm einfach andere hohle
+                        Äste oder lass diese weg), <b> zusammengerolltes Papier </b>, <b>Holzwolle </b> , <b> Stroh </b>, <b> dünne Äste </b>, <b>Tannenzapfen
+                        oder andere Sachen </b>, die deiner Meinung nach gut wären (Tipp: nimm unterschiedliche Materialien,
                         damit verschiedene Tiere dein Hotel nutzen können)
                     </li>
                 </ul>
@@ -81,8 +81,8 @@ export const SDG11_GB: TextProps = {
         ),
         5: (
             <div>
-                Nimm die Dose und bemale sie mit der Farbe, oder wickle die Wolle herum. Wenn du es einfach halten
-                möchtest, oder nichts dergleichen zur Hand hast, dann überspringe diesen Schritt einfach.
+                Nimm die Dose und bemale sie mit der Farbe oder wickle die Wolle herum. Wenn du es einfach halten
+                möchtest oder nichts dergleichen zur Hand hast, dann überspringe diesen Schritt einfach.
                 <img style={{ marginBottom: "-400px", marginLeft: "300px" }}src={Schritt2} alt="" />
             </div>
         ),
