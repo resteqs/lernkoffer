@@ -286,6 +286,7 @@ import { Main } from "./SDG/SDG13/Spiel2/DND/Main";
 /**                              Freie Arbeit                                */
 import { SDG15_FreieArbeit } from "./SDG/SDG15/Freie Arbeit/SDG15_FreieArbeit";
 /**                             Gutes Beispiel                               */
+import { SDG15_GutesBeispiel } from "./SDG/SDG15/Gute Bsp/SDG15_GutesBeispiel";
 /**                               Infotext                                   */
 import { SDG15_Infotext } from "./SDG/SDG15/Info/SDG15_Infotext";
 /**                                 Quiz                                     */
@@ -715,6 +716,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
             <Route exact path="/SDG15/FreieArbeit"><TextComponent sdg= {SDG15_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
+<Route exact path="/SDG15/GutesBeispiel"><TextComponent sdg= {SDG15_GutesBeispiel}/> </Route> 
 /**                               Infotext                                   */
             <Route exact path="/SDG15/Infotext"><InfotextComponent sdg={SDG15_Infotext}/></Route>
 /**                                 Quiz                                     */
