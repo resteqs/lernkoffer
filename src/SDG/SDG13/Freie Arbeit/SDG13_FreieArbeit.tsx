@@ -43,7 +43,7 @@ export const SDG13_FreieArbeit: TextProps = {
                 {" "}
                 Dazu kommen Verschmutzungen der Gewässer, Freisetzung giftiger Chemikalien, Verbrauchen von
                 Wasserreservoirs und auch die Ausbeutung von Arbeiter:innen.Was können wir also tun? Das Wichtigste ist,
-                unser eigenes Kaufverhalten zu hinterfragen. Brauche ich wirklich immer ein neues Shirt? Knn ich auf
+                unser eigenes Kaufverhalten zu hinterfragen. Brauche ich wirklich immer ein neues Shirt? Kann ich auf
                 Siegel und Zertifikate achten, die versichern, dass das Produkt unter fairen und nachhaltigen
                 Bedingungen produziert wurde? Informiert euch dazu gerne weiter!{" "}
             </div>
