@@ -53,7 +53,7 @@ export const Help = (): JSX.Element => {
                             <p>und</p>
                             <Link to ="/SDG06/GutesBeispielQuiz">Gutes Beispiel Quiz</Link>
                         </td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/GutesBeispiel">Gutes Beispiel WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG07/VideoWindrad">Video Windrad</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG08/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/GutesBeispiel">Gutes Beispiel</Link></td>
 
@@ -108,10 +108,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG04/Video">Video Probleme</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/Video">Video gibts nicht</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/Video">Video</Link></td>
-                        <td className="tg-c3ow">
-                            <Link to ="/SDG07/VideoWasserstoff">Video Wasserstoff </Link>
-                            <Link to ="/SDG07/VideoWindrad">Video Windrad</Link>
-                        </td>
+                        <td className="tg-c3ow"><Link to ="/SDG07/VideoWasserstoff">Video Wasserstoff </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG08/Video">Video </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/Video">Video </Link></td>
                     </tr>
