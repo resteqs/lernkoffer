@@ -50,21 +50,6 @@ export const TextComponent = (props: Props): JSX.Element => {
         </div>
     );
 
-    const buttonEnd = (
-        <Link to="/Vorlagen/Endscreen">
-            <div style={{  bottom: "38px", right: "38px", position: "fixed" }}>
-                <FancyButton
-                    onClick={incrementCount}
-                    version="green"
-                    className="nextbutton"
-                    active={showtext === maxSlides}
-                >
-                    Beenden
-                </FancyButton>
-            </div>
-        </Link>
-    );
-
     return (
         <>
             <div className={`colour_${props.sdg.sdg}_header`}>
@@ -82,9 +67,7 @@ export const TextComponent = (props: Props): JSX.Element => {
                 </p>{" "}
             </div>
             {buttonBack}
-            {buttonNext}
-            {buttonEnd}
-            
+            {buttonNext}           
         </>
 
     );

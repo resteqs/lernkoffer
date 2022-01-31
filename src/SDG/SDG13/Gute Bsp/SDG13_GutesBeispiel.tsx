@@ -12,15 +12,16 @@ export const SDG13_GutesBeispiel: TextProps = {
     sdg: "SDG13",
     logo: Logo,
     header: {
-        1: "Tutorial:  ",
-        2: " Tutorial:",
-       
+        1: "Tutorial:",
+        2: "Tutorial:",
+        3: "Tutorial:",
+      
     },
 
     text: {
         1: (
             <div>
-                <ul style= {{ fontSize: "43px" }}>
+                <ul>
                     <li>
                         {" "}
                         Hier haben wir ein gern gespieltes Spiel, vielleicht kennst du es ja schon. Es nennt sich
@@ -31,23 +32,23 @@ export const SDG13_GutesBeispiel: TextProps = {
                         In dieser Version geht es um Dinge, die die Umwelt belasten und auch gleichzeitig darum, was du
                         selbst tun kannst.
                     </li>
-                    <li style={{ marginTop: "30px" }}>
-                        {" "}
-                        Dieses Spiel funktioniert nach einem einfachen Prinzip: gestartet wird mit der Karte, auf der
-                        „Start“ steht. Auf der rechten Seite von dieser Karte findet ihr ein Bild. Jetzt könnt ihr euch
-                        die übrigen Karten ansehen und überlegen, welcher Text ein Problem und eine Lösung beschreibt,
-                        das zu dem Bild passt.
-                    </li>
-                    <li>
-                        {" "}
-                        Wenn du eine Karte findest, die zu dem Bild passt, dann ziehe diese Karte einfach neben das
-                        Bild.
-                    </li>
-                    <li style={{ marginTop: "30px" }}> So machst du immer weiter und am Ende kommst du bei der Karte an, auf der „Ende“ steht.</li>
                 </ul>
             </div>
         ),
         2: (
+            <><li>
+                {" "}
+                Dieses Spiel funktioniert nach einem einfachen Prinzip: gestartet wird mit der Karte, auf der
+                „Start“ steht. Auf der rechten Seite von dieser Karte findet ihr ein Bild. Jetzt könnt ihr euch
+                die übrigen Karten ansehen und überlegen, welcher Text ein Problem und eine Lösung beschreibt,
+                das zu dem Bild passt.
+            </li><li>
+                    {" "}
+                    Wenn du eine Karte findest, die zu dem Bild passt, dann ziehe diese Karte einfach neben das
+                    Bild.
+                </li><li style={{ marginTop: "10px" }}> So machst du immer weiter und am Ende kommst du bei der Karte an, auf der „Ende“ steht.</li></>
+        ),
+        3: (
             <div>
                 Ihr könnt immer gerne Pausen machen und über die angegebenen Probleme und Lösungen reden. Eine Idee für
                 eine Diskussion wäre die Umsetzbarkeit der Lösungen für euch und eure Freunde, Familie… Eine andere Idee

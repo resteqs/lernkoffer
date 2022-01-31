@@ -5,11 +5,11 @@
     padding: 50px;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 5%;
+    margin-top: 20px;
     border-left-style: solid;
     border-left-color: var(--SDG04color);
     border-width: 10px;
-    height: 650px;
+    height: 65vh;
 }
 .nextbutton {
     float: right;
@@ -44,7 +44,7 @@ justify-content: center;
     hyphens: auto;
 }
 .headertext {
-    font-size: 70px;
+    font-size: 6vh;
 }
 .texttext {
     font-size: 6vw;

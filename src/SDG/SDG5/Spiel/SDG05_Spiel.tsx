@@ -100,21 +100,6 @@ export const SDG05_Spiel = ():JSX.Element => {
         </div>
     );
 
-    const buttonEnd = (
-        <Link to="/Vorlagen/Endscreen">
-            <div style={{  bottom: "38px", right: "38px", position: "fixed" }}>
-                <FancyButton
-                    onClick={incrementCount}
-                    version="green"
-                    className="nextbutton"
-                    active={showtext === maxSlides}
-                >
-                    Beenden
-                </FancyButton>
-            </div>
-        </Link>
-    );
-
     const answerCW = (
         header[showtext]
     );
@@ -152,7 +137,6 @@ export const SDG05_Spiel = ():JSX.Element => {
             {Modal}
             {buttonBack}
             {buttonNext}
-            {buttonEnd}    
         </>
     );
 }

@@ -42,18 +42,6 @@ export const InfotextComponent = (props: Props): JSX.Element => {
             Weiter
         </FancyButton>
     );
-    const buttonEnd = (
-        <Link to="/Vorlagen/Endscreen">
-            <FancyButton
-                onClick={incrementCount}
-                version="green"
-                className="nextbutton"
-                active={showtext === maxSlides}
-            >
-                Beenden
-            </FancyButton>
-        </Link>
-    );
 
     return (
         <>
@@ -69,7 +57,7 @@ export const InfotextComponent = (props: Props): JSX.Element => {
                             <b>{props.sdg.header[showtext]}</b>
                         </p>
                         <br />
-                        <p className="bodytext" style={{ fontSize: "35px" }}>
+                        <p className="bodytext" style={{ fontSize: "4vh" }}>
                             {props.sdg.text[showtext]}
                         </p>
                     </>
@@ -82,8 +70,7 @@ export const InfotextComponent = (props: Props): JSX.Element => {
             </div>
             {buttonBack}
             {buttonNext}
-            {buttonEnd}
-            <audio controls src={props.sdg.audioFile[showtext]} style={{ position: "absolute", top: "1100px", left: "80px" }}>
+            <audio controls src={props.sdg.audioFile[showtext]} style={{ position: "absolute", bottom: "40px", left: "40px" }}>
                 Your browser does not support the audio element.
             </audio>
             <img className="EG" alt="" src={props.sdg.eg} />

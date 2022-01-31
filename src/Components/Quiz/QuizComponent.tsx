@@ -128,21 +128,6 @@ export const Quiz_Component = (props: Props): JSX.Element => {
 
     );
 
-    const buttonEnd = (
-        <Link to="/Vorlagen/Endscreen">
-            <div style={{ bottom: "38px", right: "38px", position: "fixed" }}>
-                <FancyButton
-                    onClick={incrementCount}
-                    version="green"
-                    className="nextbutton"
-                    active={showtext === maxSlides && props.sdg.isQuizActive[showtext] === false}
-                >
-                    Beenden
-                </FancyButton>
-           </div>
-        </Link>
-    );
-
     const Modal =
         modalIsOpen === true ? (
             <ModalQuizComponent
@@ -189,7 +174,6 @@ export const Quiz_Component = (props: Props): JSX.Element => {
 
             {buttonBack}
             {buttonNext}
-            {buttonEnd}
         </>
     );
 };

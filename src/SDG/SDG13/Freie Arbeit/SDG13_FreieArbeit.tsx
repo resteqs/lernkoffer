@@ -13,11 +13,13 @@ export const SDG13_FreieArbeit: TextProps = {
     sdg: "SDG13",
     logo: Logo,
     header: {
-        1: " Einleitung ",
-        2: "Einleitung",
-        3: "Basteln",
-        4: "Anleitung",
+        1: "Einleitung ",
+        2: "Einleitung ",
+        3: "Einleitung",
+        4: "Basteln",
         5: "Anleitung",
+        6: "Anleitung",
+        7: "Anleitung",
     },
 
     text: {
@@ -25,7 +27,13 @@ export const SDG13_FreieArbeit: TextProps = {
             <div>
                 <ul>
                     <li> Flugzeuge, Schifffahrt, Klamotten. Was haben diese drei Bereiche gemeinsam?</li>
-                    <li style={{ marginTop: "100px" }}>
+                </ul>
+            </div>
+        ),
+        2: (
+            <div>
+                <ul>
+                    <li>
                         {" "}
                         Alle drei haben einen großen Einfluss auf unser Klima und unsere Umwelt. Moment mal, Klamotten?{" "}
                     </li>
@@ -38,7 +46,7 @@ export const SDG13_FreieArbeit: TextProps = {
                 </ul>
             </div>
         ),
-        2: (
+        3: (
             <div>
                 {" "}
                 Dazu kommen Verschmutzungen der Gewässer, Freisetzung giftiger Chemikalien, Verbrauchen von
@@ -48,8 +56,8 @@ export const SDG13_FreieArbeit: TextProps = {
                 Bedingungen produziert wurde? Informiert euch dazu gerne weiter!{" "}
             </div>
         ),
-        3: <div> Bastele eine Menschenkette aus Papier und designe Kleidung </div>,
-        4: (
+        4: <div> Bastele eine Menschenkette aus Papier und designe Kleidung </div>,
+        5: (
             <div>
                 <ul className="ul">
                     <li className="li">
@@ -71,7 +79,7 @@ export const SDG13_FreieArbeit: TextProps = {
                 </ul>
             </div>
         ),
-        5: (
+        6: (
             <div>
                 <ul className="ul">
                     <li className="li">
@@ -93,8 +101,8 @@ export const SDG13_FreieArbeit: TextProps = {
                 </ul>
             </div>
         ),
-        6: (  
-        <div> 
+        7: (
+            <div>
                 <b>
                     {" "}
                     Überlege dir Klamotten, die du ihnen anziehen möchtest. Erinnere dich an den Einfluss der
