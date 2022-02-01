@@ -26,14 +26,13 @@ export const SDG11_Spiel: TextProps = {
 
     text: {
         1: (
-            "Der ökologische Fußabdruck zeigt auf, wie umweltbewusst ein Mensch lebt. Hierbei werden verschiedene Entscheidungen, die du triffst, bewertet."
+            "Der ökologische Fußabdruck zeigt auf, wie umweltbewusst ein Mensch lebt. Im Folgenden werden verschiedene Entscheidungen, die du triffst, nach ihrer Umweltverträglichkeit bewertet."
         ),
         2: (
             <ul>
                 <li>
                     {" "}
-                    Im Folgenden werden die Entscheidungnen, die du triffst, nach ihrer Umweltverträglichkeit bewertet. Wenn
-                    du die Frage und die Antworten gelesen hast, nimm dir kurz Zeit und überlege, welche der
+                    Du wirst verschiedene Fragen gestellt bekommen. Wenn du die Fragen und die Antwortmöglichkeiten gelesen hast, nimm dir kurz Zeit und überlege, welche der
                     Antworten am besten auf dich zutrifft. Dahinter siehst du in Klammern immer eine Zahl. Das sind
                     die Punkte, die du sammelst. Diese Punkte zählst du während des Spiels zusammen.{" "}
                 </li>

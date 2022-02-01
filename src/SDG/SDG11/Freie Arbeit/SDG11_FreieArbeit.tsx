@@ -33,24 +33,26 @@ export const SDG11_FreieArbeit: TextProps = {
                 Blatt (die Größe ist ganz dir überlassen) beginnen. Ich habe hier auch gleich ein buntes Papier
                 genommen, aber das ist auch dir überlassen. Die Materialien, die du nutzen möchtest, können ganz
                 unterschiedlich sein. Du kannst mit verschiedenen Stiften oder Kreiden oder sonstigen Farben malen,
-                verschiedene Papier Arten nehmen und Sachen ausschneiden oder falten und dann auf dein Bild kleben. Du
+                verschiedene Papierarten nehmen und Sachen ausschneiden oder falten und dann auf dein Bild kleben. Du
                 kannst aber auch ganz andere Sachen noch nutzen, ich habe meine Wolken zum Beispiel aus Watte gemacht.
             </div>
         ),
         3: (
             <div>
-                Jetzt, da du dir ausgedacht hast wie deine ideale Stadt aussehen soll und all die benötigten Materialien
+                Jetzt, da du dir ausgedacht hast, wie deine ideale Stadt aussehen soll und all die benötigten Materialien
                 bereitgelegt hast, kann es los gehen. Fang einfach an zu basteln, kleben, malen, was auch immer dir in
-                den Sinn kommt und werde so kreativ wie du möchtest und kannst.
+                den Sinn kommt und werde so kreativ, wie du möchtest und kannst.
             </div>
         ),
         4: (
             <div>
                 Nur ein Beispiel, wie ich mir eine nachhaltige Stadt vorstelle. Wie du sehen kannst, sind hier viele
-                Pflanzen und im Hintergrund wird mit Windrädern nachhaltig Strom produziert. Auch auf den Hausdächern
+                Pflanzen und im Hintergrund wird mit Windrädern nachhaltig Strom produziert und auch auf den Hausdächern
                 und dem Bus befinden sich Solarzellen, um grünen Strom zu produzieren.
-                <img style={{ marginBottom: "-20vw", marginLeft: "35.333vw", height: "26.667vw" }} src={Stadt} alt="" />
             </div>
+        ),
+        5: (
+            <img style={{ marginBottom: "-20vw", marginLeft: "35.333vw", height: "26.667vw" }} src={Stadt} alt="" />
         ),
     },
 };
