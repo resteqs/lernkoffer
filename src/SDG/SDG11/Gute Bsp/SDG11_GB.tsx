@@ -101,16 +101,16 @@ export const SDG11_GB: TextProps = {
         8: (
             <div>
                 Am besten lässt du dir hier von einem Erwachsenen helfen: Nimm den Hammer und den Nagel und mache damit
-                ein Loch in den Boden der Dose (Wenn du ein Tier mit Beinen gestalten möchtest, dann mach noch ein paar
-                Löcher in die Dose, durch die du Fäden fädelst und an die Enden Knöpfe oder Perlen knotest).
+                ein Loch in den Boden der Dose. Wenn du ein Tier mit Beinen gestalten möchtest, dann mach noch ein paar
+                Löcher in die Dose, durch die du Fäden fädelst und an die Enden Knöpfe oder Perlen knotest.
             </div>
         ),
         9: <img style={{ display:"block", margin:"auto" }} src={Schritt3} alt="" />,
         10: (
             <div>
-                Nimm nun den Draht und fädle ihn durch das offene Ende der Dose und das Loch, was du gerade mit dem
+                Nimm nun den Draht und fädle ihn durch das offene Ende der Dose und das Loch, das du gerade mit dem
                 Nagel gemacht hast. Wenn du damit fertig bist, knote die Enden über der Dose zusammen. Benutze hier ein
-                wenig mehr Draht, weil das dann die Schlaufe wird, an der das Hotel aufgehängt werden soll.
+                wenig mehr Draht, weil das dann die Schlaufe wird an der das Hotel aufgehängt werden soll.
             </div>
         ),
         11: <img style={{ display:"block", margin:"auto" }} src={Schritt4_1} alt="" />,
@@ -127,8 +127,8 @@ export const SDG11_GB: TextProps = {
         15: <img style={{ display:"block", margin:"auto" }} src={Schritt5_2} alt="" />,
         16: (
             <div>
-                Nachdem dein Insektenhotel jetzt fertig ist, nimm es und suche dir einen guten Platz in der Natur (Tipp:
-                ein guter Platz ist immer in einem Baum).
+                Nachdem dein Insektenhotel jetzt fertig ist, nimm es und suche dir einen guten Platz in der Natur. <br/>Tipp:
+                ein guter Platz ist immer in einem Baum.
             </div>
         ),
     },
