@@ -35,7 +35,7 @@ export const SDG11_GB: TextProps = {
         1: (
             <div>
                 {" "}
-                Es gibt viele Möglichkeiten, wie dein Insektenhotel am Ende aussehen könnte. Eine davon ist es wie eine
+                Es gibt viele Möglichkeiten, wie dein Insektenhotel am Ende aussehen könnte. Eine davon ist, es wie eine
                 Biene oder ein anderes Tier, das du magst, aussehen zu lassen. Aber natürlich kannst du es auch ganz
                 einfach halten und die Dose nur in einer Farbe oder gar nicht bemalen. Mach es einfach so, wie es dir am
                 besten gefällt und vor allem auch so, wie es am besten für dich möglich ist.
@@ -44,36 +44,36 @@ export const SDG11_GB: TextProps = {
         2: (
             <div>
                 {" "}
-                Aber wenn du nur eine Farbe nutzen möchtest, dann wäre weiß am besten, weil es das Sonnenlicht
-                reflektieren (zurückwerfen) würde und die Farbe, die du nicht nutzen solltest, ist schwarz. Diese würde
-                das Sonnenlicht nämlich aufnehmen und dann wird es in der Dose sehr heiß, was schlecht für die Tiere
+                Aber wenn du nur eine Farbe nutzen möchtest, dann ist weiß am besten, weil es das Sonnenlicht
+                reflektieren (zurückwirft) würde und die Farbe, die du nicht nutzen solltest, ist schwarz. Schwarze Farbe nimmt das Sonnenlicht auf
+                und dann wird es in der Dose sehr heiß, was schlecht für die Tiere
                 innerhalb des Hotels ist.
             </div>
         ),
         3: (
             <div>
-                Zuerst solltest du all das benötigte Material vorbereiten. Das wäre:
+                Zuerst solltest du all das benötigte Material vorbereiten. Für das Insektenhotel brauchst du:
                 <ul>
-                    <li> <b> - Eine Dose </b> (am besten machst du diese vorher grob sauber)</li>
-                    <li> <b> - Ein Draht </b> </li>
+                    <li> <b> - eine Dose </b> (am besten machst du diese vorher grob sauber)</li>
+                    <li> <b> - einen Draht </b> </li>
                     <li>
                         {" "}
-                        - Und natürlich die Füllung:  <b> Bambus </b> (wenn du das nicht findest, dann nimm einfach andere hohle
-                        Äste oder lass diese weg), <b> zusammengerolltes Papier </b>, <b>Holzwolle </b> , <b> Stroh </b>, <b> dünne Äste </b>, <b>Tannenzapfen
-                        oder andere Sachen </b>, die deiner Meinung nach gut wären (Tipp: nimm unterschiedliche Materialien,
-                        damit verschiedene Tiere dein Hotel nutzen können)
-                    </li>
+                        - die Füllung:  <b> Bambus </b> (Wenn du das nicht findest, dann nimm einfach andere hohle
+                        Äste oder lass diese weg.), <b> zusammengerolltes Papier</b>, <b>Holzwolle</b>, <b> Stroh</b>, <b> dünne Äste</b>, <b>Tannenzapfen
+                        oder andere Sachen</b>, die deiner Meinung nach gut wären.</li> 
+                        <li> 
+                    Tipp: Nimm unterschiedliche Materialien, damit verschiedene Tiere dein Hotel nutzen können.  </li>
+                    
                 </ul>
             </div>
         ),
         4: (
             <div>
                 <ul>
-                    <li> <b> - Ein Nagel und ein Hammer </b> </li>
+                    <li> <b> - einen Nagel und einen Hammer </b> </li>
                     <li>
                         {" "}
-                        <b> - Optional: </b> Farbe oder Wolle, um es bunter zu machen und/oder Fäden und Perlen oder Knöpfe (zum
-                        Beispiel, wenn du es wie ein Tier gestalten möchtest, das Beine hat)
+                        <b> - optional: </b> Farbe oder Wolle, wenn du es bunter gestalten willst und/oder Foptional: Fäden sowie Perlen oder Knöpfe, wenn du es wie ein Tier gestalten willst, das Beine hat.
                     </li>
                 </ul>
                 <img style={{ marginLeft: "800px" }} src={Schritt1} alt="" />
