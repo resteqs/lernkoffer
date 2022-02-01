@@ -1,30 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
 // eslint-disable-next-line react/prefer-stateless-function
-class foxHedgehog extends React.Component {
-    render(): JSX.Element {
-        return (
-            <div className="standard-background">
-                <h1 className="header">FOX AND HEDGEHOG</h1>
-                <div>
-                    <p className="playinformation">
-                        Lovely little animals, you could think, how should they be connected to the greenhouse effect
-                        and climate change? Well, animals are somehow&nbsp;
-                        <span className="red">natural producers of certain gases</span>&nbsp;like Methane or carbon
-                        dioxide (CO<sub>2</sub>).&nbsp;<span className="red">Most gases</span>&nbsp;produced by brutes
-                        come from industrial&nbsp;<span className="red">livestock farming</span>&nbsp;and especially
-                        from ruminants because they burp and fart out Methane, which results from their digestion.&nbsp;
-                    </p>
-                </div>
-                <Link to="/SDG13/Spiel1">
-                    <button className="buttonBack" type="button">
-                        Back
-                    </button>
-                </Link>
-            </div>
-        );
-    }
-}
+import * as React from "react";
+import { Link } from "react-router-dom";
+import { InfotextButton } from "../../../../Components/Buttons/InfotextButton";
+import { TextProps } from "../../../../Interfaces/SDG";
+import Logo from "../../../../SDGLogos/Goal-SDG13.png";
 
-export default foxHedgehog;
+export const foxHedgehog:TextProps = {
+    sdgNumber: 13,
+    sdgTitle: "Suchspiel",
+    sdg: "SDG13",
+    logo: Logo,
+    header: {
+        1: "Fuchs und Igel",
+        2: "Fuchs und Igel",
+
+
+    },
+    text: {
+        1: "Niedliche kleine Tiere, könnte man denken, wie sollten sie mit dem Treibhauseffekt und dem Klimawandel in Verbindung stehen? Nun, Tiere sind gewissermaßen natürliche Produzenten von bestimmten Gasen wie Methan oder Kohlenstoffdioxid (CO2). Die meisten Gase, die von den Tieren produziert werden, stammen aus der industriellen Tierhaltung und vor allem von Wiederkäuern, denn sie rülpsen und furzen Methan, das bei ihrer Verdauung entsteht.",
+        2: <div style={{ textAlign: "center", marginTop: "10vh"  }}><Link to = "/SDG13/Spiel1"><InfotextButton version="green">Zürück zum Tippspiel</InfotextButton></Link></div>
+    },
+}

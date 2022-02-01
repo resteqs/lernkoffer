@@ -1,34 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
 // eslint-disable-next-line react/prefer-stateless-function
-class bicycle extends React.Component {
-    render(): JSX.Element {
-        return (
-            <div className="standard-background">
-                <h1 className="header">BICYCLE</h1>
-                <div>
-                    {/* eslint-disable-next-line react/style-prop-object */}
-                    <p className="playinformation">
-                        He emissions about&nbsp;
-                        <span className="red">
-                            21g of CO<sub>2</sub>&nbsp;per kilometer&nbsp;
-                        </span>
-                        which is more than&nbsp;<span className="red">ten times less than a car</span>! Besides, it
-                        is&nbsp;<span className="red">healthy&nbsp;</span>to bicycle and helps to reduce the noise in
-                        the cities. If you want to save money, a bike should be your choice since the usage costs are
-                        only&nbsp;<span className="red">10 cents per driven kilometer.</span> For cars, the price lies
-                        between 40 and 140 cents!&nbsp;
-                    </p>
-                </div>
-                <Link to="/SDG13/Spiel1">
-                    <button className="buttonBack" type="button">
-                        Back
-                    </button>
-                </Link>
-            </div>
-        );
-    }
-}
+import * as React from "react";
+import { Link } from "react-router-dom";
+import { InfotextButton } from "../../../../Components/Buttons/InfotextButton";
+import { TextProps } from "../../../../Interfaces/SDG";
+import Logo from "../../../../SDGLogos/Goal-SDG13.png";
 
-export default bicycle;
+export const bicycle:TextProps = {
+    sdgNumber: 13,
+    sdgTitle: "Suchspiel",
+    sdg: "SDG13",
+    logo: Logo,
+    header: {
+        1: "Fahrradfahrer",
+        2: "Fahrradfahrer",
+    },
+    text: {
+        1: "Er stößt etwa 21g CO2 pro Kilometer aus, was mehr als zehnmal weniger ist als ein Auto! Außerdem ist es gesund, Fahrrad zu fahren und hilft, den Lärm in den Städten zu reduzieren. Wenn du Geld sparen willst, sollte ein Fahrrad deine Wahl sein, da die Nutzungskosten nur 10 Cent pro gefahrenen Kilometer betragen. Beim Auto liegt der Preis zwischen 40 und 140 Cent!",
+        2: <div style={{ textAlign: "center", marginTop: "10vh"  }}><Link to = "/SDG13/Spiel1"><InfotextButton version="green">Zürück zum Tippspiel</InfotextButton></Link></div>
+    },
+}

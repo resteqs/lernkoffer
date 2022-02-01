@@ -40,6 +40,8 @@ export const SDG05_Spiel = ():JSX.Element => {
         5: "Marie Curie",
         6: "Harriet Tubman",
         7: "Rosalind Franklin",
+        8: "Gloria Steinem",
+        9: "Amanda Gorman"
     };
 
     const text: Record<number, JSX.Element| string> =  {
@@ -50,7 +52,9 @@ export const SDG05_Spiel = ():JSX.Element => {
         5: <button type="button" onClick={() => setIsOpen(true)} style = {{ display: "block", margin:"auto" }}><img src={MarieCurie} alt="" style = {{ display: "block", margin:"auto", width:"20vw" }}/></button>,
         6: <button type="button" onClick={() => setIsOpen(true)} style = {{ display: "block", margin:"auto" }}><img src={HarrietTubman} alt="" style = {{ display: "block", margin:"auto", width:"20vw" }}/></button>,
         7: <button type="button" onClick={() => setIsOpen(true)} style = {{ display: "block", margin:"auto" }}><img src={RosalindFranklin} alt="" style = {{ display: "block", margin:"auto", width:"20vw" }} /></button>,
-        8: "Und? Welche ist deine Favorit?"
+        8: <button type="button" onClick={() => setIsOpen(true)} style = {{ display: "block", margin:"auto" }}><img src={GloriaSteinem} alt="" style = {{ display: "block", margin:"auto", width:"20vw" }} /></button>,
+        9: <button type="button" onClick={() => setIsOpen(true)} style = {{ display: "block", margin:"auto" }}><img src={AmandaGorman} alt="" style = {{ display: "block", margin:"auto", width:"20vw" }} /></button>,
+        10: "Und? Welche ist deine Favorit?"
     };
     
     const maxSlides = Object.keys(text).length;
@@ -59,6 +63,8 @@ export const SDG05_Spiel = ():JSX.Element => {
         5: "Marie Curie war eine Physikerin und Chemikerin aus Polen. Sie ist die einzige Frau, die 2 Nobelpreise bekam, nämlich für Chemie und Physik. Sie hat sich außerdem zu Lebzeiten dafür eingesetzt, dass Frauen studieren dürfen. Das war nämlich früher keine Selbstverständlichkeit. Berühmt ist sie für ihre Forschung zu Radioaktivität.",
         6: "Harriet Tubman entkam der Sklaverei im Süden der Vereinigten Staaten. Sie half dann, viele andere Freiheitssuchende in die Freiheit zu führen. Sie diente auch der Union während des amerikanischen Bürgerkriegs. Nach ihrem Tod geriet Harriet Tubman in Vergessenheit, heute zählt sie zu den bekanntesten historischen Persönlichkeiten, die gegen die Sklaverei kämpften.",
         7: "Rosalind Franklin war eine intelligente und interessierte Wissenschaftlerin aus England. Ihre wichtigste Entdeckung waren der Bauplan und die Bausteine des menschlichen Körpers. Sie musste während ihrer ganzen beruflichen Laufbahn mit Vorurteilen von männlichen Kollegen kämpfen. Beispielsweise haben 2 ihrer Kollegen, James Watson und Francis Crick ihre Arbeit veröffentlicht, ohne zu sagen, dass sie von ihr war!",
+        8: "Gloria Steinem wurde 1934 in den USA geboren und ist eine bekannte Journalistin, Feministin und Frauenrechtlerin. Sie setzt sich also sehr für die Gleichbehandlung der Frauen und Mädchen in unserer Gesellschaft ein. Für ihre Arbeit und ihre Werke hat sie schon sehr viele Auszeichnungen bekommen.",
+        9: "Die amerikanische Dichterin und Aktivistin Amanda Gorman wurde 2017 die erste National Youth Poet Laureate der Vereinigten Staaten. Sie erlangte große Bekanntheit, als sie bei der Amtseinführung von Präsident Joe Biden am 20. Januar 2021 ein Gedicht vortrug. Mit nur 22 Jahren war Gorman die bisher jüngste Dichterin, die dies tun durfte.",
     }
 
     const incrementCount = (): void => {
@@ -126,7 +132,7 @@ export const SDG05_Spiel = ():JSX.Element => {
             <div> </div>
         )
     );
-
+    
     return (
         <>
             <div className={`colour_${sdg}_header`}>
@@ -146,9 +152,7 @@ export const SDG05_Spiel = ():JSX.Element => {
             {Modal}
             {buttonBack}
             {buttonNext}
-            {buttonEnd}
-            
+            {buttonEnd}    
         </>
-
     );
 }

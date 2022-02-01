@@ -246,13 +246,13 @@ import { SDG13_Infotext } from "./SDG/SDG13/Info/SDG13_Infotext";
 /**                                Spiel                                     */
 /**                                Spiel2                                    */
 import { play13 }  from "./SDG/SDG13/Spiel/play";
-import  akw  from "./SDG/SDG13/Spiel/information/akw";
-import  cow  from "./SDG/SDG13/Spiel/information/cow";
-import  bicycle from "./SDG/SDG13/Spiel/information/bicycle";
-import  windTurbine  from "./SDG/SDG13/Spiel/information/windTurbine";
-import  tractor from "./SDG/SDG13/Spiel/information/tractor";
-import  tree  from "./SDG/SDG13/Spiel/information/tree";
-import foxHedgehog  from "./SDG/SDG13/Spiel/information/foxHedgehog";
+import { akw }  from "./SDG/SDG13/Spiel/information/akw";
+import { cow }  from "./SDG/SDG13/Spiel/information/cow";
+import { bicycle } from "./SDG/SDG13/Spiel/information/bicycle";
+import { windTurbine }  from "./SDG/SDG13/Spiel/information/windTurbine";
+import { tractor } from "./SDG/SDG13/Spiel/information/tractor";
+import { tree }  from "./SDG/SDG13/Spiel/information/tree";
+import { foxHedgehog }  from "./SDG/SDG13/Spiel/information/foxHedgehog";
 
 /**----------------------------------------------------------------------------
  *                                SDG 14
@@ -667,13 +667,13 @@ export const App = (): JSX.Element => {
 
 
             <Route exact path="/SDG13/Spiel1"  component={play13}/>
-            <Route exact path="/SDG13/Spiel1/akw" component={akw}/>                   
-            <Route exact path="/SDG13/Spiel1/cow" component={cow}/>
-            <Route exact path="/SDG13/Spiel1/bicycle" component={bicycle}/>
-            <Route exact path="/SDG13/Spiel1/wind_turbine" component={windTurbine}/>
-            <Route exact path="/SDG13/Spiel1/tractor" component={tractor}/>
-            <Route exact path="/SDG13/Spiel1/tree" component={tree}/>
-            <Route exact path="/SDG13/Spiel1/fox_and_hedgehog" component={foxHedgehog}/>
+            <Route exact path="/SDG13/Spiel1/akw"><TextComponent sdg={akw}/></Route>                   
+            <Route exact path="/SDG13/Spiel1/cow"><TextComponent sdg={cow}/></Route>  
+            <Route exact path="/SDG13/Spiel1/bicycle"><TextComponent sdg={bicycle}/></Route>  
+            <Route exact path="/SDG13/Spiel1/wind_turbine"><TextComponent sdg={windTurbine}/></Route>  
+            <Route exact path="/SDG13/Spiel1/tractor"><TextComponent sdg={tractor}/></Route>  
+            <Route exact path="/SDG13/Spiel1/tree"><TextComponent sdg={tree}/></Route>  
+            <Route exact path="/SDG13/Spiel1/fox_and_hedgehog"><TextComponent sdg={foxHedgehog}/></Route>  
 
 /**                                Spiel2                                    */
             <Route exact path="/SDG13/Spiel2" component={Main} />                    

@@ -1,47 +1,24 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
 // eslint-disable-next-line react/prefer-stateless-function
-class tree extends React.Component {
-    render(): JSX.Element {
-        return (
-            <div className="standard-background">
-                <h1 className="header">TREE</h1>
-                <div>
-                    <p className="playinformation">
-                        <p>
-                            As we all know trees are responsible for&nbsp;<span className="red">photosynthesis</span>.
-                            Especially nowadays, when nearly everything we do is related to an action producing Carbon
-                            Dioxide these plants are&nbsp;<span className="red">extremely important&nbsp;</span>since
-                            a&nbsp;<span className="red">higher concentration of Carbon Dioxide</span>&nbsp;in the air
-                            would be&nbsp;dangerous&nbsp;for all the living creatures and&nbsp;
-                            <span className="red">advance climate change</span>.
-                        </p>
-                        <p>
-                            Yet many people seem to not know that trees are not just nice to look at but also have
-                            functions that affect our lives because their wood is a&nbsp;
-                            <span className="red">good building material</span>, they create a&nbsp;
-                            <span className="red">living space</span>&nbsp;for many kinds of animals, cast a&nbsp;
-                            <span className="red">shadow&nbsp;</span>which causes high&nbsp;
-                            <span className="red">evaporation of water</span>, especially in summer. Of course, there
-                            are many other reasons why trees are that important to us humans, but these are the most
-                            important ones.
-                        </p>
-                        <p>
-                            Do you see now why we must&nbsp;stop&nbsp;the forest clearance right away? This, by the way,
-                            goes up to&nbsp;<span className="red">300.000 square kilometers</span>&nbsp;each year, and
-                            more than half of it in the&nbsp;<span className="red">rainforest</span>!&nbsp;&nbsp;
-                        </p>
-                    </p>
-                </div>
-                <Link to="/SDG13/Spiel1">
-                    <button className="buttonBack" type="button">
-                        Back
-                    </button>
-                </Link>
-            </div>
-        );
-    }
-}
+import * as React from "react";
+import { Link } from "react-router-dom";
+import { InfotextButton } from "../../../../Components/Buttons/InfotextButton";
+import { TextProps } from "../../../../Interfaces/SDG";
+import Logo from "../../../../SDGLogos/Goal-SDG13.png";
 
-export default tree;
+export const tree:TextProps = {
+    sdgNumber: 13,
+    sdgTitle: "Suchspiel",
+    sdg: "SDG13",
+    logo: Logo,
+    header: {
+        1: "Baum",
+        2: "Baum",
+        3: "Baum",
+
+    },
+    text: {
+        1: "Wie wir alle wissen, sind Bäume für die Photosynthese verantwortlich. Gerade in der heutigen Zeit, in der fast alles, was wir tun, mit einer Aktion verbunden ist, die Kohlenstoffdioxid produziert, sind diese Pflanzen extrem wichtig, da eine höhere Konzentration von Kohlenstoffdioxid in der Luft für alle Lebewesen gefährlich wäre und den Klimawandel vorantreiben würde. Doch viele Menschen scheinen nicht zu wissen, dass Bäume nicht nur schön anzusehen sind, sondern auch Funktionen haben, die unser Leben beeinflussen, denn ihr Holz ist ein gutes Baumaterial, sie schaffen einen Lebensraum für viele Tierarten, werfen einen Schatten, der vor allem im Sommer eine hohe Verdunstung von Wasser bewirkt.",
+        2: "Natürlich gibt es noch viele andere Gründe, warum Bäume so wichtig für uns Menschen sind, aber das sind die Wichtigsten. Verstehst du jetzt, warum wir die Waldrodung sofort stoppen müssen? Das sind übrigens jedes Jahr bis zu 300.000 Quadratkilometer, und mehr als die Hälfte davon im Regenwald!",
+        3: <div style={{ textAlign: "center", marginTop: "10vh"  }}><Link to = "/SDG13/Spiel1"><InfotextButton version="green">Zürück zum Tippspiel</InfotextButton></Link></div>
+    },
+}
