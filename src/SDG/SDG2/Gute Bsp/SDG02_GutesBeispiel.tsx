@@ -26,7 +26,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
 
     const text = {
         1: (
-            <div style={{ textAlign: "left", fontSize: "30px" }}>
+            <div style={{ textAlign: "left", fontSize: "1.6vw" }}>
                 <p>
                     {" "}
                     <ul>
@@ -37,7 +37,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
                             Menschen angesehen werden, da in ihnen wichtige Stoffe wie Vitamine, Kohlenhydrate, Fette
                             oder Eiweiße enthalten sind. Welche Nahrungsmittel tatsächlich in verschiedenen Regionen
                             gegessen werden, ist stark von der Kultur und den klimatischen Bedingungen (ist es warm oder
-                            kalt; gibt es viel Wasser oder wenig) abhängig.
+                            kalt?; gibt es viel oder wenig Wasser?) abhängig.
                         </li>
                         <li>
                             {" "}
@@ -58,30 +58,48 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
         ),
         2: (
             <div>
-                <p style={{ float:"left", width:"40%", textAlign: "left", fontSize: "25px" }}>
+                <p style={{ float: "left", width: "40%", textAlign: "left", fontSize: "1.25vw" }}>
                     <ul>
                         <li>
-                            1. Das Ziel: Weltweit soll jeder Mensch eine sichere Ernährung haben und diese sollte nachhaltig gestaltet werden. Daher sollen auch die Bildung, der Zugang zu sauberem Wasser und eine umweltfreundliche Energieversorgung garantiert werden. Das alles soll bis zum Jahr 2030 erreicht werden.
+                            1. Das Ziel: Weltweit soll jeder Mensch eine sichere Ernährung haben und diese sollte
+                            nachhaltig gestaltet werden. Daher sollen auch die Bildung, der Zugang zu sauberem Wasser
+                            und eine umweltfreundliche Energieversorgung garantiert werden. Das alles soll bis zum Jahr
+                            2030 erreicht werden.
                         </li>
                         <li>
                             {" "}
-                            2. Die Arbeit: Die Organisation setzt sich für ein selbstbestimmtes Leben in Würde und Gerechtigkeit für jeden Menschen unter dem Motto „Zero Hunger wherever we work by 2030“ (Kein Hunger, wo immer wir arbeiten, bis zum Jahr 2030) ein.
+                            2. Die Arbeit: Die Organisation setzt sich für ein selbstbestimmtes Leben in Würde und
+                            Gerechtigkeit für jeden Menschen unter dem Motto „Zero Hunger wherever we work by 2030“
+                            (Kein Hunger, wo immer wir arbeiten, bis zum Jahr 2030) ein.
                         </li>
                         <li>
                             {" "}
-                            3. Die Themen: Hunger kann man nicht dadurch beenden, Leute nur mit Essen zu versorgen. Egal aus welchen Gründen ein Mensch zu wenig zu essen hat, muss ihm/ihr aber geholfen werden. Das kann auf sehr vielen verschiedenen Wegen passieren. Einige wichtige Dinge dabei sind, Wissen über gesunde Ernährung und nachhaltige Landwirtschaft zu vermitteln.
+                            3. Die Themen: Hunger kann man nicht dadurch beenden, Leute nur mit Essen zu versorgen. Egal
+                            aus welchen Gründen ein Mensch zu wenig zu essen hat, muss ihm/ihr aber geholfen werden. Das
+                            kann auf sehr vielen verschiedenen Wegen passieren. Einige wichtige Dinge dabei sind, Wissen
+                            über gesunde Ernährung und nachhaltige Landwirtschaft zu vermitteln.
                         </li>
-                        
                     </ul>
                 </p>
-    
-                <p style={{ float:"right", width:"40%", textAlign: "left", fontSize: "25px" }}>
+
+                <p style={{ float: "right", width: "40%", textAlign: "left", fontSize: "1.25vw" }}>
                     <ul>
-                        <li> a.) Insgesamt wird diese Arbeit in 35 Ländern weltweit durch hunderte Projekte umgesetzt.</li>
-                        <li> b.) Zusätzlich werden Gründungen von Unternehmen und Gruppen unterstützt, damit Menschen sich zusammen für ihre Rechte einfacher stark machen können. </li>
-                        <li> c.) Wichtig hierbei ist, dass die Verbesserungen nicht nur kurzfristig sein sollen, sondern so lang wie möglich, also im Idealfall für immer, anhalten sollen. Um diese Ziele erreichen zu können, arbeitet die Welthungerhilfe mit verschiedenen Partnern zusammen.</li>
-                    </ul>    
-                
+                        <li>
+                            {" "}
+                            a.) Insgesamt wird diese Arbeit in 35 Ländern weltweit durch hunderte Projekte umgesetzt.
+                        </li>
+                        <li>
+                            {" "}
+                            b.) Zusätzlich werden Gründungen von Unternehmen und Gruppen unterstützt, damit Menschen
+                            sich zusammen für ihre Rechte einfacher starkmachen können.{" "}
+                        </li>
+                        <li>
+                            {" "}
+                            c.) Wichtig hierbei ist, dass die Verbesserungen nicht nur kurzfristig sein sollen, sondern
+                            so lange wie möglich, im Idealfall für immer, anhalten sollen. Um diese Ziele erreichen
+                            zu können, arbeitet die Welthungerhilfe mit verschiedenen Partnern zusammen.
+                        </li>
+                    </ul>
                 </p>
 
                 <button
@@ -90,16 +108,16 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
                         background: "#15b408",
                         borderStyle: "none",
                         position: "fixed",
-                        bottom: "100px",
-                        borderRadius: "30px 30px 30px 30px",
-                        padding: "20px",
+                        bottom: "5vw",
+                        borderRadius: "1.5vw 1.5vw 1.5vw 1.5vw",
+                        padding: "1vw",
                     }}
                     onClick={() => {
                         setIsOpen(true);
                         openModal1();
                     }}
                 >
-                    <p style={{ fontSize: "60px" }}> Lösung </p>
+                    <p style={{ fontSize: "3vw" }}> Lösung </p>
                 </button>
             </div>
         ),
@@ -116,7 +134,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
     const Lösung = {
         1: (
             <div>
-                <p> 
+                <p>
                     <ul>
                         <li> 1. zu c.) </li>
                         <li> 2. zu a.) </li>
@@ -139,7 +157,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
         ),
         3: (
             <div>
-                <p>  </p>
+                <p> </p>
             </div>
         ),
     };
@@ -167,7 +185,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
 
     buttonBack =
         showtext >= 2 ? (
-            <div className="backbutton" style={{ marginTop: "50px" }}>
+            <div className="backbutton" style={{ marginBottom: "10vh" }}>
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
                     <span className={infotextbutton.shadow} />
@@ -185,7 +203,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
 
     buttonNext =
         showtext < maxslide ? (
-            <div className="nextbutton" style={{ marginTop: "50px" }}>
+            <div className="nextbutton" style={{ marginBottom: "10vh" }}>
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
                     <span className={infotextbutton.shadow} />
@@ -203,14 +221,14 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
 
     buttonEnd =
         showtext === maxslide ? (
-            <div className="nextbutton" style={{ marginTop: "50px" }}>
+            <div className="nextbutton" style={{ marginBottom: "5vh" }}>
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
                     <button className={infotextbutton.pushable} type="button">
                         <span className={infotextbutton.shadow} />
                         <span className={infotextbutton.edgegreen} />
                         <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                            <p className={infotextbutton.buttontext}>Weiter </p>
+                            <p className={infotextbutton.buttontext}>Beenden </p>
                         </span>
                     </button>
                 </Link>{" "}
@@ -257,7 +275,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
             }}
             closeTimeoutMS={50}
         >
-            <p style={{ fontSize: "50px" }}>{modalContent[modalOpened]}</p>
+            <p style={{ fontSize: "2.5vw" }}>{modalContent[modalOpened]}</p>
         </Modal>
     );
 
@@ -265,7 +283,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
         <div>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
-                Welthungerhilfe
+                    Welthungerhilfe
                     <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>

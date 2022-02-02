@@ -34,16 +34,16 @@ export const SDG02_Quiz: QuizProps = {
                     etwas sehr Wichtiges lernen. Wenn du schon einmal darüber nachgedacht hast, dann kannst du
                     vielleicht denen, die das noch nie getan haben, ein bisschen helfen.
                 </p>
-                Du wirst immer zwei Sachen gezeigt bekommen und sollst entscheiden, was davon gesünder ist und warum
-                (ihr könnt natürlich auch gerne in der Gruppe überlegen). Wenn du dich entschieden hast, dann tippe den
-                Gegenstand an und du wirst sehen, ob du richtig liegst.
+                Du wirst immer zwei Lebensmittel (Dinge zum Essen) gezeigt bekommen und sollst entscheiden, was davon
+                gesünder ist und warum (ihr könnt natürlich auch gerne in der Gruppe überlegen). Wenn du dich
+                entschieden hast, dann tippe den Gegenstand an und du wirst sehen, ob du richtig liegst.
             </div>
         ),
         5: (
             <div>
-                Du hast nun schon ein paar Sachen gesehen, die gesünder als andere sind. Aber warum gibt es gesunde und
-                ungesunde Sachen? Das ist nicht ganz einfach zu erklären, aber du schaffst es bestimmt trotzdem, das zu
-                verstehen!
+                Du hast nun schon ein paar Lebensmittel gesehen, die gesünder als andere sind. Aber warum gibt es
+                gesunde und ungesunde Lebensmittel? Das ist nicht ganz einfach zu erklären, aber du schaffst es bestimmt
+                trotzdem, das zu verstehen!
             </div>
         ),
         6: (
@@ -58,19 +58,19 @@ export const SDG02_Quiz: QuizProps = {
         7: (
             <div>
                 Das wichtige bei der Ernährung ist aber, dass du dich „ausgewogen“ ernährst, also von allen wichtigen
-                Sachen etwas isst. Wenn man zu wenig von wichtigen Stoffen über das Essen aufnimmt, dann spricht man von
+                Sachen etwas isst. Wenn man zu wenig von wichtigen Stoffen über das Essen aufnimmt, spricht man von
                 einer „Mangelernährung“. Die Folgen davon sind meist sehr schlimm, denn es führt dazu, dass man öfter
                 krank wird, weil der Körper sich nicht mehr gegen Krankheiten wehren kann. Man ist auch nicht mehr so
                 leistungsfähig wie sonst, das bedeutet, dass man sich nicht mehr konzentrieren kann und auch keine Kraft
-                hat, um zum Beispiel zu spielen. 
+                mehr hat, um zum Beispiel zu spielen.
             </div>
         ),
         8: (
             <div>
                 <p>
                     Wenn du dich genauer mit diesem Thema beschäftigen möchtest, dann könnte dir die
-                    „Ernährungspyramide“ helfen. Das ist eine Zeichnung, die zeigt, welche Lebensmittel (Dinge zum
-                    Essen) sehr viel oder eher weniger gegessen werden sollen.
+                    „Ernährungspyramide“ helfen. Das ist eine Zeichnung, die zeigt, welche Lebensmittel wie oft gegessen
+                    werden sollen.
                 </p>
                 <img style={{ height: "50vh", margin: "auto", display: "block" }} src={pyramide} alt="" />
             </div>
@@ -133,9 +133,9 @@ export const SDG02_Quiz: QuizProps = {
         4: "Falsch",
     },
     explanation: {
-        2: "Ein Apfel ist gesünder",
-        3: "Ein Vollkornbrot ist gesünder",
-        4: "Eine Kartoffel ist gesünder",
+        2: "Ein Apfel ist gesünder.",
+        3: "Ein Vollkornbrot ist gesünder.",
+        4: "Eine Kartoffel ist gesünder.",
     },
     // modalContent: <div>Quiz SDG 02</div>,
     isQuizActive: {

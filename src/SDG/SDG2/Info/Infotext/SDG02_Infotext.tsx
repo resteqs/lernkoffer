@@ -1,36 +1,31 @@
-
 // eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
 import Logo from "../../../../SDGLogos/Goal-SDG02.png";
 import EG from "../../../../EG/EG2.png";
 import { InfotextProps } from "../../../../Interfaces/SDG";
 
-import SDG2_1 from "./audio/SDG2_1.mp3"
-import SDG2_2 from "./audio/SDG2_2.mp3"
-import SDG2_3 from "./audio/SDG2_3.mp3"
-import SDG2_4 from "./audio/SDG2_4.mp3"
-import SDG2_5 from "./audio/SDG2_5.mp3"
-import SDG2_6 from "./audio/SDG2_6.mp3"
-import SDG2_7 from "./audio/SDG2_7.mp3"
-import SDG2_8 from "./audio/SDG2_8.mp3"
+import SDG2_1 from "./audio/SDG2_1.mp3";
+import SDG2_2 from "./audio/SDG2_2.mp3";
+import SDG2_3 from "./audio/SDG2_3.mp3";
+import SDG2_4 from "./audio/SDG2_4.mp3";
+import SDG2_5 from "./audio/SDG2_5.mp3";
+import SDG2_6 from "./audio/SDG2_6.mp3";
+import SDG2_7 from "./audio/SDG2_7.mp3";
+import SDG2_8 from "./audio/SDG2_8.mp3";
 
-export const SDG02_Infotext: InfotextProps= {
+export const SDG02_Infotext: InfotextProps = {
     number: 2,
     name: "Kein Hunger",
     sdg: "SDG02",
     text: {
-        1: (
-            "„den Hunger beenden, Ernährungssicherheit und eine bessere Ernährung erreichen und eine nachhaltige Landwirtschaft fördern“"
-        ),
-        2: (
-            "Wenn Menschen extrem hungern und unterernährt sind, kann es keine nachhaltige Entwicklung geben. Da sie so wenig Essen haben, werden sie geschwächt und können schneller krank werden. Infolgedessen können sie nicht mehr so viel arbeiten und verdienen weniger Geld. Ohne das können sie nicht mehr Essen kaufen. Das heißt, dass durch den Hunger und die Unterernährung eine Falle entsteht, aus welcher sie sich nicht so einfach befreien können."
-        ),
+        1: "„den Hunger beenden, Ernährungssicherheit und eine bessere Ernährung erreichen und eine nachhaltige Landwirtschaft fördern“",
+        2: "Wenn Menschen extrem hungern und unterernährt sind, kann es keine nachhaltige Entwicklung geben. Da sie so wenig Essen haben, werden sie geschwächt und können schneller krank werden. Infolgedessen können sie nicht mehr so viel arbeiten und verdienen weniger Geld. Ohne dieses können sie kein Essen mehr kaufen. Das heißt, dass durch den Hunger und die Unterernährung eine Falle entsteht, aus welcher sie sich nicht so einfach befreien können.",
         3: (
             <div>
                 <p className="Infotext02">
-                    Es gibt Menschen, die sich nicht regelmäßig gesund und ausgewogen, also abwechslungsreich, ernähren
-                    können. Das liegt dann daran, dass manche Dinge, wie Geld oder Nahrung, nicht ausreichend vorhanden
-                    sind.
+                    Es gibt Menschen, die sich nicht regelmäßig gesund und ausgewogen beziehungsweise abwechslungsreich
+                    ernähren können. Das liegt dann daran, dass manche Dinge, wie Geld oder Nahrung, nicht ausreichend
+                    vorhanden sind.
                 </p>
             </div>
         ),
@@ -59,7 +54,7 @@ export const SDG02_Infotext: InfotextProps= {
                 <p className="Infotext02">
                     Eine Welt ohne Hunger kann unser Arbeitsleben, unsere Gesundheit, Bildung, Gleichberechtigung und
                     gesellschaftliche Entwicklung verbessern. Sie ist sehr wichtig, um eine bessere Zukunft für alle zu
-                    schaffen. Darüber hinaus sind wir mit Hunger nicht in der Lage die anderen Nachhaltigkeitsziele zu
+                    schaffen. Darüber hinaus sind wir mit Hunger nicht in der Lage, die anderen Nachhaltigkeitsziele zu
                     erreichen, da er dazu führt, dass wir uns nicht mehr so gut weiterentwickeln können.{" "}
                 </p>
             </div>
@@ -67,10 +62,10 @@ export const SDG02_Infotext: InfotextProps= {
         7: (
             <div>
                 <p className="Infotext02">
-                    Um Ernährung sicher zu stellen, müssen wir uns mit mehreren Themen befassen: z. B. mit dem Schutz
+                    Um (gute) Ernährung sicherzustellen, müssen wir uns mit mehreren Themen befassen: z. B. mit dem Schutz
                     der Gesellschaft, um sichere und nahrhafte Lebensmittel besonders für Kinder zu gewährleisten. Ein
                     anderes Beispiel ist die Veränderung der Ernährungssysteme, damit die Welt nachhaltiger und
-                    inklusiver (= mehr alle miteinbeziehen) wird. Du kannst helfen, indem du bei Landwirten oder Märkten
+                    inklusiver (= möglichst alle miteinbeziehend) wird. Du kannst helfen, indem du bei Landwirten oder Märkten
                     aus deiner Gegend einkaufst und dich für nachhaltige Lebensmittel entscheidest.
                 </p>
             </div>
@@ -94,7 +89,7 @@ export const SDG02_Infotext: InfotextProps= {
         5: "Was ist das Problem?",
         6: "Wie ist dieses Thema mit uns verbunden?",
         7: "Was können wir tun",
-        8: "Was können wir tun"
+        8: "Was können wir tun",
     },
     logo: Logo,
     eg: EG,
@@ -106,6 +101,6 @@ export const SDG02_Infotext: InfotextProps= {
         5: SDG2_5,
         6: SDG2_6,
         7: SDG2_7,
-        8: SDG2_8
-    }
-}
+        8: SDG2_8,
+    },
+};
