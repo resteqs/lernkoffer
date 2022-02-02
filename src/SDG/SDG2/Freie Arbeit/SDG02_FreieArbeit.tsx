@@ -36,10 +36,11 @@ export const SDG02_FreieArbeit: TextProps = {
             <div>
                 <p>
                     Im Folgenden sollt ihr euch einmal überlegen, was ihr für sehr wichtige Nahrungsmittel haltet und
-                    diese in Schmetterlingsflügel malen. Dafür benötigt jede:r ein Blatt Papier und einen Stift. Gerne
-                    könnt ihr die Schmetterlinge auch bunt ausmalen oder sogar Sachen aufkleben. Aber das ist ganz euch
-                    überlassen. Wenn ihr nicht wisst, wie ihr die Flügel eines Schmetterlings zeichnen könnt, dann seht
-                    euch die Vorlage auf der nächsten Seite an. 
+                    diese in ein Paar Schmetterlingsflügel hinein malen. Dafür benötigt jede:r ein Blatt Papier und
+                    einen Stift. Gerne könnt ihr die Schmetterlinge auch bunt ausmalen oder sogar Sachen aufkleben. Aber
+                    das ist ganz euch überlassen. Wenn ihr nicht wisst, wie ihr die Flügel eines Schmetterlings zeichnen
+                    könnt, dann seht euch die Vorlage auf der nächsten Seite an. Diese sollte auch ausgedruckt mit im
+                    Kofer enthalten sein.
                 </p>
             </div>
         ),
@@ -47,7 +48,7 @@ export const SDG02_FreieArbeit: TextProps = {
         4: (
             <p>
                 Seid ihr alle fertig? Dann könntet ihr euch zusammen in einen Kreis setzen und jede:r stellt seine/ihre
-                Flügel kurz vor (Was habe ich gemalt? Warum denke ich, dass dieses Nahrungsmittel wichtig ist?....). Am
+                Flügel kurz vor (Was habe ich gemalt? Warum denke ich, dass dieses Nahrungsmittel wichtig ist?...). Am
                 Ende könntet ihr all die verschiedenen Bilder auch aufhängen und die Vielfalt bewundern.
             </p>
         ),
@@ -55,7 +56,7 @@ export const SDG02_FreieArbeit: TextProps = {
             <div>
                 <p>
                     Es gibt offiziell zu jedem einzelnen SDG (Nachhaltigkeitsziel) jeweils ein Paar Flügel. Diese könnt
-                    ihr unten sehen (das sind die offiziellen Schmetterlingsflügel des zweiten SDGs)
+                    ihr unten sehen (das sind die offiziellen Schmetterlingsflügel des zweiten SDGs).
                 </p>
                 <img style={{ height: "30vw", margin: "auto", display: "block" }} src={FlügelSDG02} alt="" />
             </div>
