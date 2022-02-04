@@ -145,6 +145,6 @@ export interface VideoProps {
     logo: string;
     source;
     text?: Record<number, JSX.Element| string> ; 
-    quelle: string;
+    quelle: string|JSX.Element;
     isCCBY?: boolean;
 }

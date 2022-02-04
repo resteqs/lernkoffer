@@ -33,13 +33,6 @@ export const VideoComponent = (props: Props): JSX.Element => {
             </div>
         </Link>
     );
-    const source = (
-        !props.sdg.isCCBY === true ? (                
-            <p style={{ textAlign:"center", fontSize:"larger" }}>CC BY 4.0 licensed by: <a  href= "https://creativecommons.org/licenses/by/4.0/legalcode.de"> https://creativecommons.org/licenses/by/4.0/legalcode.de </a> </p>
-        ):(
-            <p style={{ textAlign:"center", fontSize:"larger" }}>CC BY-NC-ND 4.0 DE licensed by: <a  href= "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de"> https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de</a> </p>
-        )
-    )
 
     return (
         <>
@@ -51,7 +44,6 @@ export const VideoComponent = (props: Props): JSX.Element => {
             <div>
                 <ReactPlayer style={videoStyle} controls url={props.sdg.source}  />
                 <p style={{ textAlign:"center", fontSize:"larger", marginTop: "20px" }}>Quelle: {props.sdg.quelle} </p>
-                {source}
             </div>
             
             {buttonEnd}
