@@ -19,7 +19,7 @@ export const SDG06_Quiz:QuizProps = {
         4: "Dritte Frage",
         5: "Vierte Frage",
     },
-    text: { 1: <p>Wasser ist wichtig für den Körper und damit bleiben wir gesund. Wie viel sollten wir also mindestens pro Tag trinken? Als Tipp: ein Wasserglas enthält ungefähr 200 ml (sprich: „Milliliter“) und je älter man wird, desto mehr Wasser sollte man trinken, da man wächst. Falls ihr noch nicht so gut rechnen könnt, könnt ihr euch entweder bei diesen großen Zahlen 2 Nullen jeweils wegdenken (also z.B.: ein Wasserglas hat die Größe 2, mit 10 Jahren braucht man eine Wassermenge mit der Größe 10 und dann teilt ihr 10 durch 2) oder ihr schätzt einfach.</p>,
+    text: { 1: <p>Wasser ist wichtig für den Körper, damit wir gesund bleiben. Wie viel sollten wir also mindestens pro Tag trinken? Als Tipp: ein Wasserglas enthält ungefähr 200 ml (sprich: „Milliliter“) und je älter man wird, desto mehr Wasser sollte man trinken, da man wächst. Falls ihr noch nicht so gut rechnen könnt, könnt ihr euch entweder bei diesen großen Zahlen 2 Nullen jeweils wegdenken (also z.B.: ein Wasserglas hat die Größe 2, mit 10 Jahren braucht man eine Wassermenge mit der Größe 10 und dann teilt ihr 10 durch 2) oder ihr schätzt einfach.</p>,
             6: <p>Manchmal musst du aber noch mehr trinken, z.B. wenn du krank bist oder es sehr heiß ist. Außerdem ist es wichtig regelmäßig zu trinken, wenn du Sport machst oder schwer körperlich arbeitest und dich anstrengst. Wenn man zu wenig trinkt, kann es dazu führen, dass man schnell müde wird, Kopfweh bekommt und sich schlechter konzentrieren kann.</p>,
     },
     question: {
