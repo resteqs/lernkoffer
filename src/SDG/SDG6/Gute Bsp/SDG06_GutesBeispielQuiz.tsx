@@ -7,7 +7,7 @@ import Logo from "../../../SDGLogos/Goal-SDG06.png";
 
 export const SDG06_GutesBeispielQuiz: Quiz3OProps = {
     sdgNumber: 6,
-    sdgTitle: "Aufgaben/Fragen für SDG 06 nach den Steckbriefen",
+    sdgTitle: "Aufgaben für SDG 06 nach den Steckbriefen",
     sdg: "SDG06",
     logo: Logo,
     tile: { 6: "Fallen euch Vor- und Nachteile von den Projekten ein?" },
@@ -22,25 +22,25 @@ export const SDG06_GutesBeispielQuiz: Quiz3OProps = {
 
     buttonLeftContent: {
         1: <p style = {{ fontSize:"65px" }}>Nebeltrinker-Käfer</p>,
-        2: <p style = {{ fontSize:"65px" }}>zieht Wasser aus der Luft</p>,
-        3: <p style = {{ fontSize:"50px" }}>sie vergeben Kredite</p>,
-        4: <p style = {{ fontSize:"50px" }}>weil das Wasser seltsam schmeck</p>,
+        2: <p style = {{ fontSize:"65px" }}>Zieht Wasser aus der Luft</p>,
+        3: <p style = {{ fontSize:"50px" }}>Sie vergeben Kredite</p>,
+        4: <p style = {{ fontSize:"50px" }}>Weil das Wasser seltsam schmeckt</p>,
         5: <p style = {{ fontSize:"65px" }}>2,66 Euro</p>,
     },
 
     buttonMiddleContent: {
         1: <p style = {{ fontSize:"65px" }}>Löwe</p>,
-        2: <p style = {{ fontSize:"65px" }}>lässt Blumen wachsen</p>,
-        3: <p style = {{ fontSize:"50px" }}>sie ermöglichen einen direkten Zugang zu Wasser</p>,
-        4: <p style = {{ fontSize:"50px" }}>weil es in ein paar Jahren nicht mehr genug Wasser für alle geben wird</p>,
+        2: <p style = {{ fontSize:"65px" }}>Lässt Blumen wachsen</p>,
+        3: <p style = {{ fontSize:"50px" }}>Sie ermöglichen einen direkten Zugang zu Wasser</p>,
+        4: <p style = {{ fontSize:"50px" }}>Weil es in ein paar Jahren nicht mehr genug Wasser für alle geben wird</p>,
         5: <p style = {{ fontSize:"65px" }}>5,75 Euro</p>,
     },
 
     buttonRightContent: {
         1: <p style = {{ fontSize:"65px" }}>Fisch</p>,
-        2: <p style = {{ fontSize:"65px" }}>sie filtert Wasser</p>,
-        3: <p style = {{ fontSize:"50px" }}>sie bauen Brunnen</p>,
-        4: <p style = {{ fontSize:"50px" }}>weil sie ihre Pflanzen gießen wollen</p>,
+        2: <p style = {{ fontSize:"65px" }}>Sie filtert Wasser</p>,
+        3: <p style = {{ fontSize:"50px" }}>Sie bauen Brunnen</p>,
+        4: <p style = {{ fontSize:"50px" }}>Weil sie ihre Pflanzen gießen wollen</p>,
         5: <p style = {{ fontSize:"65px" }}>50 Euro</p>,
     },
 
@@ -70,9 +70,9 @@ export const SDG06_GutesBeispielQuiz: Quiz3OProps = {
 
     explanation: {
         1: "Nebeltrinker-Käfer ist die richtige Antwort",
-        2: "sie filtert Wasser ist die richtige Antwort",
-        3: "sie vergeben Kredit ist die richtige Antwort",
-        4: "weil es in ein paar Jahren nicht mehr genug Wasser für alle geben wird ist die richtige Antwort",
+        2: "Sie filtert Wasser ist die richtige Antwort",
+        3: "Sie vergeben Kredit ist die richtige Antwort",
+        4: "Weil es in ein paar Jahren nicht mehr genug Wasser für alle geben wird, ist die richtige Antwort",
         5: "5,75 Euro ist die richtige Antwort ",
     },
 
