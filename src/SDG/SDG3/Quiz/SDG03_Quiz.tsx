@@ -77,7 +77,7 @@ export const SDG03_Quiz: TextProps = {
                 <p>
                     Das Gute ist aber, dass wir nicht hilflos sind und viele Dinge tun können, um unsere Gesundheit zu
                     erhalten und/oder zu verbessern. Zum einen können wir unseren Körper unterstützen gesund zu bleiben,
-                    indem wir uns z.B. ausreichend viel bewegen, gesund Essen und Trinken, regelmäßig waschen und
+                    indem wir z.B. uns ausreichend viel bewegen, gesund Essen und Trinken, uns regelmäßig waschen und
                     genügend schlafen. Zum anderen hilft es aber unserem Körper auch, wenn wir gewisse Dinge entweder
                     gar nicht machen oder nur ab und zu. Was genau damit gemeint ist, erfahrt ihr nun:
                 </p>
