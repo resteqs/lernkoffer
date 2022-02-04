@@ -33,7 +33,7 @@ export const SDG06_FreieArbeit: TextProps = {
         ),
         2: (
             <p>
-                Überlegt doch einmal gemeinsam, für was ihr jeden Tag Wasser benutzt. Notiert dann für 5 Tage für welche
+                Überlegt doch einmal gemeinsam, wofür ihr jeden Tag Wasser benutzt. Notiert dann für 5 Tage für welche
                 Aktivität ihr wie viel Wasser verbraucht habt. Die Menge an Wasser könnt ihr entweder messen oder ihr
                 schätzt es ab, wichtig ist hierbei, dass ihr überall die gleiche Einheit nehmt. Am besten geeignet wäre
                 die Einheit „Liter“ und zum Zählen der Liter eine Strichliste, damit ihr am Ende alles ganz einfach
