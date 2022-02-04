@@ -4,6 +4,9 @@
 /* eslint-disable no-eval */
 
 // eslint-disable-next-line unicorn/filename-case
+/* eslint-disable eslint-comments/disable-enable-pair */
+/* eslint-disable jsx-a11y/control-has-associated-label */
+// eslint-disable-next-line unicorn/filename-case
 import * as React from "react";
 import renderer from "react-dom";
 import Modal from "react-modal";
@@ -13,6 +16,9 @@ import { Link } from "react-router-dom";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG06.png";
 import "../sdg6.css"
+import { ModalQuizComponent } from "../../../Components/Modal/ModalComponent";
+import { FancyButton } from "../../../Components/Buttons/FancyButton";
+
 
 
 export const SDG06_Spiel = (): JSX.Element => {
@@ -122,8 +128,6 @@ export const SDG06_Spiel = (): JSX.Element => {
     let buttonBack;
     let buttonBackArrow; 
     let buttonNext;
-    let buttonEnd; 
-    let modal;
     let infotextbox;
     let card1;
     let card2;
@@ -168,31 +172,40 @@ export const SDG06_Spiel = (): JSX.Element => {
                 {" "}
             </button> 
         ); 
-        buttonBackArrow = showtext > 5 ?( <div style={{ marginTop: "1px" }} className ="backButtonDiv">
-        {" "}
-       <button type="button" onClick={decrementCount} className= "backButton">&#129044;</button>
-    </div> ):(<div>{" "}</div>);
 
-        modal=
-        <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={() => setIsOpen(false)}
-            overlayClassName={{
-              base: "overlay-base",
-              afterOpen: "overlay-after",
-              beforeClose: "overlay-before"
-            }}
-            className={{
-              base: "content-base",
-              afterOpen: "content-after",
-              beforeClose: "content-before"
-            }}
-            closeTimeoutMS={500}
-          >
-            <div className="content-header"><p>{modalHeader[itemSelected]}</p> <button type="button" className="personCheckOkButton" onClick={() => setIsOpen(false)}><b>Okay</b></button></div>
-            <p style={{ fontSize: "35px" , textAlign: "center", marginTop: "40px" }}>{modalBody[itemSelected]}</p>
-        </Modal>
+       let buttonEnd = (
+            <Link to="/Vorlagen/Endscreen">
+                <div style={{  bottom: "38px", right: "38px", position: "fixed" }}>
+                    <FancyButton
+                       
+                        version="green"
+                        className="nextbutton"
+                        active={showtext === 5}
+                    >
+                        Beenden
+                    </FancyButton>
+                </div>
+            </Link>
+        );
+    
+        const answerCW = (
+            header[showtext]
+        );
 
+       let modal = (
+            modalIsOpen === true ? (
+                <ModalQuizComponent
+                    incrementCount={() =>incrementCount}
+                    answercw={answerCW}
+                    modalIsOpen={modalIsOpen}
+                    setIsOpen={setIsOpen}
+                    answer={modalBody[itemSelected] } 
+                    setSelectedItem={ ()=> setSelectedItem(showtext)}           
+                    />
+            ) : (
+                <div> </div>
+            )
+        );
     infotextbox = showtext <= 5?(<div className="infotextbox">
     <p className="headertext">
         <b>{header[showtext]}</b>
@@ -219,7 +232,6 @@ return (
             </div>
             {infotextbox}
             {buttonBack}
-            {buttonBackArrow}
             {buttonNext}
             {buttonEnd}
             {modal}
