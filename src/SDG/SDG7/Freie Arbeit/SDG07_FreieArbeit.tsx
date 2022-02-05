@@ -23,9 +23,8 @@ export const SDG07_FreieArbeit: TextProps = {
         4: "Anleitung für das Experiment",
         5: "Anleitung für das Experiment",
         6: "Anleitung für das Experiment",
-        7: "Anleitung für das Experiment",        
-        8: "Anleitung für das Experiment",
-
+        7: "Anleitung für das Experiment",
+        8: "Erklärung des Experiments",
     },
     text: {
         1: (
@@ -56,8 +55,10 @@ export const SDG07_FreieArbeit: TextProps = {
                     src={Bild1}
                     alt=""
                 />
-                <ul style= {{ marginTop: "60px" }}> <li>Ziel des Experiments: eine Kartoffel durchkochen </li></ul>
-                
+                <ul style={{ marginTop: "60px" }}>
+                    {" "}
+                    <li>Ziel des Experiments: eine Kartoffel durchkochen </li>
+                </ul>
             </div>
         ),
         3: (
@@ -96,7 +97,7 @@ export const SDG07_FreieArbeit: TextProps = {
                 </p>
                 <img
                     style={{ float: "right", marginRight: "200px", marginTop: "-225px", width: "500px" }}
-                    src={Bild3}
+                    src={Bild4}
                     alt=""
                 />
             </div>
@@ -126,9 +127,9 @@ export const SDG07_FreieArbeit: TextProps = {
         ),
         8: (
             <p>
-                Wie funktioniert das jetzt mit der Sonnenenergie? Die Aluminiumfolie sorgt dafür, dass die Strahlen der
-                Sonne, wenn sie auf die Folie treffen, in einem Punkt gebündelt (= gesammelt, zusammengefasst) werden.
-                Dieser liegt über der Mitte des Körbchens, wo es sehr heiß wird und die Kartoffel somit garen lässt.
+                Wie funktioniert das jetzt mit der Sonnenenergie? Die Aluminiumfolie sorgt dafür, dass die St rahlen der
+                Sonne, wenn sie auf die Folie treffen, in einem Punkt in der Mitte des Körbchens gebündelt werden. Dort
+                wird es sehr heiß und die Kartoffel wird an dieser Stelle gegart.
             </p>
         ),
     },
