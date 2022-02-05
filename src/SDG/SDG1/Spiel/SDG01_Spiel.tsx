@@ -40,7 +40,7 @@ export const SDG01_Spiel: TextProps = {
         1: (
             <div>
                 {" "}
-                “Geld regiert die Welt” – Ein Sprichwort, das man oft in ganz verschiedenen Zusammenhängen hört. Aber
+                “Geld regiert die Welt” – ein Sprichwort, das man oft in ganz verschiedenen Zusammenhängen hört. Aber
                 wer verdient eigentlich wie viel? Hast du dir dazu schon einmal Gedanken gemacht?{" "}
             </div>
         ),
@@ -74,11 +74,11 @@ export const SDG01_Spiel: TextProps = {
                     {" "}
                     <b> Beruf: Wirtschaftsinformatiker:in </b>
                 </li>
-                <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                <li style={{ marginLeft: "4vh", marginTop: "2.667vh" }}>
                     {" "}
                     <b>Branche: </b>IT und Development (= Entwicklung){" "}
                 </li>
-                <li style={{ marginLeft: "30px", marginTop: "10px" }}>
+                <li style={{ marginLeft: "4vh", marginTop: "1.333vh" }}>
                     {" "}
                     <b>Definition: </b>Arbeit in einem (meist großen) Unternehmen. Beschäftigt sich mit der Technik
                     eines Unternehmens. Genauer gesagt damit, dass wichtige betriebswirtschaftliche Fragen (sagen einer
@@ -95,12 +95,12 @@ export const SDG01_Spiel: TextProps = {
                         {" "}
                         <b> Beruf: Wirtschaftsinformatiker:in </b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "2.667vh" }}>
                         {" "}
                         <b> Voraussetzungen: </b> Abgeschlossenes (Hochschul-)Studium:  sehr viel in verschiedenen
-                        Bereichen (Technik, BWL, Soziologie, Psychologie) lernen und wissen
+                        Bereichen (Technik, BWL, Soziologie, Psychologie) lernen und wissen.
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "10px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "1.333vh" }}>
                         {" "}
                         <b> Mögliche Aufgabengebiete:</b> Mit Kunden kommunizieren und Lösungen für ihre Probleme
                         finden. Diese Lösungsansätze dann Spezialisten erklären und in seltenen Fällen bei der Umsetzung
@@ -116,7 +116,7 @@ export const SDG01_Spiel: TextProps = {
                         {" "}
                         <b> Beruf: Wirtschaftsinformatiker:in </b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "2.667vh" }}>
                         {" "}
                         <b>  In welcher Hinsicht anstrengend? </b> Bei diesem Beruf hast du viele Einflussfaktoren, die
                         deinen Tag anstrengend machen. Zum einen musst du sehr viel Denken und Überlegen. Zum anderen
@@ -134,13 +134,13 @@ export const SDG01_Spiel: TextProps = {
                         {" "}
                         <b> Beruf: Grafiker:in </b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "2.667vh" }}>
                         {" "}
                         <b> Branche: </b> Design, Gestaltung und Medien
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "10px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "1.333vh" }}>
                         {" "}
-                        <b> Definition: </b> Erstellung von visuellen Medien (Sachen, die du sehen kannst z.B. Bilder
+                        <b> Definition: </b> Erstellung von visuellen Medien (Sachen, die du sehen kannst, z.B. Bilder
                         oder Zeichnungen), um die Aufmerksamkeit von Leuten auf zum Beispiel eine Werbetafel zu ziehen.
                         Das meiste wird mittlerweile digital (am Computer) erstellt und nur noch wenig auf Papier
                         gezeichnet. 
@@ -155,16 +155,16 @@ export const SDG01_Spiel: TextProps = {
                         {" "}
                         <b> Beruf: Grafiker:in </b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "2.667vh" }}>
                         {" "}
-                        <b> Vorrausetzung: </b> Entweder ein Grafikdesign Studium oder eine Ausbildung zu diesem Beruf.
+                        <b> Vorraussetzung: </b> Entweder ein Grafikdesign Studium oder eine Ausbildung zu diesem Beruf.
                         Es können dir aber auch verwandte Studiengänge helfen und dich für die Arbeit als
                         Grafikdesigner:in qualifizieren (zeigen, dass du das kannst). Am wichtigsten ist aber, dass du
                         kreativ bist und zeichnen kannst. In der heutigen Zeit werden auch Medienkompetenzen (Umgang mit
                         Computer und neuen Techniken) immer wichtiger. Außerdem musst du gut mit Kunden umgehen können,
                         weil du schließlich deren Wünsche umsetzen möchtest.
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "10px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "1.333vh" }}>
                         {" "}
                         <b> </b>
                     </li>
@@ -178,10 +178,10 @@ export const SDG01_Spiel: TextProps = {
                         {" "}
                         <b> Beruf: Grafiker:in </b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "2.667vh" }}>
                         {" "}
                         <b> Mögliche Aufgabengebiete: </b> Einige Grafikdesigner erstellen Materialien für Werbungen.
-                        Andere arbeiten an Büchern und einige andere auch an Darstellungen für Apps (Anwendungen die auf
+                        Andere arbeiten an Büchern und einige andere auch an Darstellungen für Apps (Anwendungen, die auf
                         Computern/Handys/Tablets… laufen).
                     </li>
                 </ul>
@@ -194,7 +194,7 @@ export const SDG01_Spiel: TextProps = {
                         {" "}
                         <b> Beruf: Grafiker:in </b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "20px", fontSize: "48px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "2.667vh", }}>
                         {" "}
                         <b> In welcher Hinsicht anstrengend?: </b> Ein wesentlicher Vorteil ist, dass du deiner
                         Kreativität freien Lauf lassen kannst. Hierbei ist allerdings Vorsicht geboten, denn du musst
@@ -206,7 +206,7 @@ export const SDG01_Spiel: TextProps = {
                         sehr anstrengend wird, besonders für die Augen und deshalb, weil man die meiste Zeit sitzend
                         verbringt.
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "10px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "1.333vh" }}>
                         {" "}
                         <b> </b>
                     </li>
@@ -227,7 +227,7 @@ export const SDG01_Spiel: TextProps = {
                         Zahlen aus Deutschland (2019) haben gezeigt, dass ein/e Wirtschaftsinformatiker:in im Schnitt
                         65.206€ verdient, während ein/e Grafikdesigner:in etwa 27.840€ verdient.{" "}
                     </li>
-                    <li style={{ marginTop: "50px" }}>
+                    <li style={{ marginTop: "6.667vh" }}>
                         {" "}
                         Als Wirtschaftsinformatiker:in verdient man im Schnitt etwa 37.400€ mehr als ein/e
                         Grafikdesigner:in, was mehr als das Doppelte von diesem Gehalt ist. Aber warum? Überlege dir
@@ -250,12 +250,12 @@ export const SDG01_Spiel: TextProps = {
                     {" "}
                     <b> Beruf: Gärtner:in </b>
                 </li>
-                <li style={{ marginLeft: "30px", marginTop: "20px", fontSize: "49px" }}>
+                <li style={{ marginLeft: "4vh", marginTop: "2.667vh", }}>
                     {" "}
                     <b> Kurze Beschreibung: </b> Ein/e Gärtner:in sorgt sich um die Pflanzen in Grünanlagen wie zum
                     Beispiel öffentlichen Parks oder auch bei großen Firmen, wenn diese zum Beispiel eine schöne
                     Einfahrt gestaltet und gepflegt haben wollen. Dabei stößt man schon auf den zweiten Punkt, der bei
-                    manchen Gärtner:innen, aber nicht bei allen, der Fall ist: Das Gestalten von Gärten. Nicht immer
+                    manchen Gärtner:innen, aber nicht bei allen, der Fall ist: das Gestalten von Gärten. Nicht immer
                     bekommt ein/e Gärtner:in einen fertigen Plan, nach dem der Garten/die Grünanlage gestaltet werden
                     soll. Manchmal muss der Gärtner/die Gärtnerin diese Planung auch selbst übernehmen, was wiederum
                     bedeutet, dass für diesen Beruf auch ein Gefühl für Farben und Formen wichtig ist.
@@ -269,13 +269,13 @@ export const SDG01_Spiel: TextProps = {
                         {" "}
                         <b> Beruf: Gärtner:in</b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "2.667vh" }}>
                         {" "}
                         <b>  In welcher Hinsicht anstrengend?: </b> Gärtner:innen arbeiten draußen. Das bedeutet, dass
                         sie dem Wetter ausgesetzt sind und daher auch bei sehr viel Regen und sehr hohen Temperaturen
                         draußen sind. Dazu kommt die schwere körperliche Belastung durch Hin- und Hertragen von Geräten
                         oder Blumentöpfen oder anderen schweren Dingen. Aus diesem Grund haben viele Gärtner:innen nach
-                        einigen Jahren körperliche Beschwerden, weil ihnen zum Beispiel der Rücken häufig weh tut, was
+                        einigen Jahren körperliche Beschwerden, weil ihnen zum Beispiel der Rücken häufig wehtut, was
                         wiederum dazu führt, dass sie früh aufhören müssen zu arbeiten oder sich zumindest einen anderen
                         Beruf suchen müssen, was nicht immer einfach ist.
                     </li>
@@ -288,13 +288,13 @@ export const SDG01_Spiel: TextProps = {
                 <ul>
                     <li>
                         {" "}
-                        <b> Beruf: Forschung in einem Naturwissenschaftlichen Beruf</b>
+                        <b> Beruf: Forschung in einem naturwissenschaftlichen Beruf</b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "2.667vh" }}>
                         {" "}
                         <b> Branche: </b> Naturwissenschaft
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "10px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "1.333vh" }}>
                         {" "}
                         <b> Definition: </b> Suche nach neuen Erkenntnissen durch wissenschaftliche Methoden. Also zum
                         Beispiel durch Versuche. Anschließend werden diese Ergebnisse in Fachzeitungen oder auf
@@ -308,11 +308,11 @@ export const SDG01_Spiel: TextProps = {
                 <ul>
                     <li>
                         {" "}
-                        <b> Beruf: Forschung in einem Naturwissenschaftlichen Beruf </b>
+                        <b> Beruf: Forschung in einem naturwissenschaftlichen Beruf </b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "2.667vh" }}>
                         {" "}
-                        <b> Vorrausetzung: </b> Meist ist ein entsprechendes Studium gefordert. Zusätzlich brauchst du
+                        <b> Vorraussetzung: </b> Meist ist ein entsprechendes Studium gefordert. Zusätzlich brauchst du
                         ein großes Wissen über den aktuellen Forschungsstand und darüber, wie du richtig forschst.
                         Zusätzlich sollten Menschen hierfür sehr geduldig sein, da manche Versuche mehrfach
                         hintereinander gemacht werden müssen, um auf ein gutes Ergebnis zu kommen. Auch sprachliche
@@ -327,9 +327,9 @@ export const SDG01_Spiel: TextProps = {
                 <ul>
                     <li>
                         {" "}
-                        <b> Beruf: Forschung in einem Naturwissenschaftlichen Beruf </b>
+                        <b> Beruf: Forschung in einem naturwissenschaftlichen Beruf </b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "2.667vh" }}>
                         {" "}
                         <b> Mögliche Aufgabengebiete: </b> Dadurch, dass es sehr viele Möglichkeiten gibt, wo ein/e
                         Forscher:in eingesetzt werden kann, gibt es sehr viele verschiedene Aufgabengebiete. Einige
@@ -344,12 +344,12 @@ export const SDG01_Spiel: TextProps = {
                 <ul>
                     <li>
                         {" "}
-                        <b> Beruf: Forschung in einem Naturwissenschaftlichen Beruf</b>
+                        <b> Beruf: Forschung in einem naturwissenschaftlichen Beruf</b>
                     </li>
-                    <li style={{ marginLeft: "30px", marginTop: "20px" }}>
+                    <li style={{ marginLeft: "4vh", marginTop: "2.667vh" }}>
                         {" "}
                         <b> In welcher Hinsicht anstrengend?: </b> Der anstrengendste Teil bei diesem Beruf besteht
-                        darin, den ganzen Tag zu Denken. Das mag jetzt komisch und albern klingen, aber es ist wirklich
+                        darin, den ganzen Tag zu denken. Das mag jetzt komisch und albern klingen, aber es ist wirklich
                         so. Forscher:innen müssen den ganzen Tag sehr exakt arbeiten und sich daher konzentrieren. Damit
                         keine Fehler passieren und damit die Versuchsergebnisse verfälscht werden, ist diese hohe
                         Konzentration unbedingt notwendig.
@@ -372,7 +372,7 @@ export const SDG01_Spiel: TextProps = {
                         Antwort: Zahlen aus Deutschland (2019) haben gezeigt, dass ein/e Forscher:in im Schnitt 31.150€
                         verdient, während ein/e Gärtner:in etwa 24.000€ verdient.
                     </li>
-                    <li style={{ marginTop: "50px" }}>
+                    <li style={{ marginTop: "6.667vh" }}>
                         {" "}
                         Als Forscher:in verdient man im Schnitt etwa 7.150€ mehr als ein/e Gärtner:in. Aber warum?
                         Überlege dir das, oder überlegt in der Gruppe.{" "}
@@ -385,7 +385,7 @@ export const SDG01_Spiel: TextProps = {
                 <ul>
                     <li>
                         {" "}
-                        - Der größte Unterschied besteht darin, dass ein Studium nötig ist, um Forscher:in zu werden,
+                        Der größte Unterschied besteht darin, dass ein Studium nötig ist, um Forscher:in zu werden,
                         was schon vor der Ausübung des Berufes sehr viel Zeit in Anspruch nimmt und meist auch
                         komplexere Dinge beinhaltet als eine Ausbildung, welche nötig ist, um Gärtner:in zu werden.{" "}
                     </li>
