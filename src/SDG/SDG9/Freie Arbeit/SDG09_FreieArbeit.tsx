@@ -28,8 +28,8 @@ export const SDG09_FreieArbeit: TextProps = {
             <div>
                 {" "}
                 Ein Kartenhaus – hast du so etwas schon einmal gebaut? Wenn ja, ist es dir gelungen? Ich möchte heute,
-                dass du versuchst, mit deiner Gruppe ein Kartenhaus zu bauen. Dafür braucht ihr einen Satz Spielkarten,
-                diesen findet ihr im Koffer.{" "}
+                dass du versuchst, mit deiner Gruppe ein Kartenhaus zu bauen. Dafür braucht ihr einen Satz Spielkarten
+                Diesen findet ihr im Koffer.{" "}
             </div>
         ),
         2: (
@@ -42,8 +42,8 @@ export const SDG09_FreieArbeit: TextProps = {
                     </li>
                     <li>
                         {" "}
-                        Sucht euch eine möglichst gerade und ebene Fläche, auf der ihr das Kartenhaus bauen könnt, ohne,
-                        dass es umfällt
+                        Sucht euch eine möglichst gerade und ebene Fläche, auf der ihr das Kartenhaus bauen könnt, damit
+                        es nicht umfällt.
                     </li>
                     <li>
                         {" "}
@@ -59,8 +59,8 @@ export const SDG09_FreieArbeit: TextProps = {
                 <ul>
                     <li>
                         {" "}
-                        Probiert einfach viele verschiedene Ideen aus und beobachtet, welche am besten funktionieren und
-                        warum manches besser als anderes funktioniert.
+                        Probiert viele verschiedene Ideen aus. Manche funktionieren vielleicht etwas besser als die
+                        andern. Woran könnte das liegen?
                     </li>
                     <li>
                         {" "}
@@ -99,7 +99,7 @@ export const SDG09_FreieArbeit: TextProps = {
                 wird der Klimawandel vorangetrieben und die Erde erwärmt sich immer weiter. Das wäre in unserem
                 Kartenhausbeispiel eine wacklige unterste Schicht. Auf dieser kann eine weitere zwar einige Zeit stehen
                 (auch die Menschen können einige Zeit mit schlechter Luft und kaputter Umwelt leben), aber sie wird bald
-                umfallen und damit geht auch die unterste Schicht kaputt (nach zu langem Warten, ist der Klimawandel
+                umfallen und damit geht auch die unterste Schicht kaputt (nach zu langem Warten ist der Klimawandel
                 nicht mehr aufzuhalten und die Umwelt kann sich von dem Schaden, der ihr durch den Menschen zugefügt
                 wurde, nicht mehr erholen).{" "}
             </div>

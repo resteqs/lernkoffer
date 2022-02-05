@@ -25,7 +25,7 @@ export const SDG09_GutesBeispiel: TextProps = {
                 {" "}
                 ITU – International Telecommunication Union (Internationaler Fernmelde Verband). Hast du davon schon
                 einmal etwas gehört? Oder kannst du dir vielleicht vorstellen, was diese Organisation macht? Wenn ja,
-                dann besprich mit der Gruppe deine Idee und ließ danach weiter.
+                dann besprich mit der Gruppe deine Idee und lies danach weiter.
             </div>
         ),
         2: (

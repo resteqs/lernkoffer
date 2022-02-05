@@ -44,7 +44,7 @@ export const SDG09_Spiel = (): JSX.Element => {
                 <ul>
                     <li>
                         Zuerst setzen sich nur drei oder vier Leute in einen Kreis, je nachdem, wie viele ihr seid. Dann
-                        denkt sich eine:r ein Wort aus und flüstert das dem/der linken Nachbarn/Nachbarinnen leise ins
+                        denkt sich eine:r ein Wort aus und flüstert das dem/der linken Nachbarn/Nachbarin leise ins
                         Ohr.{" "}
                     </li>
                     <li>
@@ -109,7 +109,7 @@ export const SDG09_Spiel = (): JSX.Element => {
                     <li>
                         {" "}
                         Daher ist es sehr wichtig, dass ihr gut aufpasst, Dinge gut und vor allem vollständig zu
-                        erklären, das ist zwar nicht immer einfach, aber eine Möglichkeit sicher zu gehen, ob euer/eure
+                        erklären. Das ist zwar nicht immer einfach, aber eine Möglichkeit sicher zu gehen, ob euer/eure
                         Partner/Partnerin euch richtig verstanden hat, ist zu fragen, ob alles verständlich war.{" "}
                     </li>
                     <li>
