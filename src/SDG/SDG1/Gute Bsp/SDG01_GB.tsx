@@ -19,7 +19,7 @@ export const SDG01_GB: TextProps = {
         5: "2. Wandel für eine lebenswerte Zukunft",
         6: "3. Was der Klimawandel mit Gerechtigkeit zu tun hat",
         7: "3. Was der Klimawandel mit Gerechtigkeit zu tun hat",
-        8: "Abschluss"
+        8: "Abschluss",
     },
 
     text: {
@@ -35,21 +35,21 @@ export const SDG01_GB: TextProps = {
             <div>
                 Ein Beispiel hierfür ist die Stiftung MISEREOR, welche weltweit aktiv ist und mit anderen Organisationen
                 vor Ort zusammenarbeitet. Im Folgenden werde ich euch ein wenig über MISEREOR erzählen, damit ihr sie
-                kennen lernt und einen Eindruck davon bekommt, was Menschen auf der ganzen Welt machen, um zu helfen.
+                kennenlernt und einen Eindruck davon bekommt, was Menschen auf der ganzen Welt machen, um zu helfen.
             </div>
         ),
         3: (
             <div>
                 Gegründet wurde MISEREOR im Jahre 1958 und setzt sich seitdem auf der ganzen Welt mit anderen
                 Organisationen vor Ort zusammen für Schutz, Hilfe zur Selbsthilfe und Perspektiven für ein Leben in
-                Würde ein. Ich möchte euch drei beispielhafte Projekte vorstellen.
+                Würde ein. Ich möchte euch nun drei beispielhafte Projekte vorstellen.
             </div>
         ),
         4: (
             <div>
                 MISEREOR hilft in verschieden Fällen, zum Beispiel leisten sie Hilfe bei Gerichtsverhandlungen oder
-                setzen sich politisch für die Umsetzung der Menschenrechte ein. So wird in Mexico sehr viel daran
-                gearbeitet Gerechtigkeit für sogenannte „Verschwundene“ zu erlangen und das Verschwinden weiterer
+                setzen sich politisch für die Umsetzung der Menschenrechte ein. So wird in Mexiko sehr viel daran
+                gearbeitet, Gerechtigkeit für sogenannte „Verschwundene“ zu erlangen und das Verschwinden weiterer
                 Personen, das meist sehr unterschiedliche Gründe hat, aufzuhalten. Durch die Zusammenarbeit mit der
                 Menschenrechtsorganisation CADHAC wurden tolle Dinge erreicht, wie die Aufnahme des
                 „Verschwindenlassens“ als Strafbestand (= auf Verschwindenlassen können jetzt Strafen erhoben werden).
@@ -76,7 +76,7 @@ export const SDG01_GB: TextProps = {
         7: (
             <div>
                 Es wäre hier sehr wichtig, dass die Industrieländer mehr für den Klimaschutz tun würden und auch den
-                schwächeren Ländern helfen. Ein guter Anfang dafür ist das internationale Klimaabkommen nach dem sich
+                schwächeren Ländern helfen. Ein guter Anfang dafür ist das internationale Klimaabkommen, nach dem sich
                 die Erderwärmung jedes Jahr auf 1,5°C beschränken soll. Beispiele für diese Projekte von MISEREOR sind
                 die Organisation des Wasserbedarfs und die angepasste Tierhaltungs- und Anbaumethoden in Brasilien, die
                 Landwirtschaft auch mit nur wenig Wasser möglich machen.
