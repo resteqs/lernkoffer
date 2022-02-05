@@ -9,57 +9,101 @@ import infotextbutton from "../../../styles/Infotextbutton.module.css";
 import "../../../styles/colour_sdgs.css";
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG04.png";
-import Schule from "../Freie Arbeit/Schule.png"
+import Schule from "../Freie Arbeit/Schule.png";
 
 export const SDG04_FreieArbeit = (): JSX.Element => {
-    // eslint-disable-next-line prefer-const 
+    // eslint-disable-next-line prefer-const
 
     const [showtext, setText] = React.useState(1);
     const sdg = "SDG04";
-    
 
     const text = {
         1: (
-            <div >
-                <p> Jede Schule ist anders und oftmals ganz unterschiedlich ausgestattet. Aber auch das Schulgelände unterscheidet sich immer, das eine Mal gibt es ein großes Gebäude mit vielen Räumen und Gängen, ein anderes Mal findet der Unterricht draußen statt. Überlegt euch doch einmal, wie eure Wunsch-Schule aussehen würde. </p>
+            <div>
+                <p>
+                    {" "}
+                    Jede Schule ist anders und oftmals ganz unterschiedlich ausgestattet. Auch das Schulgelände
+                    unterscheidet sich immer, manche Schulen haben ein großes Gebäude mit vielen Räumen und Gängen, in
+                    anderen Schulen findet der Unterricht draußen statt. Überlegt euch doch einmal, wie eure
+                    Wunsch-Schule aussehen würde.{" "}
+                </p>
             </div>
         ),
-        2:  (
+        2: (
             <div style={{ textAlign: "left", fontSize: "30px" }}>
                 <p>
                     <ul>
-                    <li>Zu folgenden Punkten könntet ihr euch z.B. Gedanken machen:</li>
-                    <li>   - Drinnen oder Draußen?</li>
-                    <li>   - Bei Gebäuden: Größe, Aussehen, Raumzahl, innenaustattung der Räume, Außenanlage, z.B. Spielplatz, Wiese zum Spielen etc.</li> 
-                    <li>   - In der Natur: Möbel, Wetterschutz, Essen und Trinken</li>
-                    <li>   - Welche Regeln sollte es geben?</li>
-                    <li>   - Für wen ist die Schule?</li>
-                    <li>   - Für was wird sie alles genutzt und was braucht ihr deshalb? (z.B. für das Fach „Kochen“ ist eine Küche/Feuerstelle nötig)</li>
-                    <li>   - Was benutzt ihr im Unterricht? (z.B. Kreide und Tafel, Papier und Stift oder elektronische Geräte) </li>
-                 </ul>  
+                        <li>Zu folgenden Punkten könntet ihr euch z.B. Gedanken machen:</li>
+                        <li> - Unterrricht drinnen oder draußen?</li>
+                        <li>
+                            {" "}
+                            - Bei Gebäuden: Größe, Aussehen, Raumzahl, Innenaustattung der Räume, Außenanlage, z.B.
+                            Spielplatz, Wiese zum Spielen etc.
+                        </li>
+                        <li> - In der Natur: Möbel, Wetterschutz, Essen und Trinken</li>
+                        <li> - Welche Regeln sollte es geben?</li>
+                        <li> - Für wen ist die Schule?</li>
+                        <li>
+                            {" "}
+                            - Für was wird sie alles genutzt und was braucht ihr deshalb? (z.B. für das Fach „Kochen“
+                            ist eine Küche/Feuerstelle nötig)
+                        </li>
+                        <li>
+                            {" "}
+                            - Was benutzt ihr im Unterricht? (z.B. Kreide und Tafel, Papier und Stift oder elektronische
+                            Geräte){" "}
+                        </li>
+                    </ul>
                 </p>
 
-                <p> Wenn ihr euch Gedanken gemacht habt, könnt ihr diese Ideen auch aufschreiben, damit ihr nichts vergesst. Anschließend holt euch Stifte und Papier und fangt an zu malen </p>
-                <p> Falls ihr nicht so viele Ideen habt oder gerne meine Wunsch-Schule sehen wollt, klickt auf weiter </p> 
-
+                <p style={{ marginTop: "3vh" }}>
+                    {" "}
+                    Wenn ihr euch dazu Gedanken gemacht habt, könnt ihr diese Ideen auch aufschreiben, damit ihr nichts
+                    vergesst. Anschließend holt euch Stifte und Papier und fangt an zu malen!{" "}
+                </p>
+                <p>
+                    {" "}
+                    Falls ihr nicht so viele Ideen habt oder gerne meine Wunsch-Schule sehen wollt, könnt ihr auf
+                    “Weiter“ klicken!{" "}
+                </p>
             </div>
-        ), 
+        ),
         3: (
-            <div> 
-                <p> <img src= {Schule}  alt="" /> </p>
+            <div>
+                <p>
+                    {" "}
+                    <img src={Schule} alt="" />{" "}
+                </p>
             </div>
         ),
         4: (
             <div style={{ textAlign: "left", fontSize: "30px" }}>
-                <p>  In der Pause (auf dem Bild links) könnt ihr Seilspringen oder andere Dinge spielen. Die Person links vom Baum isst gerade Essen, was selbst von den Schüler:innen gekocht wurde (Zimmer unten links). Manche Zutaten zum Kochen kann man auch oben auf dem Schuldach anbauen, wie Obst und Gemüse. Andere Fächer im Schulhaus sind z.B. Musik, Sport und Mathe. Bei Musik ist die Besonderheit, dass man sich ganz entspannt hinlegen kann und gemeinsam Musik hört, während etwas dazu erzählt wird. In Sport kann jeder die Sportart machen, die ihm/ihr am meisten Spaß macht. Mathe, sowie andere Fächer, bei denen man schreiben muss, finden im Klassenzimmer mit Tischen und Stühlen statt. Dort gibt es auch eine Tafel für die Lehrkraft.Außerdem gibt es regelmäßig Stunden draußen in der Natur, bei denen es darum geht, wie man die Natur schützen kann, aber auch, wie wir gemeinsam miteinander leben können. Dabei wird auch gelernt, wie wir respektvoll und freundlich sind und was wir für uns und unsere Gesundheit machen sollten. </p>
+                <p>
+                    {" "}
+                    In der Pause (auf dem Bild links) könnt ihr Seilspringen oder andere Dinge spielen. Die Person links
+                    vom Baum isst gerade Essen, was selbst von den Schüler:innen gekocht wurde (Zimmer unten links).
+                    Manche Zutaten zum Kochen kann man auch oben auf dem Schuldach anbauen, wie zum Beispiel Obst und
+                    Gemüse. Andere Fächer, die im Schulhaus unterrichtet werden, sind z.B. Musik, Sport und Mathe. Bei Musik ist die Besonderheit,
+                    dass man sich ganz entspannt hinlegen kann und gemeinsam Musik hört, während etwas dazu erzählt
+                    wird. In Sport kann jeder die Sportart machen, die ihm/ihr am meisten Spaß macht. Mathe, sowie
+                    andere Fächer, bei denen man schreiben muss, finden im Klassenzimmer mit Tischen und Stühlen statt.
+                    Dort gibt es auch eine Tafel für die Lehrkraft. Außerdem gibt es regelmäßig Stunden draußen in der
+                    Natur, bei denen es darum geht, wie man die Natur schützen kann, aber auch, wie wir gemeinsam
+                    miteinander leben können. Dabei wird auch gelernt, wie wir respektvoll und freundlich sind und was
+                    wir für uns und unsere Gesundheit machen sollten.{" "}
+                </p>
             </div>
         ),
         5: (
-           <div>
-               <p>Seid ihr fertig? Dann zeigt doch eure schönen Bilder eurer Klasse, Freunden oder eurer Familie und erzählt ihnen, was ihr euch überlegt habt. Oder macht eine Ausstellung daraus, die von jedem besucht werden kann, der will. Vielleicht sind sogar ein paar Ideen dabei, die wirklich bei eurer Schule umgesetzt werden können.</p>
-           </div>
-       ),
-
+            <div>
+                <p>
+                    Seid ihr fertig? Dann zeigt doch eure schönen Bilder eurer Klasse, Freunden oder eurer Familie und
+                    erzählt ihnen, was ihr euch überlegt habt. Oder macht eine Ausstellung daraus, die von jedem besucht
+                    werden kann, der will. Vielleicht sind sogar ein paar Ideen dabei, die wirklich bei eurer Schule
+                    umgesetzt werden können.
+                </p>
+            </div>
+        ),
     };
     const header = {
         1: (
@@ -126,7 +170,7 @@ export const SDG04_FreieArbeit = (): JSX.Element => {
                 <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
                     <span className={infotextbutton.shadow} />
                     <span className={infotextbutton.edgegreen} />
-                    <span className={infotextbutton.front} style={{ backgroundColor: "green", }}>
+                    <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
                         <p className={infotextbutton.buttontext}>Weiter</p>
                     </span>
                 </button>
@@ -146,7 +190,7 @@ export const SDG04_FreieArbeit = (): JSX.Element => {
                         <span className={infotextbutton.shadow} />
                         <span className={infotextbutton.edgegreen} />
                         <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                            <p className={infotextbutton.buttontext}>Weiter </p>
+                            <p className={infotextbutton.buttontext}>Beenden </p>
                         </span>
                     </button>
                 </Link>{" "}
@@ -156,7 +200,6 @@ export const SDG04_FreieArbeit = (): JSX.Element => {
                 {" "}
             </button>
         );
-    
 
     // eslint-disable-next-line prefer-const
     return (
