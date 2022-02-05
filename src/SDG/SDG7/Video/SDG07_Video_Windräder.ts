@@ -7,7 +7,7 @@ import Windräder from "./Windräder.mp4";
 
 export const SDG07_Video_Windrad:VideoProps = {
     sdgNumber: 7,
-    sdgTitle: "Funktionsweise eines Windrades ",
+    sdgTitle: "Wie funktioniert ein Windrad?",
     sdg: "SDG07",
     logo: Logo,
     source: Windräder,
