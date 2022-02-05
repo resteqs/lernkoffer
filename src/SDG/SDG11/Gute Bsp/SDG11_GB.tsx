@@ -52,7 +52,7 @@ export const SDG11_GB: TextProps = {
         2: (
             <div>
                 {" "}
-                Aber wenn du nur eine Farbe nutzen möchtest, dann ist weiß am besten, weil es das Sonnenlicht reflektiert (zurückwirft) würde und die Farbe, die du nicht nutzen solltest, ist schwarz. Schwarze Farbe nimmt das Sonnenlicht auf
+                Aber wenn du nur eine Farbe nutzen möchtest, dann ist weiß am besten, weil es das Sonnenlicht reflektiert (zurückwirft) und die Farbe, die du nicht nutzen solltest, ist schwarz. Schwarze Farbe nimmt das Sonnenlicht auf
                 und dann wird es in der Dose sehr heiß, was schlecht für die Tiere
                 innerhalb des Hotels ist.
             </div>
