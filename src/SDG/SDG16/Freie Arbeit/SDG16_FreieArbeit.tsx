@@ -73,7 +73,7 @@ export const SDG16_FreieArbeit: TextProps = {
                 </ul>
                 <ul className="ul" style={{ fontSize: "45px" }}>
                     <li className="li"> - Interesse daran haben, eine Lösung zu finden </li>
-                    <li className="li"> - sich gegenseitig ausreden lassen (also keine:n unterbrechen </li>
+                    <li className="li"> - sich gegenseitig ausreden lassen (also keine:n unterbrechen) </li>
                     <li className="li"> - eigene Meinung erklären </li>
                     <li className="li"> - zuhören und versuchen die andere(n) Person(en) zu verstehen </li>
                     <li className="li"> - Gemeinsamkeiten finden </li>
