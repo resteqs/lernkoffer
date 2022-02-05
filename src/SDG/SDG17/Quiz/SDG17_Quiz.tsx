@@ -40,11 +40,11 @@ export const SDG17_Quiz: TextProps = {
                 Anschließend fängt eine Person an, würfelt und geht die entsprechende Anzahl an Feldern vor. Wenn ihr
                 auf eines der farbigen Felder kommt, drückt auf dem Tablet auf das entsprechende Logo des
                 Nachhaltigkeitsziels und euch werden mehrere Fragen dazu getstellt (beantwortet immer nur eine Frage und
-                geht klickt dann auf den Button “Zurück zur Übersicht“, wenn ihr zur zweiten Frage direkt wollt, klickt
+                klickt dann auf den Button “Zurück zur Übersicht“, wenn ihr zur zweiten Frage direkt wollt, klickt
                 einfach auf “Weiter“). Findet ihr die richtige Antwort, dürft ihr 3 Felder vorrücken, wenn nicht müsst
                 ihr ein Feld zurück. Kommt ihr beim unteren Ende einer Leiter an, dürft ihr sie nach oben klettern zu
-                dem Feld an dem sie endet. Wenn ihr bei dem oberen Ende eines blauen Wasserfalls steht, fällt ihr diesen
-                herunter und müsst zum Feld zurück, an dem er endet. Wer als Erster das Ziel erreicht hat gewonnen.
+                dem Feld an dem sie endet. Wenn ihr bei dem oberen Ende eines blauen Wasserfalls steht, fallt ihr diesen
+                herunter und müsst zum Feld zurück, an dem er endet. Wer als Erster das Ziel erreicht, hat gewonnen.
             </p>
         ),
         3: (
