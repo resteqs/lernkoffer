@@ -52,14 +52,14 @@ export const SDG15_Spiel: TextProps = {
                 Tiere brauchen genauso wie wir Menschen einen Platz, an dem sie leben können. Leider wird immer mehr von
                 diesem Lebensraum durch uns Menschen zerstört. Zum einen werden Wälder abgeholzt, damit wir das Holz
                 z.B. für Möbel verwenden können. Zum anderen hinterlassen wir aber auch oft Müll in Gegenden, in denen
-                viele Tiere wohnen. Diesen leiden darunter und werden krank.
+                viele Tiere wohnen. Diese leiden darunter und werden krank.
             </div>
         ),
         2: (
             <div>
-                Darum geht es auch in diesem Spiel! Ihr sollt versuchen, die Natur und die Tiere vor Umweltsünderin, die
+                Darum geht es auch in diesem Spiel! Ihr sollt versuchen, die Natur und die Tiere vor Umweltsünderinnen, die
                 Müll hinterlassen, zu beschützen. Im Spiel seid ihr alle je ein Besitzer eines Wildtiers. Alle diese
-                Wildtiere leben in einem gemeinsamen Reservat, einem Gebiet, auf dem versucht wird, wilden Tieren einem
+                Wildtiere leben in einem gemeinsamen Reservat, einem Gebiet, auf dem versucht wird, wilden Tieren einen
                 möglichst natürlichen Lebensraum zu geben. Jedes Tier hat ein festes Revier.
             </div>
         ),
@@ -74,11 +74,11 @@ export const SDG15_Spiel: TextProps = {
         ),
         4: (
             <div>
-                Eure Aufgabe ist es, wenn ihr ein normaler Tierbesitzer seid, die Umweltsünderin zu finden und sie samt
-                ihres Tieres aus dem Reservat vertreiben, denn nur wenn ihr Tier noch dort ist, haben die
-                Umweltsünderinnen Zugang zu dem Reservat und können es zumüllen! Als Umweltsünderin versucht ihr, nicht
-                erwischt zu werden und das Revier von jedem Tier, außer deinem eigenen zuzumüllen! Alle Charaktere
-                treffen sich einmal im Monat, schauen nach ihren Tieren und überlegen gemeinsam, wer die Umweltsünderin
+                Eure Aufgabe ist es, wenn ihr ein normaler Tierbesitzer seid, die Umweltsünderinnen zu finden und sie samt
+                ihrer Tiere aus dem Reservat zu vertreiben, denn nur wenn ihre Tiere noch dort ist, haben die
+                Umweltsünderinnen Zugang zu dem Reservat und können es vermüllen! Als Umweltsünderin versucht ihr, nicht
+                erwischt zu werden und das Revier von jedem Tier, außer dem eigenen zuzumüllen! Alle Charaktere
+                treffen sich einmal im Monat, schauen nach ihren Tieren und überlegen gemeinsam, wer die Umweltsünderinnen
                 sind. Den Rest der Zeit verbringen sie meist an anderen Orten.
             </div>
         ),
@@ -94,9 +94,9 @@ export const SDG15_Spiel: TextProps = {
                     Er hat keine besonderen Eigenschaften oder Fähigkeiten, also kommt er nur einmal im Monat zum
                     Reservat, um bei der Besprechung mit den restlichen Tierbesitzern dabei zu sein. Seine Aufgabe im
                     Spiel ist es, das Verhalten anderer Spieler richtig zu deuten und herauszufinden, welche Mitspieler
-                    Umweltsünderin sind. Zugleich muss er versuchen, sein eigenes Ausscheiden bei der monatlichen
-                    Diskussion der Tierbesitzer zu verhindern. Denn jedes Monatsende versammeln sich alle
-                    übriggebliebenen Tierbesitzer und versuchen herauszufinden, welcher Mitspieler ein Umweltsünderin
+                    Umweltsünderinnen sind. Zugleich muss er versuchen, sein eigenes Ausscheiden bei der monatlichen
+                    Diskussion der Tierbesitzer zu verhindern. Denn an jedem Monatsende versammeln sich alle
+                    übriggebliebenen Tierbesitzer und versuchen herauszufinden, welcher Mitspieler eine Umweltsünderin
                     ist. Nach der Diskussion bestimmen sie einen Tierbesitzer, dessen Tier aus dem Reservat geworfen
                     wird und der dadurch aus dem Spiel ausscheidet.
                 </p>
@@ -119,7 +119,7 @@ export const SDG15_Spiel: TextProps = {
                 <p>
                     Die Müllfrau patrouilliert einmal im Monat das Reservat und schaut nach Müll. Sie hat die Chance,
                     den Müll in dem Revier eines der Tiere rechtzeitig wegzuräumen. Diese besteht allerdings nur einmal
-                    pro Spiel, dann danach ist ihr Müllwagen voll. Sie kann diesen jedoch wieder entleeren, indem sie
+                    pro Spiel, denn danach ist ihr Müllwagen voll. Sie kann diesen jedoch wieder entleeren, indem sie
                     den Müll wieder auf einem der Reviere ablädt…
                 </p>
                 <img style={{ height: "500px", margin: "auto", display: "block" }} src={Müllfrau} alt="" />
@@ -144,8 +144,8 @@ export const SDG15_Spiel: TextProps = {
             <div>
                 <p>
                     Das Mädchen versucht, so oft wie möglich bei ihrem Tier zu sein. So ist sie immer dann da, wenn die
-                    Umweltverschmutzer zuschlagen, sie versucht aber von ihnen nicht erwischt werden, da sie die
-                    Identität der Umweltverschmutzer dadurch kennt!
+                    Umweltverschmutzerinnen zuschlagen, sie versucht aber von ihnen nicht erwischt werden, da sie die
+                    Identität der Umweltverschmutzerinnen dadurch kennt!
                 </p>
                 <img style={{ height: "700px", margin: "auto", display: "block" }} src={Mädchen} alt="" />
             </div>
@@ -169,7 +169,7 @@ export const SDG15_Spiel: TextProps = {
                     alle Spieler (hier ist zu beachten, dass es immer zwei Umweltsünderinnen, mindestens 3 normale
                     Tierbesitzer und eine Müllfrau geben muss, von den anderen Charakteren können bei weniger Spieler
                     auch manche nicht ausgeteilt werden). Jeder Spieler schaut sich seine Karte genau an, zeigt sie
-                    niemandem anderes und passt auf, dass sie nicht gesehen wird. Außerdem merkt jeder sich, welcher
+                    niemand anderem und passt auf, dass sie nicht gesehen wird. Außerdem merkt sich jeder, welcher
                     Charakter er ist, da er sich die Karte danach nicht mehr anschauen darf, weil er sonst Gefahr läuft,
                     dass jemand zuschaut.
                 </p>
@@ -190,8 +190,8 @@ export const SDG15_Spiel: TextProps = {
                 <p>
                     Der Ablauf hängt nun davon ab, wie viele Spieler mitspielen und welche Charaktere dadurch diesmal
                     nicht mitspielen. Der Aufruf der Charaktere erfolgt immer in folgender Reihenfolge. Ganz wichtig
-                    ist, dass immer nur die Spieler die Augen öffnen dürfen, deren Charakter aufgerufen wird. Zudem wird
-                    nicht gesprochen, außer vom Spielleiter.
+                    ist, dass immer nur die Spieler die Augen öffnen dürfen, deren Charakter aufgerufen werden. Zudem spricht niemand,
+                    außer der Spielleiter.
                 </p>
             </div>
         ),
