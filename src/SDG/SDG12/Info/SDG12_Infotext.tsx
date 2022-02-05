@@ -2,7 +2,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import soundfile from "./test.mp3";
-import Logo from "../../../SDGLogos/Goal-SDG12.png";
+import Logo  from "../../../SDGLogos/Goal-SDG12.png";
 import EG from "../../../EG/EG2.png";
 import { InfotextProps } from "../../../Interfaces/SDG";
 
