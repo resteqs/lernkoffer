@@ -21,10 +21,11 @@ export const SDG03_Spiel: TextProps = {
     text: {
         1: (
             <p>
-                Gesund – Eine ausgewogene Ernährung (eine Ernährung, durch die alle wichtigen Stoffe aufgenommen werden,
-                die der Körper braucht) ist dafür sehr wichtig, aber wusstest du, dass du nicht gesund bist, wenn dich
-                etwas bedrückt?! Vielleicht hast du das ja auch schon einmal erlebt, wenn du dir Sorgen um eine Person
-                oder ein Haustier oder Sonstiges gemacht hast, dann ging es dir da bestimmt nicht so gut, oder?
+                Um gesund zu sein, ist es sehr wichtig, eine ausgewogene Ernährung (eine Ernährung, durch die alle
+                wichtigen Stoffe aufgenommen werden, die der Körper braucht) zu haben, aber wusstest du, dass du nicht
+                gesund bist, wenn dich etwas bedrückt? Vielleicht hast du das ja auch schon einmal erlebt, wenn du dir
+                Sorgen um eine Person oder ein Haustier oder Sonstiges gemacht hast, dann ging es dir da bestimmt nicht
+                so gut, oder?
             </p>
         ),
         2: (
@@ -42,8 +43,9 @@ export const SDG03_Spiel: TextProps = {
             <div>
                 <p>
                     Nimm dir ein Blatt zur Hand und male den Umriss eines Kopfes darauf (wenn du dir nicht sicher bist,
-                    wie du den Umriss eines Kopfes zeichnen kannst, findest du, wenn du auf “Weiter“ klickst) Wenn du
-                    das hast, kannst du den Kopf entweder einfach auf dem Blatt lassen oder ausschneiden.{" "}
+                    wie du den Umriss eines Kopfes zeichnen kannst, findest du, wenn du auf “Weiter“ klickst, eine
+                    Vorlage, wenn diese nicht im Koffer enthalten ist). Wenn du das hast, kannst du den Kopf wenn du
+                    willst auch ausschneiden.{" "}
                 </p>
             </div>
         ),
@@ -58,7 +60,7 @@ export const SDG03_Spiel: TextProps = {
         6: (
             <p>
                 Wenn ihr alle fertig seid, dann setzt euch doch zusammen und wer sich bereit fühlt, der kann den anderen
-                erzählen, was ihn/sie beschäftigt. Ganz wichtig hier ist, dass niemand ausgelacht wird und ihr niemanden
+                erzählen, was ihn/sie beschäftigt. Ganz wichtig hierbei ist, dass niemand ausgelacht wird und ihr niemanden
                 zwingt etwas zu sagen. Vielleicht zeigt euch das, dass es guttun kann, über seine Sorgen zu reden.
             </p>
         ),
