@@ -68,7 +68,7 @@ export const SDG04_Quiz = (): JSX.Element => {
         ),
         5: (
             <div>
-                <p>4. Hat deine Schule eine Toilette und einen Waschbereich, die allen offen zur Verfügung steht? </p>
+                <p>4. Hat deine Schule eine Toilette und einen Waschbereich, die allen offen zur Verfügung stehen? </p>
             </div>
         ),
         6: (
@@ -79,14 +79,14 @@ export const SDG04_Quiz = (): JSX.Element => {
         7: (
             <div>
                 <p>
-                    6. Ist jedes Kind in deinem Land, unabhängig von deren Geschlecht, berechtigt zur Schule zu gehen?{" "}
+                    6. Ist jedes Kind in deinem Land, unabhängig von dessen Geschlecht, berechtigt zur Schule zu gehen?{" "}
                 </p>
             </div>
         ),
         8: (
             <div>
                 <p>
-                    7. Vermittelt deine Schule Wissen im Bereich der Menschenrechte, Demokratie, Frieden, Freiheit und
+                    7. Vermittelt deine Schule Wissen in den Bereichen Menschenrechte, Demokratie, Frieden, Freiheit und
                     Toleranz?{" "}
                 </p>
             </div>
@@ -111,9 +111,10 @@ export const SDG04_Quiz = (): JSX.Element => {
                 </p>
                 <p className="einleitungText">
                     {" "}
-                    Bei jeder Frage kannst du mit „trifft zu“ oder mit „trifft nicht zu“ antworten. Wenn du die Frage
-                    mit „trifft zu“ beantwortet hast, merke 1 Punkt. Wenn du deine Antwort „trifft nicht zu“ war, merke
-                    dir 0 Punkte. Zähle am Schluss alle Punkte zusammen und vergleiche mit der Lösung.
+                    Bei jeder Frage kannst du mit „ja“ oder mit „trifft nicht zu“ antworten. Wenn du die Frage mit „ja“
+                    beantwortet hast, bekommst du einen Punkt. Wenn du deine Antwort „nein“ war, bekommst du keinen
+                    Punkt. Merke dir, wie viele Punkte du hast und zählesie am Schluss alle zusammen und vergleiche mit
+                    der Lösung.
                 </p>
             </div>
         ),
@@ -228,7 +229,7 @@ export const SDG04_Quiz = (): JSX.Element => {
             <div style={{ marginTop: "10px" }} className="nextbutton">
                 {" "}
                 <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
-                    <InfotextButtonGreen showtext={showtext} text="Weiter" setText = {setText}/>
+                    <InfotextButtonGreen showtext={showtext} text="Weiter" setText={setText} />
                 </div>
             </div>
         ) : (
@@ -244,7 +245,7 @@ export const SDG04_Quiz = (): JSX.Element => {
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
                     <div style={{ position: "absolute", top: "950px", left: "1700px" }}>
-                        <InfotextButtonGreen showtext={showtext} text="Weiter" setText = {setText}/>
+                        <InfotextButtonGreen showtext={showtext} text="Weiter" setText={setText} />
                     </div>
                 </Link>{" "}
             </div>
