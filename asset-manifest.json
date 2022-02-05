@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lernkoffer/static/css/main.98af4308.chunk.css",
-    "main.js": "/lernkoffer/static/js/main.61557ec6.chunk.js",
-    "main.js.map": "/lernkoffer/static/js/main.61557ec6.chunk.js.map",
+    "main.js": "/lernkoffer/static/js/main.e9c42492.chunk.js",
+    "main.js.map": "/lernkoffer/static/js/main.e9c42492.chunk.js.map",
     "runtime-main.js": "/lernkoffer/static/js/runtime-main.ebaf6b84.js",
     "runtime-main.js.map": "/lernkoffer/static/js/runtime-main.ebaf6b84.js.map",
     "static/js/2.3a135199.chunk.js": "/lernkoffer/static/js/2.3a135199.chunk.js",
@@ -39,6 +39,7 @@
     "static/media/Bild1.a00a0afb.png": "/lernkoffer/static/media/Bild1.a00a0afb.png",
     "static/media/Bild2.7b7f81dc.png": "/lernkoffer/static/media/Bild2.7b7f81dc.png",
     "static/media/Bild3.5bd47548.png": "/lernkoffer/static/media/Bild3.5bd47548.png",
+    "static/media/Bild4.032897d9.png": "/lernkoffer/static/media/Bild4.032897d9.png",
     "static/media/Bild5.4a233400.png": "/lernkoffer/static/media/Bild5.4a233400.png",
     "static/media/BlaueBox.29d082df.png": "/lernkoffer/static/media/BlaueBox.29d082df.png",
     "static/media/Bürojobs.39e66f10.jpg": "/lernkoffer/static/media/Bürojobs.39e66f10.jpg",
@@ -230,6 +231,6 @@
     "static/js/runtime-main.ebaf6b84.js",
     "static/js/2.3a135199.chunk.js",
     "static/css/main.98af4308.chunk.css",
-    "static/js/main.61557ec6.chunk.js"
+    "static/js/main.e9c42492.chunk.js"
   ]
 }
