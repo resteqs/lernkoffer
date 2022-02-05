@@ -15,7 +15,7 @@ interface Props {
 }
 
 // orientiert an 04 Quiz
-export const Quiz3Component = (props: Props): JSX.Element => {
+export const QuizThreeMixedComponent = (props: Props): JSX.Element => {
     const [showtext, setText] = React.useState(1);
     const [itemSelected, setSelectedItem] = React.useState(0);
     const [modalIsOpen, setIsOpen] = React.useState(false);

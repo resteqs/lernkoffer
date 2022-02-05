@@ -44,7 +44,8 @@ justify-content: center;
     hyphens: auto;
 }
 .headertext {
-    font-size: 70px;
+    font-size: 5vh;
+    font-size: 5vw;
 }
 .texttext {
     font-size: 6vw;

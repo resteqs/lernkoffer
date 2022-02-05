@@ -13,8 +13,8 @@ export const SDG08_GB: TextProps = {
     sdg: "SDG08",
     logo: Logo,
     header: {
-        1: " Fakten und Zahlen ",
-        2: " Fakten und Zahlen ",
+        1: "Fakten und Zahlen",
+        2: "Fakten und Zahlen",
         3: "Einsatz vom SOS-Kinderdorf",
         4: "Einsatz vom SOS-Kinderdorf ",
         5: "Einsatz vom SOS-Kinderdorf",
@@ -56,7 +56,7 @@ export const SDG08_GB: TextProps = {
         ),
         4: (
             <div>
-                Die Beschäftigungs-Initiative „YouthCan!“ (dt.: „Jugend kann“) des SOS-Kinderdorfs arbeitet vor allem
+                Die Beschäftigungsinitiative „YouthCan!“ (dt.: „Jugend kann“) des SOS-Kinderdorfs arbeitet vor allem
                 mit Jugendlichen, die keine Fürsorge durch ihre Eltern bekommen. Sie hilft ihnen dabei, selbstständig zu
                 werden und die Programme in den SOS-Kinderdörfern wahrzunehmen. Dabei vermitteln sie Arbeitsplätze und
                 Mentor:innen, fördern den Austausch zwischen Jugendlichen und Arbeitgeber:innen und bieten die bereits
@@ -74,8 +74,8 @@ export const SDG08_GB: TextProps = {
         ),
         6: (
             <div>
-                Teilt euch nun in zwei Gruppen ein: Gruppe 1 bekommt eine künstlerische Aufgabe, bei der gemalt wird und
-                Gruppe 2 darf sich Gedanken über das Projekt „YouthCan!“ machen und diese aufschreiben.
+                Teilt euch nun in zwei Gruppen ein: Gruppe eins bekommt eine künstlerische Aufgabe, bei der gemalt wird und
+                Gruppe zwei darf sich Gedanken über das Projekt „YouthCan!“ machen. Notierte euch anschließend eure Ergebnisse.
             </div>
         ),
 
@@ -88,7 +88,7 @@ export const SDG08_GB: TextProps = {
         ),
         8: (
             <div>
-                hr habt bisher über ein Projekt gelesen, das Jugendarbeitslosigkeit verhindern und beheben will. Sammelt
+                Ihr habt bisher über ein Projekt gelesen, das Jugendarbeitslosigkeit verhindern und beheben will. Sammelt
                 jetzt Ideen, wie ihr selbst dafür sorgen könnt, dass ihr später einmal Arbeit findet. Jede:r schreibt
                 eigene Tipps auf und anschließend besprecht ihr diese gemeinsam. Seid ihr fertig? Dann klickt weiter und
                 vergleicht mit den Leitgedanken, die mir eingefallen sind.
@@ -121,15 +121,15 @@ export const SDG08_GB: TextProps = {
         11: (
             <div>
                 {" "}
-                Wenn beide Gruppen fertig sind, braucht ihr ein großes Blatt Papier als Plakat. Gruppe 1 malt dann
+                Wenn beide Gruppen fertig sind, braucht ihr ein großes Blatt Papier als Plakat. Gruppe eins malt dann
                 beispielsweise in die Mitte ihr eigenes festgelegte Logo von „YouthCan!“ und anschließend schreibt
-                Gruppe 2 ihre Tipps gegen Jugendarbeitslosigkeit um das Logo herum. Danach könnt ihr es aufhängen und
+                Gruppe zwei ihre Tipps gegen Jugendarbeitslosigkeit um das Logo herum. Danach könnt ihr es aufhängen und
                 als Antrieb für euer späteres Berufsleben sehen.
             </div>
         ),
         12: <div>
             Das ist nur ein Beispiel Plakat von mir und hier seht ihr mich oben rechts in der Ecke. Wenn ihr wollt, könnt ihr mich auch noch auf euer Plakat malen. Viel Spaß!
-            <img style= {{ marginLeft: "600px",  height: "500px" }} src= {Bild05} alt="" />
+            <img style= {{ display:"block", margin:"auto", maxWidth:"30%", marginTop:"15px" }} src= {Bild05} alt="" />
         </div>
     },
 };
