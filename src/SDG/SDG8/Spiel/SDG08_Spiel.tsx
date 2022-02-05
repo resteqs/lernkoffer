@@ -49,7 +49,7 @@ export const SDG08_Spiel: TextProps = {
                 schnell zerstören kann. Außerdem können die Schächte jederzeit einstürzen und die Bezahlung ist sehr
                 gering.{" "}
 
-                <img style= {{ marginTop: "200px", marginLeft: "800px" }} src= {Minenarbeiter} alt="" />
+                <img style= {{ margin:"auto", display:"block" }} src= {Minenarbeiter} alt="" />
             </div>
         ),
         4: (
@@ -59,7 +59,7 @@ export const SDG08_Spiel: TextProps = {
                 nicht anstrengend und auch nicht unbedingt gesundheitsschädlich. Die Arbeitszeit ist normalerweise ganz
                 in Ordnung und man verdient in der Regel gut.{" "}
 
-                <img style= {{ marginTop: "200px", marginLeft: "800px" }}src={Bürojobs} alt="" />
+                <img style= {{ margin:"auto", display:"block" }}src={Bürojobs} alt="" />
 
             </div>
         ),
@@ -69,7 +69,7 @@ export const SDG08_Spiel: TextProps = {
                 Als Bauarbeiter arbeitest du hauptsächlich draußen, auch bei starkem Regen oder großer Hitze. Die
                 schwere körperliche Arbeit kann sich auch auf deine Gesundheit auswirken, z. B. durch Rückenprobleme.
                 Als Bauarbeiter verdienst du nicht sehr viel Geld.
-                <ul> <li><img style= {{ marginTop: "200px", marginLeft: "800px" }} src= {Bauarbeiter}  alt="" /> </li></ul>
+                <ul> <li><img style= {{ margin:"auto", display:"block" }} src= {Bauarbeiter}  alt="" /> </li></ul>
                 
 
             </div>
@@ -81,7 +81,7 @@ export const SDG08_Spiel: TextProps = {
                 ständige Bücken kann zum Beispiel schnell zu gesundheitlichen Problemen führen. Man arbeitet auch nicht
                 das ganze Jahr über, sondern nur zu einer bestimmten Jahreszeit, weil die meisten Pflanzen nur in einer
                 Jahreszeit wachsen. Außerdem wirst du schlecht bezahlt.
-                <ul> <li><img style= {{ marginLeft: "850px", marginTop: "200px" }}  src= {Feldarbeiter}  alt="" /> </li></ul>
+                <ul> <li><img style= {{ margin:"auto", display:"block" }}  src= {Feldarbeiter}  alt="" /> </li></ul>
                 
             </div>
         ),
@@ -93,23 +93,16 @@ export const SDG08_Spiel: TextProps = {
                 oft Überstunden machen müssen und so überlastet werden. Für diese harte Arbeit wirst du auch
                 unterdurchschnittlich bezahlt.
 
-                <ul> <li><img style= {{ marginLeft: "800px", marginTop: "200px" }}  src= {Krankenschwester}  alt="" /> </li></ul>
+                <ul> <li><img style= {{ margin:"auto", display:"block" }}  src= {Krankenschwester}  alt="" /> </li></ul>
             </div>
         ),
         8: (
             <div>
-                {" "}
-                2. Was bedeutet eigentlich „menschenwürdige Arbeit“? Die ILO (engl.: International Labour Organisation,
-                dt.: Internationale Arbeitsorganisation) ist eine Organisation der Vereinten Nationen und beschäftigt
-                sich genau mit dieser Thematik. Ihr Ziel ist, dass Arbeitsbedingungen verbessert werden und jede Arbeit
-                menschenwürdig ist. Dabei haben sie folgende acht Forderungen gestellt: “Keine Zwangs- und
-                Pflichtarbeit, Faire Löhne, Würde und Respekt, Keine Diskriminierung, Faire Arbeitszeiten, Sozialer
-                Dialog, Sicherheit und Gesundheit, Keine Kinderarbeit”
+                2. Was bedeutet eigentlich „menschenwürdige Arbeit“? Die ILO (engl.: International Labour Organisation, dt.: Internationale Arbeitsorganisation) ist eine Organisation der Vereinten Nationen und beschäftigt sich genau mit dieser Thematik. Ihr Ziel ist, dass Arbeitsbedingungen verbessert werden und jede Arbeit menschenwürdig ist. Dabei haben sie folgende acht Forderungen gestellt: “Keine Zwangs- und Pflichtarbeit, faire Löhne, Würde und Respekt, keine Diskriminierung, faire Arbeitszeiten, sozialer Dialog, Sicherheit und Gesundheit, keine Kinderarbeit”
             </div>
         ),
         9: (
             <div>
-                {" "}
                 Denkt nun aber auch an die Faktoren, die beeinflussen, wie sehr ein Beruf menschenwürdig ist: den/die
                 Arbeitgeber:in (also sozusagen der/die Chef:in) an, die staatlichen Bestimmungen, die Wirtschaft, die
                 Kultur und vieles mehr. Viele der aufgeführten Berufe erfüllen mehrere Kriterien, manche mehr, andere
@@ -118,10 +111,9 @@ export const SDG08_Spiel: TextProps = {
         ),
         10: (
             <div>
-                {" "}
-                Diskutiert nun in der Gruppe, welcher Beruf der menschenunwürdigste und welcher der menschwürdigste ist.
-                Liste diese in einer Rangfolge auf. Nummer 5 ist der menschenwürdigste, Nummer 1 ist der
-                menschenunwürdigste. Da nicht immer alle Menschen, die den gleichen Beruf ausüben, auch die gleichen
+                Diskutiert nun in der Gruppe, welcher Beruf der menschenunwürdigste und welcher der menschwürdigste Beruf ist.
+                Liste diese in einer Rangfolge auf. Nummer fünf ist der menschenwürdigste; Nummer eins ist der
+                menschenunwürdigste Beruf. Da nicht immer alle Menschen, die den gleichen Beruf ausüben, auch die gleichen
                 Arbeitsbedingungen weltweit haben, gibt es mehrere Lösungen. Ihr könnt auch noch einmal zurückblättern
                 und euch die Berufe anschauen, die Lösung findet ihr dann auf der nächsten Seite.{" "}
             </div>
