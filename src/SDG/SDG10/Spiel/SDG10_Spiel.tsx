@@ -43,7 +43,7 @@ export const SDG10_Spiel: TextProps = {
     },
 
     text: {
-        1: <b>Jeder Mensch ist einzigartig. Wir sind alle unterschiedlich. Jede:r hat Stärken und Schwächen</b>,
+        1: <b>Jeder Mensch ist einzigartig. Wir sind alle unterschiedlich. Jede:r hat Stärken und Schwächen.</b>,
         2: (
             <p>
                 Überlegt gemeinsam, was mit diesen drei kurzen Sätzen gemeint ist. Inwiefern seid ihr selbst
@@ -83,7 +83,7 @@ export const SDG10_Spiel: TextProps = {
         6: (
             <p>
                 Blindsein ist ebenfalls eine körperliche Behinderung. Wie es ist, nichts sehen zu können und welche
-                Schwierigkeiten es dabei gibt, könnt ihr im nächsten Spiel einmal selbst erleben
+                Schwierigkeiten es dabei gibt, könnt ihr im nächsten Spiel einmal selbst erleben.
             </p>
         ),
         7: (
@@ -305,7 +305,7 @@ export const SDG10_Spiel: TextProps = {
                     6. Gehe einen Schritt vor die Person und zeige ihr, wo sie sich an deinem Arm festhalten kann.
                 </p>
                 <p style={{ marginLeft: "50px" }}>
-                    7. Bei Treppen, Türen oder anderen Hindernissen auf dem Boden, gebe der Person Bescheid. Bei Treppen
+                    7. Bei Treppen, Türen oder anderen Hindernissen auf dem Boden, gib der Person Bescheid. Bei Treppen
                     hilft es außerdem die erste und letzte Stufe anzukündigen, sowie die Richtung (nach oben oder nach
                     unten).
                 </p>
