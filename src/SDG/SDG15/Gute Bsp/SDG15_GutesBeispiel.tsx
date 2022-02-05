@@ -109,6 +109,6 @@ export const SDG15_GutesBeispiel: TextProps = {
                     </li>
                 </ul>
             </div>
-        ),
+        ), 
     },
 };
