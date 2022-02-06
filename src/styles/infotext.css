@@ -20,7 +20,7 @@
 .backbutton {
     float: left;
     justify-content: space-around;
-    margin-left: 8em;
+    margin-left: 10em;
     margin-top: -60px;
 }
 
@@ -45,7 +45,7 @@ justify-content: center;
 }
 .headertext {
     font-size: 5vh;
-    font-size: 5vw;
+    font-size: 5vh;
 }
 .texttext {
     font-size: 6vw;

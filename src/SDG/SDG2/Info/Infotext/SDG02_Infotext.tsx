@@ -83,13 +83,13 @@ export const SDG02_Infotext: InfotextProps = {
     },
 
     header: {
-        2: "Warum",
+        2: "Warum?",
         3: "Was ist das Problem?",
         4: "Was ist das Problem?",
         5: "Was ist das Problem?",
         6: "Wie ist dieses Thema mit uns verbunden?",
-        7: "Was können wir tun",
-        8: "Was können wir tun",
+        7: "Was können wir tun?",
+        8: "Was können wir tun?",
     },
     logo: Logo,
     eg: EG,

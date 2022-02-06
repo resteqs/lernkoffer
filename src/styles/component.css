@@ -11,6 +11,11 @@
     z-index: 4;
 **/
     max-width: 20%;
+    position: absolute;
+    margin-left: 65em;
+    margin-top: 3em;
     display: block;
-    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
 }
