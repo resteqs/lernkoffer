@@ -7,7 +7,7 @@ import Grindwal_Video  from "./Grindwal_Video.mp4";
 
 export const SDG14_Video:VideoProps = {
     sdgNumber: 14,
-    sdgTitle: "Grindwale",
+    sdgTitle: "Wo leben Grindwale?",
     sdg: "SDG14",
     logo: Logo,
     source: Grindwal_Video ,
