@@ -20,23 +20,18 @@ export const SDG03_Infotext:InfotextProps = {
     logo: Logo,
     eg: EG,
     text: {
-        1: "“Ein gesundes Leben für alle Menschen jeden Alters gewährleisten und ihr Wohlergehen fördern”",
-        2: "Gesundheit ist wichtig für den Aufbau wohlhabender Gesellschaften. Die meisten Länder, insbesondere arme Länder, haben nicht genügend Gesundheitseinrichtungen, medizinische Versorgung und medizinisches Personal. Im Falle eines gesundheitlichen Notfalls können Menschen in jedem Land, unabhängig von seinem Reichtum, in den Bankrott oder in die Armut getrieben werden.",
-        3: "Wir müssen unsere Anstrengungen koordinieren, um eine universelle Gesundheitsversorgung und eine nachhaltige Finanzierung der Gesundheit zu erreichen. Darüber hinaus werden wir durch neu entstehende Gesundheitsgefahren herausgefordert.",
-        4: "Die Fortschritte in vielen Gesundheitsbereichen, z. B. bei der Senkung der Mütter- und Kindersterblichkeit, bei der Erhöhung der Impfquote und bei der Reduzierung einiger Infektionskrankheiten, gehen weiter, aber das Tempo der Verbesserung hat sich verlangsamt. Im Jahr 2018 erhielten schätzungsweise 19,4 Millionen Kinder im ersten Lebensjahr nicht die notwendigen Impfstoffe.",
-        5: "Die Immunisierung (der Prozess der Verabreichung eines Impfstoffs zum Schutz vor Krankheiten) ist eine der erfolgreichsten und kosteneffektivsten Gesundheitsmaßnahmen. Im Jahr 2017 war nur etwa ein Drittel bis die Hälfte der Weltbevölkerung durch essenzielle Gesundheitsleistungen abgedeckt.",
-        6: "Krankheiten und Todesfälle durch übertragbare Krankheiten werden in die Höhe schnellen. Deshalb erfordert es ein starkes Engagement, um ein gesundes Leben für alle gewährleisten zu können. Es ist aber wichtig, da die Vorteile die Kosten überwiegen. Gesunde Menschen sind die Grundlage für gesunde Volkswirtschaften.",
-        7: "Du kannst damit beginnen, deine eigene Gesundheit und die Gesundheit der Menschen in deiner Umgebung zu fördern und zu schützen, indem du gut informierte Entscheidungen triffst und zum Beispiel dich selbst und deine  zukünftigen Kinder impfen lässt.",
-        8: "Du kannst in deiner Gemeinde das Bewusstsein für die Bedeutung einer guten Gesundheit, eines gesunden Lebensstils sowie für das Recht der Menschen auf eine hochwertige Gesundheitsversorgung schärfen, insbesondere für die Schwächsten, wie Frauen und Kinder.",
+        1: "Es ist wichtig für den Aufbau wohlhabender Gesellschaften",
+        2: "Wir müssen unsere Anstrengungen koordinieren, um eine universelle Gesundheitsversorgung und eine nachhaltige Finanzierung der Gesundheit zu erreichen. Darüber hinaus werden wir durch neu entstehende Gesundheitsgefahren herausgefordert.",
+        3: "Die Fortschritte in vielen Gesundheitsbereichen, z. B. beim Verringern einiger Infektionskrankheiten, gehen weiter, aber diese Verbesserungen passiert langsamer. Im Jahr 2018 erhielten schätzungsweise 19,4 Millionen Kinder im ersten Lebensjahr nicht die notwendigen Impfstoffe. Obwohl die Immunisierung (der Prozess der Verabreichung eines Impfstoffs zum Schutz vor Krankheiten) eine der erfolgreichsten und günstigsten Gesundheitsmaßnahmen der Welt ist. Im Jahr 2017 war nur etwa ein Drittel bis die Hälfte der Weltbevölkerung durch lebenswichtige Gesundheitsleistungen abgedeckt.",
+        4: "Krankheiten und Todesfälle durch übertragbare Krankheiten werden in die Höhe schnellen. Wir müssen uns gemeinsam anstrengen, um eine einheitliche Gesundheitsversorgung zu erreichen und um somit vor neu entstehenden Gesundheitsgefahren geschützt zu sein. Das ist wichtig, da die Vorteile die Kosten überwiegen. Denn nur gesunde Menschen können arbeiten, Geld verdienen und somit für sich selbst und andere sorgen. ",
+        5: "Du kannst damit beginnen, deine eigene Gesundheit und die Gesundheit der Menschen in deiner Umgebung zu fördern und zu schützen, indem du gut informierte Entscheidungen triffst und zum Beispiel dich selbst und deine zukünftigen Kinder impfen lässt. Außerdem kannst du deinen Mitmenschen die Bedeutung einer guten Gesundheit und eines gesunden Lebensstils sowie das Recht der Menschen auf eine hochwertige Gesundheitsversorgung erklären.",
     },
     header: {
         2: "Warum?",
-        3: "Warum?",
-        4: "Was ist das Problem?",
-        5: "Was ist das Problem?",
-        6: "Wie ist dieses Thema mit uns verbunden?",
-        7: "Was können wir tun?",
-        8: "Was können wir tun?",
+        3: "Was ist das Problem?",
+        4: "Wie ist dieses Thema mit uns verbunden?",
+        5: "Was können wir tun?",
+        
     },
     audioFile: {
         1: SDG3_1,
@@ -44,8 +39,6 @@ export const SDG03_Infotext:InfotextProps = {
         3: SDG3_3,
         4: SDG3_4,
         5: SDG3_5,
-        6: SDG3_6,
-        7: SDG3_7,
-        8: SDG3_8
+       
     }
 }
