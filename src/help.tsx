@@ -15,7 +15,7 @@ export const Help = (): JSX.Element => {
     }
     return (
         <div style={{ margin: "10px" }} >
-            <p className="rainbow-text" style={table} >Navigation</p>
+            <p className="rainbow-text" style={table}>Navigation</p>
             <table className="tg">
                 <thead>
                     <tr >
@@ -170,7 +170,7 @@ export const Help = (): JSX.Element => {
                             <p>und</p>
                             <Link to ="/SDG13/Spiel2/">Spiel 2 DND ???</Link>
                         </td>
-                        <td className="tg-c3ow"><Link to ="/SDG14/Spiel2/tutorial1">Spiel ???</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG14/Spiel2/Tutorial">Spiel ???</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/Spiel">Spiel </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/Spiel">Spiel </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/Spiel">Spiel </Link></td>

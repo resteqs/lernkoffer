@@ -1,27 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import { InfotextButton } from '../../../../Components/Buttons/InfotextButton';
+import { TextProps } from '../../../../Interfaces/SDG';
+import Logo from "../../../../SDGLogos/Goal-SDG14.png";
 
-// eslint-disable-next-line react/prefer-stateless-function
-class clownfish extends React.Component {
-    render(): JSX.Element {
-        return (
-            <div className="standard-background">
-                <h1 className="header">clownfish</h1>
-                <p className="playinformation">
-                    A pleasant surprise, Nemo and his friends live a great life in the ocean. Even though the high
-                    demand for clownfish after the success of &quot; Finding Nemo &quot; is a real problem. This in turn
-                    resulted in overfishing clownfishes especially in reef areas. The chemical that was used to do this
-                    also damaged the coral reefs which normally are a home for these fishes.
-                </p>
-
-                <Link to="/SDG14/Spiel2">
-                    <button className="buttonBack" type="button">
-                        Back
-                    </button>
+export const clownfish:TextProps = {
+    sdgNumber: 14,
+    sdgTitle: 'Clownfisch',
+    sdg: 'SDG14',
+    logo: Logo,
+    header: {
+        1: "Erklärung",
+        2: "Zurück zum Tippspiel"
+    },
+    text: {
+        1: <p> Eine angenehme Überraschung, Nemo und seine Freunde leben ein tolles Leben im Ozean. Auch wenn die hohe Nachfrage nach Clownfischen nach dem Erfolg von &quot;Findet Nemo&quot; ein echtes Problem ist. Das wiederum führte zu einer Überfischung der Clownfische vor allem in Riffgebieten. Die Chemikalie, die dabei eingesetzt wurde, schädigte auch die Korallenriffe, die normalerweise ein Zuhause für diese Fische sind.</p>,
+        2: (
+            <div style={{ textAlign: "center", marginTop: "10vh" }}>
+                <Link to = "/SDG14/Spiel2/Spiel">
+                    <InfotextButton version="green">
+                        Zum Tippspiel
+                    </InfotextButton>
                 </Link>
             </div>
-        );
+        )
     }
 }
-
-export default clownfish;

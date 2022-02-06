@@ -15,6 +15,7 @@ import "./styles/colour_sdgs.css";
 import "./styles/sdg13.css";
 import "./styles/sdg14.css";
 import "./SDG/SDG1/Spiel/sdg1.css"
+import "./styles/infotext.css";
 
 /**----------------------------------------------------------------------------
  *                              Wörterbuch
@@ -267,14 +268,14 @@ import { SDG14_Infotext } from "./SDG/SDG14/Info/SDG14_Infotext";
 /**                                 Quiz                                     */
 
 /**                                Spiel                                     */
-import clownfish from "./SDG/SDG14/Spiel2/search_info/clownfish";
-import ray from "./SDG/SDG14/Spiel2/search_info/ray";
-import seaHorse from "./SDG/SDG14/Spiel2/search_info/seaHorse";
-import shark from "./SDG/SDG14/Spiel2/search_info/shark";
-import siamesefightingFish from "./SDG/SDG14/Spiel2/search_info/siameseFightingFish";
-import surgeonfish from "./SDG/SDG14/Spiel2/search_info/surgeonfish";
-import turtle from "./SDG/SDG14/Spiel2/search_info/turtle";
-import boat from "./SDG/SDG14/Spiel2/search_info/boat";
+import { clownfish } from "./SDG/SDG14/Spiel2/search_info/clownfish";
+import { ray } from "./SDG/SDG14/Spiel2/search_info/ray";
+import { seaHorse } from "./SDG/SDG14/Spiel2/search_info/seaHorse";
+import { shark } from "./SDG/SDG14/Spiel2/search_info/shark";
+import { siameseFightingFish } from "./SDG/SDG14/Spiel2/search_info/siameseFightingFish";
+import { surgeonfish } from "./SDG/SDG14/Spiel2/search_info/surgeonfish";
+import { turtle } from "./SDG/SDG14/Spiel2/search_info/turtle";
+import { boat } from "./SDG/SDG14/Spiel2/search_info/boat";
 
 /**                                Spiel2                                    */
 import { Main } from "./SDG/SDG13/Spiel2/DND/Main";
@@ -409,6 +410,7 @@ import { SDG16_Video } from "./SDG/SDG16/Video/SDG16_Video";
 import { SDG17_Video } from "./SDG/SDG17/Video/SDG17_Video";
 import { SDG13_Spiel_Tutorial } from "./SDG/SDG13/Spiel/SDG13_Spiel_Tutorial";
 import { QuizTwoOrThreeOptionComponent } from "./Components/Quiz/QuizTwoOrThreeOptionComponent";
+import { SDG14_Spiel2_Tutorial } from "./SDG/SDG14/Spiel2/SDG14_Spiel2_Tutorial";
 
 
 
@@ -587,7 +589,7 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
             <Route exact path="/SDG09/Infotext"><InfotextComponent sdg={SDG09_Infotext}/></Route>
 /**                                 Quiz                                     */
-<Route exact path="/SDG09/Quiz"><Quiz_Component sdg={SDG09_Quiz}/></Route>
+            <Route exact path="/SDG09/Quiz"><Quiz_Component sdg={SDG09_Quiz}/></Route>
 /**                                Spiel                                     */
             <Route exact path="/SDG09/Spiel" component={SDG09_Spiel}/>
 /**                                Video                                     */
@@ -696,18 +698,16 @@ export const App = (): JSX.Element => {
 /**                                Spiel                                     */
 
 /**                                Spiel2                                    */
-            <Route exact path="/SDG14/Spiel2/tutorial1" component={page141} />                    
-            <Route exact path="/SDG14/Spiel2/tutorial2" component={page142} />
-            <Route exact path="/SDG14/Spiel2/tutorial3" component={page143} />
-            <Route exact path="/SDG14/Spiel2" component={play14} />
-            <Route exact path="/SDG14/Spiel2/clownfish" component={clownfish} />                    
-            <Route exact path="/SDG14/Spiel2/ray" component={ray} />
-            <Route exact path="/SDG14/Spiel2/seaHorse" component={seaHorse} />
-            <Route exact path="/SDG14/Spiel2/shark" component={shark} />
-            <Route exact path="/SDG14/Spiel2/siameseFightingFish" component={siamesefightingFish} />
-            <Route exact path="/SDG14/Spiel2/surgeonfish" component={surgeonfish} />
-            <Route exact path="/SDG14/Spiel2/turtle" component={turtle} />
-            <Route exact path="/SDG14/Spiel2/boat" component={boat} />   
+            <Route exact path="/SDG14/Spiel2/Tutorial"><TextComponent sdg = {SDG14_Spiel2_Tutorial}/></Route>
+            <Route exact path="/SDG14/Spiel2/Spiel" component={play14} />
+            <Route exact path="/SDG14/Spiel2/clownfish" ><TextComponent sdg = {clownfish}/></Route>                    
+            <Route exact path="/SDG14/Spiel2/ray" ><TextComponent sdg = {ray}/></Route>
+            <Route exact path="/SDG14/Spiel2/seaHorse" ><TextComponent sdg = {seaHorse}/></Route>
+            <Route exact path="/SDG14/Spiel2/shark" ><TextComponent sdg = {shark}/></Route>
+            <Route exact path="/SDG14/Spiel2/siameseFightingFish" ><TextComponent sdg = {siameseFightingFish}/></Route>
+            <Route exact path="/SDG14/Spiel2/surgeonfish" ><TextComponent sdg = {surgeonfish}/></Route>
+            <Route exact path="/SDG14/Spiel2/turtle" ><TextComponent sdg = {turtle}/></Route>
+            <Route exact path="/SDG14/Spiel2/boat"><TextComponent sdg = {boat}/></Route>
 /**                                Video                                    */
             <Route exact path="/SDG14/Video"><VideoComponent sdg = {SDG14_Video}/></Route>
 
