@@ -7,7 +7,7 @@ import Wasserstoff from "./Wasserstoff.mp4";
 
 export const SDG07_Video_Wasserstoff:VideoProps = {
     sdgNumber: 7,
-    sdgTitle: "Wasserstoff ",
+    sdgTitle: "Kurzerklärt: Wasserstoff Energie ",
     sdg: "SDG07",
     logo: Logo,
     source: Wasserstoff,

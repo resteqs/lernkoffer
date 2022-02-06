@@ -1,5 +1,5 @@
 .logoUp{
-    transform: translateX(50px );
+    transform: translateX(6.667vw );
 }
 
 .EG{
@@ -12,8 +12,8 @@
 **/
     max-width: 20%;
     position: absolute;
-    margin-left: 65em;
-    margin-top: 3em;
+    margin-left: 40vw;
+    margin-top: 1vh;
     display: block;
     background-repeat: no-repeat;
     background-position: bottom;
