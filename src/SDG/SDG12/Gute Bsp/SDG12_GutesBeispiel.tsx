@@ -28,7 +28,7 @@ export const SDG12_GutesBeispiel: TextProps = {
         1: (
             <div>
                 {" "}
-                Zuerst sieh dir alle Bilder an, die dir gleich gezeigt werden und überleg, welche Gemeinsamkeit sie
+                Sieh dir zuerst alle Bilder an, die dir gleich gezeigt werden und überlege, welche Gemeinsamkeit sie
                 haben.
                 <img style={{ marginBottom: "-600px", marginLeft: "-500px", height: "400px" }} src={Bild12_1} alt="" />
                 <img style={{ marginBottom: "-600px", height: "400px" }} src={Bild12_2} alt="" />
@@ -127,7 +127,7 @@ export const SDG12_GutesBeispiel: TextProps = {
                     </li>
                     <li>
                         {" "}
-                        Ich habe noch ein Beispiel für euch: Unverpackt Länden. In diesen Geschäften werden nur Sachen
+                        Ich habe noch ein Beispiel für euch: Unverpackt-Länden. In diesen Geschäften werden nur Sachen
                         ohne Verpackung verkauft und man nimmt sich selbst Gefäße mit, die man immer wieder hernehmen
                         kann, so wie zum Beispiel Stoffbeutel.
                     </li>

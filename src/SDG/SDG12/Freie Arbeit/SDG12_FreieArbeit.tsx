@@ -24,9 +24,9 @@ export const SDG12_FreieArbeit: TextProps = {
         1: (
             <div>
                 {" "}
-                Da wir sehr viele Dinge verbrauchen, die teilweise nicht mehr hergestellt werden können oder das sehr
-                lange dauert, ist es wichtig bereits vorhandene Sachen wiederzuverwenden. Das nennt man auch
-                „Recycling“. Zum Beispiel kann man auch aus „Müll“ Kunst schaffen{" "}
+                Da wir sehr viele Dinge verbrauchen, die teilweise nicht mehr hergestellt werden können, oder das sehr
+                lange dauert, ist es wichtig bereits vorhandene Sachen wiederzuverwenden: Das nennt man auch
+                „Recycling“. Zum Beispiel kann man auch aus „Müll“ Kunst schaffen.{" "}
             </div>
         ),
         2: (
@@ -37,7 +37,7 @@ export const SDG12_FreieArbeit: TextProps = {
                 wie einen Tisch, bauen kann und er somit ein Rohstoff ist. Er will den Menschen, die durch sein Museum
                 gehen, die unterschiedlichsten Möglichkeiten zeigen, was alles aus Abfall entstehen kann. Dadurch sollen
                 mehr Leute motiviert werden Dinge zu recyclen, denn in Russland wird noch sehr viel weggeschmissen und
-                wahrscheinlich nicht einmal jedes zehnte Produkt wiederverwendet{" "}
+                wahrscheinlich nicht einmal jedes zehnte Produkt wiederverwendet.{" "}
             </div>
         ),
         3: (

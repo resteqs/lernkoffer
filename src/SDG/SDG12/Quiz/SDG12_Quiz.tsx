@@ -48,7 +48,7 @@ export const SDG12_Quiz: QuizProps = {
         10: (
             <p>
                 Jetzt weißt du hoffentlich mehr über die nicht erneuerbaren Rohstoffe, wie viele es noch gibt und wie
-                diese benutzt werden können
+                diese benutzt werden können.
             </p>
         ),
     },
