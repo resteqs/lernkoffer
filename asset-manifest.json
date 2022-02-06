@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/lernkoffer/static/css/main.dfa9afe6.chunk.css",
-    "main.js": "/lernkoffer/static/js/main.8237e0a6.chunk.js",
-    "main.js.map": "/lernkoffer/static/js/main.8237e0a6.chunk.js.map",
+    "main.css": "/lernkoffer/static/css/main.2867864e.chunk.css",
+    "main.js": "/lernkoffer/static/js/main.a568cef7.chunk.js",
+    "main.js.map": "/lernkoffer/static/js/main.a568cef7.chunk.js.map",
     "runtime-main.js": "/lernkoffer/static/js/runtime-main.ebaf6b84.js",
     "runtime-main.js.map": "/lernkoffer/static/js/runtime-main.ebaf6b84.js.map",
     "static/js/2.91e5ac8d.chunk.js": "/lernkoffer/static/js/2.91e5ac8d.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.7a2a6156.chunk.js": "/lernkoffer/static/js/3.7a2a6156.chunk.js",
     "static/js/3.7a2a6156.chunk.js.map": "/lernkoffer/static/js/3.7a2a6156.chunk.js.map",
     "index.html": "/lernkoffer/index.html",
-    "static/css/main.dfa9afe6.chunk.css.map": "/lernkoffer/static/css/main.dfa9afe6.chunk.css.map",
+    "static/css/main.2867864e.chunk.css.map": "/lernkoffer/static/css/main.2867864e.chunk.css.map",
     "static/js/2.91e5ac8d.chunk.js.LICENSE.txt": "/lernkoffer/static/js/2.91e5ac8d.chunk.js.LICENSE.txt",
     "static/media/12_1.8855d9cb.jpg": "/lernkoffer/static/media/12_1.8855d9cb.jpg",
     "static/media/12_2.c0a72ee0.jpg": "/lernkoffer/static/media/12_2.c0a72ee0.jpg",
@@ -47,7 +47,7 @@
     "static/media/Detektiv.56780b38.png": "/lernkoffer/static/media/Detektiv.56780b38.png",
     "static/media/Dextrose.48a1c47f.jpg": "/lernkoffer/static/media/Dextrose.48a1c47f.jpg",
     "static/media/Dr.TereraiTrent.8d752c5d.png": "/lernkoffer/static/media/Dr.TereraiTrent.8d752c5d.png",
-    "static/media/EG2.e9fc4afa.png": "/lernkoffer/static/media/EG2.e9fc4afa.png",
+    "static/media/EG2.d73a0902.png": "/lernkoffer/static/media/EG2.d73a0902.png",
     "static/media/Elefant.8bea08af.png": "/lernkoffer/static/media/Elefant.8bea08af.png",
     "static/media/Erste_Zahlungsmittel.23c8a4ed.mp4": "/lernkoffer/static/media/Erste_Zahlungsmittel.23c8a4ed.mp4",
     "static/media/Feldarbeiter.9811112c.jpg": "/lernkoffer/static/media/Feldarbeiter.9811112c.jpg",
@@ -227,7 +227,7 @@
   "entrypoints": [
     "static/js/runtime-main.ebaf6b84.js",
     "static/js/2.91e5ac8d.chunk.js",
-    "static/css/main.dfa9afe6.chunk.css",
-    "static/js/main.8237e0a6.chunk.js"
+    "static/css/main.2867864e.chunk.css",
+    "static/js/main.a568cef7.chunk.js"
   ]
 }
