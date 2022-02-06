@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/lernkoffer/static/css/main.2867864e.chunk.css",
-    "main.js": "/lernkoffer/static/js/main.a568cef7.chunk.js",
-    "main.js.map": "/lernkoffer/static/js/main.a568cef7.chunk.js.map",
+    "main.css": "/lernkoffer/static/css/main.97961ce7.chunk.css",
+    "main.js": "/lernkoffer/static/js/main.7470fd20.chunk.js",
+    "main.js.map": "/lernkoffer/static/js/main.7470fd20.chunk.js.map",
     "runtime-main.js": "/lernkoffer/static/js/runtime-main.ebaf6b84.js",
     "runtime-main.js.map": "/lernkoffer/static/js/runtime-main.ebaf6b84.js.map",
-    "static/js/2.91e5ac8d.chunk.js": "/lernkoffer/static/js/2.91e5ac8d.chunk.js",
-    "static/js/2.91e5ac8d.chunk.js.map": "/lernkoffer/static/js/2.91e5ac8d.chunk.js.map",
+    "static/js/2.6809f42a.chunk.js": "/lernkoffer/static/js/2.6809f42a.chunk.js",
+    "static/js/2.6809f42a.chunk.js.map": "/lernkoffer/static/js/2.6809f42a.chunk.js.map",
     "static/js/3.7a2a6156.chunk.js": "/lernkoffer/static/js/3.7a2a6156.chunk.js",
     "static/js/3.7a2a6156.chunk.js.map": "/lernkoffer/static/js/3.7a2a6156.chunk.js.map",
     "index.html": "/lernkoffer/index.html",
-    "static/css/main.2867864e.chunk.css.map": "/lernkoffer/static/css/main.2867864e.chunk.css.map",
-    "static/js/2.91e5ac8d.chunk.js.LICENSE.txt": "/lernkoffer/static/js/2.91e5ac8d.chunk.js.LICENSE.txt",
+    "static/css/main.97961ce7.chunk.css.map": "/lernkoffer/static/css/main.97961ce7.chunk.css.map",
+    "static/js/2.6809f42a.chunk.js.LICENSE.txt": "/lernkoffer/static/js/2.6809f42a.chunk.js.LICENSE.txt",
     "static/media/12_1.8855d9cb.jpg": "/lernkoffer/static/media/12_1.8855d9cb.jpg",
     "static/media/12_2.c0a72ee0.jpg": "/lernkoffer/static/media/12_2.c0a72ee0.jpg",
     "static/media/12_3.e6938a63.jpg": "/lernkoffer/static/media/12_3.e6938a63.jpg",
@@ -176,6 +176,7 @@
     "static/media/Tierbesitzer.0d289eb9.png": "/lernkoffer/static/media/Tierbesitzer.0d289eb9.png",
     "static/media/Tierübersetzter.5765fa2b.jpg": "/lernkoffer/static/media/Tierübersetzter.5765fa2b.jpg",
     "static/media/TreibhauseffektGrafik.d544ef82.png": "/lernkoffer/static/media/TreibhauseffektGrafik.d544ef82.png",
+    "static/media/UN.dc814892.png": "/lernkoffer/static/media/UN.dc814892.png",
     "static/media/Umweltsünder.353c93c5.png": "/lernkoffer/static/media/Umweltsünder.353c93c5.png",
     "static/media/WWF.5c206a02.jpg": "/lernkoffer/static/media/WWF.5c206a02.jpg",
     "static/media/WasserBox.f5802d7c.png": "/lernkoffer/static/media/WasserBox.f5802d7c.png",
@@ -226,8 +227,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ebaf6b84.js",
-    "static/js/2.91e5ac8d.chunk.js",
-    "static/css/main.2867864e.chunk.css",
-    "static/js/main.a568cef7.chunk.js"
+    "static/js/2.6809f42a.chunk.js",
+    "static/css/main.97961ce7.chunk.css",
+    "static/js/main.7470fd20.chunk.js"
   ]
 }
