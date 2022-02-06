@@ -5,17 +5,3 @@
 body {
     background-color: white;
 }
-.infotextbox {
-    background-color: white;
-    text-align: center;
-    font-size: x-large;
-    padding: 6.667vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    border-left-style: solid;
-    border-left-color: var(--SDG04color);
-    border-width: 1.333vh;
-    font-size: 4.667vh;
-    height: 60.667vh;
-}

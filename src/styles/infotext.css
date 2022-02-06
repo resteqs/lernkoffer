@@ -1,15 +1,16 @@
 .infotextbox {
     background-color: #c5192d20;
     text-align: center;
-    font-size: x-large;
     padding: 50px;
+    padding-top: 0;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 5%;
+    margin-top: 50px;	
     border-left-style: solid;
     border-left-color: var(--SDG04color);
     border-width: 10px;
-    height: 650px;
+    height: 65vh;
+    justify-content: baseline;
 }
 .nextbutton {
     float: right;
@@ -20,7 +21,7 @@
 .backbutton {
     float: left;
     justify-content: space-around;
-    margin-left: 10em;
+    margin-left: 8em;
     margin-top: -60px;
 }
 
@@ -43,16 +44,37 @@ justify-content: center;
     font-size: 50px;
     hyphens: auto;
 }
+
+.bodytextInfotext {
+    font-size: 3.5vh;
+    font-size: 2vw;
+    hyphens: auto;
+    justify-content: baseline;
+}
+
 .headertext {
     font-size: 5vh;
     font-size: 5vh;
+}
+
+.headertextInfotext {
+    font-size: 5vh;
+    font-size: 5vh;
+    padding-bottom: 10px;
+    padding-top: 30px;
 }
 .texttext {
     font-size: 6vw;
     font-size: 4vh;
     text-align: justify;
-    hyphens: auto;
-    
+    hyphens: auto; 
+}
+
+.texttextInfotext {
+    font-size: 6vw;
+    font-size: 4vh;
+    text-align: justify;
+    hyphens: auto; 
 }
 
 .textBox{
