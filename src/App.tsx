@@ -26,7 +26,7 @@ export const App = (): JSX.Element => {
         <HashRouter basename="/lernkoffer">
             <Switch>
             <Route exact path="/">
-                <TextComponent sdg={SDG11_GB}/>
+                <InfotextComponent sdg={SDG11_Infotext}/>
             </Route>
             </Switch>
         </HashRouter>

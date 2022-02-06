@@ -78,7 +78,7 @@
 .front {
     display: block;
     position: relative;
-    padding: 70px 40px;
+    padding: 8vh 2vw;
     border-radius: var(--buttonBorderInfotext);
     font-size: 1.25rem;
     color: white;
