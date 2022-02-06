@@ -1,9 +1,7 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import React,  { useState } from 'react'
-import { Fab, TextareaAutosize } from '@material-ui/core'
-import { ArrowBack } from '@material-ui/icons'
-import { Link } from "react-router-dom";
+import { TextareaAutosize } from '@material-ui/core'
 import QrScan from 'react-qr-reader'
 import validator from 'validator'
 

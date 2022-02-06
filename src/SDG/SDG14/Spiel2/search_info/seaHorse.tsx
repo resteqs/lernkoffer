@@ -1,28 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import { InfotextButton } from '../../../../Components/Buttons/InfotextButton';
+import { TextProps } from '../../../../Interfaces/SDG';
+import Logo from "../../../../SDGLogos/Goal-SDG14.png";
 
-// eslint-disable-next-line react/prefer-stateless-function
-class seaHorse extends React.Component {
-    render(): JSX.Element {
-        return (
-            <div className="standard-background">
-                <h1 className="header">sea horse</h1>
-                <p className="playinformation">
-                    It&apos;s not sharks. It&apos;s not barracuda. It&apos;s not bluefin tuna. No, one of the deadliest
-                    creatures in the sea is not a species we even think of as a predator at all. It is the seahorse. But
-                    even though they are really dangerous these little animals are a threatened species because of the
-                    fact that people angle them in order to make them a lucky charm and their living space, the corals,
-                    shrinks more and more.
-                </p>
-
-                <Link to="/SDG14/Spiel2">
-                    <button className="buttonBack" type="button">
-                        Back
-                    </button>
+export const seaHorse:TextProps = {
+    sdgNumber: 14,
+    sdgTitle: 'Seepferdchen',
+    sdg: 'SDG14',
+    logo: Logo,
+    header: {
+        1: "Erklärung",
+        2: "Zurück zum Tippspiel"
+    },
+    text: {
+        1: "Es ist kein Hai. Es ist kein Barrakuda. Es ist nicht der Blauflossenthunfisch. Nein, eine der tödlichsten Kreaturen im Meer ist keine Spezies, die wir überhaupt als Raubtier betrachten. Es ist das Seepferdchen. Aber obwohl sie wirklich gefährlich sind, sind diese kleinen Tiere eine bedrohte Art, weil die Menschen sie angeln, um sie zu Glücksbringern zu machen und ihr Lebensraum, die Korallen, immer mehr schrumpft.",
+        2: (
+            <div style={{ textAlign: "center", marginTop: "10vh" }}>
+                <Link to = "/SDG14/Spiel2/Spiel">
+                    <InfotextButton version="green">
+                        Zum Tippspiel
+                    </InfotextButton>
                 </Link>
             </div>
-        );
+        )
     }
 }
-
-export default seaHorse;

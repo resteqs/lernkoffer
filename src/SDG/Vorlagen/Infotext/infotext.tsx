@@ -9,7 +9,7 @@ import "../../../styles/colour_sdgs.css";
 import { Link } from 'react-router-dom';
 import "../../../styles/infotext.css";
 import Logo from "../../../SDGLogos/Goal-SDG06.png";
-import EG from "../../../EG/eg.png";
+// import EG from "../../../EG/eg.png";
 
 export const Infotext = (): JSX.Element => {
     // eslint-disable-next-line prefer-const

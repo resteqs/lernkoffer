@@ -1,36 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import { InfotextButton } from '../../../../Components/Buttons/InfotextButton';
+import { TextProps } from '../../../../Interfaces/SDG';
+import Logo from "../../../../SDGLogos/Goal-SDG14.png";
 
-// eslint-disable-next-line react/prefer-stateless-function
-class boat extends React.Component {
-    render(): JSX.Element {
-        return (
-            <div className="standard-background">
-                <h1 className="header">boat</h1>
-                <p className="playinformation">
-                    <p>
-                        Cruise ships produce a lot of sulfur dioxide and nitrogen dioxide which are water pollutants and
-                        hazardous materials.
-                    </p>
-                    <p>
-                        The main reason for the production of these harmful gases is the fuel most ships use, that is
-                        called fuel oil and is not allowed to be used in most countries, because its burning puts out
-                        enormous amounts of dangerous gases.
-                    </p>
-                    <p>
-                        Yet many scientists search for a better way of running such big engines and have already found a
-                        solution. It is the liquid gas because it doesn’t set free so much noxious substances.
-                    </p>
-                </p>
-
-                <Link to="/SDG14/Spiel2">
-                    <button className="buttonBack" type="button">
-                        Back
-                    </button>
+export const boat:TextProps = {
+    sdgNumber: 14,
+    sdgTitle: 'Boot',
+    sdg: 'SDG14',
+    logo: Logo,
+    header: {
+        1: "Erklärung",
+        2: "Zurück zum Tippspiel"
+    },
+    text: {
+        1: "Kreuzfahrtschiffe stoßen eine Menge Schwefeldioxid und Stickstoffdioxid aus, die Wasserverschmutzer und gefährliche Stoffe sind. Der Hauptgrund für die Erzeugung dieser schädlichen Gase ist der Treibstoff, den die meisten Schiffe verwenden, das so genannte Heizöl, das in den meisten Ländern nicht verwendet werden darf, weil bei seiner Verbrennung enorme Mengen gefährlicher Gase entstehen. Doch viele Wissenschaftler suchen nach einer besseren Möglichkeit, solche großen Motoren zu betreiben, und haben bereits eine Lösung gefunden. Es ist das Flüssiggas, weil es nicht so viele schädliche Stoffe freisetzt.",
+        2: (
+            <div style={{ textAlign: "center", marginTop: "10vh" }}>
+                <Link to = "/SDG14/Spiel2/Spiel">
+                    <InfotextButton version="green">
+                        Zum Tippspiel
+                    </InfotextButton>
                 </Link>
             </div>
-        );
+        )
     }
 }
-
-export default boat;
