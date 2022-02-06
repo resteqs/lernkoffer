@@ -9,11 +9,11 @@ import Netz from "../Spiel/Netz.png"
 
 export const SDG16_Spiel: TextProps = {
     sdgNumber: 16,
-    sdgTitle: "Balanciert den Ball",
+    sdgTitle: "Netz “Frieden und Gerechtigkeit” spinnen",
     sdg: "SDG16",
     logo: Logo,
     header: {
-        1: " Einleitung ",
+        1: "Einleitung",
         2: "Spieleanleitung",
         3: "Spieleanleitung",
         4: "Spieleanleitung",
