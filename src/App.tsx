@@ -701,7 +701,7 @@ export const App = (): JSX.Element => {
 /**                                Spiel                                     */
 
 /**                                Spiel2                                    */
-            <Route exact path="/SDG14/Spiel2/Tutorial"><TextComponent sdg = {SDG14_Spiel2_Tutorial}/></Route>
+            <Route exact path="/SDG14/Spiel2/tutorial1"><TextComponent sdg = {SDG14_Spiel2_Tutorial}/></Route>
             <Route exact path="/SDG14/Spiel2/Spiel" component={play14} />
             <Route exact path="/SDG14/Spiel2/clownfish" ><TextComponent sdg = {clownfish}/></Route>                    
             <Route exact path="/SDG14/Spiel2/ray" ><TextComponent sdg = {ray}/></Route>
