@@ -286,8 +286,9 @@ li {
   }
   .backButtonDiv{
       position: absolute;
-      top: -2.667vw;
-      left: 4vw;
+      top: -22.667vh;
+      left: 0vw;
+   
   }
   .backButton{
       width: 6.667vw;
@@ -299,3 +300,14 @@ li {
       border: none;
       
   }
+
+  .backButton02s{
+    width: 0.667vw;
+    height:  0.667vh;
+    font-size: 10vw;
+    text-align: center;
+    display: table;
+    background: none;
+    border: none;
+    max-width: 20%;
+}

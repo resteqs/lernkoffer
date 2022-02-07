@@ -25,6 +25,14 @@
     margin-top: -8vh;
 }
 
+.backbutton02s {
+    
+    float: left;
+    justify-content: space-around;
+    margin-right: 5%;
+    margin-top: -8vh;
+}
+
 .nextbutton02GB {
     float: right;
     justify-content: space-around;

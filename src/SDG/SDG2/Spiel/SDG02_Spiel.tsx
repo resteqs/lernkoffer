@@ -43,14 +43,14 @@ export const SDG02_Spiel = (): JSX.Element => {
 
     const noborder: CSSProperties = {
         background: "orange",
-        fontSize: "30px",
-        padding: "50px 40px",
+        fontSize: "1,5vh",
+        padding: "2.5vh 2vh",
     };
 
     const withborder: CSSProperties = {
         background: "orange",
-        fontSize: "30px",
-        padding: "0px 40px",
+        fontSize: "1.5vh",
+        padding: "0vh 2vh",
     };
 
     let buttonStyle = noborder;
@@ -72,7 +72,7 @@ export const SDG02_Spiel = (): JSX.Element => {
 
     let button1 =
         obj1 === false ? (
-            <div style={{ marginBottom: "50px", paddingBottom: "20px" }}>
+            <div style={{ marginBottom: "2.5vh", paddingBottom: "1vh" }}>
                 <button
                     className="pushable"
                     type="button"
@@ -83,7 +83,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                         setObj1(true);
                     }}
                 >
-                    <div style={{ width: "768px" }}>
+                    <div style={{ width: "38.4vh" }}>
                         <span className="shadow" />
                         <span className={infotextbutton.edgeorange} />
                         <span className="front" style={buttonStyle}>
@@ -97,7 +97,7 @@ export const SDG02_Spiel = (): JSX.Element => {
         );
     let button2 =
         obj2 === false ? (
-            <div style={{ marginBottom: "50px", paddingBottom: "20px" }}>
+            <div style={{ marginBottom: "2.5vh", paddingBottom: "1vh" }}>
                 <button
                     className="pushable"
                     type="button"
@@ -108,7 +108,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                         setObj2(true);
                     }}
                 >
-                    <div style={{ width: "768px" }}>
+                    <div style={{ width: "38.4vh" }}>
                         <span className="shadow" />
                         <span className={infotextbutton.edgeorange} />
                         <span className="front" style={buttonStyle}>
@@ -122,7 +122,7 @@ export const SDG02_Spiel = (): JSX.Element => {
         );
     let button3 =
         obj3 === false ? (
-            <div style={{ marginBottom: "50px", paddingBottom: "20px" }}>
+            <div style={{ marginBottom: "2.5vh", paddingBottom: "1vh" }}>
                 <button
                     className="pushable"
                     type="button"
@@ -133,7 +133,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                         setObj3(true);
                     }}
                 >
-                    <div style={{ width: "768px" }}>
+                    <div style={{ width: "38.4vh" }}>
                         <span className="shadow" />
                         <span className={infotextbutton.edgeorange} />
                         <span className="front" style={buttonStyle}>
@@ -147,7 +147,7 @@ export const SDG02_Spiel = (): JSX.Element => {
         );
     let button4 =
         obj4 === false ? (
-            <div style={{ marginBottom: "50px", paddingBottom: "20px" }}>
+            <div style={{ marginBottom: "2.5vh", paddingBottom: "1vh" }}>
                 <button
                     className="pushable"
                     type="button"
@@ -158,7 +158,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                         setObj4(true);
                     }}
                 >
-                    <div style={{ width: "768px" }}>
+                    <div style={{ width: "38.4vh" }}>
                         <span className="shadow" />
                         <span className={infotextbutton.edgeorange} />
                         <span className="front" style={buttonStyle}>
@@ -172,7 +172,7 @@ export const SDG02_Spiel = (): JSX.Element => {
         );
     let button5 =
         obj5 === false ? (
-            <div style={{ marginBottom: "50px", paddingBottom: "20px" }}>
+            <div style={{ marginBottom: "2.5vh", paddingBottom: "1vh" }}>
                 <button
                     className="pushable"
                     type="button"
@@ -183,7 +183,7 @@ export const SDG02_Spiel = (): JSX.Element => {
                         setObj5(true);
                     }}
                 >
-                    <div style={{ width: "768px" }}>
+                    <div style={{ width: "38.4vh" }}>
                         <span className="shadow" />
                         <span className={infotextbutton.edgeorange} />
                         <span className="front" style={buttonStyle}>
@@ -211,7 +211,7 @@ export const SDG02_Spiel = (): JSX.Element => {
     const text = {
         1: (
             <div>
-                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                <p style={{ marginTop: "3vh", marginLeft: "2.5vh" }} className="underlinedHeader">
                     {" "}
                     Einleitung:{" "}
                 </p>
@@ -226,7 +226,7 @@ export const SDG02_Spiel = (): JSX.Element => {
 
         2: (
             <div>
-                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                <p style={{ marginTop: "3vh", marginLeft: "2.5vh" }} className="underlinedHeader">
                     {" "}
                     Einleitung:{" "}
                 </p>
@@ -240,7 +240,7 @@ export const SDG02_Spiel = (): JSX.Element => {
 
         3: (
             <div>
-                <p style={{ marginTop: "60px", marginLeft: "50px" }} className="underlinedHeader">
+                <p style={{ marginTop: "3vh", marginLeft: "2.5vh" }} className="underlinedHeader">
                     {" "}
                     Einleitung:{" "}
                 </p>
@@ -263,7 +263,7 @@ export const SDG02_Spiel = (): JSX.Element => {
         5: (
             <div>
                 <section>
-                    <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
+                    <div style={{ float: "left", maxWidth: "50%", marginBottom: "6vh" }}>
                         <p>
                             Beschreibung: Das ist eine Kürbissuppe. Bei der Zubereitung nimmt man einen Kürbis,
                             schneidet ihn in kleine Stücke und kocht diese, bis sie weich sind. Danach dann püriert man
@@ -283,7 +283,7 @@ export const SDG02_Spiel = (): JSX.Element => {
         7: (
             <div>
                 <section>
-                    <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
+                    <div style={{ float: "left", maxWidth: "50%", marginBottom: "6vh" }}>
                         <p>
                             Beschreibung: Das ist ein Burger. Hier wird ein Brötchen in der Mitte durchgeschnitten und
                             mit verschiedenen Zutaten belegt. Im Normalfall sind Käse und eine Scheibe gebratenes
@@ -305,7 +305,7 @@ export const SDG02_Spiel = (): JSX.Element => {
             <div>
                 <div>
                     <section>
-                        <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
+                        <div style={{ float: "left", maxWidth: "50%", marginBottom: "6vh" }}>
                             <p>
                                 Beschreibung: Das ist Chili Con Carne. Es ist eine Art Eintopf, in dem Hackfleisch und
                                 Gemüse zusammen gekocht werden. Traditionell werden spezielle Chilibohnen sowie Mais
@@ -328,7 +328,7 @@ export const SDG02_Spiel = (): JSX.Element => {
         11: (
             <div>
                 <section>
-                    <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
+                    <div style={{ float: "left", maxWidth: "50%", marginBottom: "6vh" }}>
                         <p>
                             Beschreibung: Das ist Sushi. Es gibt viele verschiedene Arten von Sushi. Doch die meisten
                             bestehen aus klebrigem Reis, Fisch und teilweise Gemüse. Das dunkle, was um den Reis
@@ -349,7 +349,7 @@ export const SDG02_Spiel = (): JSX.Element => {
         13: (
             <div>
                 <section>
-                    <div style={{ float: "left", maxWidth: "50%", marginBottom: "120px" }}>
+                    <div style={{ float: "left", maxWidth: "50%", marginBottom: "6vh" }}>
                         <p>
                             Beschreibung: Das ist Tajine. Es ist ein sehr traditionelles Gericht, das nach den Tontöpfen
                             benannt wurde, in denen es gekocht wird. Es gibt sehr viele verschiedene Arten von Tajine.
@@ -444,21 +444,30 @@ export const SDG02_Spiel = (): JSX.Element => {
 
     buttonBack =
         showtext >= 2 ? (
-            <div style={{ marginTop: "1px", marginRight: "100px" }} className="backButtonDiv">
-                {" "}
-                <button type="button" onClick={decrementCount} className="backButton">
-                    &#129044;
+            <div style={{ marginTop: "0.5vh", marginLeft: "5vw" }} className="backbutton02s">
+            {" "}
+            <div style={{ position: "absolute", top: "67.5vh", left: "5vw" }}>
+                <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
+                    <span className={infotextbutton.shadow} />
+                    <span className={infotextbutton.edge} />
+                    <span className={infotextbutton.front} style={{ backgroundColor: "red" }}>
+                        <p className={infotextbutton.buttontext}>Zurück</p>
+                    </span>
                 </button>
             </div>
-        ) : (
-            <div> </div>
-        );
+        </div>
+    ) : (
+        <button className="buttonInvisible" type="button">
+            {" "}
+        </button>
+    );
+
 
     buttonNext =
         showtext < 5 || showtext === 6 || showtext === 8 || showtext === 10 || showtext === 12 ? (
-            <div style={{ marginTop: "10px", marginLeft: "100px" }} className="nextbutton">
+            <div style={{ marginTop: "0.5vh", marginLeft: "5vw" }} className="nextbutton">
                 {" "}
-                <div style={{ position: "absolute", top: "750px", left: "1700px" }}>
+                <div style={{ position: "absolute", top: "67.5vh", left: "85vw" }}>
                     <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
                         <span className={infotextbutton.shadow} />
                         <span className={infotextbutton.edgegreen} />
@@ -476,7 +485,7 @@ export const SDG02_Spiel = (): JSX.Element => {
 
     buttonEnd =
         showtext === 14 ? (
-            <div style={{ marginTop: "10px" }} className="nextbutton">
+            <div style={{ marginTop: "25.5vh", marginLeft:"80vw", position:"absolute" }} className="nextbutton">
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
                     <button className={infotextbutton.pushable} type="button">
