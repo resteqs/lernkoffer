@@ -1,23 +1,26 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable unicorn/filename-case */
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable no-eval */
 
-// eslint-disable-next-line unicorn/filename-case
-import * as React from "react";
-import renderer from "react-dom";
-import { Link } from "react-router-dom";
-import infotextbutton from "../../../styles/Infotextbutton.module.css";
-import "../../../styles/colour_sdgs.css";
-import "../../../styles/infotext.css";
+
+import { TextProps } from "../../../Interfaces/SDG";
 import Logo from "../../../SDGLogos/Goal-SDG04.png";
 import Schule from "../Freie Arbeit/Schule.png";
 
-export const SDG04_FreieArbeit = (): JSX.Element => {
-    // eslint-disable-next-line prefer-const
-
-    const [showtext, setText] = React.useState(1);
-    const sdg = "SDG04";
-
-    const text = {
+export const SDG04_FreieArbeit: TextProps = {
+    sdgNumber: 4,
+    sdgTitle: "Traumschule",
+    sdg: "SDG04",
+    logo: Logo,
+    header: {
+        1: "Tutorial 1:",
+        2: "Tutorial 1:",
+        3: "So sieht meine Wunsch Schule aus:",
+        4: "So sieht meine Wunsch Schule aus:",
+        5: "Tutorial 2:",
+    },
+    text: {
         1: (
             <div>
                 <p>
@@ -72,7 +75,7 @@ export const SDG04_FreieArbeit = (): JSX.Element => {
             <div>
                 <p>
                     {" "}
-                    <img src={Schule} alt="" />{" "}
+                    <img style={{ height: "60vh", margin: "auto", display: "block" }} src={Schule} alt="" />{" "}
                 </p>
             </div>
         ),
@@ -104,124 +107,9 @@ export const SDG04_FreieArbeit = (): JSX.Element => {
                 </p>
             </div>
         ),
-    };
-    const header = {
-        1: (
-            <div>
-                <p>Tutorial 1:</p>
-            </div>
-        ),
-        2: (
-            <div>
-                <p>Tutorial 1:</p>
-            </div>
-        ),
-        3: (
-            <div>
-                <p>So sieht meine Wunsch-Schule aus:</p>
-            </div>
-        ),
-        4: (
-            <div>
-                <p>So sieht meine Wunsch-Schule aus:</p>
-            </div>
-        ),
-        5: (
-            <div>
-                <p>Tutorial 2:</p>
-            </div>
-        ),
-    };
-
-    function incrementCount(): void {
-        setText(showtext + 1);
-    }
-
-    function decrementCount(): void {
-        setText(showtext - 1);
-    }
-    let buttonBack;
-    let buttonNext;
-    let buttonEnd;
-
-    // eslint-disable-next-line prefer-const
-    buttonBack =
-        showtext >= 2 ? (
-            <div className="backbutton" style={{ marginTop: "50px" }}>
-                {" "}
-                <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
-                    <span className={infotextbutton.shadow} />
-                    <span className={infotextbutton.edge} />
-                    <span className={infotextbutton.front}>
-                        <p className={infotextbutton.buttontext}>Zurück</p>
-                    </span>
-                </button>
-            </div>
-        ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
-        );
-    // eslint-disable-next-line prefer-const
-    buttonNext =
-        showtext <= 4 ? (
-            <div className="nextbutton" style={{ marginTop: "50px" }}>
-                {" "}
-                <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
-                    <span className={infotextbutton.shadow} />
-                    <span className={infotextbutton.edgegreen} />
-                    <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                        <p className={infotextbutton.buttontext}>Weiter</p>
-                    </span>
-                </button>
-            </div>
-        ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
-        );
-    // eslint-disable-next-line prefer-const
-    buttonEnd =
-        showtext === 5 ? (
-            <div className="nextbutton" style={{ marginTop: "50px" }}>
-                <Link to="/Vorlagen/Endscreen">
-                    {" "}
-                    <button className={infotextbutton.pushable} type="button">
-                        <span className={infotextbutton.shadow} />
-                        <span className={infotextbutton.edgegreen} />
-                        <span className={infotextbutton.front} style={{ backgroundColor: "green" }}>
-                            <p className={infotextbutton.buttontext}>Beenden </p>
-                        </span>
-                    </button>
-                </Link>{" "}
-            </div>
-        ) : (
-            <button className="buttonInvisible" type="button">
-                {" "}
-            </button>
-        );
-
-    // eslint-disable-next-line prefer-const
-    return (
-        <div>
-            <div className={`colour_${sdg}_header`}>
-                <div className="header">
-                    Hochwertige Bildung
-                    <img className="sdglogo" alt="logo" src={Logo} />
-                </div>
-            </div>
-            <div className="infotextbox">
-                <p className="headertext">
-                    <b>{header[showtext]}</b>
-                </p>{" "}
-                <br />
-                <p className="bodytext"> {text[showtext]} </p>
-            </div>
-            {buttonBack}
-            {buttonNext}
-            {buttonEnd}
-        </div>
-    );
-};
-// eslint-disable-next-line react/jsx-pascal-case
-renderer.render(<SDG04_FreieArbeit />, document.getElementById("root"));
+    },
+    /* eslint-enable unicorn/filename-case */
+    // eslint-enable-next-line eslint-comments/disable-enable-pair
+    /* eslint-enable no-eval */
+    /* eslint-enable react/react-in-jsx-scope */
+}
