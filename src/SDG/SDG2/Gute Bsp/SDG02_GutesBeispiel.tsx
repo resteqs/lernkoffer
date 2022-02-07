@@ -26,7 +26,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
 
     const text = {
         1: (
-            <div style={{ textAlign: "left", fontSize: "1.6vw" }}>
+            <div style={{ textAlign: "left", fontSize: "2.9vh" }}>
                 <p>
                     {" "}
                     <ul>
@@ -58,7 +58,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
         ),
         2: (
             <div>
-                <p style={{ float: "left", width: "40%", textAlign: "left", fontSize: "1.25vw" }}>
+                <p style={{ float: "left", width: "40%", textAlign: "left", fontSize: "2.2vh" }}>
                     <ul>
                         <li>
                             1. Das Ziel: Weltweit soll jeder Mensch eine sichere Ernährung haben und diese sollte
@@ -82,7 +82,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
                     </ul>
                 </p>
 
-                <p style={{ float: "right", width: "40%", textAlign: "left", fontSize: "1.25vw" }}>
+                <p style={{ float: "right", width: "40%", textAlign: "left", fontSize: "2.2vh" }}>
                     <ul>
                         <li>
                             {" "}
@@ -108,16 +108,17 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
                         background: "#15b408",
                         borderStyle: "none",
                         position: "fixed",
-                        bottom: "5vw",
-                        borderRadius: "1.5vw 1.5vw 1.5vw 1.5vw",
-                        padding: "1vw",
+                        bottom: "10vh",
+                        borderRadius: "3vh 3vh 3vh 3vh",
+                        padding: "3vh",
+                        marginLeft: "-9vh",
                     }}
                     onClick={() => {
                         setIsOpen(true);
                         openModal1();
                     }}
                 >
-                    <p style={{ fontSize: "3vw" }}> Lösung </p>
+                    <p style={{ fontSize: "5vh" }}> <b> Lösung </b>  </p>
                 </button>
             </div>
         ),
@@ -185,7 +186,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
 
     buttonBack =
         showtext >= 2 ? (
-            <div className="backbutton" style={{ marginBottom: "10vh" }}>
+            <div className="backbutton02GB" style={{ marginBottom: "15vh" }}>
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={decrementCount}>
                     <span className={infotextbutton.shadow} />
@@ -203,7 +204,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
 
     buttonNext =
         showtext < maxslide ? (
-            <div className="nextbutton" style={{ marginBottom: "10vh" }}>
+            <div className="nextbutton02GB" style={{ marginBottom: "15vh" }}>
                 {" "}
                 <button className={infotextbutton.pushable} type="button" onClick={incrementCount}>
                     <span className={infotextbutton.shadow} />
@@ -221,7 +222,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
 
     buttonEnd =
         showtext === maxslide ? (
-            <div className="nextbutton" style={{ marginBottom: "5vh" }}>
+            <div className="nextbutton02GB" style={{ marginBottom: "5vh" }}>
                 <Link to="/Vorlagen/Endscreen">
                     {" "}
                     <button className={infotextbutton.pushable} type="button">
@@ -275,7 +276,7 @@ export const SDG02_GutesBeispiel = (): JSX.Element => {
             }}
             closeTimeoutMS={50}
         >
-            <p style={{ fontSize: "2.5vw" }}>{modalContent[modalOpened]}</p>
+            <p style={{ fontSize: "2.5vh" }}>{modalContent[modalOpened]}</p>
         </Modal>
     );
 

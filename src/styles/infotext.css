@@ -16,13 +16,26 @@
     float: right;
     justify-content: space-around;
     margin-right: 5%;
-    margin-top: -60px;
+    margin-top: -8vh;
 }
 .backbutton {
     float: left;
     justify-content: space-around;
     margin-left: 8em;
-    margin-top: -60px;
+    margin-top: -8vh;
+}
+
+.nextbutton02GB {
+    float: right;
+    justify-content: space-around;
+    margin-right: 5%;
+    margin-top: 2vh;
+}
+.backbutton02GB {
+    float: left;
+    justify-content: space-around;
+    margin-left: 8em;
+    margin-top: 2vh;
 }
 
 .checkButton {
