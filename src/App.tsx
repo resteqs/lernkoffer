@@ -68,7 +68,7 @@ import { SDG02_Spiel } from "./SDG/SDG2/Spiel/SDG02_Spiel";
  *                                SDG 03
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-import { SDG03_FreieArbeit } from "./SDG/SDG3/Freie Arbeit/SDG03_FreieArbeit";
+
 /**                             Gutes Beispiel                               */
 import { SDG03_GutesBeispiel } from "./SDG/SDG3/Gute Bsp/SDG03_GutesBeispiel";
 /**                               Infotext                                   */
@@ -413,6 +413,7 @@ import { SDG13_Spiel_Tutorial } from "./SDG/SDG13/Spiel/SDG13_Spiel_Tutorial";
 import { QuizTwoOrThreeOptionComponent } from "./Components/Quiz/QuizTwoOrThreeOptionComponent";
 import { SDG14_Spiel2_Tutorial } from "./SDG/SDG14/Spiel2/SDG14_Spiel2_Tutorial";
 import { SDG07_Spiel } from "./SDG/SDG7/Spiel/SDG07_Spiel";
+import { SDG03_FreieArbeit } from "./SDG/SDG3/Freie Arbeit/SDG03_FreieArbeit";
 
 
 
@@ -480,7 +481,7 @@ export const App = (): JSX.Element => {
  *                                SDG 03
  * --------------------------------------------------------------------------*/
 /**                              Freie Arbeit                                */
-            <Route exact path ="/SDG03/FreieArbeit" component={SDG03_FreieArbeit}/>
+            <Route exact path ="/SDG03/FreieArbeit"><TextComponent sdg={SDG03_FreieArbeit}/></Route>
 /**                             Gutes Beispiel                               */
             <Route exact path = "/SDG03/GutesBeispiel"> <QuizThreeMixedComponent sdg={SDG03_GutesBeispiel}/></Route>
 /**                               Infotext                                   */
