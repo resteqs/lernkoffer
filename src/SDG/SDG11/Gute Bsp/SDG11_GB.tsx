@@ -24,11 +24,19 @@ export const SDG11_GB: TextProps = {
         2: "Anmerkung zum Bemalen der Dose:",
         3: "Schritt 1:",
         4: "Schritt 1:",
-        5: "Schritt 2:",
-        6: "Schritt 3:",
-        7: "Schritt 4:",
-        8: "Schritt 5:",
-        9: "Schritt 6:",
+        5: "Schritt 1:",
+        6: "Schritt 2:",
+        7: "Schritt 2:",
+        8: "Schritt 3:",
+        9: "Schritt 3:",
+        10: "Schritt 4:",
+        11: "Schritt 4:",
+        12: "Schritt 4:",
+        13: "Schritt 5:",
+        14: "Schritt 5:",
+        15: "Schritt 5:",
+        16: "Schritt 5:",
+        17: "Schritt 5:",
     },
 
     text: {
@@ -44,8 +52,7 @@ export const SDG11_GB: TextProps = {
         2: (
             <div>
                 {" "}
-                Aber wenn du nur eine Farbe nutzen möchtest, dann ist weiß am besten, weil es das Sonnenlicht
-                reflektieren (zurückwirft) würde und die Farbe, die du nicht nutzen solltest, ist schwarz. Schwarze Farbe nimmt das Sonnenlicht auf
+                Aber wenn du nur eine Farbe nutzen möchtest, dann ist weiß am besten, weil es das Sonnenlicht reflektiert (zurückwirft) und die Farbe, die du nicht nutzen solltest, ist schwarz. Schwarze Farbe nimmt das Sonnenlicht auf
                 und dann wird es in der Dose sehr heiß, was schlecht für die Tiere
                 innerhalb des Hotels ist.
             </div>
@@ -71,47 +78,46 @@ export const SDG11_GB: TextProps = {
             <div>
                 <ul>
                     <li> <b> - einen Nagel und einen Hammer </b> </li>
-                    <li>
-                        {" "}
-                        <b> - optional: </b> Farbe oder Wolle, wenn du es bunter gestalten willst und/oder Foptional: Fäden sowie Perlen oder Knöpfe, wenn du es wie ein Tier gestalten willst, das Beine hat.
+                    <li><b> - optional: </b> Farbe oder Wolle, wenn du es bunter gestalten willst.</li>
+                    <li>  <b> - optional: </b> Fäden sowie Perlen oder Knöpfe, wenn du es wie ein Tier gestalten willst, das Beine hat.
                     </li>
                 </ul>
-                <img style={{ marginLeft: "800px" }} src={Schritt1} alt="" />
             </div>
         ),
-        5: (
+        5: <img style={{ display:"block", margin:"auto" }} src={Schritt1} alt="" />,
+        6: (
             <div>
                 Nimm die Dose und bemale sie mit der Farbe oder wickle die Wolle herum. Wenn du es einfach halten
                 möchtest oder nichts dergleichen zur Hand hast, dann überspringe diesen Schritt einfach.
-                <img style={{ marginBottom: "-400px", marginLeft: "300px" }}src={Schritt2} alt="" />
             </div>
         ),
-        6: (
+        7: <img style={{ display:"block", margin:"auto" }} src={Schritt2} alt="" />,
+        8: (
             <div>
                 Am besten lässt du dir hier von einem Erwachsenen helfen: Nimm den Hammer und den Nagel und mache damit
                 ein Loch in den Boden der Dose (Wenn du ein Tier mit Beinen gestalten möchtest, dann mach noch ein paar
                 Löcher in die Dose, durch die du Fäden fädelst und an die Enden Knöpfe oder Perlen knotest).
-                <img style={{ marginBottom: "-600px", marginLeft: "-600px" }} src={Schritt3} alt="" />
             </div>
         ),
-        7: (
+        9: <img style={{ display:"block", margin:"auto" }} src={Schritt3} alt="" />,
+        10: (
             <div>
                 Nimm nun den Draht und fädle ihn durch das offene Ende der Dose und das Loch, was du gerade mit dem
                 Nagel gemacht hast. Wenn du damit fertig bist, knote die Enden über der Dose zusammen. Benutze hier ein
                 wenig mehr Draht, weil das dann die Schlaufe wird, an der das Hotel aufgehängt werden soll.
-                <img style={{ marginBottom: "-400px", marginLeft: "400px" }} src={Schritt4_1} alt="" />
-                <img style={{ marginBottom: "-400px", marginLeft: "500px" }} src={Schritt4_2} alt="" />
             </div>
         ),
-        8: (
+        11: <img style={{ display:"block", margin:"auto" }} src={Schritt4_1} alt="" />,
+        12: <img style={{ display:"block", margin:"auto" }} src={Schritt4_2} alt="" />,
+        13: (
             <div>
                 Nimm nun das Füllmaterial und fülle damit die Dose. Achte dabei darauf, dass du genug benutzt, sonst
                 wird es zu locker und alles fällt wieder heraus, wenn der Wind ein bisschen geht.
-                <img style={{ marginBottom: "-600px", marginLeft: "300px" }} src={Schritt5_1} alt="" />
-                <img style={{ marginBottom: "-600px", marginLeft: "50px" }} src={Schritt5_2} alt="" />
             </div>
-        ),
-        9: (
+        ),       
+        14: <img style={{ display:"block", margin:"auto" }} src={Schritt5_1} alt="" />,
+        15: <img style={{ display:"block", margin:"auto" }} src={Schritt5_2} alt="" />,
+        16: (
             <div>
                 Nachdem dein Insektenhotel jetzt fertig ist, nimm es und suche dir einen guten Platz in der Natur (Tipp:
                 ein guter Platz ist immer in einem Baum).

@@ -412,6 +412,7 @@ import { SDG17_Video } from "./SDG/SDG17/Video/SDG17_Video";
 import { SDG13_Spiel_Tutorial } from "./SDG/SDG13/Spiel/SDG13_Spiel_Tutorial";
 import { QuizTwoOrThreeOptionComponent } from "./Components/Quiz/QuizTwoOrThreeOptionComponent";
 import { SDG14_Spiel2_Tutorial } from "./SDG/SDG14/Spiel2/SDG14_Spiel2_Tutorial";
+import { SDG07_Spiel } from "./SDG/SDG7/Spiel/SDG07_Spiel";
 
 
 
@@ -557,6 +558,7 @@ export const App = (): JSX.Element => {
 /**                                 Quiz                                     */
             <Route exact path="/SDG07/Quiz"><Quiz_Component sdg={SDG07_Quiz}/></Route>
 /**                                Spiel                                     */
+            <Route exact path= "/SDG07/Spiel" component={SDG07_Spiel}/>
 /**                                Video                                     */
             <Route exact path="/SDG07/VideoWasserstoff"><VideoComponent sdg = {SDG07_Video_Wasserstoff}/></Route>
             <Route exact path="/SDG07/VideoWindrad"><VideoComponent sdg = {SDG07_Video_Windrad}/></Route>
@@ -699,7 +701,7 @@ export const App = (): JSX.Element => {
 /**                                Spiel                                     */
 
 /**                                Spiel2                                    */
-            <Route exact path="/SDG14/Spiel2/Tutorial"><TextComponent sdg = {SDG14_Spiel2_Tutorial}/></Route>
+            <Route exact path="/SDG14/Spiel2/tutorial1"><TextComponent sdg = {SDG14_Spiel2_Tutorial}/></Route>
             <Route exact path="/SDG14/Spiel2/Spiel" component={play14} />
             <Route exact path="/SDG14/Spiel2/clownfish" ><TextComponent sdg = {clownfish}/></Route>                    
             <Route exact path="/SDG14/Spiel2/ray" ><TextComponent sdg = {ray}/></Route>
