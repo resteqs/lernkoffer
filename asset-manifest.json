@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lernkoffer/static/css/main.5353a5fd.chunk.css",
-    "main.js": "/lernkoffer/static/js/main.58a4629b.chunk.js",
-    "main.js.map": "/lernkoffer/static/js/main.58a4629b.chunk.js.map",
+    "main.js": "/lernkoffer/static/js/main.71edb806.chunk.js",
+    "main.js.map": "/lernkoffer/static/js/main.71edb806.chunk.js.map",
     "runtime-main.js": "/lernkoffer/static/js/runtime-main.1bbf2959.js",
     "runtime-main.js.map": "/lernkoffer/static/js/runtime-main.1bbf2959.js.map",
     "static/js/2.e1444a92.chunk.js": "/lernkoffer/static/js/2.e1444a92.chunk.js",
@@ -193,12 +193,16 @@
     "static/media/dislike.dc07efe6.png": "/lernkoffer/static/media/dislike.dc07efe6.png",
     "static/media/erste_Grosssiedlung_der_Menschheit.656e0436.mp4": "/lernkoffer/static/media/erste_Grosssiedlung_der_Menschheit.656e0436.mp4",
     "static/media/frenchdisguistingthing.a0886c48.png": "/lernkoffer/static/media/frenchdisguistingthing.a0886c48.png",
+    "static/media/front.24fe6d3d.png": "/lernkoffer/static/media/front.24fe6d3d.png",
+    "static/media/geo.032483b0.png": "/lernkoffer/static/media/geo.032483b0.png",
     "static/media/germanbreadsprakeldwithstones.1e50067a.png": "/lernkoffer/static/media/germanbreadsprakeldwithstones.1e50067a.png",
     "static/media/glas.22fb48b9.png": "/lernkoffer/static/media/glas.22fb48b9.png",
     "static/media/hamburger.01e0c8f8.jpg": "/lernkoffer/static/media/hamburger.01e0c8f8.jpg",
     "static/media/inLydiasKüche.fb74727c.png": "/lernkoffer/static/media/inLydiasKüche.fb74727c.png",
     "static/media/like.a8176383.png": "/lernkoffer/static/media/like.a8176383.png",
     "static/media/lips.b6c15231.png": "/lernkoffer/static/media/lips.b6c15231.png",
+    "static/media/nuclear.286e02da.png": "/lernkoffer/static/media/nuclear.286e02da.png",
+    "static/media/oil.a5f1b4d0.png": "/lernkoffer/static/media/oil.a5f1b4d0.png",
     "static/media/organic.e4327c62.png": "/lernkoffer/static/media/organic.e4327c62.png",
     "static/media/paper.23b22ba5.png": "/lernkoffer/static/media/paper.23b22ba5.png",
     "static/media/paper.35927644.png": "/lernkoffer/static/media/paper.35927644.png",
@@ -209,6 +213,7 @@
     "static/media/rabbit.316bb11a.jpg": "/lernkoffer/static/media/rabbit.316bb11a.jpg",
     "static/media/residual.22149ae0.png": "/lernkoffer/static/media/residual.22149ae0.png",
     "static/media/shoe.871d4769.png": "/lernkoffer/static/media/shoe.871d4769.png",
+    "static/media/solar.adef4e7d.png": "/lernkoffer/static/media/solar.adef4e7d.png",
     "static/media/spielfeld.ce4756fc.png": "/lernkoffer/static/media/spielfeld.ce4756fc.png",
     "static/media/stickman.c281081d.png": "/lernkoffer/static/media/stickman.c281081d.png",
     "static/media/sushi.29890dc6.jpg": "/lernkoffer/static/media/sushi.29890dc6.jpg",
@@ -223,6 +228,8 @@
     "static/media/unknown4.3ca2a018.jpg": "/lernkoffer/static/media/unknown4.3ca2a018.jpg",
     "static/media/unknown6.e4b8cff0.jpg": "/lernkoffer/static/media/unknown6.e4b8cff0.jpg",
     "static/media/unknows5.071a893c.jpg": "/lernkoffer/static/media/unknows5.071a893c.jpg",
+    "static/media/water.142a3707.png": "/lernkoffer/static/media/water.142a3707.png",
+    "static/media/wind.76c26546.png": "/lernkoffer/static/media/wind.76c26546.png",
     "static/media/wolf.016c31b0.jpg": "/lernkoffer/static/media/wolf.016c31b0.jpg",
     "static/media/yellowthing.f6e1687c.png": "/lernkoffer/static/media/yellowthing.f6e1687c.png"
   },
@@ -230,6 +237,6 @@
     "static/js/runtime-main.1bbf2959.js",
     "static/js/2.e1444a92.chunk.js",
     "static/css/main.5353a5fd.chunk.css",
-    "static/js/main.58a4629b.chunk.js"
+    "static/js/main.71edb806.chunk.js"
   ]
 }
