@@ -73,7 +73,7 @@ export const SDG05_FreieArbeit: TextProps = {
         4: (
             <ol>
                 5. Macht zum Schluss noch eine „Generalprobe“. Das heißt, ihr spielt euer Stück für euch genauso einmal
-                durch, wie ihr es nachher für eure Mitschüler:innen machen werdet.
+                durch, wie ihr es nachher für eure Mitschüler:innen machen werdet
                 <li style={{ marginLeft: "50px" }}>a. Unterbrecht euch gegenseitig nicht</li>
                 <li style={{ marginLeft: "50px" }}>b. Achtet auf eure Einsätze</li>
                 <li style={{ marginLeft: "50px" }}>c. Denkt an euren Text und wie ihr ihn betont</li>

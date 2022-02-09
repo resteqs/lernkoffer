@@ -71,9 +71,9 @@ export const SDG05_Quiz: QuizProps = {
     question: {
         4: "„In einer Beziehung soll nur der Mann Geld verdienen! Die Aufgabe der Frau ist es, den Haushalt zu führen und auf die Kinder aufzupassen, falls es welche gibt!“",
         5: " In Firmen und Geschäften dürfen sowohl Männer als auch Frauen die Chefs sein!“",
-        6: " „Jede Frau soll (genauso wie jeder Mann) aus freien Stücken heiraten können“",
-        7: " „Auch Männer dürfen Berufe wie Krankenpfleger, Sekretär oder Friseur ausüben“",
-        8: " „In einer Beziehung darf der Mann wegen seines Geschlechts über die Frau bestimmen“",
+        6: " „Jede Frau soll (genauso wie jeder Mann) aus freien Stücken heiraten können!“",
+        7: " „Auch Männer dürfen Berufe wie Krankenpfleger, Sekretär oder Friseur ausüben!“",
+        8: " „In einer Beziehung darf der Mann wegen seines Geschlechts über die Frau bestimmen!“",
         9: " „Jeder soll für dieselbe Arbeit auch genau gleich viel Geld bekommen!“",
         10: " „Wenn beispielsweise ein verheirateter Mann stirbt, sollen nur männliche Verwandte wie der Sohn erben, nicht die Ehefrau!“",
     },

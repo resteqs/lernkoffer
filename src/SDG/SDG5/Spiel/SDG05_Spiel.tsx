@@ -45,7 +45,7 @@ export const SDG05_Spiel = ():JSX.Element => {
     };
 
     const text: Record<number, JSX.Element| string> =  {
-        1: "Hast du auch ein Vorbild? Vielleicht deine Mama, dein Papa oder Oma und Opa. Oder vielleicht eine Lehrkraft. Hast du auch ein Vorbild? Vielleicht deine Mama, dein Papa oder Oma und Opa. Oder vielleicht eine Lehrkraft. Wir orientieren uns oft an unseren Vorbildern.",
+        1: "Hast du auch ein Vorbild? Vielleicht deine Mama, dein Papa oder Oma und Opa. Oder vielleicht eine Lehrkraft. Wir orientieren uns oft an unseren Vorbildern.",
         2: "Leider wird nicht oft über Frauen geredet, die Großes geleistet haben, und deren Arbeit oder Persönlichkeit uns allen etwas beibringen kann. Deshalb kannst du nun mehr über starke Frauen aus der Vergangenheit und Gegenwart erfahren und vielleicht findest du ein neues Vorbild. Sie alle haben sich sehr für Schwächere eingesetzt oder etwas andere Wichtiges bewirkt.",
         3: "Du wirst nun Bilder von Frauen sehen. Vielleicht kennst du schon jemanden? Überlegt gemeinsam, was sie getan haben. Tippe dann auf ein Bild, um mehr über die Frau hinter dem Bild zu erfahren.",
         4: <button type="button" onClick={() => setIsOpen(true)} style = {{ display: "block", margin:"auto" }}><img src={KamalaHarris} alt="" style = {{ display: "block", margin:"auto", width:"30vw" }} /></button>,
