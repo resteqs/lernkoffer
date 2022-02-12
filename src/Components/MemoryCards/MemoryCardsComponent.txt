@@ -6,31 +6,35 @@
 import * as React from "react";
 
 export interface CardProps {
-    id: string;
+    id: number;
     image: string;
-    front: string;
+    front?: string;
     solved?: boolean;
     flipped?: boolean;
+    onClick: () =>  void ;
 }
 
 export const MemoryCardsComponent = (props: CardProps): JSX.Element => {
     const [isflipped, setIsflipped] = React.useState(false);
-    const [issolved, setIsSolved] = React.useState(false);
     const [isFrontImage, setFrontImage] = React.useState("");
     const cardImage = document.getElementById("cardImage");
 
     const toggleChild = (): void => {
         setIsflipped(!isflipped);
     };
-    // , width:"100vw", margin:"auto", marginTop:"0px",  , justifyItems:"baseline"
+
+    const onClick = ():void => {
+        toggleChild();
+        props.onClick();
+    }
     return (
-        <div style={{ overflow: "hidden", clear: "both", display: "inline-block", margin:"2vh" }}>
+        <div style={{ overflow: "hidden", clear: "both", display: "inline-block", margin:"2vh", marginTop:"0" }}>
             <img
                 src={isflipped ? props.image : props.front}
                 alt=""
                 typeof="button"
-                onClick={() => toggleChild()}
-                style={{ height: "auto", width: "15vw", maxHeight:"15vw" }}
+                onClick={() => onClick()}
+                style={{ height: "auto", width: "12vw", maxHeight:"12vw" }}
             />
         </div>
     );

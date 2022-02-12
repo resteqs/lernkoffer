@@ -2,14 +2,25 @@
 import React, { CSSProperties } from "react";
 import { Link } from "react-router-dom";
 import { FancyButton } from "../../../Components/Buttons/FancyButton";
+import {  MemoryCardsComponent } from "../../../Components/MemoryCards/MemoryCardsComponent";
 import Logo from "../../../SDGLogos/Goal-SDG07.png";
-import Game from "./game/game";
-
+import front from "./Media/front.png"
+import geo from "./Media/geo.png"
+import nuclear from "./Media/nuclear.png"
+import oil from "./Media/oil.png"
+import solar from "./Media/solar.png"
+import water from "./Media/water.png"
+import wind from "./Media/wind.png"
 
 export const SDG07_Spiel = (): JSX.Element => {
     const [showtext, setText] = React.useState(1);
+    let [lastGetClickedID] = React.useState(0);
+    let [secondLastGetClickedID] = React.useState(0);
+    let [lastGetClickedImage] = React.useState("");
+    let [secondLastGetClickedImage] = React.useState("");
+    const [issolved, setIsSolved] = React.useState(false);
     const sdgNumber = 7;
-    const sdgTitle = "Energiegewinnung";
+    const sdgTitle = "Energiegewinnung ";
     const sdg = "SDG07";
 
     const textBox: CSSProperties = {
@@ -32,8 +43,69 @@ export const SDG07_Spiel = (): JSX.Element => {
     const text: Record<number, string> = {
         1: "Du kennst ja sicher Strom und was Strom ist. Damit werden sehr viele Geräte angetrieben wie zum Beispiel Küchenmaschinen. Aber weißt du auch mit welchen Methoden Strom hergestellt wird? Davon gibt es nämlich sehr viele!",
         2: "Gleich siehst du ein Feld mit Memory-Karten, falls du das Spiel nicht kennst, es geht darum, dass du immer erst eine Karte ziehst und dann eine zweite und versuchst damit Pärchen zu bilden. Hier jedoch musst du immer ein Bild und eine Erklärung zusammenbringen. Noch ein wichtiger Punkt sind Turbinen: Diese sind große Schrauben, die du etwa mit einem Windrad vergleichen kannst, bloß dass durch diese Wasser „fließt“",
+        3: " ",
     };
-    const maxSlides = Object.keys(text).length+1;
+    const maxSlides = Object.keys(text).length;
+
+    const [cards] = React.useState([
+        { id: 1, image: geo },
+        { id: 2, image: oil },
+        { id: 3, image: nuclear },
+        { id: 4, image: nuclear },
+        { id: 5, image: oil },
+        { id: 6, image: water },
+        { id: 7, image: solar },
+        { id: 8, image: wind },
+        { id: 9, image: geo },
+        { id: 10, image: water },
+        { id: 11, image: solar },
+        { id: 12, image: wind },
+    ]);
+
+    const resetCards = ():void => {
+        secondLastGetClickedID = 0;
+        lastGetClickedID = 0;
+    }
+    
+    const isCorrect = (c1:string, c2:string): boolean => {
+        if(c1 === c2)
+        {
+            <div>
+                Correct
+            </div>
+            console.log("you are amazing")
+            resetCards()
+            return true;
+        }
+        return false;
+    }
+
+    const MemoryCardsClicked = (image:string, id:number):void => {
+        secondLastGetClickedID = lastGetClickedID;
+        secondLastGetClickedImage = lastGetClickedImage;
+        lastGetClickedID = id;
+        lastGetClickedImage = image;
+        console.log(`Last Clicked${  lastGetClickedID}`);
+        console.log(`Last Clicked${  secondLastGetClickedID}`);
+        console.log(id);
+        if(secondLastGetClickedID === lastGetClickedID && isCorrect(secondLastGetClickedImage, lastGetClickedImage ) )
+        {
+            setIsSolved(true);
+        }
+
+    }
+    const showingCards =
+        showtext === 3 ? (
+            <div style={{ marginTop:"-15vh", marginLeft:"3vw" }}>
+                {cards.map(({ id, image }, index) => {
+                    return (
+                            <MemoryCardsComponent id={id} image={image} front = {front} onClick = {()=>MemoryCardsClicked(image, id)} solved = {issolved} />
+                    );
+                })}
+            </div>
+        ) : (
+            <div> </div>
+        );
 
     const buttonBack = (
         <div style={{ bottom: "38px", left: "-38px", position: "fixed" }}>
@@ -72,8 +144,7 @@ export const SDG07_Spiel = (): JSX.Element => {
                     {sdgTitle} <img className="sdglogo" alt="logo" src={Logo} />
                 </div>
             </div>
-            {showtext !== 3 ? 
-                <div style={textBox}>
+            <div style={textBox}>
                 <p className="headertext">
                     <b>{header[showtext]}</b>
                 </p>{" "}
@@ -81,11 +152,11 @@ export const SDG07_Spiel = (): JSX.Element => {
                 <p className="texttext">
                     <p>{text[showtext]}</p>
                 </p>{" "}
-            </div>: <div> </div>}
+            </div>
             {buttonBack}
             {buttonNext}
             {buttonEnd}
-            {showtext  === 3 ? <Game /> :<div/>}
+            {showingCards}
         </>
     );
 };
