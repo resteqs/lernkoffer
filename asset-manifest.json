@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/lernkoffer/static/css/main.c3cc50b3.chunk.css",
-    "main.js": "/lernkoffer/static/js/main.274b9512.chunk.js",
-    "main.js.map": "/lernkoffer/static/js/main.274b9512.chunk.js.map",
+    "main.css": "/lernkoffer/static/css/main.eb5db3e1.chunk.css",
+    "main.js": "/lernkoffer/static/js/main.5c08a045.chunk.js",
+    "main.js.map": "/lernkoffer/static/js/main.5c08a045.chunk.js.map",
     "runtime-main.js": "/lernkoffer/static/js/runtime-main.b249e90d.js",
     "runtime-main.js.map": "/lernkoffer/static/js/runtime-main.b249e90d.js.map",
-    "static/js/2.c8f91c4a.chunk.js": "/lernkoffer/static/js/2.c8f91c4a.chunk.js",
-    "static/js/2.c8f91c4a.chunk.js.map": "/lernkoffer/static/js/2.c8f91c4a.chunk.js.map",
+    "static/js/2.88765306.chunk.js": "/lernkoffer/static/js/2.88765306.chunk.js",
+    "static/js/2.88765306.chunk.js.map": "/lernkoffer/static/js/2.88765306.chunk.js.map",
     "static/js/3.cb7f2d5c.chunk.js": "/lernkoffer/static/js/3.cb7f2d5c.chunk.js",
     "static/js/3.cb7f2d5c.chunk.js.map": "/lernkoffer/static/js/3.cb7f2d5c.chunk.js.map",
     "index.html": "/lernkoffer/index.html",
-    "static/css/main.c3cc50b3.chunk.css.map": "/lernkoffer/static/css/main.c3cc50b3.chunk.css.map",
-    "static/js/2.c8f91c4a.chunk.js.LICENSE.txt": "/lernkoffer/static/js/2.c8f91c4a.chunk.js.LICENSE.txt",
+    "static/css/main.eb5db3e1.chunk.css.map": "/lernkoffer/static/css/main.eb5db3e1.chunk.css.map",
+    "static/js/2.88765306.chunk.js.LICENSE.txt": "/lernkoffer/static/js/2.88765306.chunk.js.LICENSE.txt",
     "static/media/12_1.8855d9cb.jpg": "/lernkoffer/static/media/12_1.8855d9cb.jpg",
     "static/media/12_2.c0a72ee0.jpg": "/lernkoffer/static/media/12_2.c0a72ee0.jpg",
     "static/media/12_3.e6938a63.jpg": "/lernkoffer/static/media/12_3.e6938a63.jpg",
@@ -37,6 +37,7 @@
     "static/media/Bild05.deee4dd0.png": "/lernkoffer/static/media/Bild05.deee4dd0.png",
     "static/media/Bild1.8d7daa99.png": "/lernkoffer/static/media/Bild1.8d7daa99.png",
     "static/media/Bild1.a00a0afb.png": "/lernkoffer/static/media/Bild1.a00a0afb.png",
+    "static/media/Bild14.bb63a65f.png": "/lernkoffer/static/media/Bild14.bb63a65f.png",
     "static/media/Bild2.7b7f81dc.png": "/lernkoffer/static/media/Bild2.7b7f81dc.png",
     "static/media/Bild3.5bd47548.png": "/lernkoffer/static/media/Bild3.5bd47548.png",
     "static/media/Bild4.032897d9.png": "/lernkoffer/static/media/Bild4.032897d9.png",
@@ -235,8 +236,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b249e90d.js",
-    "static/js/2.c8f91c4a.chunk.js",
-    "static/css/main.c3cc50b3.chunk.css",
-    "static/js/main.274b9512.chunk.js"
+    "static/js/2.88765306.chunk.js",
+    "static/css/main.eb5db3e1.chunk.css",
+    "static/js/main.5c08a045.chunk.js"
   ]
 }
