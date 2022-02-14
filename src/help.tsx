@@ -180,7 +180,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG11/Quiz">Quiz WIP</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG13/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG14/Quiz">Quiz WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG14/Quiz">Schildkrötenspiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/Quiz">Quiz</Link></td>

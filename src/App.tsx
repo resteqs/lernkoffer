@@ -266,6 +266,7 @@ import { SDG14_GutesBeispiel } from "./SDG/SDG14/Gute Bsp/SDG14_GutesBeispiel";
 import { SDG14_Infotext } from "./SDG/SDG14/Info/SDG14_Infotext";
 
 /**                                 Quiz                                     */
+import { SDG14_Quiz } from "./SDG/SDG14/Quiz/SDG14_Quiz";
 
 /**                                Spiel                                     */
 import { clownfish } from "./SDG/SDG14/Spiel2/search_info/clownfish";
@@ -698,6 +699,7 @@ export const App = (): JSX.Element => {
             <Route exact path="/SDG14/Infotext"><InfotextComponent sdg={SDG14_Infotext}/></Route> 
 
 /**                                 Quiz                                     */
+<Route exact path="/SDG14/Quiz"><TextComponent sdg={SDG14_Quiz}/></Route>
 
 /**                                Spiel                                     */
 
