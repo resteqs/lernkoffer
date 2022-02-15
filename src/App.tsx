@@ -414,6 +414,7 @@ import { QuizTwoOrThreeOptionComponent } from "./Components/Quiz/QuizTwoOrThreeO
 import { SDG14_Spiel2_Tutorial } from "./SDG/SDG14/Spiel2/SDG14_Spiel2_Tutorial";
 import { SDG07_Spiel } from "./SDG/SDG7/Spiel/SDG07_Spiel";
 import { SDG03_FreieArbeit } from "./SDG/SDG3/Freie Arbeit/SDG03_FreieArbeit";
+import { SDG14_Quiz } from "./SDG/SDG14/Quiz/SDG14_Quiz";
 
 
 
@@ -698,6 +699,7 @@ export const App = (): JSX.Element => {
             <Route exact path="/SDG14/Infotext"><InfotextComponent sdg={SDG14_Infotext}/></Route> 
 
 /**                                 Quiz                                     */
+                <Route exact path="/SDG14/Quiz"><TextComponent sdg={SDG14_Quiz}/></Route>
 
 /**                                Spiel                                     */
 
