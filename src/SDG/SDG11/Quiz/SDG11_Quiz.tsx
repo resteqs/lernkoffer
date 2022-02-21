@@ -31,14 +31,16 @@ export const SDG11_Quiz = ():JSX.Element => {
         1: "Einleitung",
         2: "Aufgabe:",
     };
+
     const text: Record<number, string| JSX.Element> = {
         1: <div>
-            <p>Hi, ich bin&apos;s wieder, euer EG! </p>
+            <p>Hi, ich bin&apos;s wieder, euer EG!</p>
             <img style = {{ display: "block", margin: 0, width: "30vw" }} src={EG} alt="EG" />
         </div>,
         2: "Ihr habt bereits gelernt, dass es wichtig ist, auf euren Energieverbrauch zu achten. Oft können schon kleine Aktionen etwas bewirken. Deshalb nehme ich euch jetzt mit durch mein Haus, um euch zu zeigen, wie auch ihr zuhause umweltbewusst und energiesparend leben könnt. "
     };
-    const maxSlides = Object.keys(text).length;
+
+    const maxSlides = Object.keys(text).length+1;
 
     const buttonBack = (
         <div style={{ bottom: "38px", left: "-38px", position: "fixed" }}>
@@ -47,6 +49,7 @@ export const SDG11_Quiz = ():JSX.Element => {
             </FancyButton>
         </div>
     );
+
     const buttonNext = (
         <div style={{ bottom: "38px", right: "38px", position: "fixed" }}>
             <FancyButton onClick={incrementCount} version="green" className="nextbutton" active={showtext < maxSlides}>
@@ -71,7 +74,7 @@ export const SDG11_Quiz = ():JSX.Element => {
     );
 
     return (
-        <>
+        <div style={{ overflowX:"hidden" }}>
             <div className={`colour_${sdg}_header`}>
                 <div className="header">
                     {sdgTitle} <img className="sdglogo" alt="logo" src={Logo} />
@@ -92,6 +95,6 @@ export const SDG11_Quiz = ():JSX.Element => {
             {buttonNext}
             {buttonEnd}
             
-        </>
+        </div>
     );
 };

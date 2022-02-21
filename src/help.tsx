@@ -84,8 +84,8 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG04/Spiel1/SDG04_Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/Spiel">Spiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/Spiel">Spiel WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/Spiel">Spiel </Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG07/Spiel">Spiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/Spiel">Spiel</Link></td>
                     </tr>
                     <tr>
