@@ -5,11 +5,8 @@
 // eslint-disable-next-line unicorn/filename-case
 import * as React from 'react';
 import house from "./Media/house.png" 
-import bad from "./Media/bad.png" 
-import keller from "./Media/keller.png" 
-import küche from "./Media/küche.png" 
-import Schlafzimmer from "./Media/Schlafzimmer.png" 
 import { ModalComponent } from '../../../Components/Modal/ModalHelper';
+import "./SDG11_Quiz_Game.css"
 
 
 export const SDG11_Quiz_Game = ():JSX.Element => {
@@ -38,13 +35,26 @@ export const SDG11_Quiz_Game = ():JSX.Element => {
     }
 
     return(
-        <div>
-            <img style = {{ margin: "auto", display:"block", marginTop: "10px", width: "50%", zIndex: "1" }} src={house} alt="house" />
-            <img onClick={()=>onClick(1)} style = {{ margin: "auto", display:"block", marginTop: "10px", width: "50%", zIndex: "3", visibility:"hidden",  transform:"translate(0,-102.5%)" }} src={bad} alt="bad" />
-            <img onClick={()=>onClick(2)}style = {{ margin: "auto", display:"block", marginTop: "10px", width: "50%", zIndex: "3", transform:"translate(0,-204%)" }} src={keller} alt="keller" />
-            <img onClick={()=>onClick(3)}style = {{ margin: "auto", display:"block", marginTop: "10px", width: "50%", zIndex: "3", transform:"translate(0,-305.5%)" }} src={küche} alt="küche" />
-            <img onClick={()=>onClick(4)}style = {{ margin: "auto", display:"block", marginTop: "10px", width: "50%", zIndex: "3", transform:"translate(0,-409.5%)" }} src={Schlafzimmer} alt="Schlafzimmer" />
+        <div className='container'>
+            <button type ="button" className='keller' onClick={()=>onClick(1)}  > </button>
+            <button type ="button" className='kitchen' onClick={()=>onClick(2)}  > </button>
+            <button type ="button" className='room' onClick={()=>onClick(5)}  > </button>
+            <button type ="button" className='bad' onClick={()=>onClick(4)}  > </button>
+            <button type ="button" className='livingRoom' onClick={()=>onClick(3)}  > </button>
+
+
+
+            <img style = {{ margin:"auto", display:"block", marginTop: "10px", width: "50%", zIndex: "-1", }} src={house} alt="house" />
             <ModalComponent setSelectedItem={setSelectedItem} answercw={answerCW[itemSelected]} modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} answer={solution[itemSelected]} />
         </div>
     )
 }
+
+/**
+ * 
+            <img onClick={()=>onClick(1)} style = {{ margin: "auto", display:"block", marginTop: "10px", width: "50%", zIndex: "3", visibility:"hidden",  transform:"translate(0,-102.5%)" }} src={bad} alt="bad" />
+            <img onClick={()=>onClick(2)} style = {{ margin: "auto", display:"block", marginTop: "10px", width: "50%", zIndex: "3", transform:"translate(0,-204%)" }} src={keller} alt="keller" />
+            <img onClick={()=>onClick(3)} style = {{ margin: "auto", display:"block", marginTop: "10px", width: "50%", zIndex: "3", transform:"translate(0,-305.5%)" }} src={küche} alt="küche" />
+            <img onClick={()=>onClick(4)} style = {{ margin: "auto", display:"block", marginTop: "10px", width: "50%", zIndex: "3", transform:"translate(0,-409.5%)" }} src={Schlafzimmer} alt="Schlafzimmer" />
+            
+ */
