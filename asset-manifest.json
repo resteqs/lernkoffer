@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/lernkoffer/static/css/main.edf344a7.chunk.css",
-    "main.js": "/lernkoffer/static/js/main.4cecabc9.chunk.js",
-    "main.js.map": "/lernkoffer/static/js/main.4cecabc9.chunk.js.map",
+    "main.css": "/lernkoffer/static/css/main.013aa53f.chunk.css",
+    "main.js": "/lernkoffer/static/js/main.de8e7f05.chunk.js",
+    "main.js.map": "/lernkoffer/static/js/main.de8e7f05.chunk.js.map",
     "runtime-main.js": "/lernkoffer/static/js/runtime-main.fcbf5d7d.js",
     "runtime-main.js.map": "/lernkoffer/static/js/runtime-main.fcbf5d7d.js.map",
-    "static/js/2.e2c71eec.chunk.js": "/lernkoffer/static/js/2.e2c71eec.chunk.js",
-    "static/js/2.e2c71eec.chunk.js.map": "/lernkoffer/static/js/2.e2c71eec.chunk.js.map",
+    "static/js/2.6fab89d8.chunk.js": "/lernkoffer/static/js/2.6fab89d8.chunk.js",
+    "static/js/2.6fab89d8.chunk.js.map": "/lernkoffer/static/js/2.6fab89d8.chunk.js.map",
     "static/js/3.2b7c0fc2.chunk.js": "/lernkoffer/static/js/3.2b7c0fc2.chunk.js",
     "static/js/3.2b7c0fc2.chunk.js.map": "/lernkoffer/static/js/3.2b7c0fc2.chunk.js.map",
     "index.html": "/lernkoffer/index.html",
-    "static/css/main.edf344a7.chunk.css.map": "/lernkoffer/static/css/main.edf344a7.chunk.css.map",
-    "static/js/2.e2c71eec.chunk.js.LICENSE.txt": "/lernkoffer/static/js/2.e2c71eec.chunk.js.LICENSE.txt",
+    "static/css/main.013aa53f.chunk.css.map": "/lernkoffer/static/css/main.013aa53f.chunk.css.map",
+    "static/js/2.6fab89d8.chunk.js.LICENSE.txt": "/lernkoffer/static/js/2.6fab89d8.chunk.js.LICENSE.txt",
     "static/media/12_1.8855d9cb.jpg": "/lernkoffer/static/media/12_1.8855d9cb.jpg",
     "static/media/12_2.c0a72ee0.jpg": "/lernkoffer/static/media/12_2.c0a72ee0.jpg",
     "static/media/12_3.e6938a63.jpg": "/lernkoffer/static/media/12_3.e6938a63.jpg",
@@ -30,6 +30,7 @@
     "static/media/Amanda Gorman.9578cea8.jpg": "/lernkoffer/static/media/Amanda Gorman.9578cea8.jpg",
     "static/media/Angst.61541181.mp4": "/lernkoffer/static/media/Angst.61541181.mp4",
     "static/media/Aquädukte.6bc4e82f.mp4": "/lernkoffer/static/media/Aquädukte.6bc4e82f.mp4",
+    "static/media/Armutsgrenzen.a2bbf597.mp4": "/lernkoffer/static/media/Armutsgrenzen.a2bbf597.mp4",
     "static/media/Artensterben.52af5eb8.mp4": "/lernkoffer/static/media/Artensterben.52af5eb8.mp4",
     "static/media/Banananblätter.56403912.jpg": "/lernkoffer/static/media/Banananblätter.56403912.jpg",
     "static/media/Bauarbeiter.fc018775.jpg": "/lernkoffer/static/media/Bauarbeiter.fc018775.jpg",
@@ -50,7 +51,6 @@
     "static/media/Dr.TereraiTrent.8d752c5d.png": "/lernkoffer/static/media/Dr.TereraiTrent.8d752c5d.png",
     "static/media/EG2.d73a0902.png": "/lernkoffer/static/media/EG2.d73a0902.png",
     "static/media/Elefant.8bea08af.png": "/lernkoffer/static/media/Elefant.8bea08af.png",
-    "static/media/Erste_Zahlungsmittel.23c8a4ed.mp4": "/lernkoffer/static/media/Erste_Zahlungsmittel.23c8a4ed.mp4",
     "static/media/Feldarbeiter.9811112c.jpg": "/lernkoffer/static/media/Feldarbeiter.9811112c.jpg",
     "static/media/Fleischkonsum.b2f8ad92.mp4": "/lernkoffer/static/media/Fleischkonsum.b2f8ad92.mp4",
     "static/media/Fliege.d1377929.png": "/lernkoffer/static/media/Fliege.d1377929.png",
@@ -237,8 +237,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fcbf5d7d.js",
-    "static/js/2.e2c71eec.chunk.js",
-    "static/css/main.edf344a7.chunk.css",
-    "static/js/main.4cecabc9.chunk.js"
+    "static/js/2.6fab89d8.chunk.js",
+    "static/css/main.013aa53f.chunk.css",
+    "static/js/main.de8e7f05.chunk.js"
   ]
 }
