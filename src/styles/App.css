@@ -60,8 +60,8 @@ li {
     color: #f3f3f3;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 2.5vh;
-    line-height: 4vh;
+    font-size: 50px;
+    line-height: 80px;
 }
 
 .sdglogo {
@@ -212,10 +212,10 @@ li {
     text-decoration: underline;
 }
 .einleitungText {
-    font-size: 2.5vh;
-    margin-left: 8.33vw;
-    margin-right: 8.33vw;
-    margin-top: 2.5vh;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
 }
 .overlay-base {
     padding: 1rem;

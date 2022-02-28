@@ -6,12 +6,11 @@ import "../../styles/colour_sdgs.css";
 import "../../styles/App.css";
 import "../../styles/component.css";
 import Modal from "react-modal";
-import { ModalProps } from "../../Interfaces/SDG";
+import { ModalHelperProps } from "../../Interfaces/SDG";
 
-export const ModalQuizComponent = (props: ModalProps): JSX.Element => {
+export const ModalComponent = (props: ModalHelperProps): JSX.Element => {
 
     function closeModal(): void {
-        props.incrementCount();
         props.setSelectedItem(0);
         props.setIsOpen(false);
     }

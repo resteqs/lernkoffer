@@ -84,8 +84,8 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG04/Spiel1/SDG04_Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/Spiel">Spiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/Spiel">Spiel WIP</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/Spiel">Spiel </Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG07/Spiel">Spiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/Spiel">Spiel</Link></td>
                     </tr>
                     <tr>
@@ -177,10 +177,10 @@ export const Help = (): JSX.Element => {
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG10/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG11/Quiz">Quiz WIP</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG11/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG13/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG14/Quiz">Schildkrötenspiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG14/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/Quiz">Quiz</Link></td>

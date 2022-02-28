@@ -25,7 +25,7 @@ export const SDG03_GutesBeispiel: Quiz3OProps = {
     },
     text: {
         1: (
-            <div style={{ textAlign: "left", fontSize: "2.5vh" }}>
+            <div style={{ textAlign: "left", fontSize: "50px" }}>
                 <p>
                     {" "}
                     Das ist das Logo der Hilfsorganisation „Ärzte ohne Grenzen“ beziehungsweise auf Französisch
@@ -35,22 +35,22 @@ export const SDG03_GutesBeispiel: Quiz3OProps = {
                 </p>
                 <p>
                     {" "}
-                    <img style={{ marginLeft: "30.75vw" }} src={Bild03} alt="" />
+                    <img style={{ marginLeft: "45vh" }} src={Bild03} alt="" />
                 </p>
             </div>
         ),
         2: (
             <div>
-                <p style={{ marginTop: "1.5vh" }}>
+                <p style={{ marginTop: "30px" }}>
                     {" "}
                     <b>Gründung: </b> im Jahr 1971 in Paris von zwei unabhängigen Ärztegruppen und Journalisten (=
                     Berichterstatter:innen)
                 </p>
-                <p style={{ marginTop: "1.5vh" }}>
+                <p style={{ marginTop: "30px" }}>
                     {" "}
                     <b>Ziel: </b> Hochwertige und lohnende Grundheitsversorgung
                 </p>
-                <p style={{ marginTop: "1.5vh" }}>
+                <p style={{ marginTop: "30px" }}>
                     {" "}
                     <b>Einsatzländer: </b> ungefähr 70 Länder, in denen Erwachsene und Kinder Schwierigkeiten haben zu
                     überleben
@@ -58,7 +58,7 @@ export const SDG03_GutesBeispiel: Quiz3OProps = {
             </div>
         ),
         3: (
-            <div style={{ textAlign: "left", fontSize: "2.5vh" }}>
+            <div style={{ textAlign: "left", fontSize: "49px" }}>
                 <p>
                     <ul>
                         <li>
@@ -87,7 +87,7 @@ export const SDG03_GutesBeispiel: Quiz3OProps = {
             </div>
         ),
         4: (
-            <div style={{ textAlign: "left", fontSize: "2.5vh" }}>
+            <div style={{ textAlign: "left", fontSize: "50px" }}>
                 <p>
                     <ul>
                         <li> - Bekämpfung und Behandlung von Krankheiten</li>
@@ -124,19 +124,19 @@ export const SDG03_GutesBeispiel: Quiz3OProps = {
         7: "Welche Aufgabengebiete gibt es?",
     },
     buttonLeftContent: {
-        5: <div style={{ fontSize: "5vh" }}>Berlin</div>,
-        6: <div style={{ fontSize: "4.5vh" }}> Geld verdienen</div>,
-        7: <div style={{ fontSize: "2.4vh" }}> Impfen, Schmerzlinderung, Krankheiten behandeln </div>,
+        5: <div style={{ fontSize: "100px" }}>Berlin</div>,
+        6: <div style={{ fontSize: "90px" }}> Geld verdienen</div>,
+        7: <div style={{ fontSize: "45px" }}> Impfen, Schmerzlinderung, Krankheiten behandeln </div>,
     },
     buttonMiddleContent: {
-        5: <div style={{ fontSize: "5vh" }}> Oslo </div>,
-        6: <div style={{ fontSize: "vh" }}> Leben retten</div>,
-        7: <div style={{ fontSize: "2.5vh" }}> Bauen, Pflanzen, Kochen</div>,
+        5: <div style={{ fontSize: "100px" }}> Oslo </div>,
+        6: <div style={{ fontSize: "100px" }}> Leben retten</div>,
+        7: <div style={{ fontSize: "50px" }}> Bauen, Pflanzen, Kochen</div>,
     },
     buttonRightContent: {
-        5: <div style={{ fontSize: "5vh" }}> Paris </div>,
-        6: <div style={{ fontSize: "5vh" }}> Spaß haben </div>,
-        7: <div style={{ fontSize: "2.5vh" }}> Putzen, Aufräumen, Waschen</div>,
+        5: <div style={{ fontSize: "100px" }}> Paris </div>,
+        6: <div style={{ fontSize: "100px" }}> Spaß haben </div>,
+        7: <div style={{ fontSize: "50px" }}> Putzen, Aufräumen, Waschen</div>,
     },
     answerNumbersLeft: { 5: "Falsch", 6: "Falsch", 7: "Richtig" },
     answerNumbersMiddle: { 5: "Falsch", 6: "Richtig", 7: "Falsch" },

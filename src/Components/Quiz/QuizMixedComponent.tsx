@@ -82,7 +82,7 @@ export const QuizMixedComponent = (props: Props): JSX.Element => {
                 className={itemSelected === 2 ? "selectedPerson" : ""}
                 active={props.sdg.isQuizActive[showtext] === true}
                 onClick={buttonMiddleOnClick}
-                styleDiv={{ display:"inline", marginLeft:"5vw" }}
+                styleDiv={{ display:"inline", marginLeft:"60px" }}
             />
             <Quiz3Button
                 id="right"
@@ -115,7 +115,7 @@ export const QuizMixedComponent = (props: Props): JSX.Element => {
     );
 
     const buttonCheck = (
-        <div style={{ top: "45vh", position: "fixed", left: "66.67vw" }}>
+        <div style={{ top: "900px", position: "fixed", left: "800px" }}>
             <FancyButton
                 onClick={openModal}
                 version="green"
@@ -128,7 +128,7 @@ export const QuizMixedComponent = (props: Props): JSX.Element => {
     );
 
     const buttonBack = (
-        <div style={{ top: "45vh", position: "fixed" }}>
+        <div style={{ top: "900px", position: "fixed" }}>
             <FancyButton
                 onClick={decrementCount}
                 version="red"
@@ -140,7 +140,7 @@ export const QuizMixedComponent = (props: Props): JSX.Element => {
         </div>
     );
     const buttonNext = (
-        <div style={{ top: "45vh", right: "5vw", position: "fixed" }}>
+        <div style={{ top: "900px", right: "60px", position: "fixed" }}>
             <FancyButton
                 onClick={incrementCount}
                 version="green"
@@ -154,7 +154,7 @@ export const QuizMixedComponent = (props: Props): JSX.Element => {
 
     const buttonEnd = (
         <Link to="/Vorlagen/Endscreen">
-            <div style={{ top: "45vh", right: "5vh", position: "fixed" }}>
+            <div style={{ top: "900px", right: "60px", position: "fixed" }}>
                 <FancyButton
                     onClick={incrementCount}
                     version="green"
@@ -192,7 +192,7 @@ export const QuizMixedComponent = (props: Props): JSX.Element => {
             {props.sdg.isQuizActive[showtext] === false ? (
                 <>
                     <p className="title">{props.sdg.tile[showtext]}</p>
-                    <p className="einleitungText" style={{ fontSize: "2.5vh" }}>
+                    <p className="einleitungText" style={{ fontSize: "50px" }}>
                         {props.sdg.text[showtext]}
                     </p>
                 </>

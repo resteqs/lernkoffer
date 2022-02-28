@@ -23,6 +23,16 @@ export interface ModalProps {
     setIsOpen;
     answer: string;
 }
+export interface ModalHelperProps {
+    modalContent?: JSX.Element;
+    modalStyle?: CSSProperties;
+    setSelectedItem: (n: number) => void;
+    answercw;
+    modalIsOpen;
+    setIsOpen;
+    answer: string;
+}
+    
 
 export interface QuizProps {
     /**

@@ -17,6 +17,7 @@ import "./styles/sdg14.css";
 import "./SDG/SDG1/Spiel/sdg1.css"
 import "./styles/infotext.css";
 
+
 /**----------------------------------------------------------------------------
  *                              Wörterbuch
  ----------------------------------------------------------------------------*/
@@ -266,7 +267,6 @@ import { SDG14_GutesBeispiel } from "./SDG/SDG14/Gute Bsp/SDG14_GutesBeispiel";
 import { SDG14_Infotext } from "./SDG/SDG14/Info/SDG14_Infotext";
 
 /**                                 Quiz                                     */
-import { SDG14_Quiz } from "./SDG/SDG14/Quiz/SDG14_Quiz";
 
 /**                                Spiel                                     */
 import { clownfish } from "./SDG/SDG14/Spiel2/search_info/clownfish";
@@ -326,7 +326,6 @@ import { SDG17_Spiel } from "./SDG/SDG17/Spiel/SDG17_Spiel";
  /**----------------------------------------------------------------------------
  *                                Vorlagen
  ----------------------------------------------------------------------------*/
-import { Infotext } from "./SDG/Vorlagen/Infotext/infotext";
 import { countdown } from "./SDG/Vorlagen/Countdown/countdown";
 import { SimpleCountdown } from "./SDG/Vorlagen/Countdown/simpleCountdown"
 import { QuizButton } from "./SDG/Vorlagen/Button/QuizButton"
@@ -415,14 +414,8 @@ import { QuizTwoOrThreeOptionComponent } from "./Components/Quiz/QuizTwoOrThreeO
 import { SDG14_Spiel2_Tutorial } from "./SDG/SDG14/Spiel2/SDG14_Spiel2_Tutorial";
 import { SDG07_Spiel } from "./SDG/SDG7/Spiel/SDG07_Spiel";
 import { SDG03_FreieArbeit } from "./SDG/SDG3/Freie Arbeit/SDG03_FreieArbeit";
-
-
-
-
-
-
-
-
+import { SDG14_Quiz } from "./SDG/SDG14/Quiz/SDG14_Quiz";
+import { SDG11_Quiz } from "./SDG/SDG11/Quiz/SDG11_Quiz";
 
 export const App = (): JSX.Element => {
     return (
@@ -631,6 +624,8 @@ export const App = (): JSX.Element => {
 /**                               Infotext                                   */
             <Route exact path="/SDG11/Infotext"><InfotextComponent sdg={SDG11_Infotext}/></Route>
 /**                                 Quiz                                     */
+            <Route exact path="/SDG11/Quiz" component={SDG11_Quiz}/>
+
 /**                                Spiel                                     */
             <Route exact path="/SDG11/Spiel"><TextComponent sdg= {SDG11_Spiel}/>  </Route>
 /**                                Video                                     */
@@ -699,7 +694,7 @@ export const App = (): JSX.Element => {
             <Route exact path="/SDG14/Infotext"><InfotextComponent sdg={SDG14_Infotext}/></Route> 
 
 /**                                 Quiz                                     */
-<Route exact path="/SDG14/Quiz"><TextComponent sdg={SDG14_Quiz}/></Route>
+                <Route exact path="/SDG14/Quiz"><TextComponent sdg={SDG14_Quiz}/></Route>
 
 /**                                Spiel                                     */
 
@@ -723,7 +718,7 @@ export const App = (): JSX.Element => {
 /**                              Freie Arbeit                                */
             <Route exact path="/SDG15/FreieArbeit"><TextComponent sdg= {SDG15_FreieArbeit}/> </Route> 
 /**                             Gutes Beispiel                               */
-<Route exact path="/SDG15/GutesBeispiel"><TextComponent sdg= {SDG15_GutesBeispiel}/> </Route> 
+            <Route exact path="/SDG15/GutesBeispiel"><TextComponent sdg= {SDG15_GutesBeispiel}/> </Route> 
 /**                               Infotext                                   */
             <Route exact path="/SDG15/Infotext"><InfotextComponent sdg={SDG15_Infotext}/></Route>
 /**                                 Quiz                                     */
@@ -791,7 +786,6 @@ export const App = (): JSX.Element => {
 /**----------------------------------------------------------------------------
 *                                 Vorlagen
 ----------------------------------------------------------------------------*/
-            <Route exact path="/Vorlagen/infotext" component={Infotext} />  
             <Route exact path="/Vorlagen/countdown" component={countdown} />  
             <Route exact path ="/Vorlagen/SimpleCountdown" component={SimpleCountdown}/> 
             <Route exact path ="/Vorlagen/endscreen" component={Endscreen} />
