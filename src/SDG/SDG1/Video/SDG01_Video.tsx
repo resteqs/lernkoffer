@@ -3,12 +3,12 @@
 import * as React from "react"
 import { VideoProps } from "../../../Interfaces/SDG";
 import Logo from "../../../SDGLogos/Goal-SDG01.png";
-import Video from "./Erste_Zahlungsmittel.mp4"
+import Video from "./Armutsgrenzen.mp4"
 
 
 export const SDG01_Video:VideoProps = {
     sdgNumber: 1,
-    sdgTitle: "Erste Zahlungsmittel",
+    sdgTitle: "Kurzerklärt: Armutsgrenzen",
     sdg: "SDG01",
     logo: Logo,
     source: Video,
