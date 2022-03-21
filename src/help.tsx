@@ -35,18 +35,18 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG01/FreieArbeit">Freie Arbeit - Collage</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG02/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/FreieArbeit">Freie Arbeit - Empowerment</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG04/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG04/FreieArbeit">Freie Arbeit - Wunschschule</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/FreieArbeit">Freie Arbeit - Rollenspiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/FreieArbeit">Freie Arbeit - Forschertagebuch</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/FreieArbeit">Freie Arbeit</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/FreieArbeit">Freie Arbeit</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG09/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG07/FreieArbeit">Experiment - Kartoffel garen</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/FreieArbeit">Freie Arbeit - Traumberuf</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG09/FreieArbeit">Freie Arbeit - Teamwork</Link></td>
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG01/GutesBeispiel">Gutes Beispiel - Misereor</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG02/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG02/GutesBeispiel">Gutes Beispiel - Welthungerhilfe</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/GutesBeispiel">Gutes Beispiel - Ärzte ohne Grenzen </Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG04/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG04/GutesBeispiel">Gutes Beispiel - Malala Yousafzai</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/GutesBeispiel">Gutes Beispiel - Statues of Equality</Link></td>
                         <td className="tg-c3ow">
                             <Link to ="/SDG06/GutesBeispiel">Gute Beispiele</Link>
@@ -55,8 +55,6 @@ export const Help = (): JSX.Element => {
                         </td>
                         <td className="tg-c3ow"><Link to ="/SDG07/VideoWindrad">Video Windrad</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG08/GutesBeispiel">Gutes Beispiel - YouthCan</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG09/GutesBeispiel">Gutes Beispiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/GutesBeispiel">Gutes Beispiel - ITU</Link></td>
 
                     </tr>
@@ -81,25 +79,25 @@ export const Help = (): JSX.Element => {
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG01/Spiel">Spiel - Wer verdient mehr </Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG02/Spiel">Spiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG02/Spiel">Spiel - Wo isst man was? </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/Spiel">Spiel - So sieht es in meinem Kopf aus</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG04/Spiel1/SDG04_Spiel">Spiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG04/Spiel1/SDG04_Spiel">Spiel - Activity</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/Spiel">Info - Starke Frauen</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/Spiel">Spiel - Wassertour</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/Spiel">Spiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/Spiel">Spiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG09/Spiel">Spiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG07/Spiel">Spiel - Memory</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/Spiel">Quiz - Menschenwürde </Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG09/Spiel">Spiel - Stille Post</Link></td>
                     </tr>
                     <tr>
                       
                         <td className="tg-c3ow"><Link to ="/SDG01/Quiz">Quiz - Was solltest du eher kaufen</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG02/Quiz">Quiz</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG02/Quiz">Ernährungsquiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/Quiz">Info + Quiz - Legale Drogen</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG04/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/Quiz">Quiz - Gehört sich das?</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/Quiz">Quiz - Täglicher Wasserbedarf</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/Quiz">Quiz</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG07/Quiz">Quiz - Energieverbrauch</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/Quiz">Quiz - Kinderarbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/Quiz">Quiz - Technische Innovation</Link></td>
 
                     </tr>
@@ -107,7 +105,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG01/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG02/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/Video">Video</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG04/Video">Video Probleme</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG04/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/Video"> </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG07/VideoWasserstoff">Video Wasserstoff </Link></td>
@@ -131,13 +129,13 @@ export const Help = (): JSX.Element => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG10/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG10/FreieArbeit">Freie Arbeit - Integrativer Spielplatz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/FreieArbeit">Freie Arbeit - Collage</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/FreieArbeit">Freie Arbeit - Kunst aus Müll</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG13/FreieArbeit">Freie Arbeit - Menschenkette</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG14/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG14/FreieArbeit">Freie Arbeit - Collage</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/FreieArbeit">Experiment - Kressehang</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG16/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG16/FreieArbeit">Freie Arbeit - Konfliktlösungsstrategien</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/FreieArbeit">Freie Arbeit - Motivationsbild</Link></td>
                     </tr>
                     <tr>
@@ -145,9 +143,9 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG11/GutesBeispiel">Experiment - Bau eines Insektenhotels</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/GutesBeispiel">Gutes Beispiel - Plastik aus Mais</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG13/GutesBeispiel">Domino - Umweltschutzkette</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG14/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG14/GutesBeispiel">Gutes Beispiel - MSC</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/GutesBeispiel">Gutes Beispiel - WWF</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG16/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG16/GutesBeispiel">Gutes Beispiel - PBI</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/GutesBeispiel">Gutes Beispiel - UN</Link></td>
                     </tr>
                     <tr>
@@ -164,7 +162,7 @@ export const Help = (): JSX.Element => {
 
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG10/Spiel">Spiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG10/Spiel">Spiel - Kannst du das blind?</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/Spiel">Quiz - Ökologischer Fußabdruck</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/Spiel">Quiz - Nachhaltiger Konsum</Link></td>
                         <td className="tg-c3ow">
@@ -172,26 +170,26 @@ export const Help = (): JSX.Element => {
                             <p>und</p>
                             <Link to ="/SDG13/Spiel2/">Spiel - Mülltrennung</Link>
                         </td>
-                        <td className="tg-c3ow"><Link to ="/SDG14/Spiel2/tutorial1">Spiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG14/Spiel2/tutorial1">Info durch Suchspiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/Spiel">Werwolfspiel </Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG16/Spiel">Spiel </Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG16/Spiel">Teamspiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/Spiel">Spiel - Geschicklichkeitsspiel </Link></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG10/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG11/Quiz">Suchbild - Energiesparrallye</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG10/Quiz">Quiz - Wie kann ich helfen?</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG11/Quiz">Antippspiel - Energiesparrallye</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/Quiz">Quiz - Rohstoffe</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG13/Quiz">Quiz - CO2 Ausstoß</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG14/Quiz">Quiz</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG14/Quiz">Spiel - Schildkröten-Nahrung</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/Quiz">Quiz - Bedrohte Tierarten</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG16/Quiz">Quiz</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG16/Quiz">Quiz - Kinderrechtskonvention</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG17/Quiz">Wissensspiel zu allen SDGs</Link></td>
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG10/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/Video">Video</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG13/Video">Video gibts nicht</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG13/Video"> </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG14/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG15/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG16/Video">Video</Link></td>
