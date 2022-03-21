@@ -32,21 +32,21 @@ export const Help = (): JSX.Element => {
                 </thead>
                 <tbody style={{ fontSize: "50px" }}>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG01/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG01/FreieArbeit">Freie Arbeit - Collage</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG02/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/FreieArbeit">Freie Arbeit</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG04/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG04/FreieArbeit">Freie Arbeit - Wunschschule</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/FreieArbeit">Freie Arbeit</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/FreieArbeit">Freie Arbeit</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG07/FreieArbeit">Experiment Kartoffeln garen</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/FreieArbeit">Freie Arbeit - Traumberuf</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/FreieArbeit">Freie Arbeit</Link></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG01/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG01/GutesBeispiel">Gutes Beispiel - Misereor</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG02/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/GutesBeispiel">Gutes Beispiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG04/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG04/GutesBeispiel">Gutes Beispiel - Malala Yousafazi</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow">
                             <Link to ="/SDG06/GutesBeispiel">Gutes Beispiel</Link>
@@ -54,7 +54,7 @@ export const Help = (): JSX.Element => {
                             <Link to ="/SDG06/GutesBeispielQuiz">Gutes Beispiel Quiz</Link>
                         </td>
                         <td className="tg-c3ow"><Link to ="/SDG07/VideoWindrad">Video Windrad</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/GutesBeispiel">Gutes Beispiel - YouthCan</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/GutesBeispiel">Gutes Beispiel</Link></td>
 
                     </tr>
@@ -78,26 +78,26 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG09/Infotext">Infotext</Link></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG01/Spiel">Spiel </Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG01/Spiel">Spiel - Wer verdient mehr </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG02/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/Spiel">Spiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG04/Spiel1/SDG04_Spiel">Spiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG04/Spiel1/SDG04_Spiel">Spiel - Activity</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/Spiel">Spiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/Spiel">Spiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/Spiel">Spiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG07/Spiel">Spiel - Memory</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/Spiel">Quiz: Menschenwürdige Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/Spiel">Spiel</Link></td>
                     </tr>
                     <tr>
                       
-                        <td className="tg-c3ow"><Link to ="/SDG01/Quiz">Quiz</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG01/Quiz">Quiz - Was solltest du eher kaufen</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG02/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG04/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG07/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/Quiz">Quiz</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG07/Quiz">Quiz - Energieverbrauch</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/Quiz">Quiz - Kinderarbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/Quiz">Quiz </Link></td>
 
                     </tr>
@@ -105,7 +105,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG01/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG02/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/Video">Video</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG04/Video">Video Probleme</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG04/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG05/Video">Video gibts nicht</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG06/Video">Video</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG07/VideoWasserstoff">Video Wasserstoff </Link></td>
