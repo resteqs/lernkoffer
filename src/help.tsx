@@ -40,7 +40,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG06/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG07/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG08/FreieArbeit">Freie Arbeit</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG09/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG09/FreieArbeit">Freie Arbeit - Teamwork</Link></td>
                     </tr>
                     <tr>
                         <td className="tg-c3ow"><Link to ="/SDG01/GutesBeispiel">Gutes Beispiel</Link></td>
@@ -55,7 +55,7 @@ export const Help = (): JSX.Element => {
                         </td>
                         <td className="tg-c3ow"><Link to ="/SDG07/VideoWindrad">Video Windrad</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG08/GutesBeispiel">Gutes Beispiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG09/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG09/GutesBeispiel">Gutes Beispiel - ITU</Link></td>
 
                     </tr>
                     <tr>
@@ -86,7 +86,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG06/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG07/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG08/Spiel">Spiel</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG09/Spiel">Spiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG09/Spiel">Spiel - Stille Post</Link></td>
                     </tr>
                     <tr>
                       
@@ -98,7 +98,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG06/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG07/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG08/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG09/Quiz">Quiz </Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG09/Quiz">Quiz - Technische Innovation</Link></td>
 
                     </tr>
                     <tr>
