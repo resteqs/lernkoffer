@@ -235,7 +235,7 @@ export const Help = (): JSX.Element => {
                 </Link>
 
                 <Link to = "/SDG02/Infotext/Fable">
-                    <div className="centre">SDG 02 Infotext Fabel</div>
+                    <div className="centre">SDG 02 Einstiegsfabel</div>
                 </Link>
                 
                 <Link to = "/SDG02/Quiz">
@@ -243,7 +243,7 @@ export const Help = (): JSX.Element => {
                 </Link>
 
                 <Link to = "/SDG02/Spiel">
-                    <div className="centre">SDG 02 Spiel</div>
+                    <div className="centre">SDG 02 Spiel - Wo isst man was?</div>
                 </Link>
 
                 <Link to = "/SDG02/FreieArbeit">
