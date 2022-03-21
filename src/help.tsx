@@ -32,7 +32,7 @@ export const Help = (): JSX.Element => {
                 </thead>
                 <tbody style={{ fontSize: "50px" }}>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG01/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG01/FreieArbeit">Freie Arbeit - Collage</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG02/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/FreieArbeit">Freie Arbeit - Empowerment</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG04/FreieArbeit">Freie Arbeit</Link></td>
@@ -43,7 +43,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG09/FreieArbeit">Freie Arbeit</Link></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG01/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG01/GutesBeispiel">Gutes Beispiel - Misereor</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG02/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/GutesBeispiel">Gutes Beispiel - Ärzte ohne Grenzen </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG04/GutesBeispiel">Gutes Beispiel</Link></td>
@@ -54,8 +54,10 @@ export const Help = (): JSX.Element => {
                             <Link to ="/SDG06/GutesBeispielQuiz">Gute Beispiele - Quiz</Link>
                         </td>
                         <td className="tg-c3ow"><Link to ="/SDG07/VideoWindrad">Video Windrad</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG08/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/GutesBeispiel">Gutes Beispiel - YouthCan</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG09/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG08/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG09/GutesBeispiel">Gutes Beispiel - ITU</Link></td>
 
                     </tr>
                     <tr>
@@ -63,7 +65,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow">
                             <Link to ="/SDG02/Infotext/Infotext">Infotext</Link>
                             <p>und</p>
-                            <Link to ="/SDG02/Infotext/Fabel">Fabel</Link>
+                            <Link to ="/SDG02/Infotext/Fabel">Einstiegsfabel</Link>
                         </td>
                         <td className="tg-c3ow"><Link to ="/SDG03/Infotext">Infotext</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG04/Infotext">Infotext</Link></td>
@@ -78,7 +80,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG09/Infotext">Infotext</Link></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG01/Spiel">Spiel </Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG01/Spiel">Spiel - Wer verdient mehr </Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG02/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/Spiel">Spiel - So sieht es in meinem Kopf aus</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG04/Spiel1/SDG04_Spiel">Spiel</Link></td>
@@ -90,7 +92,7 @@ export const Help = (): JSX.Element => {
                     </tr>
                     <tr>
                       
-                        <td className="tg-c3ow"><Link to ="/SDG01/Quiz">Quiz</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG01/Quiz">Quiz - Was solltest du eher kaufen</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG02/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG03/Quiz">Info + Quiz - Legale Drogen</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG04/Quiz">Quiz</Link></td>
@@ -98,7 +100,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG06/Quiz">Quiz - Täglicher Wasserbedarf</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG07/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG08/Quiz">Quiz</Link></td>
-                        <td className="tg-c3ow"><Link to ="/SDG09/Quiz">Quiz </Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG09/Quiz">Quiz - Technische Innovation</Link></td>
 
                     </tr>
                     <tr>
@@ -235,7 +237,7 @@ export const Help = (): JSX.Element => {
                 </Link>
 
                 <Link to = "/SDG02/Infotext/Fable">
-                    <div className="centre">SDG 02 Infotext Fabel</div>
+                    <div className="centre">SDG 02 Einstiegsfabel</div>
                 </Link>
                 
                 <Link to = "/SDG02/Quiz">
@@ -243,7 +245,7 @@ export const Help = (): JSX.Element => {
                 </Link>
 
                 <Link to = "/SDG02/Spiel">
-                    <div className="centre">SDG 02 Spiel</div>
+                    <div className="centre">SDG 02 Spiel - Wo isst man was?</div>
                 </Link>
 
                 <Link to = "/SDG02/FreieArbeit">
