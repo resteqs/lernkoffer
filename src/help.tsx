@@ -151,7 +151,7 @@ export const Help = (): JSX.Element => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG10/FreieArbeit">Freie Arbeit</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG10/FreieArbeit">Freie Arbeit - Integrativer Spielplatz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/FreieArbeit">Freie Arbeit</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG13/FreieArbeit">Freie Arbeit</Link></td>
@@ -161,7 +161,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG17/FreieArbeit">Freie Arbeit</Link></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG10/GutesBeispiel">Gutes Beispiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG10/GutesBeispiel">Gutes Beispiel - #BlackLivesMatter</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/GutesBeispiel">Gutes Beispiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG13/GutesBeispiel">Gutes Beispiel</Link></td>
@@ -184,7 +184,7 @@ export const Help = (): JSX.Element => {
 
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG10/Spiel">Spiel</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG10/Spiel">Spiel - Kannst du das blind?</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/Spiel">Spiel</Link></td>
                         <td className="tg-c3ow">
@@ -198,7 +198,7 @@ export const Help = (): JSX.Element => {
                         <td className="tg-c3ow"><Link to ="/SDG17/Spiel">Spiel </Link></td>
                     </tr>
                     <tr>
-                        <td className="tg-c3ow"><Link to ="/SDG10/Quiz">Quiz</Link></td>
+                        <td className="tg-c3ow"><Link to ="/SDG10/Quiz">Quiz - Wie kann ich helfen?</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG11/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG12/Quiz">Quiz</Link></td>
                         <td className="tg-c3ow"><Link to ="/SDG13/Quiz">Quiz</Link></td>
