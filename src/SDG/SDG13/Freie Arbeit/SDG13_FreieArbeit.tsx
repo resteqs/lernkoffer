@@ -31,9 +31,9 @@ export const SDG13_FreieArbeit: TextProps = {
                     </li>
                     <li>
                         {" "}
-                        Richtig gelesen! Die Textilindustrie ist einer der größten Klimasünder. Im Jahr 2015 produzierte
-                        sie 1,2 Milliarden Tonnen CO2-Äquivalente. Das sind mehr Treibhausgase als internationale Flüge
-                        und die Schifffahrt zusammen verantworten. Tendenz steigend!
+                        Richtig gelesen! Die Textilindustrie ist eine der größten Klimasünder. Im Jahr 2015 produzierte
+                        sie 1,2 Milliarden Tonnen CO<sub>2</sub>-Äquivalente. Das sind mehr Treibhausgase als
+                        internationale Flüge und die Schifffahrt zusammen verantworten. Und die Tendenz ist steigend!
                     </li>
                 </ul>
             </div>
@@ -41,63 +41,56 @@ export const SDG13_FreieArbeit: TextProps = {
         2: (
             <div>
                 {" "}
-                Dazu kommen Verschmutzungen der Gewässer, Freisetzung giftiger Chemikalien, Verbrauchen von
-                Wasserreservoirs und auch die Ausbeutung von Arbeiter:innen.Was können wir also tun? Das Wichtigste ist,
-                unser eigenes Kaufverhalten zu hinterfragen. Brauche ich wirklich immer ein neues Shirt? Kann ich auf
-                Siegel und Zertifikate achten, die versichern, dass das Produkt unter fairen und nachhaltigen
+                Dazu kommen Verschmutzungen der Gewässer, Freisetzung giftiger Chemikalien, das Verbrauchen von
+                Wasserreservoirs und auch die Ausbeutung von Arbeiter:innen. Was können wir also tun? Das Wichtigste
+                ist, unser eigenes Kaufverhalten zu hinterfragen. Brauche ich wirklich immer ein neues Shirt? Kann ich
+                auf Siegel und Zertifikate vertrauen, die versichern, dass das Produkt unter fairen und nachhaltigen
                 Bedingungen produziert wurde? Informiert euch dazu gerne weiter!{" "}
             </div>
         ),
-        3: <div> Bastele eine Menschenkette aus Papier und designe Kleidung </div>,
+        3: <div> Bastele nun eine Menschenkette aus Papier und designe Kleidung!</div>,
         4: (
             <div>
-                <ul className="ul">
-                    <li className="li">
-                        {" "}
-                        1. Schneide einen langen Streifen Papier ab. Je länger er ist, desto mehr Menschen bekommst du
-                        am Ende. Achte darauf, dass er breit genug ist, um darauf zu zeichnen.
-                    </li>
-                    <li className="li"> 2. Lege den Streifen mit der langen Seite vor dich</li>
-                    <li className="li">
-                        {" "}
-                        3. Falte ihn nun. Fange von einer Seite an und knicke das Papier abwechselnd nach vorne und
-                        hinten, bis du beim anderen Ende angekommen bist.
-                    </li>
-                    <li className="li">
-                        {" "}
-                        4. Lege das gefaltete Papier nun mit einer Seite nach oben vor dich. Halte es gut fest, sonst
-                        faltet es sich wie eine Feder wieder auseinander.
-                    </li>
-                </ul>
+                <p>
+                    1. Schneide einen langen Streifen Papier ab. Je länger er ist, desto mehr Menschen sind es am
+                    Ende. Achte darauf, dass er breit genug ist, um darauf zu zeichnen.
+                </p>
+                <p>2. Lege den Streifen mit der langen Seite nach unten vor dich!</p>{" "}
+                <p>
+                    3. Falte ihn nun. Fange von einer Seite an und knicke das Papier abwechselnd nach vorne und hinten,
+                    bis du beim anderen Ende angekommen bist.
+                </p>{" "}
+                <p>
+                    4. Lege das gefaltete Papier nun mit einer Seite nach oben vor dich. Halte es gut fest, sonst faltet
+                    es sich wie eine Feder wieder auseinander.
+                </p>
             </div>
         ),
         5: (
             <div>
-                <ul className="ul">
-                    <li className="li">
-                        {" "}
-                        5. Zeichne nun die Umrisse eines Menschen auf die Vorderseite. Hände und Füße müssen alle Kanten
-                        berühren!{" "}
-                    </li>
-                    <li className="li">
-                        {" "}
-                        6. Schneide die Figur nun vorsichtig aus. Achte darauf, die Hände und Füße an den Kanten icht zu
-                        durchtrennen
-                    </li>
-                    <li className="li">
-                        {" "}
-                        7. Jetzt kannst du das Papier öffnen und den Streifen vorsichtig in die Länge ziehen. Die
-                        Menschen in der Kette sollten jetzt an Händen und Füßen miteinander verbunden sein.{" "}
-                    </li>
-                    <li className="li"> 8.Jetzt kannst du deine Menschen bemalen </li>
-                </ul>
+                <p>
+                    {" "}
+                    5. Zeichne nun die Umrisse eines Menschen auf die Vorderseite. Hände und Füße müssen alle Kanten
+                    berühren!{" "}
+                </p>
+                <p>
+                    {" "}
+                    6. Schneide die Figur nun vorsichtig aus. Achte darauf, die Hände und Füße an den Kanten nicht zu
+                    durchtrennen!
+                </p>
+                <p>
+                    {" "}
+                    7. Jetzt kannst du das Papier öffnen und den Streifen vorsichtig in die Länge ziehen. Die Menschen
+                    in der Kette sollten jetzt an Händen und Füßen miteinander verbunden sein.{" "}
+                </p>
+                <p> 8 .Jetzt kannst du deine Menschen bemalen! </p>
             </div>
         ),
-        6: (  
-        <div> 
+        6: (
+            <div>
                 <b>
                     {" "}
-                    Überlege dir Klamotten, die du ihnen anziehen möchtest. Erinnere dich an den Einfluss der
+                    Überlege dir Klamotten, die du den Menschen anziehen möchtest. Erinnere dich an den Einfluss der
                     Klamottenherstellung auf die Umwelt! Aus was besteht nachhaltige Kleidung? Kannst du dir vorstellen,
                     wie sie die Menschen und die Natur schont?{" "}
                 </b>

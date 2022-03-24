@@ -5,7 +5,7 @@ import { InfotextButton } from "../../../../Components/Buttons/InfotextButton";
 import { TextProps } from "../../../../Interfaces/SDG";
 import Logo from "../../../../SDGLogos/Goal-SDG13.png";
 
-export const cow:TextProps = {
+export const cow: TextProps = {
     sdgNumber: 13,
     sdgTitle: "Suchspiel",
     sdg: "SDG13",
@@ -15,7 +15,23 @@ export const cow:TextProps = {
         2: "Kuh",
     },
     text: {
-        1: "Wusstest du, dass Kühe Methan rülpsen und furzen? Dieses Gas ist für unser Klima viel schlimmer als CO2 und in Zahlen bedeutet das, dass über 100 Kilogramm Methan dem CO2-Ausstoß von 18.000 gefahrenen Kilometern mit dem Auto entspricht. Außerdem fressen Kühe Soja, was zur Abholzung des Regenwaldes führt, da das Soja irgendwo wachsen muss. Mit der Verkleinerung dieser Fläche verlieren wir einen der größten CO2-Speicher der Erde! Ein oft vorgebrachtes Argument ist jedoch, dass der Anteil des Methans, der durch die Tierhaltung verursacht wird, nur 2% des gesamten Treibhauseffekts ausmacht.",
-        2: <div style={{ textAlign: "center", marginTop: "10vh"  }}><Link to = "/SDG13/Spiel1"><InfotextButton version="green">Zürück zum Tippspiel</InfotextButton></Link></div>
+        1: (
+            <div>
+                Wusstest du, dass Kühe Methan rülpsen und furzen? Dieses Gas ist für unser Klima viel schlimmer als CO
+                <sub>2</sub> und in Zahlen bedeutet das, dass über 100 Kilogramm Methan dem CO<sub>2</sub>-Ausstoß von
+                18.000 gefahrenen Kilometern mit dem Auto entspricht. Außerdem fressen Kühe Soja, was zur Abholzung des
+                Regenwaldes führt, da das Soja irgendwo wachsen muss. Mit der Verkleinerung dieser Fläche verlieren wir
+                einen der größten CO<sub>2</sub>-Speicher der Erde! Ein oft vorgebrachtes Argument ist jedoch, dass der
+                Anteil des Methans, der durch die Tierhaltung verursacht wird, nur 2% des gesamten Treibhauseffekts
+                ausmacht.
+            </div>
+        ),
+        2: (
+            <div style={{ textAlign: "center", marginTop: "10vh" }}>
+                <Link to="/SDG13/Spiel1">
+                    <InfotextButton version="green">Zürück zum Tippspiel</InfotextButton>
+                </Link>
+            </div>
+        ),
     },
-}
+};
