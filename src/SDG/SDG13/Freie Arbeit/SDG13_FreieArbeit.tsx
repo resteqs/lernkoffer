@@ -25,7 +25,7 @@ export const SDG13_FreieArbeit: TextProps = {
             <div>
                 <ul>
                     <li> Flugzeuge, Schifffahrt, Klamotten. Was haben diese drei Bereiche gemeinsam?</li>
-                    <li style={{ marginTop: "100px" }}>
+                    <li style={{ marginTop: "5vh" }}>
                         {" "}
                         Alle drei haben einen großen Einfluss auf unser Klima und unsere Umwelt. Moment mal, Klamotten?{" "}
                     </li>
