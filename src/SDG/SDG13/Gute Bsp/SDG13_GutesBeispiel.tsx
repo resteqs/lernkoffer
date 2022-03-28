@@ -20,18 +20,18 @@ export const SDG13_GutesBeispiel: TextProps = {
     text: {
         1: (
             <div>
-                <ul style= {{ fontSize: "43px" }}>
+                <ul>
                     <li>
                         {" "}
                         Hier haben wir ein gern gespieltes Spiel, vielleicht kennst du es ja schon. Es nennt sich
                         Domino.
                     </li>
-                    <li style={{ marginTop: "30px" }}>
+                    <li style={{ marginTop: "3vh" }}>
                         {" "}
                         In dieser Version geht es um Dinge, die die Umwelt belasten und auch gleichzeitig darum, was du
                         selbst tun kannst.
                     </li>
-                    <li style={{ marginTop: "30px" }}>
+                    <li style={{ marginTop: "3vh" }}>
                         {" "}
                         Dieses Spiel funktioniert nach einem einfachen Prinzip: gestartet wird mit der Karte, auf der
                         „Start“ steht. Auf der rechten Seite von dieser Karte findet ihr ein Bild. Jetzt könnt ihr euch
@@ -43,7 +43,7 @@ export const SDG13_GutesBeispiel: TextProps = {
                         Wenn du eine Karte findest, die zu dem Bild passt, dann ziehe diese Karte einfach neben das
                         Bild.
                     </li>
-                    <li style={{ marginTop: "30px" }}> So machst du immer weiter und am Ende kommst du bei der Karte an, auf der „Ende“ steht.</li>
+                    <li style={{ marginTop: "3vh" }}> So machst du immer weiter und am Ende kommst du bei der Karte an, auf der „Ende“ steht.</li>
                 </ul>
             </div>
         ),
