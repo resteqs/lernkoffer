@@ -114,6 +114,7 @@ export const Quiz_Component = (props: Props): JSX.Element => {
             </FancyButton>
         </div>
     );
+
     const buttonNext = (
         <div style={{ bottom: "38px", right: "38px", position: "fixed" }}>
             <FancyButton
@@ -128,11 +129,16 @@ export const Quiz_Component = (props: Props): JSX.Element => {
 
     );
 
+     // eslint-disable-next-line unicorn/consistent-function-scoping
+     const buttonEndClicked = (): void => {
+        // eslint-disable-next-line no-restricted-globals
+       window.close();
+    }
+
     const buttonEnd = (
-        <Link to="/Vorlagen/Endscreen">
             <div style={{ bottom: "38px", right: "38px", position: "fixed" }}>
                 <FancyButton
-                    onClick={incrementCount}
+                    onClick={buttonEndClicked}
                     version="green"
                     className="nextbutton"
                     active={showtext === maxSlides && props.sdg.isQuizActive[showtext] === false}
@@ -140,7 +146,6 @@ export const Quiz_Component = (props: Props): JSX.Element => {
                     Beenden
                 </FancyButton>
            </div>
-        </Link>
     );
 
     const Modal =

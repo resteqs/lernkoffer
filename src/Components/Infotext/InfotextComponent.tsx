@@ -42,10 +42,15 @@ export const InfotextComponent = (props: Props): JSX.Element => {
             Weiter
         </FancyButton>
     );
+     // eslint-disable-next-line unicorn/consistent-function-scoping
+     const buttonEndClicked = (): void => {
+        // eslint-disable-next-line no-restricted-globals
+       window.close();
+    }
     const buttonEnd = (
         <Link to="/Vorlagen/Endscreen">
             <FancyButton
-                onClick={incrementCount}
+                onClick={buttonEndClicked}
                 version="green"
                 className="nextbutton"
                 active={showtext === maxSlides}
