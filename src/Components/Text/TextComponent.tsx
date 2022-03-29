@@ -49,12 +49,17 @@ export const TextComponent = (props: Props): JSX.Element => {
             </FancyButton>
         </div>
     );
-
+ 
+    // eslint-disable-next-line unicorn/consistent-function-scoping
+     const buttonEndClicked = (): void => {
+        // eslint-disable-next-line no-restricted-globals
+       window.close();
+    }
     const buttonEnd = (
-        <Link to="/Vorlagen/Endscreen">
+        // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <div style={{  bottom: "38px", right: "38px", position: "fixed" }}>
                 <FancyButton
-                    onClick={incrementCount}
+                    onClick={buttonEndClicked}
                     version="green"
                     className="nextbutton"
                     active={showtext === maxSlides}
@@ -62,7 +67,6 @@ export const TextComponent = (props: Props): JSX.Element => {
                     Beenden
                 </FancyButton>
             </div>
-        </Link>
     );
 
     return (

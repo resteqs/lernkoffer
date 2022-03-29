@@ -2,7 +2,7 @@
     "name": "lernkoffer",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://resteqs.github.io/lernkoffer/",
+    "homepage": ".",
     "dependencies": {
         "@bdenzer/react-modal": "^0.6.2",
         "@fortawesome/fontawesome-free": "^5.15.4",
