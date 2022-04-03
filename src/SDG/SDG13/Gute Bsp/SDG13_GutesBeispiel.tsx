@@ -23,7 +23,7 @@ export const SDG13_GutesBeispiel: TextProps = {
                 <ul>
                     <li>
                         {" "}
-                        Hier haben wir ein gern gespieltes Spiel, vielleicht kennst du es ja schon. Es nennt sich
+                        Hier haben wir ein gern gespieltes Spiel, vielleicht kennst du es ja schon: Es nennt sich
                         Domino.
                     </li>
                     <li style={{ marginTop: "3vh" }}>
@@ -33,10 +33,9 @@ export const SDG13_GutesBeispiel: TextProps = {
                     </li>
                     <li style={{ marginTop: "3vh" }}>
                         {" "}
-                        Dieses Spiel funktioniert nach einem einfachen Prinzip: gestartet wird mit der Karte, auf der
+                        Dieses Spiel funktioniert nach einem einfachen Prinzip: Gestartet wird mit der Karte, auf der
                         „Start“ steht. Auf der rechten Seite von dieser Karte findet ihr ein Bild. Jetzt könnt ihr euch
-                        die übrigen Karten ansehen und überlegen, welcher Text ein Problem und eine Lösung beschreibt,
-                        das zu dem Bild passt.
+                        die übrigen Karten ansehen und überlegen, welcher Text passend zu diesem Bild ein Problem und seine Lösung beschreibt.
                     </li>
                     <li>
                         {" "}
@@ -49,10 +48,9 @@ export const SDG13_GutesBeispiel: TextProps = {
         ),
         2: (
             <div>
-                Ihr könnt immer gerne Pausen machen und über die angegebenen Probleme und Lösungen reden. Eine Idee für
-                eine Diskussion wäre die Umsetzbarkeit der Lösungen für euch und eure Freunde, Familie… Eine andere Idee
-                wäre auch, darüber zu diskutieren, ob euch andere Sachen einfallen, die entweder schlecht für die Umwelt
-                sind und wie man sie lösen kann, oder auch, wie man die bereits angegebenen Probleme anders lösen kann
+                Ihr könnt immer gerne Pausen machen, um über die angegebenen Probleme und Lösungen reden. Diskutiert ob Lösungen für euch und eure Freunde, Familie umsetzbar sind. Eine andere Idee
+                wäre, darüber zu diskutieren, ob euch andere Aspekte einfallen, die entweder schlecht für die Umwelt
+                sind und wie man sie lösen könnte, oder auch, wie man die bereits angegebenen Probleme anders lösen kann,
                 als hier steht.
             </div>
         ),
