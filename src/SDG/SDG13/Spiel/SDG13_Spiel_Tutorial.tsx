@@ -19,7 +19,7 @@ export const SDG13_Spiel_Tutorial: TextProps = {
         1: (
             <div>
                 In der Luft gibt es viele verschiedene Arten von Gasen, die man nicht immer sehen kann. Eines davon ist
-                Kohlenstoffdioxid (auch CO<sub>2</sub> genannt). Wie du vielleicht weißt, fördert der hohe CO<sub>2</sub>-Gehalt den Klimawandel und gilt deshalb
+                Kohlenstoffdioxid (auch CO<sub>2</sub> genannt). Wie du vielleicht weißt, fördert ein hoher CO<sub>2</sub>-Gehalt den Klimawandel und gilt deshalb
                 als Gefahr für unsere Umwelt.
             </div>
         ),
@@ -27,19 +27,20 @@ export const SDG13_Spiel_Tutorial: TextProps = {
             <div>
                 Es wird oft diskutiert, wie man die produzierte Menge an CO<sub>2</sub> senken kann. In unserer heutigen
                 Welt gibt es viele Dinge mit hohen Emissionen, aber auch einige mit geringen oder gar keinen Emissionen.
-                Es gibt aber auch Objekte, die dieses Gas aus der Luft binden. Dadurch wird die Konzentration von
-                schädlichen Gasen in der Luft verringert.
+                Es gibt aber auch Objekte, die dieses Gas aus der Luft binden und damit wird die Konzentration von
+                schädlichen Gasen in der Luft verringern.
             </div>
         ),
         3: (
             <div>
                 <p>
-                    Kannst du erraten, welches Element welche Menge an Gasen produziert? Klicke es an und finde es
+                    Kannst du erraten, wer welche Menge an Gasen produziert? Klicke Orte, Gegenstände und Personen auf dem folgenden Bild an und finde es!
                     heraus.
                 </p>
                 <div style={{ textAlign: "center", marginTop: "10vh" }}>
                     <Link to="/SDG13/Spiel1">
-                        <InfotextButton version="green">Zum Tippspiel</InfotextButton>
+                        
+                        <InfotextButton version="green">zum Tippspiel</InfotextButton>
                     </Link>
                 </div>
             </div>

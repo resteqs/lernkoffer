@@ -19,22 +19,22 @@ export const akw: TextProps = {
     text: {
         1: (
             <p>
-                Der Begriff &quot;Atomkraft&quot; wird oft negativ verwendet, aber es gibt wirklich einige positive
-                Dinge über diese Art der Energieerzeugung zu sagen. Ein großer Teil der weltweit verbrauchten Energie
-                ist bereits klimaneutral (2017 waren es 24,3%, Tendenz steigend), aber der Rest wird in Atomkraftwerken (der
+                Der Begriff &quot;Atomkraft&quot; wird oft negativ verwendet, aber es gibt auch einige positive
+                Dinge über diese Art der Energieerzeugung zu sagen: Ein großer Teil der weltweit verbrauchten Energie
+                ist bereits klimaneutral (2017 waren es 24,3%, Tendenz steigend), aber der Rest wird in Atomkraftwerken [Der
                 Anteil an der gesamten produzierten Energiemenge ist von Land zu Land sehr unterschiedlich, da es sowohl
                 Länder wie Deutschland gibt, die versuchen, die Nutzung dieser Energie zu reduzieren, als auch Länder
-                wie die USA, die ein großes Potenzial in der Atomkraft sehen) und Kohlekraftwerken erzeugt.{" "}
+                wie die USA, die ein großes Potenzial in der Atomkraft sehen.] und Kohlekraftwerken erzeugt.{" "}
             </p>
         ),
         2: (
             <p>
-                Ein Grund, warum die Kernenergie bis heute nicht verboten ist, obwohl es große und bekannte Katastrophen
+                Ein Grund, warum Kernenergie bis heute nicht verboten ist, obwohl es große Katastrophen
                 wie Fukushima und Tschernobyl gab, ist die Tatsache, dass sie keine Emissionen produziert. Aber die
                 Menschen haben aus diesen Unfällen gelernt und so sind die Sicherheitsvorschriften höher als je zuvor.
-                Trotzdem haben wir keine Ahnung, wie wir mit dem Atommüll umgehen sollen. Das größte Problem bei
-                Kohlekraftwerken hingegen ist zweifelsohne die Menge der produzierten Emissionen von Gasen wie
-                Kohlenstoffdioxid.{" "}
+                Trotzdem haben wir keine Ahnung, wie wir mit dem Atommüll umgehen sollen. Bei
+                Kohlekraftwerken wird hingegen eine große Menge an Emissionen von Gasen wie
+                Kohlenstoffdioxid produziert.{" "}
             </p>
         ),
         3: (
@@ -47,7 +47,7 @@ export const akw: TextProps = {
         4: (
             <div style={{ textAlign: "center", marginTop: "10vh" }}>
                 <Link to="/SDG13/Spiel1">
-                    <InfotextButton version="green">Zürück zum Tippspiel</InfotextButton>
+                    <InfotextButton version="green">zum Tippspiel</InfotextButton>
                 </Link>
             </div>
         ),

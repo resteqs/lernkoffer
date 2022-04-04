@@ -11,6 +11,7 @@ interface Props {
 export const TextComponent = (props: Props): JSX.Element => {
     const [showtext, setText] = React.useState(1);
     const maxSlides = Object.keys(props.sdg.text).length;
+    window.open("", '_self' )
 
     const textBox:CSSProperties = {
     padding: "4vw",

@@ -16,12 +16,12 @@ export const windTurbine: TextProps = {
         3: "Windrad",
     },
     text: {
-        1: "Eine neue Art der Energiegewinnung. Es ist ein recht häufig diskutiertes Thema, ob der Bau von Windrädern ökologisch sinnvoll ist oder nicht. Die meisten Debatten enden mit einem positiven Ergebnis für diese Räder, weil sie mit Wind arbeiten, der sowohl endlos als auch in den Nächten verfügbar ist. Im Gegensatz dazu ist es ein großes Problem bei der Solarenergie, dass das Sonnenlicht nur für eine begrenzte Zeit, genauer gesagt tagsüber, zur Verfügung steht. Außerdem ist der Platzbedarf für den Bau der Windanlagen eher gering. Die einzigen Emissionen, die bei Windrädern entstehen, entstehen bei der Herstellung der Teile.",
-        2: "Aber wie immer gibt es auch bei diesem Thema eine nicht ganz so sonnige Seite. Ein Hauptgrund, warum die Menschen Windräder nicht mögen, ist, dass sie groß sind und einen großen Schatten auf die Umgebung werfen. Deshalb gibt es in den meisten Ländern Vorschriften für einen Mindestabstand solcher Windparks zu Städten und Ortschaften. Das größte Problem ist, dass sie kaum die Menge produzieren, die ein Atomkraftwerk leisten könnte.",
+        1: "Auch durch Wind kann Energie gewonnen werden. Es ist ein recht häufig diskutiertes Thema, ob der Bau von Windrädern ökologisch sinnvoll oder nicht ist. Die meisten Debatten enden mit einem positiven Ergebnis für diese Windkraftanlagen, weil Wind zusätzlich sowohl endlos als auch in den Nächten verfügbar ist. Im Gegensatz dazu ist es ein großes Problem bei der Solarenergie, dass das Sonnenlicht nur tagesüber für eine begrenzte Zeit zur Verfügung steht. Zusätzlich ist der Platzbedarf für den Bau der Windkraftanlagen eher gering. Die einzigen Emissionen, die bei Windrädern entstehen, entstehen bei der Herstellung der Teile.",
+        2: "Aber wie immer gibt es auch bei diesem Thema eine nicht ganz so sonnige Seite. Ein Grund, warum Menschen Windräder zum Teil nicht mögen, ist, dass sie groß sind und somit einen großen Schatten auf die Umgebung werfen. Deshalb gibt es in den meisten Ländern Vorschriften für einen Mindestabstand von Windparks zu Städten und Ortschaften. Ein weiteres Problem ist, dass sie wenig Energie als Atomkraftwerke produzieren können.",
         3: (
             <div style={{ textAlign: "center", marginTop: "10vh" }}>
                 <Link to="/SDG13/Spiel1">
-                    <InfotextButton version="green">Zürück zum Tippspiel</InfotextButton>
+                    <InfotextButton version="green">zum Tippspiel</InfotextButton>
                 </Link>
             </div>
         ),
