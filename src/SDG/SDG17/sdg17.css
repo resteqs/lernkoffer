@@ -1,0 +1,10 @@
+.ul{
+    display: block; 
+    list-style-type: disc; 
+    padding-left: 400px; 
+    margin: 1em 0; 
+  }
+
+ .li{
+    display: list-item;
+  }

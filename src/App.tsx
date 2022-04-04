@@ -3,6 +3,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 import { HashRouter , Route, Switch } from "react-router-dom";
+import { Home } from "./home";
 
 
 
@@ -12,6 +13,10 @@ import { HashRouter , Route, Switch } from "react-router-dom";
 import "./styles/App.css";
 import "./styles/colour_sdgs.css";
 import "./styles/infotext.css";
+// the next lines caused a mental breakdown. FUCK THIS SHIT 
+import "./styles/sdg13.css";
+import "./styles/sdg14.css";
+import "./SDG/SDG1/Spiel/sdg1.css"
 
 
 /**----------------------------------------------------------------------------
