@@ -79,7 +79,7 @@ export const SDG07_FreieArbeit: TextProps = {
             <div>
                 <p style={{ width: "50%" }}>Schritt 2:</p>
                 <p style={{ width: "50%" }}>
-                    Nimm als nächstes den Löffel und streiche die Folie in dem Körbchen möglichst glatt.
+                    Nimm als Nächstes den Löffel und streiche die Folie in dem Körbchen möglichst glatt.
                 </p>
                 <img
                     style={{ float: "right", marginRight: "200px", marginTop: "-175px", width: "500px" }}
@@ -122,12 +122,12 @@ export const SDG07_FreieArbeit: TextProps = {
                 wenn der Behälter etwas schräg steht und immer wieder während des Nachmittags in Richtung Sonne gedreht
                 wird. Am Abend solltest du die Kartoffel essen können. Das erkennst du daran, wenn sie innen gelb und
                 weich ist. Wenn du magst, kannst du auch andere Gemüsesorten auf diese Weise versuchen zu kochen.
-                Wichtig ist dabei immer zu überprüfen, ob es durchgekocht ist.
+                Wichtig ist, dabei immer zu überprüfen, ob es durchgekocht ist.
             </p>
         ),
         8: (
             <p>
-                Wie funktioniert das jetzt mit der Sonnenenergie? Die Aluminiumfolie sorgt dafür, dass die St rahlen der
+                Wie funktioniert das jetzt mit der Sonnenenergie? Die Aluminiumfolie sorgt dafür, dass die Strahlen der
                 Sonne, wenn sie auf die Folie treffen, in einem Punkt in der Mitte des Körbchens gebündelt werden. Dort
                 wird es sehr heiß und die Kartoffel wird an dieser Stelle gegart.
             </p>

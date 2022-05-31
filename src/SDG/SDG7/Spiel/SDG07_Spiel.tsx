@@ -30,8 +30,8 @@ export const SDG07_Spiel = (): JSX.Element => {
         2: "Aufgabe:",
     };
     const text: Record<number, string> = {
-        1: "Du kennst ja sicher Strom und was Strom ist. Damit werden sehr viele Geräte angetrieben wie zum Beispiel Küchenmaschinen. Aber weißt du auch mit welchen Methoden Strom hergestellt wird? Davon gibt es nämlich sehr viele!",
-        2: "Gleich siehst du ein Feld mit Memory-Karten, falls du das Spiel nicht kennst, es geht darum, dass du immer erst eine Karte ziehst und dann eine zweite und versuchst damit Pärchen zu bilden. Hier jedoch musst du immer ein Bild und eine Erklärung zusammenbringen. Noch ein wichtiger Punkt sind Turbinen: Diese sind große Schrauben, die du etwa mit einem Windrad vergleichen kannst, bloß dass durch diese Wasser „fließt“",
+        1: "Du kennst ja sicher Strom und was Strom ist. Damit werden sehr viele Geräte angetrieben wie zum Beispiel Küchenmaschinen. Aber weißt du auch, mit welchen Methoden Strom hergestellt wird? Davon gibt es nämlich sehr viele!",
+        2: "Gleich siehst du ein Feld mit Memory-Karten. Falls du das Spiel nicht kennst: Es geht darum, dass du zuerst eine Karte ziehst, danach eine zweite und dann mit beiden versuchst, ein Pärchen zu bilden. Hier jedoch musst du immer ein Bild und eine Erklärung zusammenbringen. Noch ein wichtiger Punkt sind Turbinen: Diese sind große Schrauben, die du etwa mit einem Windrad vergleichen kannst, bloß dass durch diese Wasser „fließt“.",
     };
     const maxSlides = Object.keys(text).length+1;
 
