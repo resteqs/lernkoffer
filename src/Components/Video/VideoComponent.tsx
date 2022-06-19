@@ -24,14 +24,18 @@ export const VideoComponent = (props: Props): JSX.Element => {
         setText((prevState) => prevState + 1);
     };
 
+       // eslint-disable-next-line unicorn/consistent-function-scoping
+       const buttonEndClicked = (): void => {
+        // eslint-disable-next-line no-restricted-globals
+       window.close();
+    }
+
     const buttonEnd = (
-        <Link to="/Vorlagen/Endscreen">
             <div style={{ marginBottom: "21vh", right: "5vw" }}>
-                <FancyButton onClick={incrementCount} version="green" className="nextbutton" active={showtext === 1}>
+                <FancyButton onClick={buttonEndClicked} version="green" className="nextbutton" active={showtext === 1}>
                     Beenden
                 </FancyButton>
             </div>
-        </Link>
     );
 
     return (

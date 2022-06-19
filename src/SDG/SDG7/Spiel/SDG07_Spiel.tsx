@@ -11,6 +11,8 @@ export const SDG07_Spiel = (): JSX.Element => {
     const sdgNumber = 7;
     const sdgTitle = "Energiegewinnung";
     const sdg = "SDG07";
+    window.open("", '_self' )
+
 
     const textBox: CSSProperties = {
         padding: "4vw",
@@ -50,19 +52,23 @@ export const SDG07_Spiel = (): JSX.Element => {
         </div>
     );
 
+    // eslint-disable-next-line unicorn/consistent-function-scoping
+    const buttonEndClicked = (): void => {
+        // eslint-disable-next-line no-restricted-globals
+       window.close();
+    }
+
     const buttonEnd = (
-        <Link to="/Vorlagen/Endscreen">
-            <div style={{ bottom: "38px", right: "38px", position: "fixed" }}>
-                <FancyButton
-                    onClick={incrementCount}
-                    version="green"
-                    className="nextbutton"
-                    active={showtext === maxSlides}
-                >
-                    Beenden
-                </FancyButton>
-            </div>
-        </Link>
+        <div style={{ bottom: "38px", right: "38px", position: "fixed" }}>
+            <FancyButton
+                onClick={buttonEndClicked}
+                version="green"
+                className="nextbutton"
+                active={showtext === maxSlides}
+            >
+                Beenden
+            </FancyButton>
+        </div>
     );
 
     return (

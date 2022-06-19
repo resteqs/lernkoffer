@@ -1,7 +1,5 @@
-/* eslint-disable unicorn/filename-case */ 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import soundfile from "./test.mp3";
+
+// eslint-disable-next-line unicorn/filename-case
 import Logo from "../../../SDGLogos/Goal-SDG07.png";
 import EG from "../../../EG/EG2.png";
 import { InfotextProps } from "../../../Interfaces/SDG";
@@ -25,6 +23,4 @@ export const SDG07_Infotext: InfotextProps = {
     },
     logo: Logo,
     eg: EG,
-    audioFile: soundfile,
-    /* eslint-enable unicorn/filename-case */ 
 };
