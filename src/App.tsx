@@ -37,7 +37,7 @@ export const App = (): JSX.Element => {
     return (
         <HashRouter basename="">
             <Switch> 
-                <Route exact path="/"><VideoComponent sdg = {SDG07_Video_Wasserstoff}/></Route> 
+                <Route exact path="/"><VideoComponent sdg = {SDG07_Video_Windrad}/></Route> 
             </Switch>
     </HashRouter>
 );}

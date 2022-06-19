@@ -36,7 +36,7 @@ export const SDG07_FreieArbeit: TextProps = {
             <div>
                 <p style={{ marginBottom: "20px" }}>
                     In diesem 7. Nachhaltigkeitsziel geht es um bezahlbare und saubere Energie. Ein Beispiel für
-                    erneuerbare Energie ist die Sonnenenergie. Dabei werden die Energie und Wärme der Sonne, die durch
+                    erneuerbare Energie ist die Sonnenenergie. Dabei werden die Energie und die Wärme der Sonne, die durch
                     die Sonnenstrahlen unsere Erde erreichen, genutzt. Diese Energie kann mittlerweile in andere Formen
                     umgewandelt werden, sodass sie beispielsweise nicht nur Wärme erzeugen kann, sondern auch Strom. Das
                     wird durch die sogenannten „Solarzellen“ gemacht, deren Technik „Photovoltaik“ genannt wird.
@@ -65,7 +65,7 @@ export const SDG07_FreieArbeit: TextProps = {
         9: <img style = {{ display:"block", marginLeft:"auto", marginRight:"auto", width:"30%" }}src={Bild4} alt=""/>,
         10: "Nimm zum Schluss die Kartoffel und stecke sie auf den herausstehenden Nagel.",
         11: <img style = {{ display:"block", marginLeft:"auto", marginRight:"auto", width:"30%" }}src={Bild5} alt=""/>,
-        12: "Nun hast du alles fertig gebaut. Warte bis an einem Tag die Sonne viel scheint und stell dann das Körbchen ab der Mittagszeit in die Sonne, sodass sie direkt auf die Kartoffel scheint. Es kann helfen, wenn der Behälter etwas schräg steht und immer wieder während des Nachmittags in Richtung Sonne gedreht wird. Am Abend solltest du die Kartoffel essen können. Das erkennst du daran, wenn sie innen gelb und weich ist. Wenn du magst, kannst du auch andere Gemüsesorten auf diese Weise versuchen zu kochen. Wichtig ist, dabei immer zu überprüfen, ob es durchgekocht ist.",
+        12: "Nun hast du alles fertig gebaut. Warte bis an einem Tag die Sonne viel scheint und stell dann das Körbchen ab der Mittagszeit in die Sonne, sodass sie direkt auf die Kartoffel scheint. Es kann helfen, wenn der Behälter etwas schräg steht und immer wieder während des Nachmittags in Richtung Sonne gedreht wird. Am Abend solltest du die Kartoffel essen können. Das erkennst du daran, wenn sie innen gelb und weich ist. Wenn du magst, kannst du versuchen, andere Gemüsesorten auf diese Weise zu kochen. Wichtig ist, dabei immer zu überprüfen, ob es durchgekocht ist.",
         13: "Wie funktioniert das jetzt mit der Sonnenenergie? Die Aluminiumfolie sorgt dafür, dass die Strahlen der Sonne, wenn sie auf die Folie treffen, in einem Punkt in der Mitte des Körbchens gebündelt werden. Dort wird es sehr heiß und die Kartoffel wird an dieser Stelle gegart.",
     },
 };
